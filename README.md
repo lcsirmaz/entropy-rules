@@ -6,7 +6,7 @@ Entropy inequalities
 The four random variables (with joint distribution) are a, b, c, and d. The
 15 entropies **H**(a), **H**(b), ..., **H**(ab), **H**(ac), ...,
 **H**(abcd) satisfy several (linear) inequalities. The non-Shannon
-inequalities ar those valid inequalities which do not follow from
+inequalities are those valid inequalities which do not follow from
 the standard Shannon ones.
 
 Entropy inequalities for four variables will be written using a
@@ -30,7 +30,7 @@ coordinates are defined as the following 15 entropy expressions:
 |10| (c,d \| b)  | **I**(c,d \| b) |
 |11| (a,b \| cd) | **I**(a,b \| cd) &ndash; the conditional mutual information of a and b  assuming cd |
 |  |           |                 |
-|12| (a \| bcd)  | **H**(a \| bcd) &ndahs; the conditional entropy of a assuming bcd |
+|12| (a \| bcd)  | **H**(a \| bcd) &ndash; the conditional entropy of a assuming bcd |
 |13| (b \| acd)  | **H**(b \| acd) |
 |14| (c \| abd)  | **H**(c \| abd) |
 |15| (d \| abc)  | **H**(d \| abc) |
@@ -42,7 +42,7 @@ systems. A (linear) entropy inequality can be written in any of these
 coordinate systems. The different forms correspond to renaming the
 variables.
 
-The basic Shannon inequalites imply that the natural coordinates
+The basic Shannon inequalities imply that the natural coordinates
 2 &ndash; 15 always have non-negative values. Moreover for every 
 2 &le; i &le; 15 there is a distribution where the i-th coordinate is
 one, and all other coordinates are zero. (But this is not true for the
@@ -78,7 +78,7 @@ of the 11 non-negative coefficients as
 The c &#8660; d swap of the random variables exchanges coordinates 2-3-4 and 5-6-7. The
 a &#8660; b swap exchanges the coordinate pairs 3-4, 6-7, and 9-10. Thus in any entropy
 inequality we can also make these exchanges in the coefficients and got another
-(equaivalent) inequality; and only the lexicographically maximal one os shown in the
+(equivalent) inequality; and only the lexicographically maximal one is shown in the
 listing.
 
 All inequalities have (non-negative) integer coefficients. A floating-point version is
