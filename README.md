@@ -65,10 +65,10 @@ coefficients to zero:* a<sub>12</sub> = a<sub>13</sub>
 Thus a linear non-Shannon entropy inequality can be specified by a sequence
 of the 11 non-negative coefficients as
 
-<table><tr><td>[a,b,c,d]</td>
-<td>(a,b | c)</td><td>(a,c | b)</td><td>(b,c | a)</td>
+<table><tr><td><sub>[a,b,c,d]</sub></td>
+<td><sub>(a,b | c)</sub></td><td><sub>(a,c | b)</sub></td><td><sub>(b,c | a)></sub></td>
 <td>(a,b | d)</td><td>(a,d | b)</td><td>(b,d | a)</td>
-<td>(c,d)</td><td>(c,d | a)</td><td>(c,d | b)</td><td>(a,b | cd)</td>
+<td><sub>(c,d)</sub></td><td>(c,d | a)</td><td>(c,d | b)</td><td></sub>(a,b | cd)</sub></td>
 <tr><td> a<sub>1</sub> </td>
 <td> a<sub>2</sub> </td><td> a<sub>3</sub> </td><td> a<sub>4</sub> </td>
 <td> a<sub>5</sub> </td><td> a<sub>6</sub> </td><td> a<sub>7</sub> </td>
