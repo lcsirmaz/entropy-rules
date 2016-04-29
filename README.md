@@ -65,14 +65,14 @@ coefficients to zero:* a<sub>12</sub> = a<sub>13</sub>
 Thus a linear non-Shannon entropy inequality can be specified by a sequence
 of the 11 non-negative coefficients as
 
-<table><tr><td>[a,b,c,d]</td><td></td>
-<td>(a,b | c)</td><td>(a,c | b)</td><td>(b,c | a)</td><td></td>
-<td>(a,b | d)</td><td>(a,d | b)</td><td>(b,d | a)</td><td></td>
-<td>(c,d)</td><td>(c,d | a)</td><td>(c,d | b)</td><td>(a,b | cd)</td></tr>
-<tr><td> a<sub>1</sub> </td><td></td>
-<td> a<sub>2</sub> </td><td> a<sub>3</sub> </td><td> a<sub>4</sub> </td><td></td>
-<td> a<sub>5</sub> </td><td> a<sub>6</sub> </td><td> a<sub>7</sub> </td><td></td>
-<td> a<sub>8</sub> </td><td> a<sub>9</sub> </td><td> a<sub>10</sub> </td><td> a<sub>10</sub> </td></tr>
+<table><tr><td>[a,b,c,d]</td>
+<td>(a,b | c)</td><td>(a,c | b)</td><td>(b,c | a)</td>
+<td>(a,b | d)</td><td>(a,d | b)</td><td>(b,d | a)</td>
+<td>(c,d)</td><td>(c,d | a)</td><td>(c,d | b)</td><td>(a,b | cd)</td>
+<tr><td> a<sub>1</sub> </td>
+<td> a<sub>2</sub> </td><td> a<sub>3</sub> </td><td> a<sub>4</sub> </td>
+<td> a<sub>5</sub> </td><td> a<sub>6</sub> </td><td> a<sub>7</sub> </td>
+<td> a<sub>8</sub> </td><td> a<sub>9</sub> </td><td> a<sub>10</sub> </td><td> a<sub>11</sub> </td></tr>
 </table>
 
 The c &#8660; d swap of the random variables exchanges coordinates 2-3-4 and 5-6-7. The
