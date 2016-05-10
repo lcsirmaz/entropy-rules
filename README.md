@@ -79,36 +79,54 @@ and 5-6-7.  The a &#8660; b swap exchanges the coordinate pairs 3-4, 6-7,
 and 9-10.  Thus in any entropy inequality we can also make these exchanges
 in the coefficients and got another (equivalent) inequality.</p>
 
-##### The Zhang &ndash; Yeung inequality
+#### The Zhang &ndash; Yeung inequality
 
 The very first non-Shannon entropy inequality was discovered by Z. Zhang and
 R. W. Yeung in 1997. Using natural coordinates it can be written as
 
-[a,b,c,d] + **I**(a,b | c) + **I**(a,c | b) + **I**(b,c | a) &ge; 0,
+> [a,b,c,d] + **I**(a,b | c) + **I**(a,c | b) + **I**(b,c | a) &ge; 0,
 
-or, showing the a<sub>1</sub> ... a<sub>11</sub> coefficients only
+or, showing the a<sub>1</sub> ... a<sub>11</sub> coefficients only,
 
-|coord:     |  1|  2|  3|  4|  5|  6|  7|  8|  9| 10| 11|
-|:-----:    |--:|--:|--:|--:|--:|--:|--:|--:|--:|--:|--:|
-|Zhang-Yeung|  1|  1|  1|  1|  0|  0|  0|  0|  0|  0|  0|
-|           |  1|  0|  0|  0|  1|  1|  1|  0|  0|  0|  0|
+|  1|  2|  3|  4|  5|  6|  7|  8|  9| 10| 11| Name |
+|--:|--:|--:|--:|--:|--:|--:|--:|--:|--:|--:|:-----|
+|  1|  1|  1|  1|  0|  0|  0|  0|  0|  0|  0|Zhang-Yeung |
+|  1|  0|  0|  0|  1|  1|  1|  0|  0|  0|  0|Zhang-Yeung swapping c &#8660; d |
 
+The Zhang &ndash; Yequng inequality is symmetrical for the a &#8660; b
+swap, thus it has only two forms shown above. Other inequalities might have
+up to four different forms.
 
-##### Minimal entropy inequalities
+#### Minimal entropy inequalities
 
 Non-negative linear combination of entropy inequalities is also an
 entropy inequality &ndash; which is the same as saying that the closure of
 the entropy region is a *convex* set.  When an entropy inequality is such a
 linear combination of other known entropy inequalities, then we say that it
-is *superseded*.
+is *superseded*. 
 
-All known entropy inequalities have (non-negative) integer coefficients. A
-floating-point version is also presented where the Ingleton coordinate is
-normalized to 1.
+We remark that this &quot;linear combination&qult; includes decreasing
+coefficient a<sub>1</sub> of the Ingleton coordinate (but it must remain
+non-negative), and increasing other coefficients a<sub>2</sub> ... 
+a<sub>11</sub>.
 
+An entropy inequality is **minimal** if it is not known to be superseded.
+This status might change over time; listed inequalities known to be
+superseded are marked as such.
 
+All known minimal entropy inequalities can be scaled to have integer
+coefficients. In the main lists the coordinates are integers; in the
+supplement lists the coefficients are scaled so that the Ingleton coordinate
+is 1, and other coordinates are printed as floating point numbers. 
 
+#### The DFZ list
 
+Section VIII of the seminal paper of R. Dougherty, C. Freiling and K. Zeger:
+[Non-Shannon information inequalities in four random
+variables](http://arxiv.org/pdf/1104.3602v1)
+contains a list of 214 non-Shannon information inequalities. They are listed
+in the DFZ directory together with the paste string and the indication
+whether it has been superseded. 
 
 
 
