@@ -51,9 +51,7 @@ values).
 **Theorem** *By renaming the random variables if necessary, every valid 
 linear non-Shannon entropy inequality can be written as*
 
-> a<sub>1</sub> [a,b,c,d] + a<sub>2</sub> (a,b | c) 
->    + a<sub>3</sub> (a,c | b) + ... + a<sub>11</sub> (a,b | cd)
->    + a<sub>12</sub> (a | bcd) + ... + a<sub>15</sub> (d | abc ) &ge; 0
+> a<sub>1</sub> [a,b,c,d] + a<sub>2</sub> (a,b | c) + a<sub>3</sub> (a,c | b) + ... + a<sub>11</sub> (a,b | cd) + a<sub>12</sub> (a | bcd) + ... + a<sub>15</sub> (d | abc ) &ge; 0
 
 <p><em>such that all coefficients</em> a<sub>1</sub> ... a<sub>15</sub> <em>are non-negative.
 Moreover, all such inequalities can be strengthened by setting the last four
