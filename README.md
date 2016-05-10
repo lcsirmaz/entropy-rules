@@ -101,8 +101,7 @@ entropy inequality &ndash; which is the same as saying that the closure of
 the entropy region is a *convex* set.  When an entropy inequality is such a
 linear combination of other known entropy inequalities, then we say that it
 is *superseded*. 
-
-We remark that this &quot;linear combination&qult; includes decreasing
+We remark that this &quot;linear combination&quot; includes decreasing
 coefficient a<sub>1</sub> of the Ingleton coordinate (but it must remain
 non-negative), and increasing other coefficients a<sub>2</sub> ... 
 a<sub>11</sub>.
