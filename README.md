@@ -20,7 +20,6 @@ coordinates are defined as the following 15 entropy expressions:
 |2| (a,b \| c)  | **I**(a,b \| c) &ndash; the conditional mutual information of a and b assuming c |
 |3| (a,c \| b)  | **I**(a,c \| b) |
 |4| (b,c \| a)  | **I**(b,c \| a) |
-| |            |                 |
 |5| (a,b \| d)  | **I**(a,b \| d) |
 |6| (a,d \| b)  | **I**(a,d \| b) |
 |7| (b,d \| a)  | **I**(b,d \| a) |
@@ -56,20 +55,18 @@ linear non-Shannon entropy inequality can be written as*
     + a<sub>12</sub> (a | bcd) + ... + a<sub>15</sub> (d | abc ) &ge; 0
 </td></tr></table>
 
- _such that all coefficients_ a<sub>1</sub> ... a<sub>15</sub> _are non-negative.
+<p><em>such that all coefficients</em> a<sub>1</sub> ... a<sub>15</sub> <em>are non-negative.
 Moreover, all such inequalities can be strengthened by setting the last four
-coefficients to zero:_ a<sub>12</sub> = a<sub>13</sub>
-= a<sub>14</sub> = a<sub>15</sub> = 0.
+coefficients to zero:</em> a<sub>12</sub> = a<sub>13</sub>
+= a<sub>14</sub> = a<sub>15</sub> = 0. </p>
 
-<br>
-
-Thus a linear non-Shannon entropy inequality can be specified by a sequence
-of the 11 non-negative coefficients as
+<p>Thus a linear non-Shannon entropy inequality can be specified by a sequence
+of the 11 non-negative coefficients as</p>
 
 <table><tr><td><sub>[a,b,c,d]</sub></td>
-<td>(a,b | c)</td><td>(a,c | b)</td><td>(b,c | a)</td>
-<td>(a,b | d)</td><td>(a,d | b)</td><td>(b,d | a)</td>
-<td>(c,d)</td><td>(c,d | a)</td><td>(c,d | b)</td><td>(a,b | cd)</td>
+<td><sub>(a,b | c)</sub></td><td><sub>(a,c | b)</sub></td><td><sub>(b,c | a)</sub></td>
+<td><sub>(a,b | d)</sub></td><td><sub>(a,d | b)</sub></td><td><sub>(b,d | a)</sub></td>
+<td><sub>(c,d)</td></sub><td><sub>(c,d | a)</sub></td><td><sub>(c,d | b)</sub></td><td><sub>(a,b | cd)</sub></td>
 <tr><td> a<sub>1</sub> </td>
 <td> a<sub>2</sub> </td><td> a<sub>3</sub> </td><td> a<sub>4</sub> </td>
 <td> a<sub>5</sub> </td><td> a<sub>6</sub> </td><td> a<sub>7</sub> </td>
