@@ -45,7 +45,8 @@ The basic Shannon inequalities imply that the natural coordinates
 2 &ndash; 15 always have non-negative values. Moreover for every 
 2 &le; i &le; 15 there is a distribution where the i-th coordinate is
 one, and all other coordinates are zero. (But this is not true for the
-first, the Ingleton coordinate).
+first, the Ingleton coordinate which can, and typically will, take negative
+values).
 
 **Theorem** *By renaming the random variables if necessary, every valid 
 linear non-Shannon entropy inequality can be written as*
@@ -67,20 +68,43 @@ of the 11 non-negative coefficients as</p>
 <td><sub>(a,b | c)</sub></td><td><sub>(a,c | b)</sub></td><td><sub>(b,c | a)</sub></td>
 <td><sub>(a,b | d)</sub></td><td><sub>(a,d | b)</sub></td><td><sub>(b,d | a)</sub></td>
 <td><sub>(c,d)</td></sub><td><sub>(c,d | a)</sub></td><td><sub>(c,d | b)</sub></td><td><sub>(a,b | cd)</sub></td>
-<tr><td> a<sub>1</sub> </td>
-<td> a<sub>2</sub> </td><td> a<sub>3</sub> </td><td> a<sub>4</sub> </td>
-<td> a<sub>5</sub> </td><td> a<sub>6</sub> </td><td> a<sub>7</sub> </td>
-<td> a<sub>8</sub> </td><td> a<sub>9</sub> </td><td> a<sub>10</sub> </td><td> a<sub>11</sub> </td></tr>
+<tr><td align="right"> a<sub>1</sub> </td>
+<td align="right"> a<sub>2</sub> </td><td> a<sub>3</sub> </td><td> a<sub>4</sub> </td>
+<td align="right"> a<sub>5</sub> </td><td> a<sub>6</sub> </td><td> a<sub>7</sub> </td>
+<td align="right"> a<sub>8</sub> </td><td> a<sub>9</sub> </td><td> a<sub>10</sub> </td><td> a<sub>11</sub> </td></tr>
 </table>
 
-The c &#8660; d swap of the random variables exchanges coordinates 2-3-4 and 5-6-7. The
-a &#8660; b swap exchanges the coordinate pairs 3-4, 6-7, and 9-10. Thus in any entropy
-inequality we can also make these exchanges in the coefficients and got another
-(equivalent) inequality; and only the lexicographically maximal one is shown in the
-listing.
+<p>The c &#8660; d swap of the random variables exchanges coordinates 2-3-4
+and 5-6-7.  The a &#8660; b swap exchanges the coordinate pairs 3-4, 6-7,
+and 9-10.  Thus in any entropy inequality we can also make these exchanges
+in the coefficients and got another (equivalent) inequality.</p>
 
-All inequalities have (non-negative) integer coefficients. A floating-point version is
-also presented where the Ingleton coordinate is normalized to 1.
+##### The Zhang &ndash; Yeung inequality
+
+The very first non-Shannon entropy inequality was discovered by Z. Zhang and
+R. W. Yeung in 1997. Using natural coordinates it can be written as
+
+[a,b,c,d] + **I**(a,b | c) + **I**(a,c | b) + **I**(b,c | a) &ge; 0,
+
+or, showing the a<sub>1</sub> ... a<sub>11</sub> coefficients only
+
+|coord:     |  1|  2|  3|  4|  5|  6|  7|  8|  9| 10| 11|
+|:-----:    |--:|--:|--:|--:|--:|--:|--:|--:|--:|--:|--:|
+|Zhang-Yeung|  1|  1|  1|  1|  0|  0|  0|  0|  0|  0|  0|
+|           |  1|  0|  0|  0|  1|  1|  1|  0|  0|  0|  0|
+
+
+##### Minimal entropy inequalities
+
+Non-negative linear combination of entropy inequalities is also an
+entropy inequality &ndash; which is the same as saying that the closure of
+the entropy region is a *convex* set.  When an entropy inequality is such a
+linear combination of other known entropy inequalities, then we say that it
+is *superseded*.
+
+All known entropy inequalities have (non-negative) integer coefficients. A
+floating-point version is also presented where the Ingleton coordinate is
+normalized to 1.
 
 
 
