@@ -56,19 +56,20 @@ linear non-Shannon entropy inequality can be written as*
     + a<sub>12</sub> (a | bcd) + ... + a<sub>15</sub> (d | abc ) &ge; 0
 </td></tr></table>
 
-*such that all coefficients* a<sub>1</sub> ... a<sub>15</sub> *are non-negative.
+ _such that all coefficients_ a<sub>1</sub> ... a<sub>15</sub> _are non-negative.
 Moreover, all such inequalities can be strengthened by setting the last four
-coefficients to zero:* a<sub>12</sub> = a<sub>13</sub>
+coefficients to zero:_ a<sub>12</sub> = a<sub>13</sub>
 = a<sub>14</sub> = a<sub>15</sub> = 0.
 
+<br>
 
 Thus a linear non-Shannon entropy inequality can be specified by a sequence
 of the 11 non-negative coefficients as
 
 <table><tr><td><sub>[a,b,c,d]</sub></td>
-<td><sub>(a,b | c)</sub></td><td><sub>(a,c | b)</sub></td><td><sub>(b,c | a)></sub></td>
+<td>(a,b | c)</td><td>(a,c | b)</td><td>(b,c | a)</td>
 <td>(a,b | d)</td><td>(a,d | b)</td><td>(b,d | a)</td>
-<td><sub>(c,d)</sub></td><td>(c,d | a)</td><td>(c,d | b)</td><td></sub>(a,b | cd)</sub></td>
+<td>(c,d)</td><td>(c,d | a)</td><td>(c,d | b)</td><td>(a,b | cd)</td>
 <tr><td> a<sub>1</sub> </td>
 <td> a<sub>2</sub> </td><td> a<sub>3</sub> </td><td> a<sub>4</sub> </td>
 <td> a<sub>5</sub> </td><td> a<sub>6</sub> </td><td> a<sub>7</sub> </td>
