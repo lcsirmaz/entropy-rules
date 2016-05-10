@@ -51,10 +51,9 @@ values).
 **Theorem** *By renaming the random variables if necessary, every valid 
 linear non-Shannon entropy inequality can be written as*
 
-<table><tr><td> a<sub>1</sub> [a,b,c,d] + a<sub>2</sub> (a,b | c) 
-    + a<sub>3</sub> (a,c | b) + ... + a<sub>11</sub> (a,b | cd)
-    + a<sub>12</sub> (a | bcd) + ... + a<sub>15</sub> (d | abc ) &ge; 0
-</td></tr></table>
+> a<sub>1</sub> [a,b,c,d] + a<sub>2</sub> (a,b | c) 
+>    + a<sub>3</sub> (a,c | b) + ... + a<sub>11</sub> (a,b | cd)
+>    + a<sub>12</sub> (a | bcd) + ... + a<sub>15</sub> (d | abc ) &ge; 0
 
 <p><em>such that all coefficients</em> a<sub>1</sub> ... a<sub>15</sub> <em>are non-negative.
 Moreover, all such inequalities can be strengthened by setting the last four
@@ -90,10 +89,10 @@ or, showing the a<sub>1</sub> ... a<sub>11</sub> coefficients only,
 
 |  1|  2|  3|  4|  5|  6|  7|  8|  9| 10| 11| Name |
 |--:|--:|--:|--:|--:|--:|--:|--:|--:|--:|--:|:-----|
-|  1|  1|  1|  1|  0|  0|  0|  0|  0|  0|  0|Zhang-Yeung |
+|  1|  1|  1|  1|  0|  0|  0|  0|  0|  0|  0|Zhang-Yeung inequality |
 |  1|  0|  0|  0|  1|  1|  1|  0|  0|  0|  0|Zhang-Yeung swapping c &#8660; d |
 
-The Zhang &ndash; Yequng inequality is symmetrical for the a &#8660; b
+The Zhang &ndash; Yeung inequality is symmetrical for the a &#8660; b
 swap, thus it has only two forms shown above. Other inequalities might have
 up to four different forms.
 
