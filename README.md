@@ -24,9 +24,9 @@ coordinates are defined as the following 15 entropy expressions:
 |6| (a,d \| b)  | **I**(a,d \| b) |
 |7| (b,d \| a)  | **I**(b,d \| a) |
 | |            |                 |
-|8| (c,d)       | **I**(c,d)  &ndash; the mutual information of c and d |
-|9| (c,d \| a)  | **I**(c,d \| a) |
-|10| (c,d \| b)  | **I**(c,d \| b) |
+|8| (c,d \| a)  | **I**(c,d \| a) |
+|9| (c,d \| b)  | **I**(c,d \| b) |
+|10| (c,d)       | **I**(c,d)  &ndash; the mutual information of c and d |
 |11| (a,b \| cd) | **I**(a,b \| cd) &ndash; the conditional mutual information of a and b  assuming cd |
 |  |           |                 |
 |12| (a \| bcd)  | **H**(a \| bcd) &ndash; the conditional entropy of a assuming bcd |
@@ -64,11 +64,11 @@ of the 11 non-negative coefficients as</p>
 <table><tr><td><sub>[a,b,c,d]</sub></td>
 <td><sub>(a,b | c)</sub></td><td><sub>(a,c | b)</sub></td><td><sub>(b,c | a)</sub></td>
 <td><sub>(a,b | d)</sub></td><td><sub>(a,d | b)</sub></td><td><sub>(b,d | a)</sub></td>
-<td><sub>(c,d)</td></sub><td><sub>(c,d | a)</sub></td><td><sub>(c,d | b)</sub></td><td><sub>(a,b | cd)</sub></td>
-<tr><td align="right"> a<sub>1</sub> </td>
-<td align="right"> a<sub>2</sub> </td><td> a<sub>3</sub> </td><td> a<sub>4</sub> </td>
-<td align="right"> a<sub>5</sub> </td><td> a<sub>6</sub> </td><td> a<sub>7</sub> </td>
-<td align="right"> a<sub>8</sub> </td><td> a<sub>9</sub> </td><td> a<sub>10</sub> </td><td> a<sub>11</sub> </td></tr>
+<td><sub>(c,d | a)</sub></td><td><sub>(c,d | b)</sub></td><td><sub>(c,d)</sub></td><td><sub>(a,b | cd)</sub></td>
+<tr><td align="center"> a<sub>1</sub> </td>
+<td align="center"> a<sub>2</sub> </td><td> a<sub>3</sub> </td><td> a<sub>4</sub> </td>
+<td align="center"> a<sub>5</sub> </td><td> a<sub>6</sub> </td><td> a<sub>7</sub> </td>
+<td align="center"> a<sub>8</sub> </td><td> a<sub>9</sub> </td><td> a<sub>10</sub> </td><td> a<sub>11</sub> </td></tr>
 </table>
 
 <p>The c &#8660; d swap of the random variables exchanges coordinates 2-3-4
@@ -81,7 +81,7 @@ in the coefficients and got another (equivalent) inequality.</p>
 The very first non-Shannon entropy inequality was discovered by Z. Zhang and
 R. W. Yeung in 1997. Using natural coordinates it can be written as
 
-> [a,b,c,d] + **I**(a,b | c) + **I**(a,c | b) + **I**(b,c | a) &ge; 0,
+> [a,b,c,d] + (a,b | c) + (a,c | b) + (b,c | a) &ge; 0,
 
 or, showing the a<sub>1</sub> ... a<sub>11</sub> coefficients only,
 
