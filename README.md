@@ -59,21 +59,21 @@ coefficients to zero:</em> a<sub>12</sub> = a<sub>13</sub>
 = a<sub>14</sub> = a<sub>15</sub> = 0. </p>
 
 <p>Thus a linear non-Shannon entropy inequality can be specified by a sequence
-of the 11 non-negative coefficients as</p>
+of 11 non-negative coefficients as</p>
 
 <table><tr><td><sub>[a,b,c,d]</sub></td>
 <td><sub>(a,b | c)</sub></td><td><sub>(a,c | b)</sub></td><td><sub>(b,c | a)</sub></td>
 <td><sub>(a,b | d)</sub></td><td><sub>(a,d | b)</sub></td><td><sub>(b,d | a)</sub></td>
 <td><sub>(c,d | a)</sub></td><td><sub>(c,d | b)</sub></td><td><sub>(c,d)</sub></td><td><sub>(a,b | cd)</sub></td>
 <tr><td align="center"> a<sub>1</sub> </td>
-<td align="center"> a<sub>2</sub> </td><td> a<sub>3</sub> </td><td> a<sub>4</sub> </td>
-<td align="center"> a<sub>5</sub> </td><td> a<sub>6</sub> </td><td> a<sub>7</sub> </td>
-<td align="center"> a<sub>8</sub> </td><td> a<sub>9</sub> </td><td> a<sub>10</sub> </td><td> a<sub>11</sub> </td></tr>
+<td align="center"> a<sub>2</sub> </td><td align="center"> a<sub>3</sub> </td><td align="center"> a<sub>4</sub> </td>
+<td align="center"> a<sub>5</sub> </td><td align="center"> a<sub>6</sub> </td><td align="center"> a<sub>7</sub> </td>
+<td align="center"> a<sub>8</sub> </td><td align="center"> a<sub>9</sub> </td><td align="center"> a<sub>10</sub> </td><td align="center"> a<sub>11</sub> </td></tr>
 </table>
 
 <p>The c &#8660; d swap of the random variables exchanges coordinates 2-3-4
 and 5-6-7.  The a &#8660; b swap exchanges the coordinate pairs 3-4, 6-7,
-and 9-10.  Thus in any entropy inequality we can also make these exchanges
+and 8-9.  Thus in any entropy inequality we can also make these exchanges
 in the coefficients and got another (equivalent) inequality.</p>
 
 #### The Zhang &ndash; Yeung inequality
