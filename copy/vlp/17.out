@@ -1,0 +1,36 @@
+I    5.00] Elapsed: 5.00, vertices: 5, facets final: 8, pending: 21
+I   10.04] Elapsed: 10.04, vertices: 14, facets final: 15, pending: 65
+I   15.26] Elapsed: 15.26, vertices: 25, facets final: 24, pending: 83
+I   20.39] Elapsed: 20.39, vertices: 33, facets final: 40, pending: 80
+I   25.76] Elapsed: 25.76, vertices: 41, facets final: 55, pending: 69
+I   30.84] Elapsed: 30.84, vertices: 44, facets final: 72, pending: 56
+I   35.87] Elapsed: 35.87, vertices: 51, facets final: 89, pending: 44
+I   41.09] Elapsed: 41.09, vertices: 60, facets final: 113, pending: 6
+I   42.07] Elapsed: 42.07, vertices: 63, facets final: 117, pending: 0
+
+--------------------------------
+Problem completed
+ name                    17.vlp
+ output                  copy/vlp/17.res
+ rows, cols, objs        366, 3897, 10
+ vertices, facets        63, 117
+ total time              42.07
+--------------------------------
+Statistics
+LP:
+ oracle calls            180
+   avg iterations/calls  496.13
+ total oracle time       42.05
+Combinatorics:
+ vertices added          63
+ facets probed           180
+ facets # max            136
+ memory allocated        975.68k
+ storage expansion
+   vertices # / upto     1 / 124
+   facets   # / upto     1 / 4092
+ facet manipulating
+   added avg / max       6.11 / 19.00
+   compressed            0
+ number of ridge tests
+   avg / max             359.24 / 1.56k

@@ -1,0 +1,56 @@
+I    5.10] Elapsed: 5.10, vertices: 9, facets final: 6, pending: 58
+I   10.15] Elapsed: 10.15, vertices: 21, facets final: 11, pending: 250
+I   15.16] Elapsed: 15.16, vertices: 43, facets final: 13, pending: 506
+I   20.23] Elapsed: 20.23, vertices: 62, facets final: 21, pending: 625
+I   25.39] Elapsed: 25.39, vertices: 77, facets final: 32, pending: 749
+I   30.54] Elapsed: 30.54, vertices: 91, facets final: 45, pending: 738
+I   33.47] recalculating facets...
+I   35.68] Elapsed: 35.68, vertices: 106, facets final: 58, pending: 621
+I   40.82] Elapsed: 40.82, vertices: 121, facets final: 70, pending: 648
+I   46.03] Elapsed: 46.03, vertices: 139, facets final: 80, pending: 527
+I   51.08] Elapsed: 51.08, vertices: 153, facets final: 89, pending: 463
+I   56.10] Elapsed: 56.10, vertices: 168, facets final: 101, pending: 432
+I   61.13] Elapsed: 1:01, vertices: 175, facets final: 116, pending: 449
+I   66.17] Elapsed: 1:06, vertices: 187, facets final: 129, pending: 451
+I   71.27] Elapsed: 1:11, vertices: 197, facets final: 150, pending: 396
+I   72.75] recalculating facets...
+I   76.28] Elapsed: 1:16, vertices: 213, facets final: 158, pending: 314
+I   81.29] Elapsed: 1:21, vertices: 220, facets final: 176, pending: 277
+I   86.31] Elapsed: 1:26, vertices: 228, facets final: 193, pending: 269
+I   91.59] Elapsed: 1:32, vertices: 238, facets final: 212, pending: 244
+I   96.68] Elapsed: 1:37, vertices: 246, facets final: 228, pending: 214
+I  101.90] Elapsed: 1:42, vertices: 253, facets final: 244, pending: 200
+I  107.05] Elapsed: 1:47, vertices: 265, facets final: 261, pending: 155
+I  112.23] Elapsed: 1:52, vertices: 273, facets final: 279, pending: 144
+I  117.39] Elapsed: 1:57, vertices: 279, facets final: 300, pending: 109
+I  122.55] Elapsed: 2:03, vertices: 288, facets final: 324, pending: 75
+I  125.92] recalculating facets...
+I  127.56] Elapsed: 2:08, vertices: 305, facets final: 348, pending: 26
+I  130.51] Elapsed: 2:11, vertices: 318, facets final: 355, pending: 0
+
+--------------------------------
+Problem completed
+ name                    22.vlp
+ output                  copy/vlp/22.res
+ rows, cols, objs        374, 4007, 10
+ vertices, facets        318, 355
+ total time              2:11
+--------------------------------
+Statistics
+LP:
+ oracle calls            673
+   avg iterations/calls  420.06
+ total oracle time       2:10
+Combinatorics:
+ vertices added          318
+ facets probed           673
+ facets # max            823
+ memory allocated        1.42M
+ storage expansion
+   vertices # / upto     3 / 380
+   facets   # / upto     1 / 4092
+ facet manipulating
+   added avg / max       17.02 / 124.00
+   compressed            1
+ number of ridge tests
+   avg / max             8.41k / 74.34k

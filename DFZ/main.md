@@ -14,50 +14,50 @@ Dougherty - Freiling - Zeger inequalities
 |8 | 2 | 2 | 3 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | rs=ac:bd;t=b:adr | |
 |9 | 2 | 2 | 2 | 1 | 0 | 0 | 3 | 0 | 0 | 0 | 0 | rs=cd:ab;t=a:bcs | |
 |10 | 3 | 4 | 4 | 1 | 1 | 1 | 0 | 0 | 0 | 0 | 0 | r=c:ab;s=r:ac;t=r:ad | |
-|11 | 4 | 2 | 11 | 3 | 2 | 2 | 0 | 0 | 0 | 0 | 0 | r=c:ab;s=c:abr;t=a:bdrs | |
+|11 | 4 | 2 | 11 | 3 | 2 | 2 | 0 | 0 | 0 | 0 | 0 | r=c:ab;s=c:abr;t=a:bdrs | YES |
 |12 | 3 | 3 | 3 | 1 | 1 | 1 | 0 | 5 | 0 | 0 | 0 | rs=ac:bd;tu=ds:bcr | |
 |13 | 7 | 1 | 12 | 12 | 0 | 5 | 5 | 0 | 0 | 0 | 0 | rs=cd:ab;tuv=crs:ab | |
 |14 | 5 | 9 | 9 | 1 | 2 | 2 | 0 | 0 | 0 | 0 | 0 | rs=cd:ab;tu=cd:ar | |
-|15 | 6 | 1 | 11 | 11 | 0 | 3 | 3 | 0 | 0 | 0 | 0 | rs=cd:ab;tu=(cr)(dr):ab | |
-|16 | 3 | 3 | 2 | 0 | 1 | 6 | 3 | 0 | 0 | 0 | 0 | r=c:ab;st=cd:abr;u=(cr):at | |
+|15 | 6 | 1 | 11 | 11 | 0 | 3 | 3 | 0 | 0 | 0 | 0 | rs=cd:ab;tu=(cr)(dr):ab | YES |
+|16 | 3 | 3 | 2 | 0 | 1 | 6 | 3 | 0 | 0 | 0 | 0 | r=c:ab;st=cd:abr;u=(cr):at | YES |
 |17 | 11 | 12 | 28 | 3 | 0 | 7 | 5 | 0 | 0 | 0 | 0 | r=a:bc;st=cd:abr;u=b:acrt | |
 |18 | 5 | 1 | 8 | 7 | 0 | 3 | 2 | 0 | 0 | 0 | 0 | r=c:ab;st=cd:abr;u=a:bcrt | |
-|19 | 6 | 6 | 6 | 3 | 0 | 4 | 3 | 0 | 0 | 0 | 0 | r=a:bc;st=cd:ab;u=a:bct | |
-|20 | 4 | 6 | 6 | 0 | 1 | 16 | 4 | 0 | 0 | 0 | 0 | r=a:bc;st=ac:bdr;u=(as):bdr | |
+|19 | 6 | 6 | 6 | 3 | 0 | 4 | 3 | 0 | 0 | 0 | 0 | r=a:bc;st=cd:ab;u=a:bct | YES |
+|20 | 4 | 6 | 6 | 0 | 1 | 16 | 4 | 0 | 0 | 0 | 0 | r=a:bc;st=ac:bdr;u=(as):bdr | YES |
 |21 | 3 | 3 | 5 | 1 | 2 | 3 | 0 | 0 | 0 | 0 | 0 | r=c:ab;st=ac:bdr;u=r:ads | |
 |22 | 4 | 9 | 7 | 1 | 0 | 2 | 2 | 0 | 0 | 0 | 0 | r=a:bc;st=cd:ab;u=b:acrs | |
 |23 | 4 | 1 | 7 | 6 | 0 | 1 | 1 | 0 | 0 | 0 | 0 | r=c:ab;st=cd:ab;u=a:bcrs | |
 |24 | 4 | 6 | 6 | 0 | 4 | 4 | 1 | 0 | 0 | 0 | 0 | r=c:ab;st=ac:bd;u=r:bs | |
 |25 | 5 | 11 | 13 | 1 | 0 | 1 | 1 | 0 | 0 | 0 | 0 | r=a:bc;st=cd:abr;u=s:acr | |
-|26 | 5 | 1 | 11 | 11 | 0 | 1 | 1 | 0 | 0 | 0 | 0 | r=c:ab;st=cd:ab;u=(cs):abr | |
+|26 | 5 | 1 | 11 | 11 | 0 | 1 | 1 | 0 | 0 | 0 | 0 | r=c:ab;st=cd:ab;u=(cs):abr | YES |
 |27 | 2 | 2 | 5 | 0 | 1 | 4 | 1 | 0 | 0 | 0 | 0 | rs=cd:ab;t=c:abrs;u=a:dst | |
 |28 | 4 | 1 | 6 | 4 | 0 | 2 | 4 | 0 | 0 | 0 | 0 | rs=cd:ab;t=c:abrs;u=a:bdst | |
 |29 | 4 | 3 | 4 | 2 | 0 | 1 | 1 | 7 | 0 | 0 | 0 | rs=ac:bd;t=d:bcr;u=b:rst | |
 |30 | 2 | 1 | 3 | 1 | 0 | 3 | 2 | 0 | 0 | 0 | 0 | rs=cd:ab;t=c:abrs;u=a:bdst | |
-|31 | 4 | 6 | 3 | 2 | 5 | 0 | 9 | 0 | 0 | 0 | 0 | rs=cd:ab;t=c:as;u=r:bdst | |
-|32 | 4 | 3 | 4 | 3 | 1 | 0 | 5 | 0 | 0 | 0 | 0 | rs=cd:ab;t=a:bcs;u=d:abrst | |
-|33 | 3 | 2 | 4 | 2 | 0 | 0 | 0 | 4 | 0 | 0 | 0 | rs=ac:bd;t=d:abs;u=a:bdrst | |
+|31 | 4 | 6 | 3 | 2 | 5 | 0 | 9 | 0 | 0 | 0 | 0 | rs=cd:ab;t=c:as;u=r:bdst | YES |
+|32 | 4 | 3 | 4 | 3 | 1 | 0 | 5 | 0 | 0 | 0 | 0 | rs=cd:ab;t=a:bcs;u=d:abrst | YES |
+|33 | 3 | 2 | 4 | 2 | 0 | 0 | 0 | 4 | 0 | 0 | 0 | rs=ac:bd;t=d:abs;u=a:bdrst | YES |
 |34 | 5 | 9 | 11 | 1 | 0 | 2 | 2 | 0 | 0 | 0 | 0 | rs=cd:ab;t=a:bcr;u=a:bcrt | |
 |35 | 6 | 9 | 10 | 2 | 0 | 0 | 0 | 11 | 0 | 0 | 0 | rs=ac:bd;t=d:bcr;u=b:adrt | |
 |36 | 11 | 20 | 18 | 3 | 2 | 4 | 0 | 0 | 0 | 0 | 0 | rs=cd:ab;t=c:ar;u=d:art | |
 |37 | 18 | 20 | 31 | 6 | 0 | 6 | 6 | 0 | 0 | 0 | 0 | rs=cd:ab;t=a:bcr;u=b:acrt | |
-|38 | 4 | 5 | 3 | 2 | 4 | 4 | 0 | 0 | 0 | 0 | 0 | rs=cd:ab;t=c:as;u=r:bst | |
-|39 | 5 | 7 | 3 | 3 | 5 | 9 | 0 | 0 | 0 | 0 | 0 | rs=cd:ab;t=c:as;u=r:bdst | |
-|40 | 8 | 11 | 6 | 4 | 1 | 14 | 0 | 0 | 0 | 0 | 0 | rs=cd:ab;t=a:bcs;u=a:bcst | |
+|38 | 4 | 5 | 3 | 2 | 4 | 4 | 0 | 0 | 0 | 0 | 0 | rs=cd:ab;t=c:as;u=r:bst | YES |
+|39 | 5 | 7 | 3 | 3 | 5 | 9 | 0 | 0 | 0 | 0 | 0 | rs=cd:ab;t=c:as;u=r:bdst | YES |
+|40 | 8 | 11 | 6 | 4 | 1 | 14 | 0 | 0 | 0 | 0 | 0 | rs=cd:ab;t=a:bcs;u=a:bcst | YES |
 |41 | 3 | 2 | 4 | 2 | 1 | 1 | 0 | 0 | 0 | 0 | 0 | rs=cd:ab;t=c:as;u=b:adst | |
 |42 | 7 | 12 | 8 | 1 | 2 | 8 | 2 | 0 | 0 | 0 | 0 | rs=cd:ab;t=c:as;u=d:ast | |
 |43 | 6 | 10 | 9 | 2 | 0 | 0 | 11 | 0 | 0 | 0 | 0 | rs=cd:ab;t=a:bcs;u=b:adst | |
-|44 | 7 | 1 | 11 | 11 | 0 | 7 | 7 | 0 | 0 | 0 | 0 | rs=cd:ab;t=c:abrs;u=(dr):abt | |
+|44 | 7 | 1 | 11 | 11 | 0 | 7 | 7 | 0 | 0 | 0 | 0 | rs=cd:ab;t=c:abrs;u=(dr):abt | YES |
 |45 | 5 | 3 | 10 | 3 | 0 | 1 | 1 | 0 | 0 | 0 | 0 | rs=cd:ab;t=c:ar;u=b:acrt | |
 |46 | 4 | 6 | 10 | 1 | 0 | 1 | 4 | 0 | 0 | 0 | 0 | rs=cd:ab;t=a:bcr;u=b:adrt | |
-|47 | 8 | 1 | 14 | 14 | 0 | 8 | 8 | 0 | 0 | 0 | 0 | rs=cd:ab;t=c:abrs;u=(dr):abt | |
+|47 | 8 | 1 | 14 | 14 | 0 | 8 | 8 | 0 | 0 | 0 | 0 | rs=cd:ab;t=c:abrs;u=(dr):abt | YES |
 |48 | 3 | 5 | 5 | 0 | 2 | 4 | 1 | 0 | 0 | 0 | 0 | rs=cd:ab;t=c:as;u=a:bdst | |
 |49 | 6 | 5 | 10 | 2 | 0 | 6 | 9 | 0 | 0 | 0 | 0 | rs=cd:ab;t=c:abs;u=a:bdst | |
-|50 | 7 | 12 | 11 | 2 | 0 | 5 | 10 | 0 | 0 | 0 | 0 | rs=cd:ab;t=a:bcs;u=b:adst | |
+|50 | 7 | 12 | 11 | 2 | 0 | 5 | 10 | 0 | 0 | 0 | 0 | rs=cd:ab;t=a:bcs;u=b:adst | YES |
 |51 | 6 | 7 | 10 | 2 | 0 | 2 | 2 | 0 | 0 | 0 | 0 | rs=cd:ab;t=a:bcr;u=b:acrt | |
-|52 | 9 | 3 | 16 | 7 | 0 | 13 | 11 | 0 | 0 | 0 | 0 | rs=cd:ab;t=(cs):ab;u=a:bdst | |
-|53 | 7 | 1 | 16 | 16 | 0 | 3 | 3 | 0 | 0 | 0 | 0 | rs=cd:ab;t=(cr):ab;u=c:abrt | |
-|54 | 5 | 4 | 4 | 4 | 0 | 3 | 1 | 0 | 0 | 0 | 0 | rs=cd:ab;t=a:bcs;u=(cs):abrt | |
+|52 | 9 | 3 | 16 | 7 | 0 | 13 | 11 | 0 | 0 | 0 | 0 | rs=cd:ab;t=(cs):ab;u=a:bdst | YES |
+|53 | 7 | 1 | 16 | 16 | 0 | 3 | 3 | 0 | 0 | 0 | 0 | rs=cd:ab;t=(cr):ab;u=c:abrt | YES |
+|54 | 5 | 4 | 4 | 4 | 0 | 3 | 1 | 0 | 0 | 0 | 0 | rs=cd:ab;t=a:bcs;u=(cs):abrt | YES |
 |55 | 8 | 9 | 7 | 3 | 8 | 8 | 0 | 0 | 0 | 0 | 0 | rs=cd:ab;t=c:as;u=c:bst | |
 |56 | 3 | 6 | 2 | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | rs=ac:bd;t=a:br;u=d:abrt | |
 |57 | 9 | 8 | 15 | 3 | 0 | 15 | 5 | 0 | 0 | 0 | 0 | rs=cd:ab;t=c:abrs;u=a:bdst | |
@@ -65,48 +65,48 @@ Dougherty - Freiling - Zeger inequalities
 |59 | 7 | 9 | 12 | 2 | 0 | 4 | 3 | 0 | 0 | 0 | 0 | rs=cd:ab;t=a:bcr;u=b:adst | |
 |60 | 3 | 2 | 6 | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | rs=ac:bd;t=a:dr;u=b:adrt | |
 |61 | 6 | 5 | 10 | 2 | 0 | 9 | 4 | 0 | 0 | 0 | 0 | rs=cd:ab;t=c:abrs;u=a:bdst | |
-|62 | 6 | 1 | 13 | 13 | 0 | 2 | 2 | 0 | 0 | 0 | 0 | rs=cd:ab;t=(cr):ab;u=c:abrst | |
+|62 | 6 | 1 | 13 | 13 | 0 | 2 | 2 | 0 | 0 | 0 | 0 | rs=cd:ab;t=(cr):ab;u=c:abrst | YES |
 |63 | 10 | 13 | 16 | 3 | 0 | 5 | 5 | 0 | 0 | 0 | 0 | rs=cd:ab;t=a:bcr;u=d:abst | |
 |64 | 4 | 2 | 3 | 0 | 1 | 9 | 6 | 0 | 0 | 0 | 0 | rs=cd:ab;t=a:bcr;u=a:bdst | |
 |65 | 9 | 10 | 8 | 4 | 6 | 7 | 0 | 0 | 0 | 0 | 0 | rs=cd:ab;t=c:as;u=s:act | |
-|66 | 10 | 1 | 22 | 22 | 0 | 9 | 9 | 0 | 0 | 0 | 0 | rs=cd:ab;t=(cr):ab;u=(dr):abt | |
+|66 | 10 | 1 | 22 | 22 | 0 | 9 | 9 | 0 | 0 | 0 | 0 | rs=cd:ab;t=(cr):ab;u=(dr):abt | YES |
 |67 | 5 | 15 | 15 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | rs=ac:bd;t=(ar):bd;u=(ar):bdt | |
 |68 | 4 | 4 | 11 | 1 | 0 | 4 | 4 | 0 | 0 | 0 | 0 | rs=cd:ab;t=a:bcr;u=s:abcdt | |
 |69 | 7 | 9 | 12 | 2 | 0 | 3 | 4 | 0 | 0 | 0 | 0 | rs=cd:ab;t=a:bcr;u=a:bdst | |
 |70 | 4 | 5 | 8 | 1 | 0 | 3 | 2 | 0 | 0 | 0 | 0 | rs=cd:ab;t=a:bcr;u=b:adst | |
-|71 | 6 | 6 | 5 | 5 | 0 | 3 | 0 | 0 | 0 | 0 | 0 | rs=cd:ab;t=a:bcs;u=c:abrt | |
+|71 | 6 | 6 | 5 | 5 | 0 | 3 | 0 | 0 | 0 | 0 | 0 | rs=cd:ab;t=a:bcs;u=c:abrt | YES |
 |72 | 7 | 7 | 6 | 0 | 5 | 10 | 3 | 0 | 0 | 0 | 0 | rs=cd:ab;t=c:as;u=r:act | |
 |73 | 13 | 13 | 10 | 0 | 11 | 16 | 5 | 0 | 0 | 0 | 0 | rs=cd:ab;t=c:as;u=s:act | |
-|74 | 6 | 8 | 4 | 3 | 6 | 11 | 0 | 0 | 0 | 0 | 0 | rs=cd:ab;t=c:as;u=c:bdt | |
-|75 | 10 | 8 | 11 | 7 | 3 | 3 | 0 | 0 | 0 | 0 | 0 | rs=cd:ab;t=a:bcs;u=s:abcdt | |
+|74 | 6 | 8 | 4 | 3 | 6 | 11 | 0 | 0 | 0 | 0 | 0 | rs=cd:ab;t=c:as;u=c:bdt | YES |
+|75 | 10 | 8 | 11 | 7 | 3 | 3 | 0 | 0 | 0 | 0 | 0 | rs=cd:ab;t=a:bcs;u=s:abcdt | YES |
 |76 | 12 | 11 | 9 | 0 | 10 | 14 | 5 | 0 | 0 | 0 | 0 | rs=cd:ab;t=r:ad;u=a:bdrt | |
 |77 | 4 | 10 | 9 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | rs=ac:bd;t=(ar):bd;u=d:abrt | |
 |78 | 6 | 5 | 10 | 2 | 0 | 8 | 5 | 0 | 0 | 0 | 0 | rs=cd:ab;t=c:abrs;u=a:bdst | |
-|79 | 5 | 6 | 4 | 2 | 5 | 8 | 0 | 0 | 0 | 0 | 0 | rs=cd:ab;t=c:as;u=c:bdt | |
+|79 | 5 | 6 | 4 | 2 | 5 | 8 | 0 | 0 | 0 | 0 | 0 | rs=cd:ab;t=c:as;u=c:bdt | YES |
 |80 | 8 | 6 | 13 | 4 | 4 | 8 | 0 | 0 | 0 | 0 | 0 | rs=cd:ab;t=a:bcs;u=a:bdrt | |
-|81 | 10 | 10 | 9 | 6 | 2 | 7 | 0 | 0 | 0 | 0 | 0 | rs=cd:ab;t=a:bcs;u=c:abrt | |
+|81 | 10 | 10 | 9 | 6 | 2 | 7 | 0 | 0 | 0 | 0 | 0 | rs=cd:ab;t=a:bcs;u=c:abrt | YES |
 |82 | 8 | 9 | 9 | 5 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | rs=ac:bd;t=d:abr;u=d:abrt | |
 |83 | 3 | 5 | 4 | 1 | 3 | 0 | 7 | 0 | 0 | 0 | 0 | rs=cd:ab;t=c:as;u=t:cs | |
-|84 | 8 | 1 | 15 | 15 | 0 | 6 | 6 | 0 | 0 | 0 | 0 | rs=cd:ab;t=(cr):ab;u=(dr):abt | |
-|85 | 7 | 1 | 21 | 21 | 0 | 2 | 2 | 0 | 0 | 0 | 0 | rs=cd:ab;t=(cr):ab;u=(cr):abt | |
+|84 | 8 | 1 | 15 | 15 | 0 | 6 | 6 | 0 | 0 | 0 | 0 | rs=cd:ab;t=(cr):ab;u=(dr):abt | YES |
+|85 | 7 | 1 | 21 | 21 | 0 | 2 | 2 | 0 | 0 | 0 | 0 | rs=cd:ab;t=(cr):ab;u=(cr):abt | YES |
 |86 | 5 | 1 | 15 | 15 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | rs=cd:ab;t=(cr):ab;u=(cr):abt | |
 |87 | 5 | 1 | 5 | 5 | 0 | 10 | 10 | 0 | 0 | 0 | 0 | rs=cd:ab;t=(cs):ab;u=(ds):abt | |
-|88 | 9 | 1 | 19 | 19 | 0 | 7 | 7 | 0 | 0 | 0 | 0 | rs=cd:ab;t=(cr):ab;u=(dr):abt | |
-|89 | 6 | 1 | 17 | 17 | 0 | 1 | 1 | 0 | 0 | 0 | 0 | rs=cd:ab;t=(cr):ab;u=(cr):abt | |
+|88 | 9 | 1 | 19 | 19 | 0 | 7 | 7 | 0 | 0 | 0 | 0 | rs=cd:ab;t=(cr):ab;u=(dr):abt | YES |
+|89 | 6 | 1 | 17 | 17 | 0 | 1 | 1 | 0 | 0 | 0 | 0 | rs=cd:ab;t=(cr):ab;u=(cr):abt | YES |
 |90 | 10 | 7 | 11 | 11 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | rs=cd:ab;t=a:bcr;u=a:bcrt | |
-|91 | 4 | 5 | 3 | 2 | 1 | 7 | 0 | 0 | 0 | 0 | 0 | rs=cd:ab;t=a:bcs;u=(at):bcs | |
-|92 | 4 | 2 | 5 | 4 | 0 | 4 | 0 | 0 | 0 | 0 | 0 | rs=cd:ab;t=a:bcs;u=(bt):acr | |
+|91 | 4 | 5 | 3 | 2 | 1 | 7 | 0 | 0 | 0 | 0 | 0 | rs=cd:ab;t=a:bcs;u=(at):bcs | YES |
+|92 | 4 | 2 | 5 | 4 | 0 | 4 | 0 | 0 | 0 | 0 | 0 | rs=cd:ab;t=a:bcs;u=(bt):acr | YES |
 |93 | 4 | 1 | 10 | 9 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | rs=cd:ab;t=(cr):ab;u=a:bcrt | |
 |94 | 3 | 1 | 5 | 5 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | rs=cd:ab;t=a:bcr;u=t:acr | |
 |95 | 6 | 7 | 5 | 3 | 2 | 0 | 2 | 10 | 0 | 0 | 0 | rs=ac:bd;t=d:bcr;u=t:rs | |
 |96 | 3 | 1 | 5 | 4 | 1 | 0 | 1 | 0 | 0 | 0 | 0 | rs=cd:ab;t=a:bcr;u=t:acs | |
 |97 | 7 | 18 | 18 | 1 | 6 | 6 | 0 | 0 | 0 | 0 | 0 | rs=cd:ab;t=c:ar;u=t:ad | |
-|98 | 10 | 7 | 9 | 8 | 0 | 2 | 4 | 0 | 0 | 0 | 0 | rs=cd:ab;t=a:bcs;u=a:bcst | |
+|98 | 10 | 7 | 9 | 8 | 0 | 2 | 4 | 0 | 0 | 0 | 0 | rs=cd:ab;t=a:bcs;u=a:bcst | YES |
 |99 | 9 | 7 | 14 | 4 | 6 | 9 | 0 | 0 | 0 | 0 | 0 | rs=cd:ab;t=a:bcs;u=(rt):ad | |
-|100 | 9 | 1 | 18 | 18 | 0 | 8 | 8 | 0 | 0 | 0 | 0 | rs=cd:ab;t=(cr):ab;u=(cs):abt | |
-|101 | 7 | 8 | 6 | 3 | 5 | 7 | 0 | 0 | 0 | 0 | 0 | rs=cd:ab;t=c:as;u=t:cs | |
+|100 | 9 | 1 | 18 | 18 | 0 | 8 | 8 | 0 | 0 | 0 | 0 | rs=cd:ab;t=(cr):ab;u=(cs):abt | YES |
+|101 | 7 | 8 | 6 | 3 | 5 | 7 | 0 | 0 | 0 | 0 | 0 | rs=cd:ab;t=c:as;u=t:cs | YES |
 |102 | 3 | 3 | 5 | 1 | 0 | 1 | 3 | 0 | 0 | 0 | 0 | rs=cd:ab;t=c:abrs;u=t:adr | |
-|103 | 5 | 5 | 5 | 0 | 4 | 6 | 2 | 0 | 0 | 0 | 0 | rs=cd:ab;t=c:as;u=t:abc | |
+|103 | 5 | 5 | 5 | 0 | 4 | 6 | 2 | 0 | 0 | 0 | 0 | rs=cd:ab;t=c:as;u=t:abc | YES |
 |104 | 7 | 28 | 28 | 1 | 4 | 4 | 0 | 0 | 0 | 0 | 0 | rs=cd:ab;t=r:ac;u=s:at | |
 |105 | 4 | 9 | 8 | 0 | 3 | 5 | 1 | 0 | 0 | 0 | 0 | rs=cd:ab;t=c:as;u=t:ad | |
 |106 | 7 | 12 | 11 | 2 | 0 | 1 | 12 | 0 | 0 | 0 | 0 | rs=cd:ab;t=a:bcs;u=b:acrt | |
@@ -119,102 +119,102 @@ Dougherty - Freiling - Zeger inequalities
 |113 | 5 | 10 | 10 | 0 | 5 | 5 | 1 | 0 | 0 | 0 | 0 | rs=cd:ab;t=c:as;u=t:ad | |
 |114 | 4 | 7 | 7 | 1 | 0 | 4 | 5 | 0 | 0 | 0 | 0 | rs=cd:ab;t=a:bcs;u=t:br | |
 |115 | 8 | 9 | 7 | 4 | 2 | 0 | 2 | 12 | 0 | 0 | 0 | rs=ac:bd;t=d:bcr;u=t:rs | |
-|116 | 7 | 1 | 9 | 9 | 0 | 14 | 14 | 0 | 0 | 0 | 0 | rs=cd:ab;t=(cs):ab;u=(ds):abt | |
-|117 | 4 | 3 | 2 | 0 | 1 | 10 | 6 | 0 | 0 | 0 | 0 | rs=cd:ab;t=(cr):ab;u=(rt):ad | |
+|116 | 7 | 1 | 9 | 9 | 0 | 14 | 14 | 0 | 0 | 0 | 0 | rs=cd:ab;t=(cs):ab;u=(ds):abt | YES |
+|117 | 4 | 3 | 2 | 0 | 1 | 10 | 6 | 0 | 0 | 0 | 0 | rs=cd:ab;t=(cr):ab;u=(rt):ad | YES |
 |118 | 10 | 16 | 16 | 3 | 0 | 1 | 18 | 0 | 0 | 0 | 0 | rs=cd:ab;t=a:bcs;u=b:adst | |
 |119 | 9 | 4 | 10 | 0 | 3 | 22 | 10 | 0 | 0 | 0 | 0 | rs=cd:ab;t=(cr):ab;u=a:bdst | |
 |120 | 3 | 4 | 2 | 2 | 0 | 0 | 0 | 2 | 0 | 0 | 0 | rs=ac:bd;t=d:abs;u=t:adr | |
-|121 | 7 | 3 | 2 | 0 | 2 | 16 | 10 | 0 | 0 | 0 | 0 | rs=cd:ab;t=(cr):ab;u=(rt):ad | |
+|121 | 7 | 3 | 2 | 0 | 2 | 16 | 10 | 0 | 0 | 0 | 0 | rs=cd:ab;t=(cr):ab;u=(rt):ad | YES |
 |122 | 6 | 3 | 6 | 4 | 0 | 3 | 4 | 0 | 0 | 0 | 0 | rs=cd:ab;t=a:bcs;u=t:acr | |
-|123 | 4 | 4 | 5 | 2 | 0 | 0 | 0 | 0 | 4 | 0 | 0 | rs=ac:bd;t=d:abs;u=(bt):adr | |
+|123 | 4 | 4 | 5 | 2 | 0 | 0 | 0 | 0 | 4 | 0 | 0 | rs=ac:bd;t=d:abs;u=(bt):adr | YES |
 |124 | 13 | 24 | 22 | 3 | 4 | 6 | 0 | 0 | 0 | 0 | 0 | rs=cd:ab;t=c:ar;u=d:art | |
 |125 | 8 | 2 | 23 | 12 | 0 | 1 | 4 | 0 | 0 | 0 | 0 | rs=cd:ab;t=(cr):ab;u=a:bcst | |
-|126 | 6 | 1 | 7 | 7 | 0 | 11 | 11 | 0 | 0 | 0 | 0 | rs=cd:ab;t=(cs):ab;u=(ds):abt | |
+|126 | 6 | 1 | 7 | 7 | 0 | 11 | 11 | 0 | 0 | 0 | 0 | rs=cd:ab;t=(cs):ab;u=(ds):abt | YES |
 |127 | 11 | 18 | 19 | 3 | 0 | 2 | 21 | 0 | 0 | 0 | 0 | rs=cd:ab;t=a:bcs;u=b:acrt | |
 |128 | 9 | 3 | 13 | 8 | 0 | 2 | 9 | 0 | 0 | 0 | 0 | rs=cd:ab;t=a:bcs;u=a:bcrt | |
 |129 | 4 | 4 | 2 | 0 | 3 | 5 | 2 | 0 | 0 | 0 | 0 | rs=cd:ab;t=r:ad;u=r:adt | |
 |130 | 4 | 7 | 7 | 1 | 0 | 1 | 7 | 0 | 0 | 0 | 0 | rs=cd:ab;t=a:bcs;u=b:acrt | |
-|131 | 8 | 6 | 7 | 6 | 0 | 2 | 4 | 0 | 0 | 0 | 0 | rs=cd:ab;t=a:bcs;u=c:abrst | |
+|131 | 8 | 6 | 7 | 6 | 0 | 2 | 4 | 0 | 0 | 0 | 0 | rs=cd:ab;t=a:bcs;u=c:abrst | YES |
 |132 | 6 | 2 | 6 | 5 | 0 | 4 | 5 | 0 | 0 | 0 | 0 | rs=cd:ab;t=a:bcs;u=t:acs | |
-|133 | 7 | 6 | 6 | 5 | 0 | 1 | 5 | 0 | 0 | 0 | 0 | rs=cd:ab;t=a:bcs;u=s:abcdt | |
-|134 | 12 | 4 | 25 | 18 | 0 | 3 | 0 | 0 | 0 | 0 | 0 | rs=cd:ab;t=(cr):ab;u=t:acs | |
-|135 | 8 | 4 | 9 | 5 | 0 | 4 | 8 | 0 | 0 | 0 | 0 | rs=cd:ab;t=a:bcs;u=t:acr | |
+|133 | 7 | 6 | 6 | 5 | 0 | 1 | 5 | 0 | 0 | 0 | 0 | rs=cd:ab;t=a:bcs;u=s:abcdt | YES |
+|134 | 12 | 4 | 25 | 18 | 0 | 3 | 0 | 0 | 0 | 0 | 0 | rs=cd:ab;t=(cr):ab;u=t:acs | YES |
+|135 | 8 | 4 | 9 | 5 | 0 | 4 | 8 | 0 | 0 | 0 | 0 | rs=cd:ab;t=a:bcs;u=t:acr | YES |
 |136 | 5 | 1 | 14 | 9 | 0 | 1 | 2 | 0 | 0 | 0 | 0 | rs=cd:ab;t=(cr):ab;u=a:bdrt | |
-|137 | 15 | 12 | 45 | 5 | 0 | 27 | 11 | 0 | 0 | 0 | 0 | rs=cd:ab;t=(cs):ab;u=a:bcrt | |
+|137 | 15 | 12 | 45 | 5 | 0 | 27 | 11 | 0 | 0 | 0 | 0 | rs=cd:ab;t=(cs):ab;u=a:bcrt | YES |
 |138 | 10 | 11 | 7 | 0 | 8 | 12 | 4 | 0 | 0 | 0 | 0 | rs=cd:ab;t=r:ad;u=r:adt | |
-|139 | 9 | 8 | 9 | 6 | 2 | 4 | 0 | 0 | 0 | 0 | 0 | rs=cd:ab;t=a:bcs;u=c:abrst | |
+|139 | 9 | 8 | 9 | 6 | 2 | 4 | 0 | 0 | 0 | 0 | 0 | rs=cd:ab;t=a:bcs;u=c:abrst | YES |
 |140 | 11 | 18 | 16 | 3 | 4 | 6 | 0 | 0 | 0 | 0 | 0 | rs=cd:ab;t=r:ad;u=s:adt | |
 |141 | 18 | 4 | 51 | 30 | 0 | 3 | 6 | 0 | 0 | 0 | 0 | rs=cd:ab;t=(cr):ab;u=a:bcst | |
 |142 | 3 | 3 | 6 | 1 | 0 | 1 | 1 | 0 | 0 | 0 | 0 | rs=ac:bd;t=b:adr;u=b:ars | |
 |143 | 18 | 14 | 16 | 13 | 0 | 2 | 13 | 0 | 0 | 0 | 0 | rs=cd:ab;t=a:bcs;u=(bt):acs | |
 |144 | 6 | 8 | 9 | 2 | 0 | 2 | 3 | 0 | 0 | 0 | 0 | rs=cd:ab;t=a:bcr;u=(ds):abt | |
-|145 | 14 | 10 | 14 | 13 | 0 | 0 | 11 | 0 | 0 | 0 | 0 | rs=cd:ab;t=a:bcs;u=(bt):acr | |
-|146 | 5 | 4 | 5 | 4 | 1 | 2 | 0 | 0 | 0 | 0 | 0 | rs=cd:ab;t=a:bcs;u=c:abrt | |
+|145 | 14 | 10 | 14 | 13 | 0 | 0 | 11 | 0 | 0 | 0 | 0 | rs=cd:ab;t=a:bcs;u=(bt):acr | YES |
+|146 | 5 | 4 | 5 | 4 | 1 | 2 | 0 | 0 | 0 | 0 | 0 | rs=cd:ab;t=a:bcs;u=c:abrt | YES |
 |147 | 6 | 11 | 9 | 2 | 3 | 0 | 3 | 0 | 0 | 0 | 0 | rs=cd:ab;t=c:ar;u=t:bd | |
 |148 | 4 | 7 | 7 | 1 | 0 | 2 | 6 | 0 | 0 | 0 | 0 | rs=cd:ab;t=a:bcs;u=t:br | |
-|149 | 18 | 19 | 15 | 0 | 12 | 20 | 12 | 0 | 0 | 0 | 0 | rs=cd:ab;t=c:as;u=b:acrt | |
-|150 | 8 | 2 | 22 | 13 | 0 | 1 | 2 | 0 | 0 | 0 | 0 | rs=cd:ab;t=(cr):ab;u=a:bdrt | |
+|149 | 18 | 19 | 15 | 0 | 12 | 20 | 12 | 0 | 0 | 0 | 0 | rs=cd:ab;t=c:as;u=b:acrt | YES |
+|150 | 8 | 2 | 22 | 13 | 0 | 1 | 2 | 0 | 0 | 0 | 0 | rs=cd:ab;t=(cr):ab;u=a:bdrt | YES |
 |151 | 5 | 3 | 5 | 3 | 0 | 2 | 5 | 0 | 0 | 0 | 0 | rs=cd:ab;t=a:bcs;u=t:acr | |
-|152 | 9 | 10 | 7 | 5 | 3 | 8 | 0 | 0 | 0 | 0 | 0 | rs=cd:ab;t=a:bcs;u=t:as | |
+|152 | 9 | 10 | 7 | 5 | 3 | 8 | 0 | 0 | 0 | 0 | 0 | rs=cd:ab;t=a:bcs;u=t:as | YES |
 |153 | 4 | 1 | 4 | 4 | 0 | 6 | 5 | 0 | 0 | 0 | 0 | rs=cd:ab;t=(cs):ab;u=a:bcrt | |
-|154 | 14 | 14 | 13 | 10 | 0 | 0 | 0 | 0 | 11 | 0 | 0 | rs=ac:bd;t=d:abs;u=(bt):adr | |
-|155 | 7 | 8 | 6 | 4 | 1 | 6 | 0 | 0 | 0 | 0 | 0 | rs=cd:ab;t=a:bcs;u=s:abcdt | |
+|154 | 14 | 14 | 13 | 10 | 0 | 0 | 0 | 0 | 11 | 0 | 0 | rs=ac:bd;t=d:abs;u=(bt):adr | YES |
+|155 | 7 | 8 | 6 | 4 | 1 | 6 | 0 | 0 | 0 | 0 | 0 | rs=cd:ab;t=a:bcs;u=s:abcdt | YES |
 |156 | 7 | 11 | 26 | 2 | 0 | 2 | 1 | 0 | 0 | 0 | 0 | rs=ac:bd;t=(ar):bd;u=a:bcrt | |
-|157 | 11 | 8 | 34 | 4 | 0 | 20 | 8 | 0 | 0 | 0 | 0 | rs=cd:ab;t=(cs):ab;u=a:bcrt | |
+|157 | 11 | 8 | 34 | 4 | 0 | 20 | 8 | 0 | 0 | 0 | 0 | rs=cd:ab;t=(cs):ab;u=a:bcrt | YES |
 |158 | 4 | 1 | 5 | 4 | 0 | 3 | 3 | 0 | 0 | 0 | 0 | rs=cd:ab;t=(cs):ab;u=a:bds | |
 |159 | 5 | 8 | 8 | 1 | 3 | 3 | 0 | 0 | 0 | 0 | 0 | rs=cd:ab;t=c:ar;u=r:ad | |
-|160 | 6 | 1 | 15 | 12 | 0 | 2 | 3 | 0 | 0 | 0 | 0 | rs=cd:ab;t=(cr):ab;u=a:bcst | |
-|161 | 14 | 7 | 17 | 9 | 0 | 6 | 12 | 0 | 0 | 0 | 0 | rs=cd:ab;t=a:bcs;u=t:acr | |
+|160 | 6 | 1 | 15 | 12 | 0 | 2 | 3 | 0 | 0 | 0 | 0 | rs=cd:ab;t=(cr):ab;u=a:bcst | YES |
+|161 | 14 | 7 | 17 | 9 | 0 | 6 | 12 | 0 | 0 | 0 | 0 | rs=cd:ab;t=a:bcs;u=t:acr | YES |
 |162 | 3 | 2 | 4 | 2 | 0 | 0 | 2 | 0 | 0 | 0 | 0 | rs=cd:ab;t=a:bcs;u=t:as | |
-|163 | 4 | 3 | 4 | 3 | 2 | 2 | 0 | 0 | 0 | 0 | 0 | rs=cd:ab;t=a:bcr;u=d:ar | |
-|164 | 19 | 21 | 17 | 0 | 13 | 21 | 12 | 0 | 0 | 0 | 0 | rs=cd:ab;t=c:as;u=b:acrt | |
-|165 | 10 | 10 | 9 | 7 | 1 | 5 | 0 | 0 | 0 | 0 | 0 | rs=cd:ab;t=a:bcs;u=c:abrt | |
+|163 | 4 | 3 | 4 | 3 | 2 | 2 | 0 | 0 | 0 | 0 | 0 | rs=cd:ab;t=a:bcr;u=d:ar | YES |
+|164 | 19 | 21 | 17 | 0 | 13 | 21 | 12 | 0 | 0 | 0 | 0 | rs=cd:ab;t=c:as;u=b:acrt | YES |
+|165 | 10 | 10 | 9 | 7 | 1 | 5 | 0 | 0 | 0 | 0 | 0 | rs=cd:ab;t=a:bcs;u=c:abrt | YES |
 |166 | 8 | 13 | 34 | 2 | 0 | 3 | 2 | 0 | 0 | 0 | 0 | rs=ac:bd;t=(ar):bd;u=r:abst | |
 |167 | 6 | 2 | 7 | 6 | 0 | 1 | 2 | 0 | 0 | 0 | 0 | rs=cd:ab;t=a:bcr;u=b:adr | |
 |168 | 4 | 6 | 3 | 2 | 1 | 0 | 1 | 0 | 4 | 0 | 0 | rs=ac:bd;t=a:bcr;u=d:abr | |
 |169 | 4 | 1 | 9 | 7 | 1 | 1 | 0 | 0 | 0 | 0 | 0 | rs=ac:bd;t=a:bcr;u=a:dr | |
-|170 | 5 | 3 | 5 | 3 | 0 | 4 | 4 | 0 | 0 | 0 | 0 | rs=cd:ab;t=a:bcs;u=t:acr | |
+|170 | 5 | 3 | 5 | 3 | 0 | 4 | 4 | 0 | 0 | 0 | 0 | rs=cd:ab;t=a:bcs;u=t:acr | YES |
 |171 | 4 | 9 | 9 | 1 | 0 | 0 | 7 | 0 | 0 | 0 | 0 | rs=cd:ab;t=a:bcs;u=t:bd | |
 |172 | 9 | 16 | 12 | 3 | 2 | 4 | 0 | 0 | 0 | 0 | 0 | rs=cd:ab;t=c:as;u=d:ast | |
 |173 | 5 | 1 | 7 | 6 | 0 | 4 | 4 | 0 | 0 | 0 | 0 | rs=cd:ab;t=(cs):ab;u=a:bds | |
 |174 | 6 | 3 | 9 | 5 | 2 | 2 | 0 | 0 | 0 | 0 | 0 | rs=cd:ab;t=a:bcr;u=r:bd | |
-|175 | 7 | 4 | 6 | 6 | 0 | 3 | 2 | 0 | 0 | 0 | 0 | rs=cd:ab;t=a:bcs;u=b:acs | |
+|175 | 7 | 4 | 6 | 6 | 0 | 3 | 2 | 0 | 0 | 0 | 0 | rs=cd:ab;t=a:bcs;u=b:acs | YES |
 |176 | 4 | 5 | 5 | 1 | 3 | 3 | 0 | 0 | 0 | 0 | 0 | rs=cd:ab;t=c:ar;u=r:ad | |
-|177 | 9 | 9 | 7 | 6 | 3 | 9 | 0 | 0 | 0 | 0 | 0 | rs=cd:ab;t=a:bcs;u=t:ac | |
-|178 | 3 | 4 | 2 | 2 | 0 | 4 | 0 | 0 | 0 | 0 | 0 | rs=cd:ab;t=a:bcs;u=s:abcdt | |
-|179 | 7 | 7 | 6 | 4 | 3 | 7 | 0 | 0 | 0 | 0 | 0 | rs=cd:ab;t=a:bcs;u=t:as | |
+|177 | 9 | 9 | 7 | 6 | 3 | 9 | 0 | 0 | 0 | 0 | 0 | rs=cd:ab;t=a:bcs;u=t:ac | YES |
+|178 | 3 | 4 | 2 | 2 | 0 | 4 | 0 | 0 | 0 | 0 | 0 | rs=cd:ab;t=a:bcs;u=s:abcdt | YES |
+|179 | 7 | 7 | 6 | 4 | 3 | 7 | 0 | 0 | 0 | 0 | 0 | rs=cd:ab;t=a:bcs;u=t:as | YES |
 |180 | 6 | 2 | 8 | 5 | 0 | 2 | 1 | 0 | 0 | 0 | 0 | rs=cd:ab;t=a:bcr;u=a:bcs | |
 |181 | 9 | 15 | 31 | 2 | 0 | 12 | 3 | 0 | 0 | 0 | 0 | rs=ac:bd;t=a:bcr;u=(ar):bdt | |
 |182 | 9 | 15 | 43 | 2 | 0 | 4 | 3 | 0 | 0 | 0 | 0 | rs=ac:bd;t=(ar):bd;u=r:abst | |
 |183 | 5 | 4 | 7 | 2 | 0 | 3 | 2 | 0 | 0 | 0 | 0 | rs=cd:ab;t=a:bcr;u=b:acs | |
-|184 | 13 | 7 | 14 | 8 | 0 | 6 | 12 | 0 | 0 | 0 | 0 | rs=cd:ab;t=a:bcs;u=t:ads | |
+|184 | 13 | 7 | 14 | 8 | 0 | 6 | 12 | 0 | 0 | 0 | 0 | rs=cd:ab;t=a:bcs;u=t:ads | YES |
 |185 | 5 | 2 | 7 | 4 | 0 | 1 | 2 | 0 | 0 | 0 | 0 | rs=cd:ab;t=a:bcr;u=a:bdr | |
-|186 | 21 | 11 | 24 | 13 | 0 | 10 | 18 | 0 | 0 | 0 | 0 | rs=cd:ab;t=a:bcs;u=t:acr | |
-|187 | 5 | 5 | 6 | 3 | 0 | 0 | 0 | 0 | 2 | 0 | 0 | rs=ac:bd;t=b:adr;u=d:bcr | |
+|186 | 21 | 11 | 24 | 13 | 0 | 10 | 18 | 0 | 0 | 0 | 0 | rs=cd:ab;t=a:bcs;u=t:acr | YES |
+|187 | 5 | 5 | 6 | 3 | 0 | 0 | 0 | 0 | 2 | 0 | 0 | rs=ac:bd;t=b:adr;u=d:bcr | YES |
 |188 | 6 | 6 | 6 | 0 | 5 | 6 | 3 | 0 | 0 | 0 | 0 | rs=cd:ab;t=a:bcr;u=r:ad | |
-|189 | 20 | 14 | 18 | 17 | 0 | 4 | 5 | 0 | 0 | 0 | 0 | rs=cd:ab;t=a:bcs;u=a:bcst | |
-|190 | 24 | 16 | 24 | 17 | 0 | 6 | 13 | 0 | 0 | 0 | 0 | rs=cd:ab;t=a:bcs;u=c:abrt | |
+|189 | 20 | 14 | 18 | 17 | 0 | 4 | 5 | 0 | 0 | 0 | 0 | rs=cd:ab;t=a:bcs;u=a:bcst | YES |
+|190 | 24 | 16 | 24 | 17 | 0 | 6 | 13 | 0 | 0 | 0 | 0 | rs=cd:ab;t=a:bcs;u=c:abrt | YES |
 |191 | 5 | 6 | 14 | 1 | 0 | 6 | 6 | 0 | 0 | 0 | 0 | rs=cd:ab;t=a:bcr;u=(ds):abt | |
 |192 | 7 | 11 | 21 | 2 | 0 | 7 | 1 | 0 | 3 | 0 | 0 | rs=ac:bd;t=a:bcr;u=(ar):bdt | |
 |193 | 8 | 2 | 14 | 13 | 0 | 2 | 1 | 0 | 0 | 0 | 0 | rs=cd:ab;t=(cr):ab;u=a:bcs | |
-|194 | 5 | 3 | 6 | 5 | 0 | 2 | 0 | 0 | 0 | 0 | 0 | rs=cd:ab;t=a:bcr;u=b:adr | |
-|195 | 19 | 10 | 22 | 12 | 0 | 8 | 16 | 0 | 0 | 0 | 0 | rs=cd:ab;t=a:bcs;u=t:acr | |
-|196 | 4 | 2 | 5 | 4 | 2 | 2 | 0 | 0 | 0 | 0 | 0 | rs=cd:ab;t=a:bcr;u=r:ad | |
-|197 | 26 | 17 | 25 | 21 | 0 | 6 | 7 | 0 | 0 | 0 | 0 | rs=cd:ab;t=a:bcs;u=a:bcst | |
-|198 | 11 | 8 | 28 | 4 | 0 | 20 | 12 | 0 | 0 | 0 | 0 | rs=cd:ab;t=(cs):ab;u=a:bcrt | |
-|199 | 5 | 5 | 19 | 1 | 0 | 8 | 8 | 0 | 0 | 0 | 0 | rs=cd:ab;t=a:bcr;u=(ds):abt | |
-|200 | 7 | 6 | 7 | 6 | 0 | 0 | 3 | 0 | 0 | 0 | 0 | rs=cd:ab;t=a:bcs;u=s:abcdt | |
-|201 | 36 | 25 | 35 | 29 | 0 | 6 | 11 | 0 | 0 | 0 | 0 | rs=cd:ab;t=a:bcs;u=a:bcst | |
+|194 | 5 | 3 | 6 | 5 | 0 | 2 | 0 | 0 | 0 | 0 | 0 | rs=cd:ab;t=a:bcr;u=b:adr | YES |
+|195 | 19 | 10 | 22 | 12 | 0 | 8 | 16 | 0 | 0 | 0 | 0 | rs=cd:ab;t=a:bcs;u=t:acr | YES |
+|196 | 4 | 2 | 5 | 4 | 2 | 2 | 0 | 0 | 0 | 0 | 0 | rs=cd:ab;t=a:bcr;u=r:ad | YES |
+|197 | 26 | 17 | 25 | 21 | 0 | 6 | 7 | 0 | 0 | 0 | 0 | rs=cd:ab;t=a:bcs;u=a:bcst | YES |
+|198 | 11 | 8 | 28 | 4 | 0 | 20 | 12 | 0 | 0 | 0 | 0 | rs=cd:ab;t=(cs):ab;u=a:bcrt | YES |
+|199 | 5 | 5 | 19 | 1 | 0 | 8 | 8 | 0 | 0 | 0 | 0 | rs=cd:ab;t=a:bcr;u=(ds):abt | YES |
+|200 | 7 | 6 | 7 | 6 | 0 | 0 | 3 | 0 | 0 | 0 | 0 | rs=cd:ab;t=a:bcs;u=s:abcdt | YES |
+|201 | 36 | 25 | 35 | 29 | 0 | 6 | 11 | 0 | 0 | 0 | 0 | rs=cd:ab;t=a:bcs;u=a:bcst | YES |
 |202 | 6 | 3 | 8 | 4 | 0 | 2 | 5 | 0 | 0 | 0 | 0 | rs=cd:ab;t=a:bcs;u=t:ads | |
 |203 | 10 | 2 | 18 | 17 | 0 | 4 | 3 | 0 | 0 | 0 | 0 | rs=cd:ab;t=(cr):ab;u=a:bdr | |
 |204 | 14 | 22 | 45 | 4 | 0 | 17 | 2 | 0 | 0 | 0 | 0 | rs=ac:bd;t=r:abs;u=(ar):bdt | |
-|205 | 14 | 8 | 10 | 5 | 2 | 20 | 7 | 0 | 0 | 0 | 0 | rs=cd:ab;t=r:ad;u=b:adrt | |
+|205 | 14 | 8 | 10 | 5 | 2 | 20 | 7 | 0 | 0 | 0 | 0 | rs=cd:ab;t=r:ad;u=b:adrt | YES |
 |206 | 3 | 3 | 5 | 1 | 3 | 2 | 0 | 0 | 0 | 0 | 0 | rs=cd:ab;t=c:ar;u=r:ad | |
-|207 | 11 | 8 | 30 | 4 | 0 | 20 | 10 | 0 | 0 | 0 | 0 | rs=cd:ab;t=(cs):ab;u=a:bcrt | |
-|208 | 20 | 14 | 20 | 16 | 0 | 3 | 6 | 0 | 0 | 0 | 0 | rs=cd:ab;t=a:bcs;u=a:bcst | |
+|207 | 11 | 8 | 30 | 4 | 0 | 20 | 10 | 0 | 0 | 0 | 0 | rs=cd:ab;t=(cs):ab;u=a:bcrt | YES |
+|208 | 20 | 14 | 20 | 16 | 0 | 3 | 6 | 0 | 0 | 0 | 0 | rs=cd:ab;t=a:bcs;u=a:bcst | YES |
 |209 | 16 | 26 | 51 | 4 | 0 | 19 | 4 | 0 | 0 | 0 | 0 | rs=ac:bd;t=a:bcr;u=(ar):bdt | |
-|210 | 15 | 10 | 15 | 12 | 0 | 3 | 4 | 0 | 0 | 0 | 0 | rs=cd:ab;t=a:bcs;u=a:bcst | |
+|210 | 15 | 10 | 15 | 12 | 0 | 3 | 4 | 0 | 0 | 0 | 0 | rs=cd:ab;t=a:bcs;u=a:bcst | YES |
 |211 | 8 | 13 | 25 | 2 | 0 | 9 | 2 | 0 | 1 | 0 | 0 | rs=ac:bd;t=a:bcr;u=(ar):bdt | |
-|212 | 47 | 32 | 41 | 37 | 3 | 9 | 15 | 0 | 0 | 0 | 0 | rs=cd:ab;t=a:bcs;u=a:bcst | |
+|212 | 47 | 32 | 41 | 37 | 3 | 9 | 15 | 0 | 0 | 0 | 0 | rs=cd:ab;t=a:bcs;u=a:bcst | YES |
 |213 | 25 | 41 | 81 | 6 | 0 | 30 | 7 | 0 | 0 | 0 | 0 | rs=ac:bd;t=r:abs;u=(ar):bdt | |
-|214 | 20 | 10 | 15 | 14 | 4 | 7 | 8 | 0 | 0 | 0 | 0 | rs=cd:ab;t=a:bcs;u=a:bcst | |
+|214 | 20 | 10 | 15 | 14 | 4 | 7 | 8 | 0 | 0 | 0 | 0 | rs=cd:ab;t=a:bcs;u=a:bcst | YES |

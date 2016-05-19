@@ -1,0 +1,33 @@
+C copy string: rs=ac:bd;tu=ar:bc;v=r:abst
+I    5.48] Elapsed: 5.48, vertices: 2, facets final: 6, pending: 13
+I   10.75] Elapsed: 10.75, vertices: 4, facets final: 13, pending: 10
+I   15.88] Elapsed: 15.88, vertices: 5, facets final: 21, pending: 10
+I   21.39] Elapsed: 21.39, vertices: 8, facets final: 31, pending: 9
+I   25.24] Elapsed: 25.24, vertices: 9, facets final: 41, pending: 0
+
+--------------------------------
+Problem completed
+ name                    36.vlp
+ output                  copy/vlp/36.res
+ rows, cols, objs        374, 4012, 10
+ vertices, facets        9, 41
+ total time              25.24
+--------------------------------
+Statistics
+LP:
+ oracle calls            50
+   avg iterations/calls  862.64
+ total oracle time       25.24
+Combinatorics:
+ vertices added          9
+ facets probed           50
+ facets # max            44
+ memory allocated        975.68k
+ storage expansion
+   vertices # / upto     1 / 124
+   facets   # / upto     1 / 4092
+ facet manipulating
+   added avg / max       6.25 / 12.00
+   compressed            0
+ number of ridge tests
+   avg / max             51.25 / 156.00

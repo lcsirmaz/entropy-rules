@@ -1,0 +1,30 @@
+I    5.00] Elapsed: 5.00, vertices: 97, facets final: 130, pending: 124
+I    5.04] recalculating facets...
+I    6.46] Elapsed: 6.46, vertices: 154, facets final: 198, pending: 0
+
+--------------------------------
+Problem completed
+ name                    185.vlp
+ output                  185.res
+ rows, cols, objs        177, 1521, 10
+ vertices, facets        154, 198
+ total time              6.46
+--------------------------------
+Statistics
+LP:
+ oracle calls            352
+   avg iterations/calls  112.34
+ total oracle time       6.45
+Combinatorics:
+ vertices added          154
+ facets probed           352
+ facets # max            286
+ memory allocated        1.19M
+ storage expansion
+   vertices # / upto     2 / 252
+   facets   # / upto     1 / 4092
+ facet manipulating
+   added avg / max       9.27 / 45.00
+   compressed            0
+ number of ridge tests
+   avg / max             1.51k / 6.20k

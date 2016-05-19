@@ -1,0 +1,50 @@
+#
+# index - copy string
+P,18, rs=cd:ab;t=a:bcr;uv=ds:abt
+P,35, rs=cd:ab;t=a:bcr;u=a:bcrt;v=b:ads;w=b:adsv < no new
+P,34, rs=cd:ab;t=a:bcs;uv=at:bcs < no new
+P, 3, rs=cd:ab;t=a:bcs;uv=bt:acr
+P,28, rs=cd:ab;t=a:bcs;uv=cs:abrt < no new
+P,26, rs=cd:ab;t=a:bcs;uv=ds:ab < no new
+P,15, rs=cd:ab;t=a:bcs;u=a:bcst;v=a:bcstu
+
+
+P,30, rs=cd:ab;tu=ac:bdr;vw=bt:ads
+P,31, rs=cd:ab;tu=ac:bdr;vw=dr:abst
+P,24, rs=cd:ab;tu=ac:bds;vw=cr:abt < no new
+P,25, rs=cd:ab;tu=ac:bds;vw=as:bct < no new
+
+
+P, 9, rs=cd:ab;tu=cd:abr;vw=cr:au
+P,29, rs=cd:ab;tu=cd:abrs;vw=cs:abu
+      
+P,11, rs=cd:ab;tu=cr:ab;v=a:bcst < no new
+P,12, rs=cd:ab;tu=cr:ab;v=a:bcstu
+P, 4, rs=cd:ab;tu=cr:ab;vw=r(tu):ad
+P,20, rs=cd:ab;tu=cr:ab;v=t:adr < no new
+P, 7, rs=cd:ab;tu=cr:ab;vw=cr:abtu
+P,14, rs=cd:ab;tu=cr:ab;vw=cs:abtu
+P,33, rs=cd:ab;tu=cr:ab;vw=tu:acs
+
+
+P,10, rs=cd:ab;tu=cs:ab;v=a:bcrt
+P,21, rs=cd:ab;tu=cs:ab;v=a:bcru < no new
+P, 1, rs=cd:ab;tu=cs:ab;v=a:bcrtu
+P, 8, rs=cd:ab;tu=cs:ab;vw=as:bcrtu
+P, 6, rs=cd:ab;tu=cs:ab;vw=ds:abtu
+P,22, rs=cd:ab;tu=cs:ab;v=a:bdst < no new
+
+#
+###
+P, 2, rs=ac:bd;tu=cd:abs;v=a:bdrsu
+P,36, rs=ac:bd;tu=ar:bc;v=r:abst < no new
+P,19, rs=ac:bd;tu=ar:bd;v=r:abst < no new
+P,17, rs=ac:bd;tu=ar:bd;v=a:bcrtu
+      rs=ac:bd;tu=ar:bd;vw=ar:bdtu
+P,27, rs=ac:bd;t=a:bcr;uv=ar:bdt < no new
+P,37, rs=ac:bd;t=a:br;u=d:abrt;v=u:abdrt < no new
+P, 5, rs=ac:bd;t=d:abs;uv=bt:adr
+P,23, rs=ac:bd;t=d:abs;u=d:abrt;v=d:abrtu
+P,16, rs=ac:bd;t=r:abs;uv=ar:bdt < no new
+#
+P,13, rs=ac:bd;t=a:bdrs;uv=cd:abs < no new
