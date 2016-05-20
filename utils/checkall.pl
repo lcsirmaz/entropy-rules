@@ -270,7 +270,7 @@ foreach my $a(@{$info->{new}}){
     next if(is_superseded($info,$a));
 #    print "trying: ",join(', ',@$a);
     my $vlpfile=generate_vlp($info,$a);
-    system("/home/matus/glpk/inner/xxy -y- $vlpfile >/dev/null");
+    system("inner -y- $vlpfile >/dev/null");
     my $e=$?>>8; # 0: superseded, 2: new
     unlink $vlpfile;
     next if($e==0);

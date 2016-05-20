@@ -62,6 +62,47 @@ sub biggest {
 }
 
 sub make_list {
+    my $file=shift;
+    open(OUT,">$file")|| die "Cannot create $file\n";
+    foreach my $a(@list){
+        biggest($a);
+        my $t="";
+        for my $i(0..10){ $t.= sprintf("%04x",$a->[$i]); }
+        $a->[13]=$t;
+    }
+    print OUT "# Entropy inequalities for four random variables
+#
+# Each line cpntains the coefficients of an entropy inequality using
+#  the natural coordinates
+#  [a,b,c,d ]  (Ingleton expression: -(a,b)+(a,b|c)+(a,b|d)+(c,d) )
+#   (a,b|c), (a,c|b), (b,c|a)   (a,b|d), (a,d|b), (b,d|a)
+#   (c,d|a), (c,d|b), (c,d), (a,b|cd)
+#
+# The next entry is the copy string, followed by the label of the
+#  inequality. Only inequalities which are not known to be superseded
+#  are listed. The list is in increasing order of the value of the
+#  coefficients.
+#
+# The normalized list contains the same inequalities normalized to have 
+#  the Ingleton coefficient be equal to 1.
+#
+# The number of inequalities listed is ",scalar @list ,".
+#
+#   Coefficients,             copy string, label
+#\n";
+    foreach my $a( sort {$a->[13] cmp $b->[13]} @list ){
+        for my $i(0..10){
+             print OUT $a->[$i],",";
+             print OUT " " if($i==0 || $i==3 || $i==6);
+        }
+        print OUT " ",$a->[11], ", ",$a->[12],"\n";
+    }
+    close(OUT);
+}
+
+sub make_normalized_list {
+    my $file=shift;
+    open(OUT,">$file")|| die "Cannot create $file\n";
     foreach my $a(@list){
         biggest($a);
         my $t=$a->[0]+0.0; $a->[0]="";
@@ -71,20 +112,25 @@ sub make_list {
             $a->[0] .= $a->[$i];
         }
     }
-    print "# Normalized entropy inequalities
+    print OUT "# Normalized entropy inequalities for four random variables
 #
-#  coefficients, index
+# Coefficients are normalized and the list is in increasing order.
+#
+#         Coefficients                label
 #\n";
     foreach my $a( sort {$a->[0] cmp $b->[0]} @list ){
-        print "1, ";
-        for my $i(1..10){ print $a->[$i],","; print " " if($i==3 || $i==6); }
-        print " ",$a->[12],"\n";
+        print OUT "1, ";
+        for my $i(1..10){ print OUT $a->[$i],","; print OUT " " if($i==3 || $i==6); }
+        print OUT " ",$a->[12],"\n";
     }
+    close(OUT);
 }
 
 ## read all files
 foreach my $input(@files){ add_file($input); }
 
-make_list();
+make_list("ineq-list.txt");
+
+make_normalized_list("ineq-normalized.txt");
 
 

@@ -157,7 +157,7 @@ sub generate_vlp {
 sub run_lp {
     my($info,$idx,$sded)=@_;
     my $vlpfile=generate_vlp($info,$idx,$sded);
-    system("/home/matus/glpk/inner/xxy -y- $vlpfile > /dev/null");
+    system("inner -y- $vlpfile > /dev/null");
     my $e=$?>>8; # 0: superseded, 2: not
     unlink($vlpfile);
     return $e==0 ? 1 : 0;
