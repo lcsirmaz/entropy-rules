@@ -1,0 +1,60 @@
+Using 2 threads
+C copy string: rs=ac:bd;t=a:bcr;u=d:abr;v=(ar):bdu
+Thread 1 started ...
+C MOLP problem=45.vlp, minimize
+C rows=394, columns=4170, objectives=10
+I    5.38] Elapsed: 5.38, vertices: 3, facets final: 7, pending: 23, eq: 3, out: 3, in: 15
+I   10.53] Elapsed: 10.53, vertices: 13, facets final: 9, pending: 94, eq: 10, out: 4, in: 4
+I   15.57] Elapsed: 15.57, vertices: 21, facets final: 14, pending: 181, eq: 17, out: 21, in: 47
+I   20.61] Elapsed: 20.61, vertices: 30, facets final: 20, pending: 225, eq: 20, out: 9, in: 16
+I   25.76] Elapsed: 25.76, vertices: 38, facets final: 28, pending: 258, eq: 10, out: 14, in: 28
+I   30.91] Elapsed: 30.91, vertices: 45, facets final: 34, pending: 270, eq: 31, out: 24, in: 16
+I   36.12] Elapsed: 36.12, vertices: 55, facets final: 43, pending: 271, eq: 15, out: 6, in: 6
+I   41.30] Elapsed: 41.30, vertices: 58, facets final: 53, pending: 269, eq: 22, out: 7, in: 6
+I   46.40] Elapsed: 46.40, vertices: 60, facets final: 62, pending: 278, eq: 7, out: 6, in: 20
+I   51.67] Elapsed: 51.67, vertices: 66, facets final: 72, pending: 273, eq: 19, out: 16, in: 12
+I   56.68] Elapsed: 56.68, vertices: 70, facets final: 82, pending: 246, eq: 21, out: 27, in: 17
+I   62.25] Elapsed: 1:02, vertices: 74, facets final: 93, pending: 227, eq: 9, out: 8, in: 12
+I   67.46] Elapsed: 1:07, vertices: 77, facets final: 104, pending: 224, eq: 11, out: 19, in: 28
+I   72.49] Elapsed: 1:12, vertices: 82, facets final: 114, pending: 217, eq: 21, out: 8, in: 8
+I   77.89] Elapsed: 1:18, vertices: 86, facets final: 124, pending: 206, eq: 11, out: 9, in: 7
+I   82.93] Elapsed: 1:23, vertices: 87, facets final: 138, pending: 187, eq: 10, out: 13, in: 8
+I   88.12] Elapsed: 1:28, vertices: 90, facets final: 150, pending: 165, eq: 20, out: 5, in: 4
+I   93.39] Elapsed: 1:33, vertices: 94, facets final: 163, pending: 142, eq: 10, out: 4, in: 7
+I   98.57] Elapsed: 1:39, vertices: 96, facets final: 174, pending: 137, eq: 10, out: 3, in: 2
+I  101.90] recalculating facets...
+I  103.82] Elapsed: 1:44, vertices: 104, facets final: 189, pending: 108, eq: 13, out: 4, in: 0
+I  108.89] Elapsed: 1:49, vertices: 105, facets final: 207, pending: 89, eq: 10, out: 1, in: 0
+I  113.98] Elapsed: 1:54, vertices: 110, facets final: 221, pending: 63, eq: 17, out: 4, in: 0
+I  118.99] Elapsed: 1:59, vertices: 119, facets final: 236, pending: 36, eq: 14, out: 2, in: 2
+I  124.31] Elapsed: 2:04, vertices: 127, facets final: 246, pending: 16, eq: 10, out: 1, in: 0
+I  127.14] Elapsed: 2:07, vertices: 135, facets final: 251, pending: 0, eq: 10, out: 1, in: 0
+
+--------------------------------
+Problem completed
+ name                    45.vlp
+ output                  copy/vlp/45.res
+ rows, cols, objs        394, 4170, 10
+ vertices, facets        135, 251
+ total time              2:07
+--------------------------------
+Statistics
+LP:
+ oracle calls            386
+   avg iterations/calls  611.44
+ total oracle time       2:07
+Combinatorics:
+ vertices added          135
+ facets probed           386
+ facets # max            362
+ memory allocated        1.69M
+ storage expansion
+   vertices # / upto     2 / 252
+   facets   # / upto     1 / 4092
+ facet manipulating
+   added avg / max       9.54 / 47.00
+   compressed            0
+ number of ridge tests
+   avg / max             1.87k / 9.54k
+Stopping threads ...
+Thread 1 stopped.

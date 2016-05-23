@@ -1,0 +1,47 @@
+C copy string: rs=cd:ab;t=c:ar;u=d:art;v=d:artu
+I    5.44] Elapsed: 5.44, vertices: 3, facets final: 7, pending: 18
+I   10.87] Elapsed: 10.87, vertices: 10, facets final: 13, pending: 67
+I   15.88] Elapsed: 15.88, vertices: 19, facets final: 18, pending: 122
+I   21.04] Elapsed: 21.04, vertices: 29, facets final: 23, pending: 222
+I   26.30] Elapsed: 26.30, vertices: 37, facets final: 30, pending: 210
+I   31.65] Elapsed: 31.65, vertices: 41, facets final: 42, pending: 240
+I   36.66] Elapsed: 36.66, vertices: 44, facets final: 52, pending: 245
+I   41.72] Elapsed: 41.72, vertices: 51, facets final: 64, pending: 240
+I   46.79] Elapsed: 46.79, vertices: 57, facets final: 74, pending: 241
+I   51.94] Elapsed: 51.94, vertices: 61, facets final: 88, pending: 216
+I   57.15] Elapsed: 57.15, vertices: 66, facets final: 103, pending: 212
+I   62.42] Elapsed: 1:02, vertices: 69, facets final: 118, pending: 174
+I   67.48] Elapsed: 1:07, vertices: 74, facets final: 136, pending: 174
+I   72.52] Elapsed: 1:13, vertices: 82, facets final: 153, pending: 143
+I   77.70] Elapsed: 1:18, vertices: 87, facets final: 171, pending: 111
+I   82.78] Elapsed: 1:23, vertices: 92, facets final: 204, pending: 46
+I   87.41] recalculating facets...
+I   87.90] Elapsed: 1:28, vertices: 102, facets final: 225, pending: 8
+I   89.23] Elapsed: 1:29, vertices: 104, facets final: 230, pending: 0
+
+--------------------------------
+Problem completed
+ name                    40.vlp
+ output                  copy/vlp/40.res
+ rows, cols, objs        398, 4169, 10
+ vertices, facets        104, 230
+ total time              1:29
+--------------------------------
+Statistics
+LP:
+ oracle calls            334
+   avg iterations/calls  516.10
+ total oracle time       1:29
+Combinatorics:
+ vertices added          104
+ facets probed           334
+ facets # max            327
+ memory allocated        986.24k
+ storage expansion
+   vertices # / upto     1 / 124
+   facets   # / upto     1 / 4092
+ facet manipulating
+   added avg / max       15.49 / 54.00
+   compressed            0
+ number of ridge tests
+   avg / max             2.78k / 13.22k
