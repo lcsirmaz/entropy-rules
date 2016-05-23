@@ -51,7 +51,7 @@
 8, 1,14,0, 11,6,4, 0,0,0,0, rs=cd:ab;t=a:bcs;u=a:bcst, dfz:40:40, S
 3, 1,1,0, 2,4,2, 0,0,0,0, rs=cd:ab;t=c:as;u=b:adst, dfz:41:41
 7, 2,8,2, 12,8,1, 0,0,0,0, rs=cd:ab;t=c:as;u=d:ast, dfz:42:42
-6, 0,11,0, 10,2,9, 0,0,0,0, rs=cd:ab;t=a:bcs;u=b:adst, dfz:43:43
+6, 0,11,0, 10,2,9, 0,0,0,0, rs=cd:ab;t=a:bcs;u=b:adst, dfz:43:43, S
 7, 1,11,11, 0,7,7, 0,0,0,0, rs=cd:ab;t=c:abrs;u=(dr):abt, dfz:44:44, S
 5, 3,10,3, 0,1,1, 0,0,0,0, rs=cd:ab;t=c:ar;u=b:acrt, dfz:45:45
 4, 6,10,1, 0,1,4, 0,0,0,0, rs=cd:ab;t=a:bcr;u=b:adrt, dfz:46:46
@@ -91,7 +91,7 @@
 8, 6,13,4, 4,8,0, 0,0,0,0, rs=cd:ab;t=a:bcs;u=a:bdrt, dfz:80:80
 10, 10,9,6, 2,7,0, 0,0,0,0, rs=cd:ab;t=a:bcs;u=c:abrt, dfz:71:81, S
 8, 0,0,0, 9,9,5, 0,0,0,0, rs=ac:bd;t=d:abr;u=d:abrt, dfz:82:82
-3, 5,1,4, 3,7,0, 0,0,0,0, rs=cd:ab;t=c:as;u=t:cs, dfz:83:83
+3, 5,1,4, 3,7,0, 0,0,0,0, rs=cd:ab;t=c:as;u=t:cs, dfz:83:83, S
 8, 1,15,15, 0,6,6, 0,0,0,0, rs=cd:ab;t=(cr):ab;u=(dr):abt, dfz:66:84, S
 7, 1,21,21, 0,2,2, 0,0,0,0, rs=cd:ab;t=(cr):ab;u=(cr):abt, dfz:85:85, S
 5, 1,15,15, 0,0,0, 0,0,0,0, rs=cd:ab;t=(cr):ab;u=(cr):abt, dfz:85:86
@@ -114,7 +114,7 @@
 5, 4,6,2, 5,5,0, 0,0,0,0, rs=cd:ab;t=c:as;u=t:abc, dfz:103:103, S
 7, 28,28,1, 4,4,0, 0,0,0,0, rs=cd:ab;t=r:ac;u=s:at, dfz:104:104
 4, 3,5,1, 9,8,0, 0,0,0,0, rs=cd:ab;t=c:as;u=t:ad, dfz:105:105
-7, 12,2,11, 0,12,1, 0,0,0,0, rs=cd:ab;t=a:bcs;u=b:acrt, dfz:106:106
+7, 12,2,11, 0,12,1, 0,0,0,0, rs=cd:ab;t=a:bcs;u=b:acrt, dfz:106:106, S
 4, 0,0,0, 9,1,9, 0,7,0,0, rs=ac:bd;t=d:abs;u=t:br, dfz:107:107
 4, 0,0,0, 9,10,1, 0,0,0,0, rs=ac:bd;t=(ar):bd;u=b:adrt, dfz:108:108
 3, 0,0,0, 5,5,1, 0,0,0,0, rs=ac:bd;t=b:adr;u=t:abr, dfz:109:109
@@ -126,7 +126,7 @@
 8, 2,2,0, 9,4,7, 0,12,0,0, rs=ac:bd;t=d:bcr;u=t:rs, dfz:95:115
 7, 1,9,9, 0,14,14, 0,0,0,0, rs=cd:ab;t=(cs):ab;u=(ds):abt, dfz:87:116, S
 4, 1,10,6, 3,2,0, 0,0,0,0, rs=cd:ab;t=(cr):ab;u=(rt):ad, dfz:117:117, S
-10, 0,18,1, 16,3,16, 0,0,0,0, rs=cd:ab;t=a:bcs;u=b:adst, dfz:43:118
+10, 0,18,1, 16,3,16, 0,0,0,0, rs=cd:ab;t=a:bcs;u=b:adst, dfz:43:118, S
 9, 3,22,10, 4,10,0, 0,0,0,0, rs=cd:ab;t=(cr):ab;u=a:bdst, dfz:119:119
 3, 0,0,0, 4,2,2, 0,2,0,0, rs=ac:bd;t=d:abs;u=t:adr, dfz:120:120
 7, 2,16,10, 3,2,0, 0,0,0,0, rs=cd:ab;t=(cr):ab;u=(rt):ad, dfz:117:121, S
@@ -135,7 +135,7 @@
 13, 24,22,3, 4,6,0, 0,0,0,0, rs=cd:ab;t=c:ar;u=d:art, dfz:36:124
 8, 2,23,12, 0,1,4, 0,0,0,0, rs=cd:ab;t=(cr):ab;u=a:bcst, dfz:125:125
 6, 1,7,7, 0,11,11, 0,0,0,0, rs=cd:ab;t=(cs):ab;u=(ds):abt, dfz:87:126, S
-11, 18,3,19, 0,21,2, 0,0,0,0, rs=cd:ab;t=a:bcs;u=b:acrt, dfz:106:127
+11, 18,3,19, 0,21,2, 0,0,0,0, rs=cd:ab;t=a:bcs;u=b:acrt, dfz:106:127, S
 9, 3,8,13, 0,9,2, 0,0,0,0, rs=cd:ab;t=a:bcs;u=a:bcrt, dfz:128:128
 4, 3,5,2, 4,2,0, 0,0,0,0, rs=cd:ab;t=r:ad;u=r:adt, dfz:129:129
 4, 7,1,7, 0,7,1, 0,0,0,0, rs=cd:ab;t=a:bcs;u=b:acrt, dfz:106:130

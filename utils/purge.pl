@@ -25,7 +25,7 @@ if(scalar @ARGV < 1 ){ print_usage(); }
 sub read_ineq_file {
     my ($info,$fname)=@_;
     $info->{old}=() if(!defined $info->{old});
-    $info->{superseded}=() if(!defined $info->{supserseded});
+    $info->{superseded}=() if(!defined $info->{superseded});
     my $base=$fname; $base =~ s/^.*\///g; $base =~ s/\..*$//;
     open(FILE,$fname) || die "Cannot open inequality file $fname for reading\n";
     while(<FILE>){
@@ -179,11 +179,11 @@ for my $j(0..-1+scalar @{$info->{old}}){
           " by ",$info->{old}[$s]->[13],"/",$info->{old}[$s]->[12],"\n";
     }
 }
-for my $j(0..-1+scalar @{$info->{superseded}}){
-    if(is_superseded($info,$j,1)){ $info->{superseded}[$j]->[14]="S"; }
-}
+#for my $j(0..-1+scalar @{$info->{superseded}}){
+#    if(is_superseded($info,$j,1)){ $info->{superseded}[$j]->[14]="S"; }
+#}
 print "Calling LP\n";
-for my $j(0..-1+scalar @{$info->{old}}){
+ for my $j(0..-1+scalar @{$info->{old}}){
     next if($info->{old}[$j]->[14]);
     if( run_lp($info,$j)){
         $info->{old}[$j]->[14]="S"; # superseded
@@ -191,8 +191,11 @@ for my $j(0..-1+scalar @{$info->{old}}){
           " by  LP\n";
     }
 }
+print "checking superseded ....\n";
 for my $j(0..-1+scalar @{$info->{superseded}}){
     next if($info->{superseded}[$j]->[14]);
+## print "checking ($j) ",$info->{superseded}[$j]->[13],"/",$info->{superseded}[$j]->[12],"\n";
+
     if(! run_lp($info,$j,1)){
          print "NOT superseded: ",$info->{superseded}[$j]->[13],"/",$info->{superseded}[$j]->[12],
             " by LP\n";

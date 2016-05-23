@@ -20,6 +20,7 @@ sub add_file {
         for my $i(0..-1+scalar @a){
             $a[$i] =~ s/\s//g;
         }
+        die "Wrong line in file $file" if(scalar @a < 12);
         next if($a[13]); ## superseded
         push @list,\@a;
     }
@@ -126,8 +127,13 @@ sub make_normalized_list {
     close(OUT);
 }
 
+if(scalar @ARGV == 0){
+    print "usage: genlist.pl <eqfile1> <eqfile2> ... \n";
+    exit 1;
+}
+
 ## read all files
-foreach my $input(@files){ add_file($input); }
+foreach my $input(@ARGV){ add_file($input); }
 
 make_list("ineq-list.txt");
 

@@ -78,9 +78,18 @@ sub lcm {
 }
 ###############################################################
 ## read in the result file
+sub lexmin {
+    my($a,$b)=@_;
+    for my $i(0..10){
+       my $d=$a->[$i]-$b->[$i];
+       if($d){ return $d<0 ? -1 : +1 ; }
+    }
+    return 0;
+}
 sub read_result_file {
     my ($info,$fname)=@_;
     $info->{new}=();
+    my @lines=();
     open(FILE,$fname) || die "Cannot open result file $fname for reading\n";
     while(<FILE>){
       next if(!/^V/);
@@ -105,9 +114,12 @@ sub read_result_file {
       }
       next if($a[0]<0);
       biggest(\@a);    ## make it lexicographically maximal
-      push @{$info->{new}}, \@a;  ## and store it
+      push @lines, \@a;
     }
     close(FILE);
+    foreach my $a (sort {lexmin($a,$b)} @lines ){
+      push @{$info->{new}}, $a;  ## and store it
+    }
 }
 ## read knwon inequalities
 sub read_ineq_file {
