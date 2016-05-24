@@ -19,6 +19,7 @@
 38, ,rs=cd:ab;tu=ac:bdr;vw=br:adst
 30, ,rs=cd:ab;tu=ac:bdr;vw=bt:ads
 31, ,rs=cd:ab;tu=ac:bdr;vw=dr:abst
+54, ,rs=cd:ab;tu=ac:bdr;vw=st:ac
 24,-,rs=cd:ab;tu=ac:bds;vw=cr:abt
 25,-,rs=cd:ab;tu=ac:bds;vw=as:bct
 48, ,rs=cd:ab;tu=ac:bds;vw=bt:adr
@@ -30,20 +31,24 @@
 #      
 11,-,rs=cd:ab;tu=cr:ab;v=a:bcst
 12, ,rs=cd:ab;tu=cr:ab;v=a:bcstu
- 4, ,rs=cd:ab;tu=cr:ab;vw=r(tu):ad
 20,-,rs=cd:ab;tu=cr:ab;v=t:adr
+49,-,rs=cd:ab;tu=cr:ab;vw=cr:abt
  7, ,rs=cd:ab;tu=cr:ab;vw=cr:abtu
 14, ,rs=cd:ab;tu=cr:ab;vw=cs:abtu
+50,-,rs=cd:ab;tu=cr:ab;vw=dr:abtu
+ 4, ,rs=cd:ab;tu=cr:ab;vw=r(tu):ad
 33, ,rs=cd:ab;tu=cr:ab;vw=tu:acs
 #
 10, ,rs=cd:ab;tu=cs:ab;v=a:bcrt
 21,-,rs=cd:ab;tu=cs:ab;v=a:bcru
  1, ,rs=cd:ab;tu=cs:ab;v=a:bcrtu
+22,-,rs=cd:ab;tu=cs:ab;v=a:bdst
+51,-,rs=cd:ab;tu=cs:ab;v=a:bdstu
 39,-,rs=cd:ab;tu=cs:ab;v=a:bctu
  8, ,rs=cd:ab;tu=cs:ab;vw=as:bcrtu
  6, ,rs=cd:ab;tu=cs:ab;vw=ds:abtu
-22,-,rs=cd:ab;tu=cs:ab;v=a:bdst
 #
+52, ,rs=cd:ab;tuv=crs:ab;w=a:bcrtu
 ###########################################
 #
 43, ,rs=ac:bd;t=(ar):bd;u=(ar):bdt;v=(ar):bdtu
@@ -62,4 +67,5 @@
 19,-,rs=ac:bd;tu=ar:bd;v=r:abst
 17, ,rs=ac:bd;tu=ar:bd;v=a:bcrtu
 32,-,rs=ac:bd;tu=ar:bd;vw=ar:bdtu
+53,-,rs=ac:bd;tu=cd:abr;vw=cd:abrtu
  2, ,rs=ac:bd;tu=cd:abs;v=a:bdrsu
