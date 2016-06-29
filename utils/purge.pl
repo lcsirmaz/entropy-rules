@@ -5,7 +5,7 @@
 ## arguments: <file1> <file2> ...
 ##
 ##  Each file contains known inequalities in the form
-## 2, 1,4,1, 2,5,0, 0,0,0,0, rs=cd:ab;t=c:abrs;u=a:dst, paste:1:24
+## 2, 1,4,1, 2,5,0, 0,0,0,0, rs=cd:ab;t=c:abrs;u=a:dst, copy:1:24
 ##  where the last part is the label
 ##
 

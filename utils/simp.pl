@@ -1,6 +1,6 @@
 #!/usr/bin/perl -w
-# canonize a paste string
-# Usage:  simp.pl <paste>
+# canonize a copy string
+# Usage:  simp.pl <copy_string>
 ##
 use strict;
 
@@ -162,7 +162,7 @@ sub swapped {
 
 ##################################################################
 #
-if( scalar @ARGV != 1 ){ die "Please specify the paste string to minimize\n"; }
+if( scalar @ARGV != 1 ){ die "Please specify the copy string to minimize\n"; }
 
 print swapped($ARGV[0]), "\n";
 exit 0;

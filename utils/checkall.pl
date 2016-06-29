@@ -9,7 +9,7 @@
 ##    these are natural coeffs 2..11, the Ingleton coeff is 1
 ##
 ##   <file1>, <file2>, ... contain known inequalities in the form
-## 2, 1,4,1, 2,5,0, 0,0,0,0, rs=cd:ab;t=c:abrs;u=a:dst, paste:1:24
+## 2, 1,4,1, 2,5,0, 0,0,0,0, rs=cd:ab;t=c:abrs;u=a:dst, copy:1:24
 ##   where the numbers are the coefficients.
 ## Only inequalities which does not follow from the given ones are
 ## printed.

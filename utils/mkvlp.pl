@@ -1,13 +1,13 @@
 #!/usr/bin/perl -w
 ##
-## generate a vlp file from a paste string
+## generate a vlp file from a copy string
 ##
-## arguments: <paste_string> <filename>
+## arguments: <copy_string> <filename>
 
 use strict;
 
 sub print_usage {
-    print "Usage: mkdata.pl  [fx] <paste string> <filename>\n",
+    print "Usage: mkvlp.pl  [fx] <copy string> <filename>\n",
           "   f -- full (10), default\n",
           "   x -- truncated to 8\n";
     exit 1;
@@ -197,14 +197,14 @@ sub paste { # rst = (ab)cd : uv
     }
     if(! defined $info->{paste} ){$info->{paste} = (); }
     if($dsc !~ /^\s*([rstuvw]+)=([[abcdrstuvw\(\)]+):([abcdrstuvw]*)\s*$/ ){
-        return "paste: wrong syntax ($dsc)";
+        return "copy: wrong syntax ($dsc)";
     }
     my ($new,$old,$X,$vars)=($1,$2,cv($3),$info->{vars});
     if(cv($new) & $vars){
-        return "paste: new variable in \"$new\" already defined ($dsc)";
+        return "copy: new variable in \"$new\" already defined ($dsc)";
     }
     if(($X&$vars)!=$X){
-        return "paste: over variable in \"".name($X)."\" not defined ($dsc)";
+        return "copy: over variable in \"".name($X)."\" not defined ($dsc)";
     }
     push @{$info->{paste}},{ new => $new, over => $vars, by => "$old:".name($X) };
     my @defs=(); # $defs[]={v=> 32, r=>"16|1"};
@@ -213,7 +213,7 @@ sub paste { # rst = (ab)cd : uv
     while($new){
         $new =~ s/^(.)//; my $v=cv($1);
         if($v==0 || ($v&$newvars)){
-            return "paste: new variable is doubly defined ($dsc)";
+            return "copy: new variable is doubly defined ($dsc)";
         }
         $newvars |= $v;
         my $r=0;
@@ -222,19 +222,19 @@ sub paste { # rst = (ab)cd : uv
         } elsif( $old =~ s/^\(([abcdrstuvw]+)\)// ){
             $r=cv($1); $info->{tight}=0; # not tight anymore
         } else {
-           return "paste: syntax of copy variable ($dsc)";
+           return "copy: syntax of copy variable ($dsc)";
         }
         $Z = $Z|$r; 
         if(($r&$vars)!=$r){
-            return "paste: copy variable in \"".name($r). "\"not defined ($dsc)";
+            return "copy: copy variable in \"".name($r). "\"not defined ($dsc)";
         }
         if($r&$X){
-            return "paste: copy variable \"".name($r)."\" and over variables overlap ($dsc)";
+            return "copy: copy variable \"".name($r)."\" and over variables overlap ($dsc)";
         }
         push @defs, {v=>$v, r=> $r };
     }
     if($old){
-        return "paste: extra copy variable \"$old\" ($dsc)";
+        return "copy: extra copy variable \"$old\" ($dsc)";
     }
     $info->{vars} |= $newvars;
     ##
@@ -298,11 +298,11 @@ sub make_paste {
             $e=paste($info,$1);
             if($e){ push @{$info->{errs}},$e; }
          } else {
-            push @{$info->{errs}}, "paste: wrong format $_";
+            push @{$info->{errs}}, "copy: wrong format $_";
          }
     }
     if($nopaste){
-        push @{$info->{errs}}, "no paste was defined at all";
+        push @{$info->{errs}}, "no copy was defined at all";
     }
     if(!defined $info->{errs} && !$syntax){
          _collapse_vars($info);
@@ -315,7 +315,7 @@ sub make_paste {
 
 my $info=make_paste($paste);
 if(defined $info->{errs}){
-    print "There was an error in the paste string:\n",join("\n",@{$info->{errs}}),"\n";
+    print "There was an error in the copy string:\n",join("\n",@{$info->{errs}}),"\n";
     exit 1;
 }
 
