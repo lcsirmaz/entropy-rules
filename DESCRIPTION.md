@@ -13,9 +13,9 @@ and can be defined in term of the entropy as follows.
 
 |  | definition |
 |---:|:------|
-|**H**(a|b) | **H**(a,b) - **H**(b) |
+|**H**(a\|b) | **H**(a,b) - **H**(b) |
 |**I**(a;b) | **H**(a)+**H**(b) - **H**(a,b) |
-|**I**(a;b|c) | **H(a,b)+**H(a,b) - **H**(a,b,c) - **H**(c) |
+|**I**(a;b\|c) | **H(a,b)+**H(a,b) - **H**(a,b,c) - **H**(c) |
 
 Entropy inequalities which do not follow from their non-negativity are called
 non-Shannon inequalities.
