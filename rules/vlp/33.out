@@ -1,0 +1,56 @@
+Using 3 threads
+Thread 1 started ...
+Thread 2 started ...
+C maximal rule for r=c:ab;s=r:ad; a,b,c,s
+C MOLP problem=33.vlp, minimize
+C rows=42, columns=220, objectives=22
+I    5.01] Elapsed: 5.01, vertices: 69, facets final: 551, pending: 10748, eq: 1471, out: 2416, in: 1424, pool: 90
+I    7.41] recalculating facets...
+I   10.01] Elapsed: 10.01, vertices: 141, facets final: 1127, pending: 1352, eq: 123, out: 92, in: 240, pool: 67
+I   13.89] recalculating facets...
+I   15.01] Elapsed: 15.01, vertices: 225, facets final: 1546, pending: 1168, eq: 285, out: 170, in: 108, pool: 7
+I   20.01] Elapsed: 20.01, vertices: 257, facets final: 4276, pending: 5616, eq: 1033, out: 432, in: 2962, pool: 22
+I   25.02] Elapsed: 25.02, vertices: 275, facets final: 5888, pending: 6152, eq: 801, out: 800, in: 712, pool: 60
+I   28.68] recalculating facets...
+I   30.02] Elapsed: 30.02, vertices: 310, facets final: 7546, pending: 3102, eq: 800, out: 440, in: 1078, pool: 48
+I   35.02] Elapsed: 35.02, vertices: 358, facets final: 8018, pending: 994, eq: 520, out: 640, in: 0, pool: 23
+I   41.44] Elapsed: 41.44, vertices: 391, facets final: 9275, pending: 13306, eq: 1258, out: 3752, in: 5160, pool: 27
+I   46.49] Elapsed: 46.49, vertices: 398, facets final: 9953, pending: 9684, eq: 1498, out: 2344, in: 256, pool: 35
+I   47.42] recalculating facets...
+I   51.49] Elapsed: 51.49, vertices: 412, facets final: 11585, pending: 8170, eq: 1297, out: 828, in: 3146, pool: 29
+I   56.73] Elapsed: 56.73, vertices: 425, facets final: 13170, pending: 7173, eq: 1316, out: 846, in: 3424, pool: 26
+I   61.73] Elapsed: 1:02, vertices: 444, facets final: 15809, pending: 630, eq: 1186, out: 36, in: 420, pool: 7
+I   62.24] Elapsed: 1:02, vertices: 452, facets final: 15949, pending: 0, eq: 796, out: 352, in: 14
+
+--------------------------------
+Problem completed
+ name                    33.vlp
+ output                  rules/vlp/33.res
+ rows, cols, objs        42, 220, 22
+ vertices, facets        452, 15949
+ total time              1:02
+--------------------------------
+Statistics
+LP:
+ oracle calls            80068
+   avg iterations/calls  16.87
+ total oracle time       28.68
+Combinatorics:
+ vertices added          452
+ facets probed           83580
+ facets # max            22582
+ memory allocated        12.21M
+ storage expansion
+   vertices # / upto     4 / 508
+   facets   # / upto     6 / 24572
+ facet manipulating
+   added avg / max       542.96 / 7.63k
+   compressed            44
+ number of ridge tests
+   avg / max             4.46M / 66.01M
+--------------------------------
+Parameters with non-default values
+ VertexPoolSize = 200
+Stopping threads ...
+Thread 2 stopped.
+Thread 1 stopped.

@@ -1,0 +1,30 @@
+C maximal rule for r=c:ab; ar,br,c,dr
+I    5.00] Elapsed: 5.00, vertices: 66, facets final: 6791, pending: 3016
+I    5.40] Elapsed: 5.40, vertices: 66, facets final: 9807, pending: 0
+
+--------------------------------
+Problem completed
+ name                    04.vlp
+ output                  rules/vlp/04.res
+ rows, cols, objs        22, 88, 22
+ vertices, facets        66, 9807
+ total time              5.40
+--------------------------------
+Statistics
+LP:
+ oracle calls            9873
+   avg iterations/calls  10.42
+ total oracle time       1.44
+Combinatorics:
+ vertices added          66
+ facets probed           9873
+ facets # max            21166
+ memory allocated        8.08M
+ storage expansion
+   vertices # / upto     1 / 124
+   facets   # / upto     6 / 24572
+ facet manipulating
+   added avg / max       1.16k / 7.47k
+   compressed            14
+ number of ridge tests
+   avg / max             9.90M / 73.00M
