@@ -355,7 +355,7 @@ print FILE "c copy string: $paste\n";
 print FILE "p vlp min ",
       $arows+1,      # number of total rows
       " ",$cols,     # number of columns
-      " ",$nonzeroa, # nonzero elements if a
+      " ",$nonzeroa, # nonzero elements in a
       " ",$full,     # number of objectives
       " ",$nonzerop, # nonzero elements in objectives
       "\n";

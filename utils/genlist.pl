@@ -1,12 +1,12 @@
 #!/usr/bin/perl -W
 #
-# create .md files from the DFZ.txt file
+# generate ineq-list.txt and ineq-normalized.txt from the files
+# supplied as arguments.
+# Typical usage:
+#   utils/genlist.pl DFZ/DFZ.txt copy/*.new rules/*.new
 #
 
 use strict;
-
-## file to be listed
-my @files = ( "DFZ/DFZ.txt", "copy/new.txt");
 
 my @list=();
 
@@ -73,7 +73,7 @@ sub make_list {
     }
     print OUT "# Entropy inequalities for four random variables
 #
-# Each line cpntains the coefficients of an entropy inequality using
+# Each line contains the coefficients of an entropy inequality using
 #  the natural coordinates
 #  [a,b,c,d ]  (Ingleton expression: -(a,b)+(a,b|c)+(a,b|d)+(c,d) )
 #   (a,b|c), (a,c|b), (b,c|a)   (a,b|d), (a,d|b), (b,d|a)
