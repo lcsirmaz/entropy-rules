@@ -1,0 +1,48 @@
+/# rules to be defined
+#
+# index, copy string, variables1, variables 2
+#
+# single rules
+# label, copy string, base
+#
+01  r=a:bc;s=a:bdr     ar,br,cr,d      # DFZ rule 1
+02  r=a:bc;s=a:bdr     ar,br,c,dr      # DFZ rule 3, 16
+03  r=a:bc;s=a:bdr     a,r,c,d         # DFZ rule 9, 16, 23
+04  r=a:bc;s=a:bdr     a,b,r,d         # DFZ rule 10
+05  r=a:bc;s=a:bdr     ar,br,cr,dr     # DFZ rule 11
+06  r=a:bc;s=a:bdr     ar,rs,cr,dr     # DFZ rule 31
+07  r=a:bc;s=a:bdr     ars,brs,crs,drs # DFZ rule 41, 42
+
+10  r=a:bc;s=r:ab      s,b,c,d         # DFZ rule 29
+11  r=a:bc;s=r:ac      s,b,c,d         # DFZ rule 30
+12  r=a:bc;s=(ar):bc   a,s,c,d         # DFZ rule 39
+13  r=a:bc;s=(ar):bc   a,b,s,d         # DFZ rule 40
+
+20  rs=cd:ab           ar,br,cr,d      # DFZ rule 2, 6, 8
+21  rs=cd:ab           ar,br,c,dr      # DFZ rule 4, 6, 15
+22  rs=cd:ab           a,r,c,d         # DFZ rule 7, 8, 14, 15, 18
+23  rs=cd:ab           ar,br,cr,dr     # DFZ rule 12, 13, 14, 19
+24  rs=cd:ab           a,b,c,dr        # DFZ rule 13, 17, 25, 28, 36
+25  rs=cd:ab           a,b,cr,d        # DFZ rule 17, 19
+26  rs=cd:ab           r,b,c,d         # DFZ rule 18
+27  rs=cd:ab           a,d,r,s         # DFZ rule 20, 21, 22, 24, 26, 28, 37
+28  rs=cd:ab           a,c,r,s         # DFZ rule 21, 43
+29  rs=cd:ab           ac,bc,cr,s      # DFZ rule 22
+30  rs=cd:ab           ac,bc,cr,cs     # DFZ rule 24, 32, 35, 37
+31  rs=cd:ab           b,c,r,s         # DFZ rule 26
+32  rs=cd:ab           ad,b,r,s        # DFZ rule 43
+
+36  r=c:ab;s=r:ac      a,r,c,d         # DFZ 27
+37  r=c:ab;s=r:ad      a,b,c,s         # DFZ 33
+38  r=c:ab;s=b:adr     rs,br,cr,dr     # DFZ 34
+39  r=c:ab;s=b:adr     rs,bs,cs,ds     # DFZ 38
+
+#####################################################
+# double rules
+# number, copy string, base1, base2
+#
+40x r=a:bc;s=a:bcr     ar,br,c,dr    ar,br,d,cr  # DFZ 5
+41x rs=cd:ab           ar,br,c,dr    ar,br,d,cr  # DFZ 6
+
+
+

@@ -1,42 +1,32 @@
-Using 3 threads
-Thread 1 started ...
-Thread 2 started ...
-C maximal rule for rs=cd:ab; ac,bc,cr,cs
-C MOLP problem=32.vlp, minimize
-C rows=31, columns=139, objectives=22
-I    5.02] Elapsed: 5.02, vertices: 58, facets final: 5628, pending: 15325, eq: 2072, out: 1712, in: 196, pool: 21
-I   10.02] Elapsed: 10.02, vertices: 77, facets final: 15694, pending: 4215, eq: 889, out: 84, in: 0, pool: 5
-I   11.65] Elapsed: 11.65, vertices: 85, facets final: 20661, pending: 0, eq: 573, out: 464, in: 106
+C maximal rule for rs=cd:ab; ad,b,r,s
+I    2.89] Elapsed: 2.89, vertices: 34, facets final: 8942, pending: 0
 
 --------------------------------
 Problem completed
  name                    32.vlp
  output                  rules/vlp/32.res
- rows, cols, objs        31, 139, 22
- vertices, facets        85, 20661
- total time              11.65
+ rows, cols, objs        30, 139, 22
+ vertices, facets        34, 8942
+ total time              2.89
 --------------------------------
 Statistics
 LP:
- oracle calls            31454
-   avg iterations/calls  17.61
- total oracle time       8.30
+ oracle calls            11249
+   avg iterations/calls  14.42
+ total oracle time       2.80
 Combinatorics:
- vertices added          85
- facets probed           32426
- facets # max            22552
- memory allocated        8.90M
+ vertices added          34
+ facets probed           11527
+ facets # max            8943
+ memory allocated        6.05M
  storage expansion
    vertices # / upto     1 / 124
-   facets   # / upto     5 / 24572
+   facets   # / upto     3 / 12284
  facet manipulating
-   added avg / max       707.04 / 9.81k
-   compressed            16
+   added avg / max       441.76 / 4.25k
+   compressed            4
  number of ridge tests
-   avg / max             5.42M / 44.72M
+   avg / max             184.03k / 1.77M
 --------------------------------
 Parameters with non-default values
  VertexPoolSize = 200
-Stopping threads ...
-Thread 1 stopped.
-Thread 2 stopped.

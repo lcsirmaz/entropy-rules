@@ -28,6 +28,9 @@ sub print_usage {
 }
 
 if(scalar @ARGV < 2){ print_usage(); }
+if( $ARGV[0] !~ /\.res$/ ){
+    die "First argument should be a result file ending with .res\n";
+}
 
 ####################################################################
 ## compute the lexicographically maximal version
@@ -113,6 +116,10 @@ sub read_result_file {
           }
       }
       next if($a[0]<0);
+# check if some entry is >999, if yes then skip this line ...
+      my $skipit=0;
+      for my $i(1..10){ $skipit=1 if($a[$i]>999); }
+      next if($skipit);
       biggest(\@a);    ## make it lexicographically maximal
       push @lines, \@a;
     }
@@ -256,7 +263,9 @@ sub find_copy {
         my $a=<FILE>; close(FILE);
         chomp($a);
         if($a=~/^c copy/){
-            $a=~ s/^.*string: //; $info->{copy}=$a;
+            $a=~ s/^.*string: //; $info->{copy}="$a, copy:";
+        } elsif( $a=~/rule (\d.+) for/){
+            $info->{copy} = "rule$1, rule:";
         }
     }
     $fname =~ /([a-z\d]+)\.vlp$/;
@@ -284,12 +293,13 @@ foreach my $a(@{$info->{new}}){
     my $vlpfile=generate_vlp($info,$a);
     system("inner -y- $vlpfile >/dev/null");
     my $e=$?>>8; # 0: superseded, 2: new
+    die "Unexpected error from inner ($e)\n" if($e!=0 && $e !=2);
     unlink $vlpfile;
     next if($e==0);
     for my $i(0..10){
         print $a->[$i],","; print " " if($i==0 || $i==3 || $i==6);
     }
-    print " ",$info->{copy},", copy:",$info->{id},":$cnt\n";
+    print " ",$info->{copy},$info->{id},":$cnt\n";
     # store it, and use it subsequently
     add_to_matrix($info,$a);
 }

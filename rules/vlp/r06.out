@@ -1,0 +1,62 @@
+C applying rule 06 for ineq2rule.txt
+I    5.02] Elapsed: 5.02, vertices: 30, facets final: 61, pending: 368
+I   10.04] Elapsed: 10.04, vertices: 41, facets final: 121, pending: 458
+I   15.28] Elapsed: 15.28, vertices: 53, facets final: 177, pending: 452
+I   20.34] Elapsed: 20.34, vertices: 65, facets final: 219, pending: 446
+I   25.38] Elapsed: 25.38, vertices: 77, facets final: 272, pending: 444
+I   30.44] Elapsed: 30.44, vertices: 87, facets final: 349, pending: 430
+I   35.69] Elapsed: 35.69, vertices: 99, facets final: 381, pending: 360
+I   36.14] recalculating facets...
+recalculate_facet: numerical instability at facet 390, coord 0 (1.72594e-06)
+recalculate_facet: numerical instability at facet 390, coord 7 (-1.38838e-06)
+recalculate_facet: numerical instability at facet 390, coord 10 (-1.29739e-06)
+recalculate_facet: numerical instability at facet 402, coord 1 (-1.15834e-06)
+recalculate_facet: numerical instability at facet 402, coord 2 (-1.71425e-06)
+recalculate_facet: numerical instability at facet 402, coord 4 (2.09838e-06)
+recalculate_facet: numerical instability at facet 402, coord 10 (1.52428e-06)
+recalculate_facet: numerical instability at facet 403, coord 4 (1.16352e-06)
+recalculate_facet: numerical instability at facet 403, coord 5 (-1.33579e-06)
+I   40.81] Elapsed: 40.81, vertices: 110, facets final: 416, pending: 358
+I   45.83] Elapsed: 45.83, vertices: 121, facets final: 460, pending: 434
+I   50.96] Elapsed: 50.96, vertices: 131, facets final: 517, pending: 397
+I   55.96] Elapsed: 55.96, vertices: 143, facets final: 545, pending: 310
+I   61.19] Elapsed: 1:01, vertices: 154, facets final: 570, pending: 251
+I   66.19] Elapsed: 1:06, vertices: 166, facets final: 591, pending: 198
+I   71.24] Elapsed: 1:11, vertices: 176, facets final: 619, pending: 203
+I   76.58] Elapsed: 1:17, vertices: 188, facets final: 636, pending: 152
+I   80.66] recalculating facets...
+I   81.87] Elapsed: 1:22, vertices: 204, facets final: 651, pending: 79
+I   86.92] Elapsed: 1:27, vertices: 219, facets final: 668, pending: 50
+I   92.02] Elapsed: 1:32, vertices: 238, facets final: 679, pending: 9
+I   95.66] Elapsed: 1:36, vertices: 245, facets final: 689, pending: 0
+
+--------------------------------
+Problem completed
+ name                    r06.vlp
+ output                  rules/vlp/r06.res
+ rows, cols, objs        12, 2763, 10
+ vertices, facets        245, 689
+ total time              1:36
+--------------------------------
+Statistics
+LP:
+ oracle calls            20137
+   avg iterations/calls  5.24
+ total oracle time       1:34
+Combinatorics:
+ vertices added          245
+ facets probed           31078
+ facets # max            936
+ memory allocated        1.97M
+ instability warnings    9
+ storage expansion
+   vertices # / upto     3 / 380
+   facets   # / upto     1 / 4092
+ facet manipulating
+   added avg / max       24.74 / 155.00
+   compressed            1
+ number of ridge tests
+   avg / max             11.83k / 37.37k
+--------------------------------
+Parameters with non-default values
+ VertexPoolSize = 200

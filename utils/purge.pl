@@ -19,9 +19,29 @@ sub print_usage {
 }
 
 if(scalar @ARGV < 1 ){ print_usage(); }
+my $ARGZ=0;
+if($ARGV[0] eq "-s" ){ 
+    if(scalar @ARGV < 3){ print_usage(); }
+    $ARGZ=2;
+}
 
 #######################################################################
+## read the superseded list
+sub read_supplist {
+    my ($info,$fname)=@_;
+    my $cnt=0;
+    open(FILE,$fname) || die "Cannot open superseded list file $fname\n";
+    while(<FILE>){
+        next if(!/^superseded: ([^\s]+) by/);
+        $info->{supplist}->{$1}=1;
+        $cnt++;
+    }
+    close(FILE);
+    die "No superseded items found in $fname\n" if($cnt==0);
+}
+
 ## read an inequality file
+my $skipS=1; # skip inequalities with ,S appended
 sub read_ineq_file {
     my ($info,$fname)=@_;
     $info->{old}=() if(!defined $info->{old});
@@ -34,12 +54,17 @@ sub read_ineq_file {
       my @a=split(/,\s*/,$line);
       scalar @a>=12 || die "Wrong data line in inequality file $fname:\n   $line\n";
 ##      if($a[13]){ print "line superseded: $line\n"; }
-      if($a[13]){  # superseded ...
+      if($skipS && $a[13]){  # superseded ...
           $a[13]=$base;
           push @{$info->{superseded}},\@a;
       } else {
+          my $label="$base/$a[12]";
           $a[13]=$base;
-          push @{$info->{old}},\@a;
+          if(defined $info->{supplist}->{$label}){
+              push @{$info->{superseded}},\@a;
+          } else {
+              push @{$info->{old}},\@a;
+          }
       }
     }
     close(FILE);
@@ -159,17 +184,22 @@ sub run_lp {
     my $vlpfile=generate_vlp($info,$idx,$sded);
     system("inner -y- $vlpfile > /dev/null");
     my $e=$?>>8; # 0: superseded, 2: not
+    die "Unexpected error from inner ($e)\n" if($e!=0 && $e !=2);
     unlink($vlpfile);
     return $e==0 ? 1 : 0;
 }
 
 ####################################################################
 ##
-my $info={};
-for my $i(0..-1+scalar @ARGV){ read_ineq_file($info,$ARGV[$i]); }
+my $info={ supplist => {} };
+if($ARGZ){ read_supplist($info,$ARGV[1]); }
 
-print "total: ",scalar @{$info->{old}},
-      ",  superseded: ",scalar @{$info->{superseded}},"\n";
+for my $i($ARGZ .. -1+scalar @ARGV){ read_ineq_file($info,$ARGV[$i]); }
+
+print "total: ",scalar @{$info->{old}},",  superseded: ",
+      (defined($info->{superseded}) ? scalar @{$info->{superseded}} : 0),"\n";
+
+my $progress=0;
 
 for my $j(0..-1+scalar @{$info->{old}}){
     my $s=is_superseded($info,$j);
@@ -185,17 +215,21 @@ for my $j(0..-1+scalar @{$info->{old}}){
 print "Calling LP\n";
  for my $j(0..-1+scalar @{$info->{old}}){
     next if($info->{old}[$j]->[14]);
+    $progress++;
+    if($progress % 50 ==0){ print "progress: $progress\n"; }
     if( run_lp($info,$j)){
         $info->{old}[$j]->[14]="S"; # superseded
         print "superseded: ",$info->{old}[$j]->[13],"/",$info->{old}[$j]->[12],
           " by  LP\n";
     }
 }
-print "checking superseded ....\n";
+exit 0 if(!defined($info->{superseded}));
+print "checking superseded ....\n"; $progress=0;
 for my $j(0..-1+scalar @{$info->{superseded}}){
     next if($info->{superseded}[$j]->[14]);
 ## print "checking ($j) ",$info->{superseded}[$j]->[13],"/",$info->{superseded}[$j]->[12],"\n";
-
+    $progress++;
+    if($progress % 50 ==0){ print "progress: $progress\n"; }
     if(! run_lp($info,$j,1)){
          print "NOT superseded: ",$info->{superseded}[$j]->[13],"/",$info->{superseded}[$j]->[12],
             " by LP\n";

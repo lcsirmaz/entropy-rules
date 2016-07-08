@@ -9,6 +9,22 @@ my $rawfile = "DFZ/DFZ.txt";
 
 my @list=();
 
+my %supplist=();
+
+if(scalar @ARGV>0){
+   if($ARGV[0] ne "-s" || scalar @ARGV!=2){ 
+     print "generating DFZ/main.txt\n";
+     print "usage: [-s <superseded-list>]\n";
+     exit 1;
+   }
+   open(FILE,$ARGV[1])|| die "Cennot open superseded file $ARGV[1]\n";
+   while(<FILE>){
+       next if(!/^superseded: DFZ\/([^\s]+) by/ );
+       $supplist{$1}=1;
+   }
+   close(FILE);
+}
+
 open(FILE,$rawfile) || die "Cannot open file $rawfile\n";
 while(<FILE>){
     chomp;
@@ -17,6 +33,7 @@ while(<FILE>){
     for my $i(0..-1+scalar @a){
         $a[$i] =~ s/\s//g;
     }
+    if(defined $supplist{$a[12]}){ $a[13]='S'; }
     push @list,\@a;
 }
 close(FILE);

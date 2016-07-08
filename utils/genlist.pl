@@ -10,6 +10,21 @@ use strict;
 
 my @list=();
 
+my %supplist=();
+
+sub read_supplist {
+    my $file=shift;
+    open(FILE,$file) || die "Cannot open superseded file $file\n";
+    my $cnt=0;
+    while(<FILE>){
+        next if(!/^superseded: [^\s]+\/([^\s]+) by/);
+        $supplist{$1}=1;
+        $cnt++;
+    }
+    close(FILE);
+    die "No superseded items found in $file\n" if($cnt==0);
+}
+
 sub add_file {
     my $file=shift;
     open(FILE,$file) || die "Cannot open file $file\n";
@@ -22,6 +37,7 @@ sub add_file {
         }
         die "Wrong line in file $file" if(scalar @a < 12);
         next if($a[13]); ## superseded
+        next if(defined $supplist{$a[12]});
         push @list,\@a;
     }
     close(FILE);
@@ -127,13 +143,21 @@ sub make_normalized_list {
     close(OUT);
 }
 
-if(scalar @ARGV == 0){
-    print "usage: genlist.pl <eqfile1> <eqfile2> ... \n";
+################################################################
+
+my $ARGZ=0;
+if( scalar @ARGV>0 && $ARGV[0] eq "-s"){$ARGZ=2; }
+
+if(scalar @ARGV <= $ARGZ){
+    print "usage: genlist.pl [-s <slist>] <eqfile1> <eqfile2> ... \n";
     exit 1;
 }
 
+## read list of superseded items
+if($ARGZ){ read_supplist($ARGV[1]); }
+
 ## read all files
-foreach my $input(@ARGV){ add_file($input); }
+for my $i($ARGZ .. -1+scalar @ARGV){ add_file($ARGV[$i]); }
 
 make_list("ineq-list.txt");
 

@@ -1,31 +1,36 @@
-C maximal rule for rs=cd:ab; a,b,c,dr
-I    5.45] Elapsed: 5.45, vertices: 45, facets final: 8461, pending: 19398
-I   10.45] Elapsed: 10.45, vertices: 72, facets final: 13152, pending: 12665
-I   13.68] Elapsed: 13.68, vertices: 72, facets final: 25817, pending: 0
+C maximal rule for rs=cd:ab; a,b,cr,d
+I    5.25] Elapsed: 5.25, vertices: 50, facets final: 3079, pending: 14759
+I   10.25] Elapsed: 10.25, vertices: 63, facets final: 11570, pending: 21153
+I   15.25] Elapsed: 15.25, vertices: 69, facets final: 19434, pending: 15541
+I   20.25] Elapsed: 20.25, vertices: 78, facets final: 33891, pending: 1688
+I   20.81] Elapsed: 20.81, vertices: 82, facets final: 35596, pending: 0
 
 --------------------------------
 Problem completed
  name                    25.vlp
  output                  rules/vlp/25.res
  rows, cols, objs        30, 139, 22
- vertices, facets        72, 25817
- total time              13.68
+ vertices, facets        82, 35596
+ total time              20.81
 --------------------------------
 Statistics
 LP:
- oracle calls            25889
-   avg iterations/calls  16.68
- total oracle time       6.88
+ oracle calls            46236
+   avg iterations/calls  19.60
+ total oracle time       13.73
 Combinatorics:
- vertices added          72
- facets probed           25889
- facets # max            33506
- memory allocated        11.71M
+ vertices added          82
+ facets probed           46878
+ facets # max            38812
+ memory allocated        15.92M
  storage expansion
    vertices # / upto     1 / 124
-   facets   # / upto     7 / 36860
+   facets   # / upto     8 / 40956
  facet manipulating
-   added avg / max       1.26k / 8.05k
-   compressed            16
+   added avg / max       1.33k / 16.07k
+   compressed            18
  number of ridge tests
-   avg / max             16.63M / 147.06M
+   avg / max             10.54M / 127.72M
+--------------------------------
+Parameters with non-default values
+ VertexPoolSize = 200

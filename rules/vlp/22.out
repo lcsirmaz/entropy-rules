@@ -1,0 +1,57 @@
+C maximal rule for rs=cd:ab; a,r,c,d
+I    4.46] recalculating facets...
+I    5.10] Elapsed: 5.10, vertices: 103, facets final: 4260, pending: 8468
+I   16.39] Elapsed: 16.39, vertices: 107, facets final: 4466, pending: 61739
+I   24.29] Elapsed: 24.29, vertices: 108, facets final: 4475, pending: 62186
+I   33.60] Elapsed: 33.60, vertices: 109, facets final: 4489, pending: 81156
+I   46.02] Elapsed: 46.02, vertices: 110, facets final: 4500, pending: 67893
+I   54.39] Elapsed: 54.39, vertices: 111, facets final: 4514, pending: 77663
+I   65.11] Elapsed: 1:05, vertices: 112, facets final: 4524, pending: 79913
+I   73.37] Elapsed: 1:13, vertices: 113, facets final: 4534, pending: 65967
+I   79.91] Elapsed: 1:20, vertices: 114, facets final: 4543, pending: 81186
+I   87.96] Elapsed: 1:28, vertices: 115, facets final: 4550, pending: 63059
+I   94.57] Elapsed: 1:35, vertices: 116, facets final: 4559, pending: 59714
+I  100.38] Elapsed: 1:40, vertices: 117, facets final: 4573, pending: 73428
+I  107.39] Elapsed: 1:47, vertices: 118, facets final: 4586, pending: 63355
+I  112.74] Elapsed: 1:53, vertices: 119, facets final: 4597, pending: 59008
+I  117.74] Elapsed: 1:58, vertices: 120, facets final: 4633, pending: 55104
+I  124.04] Elapsed: 2:04, vertices: 122, facets final: 4654, pending: 50099
+I  130.34] Elapsed: 2:10, vertices: 125, facets final: 4770, pending: 35425
+I  136.21] Elapsed: 2:16, vertices: 128, facets final: 4902, pending: 32489
+I  141.59] Elapsed: 2:22, vertices: 133, facets final: 5227, pending: 27784
+I  146.59] Elapsed: 2:27, vertices: 142, facets final: 6478, pending: 15009
+I  151.60] Elapsed: 2:32, vertices: 153, facets final: 8975, pending: 16348
+I  156.60] Elapsed: 2:37, vertices: 170, facets final: 15774, pending: 3069
+I  171.49] Elapsed: 2:51, vertices: 174, facets final: 16992, pending: 19990
+I  176.49] Elapsed: 2:56, vertices: 176, facets final: 34897, pending: 2101
+I  177.01] Elapsed: 2:57, vertices: 178, facets final: 36784, pending: 0
+
+--------------------------------
+Problem completed
+ name                    22.vlp
+ output                  rules/vlp/22.res
+ rows, cols, objs        30, 139, 22
+ vertices, facets        178, 36784
+ total time              2:57
+--------------------------------
+Statistics
+LP:
+ oracle calls            61942
+   avg iterations/calls  16.80
+ total oracle time       16.66
+Combinatorics:
+ vertices added          178
+ facets probed           64786
+ facets # max            85730
+ memory allocated        33.94M
+ storage expansion
+   vertices # / upto     2 / 252
+   facets   # / upto     9 / 86012
+ facet manipulating
+   added avg / max       2.94k / 43.19k
+   compressed            24
+ number of ridge tests
+   avg / max             83.99M / 1.21G
+--------------------------------
+Parameters with non-default values
+ VertexPoolSize = 200

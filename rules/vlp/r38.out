@@ -1,0 +1,72 @@
+C applying rule 38 for ineq2rule.txt
+I    5.04] Elapsed: 5.04, vertices: 37, facets final: 42, pending: 522
+I   10.06] Elapsed: 10.06, vertices: 89, facets final: 72, pending: 1924
+I   10.48] recalculating facets...
+I   14.26] recalculating facets...
+I   15.07] Elapsed: 15.07, vertices: 222, facets final: 108, pending: 3523
+I   18.75] recalculating facets...
+I   20.07] Elapsed: 20.07, vertices: 323, facets final: 165, pending: 3748
+I   23.85] recalculating facets...
+I   25.10] Elapsed: 25.10, vertices: 422, facets final: 273, pending: 3359
+I   28.85] recalculating facets...
+I   30.13] Elapsed: 30.13, vertices: 523, facets final: 396, pending: 3615
+I   34.04] recalculating facets...
+I   35.14] Elapsed: 35.14, vertices: 622, facets final: 508, pending: 3537
+I   39.74] recalculating facets...
+I   40.17] Elapsed: 40.17, vertices: 707, facets final: 673, pending: 3148
+I   45.17] Elapsed: 45.17, vertices: 781, facets final: 961, pending: 2578
+I   46.47] recalculating facets...
+I   50.17] Elapsed: 50.17, vertices: 837, facets final: 1358, pending: 1900
+I   55.17] Elapsed: 55.17, vertices: 877, facets final: 1767, pending: 1400
+I   59.44] recalculating facets...
+I   60.18] Elapsed: 1:00, vertices: 904, facets final: 2130, pending: 969
+I   65.19] Elapsed: 1:05, vertices: 928, facets final: 2361, pending: 683
+I   70.19] Elapsed: 1:10, vertices: 951, facets final: 2478, pending: 521
+I   75.26] Elapsed: 1:15, vertices: 971, facets final: 2544, pending: 390
+I   80.31] Elapsed: 1:20, vertices: 989, facets final: 2576, pending: 307
+I   84.60] recalculating facets...
+I   85.41] Elapsed: 1:25, vertices: 1002, facets final: 2590, pending: 283
+I   90.43] Elapsed: 1:30, vertices: 1014, facets final: 2612, pending: 215
+I   95.54] Elapsed: 1:36, vertices: 1026, facets final: 2626, pending: 182
+I  100.78] Elapsed: 1:41, vertices: 1037, facets final: 2637, pending: 165
+I  105.79] Elapsed: 1:46, vertices: 1048, facets final: 2655, pending: 188
+I  111.06] Elapsed: 1:51, vertices: 1058, facets final: 2671, pending: 152
+I  116.47] Elapsed: 1:56, vertices: 1068, facets final: 2680, pending: 118
+I  121.83] Elapsed: 2:02, vertices: 1077, facets final: 2683, pending: 97
+I  127.39] Elapsed: 2:07, vertices: 1086, facets final: 2685, pending: 77
+I  133.04] Elapsed: 2:13, vertices: 1095, facets final: 2687, pending: 57
+I  136.32] recalculating facets...
+I  138.32] Elapsed: 2:18, vertices: 1103, facets final: 2688, pending: 41
+I  143.91] Elapsed: 2:24, vertices: 1111, facets final: 2691, pending: 23
+I  148.94] Elapsed: 2:29, vertices: 1125, facets final: 2695, pending: 6
+I  149.98] Elapsed: 2:30, vertices: 1132, facets final: 2697, pending: 0
+
+--------------------------------
+Problem completed
+ name                    r38.vlp
+ output                  rules/vlp/r38.res
+ rows, cols, objs        12, 2747, 10
+ vertices, facets        1132, 2697
+ total time              2:30
+--------------------------------
+Statistics
+LP:
+ oracle calls            23285
+   avg iterations/calls  7.38
+ total oracle time       2:00
+Combinatorics:
+ vertices added          1132
+ facets probed           32473
+ facets # max            4329
+ memory allocated        5.27M
+ storage expansion
+   vertices # / upto     9 / 1148
+   facets   # / upto     2 / 8188
+ facet manipulating
+   added avg / max       38.45 / 241.00
+   compressed            33
+ number of ridge tests
+   avg / max             112.28k / 722.86k
+--------------------------------
+Parameters with non-default values
+ VertexPoolSize = 200

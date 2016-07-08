@@ -162,7 +162,7 @@ sub swapped {
 
 ##################################################################
 #
-if( scalar @ARGV != 1 ){ die "Please specify the copy string to minimize\n"; }
+if( scalar @ARGV != 1 ){ die "Please specify the copy string to normalize\n"; }
 
 print swapped($ARGV[0]), "\n";
 exit 0;

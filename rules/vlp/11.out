@@ -1,29 +1,42 @@
-C maximal rule for r=a:bc; ar,br,cr,dr
-I    1.16] Elapsed: 1.16, vertices: 42, facets final: 6511, pending: 0
+C maximal rule for r=a:bc;s=r:ac; s,b,c,d
+I    5.28] Elapsed: 5.28, vertices: 67, facets final: 67, pending: 23059
+I   10.96] Elapsed: 10.96, vertices: 80, facets final: 77, pending: 22759
+I   15.98] Elapsed: 15.98, vertices: 95, facets final: 99, pending: 16991
+I   16.78] recalculating facets...
+I   33.57] Elapsed: 33.57, vertices: 122, facets final: 413, pending: 25917
+I   41.17] Elapsed: 41.17, vertices: 123, facets final: 425, pending: 24989
+I   46.39] Elapsed: 46.39, vertices: 128, facets final: 746, pending: 24576
+I   51.39] Elapsed: 51.39, vertices: 131, facets final: 4435, pending: 20981
+I   56.39] Elapsed: 56.39, vertices: 131, facets final: 8481, pending: 16935
+I   61.39] Elapsed: 1:01, vertices: 131, facets final: 12523, pending: 12893
+I   66.39] Elapsed: 1:06, vertices: 131, facets final: 16601, pending: 8815
+I   71.39] Elapsed: 1:11, vertices: 131, facets final: 20647, pending: 4769
+I   76.39] Elapsed: 1:16, vertices: 131, facets final: 24736, pending: 680
+I   77.20] Elapsed: 1:17, vertices: 131, facets final: 25416, pending: 0
 
 --------------------------------
 Problem completed
  name                    11.vlp
  output                  rules/vlp/11.res
- rows, cols, objs        22, 88, 22
- vertices, facets        42, 6511
- total time              1.16
+ rows, cols, objs        42, 221, 22
+ vertices, facets        131, 25416
+ total time              1:17
 --------------------------------
 Statistics
 LP:
- oracle calls            6553
-   avg iterations/calls  10.15
- total oracle time       0.95
+ oracle calls            25547
+   avg iterations/calls  26.99
+ total oracle time       31.31
 Combinatorics:
- vertices added          42
- facets probed           6553
- facets # max            8128
- memory allocated        4.35M
+ vertices added          131
+ facets probed           25547
+ facets # max            29867
+ memory allocated        13.01M
  storage expansion
-   vertices # / upto     1 / 124
-   facets   # / upto     2 / 8188
+   vertices # / upto     2 / 252
+   facets   # / upto     7 / 32764
  facet manipulating
-   added avg / max       429.17 / 2.71k
-   compressed            7
+   added avg / max       1.02k / 11.95k
+   compressed            34
  number of ridge tests
-   avg / max             920.84k / 7.02M
+   avg / max             10.44M / 99.03M

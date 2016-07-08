@@ -11,11 +11,13 @@ by R. Dougherty et al.
 
 #### Content
 
-* DESCRIPTION.md &nbsp;&ndash; how entropy inequalities are represented
-* ineq-list.txt &nbsp;&ndash; list of known inequalities
-* ineq-normalized.txt &nbsp;&ndash; inequalities normalized by the value of coefficients
-* DFP &nbsp;&ndash; Dougherty-Freilig-Zeger list of 214 inequalities
-* copy &nbsp;&ndash; description and data for copy method
-* rules &nbsp;&ndash; description and data for the rule method
-* utils &nbsp;&ndash; utility perl programs to generate and check data
+* [DESCRIPTION.md](DESCRIPTION.md) &nbsp;&ndash; how entropy inequalities are represented
+* [ineq-list.txt](ineq-list.txt) &nbsp;&ndash; list of known inequalities
+* [ineq-normalized.txt](ineq-normalized.txt) &nbsp;&ndash; inequalities normalized by the value of coefficients
+* [ineq2rule.txt](ineq2rule.txt) &nbsp;&ndash; 4-variable entropy inequalities used for bootstrapping rules
+* [DFZ](DFZ) &nbsp;&ndash; Dougherty-Freilig-Zeger list of 214 inequalities
+* [copy](copy) &nbsp;&ndash; description and data for copy method
+* [rules](rules) &nbsp;&ndash; description and data for the rule method
+* [utils](utils) &nbsp;&ndash; utility perl programs to generate and check data
+
 
