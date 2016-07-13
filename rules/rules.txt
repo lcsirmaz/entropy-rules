@@ -5,8 +5,8 @@
 # single rules
 # label, copy string, base
 #
-01  r=a:bc;s=a:bdr     ar,br,cr,d      # DFZ rule 1
-02  r=a:bc;s=a:bdr     ar,br,c,dr      # DFZ rule 3, 16
+01  r=a:bc;s=a:bdr     ar,br,cr,d      # DFZ rule 1, 5
+02  r=a:bc;s=a:bdr     ar,br,c,dr      # DFZ rule 3, 5, 16
 03  r=a:bc;s=a:bdr     a,r,c,d         # DFZ rule 9, 16, 23
 04  r=a:bc;s=a:bdr     a,b,r,d         # DFZ rule 10
 05  r=a:bc;s=a:bdr     ar,br,cr,dr     # DFZ rule 11
@@ -17,6 +17,12 @@
 11  r=a:bc;s=r:ac      s,b,c,d         # DFZ rule 30
 12  r=a:bc;s=(ar):bc   a,s,c,d         # DFZ rule 39
 13  r=a:bc;s=(ar):bc   a,b,s,d         # DFZ rule 40
+
+14  rs=ad:bc           ar,br,cr,d      # 1, 5
+15  rs=ad:bc           ar,br,c,dr      # 3, 5, 16
+16  rs=ad:bc           a,r,c,d         # 9, 16
+17  rs=ad:bc           a,b,r,d         # 10
+18  rs=ad:bc           ar,br,cr,dr     # 11
 
 20  rs=cd:ab           ar,br,cr,d      # DFZ rule 2, 6, 8
 21  rs=cd:ab           ar,br,c,dr      # DFZ rule 4, 6, 15
@@ -32,15 +38,30 @@
 31  rs=cd:ab           b,c,r,s         # DFZ rule 26
 32  rs=cd:ab           ad,b,r,s        # DFZ rule 43
 
+34  r=c:ab;s=(ar):bc   a,b,s,d
+35  r=c:ab;s=(ar):bc   a,s,c,d
 36  r=c:ab;s=r:ac      a,r,c,d         # DFZ 27
 37  r=c:ab;s=r:ad      a,b,c,s         # DFZ 33
 38  r=c:ab;s=b:adr     rs,br,cr,dr     # DFZ 34
 39  r=c:ab;s=b:adr     rs,bs,cs,ds     # DFZ 38
 
+40  r=c:ab;s=a:bdr     ar,br,cr,d
+41  r=c:ab;s=a:bdr     ar,br,c,dr
+42  r=c:ab;s=a:bdr     a,r,c,d
+43  r=c:ab;s=a:bdr     ar,br,cr,dr
+
 #####################################################
 # double rules
 # number, copy string, base1, base2
 #
+50a rs=cd:ab           ar,br,c,dr    ar,br,cr,d
+50b rs=cd:ab           ar,br,c,dr    ar,br,d,cr
+50c rs=cd:ab           ar,br,c,dr    br,ar,cr,d
+50d rs=cd:ab           ar,br,c,dr    br,ar,d,cr
+51a r=c:ab;s=a:bdr     ar,br,c,dr    ar,br,cr,d
+51b r=c:ab;s=a:bdr     ar,br,c,dr    ar,br,d,cr
+51c r=c:ab;s=a:bdr     ar,br,c,dr    br,ar,cr,d
+51d r=c:ab;s=a:bdr     ar,br,c,dr    br,ar,d,cr
 40x r=a:bc;s=a:bcr     ar,br,c,dr    ar,br,d,cr  # DFZ 5
 41x rs=cd:ab           ar,br,c,dr    ar,br,d,cr  # DFZ 6
 
