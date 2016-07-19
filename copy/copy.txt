@@ -9,7 +9,11 @@
 # index, superseded all, copy string
 61, ,rs=cd:ab;t=(cr):ab;u=(cr):abt;v=(cr):abtu
 18, ,rs=cd:ab;t=a:bcr;uv=ds:abt
+69,-,rs=cd:ab;t=a:bcr;u=(br):act;v=(br):actu
 35,-,rs=cd:ab;t=a:bcr;u=a:bcrt;v=b:ads;w=b:adsv
+68, ,rs=cd:ab;t=a:bcr;u=a:bcrt;v=a:bcrtu
+70,-,rs=cd:ab;t=a:bcr;u=b:act;v=b:actu
+71, ,rs=cd:ab;t=a:bcr;u=b:acrt;v=b:acrtu
 34,-,rs=cd:ab;t=a:bcs;uv=at:bcs
  3, ,rs=cd:ab;t=a:bcs;uv=bt:acr
 28,-,rs=cd:ab;t=a:bcs;uv=cs:abrt
@@ -20,15 +24,20 @@
 59,-,rs=cd:ab;tu=ac:br;v=d:bru;w=d:bruv
 60, ,rs=cd:ab;tu=ac:br;v=d:brtu;w=d:brtuv
 57, ,rs=cd:ab;tu=ac:bdr;v=a:bdrt
+75, ,rs=cd:ab;tu=ac:bdr;v=t:ac;w=t:acv
 38, ,rs=cd:ab;tu=ac:bdr;vw=br:adst
 30, ,rs=cd:ab;tu=ac:bdr;vw=bt:ads
 31, ,rs=cd:ab;tu=ac:bdr;vw=dr:abst
 54, ,rs=cd:ab;tu=ac:bdr;vw=st:ac
-24,-,rs=cd:ab;tu=ac:bds;vw=cr:abt
+74, ,rs=cd:ab;tu=ac:bds;v=b:adst;w=b:adstv
+63,-,rs=cd:ab;tu=ac:bds;vw=ac:bdst
 25,-,rs=cd:ab;tu=ac:bds;vw=as:bct
+24,-,rs=cd:ab;tu=ac:bds;vw=cr:abt
 48, ,rs=cd:ab;tu=ac:bds;vw=bt:adr
+67,-,rs=cd:ab;tu=ac:bds;vw=ru:bdst
 55, ,rs=cd:ab;tu=ar:bcs;vw=bt:acr
 62, ,rs=cd:ab;tu=ar:bcs;vw=bu:acrs
+73, ,rs=cd:ab;tu=ar:bds;v=b:adst;w=b:adstv
 #
 40, ,rs=cd:ab;t=c:ar;u=d:art;v=d:artu
 47, ,rs=cd:ab;t=c:ar;uv=rt:ad
@@ -76,4 +85,8 @@
 17, ,rs=ac:bd;tu=ar:bd;v=a:bcrtu
 32,-,rs=ac:bd;tu=ar:bd;vw=ar:bdtu
 53,-,rs=ac:bd;tu=cd:abr;vw=cd:abrtu
+64,-,rs=ac:bd;tu=cd:abr;v=d:abru
+66,-,rs=ac:bd;tu=cd:abr;v=b:act;w=b:actv
+72,-,rs=ac:bd;tu=cd:abr;v=b:acrt;w=b:acrtv
+65,-,rs=ac:bd;tu=cd:abrs;v=d:abrsu
  2, ,rs=ac:bd;tu=cd:abs;v=a:bdrsu

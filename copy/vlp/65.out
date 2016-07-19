@@ -1,0 +1,34 @@
+C copy string: rs=ac:bd;tu=cd:abrs;v=d:abrsu
+I    0.70] Elapsed: 0.70, vertices: 1, facets final: 10, pending: 0
+
+--------------------------------
+Problem completed
+ name                    65.vlp
+ output                  copy/vlp/65.res
+ rows, cols, objs        330, 3387, 10
+ vertices, facets        1, 10
+ total time              0.70
+--------------------------------
+Statistics
+LP:
+ oracle calls            11
+   avg iterations/calls  449.54
+ total oracle time       0.70
+Combinatorics:
+ vertices added          1
+ facets probed           11
+ facets # max            0
+ memory allocated        500.00k
+ storage expansion
+   vertices # / upto     1 / 124
+   facets   # / upto     1 / 4092
+ facet manipulating
+   added avg / max       0.00 / 0.00
+   compressed            0
+ number of ridge tests
+   avg / max             0.00 / 0.00
+--------------------------------
+Parameters with non-default values
+ OracleItLimit = 300000
+ OracleTimeLimit = 120
+ VertexPoolSize = 200

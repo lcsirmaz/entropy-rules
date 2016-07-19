@@ -25,14 +25,22 @@ all Shannon inequalities have consequences on the entropies of the original
 four variables. The consequences are extracted using the MOLP solver 
 [inner](https://github.com/lcsirmaz/inner).
 
-    utils/mkvlp.pl <copystring> copy/vlp/NN.vlp                  # create MOLP problem for a copy string
-    inner copy/vlp/NN.vlp -o copy/vlp/NN.res                     # solve
-    utils/checkall.pl copy/vlp/NN.res <known-ieqs> > copy/NN.new # extract new inequalities
-    utils/genlist.pl <new-ineqs>                                 # generate the list of known ineqs
+    utils/mkvlp.pl <copystring> copy/vlp/NN.vlp      # create MOLP problem for a copy string
+    inner copy/vlp/NN.vlp -o copy/vlp/NN.res         # solve MOLP problem
+
+Extracting new inequalities: all, those with coefficients below 200, and with
+coefficients below 100. Labels for superseded inequalities are collected in
+files `sups.*`:
+
+    utils/downgrade.pl -t 1000 copy/vlp/NN.res <known-ineqs>  copy/NN.new
+    utils/downgrade.pl -t 99   copy/vlp/NN.res <known-ineqs>  copy/NN.dw1
+    utils/downgrade.pl -t 199  copy/vlp/NN.res <known-ineqs>  copy/NN.dw2
 
 #### Content
 
-* [copy.txt](copy.txt) &nbsp;&ndash; description of applied copy strings
-* NN.new &nbsp;&ndash; new inequalities resulted from the given copy string
-* [vlp](vlp) &nbsp;&ndash; vlp files and solutions
+* [copy.txt](copy.txt) &nbsp;&ndash; description of copy strings
+* NN.new &nbsp;&ndash; new inequalities from the given copy string
+* NN.dw1 &nbsp;&ndash; new inequalities with coeffs <100
+* NN.dw2 &nbsp;&ndash; new inequalities with coeffs <200
+* [vlp](vlp) &nbsp;&ndash; vlp files and solutions of the MOLP problems
 

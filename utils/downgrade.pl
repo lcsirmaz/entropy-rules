@@ -100,7 +100,7 @@ sub downgrade { # $arr[0..10], $new[0..10]
     my($arr,$new)=@_;
     my $max=$arr->[0];
     for my $i(1..10){ my $v=$arr->[$i]; $max=$v if($max<$v); }
-    my $upto = int(1e-7+($max+0.0)/($ths+0.0));
+    my $upto = int(1e-7+($ths+0.0)/($max+0.0));
     return 0 if($upto<1); ## cannot downgrade
     my $L1=1000.0; my $ing=0;
     for my $i(1..$upto){
@@ -154,7 +154,10 @@ sub read_result_file {
       }
       my @a=(); $a[0]=$d; my $downgrade=$d>$ths ? 1 : 0;
       for my $i(1..10){
-          if($v[$i] =~ /^\d+$/ ){ $a[$i]=$d*$v[$i]; }
+          if($v[$i] =~ /^\d+$/ ){ 
+              $a[$i]=$d*$v[$i]; 
+              $downgrade=1 if($a[$i]>$ths);
+          }
           elsif( $v[$i] =~ /^(\d+)\/(\d+)$/ ){
               $a[$i]=int($1*$d/$2+0.01);
               $downgrade=1 if($a[$i]>$ths);
@@ -326,7 +329,7 @@ sub generate_vlp {
 sub find_copy {
     my($info,$fname)=@_;
     $info->{copy}="[none]";
-    $info->{id}="[none]";
+    $info->{id}="[none]:";
     $fname =~ s/\.res$/.vlp/;
     if(open(FILE,$fname)){
         my $a=<FILE>; close(FILE);

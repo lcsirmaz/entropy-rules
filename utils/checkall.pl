@@ -28,9 +28,9 @@ sub print_usage {
 }
 
 if(scalar @ARGV < 2){ print_usage(); }
-if( $ARGV[0] !~ /\.res$/ ){
-    die "First argument should be a result file ending with .res\n";
-}
+#if( $ARGV[0] !~ /\.res$/ ){
+#    die "First argument should be a result file ending with .res\n";
+#}
 
 ####################################################################
 ## compute the lexicographically maximal version
@@ -94,7 +94,14 @@ sub read_result_file {
     $info->{new}=();
     my @lines=();
     open(FILE,$fname) || die "Cannot open result file $fname for reading\n";
+    my $filetype=0;
     while(<FILE>){
+      if($filetype==0){ ## unknown
+          if(/^V/){ $filetype=1; }
+          elsif(/^[1-9]/){ $filetype=2; }
+          else{ next; }
+      }
+      if ($filetype==1){ ## .res file
       next if(!/^V/);
       chomp;
       my $line=$_;
@@ -122,11 +129,22 @@ sub read_result_file {
       next if($skipit);
       biggest(\@a);    ## make it lexicographically maximal
       push @lines, \@a;
+      } else { ## inequality list, $filetype=2
+        next if(!/^(\d+,\s*){11}/);
+        chomp; 
+        my $line=$_;
+        my @v=split(/,\s*/,$line);
+        scalar @v==13 || die "Wrong inequality line in file $fname:\n $line\n";
+        push @{$info->{new}}, \@v;
+      }
     }
     close(FILE);
-    foreach my $a (sort {lexmin($a,$b)} @lines ){
-      push @{$info->{new}}, $a;  ## and store it
+    if($filetype==1){
+      foreach my $a (sort {lexmin($a,$b)} @lines ){
+        push @{$info->{new}}, $a;  ## and store it
+      }
     }
+    return $filetype;
 }
 ## read known inequalities
 sub read_ineq_file {
@@ -257,19 +275,19 @@ sub generate_vlp {
 sub find_copy {
     my($info,$fname)=@_;
     $info->{copy}="[none]";
-    $info->{id}="[none]";
+    $info->{id}="[none]:";
     $fname =~ s/\.res$/.vlp/;
     if(open(FILE,$fname)){
         my $a=<FILE>; close(FILE);
         chomp($a);
         if($a=~/^c copy/){
-            $a=~ s/^.*string: //; $info->{copy}="$a, copy:";
+            $a=~ s/^.*string: //; $info->{copy}="$a"; $info->{id}="copy:";
         } elsif( $a=~/rule (\d.+) for/){
-            $info->{copy} = "rule$1, rule:";
+            $info->{copy} = "rule$1"; $info->{id}="rule:";
         }
     }
     $fname =~ /([a-z\d]+)\.vlp$/;
-    $info->{id} = $1;
+    $info->{id} .= $1;
 }
 ################################################################
 ##
@@ -278,9 +296,10 @@ my $info={};
 for my $i(1..-1+scalar @ARGV){
     read_ineq_file($info,$ARGV[$i]);
 }
-read_result_file($info,$ARGV[0]);
+my $filetype=read_result_file($info,$ARGV[0]);
+$filetype!=0 || die "No input was found in file $ARGV[0]\n";
 
-find_copy($info,$ARGV[0]);
+if($filetype==1){ find_copy($info,$ARGV[0]); }
 
 ## print "old: ",scalar @{$info->{old}},", new: ",scalar @{$info->{new}},"\n";
 generate_matrix($info);
@@ -299,7 +318,11 @@ foreach my $a(@{$info->{new}}){
     for my $i(0..10){
         print $a->[$i],","; print " " if($i==0 || $i==3 || $i==6);
     }
-    print " ",$info->{copy},$info->{id},":$cnt\n";
+    if($filetype==1){
+        print " ",$info->{copy},", ",$info->{id},":$cnt\n";
+    } else { ## $filetype==2
+        print " ",$a->[11],", ",$a->[12],"\n";
+    }
     # store it, and use it subsequently
     add_to_matrix($info,$a);
 }
