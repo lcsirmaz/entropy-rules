@@ -1,0 +1,53 @@
+C maximal rule for r=c:ab;s=a:bdr; ar,br,c,dr; ar,br,d,cr (merged)
+I    5.01] Elapsed: 5.01, vertices: 60, facets final: 6470, pending: 2599
+I   10.17] Elapsed: 10.17, vertices: 91, facets final: 8778, pending: 14795
+I   15.24] Elapsed: 15.24, vertices: 100, facets final: 9555, pending: 23166
+I   15.40] recalculating facets...
+I   20.49] Elapsed: 20.49, vertices: 104, facets final: 9828, pending: 36221
+I   26.31] Elapsed: 26.31, vertices: 107, facets final: 9949, pending: 34731
+I   32.06] Elapsed: 32.06, vertices: 110, facets final: 10079, pending: 43297
+I   37.51] Elapsed: 37.51, vertices: 113, facets final: 10190, pending: 38866
+I   42.74] Elapsed: 42.74, vertices: 118, facets final: 10413, pending: 31089
+I   48.97] Elapsed: 48.97, vertices: 126, facets final: 10935, pending: 36763
+I   54.78] Elapsed: 54.78, vertices: 129, facets final: 11071, pending: 32246
+I   59.86] Elapsed: 59.86, vertices: 134, facets final: 11372, pending: 31525
+I   64.86] Elapsed: 1:05, vertices: 144, facets final: 12244, pending: 24956
+I   69.89] Elapsed: 1:10, vertices: 159, facets final: 14078, pending: 18250
+I   74.89] Elapsed: 1:15, vertices: 176, facets final: 17495, pending: 12606
+I   79.89] Elapsed: 1:20, vertices: 192, facets final: 22970, pending: 5710
+I   83.61] recalculating facets...
+I   84.89] Elapsed: 1:25, vertices: 203, facets final: 26569, pending: 4101
+I   90.95] Elapsed: 1:31, vertices: 231, facets final: 28707, pending: 3339
+I   95.96] Elapsed: 1:36, vertices: 252, facets final: 28710, pending: 1325
+I  100.96] Elapsed: 1:41, vertices: 267, facets final: 36759, pending: 10097
+I  105.08] Elapsed: 1:45, vertices: 267, facets final: 46856, pending: 0
+
+--------------------------------
+Problem completed
+ name                    51b.vlp
+ output                  rules/vlp/51b.res
+ rows, cols, objs        43, 213, 22
+ vertices, facets        267, 46856
+ total time              1:45
+--------------------------------
+Statistics
+LP:
+ oracle calls            76711
+   avg iterations/calls  21.89
+ total oracle time       33.15
+Combinatorics:
+ vertices added          267
+ facets probed           81588
+ facets # max            56276
+ memory allocated        26.12M
+ storage expansion
+   vertices # / upto     3 / 380
+   facets   # / upto     10 / 57340
+ facet manipulating
+   added avg / max       1.36k / 18.13k
+   compressed            42
+ number of ridge tests
+   avg / max             36.66M / 386.45M
+--------------------------------
+Parameters with non-default values
+ VertexPoolSize = 200

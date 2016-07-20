@@ -30,7 +30,7 @@ four variables. The consequences are extracted using the MOLP solver
 
 Extracting new inequalities: all, those with coefficients below 200, and with
 coefficients below 100. Labels for superseded inequalities are collected in
-files `sups.*`:
+files `supd.*`:
 
     utils/downgrade.pl -t 1000 copy/vlp/NN.res <known-ineqs>  copy/NN.new
     utils/downgrade.pl -t 99   copy/vlp/NN.res <known-ineqs>  copy/NN.dw1
@@ -39,8 +39,9 @@ files `sups.*`:
 #### Content
 
 * [copy.txt](copy.txt) &nbsp;&ndash; description of copy strings
-* NN.new &nbsp;&ndash; new inequalities from the given copy string
-* NN.dw1 &nbsp;&ndash; new inequalities with coeffs <100
-* NN.dw2 &nbsp;&ndash; new inequalities with coeffs <200
 * [vlp](vlp) &nbsp;&ndash; vlp files and solutions of the MOLP problems
-
+* [result](result) &nbsp;&ndash; new inequalities from the given copy string
+     * result/NN.new &nbsp;&ndash; new inequalities from the given copy string
+     * result/NN.dw1 &nbsp;&ndash; new inequalities with coeffs <100
+     * result/NN.dw2 &nbsp;&ndash; new inequalities with coeffs <200
+* supd.* &nbsp;&ndash; labels of inequalities superseded

@@ -1,0 +1,63 @@
+C maximal rule for rs=cd:ab; ar,br,c,dr; ar,br,d,cr (merged)
+I    5.60] Elapsed: 5.60, vertices: 37, facets final: 14, pending: 17215
+I   10.61] Elapsed: 10.61, vertices: 64, facets final: 55, pending: 7196
+I   16.52] Elapsed: 16.52, vertices: 97, facets final: 534, pending: 36486
+I   22.49] Elapsed: 22.49, vertices: 98, facets final: 534, pending: 41378
+I   28.39] Elapsed: 28.39, vertices: 99, facets final: 534, pending: 26799
+I   29.61] recalculating facets...
+I   33.94] Elapsed: 33.94, vertices: 103, facets final: 535, pending: 29385
+I   41.22] Elapsed: 41.22, vertices: 107, facets final: 542, pending: 29256
+I   49.49] Elapsed: 49.49, vertices: 110, facets final: 545, pending: 33374
+I   55.15] Elapsed: 55.15, vertices: 112, facets final: 546, pending: 38490
+I   60.75] Elapsed: 1:01, vertices: 113, facets final: 546, pending: 34503
+I   66.52] Elapsed: 1:07, vertices: 114, facets final: 546, pending: 40661
+I   72.73] Elapsed: 1:13, vertices: 116, facets final: 548, pending: 36498
+I   78.04] Elapsed: 1:18, vertices: 118, facets final: 548, pending: 35326
+I   83.97] Elapsed: 1:24, vertices: 121, facets final: 548, pending: 31070
+I   89.94] Elapsed: 1:30, vertices: 124, facets final: 549, pending: 31339
+I   96.99] Elapsed: 1:37, vertices: 127, facets final: 556, pending: 35709
+I  105.15] Elapsed: 1:45, vertices: 130, facets final: 559, pending: 38009
+I  113.14] Elapsed: 1:53, vertices: 132, facets final: 559, pending: 39520
+I  118.24] Elapsed: 1:58, vertices: 134, facets final: 559, pending: 35011
+I  123.54] Elapsed: 2:04, vertices: 138, facets final: 559, pending: 37975
+I  129.93] Elapsed: 2:10, vertices: 140, facets final: 563, pending: 37586
+I  139.63] Elapsed: 2:20, vertices: 142, facets final: 565, pending: 38907
+I  144.83] Elapsed: 2:25, vertices: 145, facets final: 566, pending: 33668
+I  150.10] Elapsed: 2:30, vertices: 150, facets final: 573, pending: 30336
+I  155.29] Elapsed: 2:35, vertices: 156, facets final: 583, pending: 24480
+I  161.92] Elapsed: 2:42, vertices: 177, facets final: 3212, pending: 33344
+I  170.60] Elapsed: 2:51, vertices: 186, facets final: 3605, pending: 62134
+I  178.60] Elapsed: 2:59, vertices: 187, facets final: 3621, pending: 55364
+I  187.20] Elapsed: 3:07, vertices: 191, facets final: 3643, pending: 55947
+I  192.20] Elapsed: 3:12, vertices: 197, facets final: 7942, pending: 50700
+I  197.20] Elapsed: 3:17, vertices: 198, facets final: 24379, pending: 34261
+I  202.20] Elapsed: 3:22, vertices: 198, facets final: 41045, pending: 17595
+I  207.20] Elapsed: 3:27, vertices: 198, facets final: 58453, pending: 187
+I  207.25] Elapsed: 3:27, vertices: 198, facets final: 58640, pending: 0
+
+--------------------------------
+Problem completed
+ name                    50b.vlp
+ output                  rules/vlp/50b.res
+ rows, cols, objs        31, 139, 22
+ vertices, facets        198, 58640
+ total time              3:27
+--------------------------------
+Statistics
+LP:
+ oracle calls            58838
+   avg iterations/calls  19.03
+ total oracle time       17.35
+Combinatorics:
+ vertices added          198
+ facets probed           58838
+ facets # max            65740
+ memory allocated        24.98M
+ storage expansion
+   vertices # / upto     2 / 252
+   facets   # / upto     11 / 69628
+ facet manipulating
+   added avg / max       2.25k / 28.68k
+   compressed            45
+ number of ridge tests
+   avg / max             41.57M / 362.92M

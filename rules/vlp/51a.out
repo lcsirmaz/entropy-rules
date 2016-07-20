@@ -1,0 +1,36 @@
+C maximal rule for r=c:ab;s=a:bdr; ar,br,c,dr; ar,br,cr,d (merged)
+I    5.01] Elapsed: 5.01, vertices: 44, facets final: 314, pending: 19491
+I   10.01] Elapsed: 10.01, vertices: 70, facets final: 2280, pending: 4968
+I   15.01] Elapsed: 15.01, vertices: 100, facets final: 5333, pending: 1014
+I   15.10] recalculating facets...
+I   19.65] Elapsed: 19.65, vertices: 154, facets final: 7077, pending: 0
+
+--------------------------------
+Problem completed
+ name                    51a.vlp
+ output                  rules/vlp/51a.res
+ rows, cols, objs        43, 213, 22
+ vertices, facets        154, 7077
+ total time              19.65
+--------------------------------
+Statistics
+LP:
+ oracle calls            28444
+   avg iterations/calls  24.63
+ total oracle time       13.69
+Combinatorics:
+ vertices added          154
+ facets probed           28568
+ facets # max            22657
+ memory allocated        11.58M
+ storage expansion
+   vertices # / upto     2 / 252
+   facets   # / upto     6 / 24572
+ facet manipulating
+   added avg / max       851.84 / 12.50k
+   compressed            18
+ number of ridge tests
+   avg / max             6.87M / 71.59M
+--------------------------------
+Parameters with non-default values
+ VertexPoolSize = 200

@@ -6,21 +6,23 @@ variables. In a *double rule* two sets of four random variables are present.
 
 Given a rule, use `rulemk.pl` to generate the vlp file for maximal set of
 inequalities. From the result `minrule.pl` extracts basic inequalities
-representing that rule; the result is stored in the &lt;rulenumber&gt;.txt
-file. Finally, `dorule.pl` applies a particular rule to known inequalities,
-and generates a vlp file which then gives the minimal set of bootstrapped
-inequalities. Check for not superseded inequalities by `checkall.pl`.
+representing that rule; the result is stored in the NN.txt file.
 
-    utils/rulemk.pl <copystring> <base> rules/vlp/NN.vlp      #create vlp for rules
+    utils/rulemk.pl <copystring> <base> rules/vlp/NN.vlp      #create MOLP for a rule
     inner rules/vlp/NN.vlp -o rule/vlp/NN.res                 #solve
-    utils/minrule.pl rules/vlp/NN.vlp rule/NN.txt             #generate the rules
-    utils/dorule.pl <ineqfile> rule/NN.txt rule/vlp/rNN.vlp   #apply the rules
-    inner rules/vlp/rNN.vlp -o rule/vlp/rNN.res               #solve
-    utils/checkall.pl rule/vlp/rNN.res <known-ineqs>          #check for new inequalities
+    utils/minrule.pl rules/vlp/NN.vlp rule/ineq/NN.txt        #generate the rule file
+
+The utility `dorule.pl` applies a particular rule to a set of known inequalities.
+It generates a vlp file whose solution gives the minimal set of bootstrapped
+inequalities. The procedure can be iterated using the new set of inequalities.
+
+    utils/dorule.pl <ineqfile> <rule> <vlpfile>      #apply the rule
+    inner <vlpfile> -o <solution>                    #solve
+    utils/downgrade.pl <solution> <known-ineqs>       #check for new inequalities
 
 #### Content
 
-* [rules.txt](rules.txt) &nbsp;&ndash; the description of the rules
-* NN.txt &nbsp;&ndash; the rules themselves
-* rNN.txt &nbsp;&ndash; result of applying a rule to the most recent set
-* [vlp](vlp)vlp &nbsp;&ndash; vlp files and solutions
+* [rules.txt](rules.txt) &nbsp;&ndash; description of rules
+* [ineq](ineq) &nbsp;&ndash; the rules themselves
+* [vlp](vlp) &nbsp;&ndash; vlp files and solutions for the rules
+* [result](result) &nbsp;&ndash; results of first iteration
