@@ -8,13 +8,21 @@
 
 use strict;
 
+sub print_usage {
+    print "Usage: genlist.pl [-s <supd>] <out> <eqfile1> <eqfile2> ...\n",
+          " <supd>   - list of superseded inequalities\n",
+          " <out>    - result file\n",
+          " <eqfile> - file of inequalities\n";
+    exit 1;
+}
+
 my @list=();
 
 my %supplist=();
 
 sub read_supplist {
     my $file=shift;
-    open(FILE,$file) || die "Cannot open superseded file $file\n";
+    open(FILE,$file) || die "Cannot open suppressed file $file\n";
     my $cnt=0;
     while(<FILE>){
         next if(!/^superseded: [^\s]+\/([^\s]+) by/);
@@ -105,14 +113,21 @@ sub make_list {
 #
 # The number of inequalities listed is ",scalar @list ,".
 #
-#   Coefficients,             copy string, label
+#   Coefficients          copy string                         label
 #\n";
     foreach my $a( sort {$a->[13] cmp $b->[13]} @list ){
+        my $str="";
         for my $i(0..10){
-             print OUT $a->[$i],",";
-             print OUT " " if($i==0 || $i==3 || $i==6);
+            $str .= $a->[$i].",";
+            $str .= " " if($i==0 || $i==3 || $i==6);
+#             print OUT $a->[$i],",";
+#             print OUT " " if($i==0 || $i==3 || $i==6);
         }
-        print OUT " ",$a->[11], ", ",$a->[12],"\n";
+#        print OUT " ",$a->[11], ", ";
+        $str .= " ". $a->[11] . ", ";
+        my $l=length($str);
+        if($l<62){ $str .= " "x(62-$l); }
+        print OUT $str, $a->[12],"\n";
     }
     close(OUT);
 }
@@ -132,8 +147,9 @@ sub make_normalized_list {
     print OUT "# Normalized entropy inequalities for four random variables
 #
 # Coefficients are normalized and the list is in increasing order.
+# Number of inequalities is ",scalar @list,".
 #
-#         Coefficients                label
+#         Coefficients                                                                         label
 #\n";
     foreach my $a( sort {$a->[0] cmp $b->[0]} @list ){
         print OUT "1, ";
@@ -145,22 +161,35 @@ sub make_normalized_list {
 
 ################################################################
 
-my $ARGZ=0;
-if( scalar @ARGV>0 && $ARGV[0] eq "-s"){$ARGZ=2; }
+my $ARGZ=1;
+if( scalar @ARGV>0 && $ARGV[0] eq "-s"){$ARGZ=3; }
 
-if(scalar @ARGV <= $ARGZ){
-    print "usage: genlist.pl [-s <slist>] <eqfile1> <eqfile2> ... \n";
-    exit 1;
+if(scalar @ARGV <= $ARGZ){ print_usage(); }
+
+my $resfile=$ARGV[$ARGZ-1];
+my $normfile=$resfile; $normfile =~ s/\.(\w+)$/-normalized.$1/;
+if($normfile eq $resfile){ $normfile=""; }
+
+if(-e $resfile){
+    print "File $resfile exists. Continue (y/n)? ";
+    my $ans=<stdin>;
+    if($ans !~ /^y/i ){ exit 0; }
+} elsif($normfile && -e $normfile){
+    print "File $normfile exists. Continue (y/n)? ";
+    my $ans=<stdin>;
+    if($ans !~ /^y/i ){ exit 0; }
 }
 
 ## read list of superseded items
-if($ARGZ){ read_supplist($ARGV[1]); }
+if($ARGZ>1){ read_supplist($ARGV[1]); }
 
 ## read all files
 for my $i($ARGZ .. -1+scalar @ARGV){ add_file($ARGV[$i]); }
 
-make_list("ineq-list.txt");
+# create the file of inequalities
 
-make_normalized_list("ineq-normalized.txt");
+make_list($resfile);
+
+if($normfile) { make_normalized_list($normfile); }
 
 
