@@ -1,0 +1,41 @@
+C applying rule 42.txt for ineq.dw2
+I    0.20] recalculating facets...
+I    0.56] recalculating facets...
+I    1.05] recalculating facets...
+I    1.80] recalculating facets...
+I    2.57] recalculating facets...
+I    4.10] recalculating facets...
+I    5.00] Elapsed: 5.00, vertices: 634, facets final: 3044, pending: 2720
+I    7.79] recalculating facets...
+I    8.43] Elapsed: 8.43, vertices: 731, facets final: 5816, pending: 0
+
+--------------------------------
+Problem completed
+ name                    42.vlp
+ output                  vlp/42.res
+ rows, cols, objs        12, 2405, 10
+ vertices, facets        731, 5816
+ total time              8.43
+--------------------------------
+Statistics
+LP:
+ oracle calls            6547
+   avg iterations/calls  6.24
+ total oracle time       7.78
+Combinatorics:
+ vertices added          731
+ facets probed           6547
+ facets # max            5844
+ memory allocated        4.78M
+ storage expansion
+   vertices # / upto     6 / 764
+   facets   # / upto     2 / 8188
+ facet manipulating
+   added avg / max       35.64 / 329.00
+   compressed            13
+ number of ridge tests
+   avg / max             106.59k / 944.50k
+--------------------------------
+Parameters with non-default values
+ OracleItLimit = 200000
+ OracleTimeLimit = 60

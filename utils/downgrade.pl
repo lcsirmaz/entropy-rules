@@ -195,7 +195,7 @@ sub read_supplist {
         $cnt++;
     }
     close(FILE);
-    die "No superseded items found in $file\n" if($cnt==0);
+#    die "No superseded items found in $file\n" if($cnt==0);
 }
 
 sub read_ineq_file {
@@ -339,6 +339,12 @@ sub find_copy {
         } elsif( $a=~/rule (\d.+) for/){
             $info->{copy} = "rule$1"; $info->{id}="rule:";
         }
+    }
+    if($fname =~ /iter(\d)/ ){
+        $info->{id} .= "$1."; 
+    } else {
+        my $thisdir=`pwd`;
+        $info->{id} .= "$1." if( $thisdir =~ /iter(\d)/ );
     }
     $fname =~ /([a-z\d]+)\.vlp$/;
     $info->{id} .= $1;

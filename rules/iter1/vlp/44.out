@@ -1,0 +1,58 @@
+C applying rule 44.txt for ineq.dw2
+I    0.49] recalculating facets...
+I    3.23] recalculating facets...
+I    5.05] Elapsed: 5.05, vertices: 243, facets final: 39, pending: 23144
+I    7.66] recalculating facets...
+recalculate_facet: numerical instability at facet 5250, coord 1 (1.67627e-06)
+recalculate_facet: numerical instability at facet 5250, coord 2 (-1.22668e-06)
+I   10.05] Elapsed: 10.05, vertices: 346, facets final: 75, pending: 29187
+I   12.81] recalculating facets...
+I   15.05] Elapsed: 15.05, vertices: 477, facets final: 212, pending: 27598
+I   15.55] recalculating facets...
+I   17.56] recalculating facets...
+I   19.37] recalculating facets...
+I   20.06] Elapsed: 20.06, vertices: 735, facets final: 1022, pending: 26105
+I   21.30] recalculating facets...
+I   24.23] recalculating facets...
+I   25.06] Elapsed: 25.06, vertices: 922, facets final: 3797, pending: 23380
+I   29.74] recalculating facets...
+I   30.06] Elapsed: 30.06, vertices: 1005, facets final: 6288, pending: 22263
+I   35.06] Elapsed: 35.06, vertices: 1076, facets final: 9770, pending: 18586
+I   40.06] Elapsed: 40.06, vertices: 1099, facets final: 13675, pending: 14657
+I   41.27] recalculating facets...
+I   45.06] Elapsed: 45.06, vertices: 1107, facets final: 17590, pending: 10715
+I   50.06] Elapsed: 50.06, vertices: 1109, facets final: 21581, pending: 6724
+I   55.06] Elapsed: 55.06, vertices: 1110, facets final: 25581, pending: 2722
+I   58.41] Elapsed: 58.41, vertices: 1110, facets final: 28303, pending: 0
+
+--------------------------------
+Problem completed
+ name                    44.vlp
+ output                  vlp/44.res
+ rows, cols, objs        12, 2502, 10
+ vertices, facets        1110, 28303
+ total time              58.41
+--------------------------------
+Statistics
+LP:
+ oracle calls            29413
+   avg iterations/calls  6.34
+ total oracle time       36.20
+Combinatorics:
+ vertices added          1110
+ facets probed           29413
+ facets # max            30299
+ memory allocated        15.77M
+ instability warnings    2
+ storage expansion
+   vertices # / upto     9 / 1148
+   facets   # / upto     8 / 32764
+ facet manipulating
+   added avg / max       178.19 / 2.55k
+   compressed            90
+ number of ridge tests
+   avg / max             3.23M / 55.94M
+--------------------------------
+Parameters with non-default values
+ OracleItLimit = 200000
+ OracleTimeLimit = 60

@@ -1,0 +1,40 @@
+C applying rule 53b.txt for ineq.dw2
+I    0.26] recalculating facets...
+I    0.60] recalculating facets...
+I    1.02] recalculating facets...
+I    1.51] recalculating facets...
+I    1.99] recalculating facets...
+I    2.69] recalculating facets...
+I    5.00] Elapsed: 5.00, vertices: 669, facets final: 1942, pending: 1410
+I    7.24] Elapsed: 7.24, vertices: 688, facets final: 3302, pending: 0
+
+--------------------------------
+Problem completed
+ name                    53b.vlp
+ output                  vlp/53b.res
+ rows, cols, objs        12, 3129, 10
+ vertices, facets        688, 3302
+ total time              7.24
+--------------------------------
+Statistics
+LP:
+ oracle calls            3990
+   avg iterations/calls  7.42
+ total oracle time       6.52
+Combinatorics:
+ vertices added          688
+ facets probed           3990
+ facets # max            4421
+ memory allocated        4.78M
+ storage expansion
+   vertices # / upto     6 / 764
+   facets   # / upto     2 / 8188
+ facet manipulating
+   added avg / max       71.13 / 463.00
+   compressed            32
+ number of ridge tests
+   avg / max             163.16k / 1.49M
+--------------------------------
+Parameters with non-default values
+ OracleItLimit = 200000
+ OracleTimeLimit = 60

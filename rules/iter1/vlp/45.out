@@ -1,0 +1,52 @@
+C applying rule 45.txt for ineq.dw2
+I    1.22] recalculating facets...
+I    4.27] recalculating facets...
+I    5.00] Elapsed: 5.00, vertices: 223, facets final: 118, pending: 21245
+I    7.86] recalculating facets...
+I   10.00] Elapsed: 10.00, vertices: 383, facets final: 549, pending: 22343
+I   10.41] recalculating facets...
+I   12.21] recalculating facets...
+I   14.73] recalculating facets...
+I   15.00] Elapsed: 15.00, vertices: 612, facets final: 1764, pending: 23382
+I   16.87] recalculating facets...
+I   19.53] recalculating facets...
+I   20.00] Elapsed: 20.00, vertices: 812, facets final: 3729, pending: 21593
+I   25.00] Elapsed: 25.00, vertices: 900, facets final: 6953, pending: 18275
+I   25.02] recalculating facets...
+I   30.00] Elapsed: 30.00, vertices: 938, facets final: 10368, pending: 14846
+I   35.00] Elapsed: 35.00, vertices: 953, facets final: 13868, pending: 11304
+I   40.00] Elapsed: 40.00, vertices: 965, facets final: 17333, pending: 8069
+I   45.00] Elapsed: 45.00, vertices: 975, facets final: 20779, pending: 4616
+I   50.00] Elapsed: 50.00, vertices: 981, facets final: 24297, pending: 1083
+I   51.47] Elapsed: 51.47, vertices: 981, facets final: 25380, pending: 0
+
+--------------------------------
+Problem completed
+ name                    45.vlp
+ output                  vlp/45.res
+ rows, cols, objs        12, 2871, 10
+ vertices, facets        981, 25380
+ total time              51.47
+--------------------------------
+Statistics
+LP:
+ oracle calls            26361
+   avg iterations/calls  5.90
+ total oracle time       36.49
+Combinatorics:
+ vertices added          981
+ facets probed           26361
+ facets # max            25612
+ memory allocated        13.03M
+ storage expansion
+   vertices # / upto     8 / 1020
+   facets   # / upto     7 / 28668
+ facet manipulating
+   added avg / max       178.98 / 2.10k
+   compressed            89
+ number of ridge tests
+   avg / max             2.53M / 25.18M
+--------------------------------
+Parameters with non-default values
+ OracleItLimit = 200000
+ OracleTimeLimit = 60
