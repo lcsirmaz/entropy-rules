@@ -1,0 +1,48 @@
+C applying rule 11.txt for ineq.dw2
+I    0.21] recalculating facets...
+I    0.47] recalculating facets...
+I    0.74] recalculating facets...
+I    1.14] recalculating facets...
+I    1.75] recalculating facets...
+I    2.70] recalculating facets...
+recalculate_facet: numerical instability at facet 1027, coord 0 (-3.90379e-06)
+recalculate_facet: numerical instability at facet 1027, coord 5 (4.43873e-06)
+recalculate_facet: numerical instability at facet 1027, coord 10 (1.50926e-06)
+recalculate_facet: numerical instability at facet 1044, coord 0 (-4.33325e-06)
+recalculate_facet: numerical instability at facet 1044, coord 5 (4.9059e-06)
+recalculate_facet: numerical instability at facet 1044, coord 10 (1.53927e-06)
+I    4.30] recalculating facets...
+I    5.00] Elapsed: 5.00, vertices: 725, facets final: 3156, pending: 566
+I    5.69] Elapsed: 5.69, vertices: 756, facets final: 3713, pending: 0
+
+--------------------------------
+Problem completed
+ name                    11.vlp
+ output                  vlp/11.res
+ rows, cols, objs        12, 2444, 10
+ vertices, facets        756, 3713
+ total time              5.69
+--------------------------------
+Statistics
+LP:
+ oracle calls            4469
+   avg iterations/calls  5.37
+ total oracle time       5.16
+Combinatorics:
+ vertices added          756
+ facets probed           4469
+ facets # max            3837
+ memory allocated        3.93M
+ instability warnings    6
+ storage expansion
+   vertices # / upto     7 / 892
+   facets   # / upto     1 / 4092
+ facet manipulating
+   added avg / max       41.40 / 379.00
+   compressed            38
+ number of ridge tests
+   avg / max             102.95k / 695.46k
+--------------------------------
+Parameters with non-default values
+ OracleItLimit = 200000
+ OracleTimeLimit = 60

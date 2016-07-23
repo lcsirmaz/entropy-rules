@@ -16,8 +16,8 @@ is described by the **copy string**, an example is
 It describes three iterations. First, *r* and *s* are identical copies of *c*
 and *d*, respectively, such that *rs* and *cd* are independent over *ab*. Next,
 *t* and *u* are copies of *c* and *r* such that *tu* and *cr* are independent
-over *ab*. Finally, *v* is a copy of the group *tu* (they are identically 
-distributed), and they are independent given *ad*.
+over *ab*. Finally, *v* is a copy of the group *tu*, and *v* and *tu* are 
+independent given *ad*.
 
 The independence and symmetries in the copy string gives several equalities
 among the entropies of the final set of random variables. These together with
@@ -28,13 +28,13 @@ four variables. The consequences are extracted using the MOLP solver
     utils/mkvlp.pl <copystring> copy/vlp/NN.vlp      # create MOLP problem for a copy string
     inner copy/vlp/NN.vlp -o copy/vlp/NN.res         # solve MOLP problem
 
-Extracting new inequalities: all, those with coefficients below 200, and with
-coefficients below 100. Labels for superseded inequalities are collected in
-files `supd.*`:
+From the extremal vertices we extract the new inequalities: all, those with 
+coefficients below 200, and those with coefficients below 100. Labels for 
+superseded inequalities are collected in files `supd.*`:
 
-    utils/downgrade.pl -t 1000 copy/vlp/NN.res <known-ineqs>  copy/NN.new
-    utils/downgrade.pl -t 99   copy/vlp/NN.res <known-ineqs>  copy/NN.dw1
-    utils/downgrade.pl -t 199  copy/vlp/NN.res <known-ineqs>  copy/NN.dw2
+    utils/downgrade.pl -t 1000 copy/vlp/NN.res <known-ineqs>  copy/result/NN.new
+    utils/downgrade.pl -t 99   copy/vlp/NN.res <known-ineqs>  copy/result/NN.dw1
+    utils/downgrade.pl -t 199  copy/vlp/NN.res <known-ineqs>  copy/result/NN.dw2
 
 #### Content
 

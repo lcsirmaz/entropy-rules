@@ -1,0 +1,58 @@
+C applying rule 04.txt for ineq.dw2
+I    0.50] recalculating facets...
+I    3.22] recalculating facets...
+I    5.03] Elapsed: 5.03, vertices: 234, facets final: 31, pending: 25660
+I    9.36] recalculating facets...
+I   10.03] Elapsed: 10.03, vertices: 311, facets final: 58, pending: 31243
+I   15.08] Elapsed: 15.08, vertices: 396, facets final: 97, pending: 32657
+I   15.29] recalculating facets...
+I   18.93] recalculating facets...
+I   20.08] Elapsed: 20.08, vertices: 529, facets final: 187, pending: 31937
+I   22.17] recalculating facets...
+I   24.46] recalculating facets...
+I   25.09] Elapsed: 25.09, vertices: 738, facets final: 583, pending: 30359
+I   26.09] recalculating facets...
+I   27.97] recalculating facets...
+I   30.09] Elapsed: 30.09, vertices: 996, facets final: 2101, pending: 28447
+I   30.21] recalculating facets...
+I   32.82] recalculating facets...
+I   35.09] Elapsed: 35.09, vertices: 1152, facets final: 4810, pending: 25615
+I   37.85] recalculating facets...
+I   40.09] Elapsed: 40.09, vertices: 1218, facets final: 8578, pending: 21614
+I   45.09] Elapsed: 45.09, vertices: 1242, facets final: 12602, pending: 17580
+I   50.09] Elapsed: 50.09, vertices: 1249, facets final: 16683, pending: 13508
+I   55.09] Elapsed: 55.09, vertices: 1260, facets final: 20755, pending: 9440
+I   60.09] Elapsed: 1:00, vertices: 1261, facets final: 24856, pending: 5339
+I   65.09] Elapsed: 1:05, vertices: 1262, facets final: 28974, pending: 1221
+I   66.53] Elapsed: 1:07, vertices: 1262, facets final: 30195, pending: 0
+
+--------------------------------
+Problem completed
+ name                    04.vlp
+ output                  vlp/04.res
+ rows, cols, objs        12, 2543, 10
+ vertices, facets        1262, 30195
+ total time              1:07
+--------------------------------
+Statistics
+LP:
+ oracle calls            31457
+   avg iterations/calls  5.39
+ total oracle time       37.87
+Combinatorics:
+ vertices added          1262
+ facets probed           31457
+ facets # max            33167
+ memory allocated        18.76M
+ storage expansion
+   vertices # / upto     10 / 1276
+   facets   # / upto     9 / 36860
+ facet manipulating
+   added avg / max       180.68 / 2.47k
+   compressed            97
+ number of ridge tests
+   avg / max             3.81M / 52.14M
+--------------------------------
+Parameters with non-default values
+ OracleItLimit = 200000
+ OracleTimeLimit = 60
