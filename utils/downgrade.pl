@@ -340,11 +340,11 @@ sub find_copy {
             $info->{copy} = "rule$1"; $info->{id}="rule:";
         }
     }
-    if($fname =~ /iter(\d)/ ){
+    if($fname =~ /iter([2-9])/ ){
         $info->{id} .= "$1."; 
     } else {
         my $thisdir=`pwd`;
-        $info->{id} .= "$1." if( $thisdir =~ /iter(\d)/ );
+        $info->{id} .= "$1." if( $thisdir =~ /iter([2-9])/ );
     }
     $fname =~ /([a-z\d]+)\.vlp$/;
     $info->{id} .= $1;

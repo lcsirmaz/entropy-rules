@@ -1,0 +1,57 @@
+C applying rule 15.txt for ineq.dw1
+I    1.14] recalculating facets...
+I    2.27] recalculating facets...
+I    3.78] recalculating facets...
+I    5.00] Elapsed: 5.00, vertices: 358, facets final: 534, pending: 6109
+I    5.67] recalculating facets...
+I    7.99] recalculating facets...
+I   10.00] Elapsed: 10.00, vertices: 576, facets final: 1362, pending: 6106
+I   10.65] recalculating facets...
+I   14.01] recalculating facets...
+I   15.00] Elapsed: 15.00, vertices: 729, facets final: 2266, pending: 5654
+I   17.78] recalculating facets...
+I   20.00] Elapsed: 20.00, vertices: 847, facets final: 3224, pending: 4916
+I   22.71] recalculating facets...
+I   25.00] Elapsed: 25.00, vertices: 943, facets final: 4226, pending: 4115
+I   30.00] Elapsed: 30.00, vertices: 999, facets final: 5304, pending: 3105
+I   30.50] recalculating facets...
+I   35.00] Elapsed: 35.00, vertices: 1047, facets final: 6373, pending: 2052
+I   40.00] Elapsed: 40.00, vertices: 1098, facets final: 7448, pending: 1197
+I   40.09] recalculating facets...
+I   44.30] recalculating facets...
+I   45.00] Elapsed: 45.00, vertices: 1217, facets final: 8357, pending: 1277
+I   48.09] recalculating facets...
+I   50.00] Elapsed: 50.00, vertices: 1344, facets final: 9417, pending: 424
+I   51.78] Elapsed: 51.78, vertices: 1389, facets final: 9903, pending: 0
+
+--------------------------------
+Problem completed
+ name                    15.vlp
+ output                  vlp/15.res
+ rows, cols, objs        12, 6977, 10
+ vertices, facets        1389, 9903
+ total time              51.78
+--------------------------------
+Statistics
+LP:
+ oracle calls            11437
+   avg iterations/calls  9.11
+ total oracle time       47.38
+Combinatorics:
+ vertices added          1389
+ facets probed           16959
+ facets # max            9904
+ memory allocated        9.04M
+ storage expansion
+   vertices # / upto     11 / 1404
+   facets   # / upto     3 / 12284
+ facet manipulating
+   added avg / max       28.39 / 256.00
+   compressed            39
+ number of ridge tests
+   avg / max             116.14k / 1.19M
+--------------------------------
+Parameters with non-default values
+ OracleItLimit = 200000
+ OracleTimeLimit = 60
+ VertexPoolSize = 35

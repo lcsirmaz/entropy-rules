@@ -1,0 +1,46 @@
+C applying rule 37.txt for ineq.dw1
+I    0.88] recalculating facets...
+I    1.89] recalculating facets...
+I    3.42] recalculating facets...
+I    5.00] Elapsed: 5.00, vertices: 353, facets final: 844, pending: 2138
+I    8.06] recalculating facets...
+I   10.00] Elapsed: 10.00, vertices: 414, facets final: 2127, pending: 1022
+I   15.00] Elapsed: 15.00, vertices: 470, facets final: 3127, pending: 132
+I   15.95] recalculating facets...
+I   17.06] recalculating facets...
+I   19.78] recalculating facets...
+I   20.00] Elapsed: 20.00, vertices: 706, facets final: 3816, pending: 1814
+I   25.00] Elapsed: 25.00, vertices: 768, facets final: 5085, pending: 649
+I   27.17] Elapsed: 27.17, vertices: 795, facets final: 5837, pending: 0
+
+--------------------------------
+Problem completed
+ name                    37.vlp
+ output                  vlp/37.res
+ rows, cols, objs        12, 7249, 10
+ vertices, facets        795, 5837
+ total time              27.17
+--------------------------------
+Statistics
+LP:
+ oracle calls            8060
+   avg iterations/calls  4.03
+ total oracle time       25.66
+Combinatorics:
+ vertices added          795
+ facets probed           10668
+ facets # max            5922
+ memory allocated        5.26M
+ storage expansion
+   vertices # / upto     7 / 892
+   facets   # / upto     2 / 8188
+ facet manipulating
+   added avg / max       37.84 / 205.00
+   compressed            21
+ number of ridge tests
+   avg / max             95.19k / 696.85k
+--------------------------------
+Parameters with non-default values
+ OracleItLimit = 200000
+ OracleTimeLimit = 60
+ VertexPoolSize = 35

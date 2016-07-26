@@ -27,10 +27,19 @@ sub print_usage {
     exit 1;
 }
 
-if(scalar @ARGV < 2){ print_usage(); }
+my $ths=1000; my $ARGZ=0;
+
+if(scalar @ARGV < 1){ print_usage(); }
+if($ARGV[0] eq "-t"){
+    if(scalar @ARGV<3 || $ARGV[1] !~ /^\d+$/){ print_usage(); }
+    $ARGZ=2; $ths=0+$ARGV[1]; if($ths<10 || $ths>1000){print_usage();}
+}
+
 #if( $ARGV[0] !~ /\.res$/ ){
 #    die "First argument should be a result file ending with .res\n";
 #}
+
+
 
 ####################################################################
 ## compute the lexicographically maximal version
@@ -80,6 +89,53 @@ sub lcm {
     return $a*int($b/gcd($a,$b)+0.01);
 }
 ###############################################################
+## round down the coefficients
+## find out the multiplier which gives the smallest L1 norm
+sub comp_l1{
+    my($i,$arr)=@_;
+    my $v=0.0; my $coeff=($i+0.0)/($arr->[0]+0.0);
+    for my $i(1..10){
+        my $s=$arr->[$i]*$coeff;
+        $s = int($s+1.0-1e-7) - $s; ## round up
+        if($s<-1e-7) { $s+=1.0; } elsif($s<0){$s=0;}
+        $v+=$s;
+    }
+    return $v/$i;
+}
+
+## downgrade
+sub downgrade { # $arr[0..10], $new[0..10]
+    my($arr,$new)=@_;
+    my $max=$arr->[0];
+    for my $i(1..10){ my $v=$arr->[$i]; $max=$v if($max<$v); }
+    my $upto = int(1e-7+($ths+0.0)/($max+0.0));
+    return 0 if($upto<1); ## cannot downgrade
+    my $L1=1000.0; my $ing=0;
+    for my $i(1..$upto){
+        my $newl1=comp_l1($i,$arr);
+        if($ing<1 || $newl1<$L1){$ing=$i; $L1=$newl1; }
+    }
+    $new->[0]=$ing; my $cf=($ing+0.0)/$arr->[0];
+    for my $i(1..10){
+        my $s=$arr->[$i]*$cf;
+        my $is=int($s+1.0-1e-7); if($is-$s<-1e-7){$is++;}
+        $new->[$i]=$is;
+    }
+    # check if the downgraded inequality is superseded by one of the known ones
+    # 1, 1,1,1, 0,0,0, 0,0,0,0 (ZY)
+    return 0 if($new->[1]>=$new->[0] && $new->[2]>=$new->[0] && $new->[3]>=$new->[0]);
+    # 2, 1,3,2, 0,0,0, 0,0,0,0
+    return 0 if(2*$new->[1]>=$new->[0] && 2*$new->[2]>=3*$new->[0] && $new->[3]>=$new->[0]);
+    # 2, 3,2,1, 0,0,0, 0,0,0,0
+    return 0 if(2*$new->[1]>=3*$new->[0] && $new->[2]>=$new->[0] && 2*$new->[3]>=$new->[0]);
+    # 3, 1,5,5, 0,0,0, 0,0,0,0
+    return 0 if(3*$new->[1]>=$new->[0] && 3*$new->[2]>=5*$new->[0] && 3*$new->[3]>=5*$new->[0]);
+    # 3, 5,5,1, 0,0,0, 0,0,0,0
+    return 0 if(3*$new->[1]>=5*$new->[0] && 3*$new->[2]>=5*$new->[0] && 3*$new->[3]>=$new->[0]);
+    return 1;
+}
+
+###############################################################
 ## read in the result file
 sub lexmin {
     my($a,$b)=@_;
@@ -94,7 +150,7 @@ sub read_result_file {
     $info->{new}=();
     my @lines=();
     open(FILE,$fname) || die "Cannot open result file $fname for reading\n";
-    my $filetype=0;
+    my $filetype=0; my $downgrade=0;
     while(<FILE>){
       if($filetype==0){ ## unknown
           if(/^V/){ $filetype=1; }
@@ -111,31 +167,50 @@ sub read_result_file {
       for my $i(1..10){
           if($v[$i] =~ /^\d+\/(\d+)$/) { $d=lcm($d,$1); }
       }
-      my @a=(); $a[0]=$d;
+      my @a=(); $a[0]=$d; $downgrade=$d>$ths ? 1 : 0;
       for my $i(1..10){
-          if($v[$i] =~ /^\d+$/ ){ $a[$i]=$d*$v[$i]; }
+          if($v[$i] =~ /^\d+$/ ){
+              $a[$i]=$d*$v[$i]; 
+              $downgrade=1 if($a[$i]>$ths);
+          }
           elsif( $v[$i] =~ /^(\d+)\/(\d+)$/ ){
               $a[$i]=int($1*$d/$2+0.01);
+              $downgrade=1 if($a[$i]>$ths);
           } else {
 # skip these lines, they would give too large coeffs anymore
 ##             print "wrong line in $fname:\n   $line\n";
-             $a[0]=-1;
+             $downgrade=1;
+             $a[$i]=$d*(0.0+$v[$i]);
           }
       }
-      next if($a[0]<0);
+##      next if($a[0]<0);
 # check if some entry is >999, if yes then skip this line ...
-      my $skipit=0;
-      for my $i(1..10){ $skipit=1 if($a[$i]>999); }
-      next if($skipit);
+##      my $skipit=0;
+##     for my $i(1..10){ $skipit=1 if($a[$i]>999); }
+##      next if($skipit);
       biggest(\@a);    ## make it lexicographically maximal
-      push @lines, \@a;
+      if($downgrade){
+        my $new=[]; next if(!downgrade(\@a,$new));
+        $new->[11]="*";
+        push @lines, $new;
+      } else {
+        push @lines, \@a;
+      }
       } else { ## inequality list, $filetype=2
         next if(!/^(\d+,\s*){11}/);
         chomp; 
         my $line=$_;
         my @v=split(/,\s*/,$line);
         scalar @v==13 || die "Wrong inequality line in file $fname:\n $line\n";
-        push @{$info->{new}}, \@v;
+        $downgrade=0;
+        for my $i(0..10){ $downgrade=1 if(0+$v[$i]>$ths); }
+        if($downgrade){
+            my $new=[]; next if(!downgrade(\@v,$new));
+            $new->[11]=$v[11]; $new->[12]="*".$v[12];
+            push @{$info->{new}}, $new;
+        } else {
+            push @{$info->{new}}, \@v;
+        }
       }
     }
     close(FILE);
@@ -286,6 +361,12 @@ sub find_copy {
             $info->{copy} = "rule$1"; $info->{id}="rule:";
         }
     }
+    if($fname =~ /iter([2-9])/ ){
+        $info->{id} .= "$1.";
+    } else {
+        my $thisdir=`pwd`;
+        $info->{id} .= "$1." if( $thisdir =~ /iter([2-9])/ );
+    }
     $fname =~ /([a-z\d]+)\.vlp$/;
     $info->{id} .= $1;
 }
@@ -293,13 +374,15 @@ sub find_copy {
 ##
 my $info={};
 
-for my $i(1..-1+scalar @ARGV){
+if(scalar @ARGV > $ARGZ){
+  for my $i($ARGZ+1..-1+scalar @ARGV){
     read_ineq_file($info,$ARGV[$i]);
+  }
 }
-my $filetype=read_result_file($info,$ARGV[0]);
-$filetype!=0 || die "No input was found in file $ARGV[0]\n";
+my $filetype=read_result_file($info,$ARGV[$ARGZ]);
+$filetype!=0 || die "No input was found in file $ARGV[$ARGZ]\n";
 
-if($filetype==1){ find_copy($info,$ARGV[0]); }
+if($filetype==1){ find_copy($info,$ARGV[$ARGZ]); }
 
 ## print "old: ",scalar @{$info->{old}},", new: ",scalar @{$info->{new}},"\n";
 generate_matrix($info);
@@ -309,17 +392,20 @@ foreach my $a(@{$info->{new}}){
     $cnt++;
     next if(is_superseded($info,$a));
 #    print "trying: ",join(', ',@$a);
-    my $vlpfile=generate_vlp($info,$a);
-    system("inner -y- $vlpfile >/dev/null");
-    my $e=$?>>8; # 0: superseded, 2: new
-    die "Unexpected error from inner ($e)\n" if($e!=0 && $e !=2);
-    unlink $vlpfile;
+    my $e=2;
+    if($info->{cols}>0){
+      my $vlpfile=generate_vlp($info,$a);
+      system("inner -y- $vlpfile >/dev/null");
+      $e=$?>>8; # 0: superseded, 2: new
+      die "Unexpected error from inner ($e)\n" if($e!=0 && $e !=2);
+      unlink $vlpfile;
+    }
     next if($e==0);
     for my $i(0..10){
         print $a->[$i],","; print " " if($i==0 || $i==3 || $i==6);
     }
     if($filetype==1){
-        print " ",$info->{copy},", ",$info->{id},":$cnt\n";
+        print " ",$info->{copy},", ",($a->[11]?"*":""),$info->{id},":$cnt\n";
     } else { ## $filetype==2
         print " ",$a->[11],", ",$a->[12],"\n";
     }
