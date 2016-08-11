@@ -1,0 +1,59 @@
+C copy string: rs=cd:ab;tu=cs:ar;vw=rt:ad
+I    6.94] Elapsed: 6.94, vertices: 1, facets final: 3, pending: 7
+I   12.00] Elapsed: 12.00, vertices: 3, facets final: 5, pending: 20
+I   17.50] Elapsed: 17.50, vertices: 3, facets final: 9, pending: 16
+I   22.84] Elapsed: 22.84, vertices: 4, facets final: 9, pending: 22
+I   28.41] Elapsed: 28.41, vertices: 6, facets final: 11, pending: 27
+I   33.51] Elapsed: 33.51, vertices: 7, facets final: 12, pending: 32
+I   39.78] Elapsed: 39.78, vertices: 9, facets final: 14, pending: 37
+I   46.70] Elapsed: 46.70, vertices: 9, facets final: 18, pending: 33
+I   52.60] Elapsed: 52.60, vertices: 10, facets final: 21, pending: 38
+I   58.63] Elapsed: 58.63, vertices: 10, facets final: 24, pending: 35
+I   63.74] Elapsed: 1:04, vertices: 13, facets final: 25, pending: 40
+I   70.19] Elapsed: 1:10, vertices: 14, facets final: 27, pending: 36
+I   76.45] Elapsed: 1:16, vertices: 17, facets final: 28, pending: 51
+I   82.25] Elapsed: 1:22, vertices: 18, facets final: 30, pending: 50
+I   87.83] Elapsed: 1:28, vertices: 19, facets final: 32, pending: 43
+I   94.25] Elapsed: 1:34, vertices: 20, facets final: 34, pending: 47
+I   99.61] Elapsed: 1:40, vertices: 21, facets final: 37, pending: 52
+I  104.65] Elapsed: 1:45, vertices: 22, facets final: 40, pending: 45
+I  111.96] Elapsed: 1:52, vertices: 25, facets final: 42, pending: 54
+I  117.47] Elapsed: 1:57, vertices: 26, facets final: 45, pending: 51
+I  123.85] Elapsed: 2:04, vertices: 26, facets final: 50, pending: 46
+I  129.04] Elapsed: 2:09, vertices: 26, facets final: 55, pending: 41
+I  134.12] Elapsed: 2:14, vertices: 26, facets final: 60, pending: 36
+I  139.26] Elapsed: 2:19, vertices: 28, facets final: 67, pending: 21
+I  144.81] Elapsed: 2:25, vertices: 29, facets final: 74, pending: 10
+I  150.53] Elapsed: 2:31, vertices: 30, facets final: 77, pending: 5
+I  153.00] Elapsed: 2:33, vertices: 31, facets final: 78, pending: 0
+
+--------------------------------
+Problem completed
+ name                    79.vlp
+ output                  vlp/79.res
+ rows, cols, objs        707, 9415, 10
+ vertices, facets        31, 78
+ total time              2:33
+--------------------------------
+Statistics
+LP:
+ oracle calls            109
+   avg iterations/calls  3.65k
+ total oracle time       2:33
+Combinatorics:
+ vertices added          31
+ facets probed           109
+ facets # max            98
+ memory allocated        975.68k
+ storage expansion
+   vertices # / upto     1 / 124
+   facets   # / upto     1 / 4092
+ facet manipulating
+   added avg / max       7.60 / 24.00
+   compressed            0
+ number of ridge tests
+   avg / max             277.97 / 912.00
+--------------------------------
+Parameters with non-default values
+ OracleItLimit = 300000
+ OracleTimeLimit = 180
