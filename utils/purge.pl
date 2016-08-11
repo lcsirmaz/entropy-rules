@@ -45,6 +45,7 @@ my $skipS=1; # skip inequalities with ,S appended
 sub read_ineq_file {
     my ($info,$fname)=@_;
     $info->{old}=() if(!defined $info->{old});
+    $info->{hash}={} if(!defined $info->{hash});
     $info->{superseded}=() if(!defined $info->{superseded});
     my $base=$fname; $base =~ s/^.*\///g; $base =~ s/\..*$//;
     open(FILE,$fname) || die "Cannot open inequality file $fname for reading\n";
@@ -63,7 +64,13 @@ sub read_ineq_file {
           if(defined $info->{supplist}->{$label}){
               push @{$info->{superseded}},\@a;
           } else {
-              push @{$info->{old}},\@a;
+              my $hash=$a[0]; for my $i(1..10){$hash.=",$a[$i]";}
+              if(!defined $info->{hash}->{$hash}){
+                  $info->{hash}->{$hash}=$label;
+                  push @{$info->{old}},\@a;
+              } else {
+                  print "superseded: $label by ",$info->{hash}->{$hash}," (eq)\n";
+              }
           }
       }
     }
@@ -213,7 +220,7 @@ for my $j(0..-1+scalar @{$info->{old}}){
 #    if(is_superseded($info,$j,1)){ $info->{superseded}[$j]->[14]="S"; }
 #}
 print "Calling LP\n";
- for my $j(0..-1+scalar @{$info->{old}}){
+for my $j(0..-1+scalar @{$info->{old}}){
     next if($info->{old}[$j]->[14]);
     $progress++;
     if($progress % 50 ==0){ print "progress: $progress\n"; }
@@ -230,6 +237,7 @@ for my $j(0..-1+scalar @{$info->{superseded}}){
 ## print "checking ($j) ",$info->{superseded}[$j]->[13],"/",$info->{superseded}[$j]->[12],"\n";
     $progress++;
     if($progress % 50 ==0){ print "progress: $progress\n"; }
+    next if(is_superseded($info,$j,1));
     if(! run_lp($info,$j,1)){
          print "NOT superseded: ",$info->{superseded}[$j]->[13],"/",$info->{superseded}[$j]->[12],
             " by LP\n";

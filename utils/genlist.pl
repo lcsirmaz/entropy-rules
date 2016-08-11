@@ -44,6 +44,8 @@ sub add_file {
             $a[$i] =~ s/\s//g;
         }
         die "Wrong line in file $file" if(scalar @a < 12);
+#         if($a[13]){ print "superseded: $_\n"; }
+#         if(defined $supplist{$a[12]}){ print "in supplist: $_\n";}
         next if($a[13]); ## superseded
         next if(defined $supplist{$a[12]});
         push @list,\@a;
@@ -141,7 +143,7 @@ sub make_normalized_list {
         for my $i(1..10){
             if($a->[$i]==0){ $a->[$i]="0       "; }
             else { $a->[$i]= sprintf("%8.6f", ($a->[$i]+0.0)/$t); }
-            $a->[0] .= $a->[$i];
+            $a->[0] .= (length($a->[$i])==8 ? "0":"").$a->[$i];
         }
     }
     print OUT "# Normalized entropy inequalities for four random variables

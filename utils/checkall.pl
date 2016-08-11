@@ -92,22 +92,22 @@ sub lcm {
 ## round down the coefficients
 ## find out the multiplier which gives the smallest L1 norm
 sub comp_l1{
-    my($i,$arr)=@_;
-    my $v=0.0; my $coeff=($i+0.0)/($arr->[0]+0.0);
+    my($idx,$arr)=@_;
+    my $v=0.0; my $coeff=($idx+0.0)/($arr->[0]+0.0);
     for my $i(1..10){
         my $s=$arr->[$i]*$coeff;
         $s = int($s+1.0-1e-7) - $s; ## round up
         if($s<-1e-7) { $s+=1.0; } elsif($s<0){$s=0;}
         $v+=$s;
     }
-    return $v/$i;
+    return $v/$idx;
 }
 
 ## downgrade
 sub downgrade { # $arr[0..10], $new[0..10]
     my($arr,$new)=@_;
-    my $max=$arr->[0];
-    for my $i(1..10){ my $v=$arr->[$i]; $max=$v if($max<$v); }
+    my $max=1.0;
+    for my $i(1..10){ my $v=($arr->[$i]+0.0)/($arr->[0]+0.0); $max=$v if($max<$v); }
     my $upto = int(1e-7+($ths+0.0)/($max+0.0));
     return 0 if($upto<1); ## cannot downgrade
     my $L1=1000.0; my $ing=0;
@@ -172,22 +172,14 @@ sub read_result_file {
           if($v[$i] =~ /^\d+$/ ){
               $a[$i]=$d*$v[$i]; 
               $downgrade=1 if($a[$i]>$ths);
-          }
-          elsif( $v[$i] =~ /^(\d+)\/(\d+)$/ ){
+          } elsif( $v[$i] =~ /^(\d+)\/(\d+)$/ ){
               $a[$i]=int($1*$d/$2+0.01);
               $downgrade=1 if($a[$i]>$ths);
           } else {
-# skip these lines, they would give too large coeffs anymore
-##             print "wrong line in $fname:\n   $line\n";
              $downgrade=1;
              $a[$i]=$d*(0.0+$v[$i]);
           }
       }
-##      next if($a[0]<0);
-# check if some entry is >999, if yes then skip this line ...
-##      my $skipit=0;
-##     for my $i(1..10){ $skipit=1 if($a[$i]>999); }
-##      next if($skipit);
       biggest(\@a);    ## make it lexicographically maximal
       if($downgrade){
         my $new=[]; next if(!downgrade(\@a,$new));

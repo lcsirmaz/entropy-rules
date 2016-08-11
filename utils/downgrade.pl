@@ -84,22 +84,22 @@ sub lcm {
 ## round down the coefficients
 ## find out the multiplier which gives the smallest L1 norm
 sub comp_l1{
-    my($i,$arr)=@_;
-    my $v=0.0; my $coeff=($i+0.0)/($arr->[0]+0.0);
+    my($idx,$arr)=@_;
+    my $v=0.0; my $coeff=($idx+0.0)/($arr->[0]+0.0);
     for my $i(1..10){
         my $s=$arr->[$i]*$coeff;
         $s = int($s+1.0-1e-7) - $s; ## round up
         if($s<-1e-7) { $s+=1.0; } elsif($s<0){$s=0;}
         $v+=$s;
     }
-    return $v/$i;
+    return $v/$idx;
 }
 
 ## downgrade
 sub downgrade { # $arr[0..10], $new[0..10]
     my($arr,$new)=@_;
-    my $max=$arr->[0];
-    for my $i(1..10){ my $v=$arr->[$i]; $max=$v if($max<$v); }
+    my $max=1.0;
+    for my $i(1..10){ my $v=($arr->[$i]+0.0)/($arr->[0]+0.0); $max=$v if($max<$v); }
     my $upto = int(1e-7+($ths+0.0)/($max+0.0));
     return 0 if($upto<1); ## cannot downgrade
     my $L1=1000.0; my $ing=0;
@@ -111,8 +111,7 @@ sub downgrade { # $arr[0..10], $new[0..10]
     for my $i(1..10){
         my $s=$arr->[$i]*$cf;
         my $is=int($s+1.0-1e-7); if($is-$s<-1e-7){$is++;}
-        $new->[$i]=$is;
-    }
+        $new->[$i]=$is; }
     # check if the downgraded inequality is superseded by one of the known ones
     # 1, 1,1,1, 0,0,0, 0,0,0,0 (ZY)
     return 0 if($new->[1]>=$new->[0] && $new->[2]>=$new->[0] && $new->[3]>=$new->[0]);
@@ -157,8 +156,7 @@ sub read_result_file {
           if($v[$i] =~ /^\d+$/ ){ 
               $a[$i]=$d*$v[$i]; 
               $downgrade=1 if($a[$i]>$ths);
-          }
-          elsif( $v[$i] =~ /^(\d+)\/(\d+)$/ ){
+          } elsif( $v[$i] =~ /^(\d+)\/(\d+)$/ ){
               $a[$i]=int($1*$d/$2+0.01);
               $downgrade=1 if($a[$i]>$ths);
           } else {
@@ -354,21 +352,24 @@ sub find_copy {
 my $info={};
 
 if(scalar @ARGV < 2){ print_usage(); }
-if($ARGV[0] eq "-s"){
+
+$ARGZ=0;
+while(1){
+  if($ARGV[$ARGZ] eq "-s"){
     if(scalar @ARGV<4){ print_usage(); }
-    read_supplist($ARGV[1]);
-    $ARGZ=2;
-}
-if($ARGV[$ARGZ] eq "-t"){
+    read_supplist($ARGV[$ARGZ+1]);
+    $ARGZ+=2;
+  } elsif($ARGV[$ARGZ] eq "-t"){
     if(scalar @ARGV<4+$ARGZ || $ARGV[$ARGZ+1] !~ /^\d+$/){ print_usage(); }
     $ths=0+$ARGV[$ARGZ+1]; if($ths<10||$ths>1000){ print_usage();}
     $ARGZ+=2;
+  } else {
+     last;
+  }
 }
 if($ARGV[$ARGZ] !~ /\.res$/ ){
     die "First argument should be a result file endign with .res\n";
 }
-
-
 
 for my $i($ARGZ+1..-1+scalar @ARGV){
     read_ineq_file($info,$ARGV[$i]);
