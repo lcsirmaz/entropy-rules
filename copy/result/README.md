@@ -3,7 +3,7 @@ New inequalities from copy strings
 
 The file `xx.new` contains new entropy inequalities yielded by the copy string
 numbered `xx` as described in [copy.txt](../copy.txt). Only those inequalities
-are listed which are not superseded by the [DFZ](../DFZ/orig.txt)
+are listed which are not superseded by the [DFZ](../../DFZ/orig.txt)
 inequalities.
 
 Each line in these files has the form
