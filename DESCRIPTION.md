@@ -8,13 +8,13 @@ with some joint distribution.  The *entropy* of a, bc, abd, etc is denoted
 by **H**(a), **H**(bc), **H**(abd), respectively. The three basic entropy
 measures introduced by Claude Shannon are the *conditional entropy*, *joint information*,
 and *conditional joint information*. They are always non-negative,
-and can be defined in term of the entropy as follows.
+and can be defined in terms of the entropy as follows.
 
-|  | definition |
+|  | definition | name |
 |---:|:------|
-|**H**(a\|b) | **H**(a,b) - **H**(b) |
-|**I**(a;b) | **H**(a)+**H**(b) - **H**(a,b) |
-|**I**(a;b\|c) | **H**(a,b)+**H**(a,b) - **H**(a,b,c) - **H**(c) |
+|**H**(a\|b) | **H**(a,b) - **H**(b) | conditional entropy |
+|**I**(a;b) | **H**(a)+**H**(b) - **H**(a,b) | joint (mutual) information |
+|**I**(a;b\|c) | **H**(a,b)+**H**(a,b) - **H**(a,b,c) - **H**(c) | conditional joint information |
 
 Entropy inequalities which do not follow from the non-negativity of basic 
 entropy measures are called *non-Shannon inequalities*.
@@ -29,7 +29,7 @@ using *natural coordinates*. The coordinates are defined by the following
 |-------:|-----------:|:-----------|
 |1| [a,b,c,d]   | the *Ingleton* expression -**I**(a;b) + **I**(a;b \| c) + **I**(a;b \| d) + **I**(c;d) |
 | |            |                 |
-|2| (a,b \| c)  | **I**(a;b \| c) &ndash; the conditional mutual information of a and b assuming c |
+|2| (a,b \| c)  | **I**(a;b \| c) &ndash; conditional joint information of a and b assuming c |
 |3| (a,c \| b)  | **I**(a;c \| b) |
 |4| (b,c \| a)  | **I**(b;c \| a) |
 |5| (a,b \| d)  | **I**(a;b \| d) |
@@ -38,10 +38,10 @@ using *natural coordinates*. The coordinates are defined by the following
 | |            |                 |
 |8| (c,d \| a)  | **I**(c;d \| a) |
 |9| (c,d \| b)  | **I**(c;d \| b) |
-|10| (c,d)       | **I**(c;d)  &ndash; the mutual information of c and d |
-|11| (a,b \| cd) | **I**(a;b \| c,d) &ndash; the conditional mutual information of a and b  assuming cd |
+|10| (c,d)       | **I**(c;d)  &ndash; joint information of c and d |
+|11| (a,b \| cd) | **I**(a;b \| c,d) &ndash; conditional joint information of a and b  assuming cd |
 |  |           |                 |
-|12| (a \| bcd)  | **H**(a \| b,c,d) &ndash; the conditional entropy of a assuming bcd |
+|12| (a \| bcd)  | **H**(a \| b,c,d) &ndash; conditional entropy of a assuming bcd |
 |13| (b \| acd)  | **H**(b \| a,c,d) |
 |14| (c \| abd)  | **H**(c \| a,b,d) |
 |15| (d \| abc)  | **H**(d \| a,b,c) |
