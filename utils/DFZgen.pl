@@ -5,7 +5,7 @@
 
 use strict;
 
-my $rawfile = "DFZ/DFZ.txt";
+my $rawfile = "DFZ/orig.txt";
 
 my @list=();
 
@@ -81,7 +81,7 @@ print OUT1
 #                                                       #
 #########################################################
 #
-# Generated automatically from DFZ.txt. Superseded inequalities
+# Generated automatically from orig.txt. Superseded inequalities
 # are marked by *
 #
 #index natural coefficients                normalized copy string

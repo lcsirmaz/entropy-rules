@@ -90,8 +90,9 @@ in the coefficients and got another (equivalent and valid) inequality.</p>
 
 #### The Zhang &ndash; Yeung inequality
 
-The very first non-Shannon entropy inequality was discovered by Z. Zhang and
-R. W. Yeung in 1997. Using natural coordinates it can be written as
+The very first non-Shannon entropy inequality was discovered by
+[Z. Zhang and R. W. Yeung](http://www.cs.cornell.edu/courses/cs783/2007fa/papers/ZYnonShannon.pdf)
+in 1997. Using natural coordinates it can be written as
 
 > [a,b,c,d] + (a,b | c) + (a,c | b) + (b,c | a) &ge; 0,
 

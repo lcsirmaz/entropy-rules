@@ -6,7 +6,7 @@ generated. This site compiles some of those inequalities and provides tools
 and other information which allows to check their validity.
 
 There are two main methods to get such an inequality. The *copy method* 
-proposed originally by Zhang and Yeung, and the *rule method* suggested
+proposed originally by [Zhang and Yeung](http://www.cs.cornell.edu/courses/cs783/2007fa/papers/ZYnonShannon.pdf), and the *rule method* suggested
 by R. Dougherty et al.
 
 #### Content
