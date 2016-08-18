@@ -11,7 +11,7 @@ and *conditional joint information*. They are always non-negative,
 and can be defined in terms of the entropy as follows.
 
 |  | definition | name |
-|---:|:------|
+|---:|:------|:------|
 |**H**(a\|b) | **H**(a,b) - **H**(b) | conditional entropy |
 |**I**(a;b) | **H**(a)+**H**(b) - **H**(a,b) | joint (mutual) information |
 |**I**(a;b\|c) | **H**(a,b)+**H**(a,b) - **H**(a,b,c) - **H**(c) | conditional joint information |
