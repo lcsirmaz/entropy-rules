@@ -3,12 +3,11 @@ Entropy inequalities
 
 #### Variables, entropy, mutual information
 
-The lower case letters a, b, c, d, etc. are used to denote random variables
+Lower case letters a, b, c, d, etc. denote random variables
 with some joint distribution.  The *entropy* of a, bc, abd, etc is denoted
 by **H**(a), **H**(bc), **H**(abd), respectively. The three basic entropy
-measures
-introduced by Claude Shannon are *conditional entropy*, *joint information*,
-and *conditional joint information*, repectively. They are always non-negative,
+measures introduced by Claude Shannon are the *conditional entropy*, *joint information*,
+and *conditional joint information*. They are always non-negative,
 and can be defined in term of the entropy as follows.
 
 |  | definition |
@@ -17,13 +16,14 @@ and can be defined in term of the entropy as follows.
 |**I**(a;b) | **H**(a)+**H**(b) - **H**(a,b) |
 |**I**(a;b\|c) | **H**(a,b)+**H**(a,b) - **H**(a,b,c) - **H**(c) |
 
-Entropy inequalities which do not follow from their non-negativity are called
-non-Shannon inequalities.
+Entropy inequalities which do not follow from the non-negativity of basic 
+entropy measures are called *non-Shannon inequalities*.
 
 #### Natural coordinates
 
 Entropy inequalities for four random variables a, b, c, and d are written
-using *natural coordinates*, They are defined by 15 entropy expressions:
+using *natural coordinates*. The coordinates are defined by the following
+15 entropy expressions:
 
 |index| coordinate  | description |
 |-------:|-----------:|:-----------|
@@ -46,21 +46,21 @@ using *natural coordinates*, They are defined by 15 entropy expressions:
 |14| (c \| abd)  | **H**(c \| a,b,d) |
 |15| (d \| abc)  | **H**(d \| a,b,c) |
 
-Permutations of a, b, c, d which defined six essentially different natural
+Permutations of a, b, c, d define six essentially different natural
 coordinate systems. Permutations which swap 
-a and b, and / or swap c and d only permute the order of some coordinates.
-Any (linear) entropy inequality can be written in any of this six
-coordinate systems. The different forms correspond to renaming the
-variables.
+a and b, and / or swap c and d only permute the order of some coordinates,
+but not the whole coordinate system.
+Any (linear) entropy inequality can be written in any of these six
+coordinate systems. The six different forms correspond to renaming
+(permuting) the variables.
 
 Basic Shannon inequalities imply that the natural coordinates
 2 &ndash; 15 always have non-negative values. Moreover for every 
 2 &le; i &le; 15 there is a distribution where the i-th coordinate is
 one, and all other coordinates are zero. (But this is not true for the
-first, the Ingleton coordinate which can, and typically will, take negative
-values).
+the Ingleton coordinate which can take negative values).
 
-**Theorem** *By renaming the random variables if necessary, every valid 
+**Theorem** *By renaming the random variables if necessary, every valid
 linear non-Shannon entropy inequality can be written as*
 
 > a<sub>1</sub> [a,b,c,d] + a<sub>2</sub> (a,b | c) + a<sub>3</sub> (a,c | b) + ... + a<sub>11</sub> (a,b | cd) + a<sub>12</sub> (a | bcd) + ... + a<sub>15</sub> (d | abc ) &ge; 0
@@ -68,9 +68,9 @@ linear non-Shannon entropy inequality can be written as*
 <p><em>such that coefficients</em> a<sub>1</sub> ... a<sub>15</sub> <em>are non-negative.
 Moreover, all such inequalities can be strengthened by setting the
 coefficients</em>  a<sub>12</sub> = a<sub>13</sub>
-= a<sub>14</sub> = a<sub>15</sub> = 0 <em>to zero</em>. </p>
+= a<sub>14</sub> = a<sub>15</sub> = 0 <em>to zero</em>. &nbsp; &#x25a1; </p>
 
-<p>Thus a linear non-Shannon entropy inequality can be specified by a sequence
+<p>Thus any linear non-Shannon entropy inequality can be specified by a sequence
 of 11 non-negative numbers as</p>
 
 <table><tr><td><sub>[a,b,c,d]</sub></td>
@@ -86,7 +86,7 @@ of 11 non-negative numbers as</p>
 <p>The c &#8660; d swap of the random variables exchanges coordinates 2-3-4
 and 5-6-7.  The a &#8660; b swap exchanges the coordinate pairs 3-4, 6-7,
 and 8-9.  Thus in any entropy inequality we can also make these exchanges
-in the coefficients and got another (equivalent) inequality.</p>
+in the coefficients and got another (equivalent and valid) inequality.</p>
 
 #### The Zhang &ndash; Yeung inequality
 
@@ -108,9 +108,8 @@ up to four different forms.
 
 #### Minimal entropy inequalities
 
-Non-negative linear combination of entropy inequalities is also an
-entropy inequality &ndash; which is the same as saying that the closure of
-the entropy region is a *convex* set.  When an entropy inequality is such a
+Any non-negative linear combination of entropy inequalities is also an
+entropy inequality. When an entropy inequality is such a
 linear combination of other known entropy inequalities, then we say that it
 is *superseded*. 
 We remark that this &quot;linear combination&quot; includes decreasing
@@ -118,25 +117,14 @@ coefficient a<sub>1</sub> of the Ingleton coordinate (but it must remain
 non-negative), and increasing other coefficients a<sub>2</sub> ... 
 a<sub>11</sub>.
 
-An entropy inequality is **minimal** if it is not known to be superseded.
+An entropy inequality is *minimal* if it is not known to be superseded.
 This status might change over time; listed inequalities known to be
 superseded are marked as such.
 
-All known minimal entropy inequalities can be scaled to have integer
-coefficients. In the main lists the coordinates are integers; in the
-supplement lists the coefficients are scaled so that the Ingleton coordinate
-is 1, and other coordinates are printed as floating point numbers. 
-
-
-<!--
-#### The DFZ list
-
-Section VIII of the seminal paper of R. Dougherty, C. Freiling and K. Zeger:
-[Non-Shannon information inequalities in four random
-variables](http://arxiv.org/pdf/1104.3602v1)
-contains a list of 214 non-Shannon information inequalities. They are listed
-in the DFZ directory together with the paste string and the indication
-whether it has been superseded. 
--->
-
+Listed entropy inequalities are scaled to have integer coefficients. In some
+cases the coefficients are adjusted (rounded up) and are not exact; those
+cases are marked by an asterisk in their labels.
+In the main lists coordinates are integers; in the
+normalized lists coefficients are scaled so that the Ingleton coordinate
+is 1, and other coordinates are printed as floating point numbers.
 

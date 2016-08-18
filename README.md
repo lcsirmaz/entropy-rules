@@ -12,13 +12,11 @@ by R. Dougherty et al.
 #### Content
 
 * [DESCRIPTION.md](DESCRIPTION.md) &nbsp;&ndash; how entropy inequalities are represented
-* [ineq.txt](ineq-list.txt) &nbsp;&ndash; list of known inequalities
-* [ineq-normalized.txt](ineq-normalized.txt) &nbsp;&ndash; inequalities normalized by the value of coefficients
-* [ineq.dw1](ineq.dw1) &nbsp;&ndash; entropy inequalities with coeffs below 100
-* [ineq.dw2](ineq.dw2) &nbsp;&ndash; entropy inequalities with coeffs below 200
 * [DFZ](DFZ) &nbsp;&ndash; Dougherty-Freilig-Zeger list of 214 inequalities
 * [copy](copy) &nbsp;&ndash; description and data for copy method
 * [rules](rules) &nbsp;&ndash; description and data for the rule method
+* [drules](drules) &nbsp;&ndash; description and data for iteration
 * [utils](utils) &nbsp;&ndash; utility perl programs to generate and check data
+
 
 

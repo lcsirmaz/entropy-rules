@@ -9,14 +9,19 @@
 61   rs=cd:ab;t=(cr):ab;u=(cr):abt;v=(cr):abtu
 18   rs=cd:ab;t=a:bcr;uv=ds:abt
 68   rs=cd:ab;t=a:bcr;u=a:bcrt;v=a:bcrtu
+71   rs=cd:ab;t=a:bcr;u=b:acrt;v=b:acrtu
+34   rs=cd:ab;t=a:bcs;uv=at:bcs
 03   rs=cd:ab;t=a:bcs;uv=bt:acr
 15   rs=cd:ab;t=a:bcs;u=a:bcst;v=a:bcstu
 60   rs=cd:ab;tu=ac:br;v=d:brtu;w=d:brtuv
+59   rs=cd:ab;tu=ac:br;v=d:bru;w=d:bruv
 57   rs=cd:ab;tu=ac:bdr;v=a:bdrt
 38   rs=cd:ab;tu=ac:bdr;vw=br:adst
 30   rs=cd:ab;tu=ac:bdr;vw=bt:ads
 31   rs=cd:ab;tu=ac:bdr;vw=dr:abst
+74   rs=cd:ab;tu=ac:bds;v=b:adst;w=b:adstv
 48   rs=cd:ab;tu=ac:bds;vw=bt:adr
+24   rs=cd:ab;tu=ac:bds;vw=cr:abt
 55   rs=cd:ab;tu=ar:bcs;vw=bt:acr
 73   rs=cd:ab;tu=ar:bds;v=b:adst;w=b:adstv
 40   rs=cd:ab;t=c:ar;u=d:art;v=d:artu
@@ -30,10 +35,13 @@
 07   rs=cd:ab;tu=cr:ab;vw=cr:abtu
 56   rs=cd:ab;tu=cr:ab;vw=cs:abt
 14   rs=cd:ab;tu=cr:ab;vw=cs:abtu
+50   rs=cd:ab;tu=cr:ab;vw=dr:abtu
 04   rs=cd:ab;tu=cr:ab;vw=r(tu):ad
 33   rs=cd:ab;tu=cr:ab;vw=tu:acs
 10   rs=cd:ab;tu=cs:ab;v=a:bcrt
 01   rs=cd:ab;tu=cs:ab;v=a:bcrtu
+51   rs=cd:ab;tu=cs:ab;v=a:bdstu
+84   rs=cd:ab;tu=cs:ab;vw=as:bcrt
 08   rs=cd:ab;tu=cs:ab;vw=as:bcrtu
 06   rs=cd:ab;tu=cs:ab;vw=ds:abtu
 79   rs=cd:ab;tu=cs:ar;vw=rt:ad
@@ -44,6 +52,8 @@
 23   rs=ac:bd;t=d:abs;u=d:abrt;v=d:abrtu
 17   rs=ac:bd;tu=ar:bd;v=a:bcrtu
 02   rs=ac:bd;tu=cd:abs;v=a:bdrsu
+88   rs=ac:bd;t=d:abr;u=d:abrt;vw=cd:abs
+87   rs=ac:bd;t=d:abr;u=d:abs;vw=cd:abrt
 ##
 # Copy strings NOT yielding new inequalities:
 #
@@ -51,30 +61,22 @@
 69   rs=cd:ab;t=a:bcr;u=(br):act;v=(br):actu
 35   rs=cd:ab;t=a:bcr;u=a:bcrt;v=b:ads;w=b:adsv
 70   rs=cd:ab;t=a:bcr;u=b:act;v=b:actu
-71   rs=cd:ab;t=a:bcr;u=b:acrt;v=b:acrtu
-34   rs=cd:ab;t=a:bcs;uv=at:bcs
 28   rs=cd:ab;t=a:bcs;uv=cs:abrt
 26   rs=cd:ab;t=a:bcs;uv=ds:ab
 41   rs=cd:ab;t=a:bcs;u=t:bd;v=u:bdt
-59   rs=cd:ab;tu=ac:br;v=d:bru;w=d:bruv
 75   rs=cd:ab;tu=ac:bdr;v=t:ac;w=t:acv
 54   rs=cd:ab;tu=ac:bdr;vw=st:ac
-74   rs=cd:ab;tu=ac:bds;v=b:adst;w=b:adstv
 76   rs=cd:ab;tu=ac:bds;v=t:cdr;w=t:adrv
 77   rs=cd:ab;tu=ac:bds;v=t:adr;w=t:adrv
 63   rs=cd:ab;tu=ac:bds;vw=ac:bdst
 25   rs=cd:ab;tu=ac:bds;vw=as:bct
-24   rs=cd:ab;tu=ac:bds;vw=cr:abt
 67   rs=cd:ab;tu=ac:bds;vw=ru:bdst
 62   rs=cd:ab;tu=ar:bcs;vw=bu:acrs
 11   rs=cd:ab;tu=cr:ab;v=a:bcst
 20   rs=cd:ab;tu=cr:ab;v=t:adr
 49   rs=cd:ab;tu=cr:ab;vw=cr:abt
-50   rs=cd:ab;tu=cr:ab;vw=dr:abtu
-84   rs=cd:ab;tu=cs:ab;vw=as:bcrt
 21   rs=cd:ab;tu=cs:ab;v=a:bcru
 22   rs=cd:ab;tu=cs:ab;v=a:bdst
-51   rs=cd:ab;tu=cs:ab;v=a:bdstu
 39   rs=cd:ab;tu=cs:ab;v=a:bctu
 80   rs=cd:ab;tu=cs:ar;vw=ad:bcrtu
 81   rs=cd:ab;tu=cs:ar;vw=tu:adr
@@ -96,4 +98,6 @@
 72   rs=ac:bd;tu=cd:abr;v=b:acrt;w=b:acrtv
 65   rs=ac:bd;tu=cd:abrs;v=d:abrsu
 82   rs=ac:bd;tu=dr:abs;vw=at:bdrsu
+85   rs=ac:bd;tu=ds:abr;v=d:abrt
+86   rs=ac:bd;tu=(cs)d:abr;v=d:abru
 

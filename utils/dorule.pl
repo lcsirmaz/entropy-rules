@@ -2,18 +2,19 @@
 ##
 ## dorule.pl: apply a rule for all known inequalities
 ##
-## arguments: <rule> <vlpfile>
+## arguments: <eqlist> <rule> <vlpfile>
 ##
-## known inequalities are read from ineq_list.txt (hard wired)
+## known inequalities are read from <eqlist>
 ## <rule> contains a list of rules of the form
 ##   [1,0,0,0,0,0,0,0,0,0,0] <= [1,1,1,0,0,0,0,0,0,0,0]
 ## they are referred to as a_i <= b_i; known inequalities are x_j>=0
 ## the <vlpfile> is a description of the minimization problem
 ##
-##  minimize \sum_i\lambda_i a_i       (10 objectives)
+##  minimize \sum_i\lambda_i b_i       (10 objectives, Ingleton is fixed)
 ##  subject to \lambda_i>=0, \mu_j>=0, (variables)
-##             \sum_j\mu_j x_j <= \sum_i \lambda_i b_i
-##             ingleton coeff of \sum_i\lambda_i a_i = 1
+##             \sum_j\mu_j x_j <= \sum_i \lambda_i a_i
+##                   except for the Ingleton, where they should be equal
+##             ingleton coeff of \sum_i\lambda_i b_i = 1
 ##
 ##  it generates all consequences applying the given rule to all known 
 ##  inequalities.

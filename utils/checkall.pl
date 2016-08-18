@@ -349,6 +349,11 @@ sub find_copy {
         chomp($a);
         if($a=~/^c copy/){
             $a=~ s/^.*string: //; $info->{copy}="$a"; $info->{id}="copy:";
+            if($a =~ s/; ineq:.*//){
+                $a =~ s/,/./g;
+                $info->{copy}=$a; $info->{id}="drule:";
+            }
+            $info->{copy} =~ s/;$//;
         } elsif( $a=~/rule (\d.+) for/){
             $info->{copy} = "rule$1"; $info->{id}="rule:";
         }

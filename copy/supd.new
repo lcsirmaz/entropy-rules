@@ -565,7 +565,14 @@ superseded: 74/copy:74:326 by 73/copy:73:326 (eq)
 superseded: 74/copy:74:330 by 73/copy:73:330 (eq)
 superseded: 74/copy:74:397 by 73/copy:73:397 (eq)
 superseded: 74/copy:74:402 by 73/copy:73:402 (eq)
-total: 1089,  superseded: 0
+superseded: 78/copy:78:37 by 47/copy:47:21 (eq)
+superseded: 78/copy:78:41 by 47/copy:47:22 (eq)
+superseded: 79/copy:79:26 by 47/copy:47:21 (eq)
+superseded: 83/copy:83:33 by 47/copy:47:21 (eq)
+superseded: 83/copy:83:37 by 79/copy:79:28 (eq)
+superseded: 84/copy:84:29 by 10/copy:10:29 (eq)
+superseded: 88/copy:88:99 by 87/copy:87:60 (eq)
+total: 1103,  superseded: 0
 superseded: base/dfz:0:0 by 73/copy:73:19
 superseded: base/dfz:26:26 by 52/copy:52:34
 superseded: base/dfz:31:31 by 31/copy:31:13
@@ -597,11 +604,13 @@ superseded: 06/copy:06:29 by 52/copy:52:51
 superseded: 06/copy:06:31 by 52/copy:52:58
 superseded: 06/copy:06:37 by 14/copy:14:30
 superseded: 14/copy:14:22 by 29/copy:29:31
+superseded: 23/copy:23:28 by 87/copy:87:60
 superseded: 29/copy:29:34 by 06/copy:06:31
 superseded: 30/copy:30:38 by 48/copy:48:34
 superseded: 59/copy:59:20 by 60/copy:60:50
 superseded: 59/copy:59:227 by 60/copy:60:170
 superseded: 59/copy:59:228 by 60/copy:60:147
+superseded: 79/copy:79:31 by 83/copy:83:40
 Calling LP
 superseded: base/dfz:11:11 by  LP
 superseded: base/dfz:15:15 by  LP
@@ -896,11 +905,12 @@ superseded: 15/copy:15:21743 by  LP
 superseded: 15/copy:15:21789 by  LP
 superseded: 23/copy:23:33 by  LP
 superseded: 23/copy:23:41 by  LP
+superseded: 23/copy:23:44 by  LP
 superseded: 29/copy:29:30 by  LP
 superseded: 29/copy:29:35 by  LP
 superseded: 29/copy:29:37 by  LP
-progress: 600
 superseded: 29/copy:29:40 by  LP
+progress: 600
 superseded: 30/copy:30:41 by  LP
 superseded: 30/copy:30:117 by  LP
 superseded: 30/copy:30:141 by  LP
@@ -946,8 +956,8 @@ superseded: 38/copy:38:398 by  LP
 superseded: 38/copy:38:409 by  LP
 superseded: 38/copy:38:411 by  LP
 superseded: 38/copy:38:416 by  LP
-progress: 800
 superseded: 38/copy:38:425 by  LP
+progress: 800
 superseded: 38/copy:38:482 by  LP
 superseded: 38/copy:38:483 by  LP
 superseded: 38/copy:38:501 by  LP
@@ -968,8 +978,8 @@ superseded: 38/copy:38:797 by  LP
 superseded: 38/copy:38:919 by  LP
 superseded: 38/copy:38:941 by  LP
 superseded: 38/copy:38:958 by  LP
-progress: 850
 superseded: 38/copy:38:1096 by  LP
+progress: 850
 superseded: 38/copy:38:1143 by  LP
 superseded: 38/copy:38:1192 by  LP
 superseded: 38/copy:38:1193 by  LP
@@ -987,8 +997,8 @@ superseded: 38/copy:38:1933 by  LP
 superseded: 38/copy:38:1935 by  LP
 superseded: 38/copy:38:1949 by  LP
 superseded: 38/copy:38:2060 by  LP
-progress: 900
 superseded: 38/copy:38:2091 by  LP
+progress: 900
 superseded: 38/copy:38:2096 by  LP
 superseded: 38/copy:38:2101 by  LP
 superseded: 38/copy:38:2135 by  LP
@@ -1003,6 +1013,7 @@ superseded: 40/copy:40:80 by  LP
 superseded: 40/copy:40:98 by  LP
 superseded: 40/copy:40:100 by  LP
 superseded: 40/copy:40:104 by  LP
+superseded: 47/copy:47:22 by  LP
 superseded: 48/copy:48:34 by  LP
 superseded: 48/copy:48:61 by  LP
 superseded: 48/copy:48:202 by  LP
@@ -1062,120 +1073,6 @@ superseded: 73/copy:73:226 by  LP
 progress: 1050
 superseded: 73/copy:73:330 by  LP
 superseded: 73/copy:73:402 by  LP
-superseded: 78/copy:78:37 by 47/copy:47:21 (eq)
-superseded: 78/copy:78:41 by 47/copy:47:22 (eq)
-superseded: 79/copy:79:26 by 47/copy:47:21 (eq)
-total: 621,  superseded: 1041
-Calling LP
-progress: 50
-progress: 100
-progress: 150
-progress: 200
-progress: 250
-progress: 300
-progress: 350
-progress: 400
-progress: 450
-progress: 500
-progress: 550
-superseded: 47/copy:47:22 by  LP
-progress: 600
 superseded: 79/copy:79:27 by  LP
 superseded: 79/copy:79:29 by  LP
-checking superseded ....
-progress: 50
-progress: 100
-progress: 150
-progress: 200
-progress: 250
-progress: 300
-progress: 350
-progress: 400
-progress: 450
-progress: 500
-progress: 550
-progress: 600
-progress: 650
-progress: 700
-progress: 750
-progress: 800
-progress: 850
-progress: 900
-progress: 950
-progress: 1000
-superseded: 83/copy:83:33 by 47/copy:47:21 (eq)
-superseded: 83/copy:83:37 by 79/copy:79:28 (eq)
-total: 622,  superseded: 1047
-superseded: 79/copy:79:31 by 83/copy:83:40
-Calling LP
-progress: 50
-progress: 100
-progress: 150
-progress: 200
-progress: 250
-progress: 300
-progress: 350
-progress: 400
-progress: 450
-progress: 500
-progress: 550
-progress: 600
 superseded: 79/copy:79:30 by  LP
-checking superseded ....
-progress: 50
-progress: 100
-progress: 150
-progress: 200
-progress: 250
-progress: 300
-progress: 350
-progress: 400
-progress: 450
-progress: 500
-progress: 550
-progress: 600
-progress: 650
-progress: 700
-progress: 750
-progress: 800
-progress: 850
-progress: 900
-progress: 950
-progress: 1000
-superseded: 84/copy:84:29 by 10/copy:10:29 (eq)
-total: 620,  superseded: 1051
-Calling LP
-progress: 50
-progress: 100
-progress: 150
-progress: 200
-progress: 250
-progress: 300
-progress: 350
-progress: 400
-progress: 450
-progress: 500
-progress: 550
-progress: 600
-checking superseded ....
-progress: 50
-progress: 100
-progress: 150
-progress: 200
-progress: 250
-progress: 300
-progress: 350
-progress: 400
-progress: 450
-progress: 500
-progress: 550
-progress: 600
-progress: 650
-progress: 700
-progress: 750
-progress: 800
-progress: 850
-progress: 900
-progress: 950
-progress: 1000
-progress: 1050

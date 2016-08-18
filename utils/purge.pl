@@ -41,7 +41,7 @@ sub read_supplist {
 }
 
 ## read an inequality file
-my $skipS=1; # skip inequalities with ,S appended
+my $skipS=0; # skip inequalities with ,S appended
 sub read_ineq_file {
     my ($info,$fname)=@_;
     $info->{old}=() if(!defined $info->{old});
@@ -61,6 +61,7 @@ sub read_ineq_file {
       } else {
           my $label="$base/$a[12]";
           $a[13]=$base;
+          $a[14]=undef;
           if(defined $info->{supplist}->{$label}){
               push @{$info->{superseded}},\@a;
           } else {
