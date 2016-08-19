@@ -154,15 +154,17 @@ set is a (perhaps new) information inequality:
 
 where
 
->  the Ingleton coefficient is 1, <br>
->  &lambda;<sub>1</sub> **xx*<sub>1</sub> + ... + &lambda;<sub>t</sub>
+>  the Ingleton coefficient in (5) is 1, <br>
+>  &lambda;<sub>1</sub> **x**<sub>1</sub> + ... + &lambda;<sub>t</sub>
 > **x**<sub>t</sub> &ge; &mu;<sub>1</sub> **e**<sub>1</sub> + ... +
-> &mu;<sub>n</sub> **e**<sub>n</sub>, <br>
->  and &lambda<sub>i</sub> &ge; 0, &mu;<sub>j</sub> &ge; 0.
+> &mu;<sub>n</sub> **e**<sub>n</sub>; the Ingleton coefficients are
+> equal,<br>
+>  and &lambda;<sub>i</sub> &ge; 0, &mu;<sub>j</sub> &ge; 0.
 
-The set (5) is a convex set, and inequalities not superseded by other from
+The set (5) is a convex set, and inequalities not superseded by others from
 the same set are again solutions of a MOLP. To create that problem use the
-perl utility `dorule.pl`.
+perl utility `dorule.pl`, and the utility `checkall.pl` to extract the
+inequalities:
 
     # apply a rule to a set of inequalitie and generate the vlp file
     utils/dorule.pl <ineqfile> <rule> vlp/NN.vlp
