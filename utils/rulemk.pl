@@ -395,7 +395,7 @@ sub generate_vlp {
     my $cols = scalar @{$info->{ineq}}; # columns BEFORE adding stuff
     # add 3*$D extra columns
     add_natural_coords($info,-1,"a,b,c,d",$D);
-    add_natural_coords($info,1,$base1,$D);
+    add_natural_coords($info,+1,$base1,$D);
     my $DD=$D+$D;
     if($base2){
         add_natural_coords($info,1,$base2,$D);
@@ -440,7 +440,7 @@ sub generate_vlp {
     print VLP "p vlp min ",
        1+$newrows,  # number of total rows
        " ",$DD+$cols, # number of columns
-       " ",$nonzero+$DD-$D, # nonzero elements in A
+       " ",$nonzero+$DD, # nonzero elements in A
        " ",$DD, # number of objectives
        " ",$DD, # number of non-zero entries in objectives
        "\n";
@@ -468,12 +468,12 @@ sub generate_vlp {
             print VLP "a $i $j $v\n";
         }
     }
-    for my $i(1..$DD-$D){
-        print VLP "a ",$newrows+1," ",$cols+$D+$i," 1\n";
+    for my $i(1..$DD){
+        print VLP "a ",$newrows+1," ",$cols+$i," 1\n";
     }
     # print the objectives, total number is 2*$D
     for my $i(1..$DD){
-        print VLP "o ",$i," ",$cols+$i,($i<=$D ? " 1":" -1"),"\n";
+        print VLP "o ",$i," ",$cols+$i,(1<$i && $i<=$D+1 ? " 1":" -1"),"\n";
     }
     print VLP "e\n\n";
     close(VLP);

@@ -1,10 +1,8 @@
-/# rules to be defined
-#
-# index, copy string, variables1, variables 2
-#
 # single rules
-# label, copy string,  base            comment, numbers refer to DFZ paper
 #
+# label, copy string,  base            DFZ rule number
+#
+00  r=a:bc             ar,br,cr,d      # 1
 01  r=a:bc;s=a:bdr     ar,br,cr,d      # 1, 5
 02  r=a:bc;s=a:bdr     ar,br,c,dr      # 3, 5, 16
 03  r=a:bc;s=a:bdr     a,r,c,d         # 9, 16, 23
@@ -56,27 +54,3 @@
 48  r=c:ab;s=a:bdr     a,r,c,d
 49  r=c:ab;s=a:bdr     ar,br,cr,dr
 
-#####################################################
-# double rules
-# number, copy string, base1, base2
-#
-50a rs=cd:ab           ar,br,c,dr    ar,br,cr,d
-50b rs=cd:ab           ar,br,c,dr    ar,br,d,cr
-50c rs=cd:ab           ar,br,c,dr    br,ar,cr,d
-50d rs=cd:ab           ar,br,c,dr    br,ar,d,cr
-51a r=c:ab;s=a:bdr     ar,br,c,dr    ar,br,cr,d
-51b r=c:ab;s=a:bdr     ar,br,c,dr    ar,br,d,cr
-51c r=c:ab;s=a:bdr     ar,br,c,dr    br,ar,cr,d
-51d r=c:ab;s=a:bdr     ar,br,c,dr    br,ar,d,cr
-52a r=c:ab;s=b:adr     ar,br,c,dr    ar,br,cr,d
-52b r=c:ab;s=b:adr     ar,br,c,dr    ar,br,d,cr
-52c r=c:ab;s=b:adr     ar,br,c,dr    br,ar,cr,d
-52d r=c:ab;s=b:adr     ar,br,c,dr    br,ar,d,cr
-53a rs=cd:ab           ad,bd,dr,ds   ac,bc,cr,cs
-53b rs=cd:ab           ad,bd,dr,ds   ac,bc,cs,cr
-53c rs=cd:ab           ad,bd,dr,ds   bc,ac,cr,cs
-53d rs=cd:ab           ad,bd,dr,ds   bc,ac,cs,cr
-54b rs=cd:ab           ar,br,c,dr    a,r,d,c
-54d rs=cd:ab           ar,br,c,dr    r,a,d,c
-55b rs=cd:ab           a,c,r,s       ad,b,s,r
-55d rs=cd:ab           a,c,r,s       b,ad,s,r

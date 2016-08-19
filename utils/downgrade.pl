@@ -19,7 +19,7 @@
 use strict;
 
 # threshold value, start of <ineq?> arguments
-my $ths=1000; my $ARGZ=0;
+my $ths=200; my $ARGZ=0;
 
 sub print_usage {
     print "Usage: downgrade.pl [-s <supd>] [-t <threshold>] <result> <ineq1> <ineq2> ...\n",
