@@ -1,0 +1,53 @@
+C applying rule 13.txt for base200.txt
+I    0.37] recalculating facets...
+I    2.09] recalculating facets...
+I    4.79] recalculating facets...
+I    5.00] Elapsed: 5.00, vertices: 307, facets final: 110, pending: 21382
+I    8.01] recalculating facets...
+I   10.00] Elapsed: 10.00, vertices: 477, facets final: 326, pending: 25958
+I   10.52] recalculating facets...
+I   12.81] recalculating facets...
+I   15.00] Elapsed: 15.00, vertices: 694, facets final: 1377, pending: 26916
+I   15.14] recalculating facets...
+I   18.38] recalculating facets...
+I   20.00] Elapsed: 20.00, vertices: 834, facets final: 4029, pending: 25361
+I   25.00] Elapsed: 25.00, vertices: 883, facets final: 7230, pending: 22387
+I   28.53] recalculating facets...
+I   30.00] Elapsed: 30.00, vertices: 905, facets final: 10575, pending: 19061
+I   35.00] Elapsed: 35.00, vertices: 923, facets final: 13902, pending: 15774
+I   40.00] Elapsed: 40.00, vertices: 926, facets final: 17121, pending: 12562
+I   45.00] Elapsed: 45.00, vertices: 930, facets final: 20594, pending: 9083
+I   50.00] Elapsed: 50.00, vertices: 936, facets final: 24035, pending: 5658
+I   55.00] Elapsed: 55.00, vertices: 939, facets final: 27489, pending: 2203
+I   58.16] Elapsed: 58.16, vertices: 948, facets final: 29689, pending: 0
+
+--------------------------------
+Problem completed
+ name                    13.vlp
+ output                  vlp/13.res
+ rows, cols, objs        12, 2573, 10
+ vertices, facets        948, 29689
+ total time              58.16
+--------------------------------
+Statistics
+LP:
+ oracle calls            30637
+   avg iterations/calls  8.26
+ total oracle time       43.97
+Combinatorics:
+ vertices added          948
+ facets probed           30637
+ facets # max            29694
+ memory allocated        14.50M
+ storage expansion
+   vertices # / upto     8 / 1020
+   facets   # / upto     8 / 32764
+ facet manipulating
+   added avg / max       150.18 / 1.13k
+   compressed            104
+ number of ridge tests
+   avg / max             2.10M / 21.44M
+--------------------------------
+Parameters with non-default values
+ OracleItLimit = 200000
+ OracleTimeLimit = 60

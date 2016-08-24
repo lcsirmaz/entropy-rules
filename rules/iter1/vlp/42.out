@@ -1,0 +1,41 @@
+C applying rule 42.txt for base200.txt
+I    0.20] recalculating facets...
+I    0.54] recalculating facets...
+I    1.03] recalculating facets...
+I    1.70] recalculating facets...
+I    2.62] recalculating facets...
+I    4.59] recalculating facets...
+I    5.00] Elapsed: 5.00, vertices: 621, facets final: 2949, pending: 2643
+I    7.62] recalculating facets...
+I    8.59] Elapsed: 8.59, vertices: 728, facets final: 5749, pending: 0
+
+--------------------------------
+Problem completed
+ name                    42.vlp
+ output                  vlp/42.res
+ rows, cols, objs        12, 2409, 10
+ vertices, facets        728, 5749
+ total time              8.59
+--------------------------------
+Statistics
+LP:
+ oracle calls            6477
+   avg iterations/calls  6.31
+ total oracle time       7.98
+Combinatorics:
+ vertices added          728
+ facets probed           6477
+ facets # max            5780
+ memory allocated        4.78M
+ storage expansion
+   vertices # / upto     6 / 764
+   facets   # / upto     2 / 8188
+ facet manipulating
+   added avg / max       37.16 / 266.00
+   compressed            18
+ number of ridge tests
+   avg / max             111.62k / 1.17M
+--------------------------------
+Parameters with non-default values
+ OracleItLimit = 200000
+ OracleTimeLimit = 60

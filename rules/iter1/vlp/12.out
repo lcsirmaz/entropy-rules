@@ -1,0 +1,72 @@
+C applying rule 12.txt for base200.txt
+I    1.52] recalculating facets...
+I    4.96] recalculating facets...
+I    5.01] Elapsed: 5.01, vertices: 201, facets final: 17, pending: 17789
+I    8.76] recalculating facets...
+I   10.01] Elapsed: 10.01, vertices: 346, facets final: 30, pending: 20791
+I   12.65] recalculating facets...
+I   15.01] Elapsed: 15.01, vertices: 443, facets final: 57, pending: 25267
+I   18.13] recalculating facets...
+I   20.02] Elapsed: 20.02, vertices: 533, facets final: 80, pending: 26461
+I   22.75] recalculating facets...
+I   25.04] Elapsed: 25.04, vertices: 655, facets final: 113, pending: 24632
+I   26.10] recalculating facets...
+I   28.43] recalculating facets...
+I   30.05] Elapsed: 30.05, vertices: 861, facets final: 238, pending: 22238
+I   30.79] recalculating facets...
+I   33.19] recalculating facets...
+I   35.10] Elapsed: 35.10, vertices: 1082, facets final: 430, pending: 20598
+I   35.60] recalculating facets...
+I   37.83] recalculating facets...
+I   39.74] recalculating facets...
+I   40.10] Elapsed: 40.10, vertices: 1326, facets final: 775, pending: 19335
+I   41.28] recalculating facets...
+I   43.02] recalculating facets...
+recalculate_facet: numerical instability at facet 21739, coord 0 (1.42774e-06)
+recalculate_facet: numerical instability at facet 21739, coord 10 (-1.4345e-06)
+recalculate_facet: numerical instability at facet 21741, coord 4 (1.70258e-06)
+recalculate_facet: numerical instability at facet 21764, coord 4 (1.67452e-06)
+I   44.80] recalculating facets...
+I   45.10] Elapsed: 45.10, vertices: 1619, facets final: 1704, pending: 17326
+I   46.50] recalculating facets...
+I   48.57] recalculating facets...
+I   50.10] Elapsed: 50.10, vertices: 1859, facets final: 3837, pending: 15109
+I   51.58] recalculating facets...
+I   55.10] Elapsed: 55.10, vertices: 1960, facets final: 6976, pending: 11856
+I   56.93] recalculating facets...
+I   60.10] Elapsed: 1:00, vertices: 2043, facets final: 10287, pending: 8519
+I   65.10] Elapsed: 1:05, vertices: 2075, facets final: 13803, pending: 4964
+I   70.10] Elapsed: 1:10, vertices: 2092, facets final: 17346, pending: 1399
+I   72.01] Elapsed: 1:12, vertices: 2094, facets final: 18745, pending: 0
+
+--------------------------------
+Problem completed
+ name                    12.vlp
+ output                  vlp/12.res
+ rows, cols, objs        12, 2545, 10
+ vertices, facets        2094, 18745
+ total time              1:12
+--------------------------------
+Statistics
+LP:
+ oracle calls            20839
+   avg iterations/calls  7.08
+ total oracle time       29.16
+Combinatorics:
+ vertices added          2094
+ facets probed           20839
+ facets # max            27402
+ memory allocated        23.26M
+ instability warnings    4
+ storage expansion
+   vertices # / upto     17 / 2172
+   facets   # / upto     7 / 28668
+ facet manipulating
+   added avg / max       157.19 / 2.13k
+   compressed            140
+ number of ridge tests
+   avg / max             2.75M / 45.62M
+--------------------------------
+Parameters with non-default values
+ OracleItLimit = 200000
+ OracleTimeLimit = 60

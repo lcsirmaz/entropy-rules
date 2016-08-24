@@ -1,0 +1,56 @@
+C applying rule 44.txt for base200.txt
+I    0.48] recalculating facets...
+I    2.84] recalculating facets...
+I    5.00] Elapsed: 5.00, vertices: 244, facets final: 53, pending: 24015
+I    9.03] recalculating facets...
+I   10.02] Elapsed: 10.02, vertices: 319, facets final: 88, pending: 27394
+I   13.83] recalculating facets...
+I   15.06] Elapsed: 15.06, vertices: 426, facets final: 161, pending: 28315
+I   17.07] recalculating facets...
+I   19.65] recalculating facets...
+I   20.06] Elapsed: 20.06, vertices: 621, facets final: 493, pending: 27577
+I   21.65] recalculating facets...
+I   23.46] recalculating facets...
+I   25.06] Elapsed: 25.06, vertices: 883, facets final: 1747, pending: 26473
+I   25.45] recalculating facets...
+I   28.15] recalculating facets...
+I   30.06] Elapsed: 30.06, vertices: 1040, facets final: 4575, pending: 23471
+I   35.06] Elapsed: 35.06, vertices: 1092, facets final: 8319, pending: 19788
+I   37.16] recalculating facets...
+I   40.06] Elapsed: 40.06, vertices: 1108, facets final: 12169, pending: 15888
+I   45.06] Elapsed: 45.06, vertices: 1118, facets final: 16047, pending: 12055
+I   50.06] Elapsed: 50.06, vertices: 1122, facets final: 19951, pending: 8169
+I   55.06] Elapsed: 55.06, vertices: 1123, facets final: 23890, pending: 4241
+I   60.06] Elapsed: 1:00, vertices: 1124, facets final: 27827, pending: 308
+I   60.44] Elapsed: 1:00, vertices: 1127, facets final: 28135, pending: 0
+
+--------------------------------
+Problem completed
+ name                    44.vlp
+ output                  vlp/44.res
+ rows, cols, objs        12, 2483, 10
+ vertices, facets        1127, 28135
+ total time              1:00
+--------------------------------
+Statistics
+LP:
+ oracle calls            29262
+   avg iterations/calls  6.63
+ total oracle time       36.84
+Combinatorics:
+ vertices added          1127
+ facets probed           29262
+ facets # max            29566
+ memory allocated        15.77M
+ storage expansion
+   vertices # / upto     9 / 1148
+   facets   # / upto     8 / 32764
+ facet manipulating
+   added avg / max       172.63 / 2.40k
+   compressed            79
+ number of ridge tests
+   avg / max             3.12M / 47.99M
+--------------------------------
+Parameters with non-default values
+ OracleItLimit = 200000
+ OracleTimeLimit = 60

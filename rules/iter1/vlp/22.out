@@ -1,0 +1,90 @@
+C applying rule 22.txt for base200.txt
+I    1.15] recalculating facets...
+I    4.37] recalculating facets...
+I    5.06] Elapsed: 5.06, vertices: 210, facets final: 17, pending: 19723
+I   10.15] Elapsed: 10.15, vertices: 285, facets final: 23, pending: 29751
+I   11.71] recalculating facets...
+I   15.38] Elapsed: 15.38, vertices: 328, facets final: 25, pending: 35950
+I   20.38] Elapsed: 20.38, vertices: 360, facets final: 33, pending: 39664
+I   24.88] recalculating facets...
+I   25.66] Elapsed: 25.66, vertices: 406, facets final: 42, pending: 42607
+I   30.79] Elapsed: 30.79, vertices: 444, facets final: 49, pending: 45133
+I   35.83] Elapsed: 35.83, vertices: 476, facets final: 55, pending: 45929
+I   39.38] recalculating facets...
+I   40.89] Elapsed: 40.89, vertices: 509, facets final: 60, pending: 46611
+I   46.04] Elapsed: 46.04, vertices: 547, facets final: 73, pending: 49014
+I   51.06] Elapsed: 51.06, vertices: 577, facets final: 79, pending: 49692
+I   54.41] recalculating facets...
+I   56.12] Elapsed: 56.12, vertices: 613, facets final: 97, pending: 50002
+I   61.15] Elapsed: 1:01, vertices: 643, facets final: 110, pending: 49018
+I   66.19] Elapsed: 1:06, vertices: 685, facets final: 116, pending: 47921
+I   67.59] recalculating facets...
+I   71.32] Elapsed: 1:11, vertices: 737, facets final: 136, pending: 45495
+I   76.11] recalculating facets...
+I   76.35] Elapsed: 1:16, vertices: 803, facets final: 154, pending: 46065
+I   81.49] Elapsed: 1:21, vertices: 858, facets final: 171, pending: 45087
+I   85.36] recalculating facets...
+I   86.50] Elapsed: 1:27, vertices: 918, facets final: 206, pending: 43292
+I   91.51] Elapsed: 1:32, vertices: 995, facets final: 246, pending: 41256
+I   91.79] recalculating facets...
+I   96.60] Elapsed: 1:37, vertices: 1062, facets final: 295, pending: 39488
+I   99.30] recalculating facets...
+I  101.67] Elapsed: 1:42, vertices: 1141, facets final: 362, pending: 37619
+I  104.93] recalculating facets...
+I  106.72] Elapsed: 1:47, vertices: 1226, facets final: 430, pending: 35353
+I  109.80] recalculating facets...
+I  111.72] Elapsed: 1:52, vertices: 1356, facets final: 525, pending: 32790
+I  113.28] recalculating facets...
+I  116.38] recalculating facets...
+I  116.72] Elapsed: 1:57, vertices: 1509, facets final: 743, pending: 29905
+I  119.29] recalculating facets...
+I  121.78] Elapsed: 2:02, vertices: 1684, facets final: 1020, pending: 26828
+I  122.92] recalculating facets...
+I  126.16] recalculating facets...
+I  126.78] Elapsed: 2:07, vertices: 1833, facets final: 1421, pending: 24519
+I  128.27] recalculating facets...
+I  130.12] recalculating facets...
+I  131.78] Elapsed: 2:12, vertices: 2091, facets final: 2519, pending: 21367
+I  131.97] recalculating facets...
+I  133.69] recalculating facets...
+I  135.69] recalculating facets...
+I  136.81] Elapsed: 2:17, vertices: 2338, facets final: 4668, pending: 17878
+I  138.61] recalculating facets...
+I  141.81] Elapsed: 2:22, vertices: 2472, facets final: 7572, pending: 14681
+I  143.31] recalculating facets...
+I  146.81] Elapsed: 2:27, vertices: 2561, facets final: 10987, pending: 10978
+I  147.63] recalculating facets...
+I  151.81] Elapsed: 2:32, vertices: 2621, facets final: 14762, pending: 7129
+I  156.81] Elapsed: 2:37, vertices: 2623, facets final: 18869, pending: 3018
+I  160.46] Elapsed: 2:40, vertices: 2624, facets final: 21885, pending: 0
+
+--------------------------------
+Problem completed
+ name                    22.vlp
+ output                  vlp/22.res
+ rows, cols, objs        12, 2438, 10
+ vertices, facets        2624, 21885
+ total time              2:40
+--------------------------------
+Statistics
+LP:
+ oracle calls            24509
+   avg iterations/calls  5.96
+ total oracle time       30.50
+Combinatorics:
+ vertices added          2624
+ facets probed           24509
+ facets # max            50221
+ memory allocated        46.79M
+ storage expansion
+   vertices # / upto     21 / 2684
+   facets   # / upto     13 / 53244
+ facet manipulating
+   added avg / max       188.10 / 2.77k
+   compressed            179
+ number of ridge tests
+   avg / max             6.12M / 86.19M
+--------------------------------
+Parameters with non-default values
+ OracleItLimit = 200000
+ OracleTimeLimit = 60

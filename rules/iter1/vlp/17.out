@@ -1,0 +1,54 @@
+C applying rule 17.txt for base200.txt
+I    0.50] recalculating facets...
+I    4.94] recalculating facets...
+I    5.01] Elapsed: 5.01, vertices: 201, facets final: 29, pending: 23207
+I   10.04] Elapsed: 10.04, vertices: 290, facets final: 59, pending: 26645
+I   10.47] recalculating facets...
+I   14.83] recalculating facets...
+I   15.05] Elapsed: 15.05, vertices: 405, facets final: 166, pending: 25829
+I   17.85] recalculating facets...
+I   20.06] Elapsed: 20.06, vertices: 600, facets final: 509, pending: 26290
+I   20.06] recalculating facets...
+I   22.02] recalculating facets...
+I   24.22] recalculating facets...
+I   25.06] Elapsed: 25.06, vertices: 838, facets final: 1981, pending: 24999
+I   26.57] recalculating facets...
+I   30.06] Elapsed: 30.06, vertices: 979, facets final: 5077, pending: 22158
+I   32.54] recalculating facets...
+I   35.06] Elapsed: 35.06, vertices: 1018, facets final: 8991, pending: 18268
+I   40.06] Elapsed: 40.06, vertices: 1031, facets final: 13071, pending: 14198
+I   45.06] Elapsed: 45.06, vertices: 1038, facets final: 17189, pending: 10077
+I   50.06] Elapsed: 50.06, vertices: 1041, facets final: 21422, pending: 5845
+I   55.06] Elapsed: 55.06, vertices: 1043, facets final: 25617, pending: 1647
+I   56.99] Elapsed: 56.99, vertices: 1044, facets final: 27264, pending: 0
+
+--------------------------------
+Problem completed
+ name                    17.vlp
+ output                  vlp/17.res
+ rows, cols, objs        12, 2421, 10
+ vertices, facets        1044, 27264
+ total time              56.99
+--------------------------------
+Statistics
+LP:
+ oracle calls            28308
+   avg iterations/calls  5.14
+ total oracle time       33.33
+Combinatorics:
+ vertices added          1044
+ facets probed           28308
+ facets # max            27280
+ memory allocated        14.17M
+ storage expansion
+   vertices # / upto     9 / 1148
+   facets   # / upto     7 / 28668
+ facet manipulating
+   added avg / max       176.74 / 2.25k
+   compressed            85
+ number of ridge tests
+   avg / max             3.03M / 37.82M
+--------------------------------
+Parameters with non-default values
+ OracleItLimit = 200000
+ OracleTimeLimit = 60

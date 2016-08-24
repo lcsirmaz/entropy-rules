@@ -1,0 +1,53 @@
+C applying rule 38.txt for base200.txt
+I    0.29] recalculating facets...
+I    0.61] recalculating facets...
+I    1.00] recalculating facets...
+recalculate_facet: numerical instability at facet 4946, coord 0 (3.92687e-06)
+recalculate_facet: numerical instability at facet 4946, coord 1 (-4.96406e-06)
+recalculate_facet: numerical instability at facet 4946, coord 2 (-4.96406e-06)
+recalculate_facet: numerical instability at facet 4946, coord 3 (5.98311e-06)
+recalculate_facet: numerical instability at facet 4946, coord 10 (9.65588e-06)
+I    1.43] recalculating facets...
+I    2.08] recalculating facets...
+I    2.56] recalculating facets...
+I    3.04] recalculating facets...
+I    3.57] recalculating facets...
+I    4.28] recalculating facets...
+I    4.97] recalculating facets...
+I    5.00] Elapsed: 5.00, vertices: 1002, facets final: 784, pending: 4061
+I    6.35] recalculating facets...
+I    9.73] recalculating facets...
+I   10.00] Elapsed: 10.00, vertices: 1205, facets final: 3123, pending: 1083
+I   11.98] Elapsed: 11.98, vertices: 1216, facets final: 4180, pending: 0
+
+--------------------------------
+Problem completed
+ name                    38.vlp
+ output                  vlp/38.res
+ rows, cols, objs        12, 2839, 10
+ vertices, facets        1216, 4180
+ total time              11.98
+--------------------------------
+Statistics
+LP:
+ oracle calls            5396
+   avg iterations/calls  10.65
+ total oracle time       10.01
+Combinatorics:
+ vertices added          1216
+ facets probed           5396
+ facets # max            6958
+ memory allocated        6.71M
+ instability warnings    5
+ storage expansion
+   vertices # / upto     10 / 1276
+   facets   # / upto     2 / 8188
+ facet manipulating
+   added avg / max       44.30 / 304.00
+   compressed            32
+ number of ridge tests
+   avg / max             201.01k / 1.18M
+--------------------------------
+Parameters with non-default values
+ OracleItLimit = 200000
+ OracleTimeLimit = 60

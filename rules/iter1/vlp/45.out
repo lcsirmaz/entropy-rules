@@ -1,0 +1,54 @@
+C applying rule 45.txt for base200.txt
+I    0.53] recalculating facets...
+I    4.68] recalculating facets...
+I    5.00] Elapsed: 5.00, vertices: 205, facets final: 31, pending: 18919
+I    8.51] recalculating facets...
+I   10.00] Elapsed: 10.00, vertices: 351, facets final: 193, pending: 24608
+I   11.61] recalculating facets...
+I   14.21] recalculating facets...
+I   15.01] Elapsed: 15.01, vertices: 537, facets final: 598, pending: 26446
+I   16.56] recalculating facets...
+I   18.87] recalculating facets...
+I   20.01] Elapsed: 20.01, vertices: 752, facets final: 1497, pending: 25397
+I   20.95] recalculating facets...
+I   22.96] recalculating facets...
+I   25.01] Elapsed: 25.01, vertices: 982, facets final: 3740, pending: 23370
+I   25.75] recalculating facets...
+I   30.01] Elapsed: 30.01, vertices: 1081, facets final: 7202, pending: 19833
+I   32.84] recalculating facets...
+I   35.01] Elapsed: 35.01, vertices: 1111, facets final: 11162, pending: 15788
+I   40.01] Elapsed: 40.01, vertices: 1122, facets final: 15247, pending: 11681
+I   45.01] Elapsed: 45.01, vertices: 1128, facets final: 19328, pending: 7609
+I   50.01] Elapsed: 50.01, vertices: 1134, facets final: 23415, pending: 3517
+I   54.33] Elapsed: 54.33, vertices: 1137, facets final: 26947, pending: 0
+
+--------------------------------
+Problem completed
+ name                    45.vlp
+ output                  vlp/45.res
+ rows, cols, objs        12, 2467, 10
+ vertices, facets        1137, 26947
+ total time              54.33
+--------------------------------
+Statistics
+LP:
+ oracle calls            28084
+   avg iterations/calls  6.86
+ total oracle time       33.68
+Combinatorics:
+ vertices added          1137
+ facets probed           28084
+ facets # max            27831
+ memory allocated        14.17M
+ storage expansion
+   vertices # / upto     9 / 1148
+   facets   # / upto     7 / 28668
+ facet manipulating
+   added avg / max       160.65 / 2.44k
+   compressed            101
+ number of ridge tests
+   avg / max             2.61M / 32.44M
+--------------------------------
+Parameters with non-default values
+ OracleItLimit = 200000
+ OracleTimeLimit = 60

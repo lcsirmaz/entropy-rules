@@ -5,6 +5,10 @@ Rules for generating new entropy inequalities were proposed in
 [Dougherty et al](http://arxiv.org/pdf/1104.3602v1). Rules are invesigated
 and applied to previously known inequalities.
 
+#### Not processed
+
+Rules \#7 and \#39 are not processed.
+
 #### Content
 
 * [DESCRIPTION.md](DESCRIPTION.md) &nbsp;&ndash; what rules are, and how to generate them
