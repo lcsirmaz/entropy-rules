@@ -1,0 +1,35 @@
+C maximal rule for r=a:bc;s=r:ab; s,b,c,d
+I    7.00] Elapsed: 7.00, vertices: 79, facets final: 8816, pending: 22476, pool: 2
+I   12.00] Elapsed: 12.00, vertices: 81, facets final: 10105, pending: 23493, pool: 1
+I   17.00] Elapsed: 17.00, vertices: 81, facets final: 22428, pending: 11170
+I   21.14] Elapsed: 21.14, vertices: 81, facets final: 33598, pending: 0
+
+--------------------------------
+Problem completed
+ name                    10.vlp
+ output                  vlp/10.res
+ rows, cols, objs        42, 221, 22
+ vertices, facets        81, 33598
+ total time              21.14
+--------------------------------
+Statistics
+LP:
+ oracle calls            33739
+   avg iterations/calls  19.07
+ total oracle time       13.13
+Combinatorics:
+ vertices added          81
+ facets probed           34028
+ facets # max            34175
+ memory allocated        10.88M
+ storage expansion
+   vertices # / upto     1 / 124
+   facets   # / upto     6 / 36860
+ facet manipulating
+   added avg / max       693.70 / 10.91k
+   compressed            14
+ number of ridge tests
+   avg / max             3.06M / 93.39M
+--------------------------------
+Parameters with non-default values
+ VertexPoolSize = 100

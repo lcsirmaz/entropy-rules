@@ -1,0 +1,49 @@
+C maximal rule for r=a:bc;s=b:adr; a,b,r,d
+I    5.00] Elapsed: 5.00, vertices: 68, facets final: 8343, pending: 8827, pool: 1
+I   15.02] Elapsed: 15.02, vertices: 71, facets final: 17420, pending: 24389, pool: 16
+I   20.26] Elapsed: 20.26, vertices: 72, facets final: 17465, pending: 29082, pool: 16
+I   28.37] Elapsed: 28.37, vertices: 74, facets final: 17503, pending: 32716, pool: 16
+I   34.61] Elapsed: 34.61, vertices: 76, facets final: 17532, pending: 29703, pool: 15
+I   40.21] Elapsed: 40.21, vertices: 79, facets final: 17603, pending: 23024, pool: 12
+I   45.44] Elapsed: 45.44, vertices: 88, facets final: 19042, pending: 19729, pool: 3
+I   50.44] Elapsed: 50.44, vertices: 89, facets final: 30839, pending: 7596, pool: 2
+I   62.66] Elapsed: 1:03, vertices: 91, facets final: 37862, pending: 10061, pool: 16
+I   70.42] Elapsed: 1:10, vertices: 92, facets final: 37864, pending: 13464, pool: 16
+I   75.48] Elapsed: 1:15, vertices: 93, facets final: 37866, pending: 13956, pool: 16
+I   82.08] Elapsed: 1:22, vertices: 95, facets final: 37867, pending: 10803, pool: 15
+I   89.28] Elapsed: 1:29, vertices: 98, facets final: 37876, pending: 9542, pool: 12
+I   92.65] recalculating facets...
+I   94.49] Elapsed: 1:34, vertices: 102, facets final: 37919, pending: 6223, pool: 8
+I   99.49] Elapsed: 1:39, vertices: 109, facets final: 40185, pending: 309, pool: 1
+I   99.53] Elapsed: 1:40, vertices: 109, facets final: 40494, pending: 0
+
+--------------------------------
+Problem completed
+ name                    44.vlp
+ output                  vlp/44.res
+ rows, cols, objs        42, 213, 22
+ vertices, facets        109, 40494
+ total time              1:40
+--------------------------------
+Statistics
+LP:
+ oracle calls            42287
+   avg iterations/calls  17.98
+ total oracle time       15.97
+Combinatorics:
+ vertices added          109
+ facets probed           45376
+ facets # max            51823
+ memory allocated        18.00M
+ storage expansion
+   vertices # / upto     2 / 252
+   facets   # / upto     8 / 53244
+ facet manipulating
+   added avg / max       1.47k / 17.15k
+   compressed            24
+ number of ridge tests
+   avg / max             35.68M / 269.11M
+--------------------------------
+Parameters with non-default values
+ VertexPoolSize = 200
+ OracleCallLimit = 20
