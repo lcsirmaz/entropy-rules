@@ -36,7 +36,7 @@ A rule is specified by a *copy string* and four (possible composite) random
 variables called *base*. For Rule [1] above the copy string is *r*=*a*:*bc*, and
 the base is the four variable collection *ar, br, cr, d*.
 
-### How the rule set is generated
+### What is a rule set
 
 Suppose the rule is defined by the copy string **str** and base **B**.
 Collect the entropies of all non-empty subsets of the random variables
@@ -71,36 +71,41 @@ Consider all tuples  *x*<sub>1</sub>, ..., *x*<sub>11</sub>, and *y*<sub>1</sub>
 >              (*y*<sub>1</sub>**n**<sub>1</sub> + ... +
 >                *y*<sub>11</sub>**n**<sub>11</sub>)&#183;**h**
 
-is a consequence of the equalities / inequalities in (1) and (2). Any such pair
-of tuples will be written as
+is a consequence of **h** &ge; 0, and the equalities / inequalities in (1) 
+and (2). Any such pair of tuples will be written as
 
 >  (4) &nbsp; &nbsp;  [ *x*<sub>1</sub>, ..., *x*<sub>11</sub> ] &le; [ *y*<sub>1</sub>, ...,
 > *y*<sub>11</sub> ].
 
 
-
-**Claim 1.** *If* [ *x*<sub>i</sub> ] &le; [ *y*<sub>i</sub>], *and*
+**Claim 1.** *If* [ *x*<sub>1</sub>, ..., *x*<sub>11</sub> ] &le; [
+*y*<sub>1</sub>, ..., *y*<sub>11</sub>], *and*
 *x*<sub>1</sub>, ..., *x*<sub>11</sub> *are coefficients of a valid 
-entropy inequality, then so are* *y*<sub>1</sub>, ... *y*<sub>11</sub>.
+4-variable entropy inequality, then so are* *y*<sub>1</sub>, ... *y*<sub>11</sub>.
 
 
-**Proof** 
+**Proof.** 
 Given the four random variables *a, b, c, d,* create the auxiliary
 variables as described by the copy string **str**. Collect all entropies of
-all these variables into the vector **h**. The vector **h** satisfies all
+all these variables into the vector **h**. The natural coordinates of *a, b,
+c, d* are the scalar products **n**<sub>1</sub>&#183;**h**, ...,
+**n**<sub>11</sub>&#183;**h**, thus we need to show that the right hand side
+of (3) is non-negative.
+
+The vector **h** &ge; 0 satisfies all
 equalities in (1) and inequalities in (2), thus (3) holds as well. As
 *x*<sub>1</sub>, ..., *x*<sub>11</sub> are coefficients of a valid entropy
-inequality, and the scalar products **b**<sub>1</sub>**h**, ...,
-**b**<sub>11</sub>**h** are the natural coordinates of the four random
+inequality, and the scalar products **b**<sub>1</sub>&#183;**h**, ...,
+**b**<sub>11</sub>&#183;**h** are the natural coordinates of the four random
 variables defined by the base **B**, the left hand side of (3) is
 non-negative. Consequently the right hand side is non-negative as well, thus
-*y*<aub>1</sub>, ..., *y*<sub>11</sub> are indeed coefficients of a valid
+*y*<sub>1</sub>, ..., *y*<sub>11</sub> are indeed coefficients of a valid
 entropy inequality. &nbsp; &#x25a1;
 
 **Claim 2.** *If a collection of pair of tuples satisfy* (4), *then their
 non-negative linear combination also satisfies* (4).
 
-**Proof**
+**Proof.**
 This is an easy consequence of the linearity of both sides of the inequality
 (3). &nbsp; &#x25a1;
 
@@ -112,26 +117,30 @@ correct.* &nbsp; &#x25a1;
 
 According to **Claim 2** above, the collection of 22-dimensional vectors
 &lt; *x*<sub>1</sub>, ..., *x*<sub>11</sub>, *y*<sub>1</sub>, ...,
-*y*<sub>11</sub> &gt; forms a convex set. The ultimate set of rule lines is
-the minimal set of 22-dimensional points from this set such that every other
-point is a non-negative linear combination of these points. This set,
-however, is nothing else but the *set of vertices* of the convex set. To get
-all vertices of a (linearly defined) convex set is the task for a MOLP
-solver.
+*y*<sub>11</sub> &gt; satisfying (4) forms a convex 22-dimensional set *Q*. 
+The ultimate set of rule lines is the minimal set of 22-dimensional points
+from *Q* such that every other point of *Q* is a non-negative linear combination of
+these extremal points.  This set, however, is nothing else but the *set of vertices*
+of the convex set *Q*.  To determine all vertices of a (linearly defined) convex set
+is the task for a MOLP solver.
 
-In this case, however, we have some more information about the set which can
-help in reducing the total work. First, the set is *homogeneous*, thus we
-could settle for the cross-section where the sum of the 22 numbers in it is
-exactly 1. Second, all 22 coordinates are non-negative; and at the extremal
-points *x*<sub>1</sub> (the Ingleton coordinate) should be locally minimal,
+In this case we have some more information about *Q* which can
+help in reducing the total work. First, *Q* is *homogeneous*, thus we
+could settle for the cross-section where the sum of the 22 coordinates is
+exactly 1. Second, all 22 coordinates are non-negative (*Q* is part of the
+non-negative orthant); and at the extremal points *x*<sub>1</sub> (the 
+Ingleton coordinate) should be locally minimal,
 *x*<aub>2</sub>, ..., *x*<sub>11</sub> be locally maximal; for the *y* 
-coordinates it is just the opposite. Given the copy string and the base,
-the perl utility `rulemk.pl` creates the MOLP instance; from the solution
-the complete set of rule lines is extracted by ``minrule.pl`.
+coordinates it is just the opposite: *y*<sub>1</sub> should be locally
+maximal and *y*<sub>2</sub>, ..., *y*<sub>11</sub> are lically minimal. 
+Given the copy string and the base,
+the perl utility `rulemk.pl` creates the MOLP instance according to these
+observations; from the solution of the MOLP problem the complete set of 
+rule lines is extracted by the utility ``minrule.pl`.
 
     # create MOLP for the rule specified by a copy string and base
-    utils/rulemk.pl <copy-string> <base> vlp/NN.vlp
-    # solve the problem
+    utils/rulemk.pl <copystring> <base> vlp/NN.vlp
+    # solve the MOLP problem
     inner vlp/NN.vlp -o vlp/NN.res > vlp/NN.out
     # extract the set of complete rule lines into NN.txt
     utils/minrule.pl vlp/NN.res ineq/NN.txt
@@ -139,40 +148,42 @@ the complete set of rule lines is extracted by ``minrule.pl`.
 
 ### Applying a rule
 
-Given a collection of 4-variable entropy inequalities specified by their
-natural coordinates as **e**<sub>1</sub>, ..., **e**<sub>n</sub>, and a
-rule with t lines:
+Supppose we have a collection of 4-variable entropy inequalities 
+specified by their natural coordinates (considered as a collection 
+of 11-dimensional vectors) **e**<sub>1</sub>, ..., **e**<sub>n</sub>, 
+and a rule with t lines:
 
 >    [ **x**<sub>1</sub> ] &le; [ **y**<sub>1</sub> ]<br>
 >    . . . <br>
->    [ **x**<sub>t</sub> ] &le; [ **y**<sub>t</sub> ]
+>    [ **x**<sub>t</sub> ] &le; [ **y**<sub>t</sub> ] .
 
 We know that if a non-negative combination of the **x**<sub>i</sub>'s is
 a valid information inequality, then so is the same combination of the
 **y**<sub>i</sub>'s. Any non-negative linear combination of
-**e**<sub>j</sub> is an information inequality, thus any element of this
-set is a (perhaps new) information inequality:
+**e**<sub>j</sub> is an information inequality, thus any element of 
+the following set is a valid information inequality:
 
->  (5) &nbsp; &nbsp;  &lambda;<sub>1</sub> **y**<sub>1</sub> + ... + &lambda;<sub>t</sub> **y**<sub>t</sub>
+>  (5) &nbsp; &nbsp;  &lambda;<sub>1</sub> **y**<sub>1</sub> + ... + 
+>  &lambda;<sub>t</sub> **y**<sub>t</sub> &nbsp;&ge;&nbsp; 0,
 
 where
 
->  the Ingleton coefficient in (5) is 1, <br>
->  &lambda;<sub>1</sub> **x**<sub>1</sub> + ... + &lambda;<sub>t</sub>
+> &lambda;<sub>1</sub> &ge; 0, ..., &lambda;<sub>t</sub> &ge; 0, &nbsp;
+> &mu;<sub>1</sub> &ge; 0, ..., &mu;<sub>n</sub> &ge; 0; <br>
+> &lambda;<sub>1</sub> **x**<sub>1</sub> + ... + &lambda;<sub>t</sub>
 > **x**<sub>t</sub> &ge; &mu;<sub>1</sub> **e**<sub>1</sub> + ... +
-> &mu;<sub>n</sub> **e**<sub>n</sub>; the Ingleton coefficients are
-> equal,<br>
->  and &lambda;<sub>i</sub> &ge; 0, &mu;<sub>j</sub> &ge; 0.
+> &mu;<sub>n</sub> **e**<sub>n</sub>; <br>
+> the Ingleton coefficients on both sides are equal.
 
-The set (5) is a convex set, and inequalities not superseded by others from
-the same set are again solutions of a MOLP. To create that problem use the
-perl utility `dorule.pl`, and the utility `checkall.pl` to extract the
+The set (5) is a convex set, and (normalized) inequalities not superseded
+by others are the solutions of a MOLP. To create that problem use the
+perl utility `dorule.pl`, and the utility `checkall.pl` to extract new
 inequalities:
 
     # apply a rule to a set of inequalitie and generate the vlp file
     utils/dorule.pl <ineqfile> <rule> vlp/NN.vlp
     # solve it
     inner vlp/NN.vlp -o vlp/NN.res > vlp/NN.out
-    # extract inequalities not superseded by those in <ineqfile>
+    # extract new inequalities not superseded by those in <ineqfile>
     utils/checkall.pl vlp/NN.res <ineqfile>
 
