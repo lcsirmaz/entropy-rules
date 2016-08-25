@@ -44,7 +44,9 @@ random variables we replace *c* by *r*, *r* by *c*, *d* by *s* and *s* by
 > **H**(c) = **H**(r), **H**(cd) = **H**(rs), **H**(abcd) = **H**(abrs),
 > **H**(ard) = **H**(acs),
 
-and many others. These equalities together with
+and many others. (Note that all occurrences of *c*, *d*, *r*, *s* in the 
+string must be changed to their corresponding values.) 
+These equalities together with
 all Shannon inequalities have consequences on the 15 entropies of the original
 four variables. The consequences are extracted using the MOLP solver 
 [inner](https://github.com/lcsirmaz/inner). Finally, from the set of
@@ -52,12 +54,12 @@ extremal vertices we extract those entropy inequalities which are not
 consequences of the ones in the DFZ list. This is achieved by using perl
 utilities from [utils](../utils/) as follows:
 
-    # create the MOLP problem from a copy string to NN.vlp:
-    mkvlp.pl <copystring> vlp/NN.vlp
+    # create the MOLP problem from a copy string to NN.vlp
+    utils/mkvlp.pl <copystring> vlp/NN.vlp
     # solve the MOLP problem and store the result in vlp/NN.res
     inner vlp/NN.vlp -o vlp/NN.res > vlp/NN.out
     # extract inequalities which do not follow from those in base.new
-    downgrade.pl vlp/NN.res base.new > result/NN.new
+    utils/checkall.pl vlp/NN.res base.new > result/NN.new
 
 The file [base.new](base.new) contains the DFZ inequalities in machine
 readable form. The applied
@@ -66,9 +68,9 @@ yield no new inequality beyond the ones in the DFZ list. As a final step,
 minimal inequalities are extracted to [ineq.txt](ineq.txt).
 
     # determine which inequalities are superseded by others
-    purge.pl base.new result/*.new > supd.new
+    utils/purge.pl base.new result/*.new > supd.new
     # generate the list of all new inequalities into ineq.txt and ineq-normalized.txt
-    genlist.pl -s supd.new ineq.txt base.new result/*.new
+    utils/genlist.pl -s supd.new ineq.txt base.new result/*.new
 
 #### Limitations
 
@@ -80,17 +82,7 @@ might need special parametrization and several trials.
 Copy strings with *seven* auxiliary variables seem to be beyond the capabilities of the
 applied technology. Due to the low rank of the constraint matrix, it is numerically
 ill-conditioned, and the solution returned by any scalar LP solver (if it does not
-fail at all) can be off by such a large value that messes up the rest of the
+fail at all) can be off by such a large amount that messes up the rest of the
 algorithm.
-
-####  Content
-
-* [copy.txt](copy.txt) &nbsp;&ndash; description of copy strings
-* [ineq.txt](ineq.txt) &nbsp;&ndash; new inequalities from all copy strings
-* [ineq-normalized.txt](ineq-normalized.txt) &nbsp;&ndash; new inequalities in normalized form 
-* [base.new](base.new) &nbsp;&ndash; original DFZ inequalities
-* [vlp](vlp) &nbsp;&ndash; vlp files and solutions of the MOLP problems
-* [result](result) &nbsp;&ndash; new inequalities from the given copy string which are not consequences of those in `base.new`
-* [supd.new](supd.new) &nbsp;&ndash; labels of superseded inequalities.
 
 
