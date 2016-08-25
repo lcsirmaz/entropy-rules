@@ -23,20 +23,21 @@ with the copy strings in the DFZ list.
     inner vlp/NNN.vlp -o vlp/NNN.res > vlp/NNN.out
 
 The vertices of the solution in NNN.res is just the collection of those 
-10-dimensional vectors &lt; *x*<sub>2</sub>, ..., *x*<sub>11</sub>&gt; such
+10-dimensional vectors &lt;*x*<sub>2</sub>, ..., *x*<sub>11</sub>&gt; such
 that the non-Shannon inequalities with coefficients
 
 >  1, *x*<sub>2</sub>, ..., *x*<sub>11</sub>
 
-are the minimal (not superseded) ones among all consequences yielded by the
-copy string. For more information see the
-[description](../copy/DESCRIPTION.md) in the [copy](../copy) section.
+(that is, the Ingleton cooefficient is 1, and the other coefficients are
+supplied by the vertex coordinates) are the minimal (not superseded) ones
+among all consequences yielded by the copy string. For more information 
+see the [description](../copy/DESCRIPTION.md) in the [copy](../copy) section.
 
 #### Content
 
 * [main.txt](main.txt) &nbsp;&ndash; the list of DFZ inequalities.
 * [orig.txt](orig.txt) &nbsp;&ndash; raw file of original DFZ inequalities.
 * [vlp](vlp) &nbsp;&ndash; MOLP problems and solutions associated with DFZ
-  inequality number.
+  inequality numbers.
 
 
