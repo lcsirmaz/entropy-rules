@@ -1,0 +1,11 @@
+#
+#case  copystring          base
+###    #################   ##################################
+1      r=c:ab              a,b,c,d
+       r=a:bc              a,b,c,d
+###    #################   ##################################
+2      r=c:ab              a,b,c,d; ar,br,cr,d; ar,br,c,dr
+       r=a:bc              a,b,c,d; ar,br,cr,d; ar,br,c,dr
+       DFZ strings         ar,br,cr,d; ar,br,c,dr
+###    #################   ##################################
+3      rs=cd:ab            a,b,c,d; ad,bd,dr,ds; ac,bc,cr,cs
