@@ -1,10 +1,10 @@
 New entropy inequalities by rules
 =================================
 
-A *rule*, as defined in [Dougherty et al](http://arxiv.org/pdf/1104.3602v1),
-is a collection of vector pairs, each vector has 11 coordinates and members
-of a pair is separated by a `<=` sign. Their Rule [1] from page 20 can be
-rephrased by the following set of vector pairs:
+A *single rule*, as defined in [Dougherty et al](http://arxiv.org/pdf/1104.3602v1),
+is a collection of vector pairs; each vector has 11 coordinates and members
+of a pair are separated by a `<=` sign. For example, Rule [1] from page 20
+of the cited paper can be rephrased by the following set of vector pairs:
 
     [1,0,0,0,0,0,0,0,0,0,0] <= [1,1,1,0,0,0,0,0,0,0,0]
     [0,1,0,0,0,0,0,0,0,0,0] <= [0,1,0,0,0,0,0,0,0,0,0]
@@ -19,54 +19,57 @@ rephrased by the following set of vector pairs:
     [0,0,0,0,0,0,0,0,0,1,0] <= [0,0,0,0,0,0,0,0,0,1,0]
     [0,0,0,0,0,0,0,0,0,0,1] <= [0,0,0,0,0,0,0,0,0,0,1]
 
-The meaning of a rule is the following:
+The meaning of such a rule is the following:
 
 > *If* any non-negative linear combination of the left hand sides
-> gives the coefficients of a valid entropy ineqyuality, *then* so
+> gives the 11 coefficients of a valid 4-variable entropy inequality, *then* so
 > does the combination of the right hand sides with the same combining
 > values.
 
-Using a rule one can quickly generate new entropy inequalities iteratively.
+Using a rule one can quickly generate new entropy inequalities iteratively
+from existing ones.
 (The coordinate system in the Dougherty et al paper differs slightly from
-our natural coordinates, and in formulating the rules they presented the
+our natural coordinates, and in formulating a rule they present the
 combining factors explicitely.)
 
 A rule is specified by a *copy string* and four (possible composite) random
-variables called *base*. For Rule [1] above the copy string is `r=a:bc`, and
+variables called *base*. For Rule [1] above the copy string is *r*=*a*:*bc*, and
 the base is the four variable collection *ar, br, cr, d*.
 
-### Proving the correctness of a rule
+### How the rule set is generated
 
 Suppose the rule is defined by the copy string **str** and base **B**.
 Collect the entropies of all non-empty subsets of the random variables
 occurring in the copy string and the base to the (quite long) vector **h**.
-The copy string specifies that certain (composite) variables are identically
-distributed, and are independent over others. These conditions can be expressed
-as certain linear combinations of the entropies vanish, written here as the 
-inner product of vectors **c**<sub>i</sub> and **h**:
+The copy string [specifies](copy/DESCRIPTION.md) certain linear equalities
+among the entropies. These can be written as certain inner products of fixed
+vectors **c**<sub>i</sub> (determined by the copy string) and the vector of
+entropies **h** vanish:
 
-> (1) &nbsp; &nbsp;  **c**<sub>i</sub>**h** = 0, for i=1, 2, ...
+> (1) &nbsp; &nbsp;  **c**<sub>i</sub>&#183;**h** = 0, for i=1, 2, ...
 
 The number of **c**<sub>i</sub> vectors and their coordinates can be computed
 from the copy string uniquely. Next, we collect all Shannon inequalities for the same
 collection of entropies as
 
-> (2) &nbsp; &nbsp; **s**<sub>j</sub>**h** &ge; 0, for j=1, 2, ...
+> (2) &nbsp; &nbsp; **s**<sub>j</sub> &#183;**h** &ge; 0, for j=1, 2, ...
 
-We define the (easily computable) vectors *n**<sub>1</sub>,... **n**<sub>11</sub>
-and **b**<sub>1</sub>, ..., **b**<sub>11</sub>  as follows. Vectors **n**<sub>1</sub>, ..., **n**<sub>11</sub> determine the first
+We define the (easily computable) vectors **n**<sub>1</sub>,... **n**<sub>11</sub>
+and **b**<sub>1</sub>, ..., **b**<sub>11</sub> as follows. Vectors
+**n**<sub>1</sub>, ..., **n**<sub>11</sub> determine the first
 11 natural coordinates of the random variables *a, b, c, d* as the inner
-products **n**<sub>1</sub>**h**, ..., **n**<sub>11</sub>**h**. Additionally,
-**b**<sub>1</sub>, ..., **b**<sub>11</sub> determine the natural coordinates
-of the given base **B** as **b**<sub>1</sub>**h**, ..., **b**<sub>11</sub>**h**.
+products **n**<sub>1</sub>&#183;**h**, ..., **n**<sub>11</sub>&#183;**h**.
+Additionally, **b**<sub>1</sub>, ..., **b**<sub>11</sub> determine the natural
+coordinates of the given base **B** as **b**<sub>1</sub>&#183;**h**, ..., 
+**b**<sub>11</sub>&#183;**h**.
 
 Consider all tuples  *x*<sub>1</sub>, ..., *x*<sub>11</sub>, and *y*<sub>1</sub>,
 ..., *y*<sub>11</sub> of non-negative real numbers for which the inequality
 
 > (3) &nbsp; &nbsp; (*x*<sub>1</sub>**b**<sub>1</sub> + ... +
->                *x*<sub>11</sub>**b**<sub>11</sub>)**h** &le;
+>                *x*<sub>11</sub>**b**<sub>11</sub>)&#183;**h** &le;
 >              (*y*<sub>1</sub>**n**<sub>1</sub> + ... +
->                *y*<sub>11</sub>**n**<sub>11</sub>)**h**
+>                *y*<sub>11</sub>**n**<sub>11</sub>)&#183;**h**
 
 is a consequence of the equalities / inequalities in (1) and (2). Any such pair
 of tuples will be written as
