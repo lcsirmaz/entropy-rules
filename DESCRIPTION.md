@@ -60,7 +60,7 @@ Basic Shannon inequalities imply that the natural coordinates
 positive, and all other coordinates are zero. (But this is not true for the
 the Ingleton coordinate which can take negative values).
 
-**Theorem**[[Csirmaz, Matus](http://arxiv.org/abs/1310.5957)] *By renaming the random variables if necessary, every valid
+**Theorem** [[Csirmaz, Matus](http://arxiv.org/abs/1310.5957)] *By renaming the random variables if necessary, every valid
 linear non-Shannon entropy inequality can be written as*
 
 > a<sub>1</sub> [a,b,c,d] + a<sub>2</sub> (a,b | c) + a<sub>3</sub> (a,c | b) + ... + a<sub>11</sub> (a,b | cd) + a<sub>12</sub> (a | bcd) + ... + a<sub>15</sub> (d | abc ) &ge; 0
