@@ -10,9 +10,6 @@ simplest copy strings *r*=*c*:*ab* and *r*=*a*:*bc*.
 * \#10: copy string: *r*==*a*:*bc*, inequalities from
   [base30-1](base30-1.txt).
 
-For each copy string in the DFZ list, add the set of 4-variable
-inequalities in base30.txt to variables a, b, c, d.
-
 #### Content
 
 * [ineq.txt](ineq.txt) basic inequalities from [copy strings](../../copy)
