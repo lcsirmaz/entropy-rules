@@ -16,8 +16,6 @@ sub print_usage {
     exit 1;
 }
 
-my @list=();
-
 my %supplist=();
 
 sub read_supplist {
@@ -32,6 +30,35 @@ sub read_supplist {
     close(FILE);
     die "No superseded items found in $file\n" if($cnt==0);
 }
+
+my %ruletxt=();
+
+sub find_ruletxt {
+    my $file="rules.txt"; my $rfile="rules/rules.txt";
+    return $file if( -e $file);
+    return $rfile if(-s $rfile);
+    return "../$file" if( -e "../$file");
+    return "../$rfile" if( -e "../$rfile");
+    return "../../$file" if( -e "../../$file");
+    return "../../$rfile" if( -e "../../$rfile");
+    return "";
+}
+
+sub read_ruletxt {
+    my $file=find_ruletxt();
+    return if(!$file);
+    open(TXT,$file) || die "Cannot open rule description $file\n";
+    while(<TXT>){
+        chomp;
+        next if(/^#/ || /^$/ );
+        my @v=split(/\s+/);
+        $v[2] =~ s/,/./g;
+        $ruletxt{$v[0]} = $v[1].";".$v[2];
+    }
+    close(TXT);
+}
+
+my @list=();
 
 sub add_file {
     my $file=shift;
@@ -125,8 +152,12 @@ sub make_list {
 #             print OUT $a->[$i],",";
 #             print OUT " " if($i==0 || $i==3 || $i==6);
         }
+        my $label=$a->[11];
+        if( $label =~ /^rule(\d+)\.txt$/ ){
+            if($ruletxt{$1}){ $label=$ruletxt{$1}; }
+        }
 #        print OUT " ",$a->[11], ", ";
-        $str .= " ". $a->[11] . ", ";
+        $str .= " ". $label . ", ";
         my $l=length($str);
         if($l<62){ $str .= " "x(62-$l); }
         print OUT $str, $a->[12],"\n";
@@ -187,6 +218,9 @@ if($ARGZ>1){ read_supplist($ARGV[1]); }
 
 ## read all files
 for my $i($ARGZ .. -1+scalar @ARGV){ add_file($ARGV[$i]); }
+
+## read replacement text for ruleNN.txt
+read_ruletxt();
 
 # create the file of inequalities
 
