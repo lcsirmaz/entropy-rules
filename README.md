@@ -14,6 +14,8 @@ by R. Dougherty et al.
 * [DESCRIPTION.md](DESCRIPTION.md) &nbsp;&ndash; how entropy inequalities are represented
 * [DFZ](DFZ) &nbsp;&ndash; Dougherty-Freilig-Zeger list of 214 inequalities
 * [copy](copy) &nbsp;&ndash; description and data for copy method
+* [visual](visual) &nbsp;&ndash; visualization of a 3-dimensional section of
+the entropy region
 * [rules](rules) &nbsp;&ndash; description and data for the rule method
 * [drules](drules) &nbsp;&ndash; description and data for iteration
 * [utils](utils) &nbsp;&ndash; utility perl programs to generate and check data
