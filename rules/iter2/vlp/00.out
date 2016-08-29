@@ -1,0 +1,50 @@
+C applying rule 00.txt for base100.txt
+I    0.57] recalculating facets...
+I    1.14] recalculating facets...
+I    1.82] recalculating facets...
+I    2.58] recalculating facets...
+I    3.44] recalculating facets...
+I    4.21] recalculating facets...
+I    5.00] Elapsed: 5.00, vertices: 680, facets final: 445, pending: 4929
+I    5.25] recalculating facets...
+I    6.60] recalculating facets...
+I    8.33] recalculating facets...
+I   10.00] Elapsed: 10.00, vertices: 963, facets final: 1362, pending: 4593
+I   11.57] recalculating facets...
+I   15.00] Elapsed: 15.00, vertices: 1082, facets final: 2485, pending: 3674
+I   15.88] recalculating facets...
+I   20.00] Elapsed: 20.00, vertices: 1154, facets final: 3755, pending: 2515
+I   25.00] Elapsed: 25.00, vertices: 1183, facets final: 5102, pending: 1183
+I   28.99] recalculating facets...
+I   29.45] Elapsed: 29.45, vertices: 1207, facets final: 6361, pending: 0
+
+--------------------------------
+Problem completed
+ name                    00.vlp
+ output                  vlp/00.res
+ rows, cols, objs        12, 7226, 10
+ vertices, facets        1207, 6361
+ total time              29.45
+--------------------------------
+Statistics
+LP:
+ oracle calls            7568
+   avg iterations/calls  5.55
+ total oracle time       28.46
+Combinatorics:
+ vertices added          1207
+ facets probed           7568
+ facets # max            6362
+ memory allocated        6.71M
+ storage expansion
+   vertices # / upto     10 / 1276
+   facets   # / upto     2 / 8188
+ facet manipulating
+   added avg / max       22.71 / 108.00
+   compressed            23
+ number of ridge tests
+   avg / max             61.28k / 374.46k
+--------------------------------
+Parameters with non-default values
+ OracleItLimit = 200000
+ OracleTimeLimit = 60

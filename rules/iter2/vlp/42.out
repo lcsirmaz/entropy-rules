@@ -1,0 +1,55 @@
+C applying rule 42.txt for base100.txt
+I    0.54] recalculating facets...
+I    1.28] recalculating facets...
+I    2.42] recalculating facets...
+I    3.85] recalculating facets...
+I    5.00] Elapsed: 5.00, vertices: 473, facets final: 734, pending: 6183
+I    5.41] recalculating facets...
+I    7.29] recalculating facets...
+I    9.29] recalculating facets...
+I   10.00] Elapsed: 10.00, vertices: 735, facets final: 1726, pending: 6920
+I   11.54] recalculating facets...
+I   13.78] recalculating facets...
+I   15.00] Elapsed: 15.00, vertices: 948, facets final: 2793, pending: 6420
+I   16.49] recalculating facets...
+I   20.00] Elapsed: 20.00, vertices: 1089, facets final: 3891, pending: 5787
+I   20.48] recalculating facets...
+I   25.00] Elapsed: 25.00, vertices: 1199, facets final: 5066, pending: 4871
+I   25.06] recalculating facets...
+I   30.00] Elapsed: 30.00, vertices: 1292, facets final: 6271, pending: 3791
+I   30.72] recalculating facets...
+I   35.00] Elapsed: 35.00, vertices: 1337, facets final: 7552, pending: 2516
+I   40.00] Elapsed: 40.00, vertices: 1365, facets final: 8834, pending: 1276
+I   43.61] recalculating facets...
+I   44.74] Elapsed: 44.74, vertices: 1441, facets final: 10149, pending: 0
+
+--------------------------------
+Problem completed
+ name                    42.vlp
+ output                  vlp/42.res
+ rows, cols, objs        12, 7241, 10
+ vertices, facets        1441, 10149
+ total time              44.74
+--------------------------------
+Statistics
+LP:
+ oracle calls            11590
+   avg iterations/calls  7.50
+ total oracle time       42.93
+Combinatorics:
+ vertices added          1441
+ facets probed           11590
+ facets # max            10151
+ memory allocated        9.65M
+ storage expansion
+   vertices # / upto     12 / 1532
+   facets   # / upto     3 / 12284
+ facet manipulating
+   added avg / max       28.92 / 303.00
+   compressed            34
+ number of ridge tests
+   avg / max             123.79k / 1.33M
+--------------------------------
+Parameters with non-default values
+ OracleItLimit = 200000
+ OracleTimeLimit = 60

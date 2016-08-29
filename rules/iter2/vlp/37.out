@@ -1,0 +1,37 @@
+C applying rule 37.txt for base100.txt
+I    1.02] recalculating facets...
+I    1.87] recalculating facets...
+I    4.41] recalculating facets...
+I    5.00] Elapsed: 5.00, vertices: 309, facets final: 1081, pending: 797
+I    7.82] Elapsed: 7.82, vertices: 370, facets final: 1843, pending: 0
+
+--------------------------------
+Problem completed
+ name                    37.vlp
+ output                  vlp/37.res
+ rows, cols, objs        12, 7433, 10
+ vertices, facets        370, 1843
+ total time              7.82
+--------------------------------
+Statistics
+LP:
+ oracle calls            2213
+   avg iterations/calls  3.71
+ total oracle time       7.65
+Combinatorics:
+ vertices added          370
+ facets probed           2213
+ facets # max            1907
+ memory allocated        2.54M
+ storage expansion
+   vertices # / upto     3 / 380
+   facets   # / upto     1 / 4092
+ facet manipulating
+   added avg / max       25.41 / 144.00
+   compressed            2
+ number of ridge tests
+   avg / max             23.79k / 197.08k
+--------------------------------
+Parameters with non-default values
+ OracleItLimit = 200000
+ OracleTimeLimit = 60
