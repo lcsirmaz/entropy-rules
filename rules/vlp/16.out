@@ -1,5 +1,5 @@
 C maximal rule for rs=ad:bc; a,r,c,d
-I    3.54] Elapsed: 3.54, vertices: 45, facets final: 16898, pending: 0
+I    3.72] Elapsed: 3.72, vertices: 45, facets final: 16898, pending: 0
 
 --------------------------------
 Problem completed
@@ -7,26 +7,23 @@ Problem completed
  output                  vlp/16.res
  rows, cols, objs        30, 139, 22
  vertices, facets        45, 16898
- total time              3.54
+ total time              3.72
 --------------------------------
 Statistics
 LP:
- oracle calls            16966
-   avg iterations/calls  9.90
- total oracle time       3.27
+ oracle calls            16943
+   avg iterations/calls  11.84
+ total oracle time       3.48
 Combinatorics:
  vertices added          45
- facets probed           17168
+ facets probed           16943
  facets # max            16899
- memory allocated        7.05M
+ memory allocated        9.61M
  storage expansion
    vertices # / upto     1 / 124
    facets   # / upto     4 / 20476
  facet manipulating
-   added avg / max       462.09 / 8.44k
-   compressed            4
+   added avg / max       479.77 / 8.33k
+   compressed            3
  number of ridge tests
-   avg / max             213.21k / 7.66M
---------------------------------
-Parameters with non-default values
- VertexPoolSize = 100
+   avg / max             713.10k / 30.58M

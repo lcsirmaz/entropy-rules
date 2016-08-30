@@ -1,8 +1,8 @@
 C maximal rule for r=a:bc;s=r:ab; s,b,c,d
-I    7.00] Elapsed: 7.00, vertices: 79, facets final: 8816, pending: 22476, pool: 2
-I   12.00] Elapsed: 12.00, vertices: 81, facets final: 10105, pending: 23493, pool: 1
-I   17.00] Elapsed: 17.00, vertices: 81, facets final: 22428, pending: 11170
-I   21.14] Elapsed: 21.14, vertices: 81, facets final: 33598, pending: 0
+I    5.09] Elapsed: 5.09, vertices: 80, facets final: 6972, pending: 28544
+I   10.09] Elapsed: 10.09, vertices: 81, facets final: 16930, pending: 16668
+I   15.09] Elapsed: 15.09, vertices: 81, facets final: 28024, pending: 5574
+I   17.30] Elapsed: 17.30, vertices: 81, facets final: 33598, pending: 0
 
 --------------------------------
 Problem completed
@@ -10,26 +10,23 @@ Problem completed
  output                  vlp/10.res
  rows, cols, objs        42, 221, 22
  vertices, facets        81, 33598
- total time              21.14
+ total time              17.30
 --------------------------------
 Statistics
 LP:
- oracle calls            33739
-   avg iterations/calls  19.07
- total oracle time       13.13
+ oracle calls            33679
+   avg iterations/calls  22.38
+ total oracle time       14.71
 Combinatorics:
  vertices added          81
- facets probed           34028
- facets # max            34175
- memory allocated        10.88M
+ facets probed           33679
+ facets # max            35517
+ memory allocated        13.35M
  storage expansion
    vertices # / upto     1 / 124
    facets   # / upto     6 / 36860
  facet manipulating
-   added avg / max       693.70 / 10.91k
+   added avg / max       719.27 / 12.08k
    compressed            14
  number of ridge tests
-   avg / max             3.06M / 93.39M
---------------------------------
-Parameters with non-default values
- VertexPoolSize = 100
+   avg / max             3.85M / 97.95M

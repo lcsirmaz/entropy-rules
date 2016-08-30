@@ -1,10 +1,7 @@
 C maximal rule for r=a:bc;s=a:bdr; ar,br,c,dr
-I    5.28] Elapsed: 5.28, vertices: 52, facets final: 5669, pending: 15671
-I   11.10] Elapsed: 11.10, vertices: 60, facets final: 5677, pending: 22764
-I   16.63] Elapsed: 16.63, vertices: 63, facets final: 5679, pending: 21084
-I   21.66] Elapsed: 21.66, vertices: 80, facets final: 5813, pending: 18775
-I   26.66] Elapsed: 26.66, vertices: 86, facets final: 17278, pending: 6523
-I   28.71] Elapsed: 28.71, vertices: 88, facets final: 23803, pending: 0
+I    5.00] Elapsed: 5.00, vertices: 79, facets final: 4319, pending: 19478
+I   10.00] Elapsed: 10.00, vertices: 88, facets final: 17958, pending: 5845
+I   11.96] Elapsed: 11.96, vertices: 88, facets final: 23803, pending: 0
 
 --------------------------------
 Problem completed
@@ -12,23 +9,23 @@ Problem completed
  output                  vlp/02.res
  rows, cols, objs        43, 213, 22
  vertices, facets        88, 23803
- total time              28.71
+ total time              11.96
 --------------------------------
 Statistics
 LP:
  oracle calls            23891
-   avg iterations/calls  16.82
- total oracle time       8.51
+   avg iterations/calls  16.55
+ total oracle time       8.27
 Combinatorics:
  vertices added          88
  facets probed           23891
- facets # max            29053
- memory allocated        9.13M
+ facets # max            27238
+ memory allocated        11.48M
  storage expansion
    vertices # / upto     1 / 124
-   facets   # / upto     8 / 32764
+   facets   # / upto     6 / 28668
  facet manipulating
-   added avg / max       878.24 / 6.59k
-   compressed            17
+   added avg / max       672.09 / 9.20k
+   compressed            16
  number of ridge tests
-   avg / max             10.71M / 118.65M
+   avg / max             6.88M / 70.44M

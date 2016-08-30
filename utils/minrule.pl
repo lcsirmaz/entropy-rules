@@ -102,6 +102,50 @@ sub read_input {
 }
 
 #===========================================================================
+sub run_lp {
+    my($info,$d)=@_;
+    my @M=();
+    my $cols=$info->{cols}; my $rows=$info->{dim};
+    my $i=0; my $nonzero=0;
+    for my $ii(0..$cols-1){
+       next if($ii==$d);
+       for my $j(0..$rows-1){
+           $M[$j][$i]=$info->{M}->[$ii]->[$j];
+           $nonzero++ if($M[$j][$i]);
+       }
+       $i++;
+    }
+    my $tmpname = `mktemp -q /tmp/chk_XXXXXX.vlp`; chomp $tmpname;
+    open(VLP,">$tmpname") || die "Cannot create temporary file $tmpname\n";
+      print VLP "C checking whether a rule is independent of others\n";
+      print VLP "p vlp min",
+         " ",$rows,         # number of rows
+         " ",$cols-1,       # columns
+         " ",$nonzero,      # nonzero coeffs
+         " ",1,             # number of objectives
+         " ",0,             # nonzxero elements in objectives
+         "\n";
+      # variable types: 1..$cols-1: non-negative
+      for my $j(1..$cols-1){
+        print VLP "j $j l 0\n";
+      }
+      # constraint types: <=
+      for my $i(1..$rows){
+        print VLP "i $i u ",$info->{M}->[$d]->[$i-1],"\n";
+      }
+      # the matrix
+      for my $i(1..$rows){ for my $j(1..$cols-1){
+        my $v=$M[$i-1][$j-1];
+        print VLP "a $i $j $v\n" if ($v);
+      }}
+    close(VLP);
+    system("inner -y- $tmpname > /dev/null");
+    my $e=$?>>8; # 0: superseded, 2: not
+    die "Unexpected error from inner ($e)\n" if($e!=0 && $e!=2);
+    unlink($tmpname);
+    return $e==0 ? 1 : 0;
+}
+
 if(scalar @ARGV !=2){
    print "Generating minimal rule coefficients from a result file..\n";
    print "Usage: minrule.pl <filename> <rulefile>\n";
