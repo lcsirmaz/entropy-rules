@@ -97,11 +97,13 @@ h<sub>9</sub>, 0, h<sub>11</sub> &gt;. The inequality with coefficients
 > a<sub>9</sub> h<sub>9</sub> + a<sub>2</sub> h<sub>10</sub> +
 > a<sub>11</sub> h<sub>11</sub> &ge; 0
 
-(observe that here instead of a<sub>10</sub> we have a<sub>2</sub>). Similarly,
+(observe that here we have a<sub>2</sub> instead of a<sub>10</sub>). Similarly,
 a<sub>10</sub> can also be replaced by a<sub>5</sub>, which proves the first
 statement. The second one can be proved similarly. &nbsp; &#x25a1;
 
-#### Coordinates &alpha; &beta; &gamma; &delta;
+#### A 3-dimensional cross-section
+
+
 
 
 
