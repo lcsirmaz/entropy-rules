@@ -1,53 +1,73 @@
 C applying rule 38.txt for base200.txt
-I    0.29] recalculating facets...
-I    0.61] recalculating facets...
-I    1.00] recalculating facets...
-recalculate_facet: numerical instability at facet 4946, coord 0 (3.92687e-06)
-recalculate_facet: numerical instability at facet 4946, coord 1 (-4.96406e-06)
-recalculate_facet: numerical instability at facet 4946, coord 2 (-4.96406e-06)
-recalculate_facet: numerical instability at facet 4946, coord 3 (5.98311e-06)
-recalculate_facet: numerical instability at facet 4946, coord 10 (9.65588e-06)
-I    1.43] recalculating facets...
-I    2.08] recalculating facets...
-I    2.56] recalculating facets...
-I    3.04] recalculating facets...
-I    3.57] recalculating facets...
-I    4.28] recalculating facets...
-I    4.97] recalculating facets...
-I    5.00] Elapsed: 5.00, vertices: 1002, facets final: 784, pending: 4061
-I    6.35] recalculating facets...
-I    9.73] recalculating facets...
-I   10.00] Elapsed: 10.00, vertices: 1205, facets final: 3123, pending: 1083
-I   11.98] Elapsed: 11.98, vertices: 1216, facets final: 4180, pending: 0
+I    0.89] recalculating facets...
+I    2.75] recalculating facets...
+I    5.00] Elapsed: 5.00, vertices: 298, facets final: 88, pending: 10608, pool: 150
+I    5.03] recalculating facets...
+I    7.42] recalculating facets...
+I    9.67] recalculating facets...
+I   10.00] Elapsed: 10.00, vertices: 513, facets final: 160, pending: 10692, pool: 150
+I   11.89] recalculating facets...
+I   14.00] recalculating facets...
+I   15.00] Elapsed: 15.00, vertices: 745, facets final: 285, pending: 9745, pool: 150
+I   16.14] recalculating facets...
+I   18.31] recalculating facets...
+I   20.00] Elapsed: 20.00, vertices: 976, facets final: 481, pending: 8949, pool: 150
+I   20.45] recalculating facets...
+I   22.73] recalculating facets...
+recalculate_facet: numerical instability at facet 1486, coord 0 (-5.06575e-06)
+recalculate_facet: numerical instability at facet 1486, coord 1 (9.00183e-06)
+recalculate_facet: numerical instability at facet 1486, coord 2 (9.00183e-06)
+recalculate_facet: numerical instability at facet 1486, coord 3 (-1.28622e-05)
+recalculate_facet: numerical instability at facet 1486, coord 4 (1.10018e-06)
+recalculate_facet: numerical instability at facet 1486, coord 5 (-1.17593e-06)
+recalculate_facet: numerical instability at facet 1486, coord 10 (-1.7019e-05)
+recalculate_facet: numerical instability at facet 1488, coord 0 (-3.86124e-06)
+recalculate_facet: numerical instability at facet 1488, coord 1 (7.21439e-06)
+recalculate_facet: numerical instability at facet 1488, coord 2 (7.21439e-06)
+recalculate_facet: numerical instability at facet 1488, coord 3 (-1.05206e-05)
+recalculate_facet: numerical instability at facet 1488, coord 10 (-1.38192e-05)
+I   24.87] recalculating facets...
+recalculate_facet: numerical instability at facet 10367, coord 2 (1.39869e-06)
+recalculate_facet: numerical instability at facet 10367, coord 3 (-1.40182e-06)
+recalculate_facet: numerical instability at facet 10367, coord 10 (-1.40025e-06)
+I   25.00] Elapsed: 25.00, vertices: 1205, facets final: 893, pending: 7140, pool: 150
+I   27.01] recalculating facets...
+I   29.23] recalculating facets...
+I   30.00] Elapsed: 30.00, vertices: 1425, facets final: 1670, pending: 5459, pool: 149
+I   32.42] recalculating facets...
+I   35.00] Elapsed: 35.00, vertices: 1575, facets final: 3165, pending: 3485, pool: 109
+I   36.12] recalculating facets...
+I   40.00] Elapsed: 40.00, vertices: 1687, facets final: 5321, pending: 1009, pool: 43
+I   40.76] recalculating facets...
+I   42.04] Elapsed: 42.04, vertices: 1758, facets final: 6220, pending: 0
 
 --------------------------------
 Problem completed
  name                    38.vlp
  output                  vlp/38.res
  rows, cols, objs        12, 2839, 10
- vertices, facets        1216, 4180
- total time              11.98
+ vertices, facets        1758, 6220
+ total time              42.04
 --------------------------------
 Statistics
 LP:
- oracle calls            5396
-   avg iterations/calls  10.65
- total oracle time       10.01
+ oracle calls            8851
+   avg iterations/calls  9.63
+ total oracle time       15.45
 Combinatorics:
- vertices added          1216
- facets probed           5396
- facets # max            6958
- memory allocated        6.71M
- instability warnings    5
+ vertices added          1758
+ facets probed           15504
+ facets # max            11028
+ memory allocated        10.88M
+ instability warnings    15
  storage expansion
-   vertices # / upto     10 / 1276
-   facets   # / upto     2 / 8188
+   vertices # / upto     14 / 1788
+   facets   # / upto     3 / 12284
  facet manipulating
-   added avg / max       44.30 / 304.00
-   compressed            32
+   added avg / max       71.09 / 507.00
+   compressed            66
  number of ridge tests
-   avg / max             201.01k / 1.18M
+   avg / max             542.17k / 3.92M
 --------------------------------
 Parameters with non-default values
- OracleItLimit = 200000
- OracleTimeLimit = 60
+ VertexPoolSize = 150

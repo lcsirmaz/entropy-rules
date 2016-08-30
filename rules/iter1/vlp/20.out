@@ -1,41 +1,46 @@
 C applying rule 20.txt for base200.txt
-I    0.19] recalculating facets...
-I    0.46] recalculating facets...
-I    0.82] recalculating facets...
-I    1.46] recalculating facets...
-I    2.14] recalculating facets...
-I    3.46] recalculating facets...
-I    5.00] Elapsed: 5.00, vertices: 662, facets final: 3348, pending: 1875
-I    5.73] recalculating facets...
-I    7.44] Elapsed: 7.44, vertices: 761, facets final: 5325, pending: 0
+I    1.59] recalculating facets...
+I    4.80] recalculating facets...
+I    5.00] Elapsed: 5.00, vertices: 204, facets final: 551, pending: 2060, pool: 97
+I    8.15] recalculating facets...
+I   10.00] Elapsed: 10.00, vertices: 346, facets final: 1115, pending: 3253, pool: 96
+I   13.28] recalculating facets...
+I   15.00] Elapsed: 15.00, vertices: 422, facets final: 1874, pending: 2944, pool: 95
+I   20.00] Elapsed: 20.00, vertices: 478, facets final: 2735, pending: 2365, pool: 82
+I   21.96] recalculating facets...
+I   25.00] Elapsed: 25.00, vertices: 537, facets final: 3596, pending: 1736, pool: 61
+I   30.00] Elapsed: 30.00, vertices: 596, facets final: 4513, pending: 956, pool: 43
+I   30.44] recalculating facets...
+I   35.00] Elapsed: 35.00, vertices: 676, facets final: 5427, pending: 189, pool: 25
+I   35.60] recalculating facets...
+I   36.93] Elapsed: 36.93, vertices: 757, facets final: 5698, pending: 0
 
 --------------------------------
 Problem completed
  name                    20.vlp
  output                  vlp/20.res
  rows, cols, objs        12, 2421, 10
- vertices, facets        761, 5325
- total time              7.44
+ vertices, facets        757, 5698
+ total time              36.93
 --------------------------------
 Statistics
 LP:
- oracle calls            6086
-   avg iterations/calls  5.15
- total oracle time       7.03
+ oracle calls            6976
+   avg iterations/calls  4.82
+ total oracle time       28.07
 Combinatorics:
- vertices added          761
- facets probed           6086
- facets # max            5326
- memory allocated        5.26M
+ vertices added          757
+ facets probed           16926
+ facets # max            5709
+ memory allocated        4.43M
  storage expansion
    vertices # / upto     7 / 892
    facets   # / upto     2 / 8188
  facet manipulating
-   added avg / max       24.22 / 380.00
-   compressed            20
+   added avg / max       22.36 / 207.00
+   compressed            13
  number of ridge tests
-   avg / max             49.14k / 598.79k
+   avg / max             40.92k / 636.14k
 --------------------------------
 Parameters with non-default values
- OracleItLimit = 200000
- OracleTimeLimit = 60
+ VertexPoolSize = 100

@@ -1,59 +1,64 @@
 C applying rule 32.txt for base200.txt
-I    0.40] recalculating facets...
-I    1.62] recalculating facets...
-I    3.30] recalculating facets...
-I    5.00] Elapsed: 5.00, vertices: 395, facets final: 285, pending: 25314
-I    5.11] recalculating facets...
-I    7.09] recalculating facets...
-I    9.15] recalculating facets...
-I   10.00] Elapsed: 10.00, vertices: 640, facets final: 1029, pending: 32633
-I   11.17] recalculating facets...
-I   13.20] recalculating facets...
-I   15.00] Elapsed: 15.00, vertices: 876, facets final: 2919, pending: 33991
-I   15.61] recalculating facets...
-I   18.04] recalculating facets...
-I   20.00] Elapsed: 20.00, vertices: 1069, facets final: 5812, pending: 32897
-I   20.83] recalculating facets...
-I   24.93] recalculating facets...
-I   25.00] Elapsed: 25.00, vertices: 1201, facets final: 9436, pending: 30076
-I   29.84] recalculating facets...
-I   30.00] Elapsed: 30.00, vertices: 1302, facets final: 13576, pending: 26277
-I   35.00] Elapsed: 35.00, vertices: 1370, facets final: 18011, pending: 21983
-I   38.57] recalculating facets...
-I   40.00] Elapsed: 40.00, vertices: 1411, facets final: 22643, pending: 17477
-I   45.00] Elapsed: 45.00, vertices: 1439, facets final: 27352, pending: 12765
-I   50.00] Elapsed: 50.00, vertices: 1454, facets final: 32022, pending: 8115
-I   55.00] Elapsed: 55.00, vertices: 1466, facets final: 36830, pending: 3307
-I   58.54] recalculating facets...
-I   58.67] Elapsed: 58.67, vertices: 1514, facets final: 40125, pending: 0
+I    0.85] recalculating facets...
+I    3.02] recalculating facets...
+I    5.00] Elapsed: 5.00, vertices: 258, facets final: 532, pending: 16948, pool: 133
+I    6.60] recalculating facets...
+I   10.02] Elapsed: 10.02, vertices: 373, facets final: 1178, pending: 21797, pool: 144
+I   11.33] recalculating facets...
+I   15.02] Elapsed: 15.02, vertices: 471, facets final: 1878, pending: 24495, pool: 146
+I   16.53] recalculating facets...
+I   20.04] Elapsed: 20.04, vertices: 562, facets final: 2707, pending: 26027, pool: 143
+I   22.38] recalculating facets...
+I   25.04] Elapsed: 25.04, vertices: 645, facets final: 3568, pending: 26792, pool: 149
+I   28.43] recalculating facets...
+I   30.04] Elapsed: 30.04, vertices: 726, facets final: 4355, pending: 27515, pool: 145
+I   34.72] recalculating facets...
+I   35.08] Elapsed: 35.08, vertices: 804, facets final: 5331, pending: 27583, pool: 149
+I   40.08] Elapsed: 40.08, vertices: 877, facets final: 6590, pending: 27261, pool: 148
+I   41.73] recalculating facets...
+I   45.10] Elapsed: 45.10, vertices: 944, facets final: 8023, pending: 26340, pool: 147
+I   49.28] recalculating facets...
+I   50.10] Elapsed: 50.10, vertices: 1009, facets final: 9692, pending: 25053, pool: 148
+I   55.10] Elapsed: 55.10, vertices: 1058, facets final: 12048, pending: 23063, pool: 145
+I   59.46] recalculating facets...
+I   60.10] Elapsed: 1:00, vertices: 1105, facets final: 14688, pending: 20644, pool: 140
+I   65.12] Elapsed: 1:05, vertices: 1153, facets final: 17404, pending: 18273, pool: 131
+I   70.12] Elapsed: 1:10, vertices: 1198, facets final: 20492, pending: 15339, pool: 111
+I   70.55] recalculating facets...
+I   75.12] Elapsed: 1:15, vertices: 1244, facets final: 23582, pending: 12475, pool: 104
+I   80.12] Elapsed: 1:20, vertices: 1290, facets final: 26994, pending: 9190, pool: 85
+I   81.13] recalculating facets...
+I   85.12] Elapsed: 1:25, vertices: 1339, facets final: 30631, pending: 5666, pool: 59
+I   90.12] Elapsed: 1:30, vertices: 1395, facets final: 34684, pending: 1682, pool: 28
+I   90.44] recalculating facets...
+I   92.92] Elapsed: 1:33, vertices: 1496, facets final: 36536, pending: 0
 
 --------------------------------
 Problem completed
  name                    32.vlp
  output                  vlp/32.res
  rows, cols, objs        12, 2396, 10
- vertices, facets        1514, 40125
- total time              58.67
+ vertices, facets        1496, 36536
+ total time              1:33
 --------------------------------
 Statistics
 LP:
- oracle calls            41639
-   avg iterations/calls  2.95
- total oracle time       42.82
+ oracle calls            39196
+   avg iterations/calls  2.88
+ total oracle time       37.74
 Combinatorics:
- vertices added          1514
- facets probed           41639
- facets # max            40146
- memory allocated        23.54M
+ vertices added          1496
+ facets probed           53432
+ facets # max            36555
+ memory allocated        21.55M
  storage expansion
    vertices # / upto     12 / 1532
-   facets   # / upto     10 / 40956
+   facets   # / upto     9 / 36860
  facet manipulating
-   added avg / max       88.08 / 850.00
-   compressed            100
+   added avg / max       72.96 / 489.00
+   compressed            88
  number of ridge tests
-   avg / max             1.20M / 12.03M
+   avg / max             841.07k / 4.72M
 --------------------------------
 Parameters with non-default values
- OracleItLimit = 200000
- OracleTimeLimit = 60
+ VertexPoolSize = 150

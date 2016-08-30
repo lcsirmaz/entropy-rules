@@ -1,44 +1,45 @@
 C applying rule 03.txt for base200.txt
-I    0.53] recalculating facets...
-I    1.10] recalculating facets...
-I    1.47] recalculating facets...
-I    1.86] recalculating facets...
-I    2.30] recalculating facets...
-I    3.14] recalculating facets...
-recalculate_facet: numerical instability at facet 7932, coord 4 (-1.10614e-06)
-recalculate_facet: numerical instability at facet 7932, coord 5 (1.32144e-06)
-I    5.00] Elapsed: 5.00, vertices: 695, facets final: 2035, pending: 1449
-I    5.29] recalculating facets...
-I    6.99] Elapsed: 6.99, vertices: 729, facets final: 3484, pending: 0
+I    2.10] recalculating facets...
+I    4.35] recalculating facets...
+I    5.00] Elapsed: 5.00, vertices: 224, facets final: 77, pending: 3557, pool: 100
+I    6.91] recalculating facets...
+I    9.88] recalculating facets...
+I   10.00] Elapsed: 10.00, vertices: 403, facets final: 294, pending: 3077, pool: 99
+I   13.31] recalculating facets...
+I   15.00] Elapsed: 15.00, vertices: 542, facets final: 682, pending: 2982, pool: 93
+I   18.16] recalculating facets...
+I   20.00] Elapsed: 20.00, vertices: 631, facets final: 1305, pending: 2114, pool: 80
+I   25.00] Elapsed: 25.00, vertices: 696, facets final: 2103, pending: 1135, pool: 51
+I   25.67] recalculating facets...
+I   30.00] Elapsed: 30.00, vertices: 742, facets final: 2984, pending: 278, pool: 24
+I   32.00] Elapsed: 32.00, vertices: 787, facets final: 3301, pending: 0
 
 --------------------------------
 Problem completed
  name                    03.vlp
  output                  vlp/03.res
  rows, cols, objs        12, 2585, 10
- vertices, facets        729, 3484
- total time              6.99
+ vertices, facets        787, 3301
+ total time              32.00
 --------------------------------
 Statistics
 LP:
- oracle calls            4213
-   avg iterations/calls  6.74
- total oracle time       5.63
+ oracle calls            4685
+   avg iterations/calls  6.89
+ total oracle time       22.67
 Combinatorics:
- vertices added          729
- facets probed           4213
- facets # max            6370
- memory allocated        4.78M
- instability warnings    2
+ vertices added          787
+ facets probed           7230
+ facets # max            3914
+ memory allocated        3.10M
  storage expansion
-   vertices # / upto     6 / 764
-   facets   # / upto     2 / 8188
+   vertices # / upto     7 / 892
+   facets   # / upto     1 / 4092
  facet manipulating
-   added avg / max       73.41 / 879.00
-   compressed            24
+   added avg / max       45.23 / 371.00
+   compressed            41
  number of ridge tests
-   avg / max             273.71k / 3.27M
+   avg / max             114.56k / 748.00k
 --------------------------------
 Parameters with non-default values
- OracleItLimit = 200000
- OracleTimeLimit = 60
+ VertexPoolSize = 100

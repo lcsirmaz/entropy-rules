@@ -1,495 +1,387 @@
 C applying rule 48.txt for base200.txt
-I    3.25] recalculating facets...
-I    5.01] Elapsed: 5.01, vertices: 112, facets final: 13, pending: 28087
-I   10.21] Elapsed: 10.21, vertices: 137, facets final: 13, pending: 37476
-I   15.25] Elapsed: 15.25, vertices: 147, facets final: 13, pending: 43113
-I   20.27] Elapsed: 20.27, vertices: 161, facets final: 13, pending: 48207
-I   25.83] Elapsed: 25.83, vertices: 178, facets final: 13, pending: 54623
-I   31.72] Elapsed: 31.72, vertices: 186, facets final: 13, pending: 59817
-I   37.30] Elapsed: 37.30, vertices: 192, facets final: 13, pending: 62907
-I   40.95] recalculating facets...
-I   42.40] Elapsed: 42.40, vertices: 202, facets final: 13, pending: 66641
-I   48.44] Elapsed: 48.44, vertices: 210, facets final: 14, pending: 71686
-I   54.53] Elapsed: 54.53, vertices: 223, facets final: 14, pending: 78849
-I   59.80] Elapsed: 59.80, vertices: 228, facets final: 14, pending: 82631
-I   64.94] Elapsed: 1:05, vertices: 235, facets final: 15, pending: 86178
-I   70.28] Elapsed: 1:10, vertices: 242, facets final: 16, pending: 90450
-I   76.93] Elapsed: 1:17, vertices: 245, facets final: 16, pending: 92717
-I   83.49] Elapsed: 1:23, vertices: 251, facets final: 17, pending: 94475
-I   91.40] Elapsed: 1:31, vertices: 259, facets final: 20, pending: 98326
-I   96.77] Elapsed: 1:37, vertices: 264, facets final: 21, pending: 99923
-I  102.47] Elapsed: 1:42, vertices: 268, facets final: 21, pending: 102942
-I  108.39] Elapsed: 1:48, vertices: 274, facets final: 21, pending: 104827
-I  114.94] Elapsed: 1:55, vertices: 279, facets final: 21, pending: 105963
-I  120.48] Elapsed: 2:00, vertices: 285, facets final: 21, pending: 106846
-I  125.64] Elapsed: 2:06, vertices: 291, facets final: 21, pending: 108569
-I  131.56] Elapsed: 2:12, vertices: 295, facets final: 21, pending: 110234
-I  136.59] Elapsed: 2:17, vertices: 300, facets final: 22, pending: 110076
-I  136.60] recalculating facets...
-I  142.11] Elapsed: 2:22, vertices: 307, facets final: 22, pending: 110812
-I  147.77] Elapsed: 2:28, vertices: 314, facets final: 23, pending: 112153
-I  153.09] Elapsed: 2:33, vertices: 318, facets final: 23, pending: 112698
-I  158.91] Elapsed: 2:39, vertices: 322, facets final: 23, pending: 113941
-I  164.46] Elapsed: 2:44, vertices: 329, facets final: 23, pending: 115489
-I  170.54] Elapsed: 2:51, vertices: 337, facets final: 24, pending: 117872
-I  179.51] Elapsed: 3:00, vertices: 346, facets final: 24, pending: 120940
-I  185.25] Elapsed: 3:05, vertices: 353, facets final: 25, pending: 122721
-I  190.45] Elapsed: 3:10, vertices: 356, facets final: 25, pending: 122983
-I  195.80] Elapsed: 3:16, vertices: 363, facets final: 25, pending: 125868
-I  202.03] Elapsed: 3:22, vertices: 369, facets final: 26, pending: 126419
-I  208.22] Elapsed: 3:28, vertices: 373, facets final: 26, pending: 126955
-I  213.40] Elapsed: 3:33, vertices: 377, facets final: 27, pending: 128210
-I  221.61] Elapsed: 3:42, vertices: 382, facets final: 27, pending: 131515
-I  229.84] Elapsed: 3:50, vertices: 387, facets final: 28, pending: 133787
-I  234.97] Elapsed: 3:55, vertices: 392, facets final: 28, pending: 135018
-I  243.26] Elapsed: 4:03, vertices: 396, facets final: 30, pending: 134911
-I  245.78] recalculating facets...
-I  251.74] Elapsed: 4:12, vertices: 402, facets final: 32, pending: 136165
-I  258.31] Elapsed: 4:18, vertices: 405, facets final: 32, pending: 137549
-I  263.56] Elapsed: 4:24, vertices: 409, facets final: 32, pending: 138697
-I  269.03] Elapsed: 4:29, vertices: 412, facets final: 32, pending: 138813
-I  275.98] Elapsed: 4:36, vertices: 419, facets final: 32, pending: 140642
-I  281.09] Elapsed: 4:41, vertices: 424, facets final: 32, pending: 141755
-I  286.19] Elapsed: 4:46, vertices: 428, facets final: 33, pending: 142224
-I  292.18] Elapsed: 4:52, vertices: 433, facets final: 33, pending: 143665
-I  298.57] Elapsed: 4:59, vertices: 439, facets final: 33, pending: 146665
-I  304.22] Elapsed: 5:04, vertices: 444, facets final: 33, pending: 147467
-I  310.02] Elapsed: 5:10, vertices: 446, facets final: 34, pending: 147348
-I  315.58] Elapsed: 5:16, vertices: 450, facets final: 34, pending: 147259
-I  324.98] Elapsed: 5:25, vertices: 454, facets final: 34, pending: 145335
-I  330.84] Elapsed: 5:31, vertices: 457, facets final: 34, pending: 147340
-I  335.92] Elapsed: 5:36, vertices: 463, facets final: 36, pending: 148285
-I  342.43] Elapsed: 5:42, vertices: 465, facets final: 36, pending: 150676
-I  348.34] Elapsed: 5:48, vertices: 468, facets final: 37, pending: 151999
-I  354.81] Elapsed: 5:55, vertices: 473, facets final: 38, pending: 152285
-I  360.41] Elapsed: 6:00, vertices: 476, facets final: 38, pending: 151445
-I  369.40] Elapsed: 6:09, vertices: 481, facets final: 39, pending: 153763
-I  376.57] Elapsed: 6:17, vertices: 485, facets final: 40, pending: 154593
-I  381.83] Elapsed: 6:22, vertices: 488, facets final: 40, pending: 156503
-I  389.89] Elapsed: 6:30, vertices: 491, facets final: 40, pending: 155454
-I  395.56] Elapsed: 6:36, vertices: 496, facets final: 40, pending: 154002
-I  400.29] recalculating facets...
-I  401.08] Elapsed: 6:41, vertices: 501, facets final: 40, pending: 154133
-I  406.51] Elapsed: 6:47, vertices: 505, facets final: 40, pending: 153996
-I  411.68] Elapsed: 6:52, vertices: 509, facets final: 40, pending: 155389
-I  417.32] Elapsed: 6:57, vertices: 514, facets final: 41, pending: 154565
-I  423.12] Elapsed: 7:03, vertices: 517, facets final: 42, pending: 155057
-I  429.20] Elapsed: 7:09, vertices: 521, facets final: 43, pending: 156086
-I  435.38] Elapsed: 7:15, vertices: 525, facets final: 43, pending: 155261
-I  441.13] Elapsed: 7:21, vertices: 529, facets final: 43, pending: 155385
-I  448.33] Elapsed: 7:28, vertices: 531, facets final: 43, pending: 154266
-I  455.52] Elapsed: 7:36, vertices: 536, facets final: 43, pending: 156615
-I  461.02] Elapsed: 7:41, vertices: 540, facets final: 44, pending: 155789
-I  466.08] Elapsed: 7:46, vertices: 543, facets final: 44, pending: 156578
-I  471.54] Elapsed: 7:52, vertices: 548, facets final: 44, pending: 155307
-I  478.76] Elapsed: 7:59, vertices: 552, facets final: 45, pending: 156268
-I  484.12] Elapsed: 8:04, vertices: 554, facets final: 45, pending: 157005
-I  490.61] Elapsed: 8:11, vertices: 557, facets final: 46, pending: 156746
-I  496.10] Elapsed: 8:16, vertices: 561, facets final: 47, pending: 156606
-I  501.88] Elapsed: 8:22, vertices: 564, facets final: 47, pending: 154593
-I  507.53] Elapsed: 8:28, vertices: 568, facets final: 47, pending: 155506
-I  513.46] Elapsed: 8:33, vertices: 575, facets final: 47, pending: 154735
-I  518.59] Elapsed: 8:39, vertices: 580, facets final: 49, pending: 154690
-I  523.73] Elapsed: 8:44, vertices: 585, facets final: 49, pending: 156123
-I  529.27] Elapsed: 8:49, vertices: 591, facets final: 49, pending: 155105
-I  534.65] Elapsed: 8:55, vertices: 598, facets final: 50, pending: 155452
-I  536.38] recalculating facets...
-I  541.90] Elapsed: 9:02, vertices: 602, facets final: 51, pending: 155359
-I  547.95] Elapsed: 9:08, vertices: 609, facets final: 52, pending: 155123
-I  554.03] Elapsed: 9:14, vertices: 613, facets final: 52, pending: 154768
-I  560.11] Elapsed: 9:20, vertices: 618, facets final: 52, pending: 156171
-I  565.33] Elapsed: 9:25, vertices: 624, facets final: 53, pending: 156343
-I  571.79] Elapsed: 9:32, vertices: 627, facets final: 53, pending: 156311
-I  576.86] Elapsed: 9:37, vertices: 632, facets final: 53, pending: 156130
-I  582.76] Elapsed: 9:43, vertices: 635, facets final: 54, pending: 156674
-I  589.89] Elapsed: 9:50, vertices: 638, facets final: 54, pending: 155578
-I  596.54] Elapsed: 9:57, vertices: 640, facets final: 55, pending: 154693
-I  601.74] Elapsed: 10:02, vertices: 643, facets final: 56, pending: 155001
-I  609.14] Elapsed: 10:09, vertices: 647, facets final: 57, pending: 155413
-I  615.34] Elapsed: 10:15, vertices: 651, facets final: 58, pending: 154531
-I  620.87] Elapsed: 10:21, vertices: 656, facets final: 58, pending: 154316
-I  626.81] Elapsed: 10:27, vertices: 661, facets final: 58, pending: 154221
-I  632.83] Elapsed: 10:33, vertices: 665, facets final: 58, pending: 153729
-I  638.18] Elapsed: 10:38, vertices: 669, facets final: 58, pending: 153719
-I  643.30] Elapsed: 10:43, vertices: 671, facets final: 58, pending: 152154
-I  648.61] Elapsed: 10:49, vertices: 676, facets final: 58, pending: 153373
-I  656.70] Elapsed: 10:57, vertices: 681, facets final: 58, pending: 153240
-I  662.48] Elapsed: 11:02, vertices: 684, facets final: 60, pending: 152131
-I  667.96] Elapsed: 11:08, vertices: 690, facets final: 61, pending: 152004
-I  673.48] Elapsed: 11:13, vertices: 699, facets final: 62, pending: 153088
-I  674.75] recalculating facets...
-I  680.21] Elapsed: 11:20, vertices: 705, facets final: 62, pending: 157181
-I  686.43] Elapsed: 11:26, vertices: 711, facets final: 63, pending: 156890
-I  691.89] Elapsed: 11:32, vertices: 717, facets final: 63, pending: 155795
-I  697.93] Elapsed: 11:38, vertices: 721, facets final: 65, pending: 155412
-I  703.64] Elapsed: 11:44, vertices: 728, facets final: 66, pending: 155604
-I  711.23] Elapsed: 11:51, vertices: 732, facets final: 66, pending: 155903
-I  716.33] Elapsed: 11:56, vertices: 736, facets final: 66, pending: 156530
-I  721.87] Elapsed: 12:02, vertices: 742, facets final: 66, pending: 155625
-I  727.76] Elapsed: 12:08, vertices: 747, facets final: 66, pending: 155263
-I  732.96] Elapsed: 12:13, vertices: 753, facets final: 67, pending: 154854
-I  739.46] Elapsed: 12:19, vertices: 757, facets final: 68, pending: 155621
-I  744.74] Elapsed: 12:25, vertices: 761, facets final: 69, pending: 154783
-I  750.60] Elapsed: 12:31, vertices: 767, facets final: 72, pending: 154312
-I  755.70] Elapsed: 12:36, vertices: 772, facets final: 74, pending: 153414
-I  761.50] Elapsed: 12:42, vertices: 775, facets final: 74, pending: 152462
-I  766.91] Elapsed: 12:47, vertices: 781, facets final: 80, pending: 152729
-I  773.81] Elapsed: 12:54, vertices: 791, facets final: 81, pending: 152725
-I  779.61] Elapsed: 13:00, vertices: 798, facets final: 84, pending: 153651
-I  782.83] recalculating facets...
-recalculate_facet: numerical instability at facet 120635, coord 1 (1.09816e-06)
-recalculate_facet: numerical instability at facet 120635, coord 4 (1.01467e-06)
-recalculate_facet: numerical instability at facet 120635, coord 5 (-1.11482e-06)
-recalculate_facet: numerical instability at facet 120635, coord 10 (-1.58327e-06)
-recalculate_facet: numerical instability at facet 120666, coord 0 (-2.9211e-06)
-recalculate_facet: numerical instability at facet 120666, coord 1 (4.77707e-06)
-recalculate_facet: numerical instability at facet 120666, coord 4 (5.44426e-06)
-recalculate_facet: numerical instability at facet 120666, coord 5 (-5.73694e-06)
-recalculate_facet: numerical instability at facet 120666, coord 9 (-2.4368e-06)
-recalculate_facet: numerical instability at facet 120666, coord 10 (-6.48656e-06)
-recalculate_facet: numerical instability at facet 120668, coord 1 (1.54307e-06)
-recalculate_facet: numerical instability at facet 120668, coord 4 (1.37284e-06)
-recalculate_facet: numerical instability at facet 120668, coord 5 (-1.17102e-06)
-recalculate_facet: numerical instability at facet 120668, coord 10 (-2.16092e-06)
-recalculate_facet: numerical instability at facet 120693, coord 0 (1.69237e-06)
-recalculate_facet: numerical instability at facet 120693, coord 1 (-1.98222e-06)
-recalculate_facet: numerical instability at facet 120693, coord 3 (-1.39829e-06)
-recalculate_facet: numerical instability at facet 120693, coord 5 (2.00476e-06)
-recalculate_facet: numerical instability at facet 120693, coord 9 (1.7916e-06)
-recalculate_facet: numerical instability at facet 120693, coord 10 (2.09876e-06)
-recalculate_facet: numerical instability at facet 120697, coord 1 (1.54307e-06)
-recalculate_facet: numerical instability at facet 120697, coord 4 (1.37284e-06)
-recalculate_facet: numerical instability at facet 120697, coord 5 (-1.89871e-06)
-recalculate_facet: numerical instability at facet 120697, coord 10 (-2.16092e-06)
-recalculate_facet: numerical instability at facet 120711, coord 0 (1.69237e-06)
-recalculate_facet: numerical instability at facet 120711, coord 1 (-1.98222e-06)
-recalculate_facet: numerical instability at facet 120711, coord 3 (-1.39829e-06)
-recalculate_facet: numerical instability at facet 120711, coord 5 (3.79636e-06)
-recalculate_facet: numerical instability at facet 120711, coord 10 (2.09876e-06)
-recalculate_facet: numerical instability at facet 120726, coord 1 (1.09816e-06)
-recalculate_facet: numerical instability at facet 120726, coord 4 (1.01467e-06)
-recalculate_facet: numerical instability at facet 120726, coord 5 (-1.41214e-06)
-recalculate_facet: numerical instability at facet 120726, coord 10 (-1.58327e-06)
-recalculate_facet: numerical instability at facet 120805, coord 0 (-2.9211e-06)
-recalculate_facet: numerical instability at facet 120805, coord 1 (4.77707e-06)
-recalculate_facet: numerical instability at facet 120805, coord 4 (5.44426e-06)
-recalculate_facet: numerical instability at facet 120805, coord 5 (-8.17374e-06)
-recalculate_facet: numerical instability at facet 120805, coord 10 (-6.48656e-06)
-I  786.10] Elapsed: 13:06, vertices: 802, facets final: 85, pending: 154079
-I  791.69] Elapsed: 13:12, vertices: 808, facets final: 87, pending: 153190
-I  797.89] Elapsed: 13:18, vertices: 817, facets final: 93, pending: 153358
-I  802.99] Elapsed: 13:23, vertices: 822, facets final: 95, pending: 153246
-I  808.32] Elapsed: 13:28, vertices: 827, facets final: 96, pending: 153262
-I  815.06] Elapsed: 13:35, vertices: 835, facets final: 97, pending: 153131
-I  820.18] Elapsed: 13:40, vertices: 839, facets final: 97, pending: 153747
-I  825.95] Elapsed: 13:46, vertices: 845, facets final: 98, pending: 151970
-I  832.84] Elapsed: 13:53, vertices: 849, facets final: 101, pending: 150548
-I  838.98] Elapsed: 13:59, vertices: 857, facets final: 102, pending: 150261
-I  844.26] Elapsed: 14:04, vertices: 860, facets final: 102, pending: 150088
-I  851.88] Elapsed: 14:12, vertices: 866, facets final: 106, pending: 149203
-I  857.96] Elapsed: 14:18, vertices: 873, facets final: 107, pending: 148256
-I  862.98] Elapsed: 14:23, vertices: 883, facets final: 109, pending: 148531
-I  868.80] Elapsed: 14:29, vertices: 888, facets final: 111, pending: 148395
-I  874.11] Elapsed: 14:34, vertices: 893, facets final: 113, pending: 148047
-I  879.53] Elapsed: 14:40, vertices: 898, facets final: 118, pending: 147479
-I  882.73] recalculating facets...
-recalculate_facet: numerical instability at facet 14849, coord 0 (-1.52405e-06)
-recalculate_facet: numerical instability at facet 14849, coord 1 (2.45174e-06)
-recalculate_facet: numerical instability at facet 14849, coord 3 (1.25703e-06)
-recalculate_facet: numerical instability at facet 14849, coord 4 (1.79599e-06)
-recalculate_facet: numerical instability at facet 14849, coord 9 (-4.84903e-06)
-recalculate_facet: numerical instability at facet 14849, coord 10 (-3.41468e-06)
-recalculate_facet: numerical instability at facet 14854, coord 3 (1.31473e-06)
-recalculate_facet: numerical instability at facet 14854, coord 5 (-1.09731e-06)
-recalculate_facet: numerical instability at facet 15088, coord 9 (-1.67773e-06)
-I  885.58] Elapsed: 14:46, vertices: 903, facets final: 120, pending: 147721
-I  890.98] Elapsed: 14:51, vertices: 908, facets final: 120, pending: 146586
-I  896.35] Elapsed: 14:56, vertices: 913, facets final: 122, pending: 146388
-I  901.41] Elapsed: 15:01, vertices: 919, facets final: 123, pending: 146008
-I  906.64] Elapsed: 15:07, vertices: 925, facets final: 128, pending: 145520
-I  912.02] Elapsed: 15:12, vertices: 932, facets final: 134, pending: 145387
-I  917.23] Elapsed: 15:17, vertices: 940, facets final: 135, pending: 145093
-I  923.71] Elapsed: 15:24, vertices: 949, facets final: 136, pending: 144537
-I  928.77] Elapsed: 15:29, vertices: 956, facets final: 136, pending: 144235
-I  934.10] Elapsed: 15:34, vertices: 962, facets final: 137, pending: 143632
-I  939.33] Elapsed: 15:39, vertices: 969, facets final: 139, pending: 143184
-I  945.17] Elapsed: 15:45, vertices: 983, facets final: 143, pending: 142918
-I  950.21] Elapsed: 15:50, vertices: 993, facets final: 146, pending: 142368
-I  955.85] Elapsed: 15:56, vertices: 1000, facets final: 147, pending: 140997
-I  955.85] recalculating facets...
-I  960.96] Elapsed: 16:01, vertices: 1008, facets final: 149, pending: 140289
-I  966.07] Elapsed: 16:06, vertices: 1013, facets final: 154, pending: 140335
-I  971.10] Elapsed: 16:11, vertices: 1018, facets final: 156, pending: 140101
-I  976.85] Elapsed: 16:17, vertices: 1027, facets final: 158, pending: 139347
-I  984.03] Elapsed: 16:24, vertices: 1033, facets final: 161, pending: 139666
-I  990.01] Elapsed: 16:30, vertices: 1043, facets final: 166, pending: 139133
-I  995.16] Elapsed: 16:35, vertices: 1051, facets final: 166, pending: 138129
-I 1000.83] Elapsed: 16:41, vertices: 1059, facets final: 169, pending: 137642
-I 1006.02] Elapsed: 16:46, vertices: 1065, facets final: 169, pending: 137228
-I 1012.55] Elapsed: 16:53, vertices: 1071, facets final: 170, pending: 137342
-I 1018.16] Elapsed: 16:58, vertices: 1078, facets final: 172, pending: 137374
-I 1023.49] Elapsed: 17:03, vertices: 1085, facets final: 175, pending: 136762
-I 1028.99] Elapsed: 17:09, vertices: 1093, facets final: 177, pending: 136308
-I 1035.50] Elapsed: 17:16, vertices: 1100, facets final: 180, pending: 135740
-I 1035.51] recalculating facets...
-I 1040.90] Elapsed: 17:21, vertices: 1108, facets final: 182, pending: 134738
-I 1046.28] Elapsed: 17:26, vertices: 1115, facets final: 185, pending: 133954
-I 1051.77] Elapsed: 17:32, vertices: 1126, facets final: 186, pending: 133430
-I 1057.00] Elapsed: 17:37, vertices: 1134, facets final: 186, pending: 131872
-I 1063.07] Elapsed: 17:43, vertices: 1144, facets final: 187, pending: 131236
-I 1068.64] Elapsed: 17:49, vertices: 1152, facets final: 189, pending: 130760
-I 1074.09] Elapsed: 17:54, vertices: 1161, facets final: 189, pending: 129088
-I 1079.78] Elapsed: 18:00, vertices: 1169, facets final: 192, pending: 128502
-I 1085.03] Elapsed: 18:05, vertices: 1172, facets final: 192, pending: 128372
-I 1090.03] Elapsed: 18:10, vertices: 1182, facets final: 192, pending: 127588
-I 1095.46] Elapsed: 18:15, vertices: 1192, facets final: 198, pending: 127286
-I 1100.75] Elapsed: 18:21, vertices: 1199, facets final: 200, pending: 126361
-I 1102.67] recalculating facets...
-I 1105.82] Elapsed: 18:26, vertices: 1206, facets final: 201, pending: 125414
-I 1111.14] Elapsed: 18:31, vertices: 1216, facets final: 202, pending: 125522
-I 1117.03] Elapsed: 18:37, vertices: 1223, facets final: 203, pending: 124692
-I 1122.19] Elapsed: 18:42, vertices: 1236, facets final: 206, pending: 125159
-I 1127.25] Elapsed: 18:47, vertices: 1244, facets final: 211, pending: 125320
-I 1132.43] Elapsed: 18:52, vertices: 1255, facets final: 214, pending: 124462
-I 1138.08] Elapsed: 18:58, vertices: 1268, facets final: 218, pending: 123229
-I 1143.16] Elapsed: 19:03, vertices: 1280, facets final: 221, pending: 122979
-I 1149.45] Elapsed: 19:09, vertices: 1290, facets final: 226, pending: 122738
-I 1154.93] Elapsed: 19:15, vertices: 1299, facets final: 233, pending: 123599
-I 1155.40] recalculating facets...
-I 1160.48] Elapsed: 19:20, vertices: 1309, facets final: 240, pending: 123713
-I 1165.49] Elapsed: 19:25, vertices: 1316, facets final: 240, pending: 123632
-I 1172.10] Elapsed: 19:32, vertices: 1325, facets final: 243, pending: 123271
-I 1178.23] Elapsed: 19:38, vertices: 1334, facets final: 244, pending: 122311
-I 1184.22] Elapsed: 19:44, vertices: 1340, facets final: 247, pending: 122233
-I 1189.45] Elapsed: 19:49, vertices: 1351, facets final: 252, pending: 121171
-I 1195.33] Elapsed: 19:55, vertices: 1362, facets final: 256, pending: 121275
-I 1200.61] Elapsed: 20:01, vertices: 1375, facets final: 265, pending: 120687
-I 1206.08] Elapsed: 20:06, vertices: 1386, facets final: 273, pending: 119498
-I 1211.92] Elapsed: 20:12, vertices: 1397, facets final: 280, pending: 118840
-I 1214.08] recalculating facets...
-recalculate_facet: numerical instability at facet 139944, coord 4 (2.24562e-06)
-recalculate_facet: numerical instability at facet 139944, coord 5 (-1.12205e-06)
-recalculate_facet: numerical instability at facet 139946, coord 4 (2.12197e-06)
-recalculate_facet: numerical instability at facet 139946, coord 5 (-1.12205e-06)
-recalculate_facet: numerical instability at facet 139951, coord 5 (1.03756e-06)
-recalculate_facet: numerical instability at facet 139953, coord 4 (2.04198e-06)
-recalculate_facet: numerical instability at facet 139953, coord 5 (-1.07139e-06)
-recalculate_facet: numerical instability at facet 139955, coord 4 (-1.07535e-06)
-recalculate_facet: numerical instability at facet 139955, coord 5 (1.04621e-06)
-recalculate_facet: numerical instability at facet 139957, coord 5 (1.0965e-06)
-recalculate_facet: numerical instability at facet 139967, coord 5 (1.04747e-06)
-recalculate_facet: numerical instability at facet 139975, coord 5 (1.04228e-06)
-recalculate_facet: numerical instability at facet 139977, coord 5 (1.04585e-06)
-recalculate_facet: numerical instability at facet 140527, coord 4 (-1.09426e-06)
-recalculate_facet: numerical instability at facet 140527, coord 5 (1.11851e-06)
-recalculate_facet: numerical instability at facet 140539, coord 4 (-1.03465e-06)
-recalculate_facet: numerical instability at facet 140539, coord 5 (1.07299e-06)
-recalculate_facet: numerical instability at facet 140544, coord 4 (-1.01282e-06)
-recalculate_facet: numerical instability at facet 140544, coord 5 (1.11812e-06)
-recalculate_facet: numerical instability at facet 140548, coord 4 (1.82527e-06)
-recalculate_facet: numerical instability at facet 140548, coord 5 (-1.0439e-06)
-recalculate_facet: numerical instability at facet 140562, coord 4 (2.02239e-06)
-recalculate_facet: numerical instability at facet 141132, coord 4 (1.92227e-06)
-recalculate_facet: numerical instability at facet 141132, coord 5 (-1.07139e-06)
-recalculate_facet: numerical instability at facet 141139, coord 5 (1.07257e-06)
-recalculate_facet: numerical instability at facet 141146, coord 4 (2.06544e-06)
-recalculate_facet: numerical instability at facet 141150, coord 4 (2.10985e-06)
-recalculate_facet: numerical instability at facet 141150, coord 5 (-1.01598e-06)
-recalculate_facet: numerical instability at facet 141158, coord 4 (2.18436e-06)
-recalculate_facet: numerical instability at facet 141158, coord 5 (-1.09373e-06)
-recalculate_facet: numerical instability at facet 141166, coord 4 (1.94266e-06)
-recalculate_facet: numerical instability at facet 141166, coord 5 (-1.0439e-06)
-I 1217.58] Elapsed: 20:18, vertices: 1405, facets final: 282, pending: 117924
-I 1223.11] Elapsed: 20:23, vertices: 1416, facets final: 283, pending: 117517
-I 1228.26] Elapsed: 20:28, vertices: 1426, facets final: 290, pending: 116580
-I 1233.85] Elapsed: 20:34, vertices: 1440, facets final: 297, pending: 115709
-I 1239.05] Elapsed: 20:39, vertices: 1452, facets final: 311, pending: 115406
-I 1244.07] Elapsed: 20:44, vertices: 1463, facets final: 312, pending: 114879
-I 1249.07] Elapsed: 20:49, vertices: 1475, facets final: 314, pending: 113760
-I 1254.16] Elapsed: 20:54, vertices: 1485, facets final: 319, pending: 113100
-I 1258.86] recalculating facets...
-I 1259.55] Elapsed: 21:00, vertices: 1501, facets final: 335, pending: 112368
-I 1264.84] Elapsed: 21:05, vertices: 1512, facets final: 344, pending: 111109
-I 1270.13] Elapsed: 21:10, vertices: 1522, facets final: 353, pending: 110228
-I 1275.89] Elapsed: 21:16, vertices: 1531, facets final: 361, pending: 108267
-I 1281.16] Elapsed: 21:21, vertices: 1539, facets final: 363, pending: 108042
-I 1286.16] Elapsed: 21:26, vertices: 1550, facets final: 369, pending: 108386
-I 1291.32] Elapsed: 21:31, vertices: 1564, facets final: 377, pending: 107776
-I 1298.05] Elapsed: 21:38, vertices: 1574, facets final: 380, pending: 106523
-I 1303.10] Elapsed: 21:43, vertices: 1590, facets final: 391, pending: 105298
-I 1308.23] Elapsed: 21:48, vertices: 1598, facets final: 395, pending: 105120
-I 1309.10] recalculating facets...
-I 1313.38] Elapsed: 21:53, vertices: 1615, facets final: 404, pending: 104885
-I 1319.64] Elapsed: 22:00, vertices: 1630, facets final: 420, pending: 104634
-I 1325.07] Elapsed: 22:05, vertices: 1645, facets final: 435, pending: 103745
-I 1330.07] Elapsed: 22:10, vertices: 1656, facets final: 442, pending: 103355
-I 1335.71] Elapsed: 22:16, vertices: 1667, facets final: 450, pending: 102410
-I 1341.16] Elapsed: 22:21, vertices: 1682, facets final: 474, pending: 101968
-I 1347.45] Elapsed: 22:27, vertices: 1697, facets final: 478, pending: 100736
-I 1348.28] recalculating facets...
-I 1352.69] Elapsed: 22:33, vertices: 1716, facets final: 489, pending: 99493
-I 1358.24] Elapsed: 22:38, vertices: 1730, facets final: 498, pending: 98499
-I 1363.35] Elapsed: 22:43, vertices: 1745, facets final: 506, pending: 97394
-I 1368.51] Elapsed: 22:49, vertices: 1764, facets final: 520, pending: 97917
-I 1373.54] Elapsed: 22:54, vertices: 1779, facets final: 530, pending: 97023
-I 1378.76] Elapsed: 22:59, vertices: 1792, facets final: 539, pending: 96109
-I 1381.21] recalculating facets...
-recalculate_facet: numerical instability at facet 148953, coord 3 (-1.21977e-06)
-recalculate_facet: numerical instability at facet 148953, coord 5 (1.29347e-06)
-recalculate_facet: numerical instability at facet 148954, coord 3 (1.33101e-06)
-recalculate_facet: numerical instability at facet 148954, coord 4 (-1.06641e-06)
-recalculate_facet: numerical instability at facet 148955, coord 3 (-1.04474e-06)
-recalculate_facet: numerical instability at facet 148955, coord 5 (1.31393e-06)
-recalculate_facet: numerical instability at facet 148956, coord 3 (1.48525e-06)
-recalculate_facet: numerical instability at facet 148956, coord 4 (-1.29491e-06)
-recalculate_facet: numerical instability at facet 148961, coord 3 (-1.21977e-06)
-recalculate_facet: numerical instability at facet 148961, coord 5 (1.09417e-06)
-recalculate_facet: numerical instability at facet 149044, coord 3 (1.10308e-06)
-recalculate_facet: numerical instability at facet 149139, coord 3 (1.48525e-06)
-recalculate_facet: numerical instability at facet 149139, coord 4 (-1.29491e-06)
-recalculate_facet: numerical instability at facet 149140, coord 3 (-1.16883e-06)
-recalculate_facet: numerical instability at facet 149140, coord 5 (1.31393e-06)
-I 1383.95] Elapsed: 23:04, vertices: 1811, facets final: 552, pending: 95455
-I 1389.23] Elapsed: 23:09, vertices: 1820, facets final: 558, pending: 95252
-I 1394.62] Elapsed: 23:15, vertices: 1831, facets final: 563, pending: 95570
-I 1399.83] Elapsed: 23:20, vertices: 1847, facets final: 581, pending: 95609
-I 1405.45] Elapsed: 23:25, vertices: 1864, facets final: 592, pending: 95430
-I 1410.94] Elapsed: 23:31, vertices: 1879, facets final: 606, pending: 95440
-I 1416.63] Elapsed: 23:37, vertices: 1893, facets final: 615, pending: 95152
-I 1417.73] recalculating facets...
-recalculate_facet: numerical instability at facet 101877, coord 4 (-2.06781e-06)
-recalculate_facet: numerical instability at facet 101877, coord 5 (1.59017e-06)
-recalculate_facet: numerical instability at facet 101877, coord 6 (1.13358e-06)
-recalculate_facet: numerical instability at facet 101877, coord 7 (-1.13822e-06)
-recalculate_facet: numerical instability at facet 102172, coord 4 (-1.15156e-06)
-recalculate_facet: numerical instability at facet 102173, coord 3 (-1.47468e-06)
-I 1422.82] Elapsed: 23:43, vertices: 1909, facets final: 629, pending: 94696
-I 1428.33] Elapsed: 23:48, vertices: 1919, facets final: 631, pending: 93997
-I 1433.36] Elapsed: 23:53, vertices: 1933, facets final: 641, pending: 93348
-I 1438.64] Elapsed: 23:59, vertices: 1951, facets final: 652, pending: 92928
-I 1443.72] Elapsed: 24:04, vertices: 1968, facets final: 664, pending: 93546
-I 1448.77] Elapsed: 24:09, vertices: 1982, facets final: 682, pending: 92844
-I 1454.10] Elapsed: 24:14, vertices: 1995, facets final: 696, pending: 92997
-I 1455.34] recalculating facets...
-I 1459.24] Elapsed: 24:19, vertices: 2016, facets final: 701, pending: 92322
-I 1464.49] Elapsed: 24:24, vertices: 2033, facets final: 713, pending: 91867
-I 1469.49] Elapsed: 24:29, vertices: 2055, facets final: 730, pending: 91298
-I 1474.49] Elapsed: 24:34, vertices: 2075, facets final: 749, pending: 90984
-I 1480.02] Elapsed: 24:40, vertices: 2095, facets final: 772, pending: 91140
-I 1481.22] recalculating facets...
-recalculate_facet: numerical instability at facet 135076, coord 3 (1.01265e-06)
-I 1485.28] Elapsed: 24:45, vertices: 2115, facets final: 797, pending: 89983
-I 1490.76] Elapsed: 24:51, vertices: 2134, facets final: 817, pending: 89551
-I 1496.01] Elapsed: 24:56, vertices: 2156, facets final: 835, pending: 88884
-I 1501.03] Elapsed: 25:01, vertices: 2175, facets final: 861, pending: 88289
-I 1506.48] Elapsed: 25:06, vertices: 2193, facets final: 884, pending: 87717
-I 1508.49] recalculating facets...
-I 1511.58] Elapsed: 25:12, vertices: 2213, facets final: 908, pending: 86827
-I 1516.97] Elapsed: 25:17, vertices: 2235, facets final: 944, pending: 86176
-I 1522.07] Elapsed: 25:22, vertices: 2263, facets final: 980, pending: 85565
-I 1527.10] Elapsed: 25:27, vertices: 2284, facets final: 1001, pending: 85310
-I 1531.48] recalculating facets...
-I 1532.10] Elapsed: 25:32, vertices: 2302, facets final: 1032, pending: 84402
-I 1537.26] Elapsed: 25:37, vertices: 2332, facets final: 1054, pending: 83801
-I 1542.35] Elapsed: 25:42, vertices: 2359, facets final: 1076, pending: 82853
-I 1547.46] Elapsed: 25:47, vertices: 2383, facets final: 1102, pending: 82360
-I 1550.77] recalculating facets...
-I 1552.50] Elapsed: 25:53, vertices: 2413, facets final: 1122, pending: 81656
-I 1557.50] Elapsed: 25:58, vertices: 2439, facets final: 1159, pending: 81683
-I 1562.67] Elapsed: 26:03, vertices: 2462, facets final: 1192, pending: 81301
-I 1567.90] Elapsed: 26:08, vertices: 2484, facets final: 1212, pending: 80354
-I 1570.55] recalculating facets...
-I 1573.65] Elapsed: 26:14, vertices: 2513, facets final: 1253, pending: 79347
-I 1578.75] Elapsed: 26:19, vertices: 2536, facets final: 1290, pending: 78738
-I 1583.98] Elapsed: 26:24, vertices: 2559, facets final: 1310, pending: 77736
-I 1589.38] Elapsed: 26:29, vertices: 2595, facets final: 1385, pending: 76319
-I 1590.50] recalculating facets...
-I 1594.47] Elapsed: 26:34, vertices: 2620, facets final: 1424, pending: 75177
-I 1599.47] Elapsed: 26:39, vertices: 2655, facets final: 1485, pending: 73856
-I 1604.63] Elapsed: 26:45, vertices: 2685, facets final: 1533, pending: 72717
-I 1607.09] recalculating facets...
-I 1609.68] Elapsed: 26:50, vertices: 2720, facets final: 1608, pending: 71598
-I 1614.70] Elapsed: 26:55, vertices: 2756, facets final: 1675, pending: 70956
-I 1619.79] Elapsed: 27:00, vertices: 2795, facets final: 1768, pending: 69674
-I 1620.16] recalculating facets...
-I 1624.81] Elapsed: 27:05, vertices: 2839, facets final: 1857, pending: 68552
-I 1629.82] Elapsed: 27:10, vertices: 2874, facets final: 1914, pending: 67793
-I 1633.79] recalculating facets...
-I 1634.91] Elapsed: 27:15, vertices: 2911, facets final: 2026, pending: 66484
-I 1639.99] Elapsed: 27:20, vertices: 2957, facets final: 2138, pending: 65285
-I 1644.08] recalculating facets...
-I 1645.03] Elapsed: 27:25, vertices: 3006, facets final: 2236, pending: 64743
-I 1650.04] Elapsed: 27:30, vertices: 3060, facets final: 2380, pending: 63308
-I 1653.94] recalculating facets...
-I 1655.10] Elapsed: 27:35, vertices: 3109, facets final: 2551, pending: 62133
-I 1660.14] Elapsed: 27:40, vertices: 3179, facets final: 2755, pending: 60246
-I 1661.47] recalculating facets...
-I 1665.14] Elapsed: 27:45, vertices: 3243, facets final: 2998, pending: 59052
-I 1669.38] recalculating facets...
-I 1670.18] Elapsed: 27:50, vertices: 3312, facets final: 3290, pending: 57801
-I 1675.18] Elapsed: 27:55, vertices: 3390, facets final: 3548, pending: 56671
-I 1675.67] recalculating facets...
-I 1680.18] Elapsed: 28:00, vertices: 3461, facets final: 3921, pending: 55565
-I 1682.53] recalculating facets...
-I 1685.19] Elapsed: 28:05, vertices: 3543, facets final: 4247, pending: 54276
-I 1688.36] recalculating facets...
-I 1690.22] Elapsed: 28:10, vertices: 3637, facets final: 4749, pending: 52620
-I 1692.88] recalculating facets...
-I 1695.24] Elapsed: 28:15, vertices: 3743, facets final: 5406, pending: 50914
-I 1697.80] recalculating facets...
-I 1700.24] Elapsed: 28:20, vertices: 3850, facets final: 6158, pending: 49398
-I 1702.55] recalculating facets...
-I 1705.26] Elapsed: 28:25, vertices: 3951, facets final: 7040, pending: 47663
-I 1707.40] recalculating facets...
-I 1710.26] Elapsed: 28:30, vertices: 4063, facets final: 8373, pending: 45694
-I 1711.73] recalculating facets...
-I 1715.26] Elapsed: 28:35, vertices: 4175, facets final: 10109, pending: 43393
-I 1716.44] recalculating facets...
-I 1720.26] Elapsed: 28:40, vertices: 4262, facets final: 12350, pending: 40688
-I 1722.06] recalculating facets...
-I 1725.26] Elapsed: 28:45, vertices: 4357, facets final: 14803, pending: 38234
-I 1727.81] recalculating facets...
-I 1730.28] Elapsed: 28:50, vertices: 4436, facets final: 17508, pending: 35159
-I 1733.32] recalculating facets...
-I 1735.28] Elapsed: 28:55, vertices: 4516, facets final: 20309, pending: 32080
-I 1740.28] Elapsed: 29:00, vertices: 4526, facets final: 24001, pending: 28369
-I 1745.28] Elapsed: 29:05, vertices: 4533, facets final: 27740, pending: 24626
-I 1750.28] Elapsed: 29:10, vertices: 4534, facets final: 31508, pending: 20854
-I 1755.28] Elapsed: 29:15, vertices: 4536, facets final: 35345, pending: 17015
-I 1760.28] Elapsed: 29:20, vertices: 4536, facets final: 39215, pending: 13145
-I 1765.28] Elapsed: 29:25, vertices: 4536, facets final: 43059, pending: 9301
-I 1770.28] Elapsed: 29:30, vertices: 4536, facets final: 46931, pending: 5429
-I 1775.28] Elapsed: 29:35, vertices: 4536, facets final: 50819, pending: 1541
-I 1777.27] Elapsed: 29:37, vertices: 4536, facets final: 52360, pending: 0
+I    1.62] recalculating facets...
+I    5.02] Elapsed: 5.02, vertices: 146, facets final: 37, pending: 21332, pool: 150
+I   10.05] Elapsed: 10.05, vertices: 188, facets final: 42, pending: 30014, pool: 150
+I   11.87] recalculating facets...
+I   15.05] Elapsed: 15.05, vertices: 222, facets final: 44, pending: 35129, pool: 149
+I   20.11] Elapsed: 20.11, vertices: 254, facets final: 48, pending: 38737, pool: 150
+I   25.12] Elapsed: 25.12, vertices: 283, facets final: 51, pending: 41873, pool: 150
+I   28.31] recalculating facets...
+I   30.15] Elapsed: 30.15, vertices: 310, facets final: 52, pending: 46302, pool: 150
+I   35.17] Elapsed: 35.17, vertices: 330, facets final: 57, pending: 48564, pool: 150
+I   40.28] Elapsed: 40.28, vertices: 353, facets final: 59, pending: 51752, pool: 150
+I   45.63] Elapsed: 45.63, vertices: 375, facets final: 63, pending: 55209, pool: 150
+I   50.65] Elapsed: 50.65, vertices: 397, facets final: 66, pending: 57600, pool: 150
+I   51.47] recalculating facets...
+recalculate_facet: numerical instability at facet 16385, coord 0 (-1.13352e-06)
+recalculate_facet: numerical instability at facet 16385, coord 1 (1.38579e-06)
+recalculate_facet: numerical instability at facet 16385, coord 2 (1.73039e-06)
+recalculate_facet: numerical instability at facet 16385, coord 4 (-1.46383e-06)
+recalculate_facet: numerical instability at facet 16385, coord 9 (-1.14856e-06)
+recalculate_facet: numerical instability at facet 57716, coord 0 (1.46209e-06)
+recalculate_facet: numerical instability at facet 57716, coord 1 (-1.97853e-06)
+recalculate_facet: numerical instability at facet 57716, coord 2 (-1.63647e-06)
+recalculate_facet: numerical instability at facet 57716, coord 4 (1.22882e-06)
+recalculate_facet: numerical instability at facet 57716, coord 10 (1.52484e-06)
+recalculate_facet: numerical instability at facet 57718, coord 0 (1.06534e-06)
+recalculate_facet: numerical instability at facet 57718, coord 1 (-1.73131e-06)
+recalculate_facet: numerical instability at facet 57718, coord 5 (1.4619e-06)
+recalculate_facet: numerical instability at facet 57718, coord 9 (1.06534e-06)
+recalculate_facet: numerical instability at facet 57718, coord 10 (2.18557e-06)
+I   55.70] Elapsed: 55.70, vertices: 416, facets final: 67, pending: 58451, pool: 150
+I   60.87] Elapsed: 1:01, vertices: 438, facets final: 68, pending: 58713, pool: 150
+I   66.02] Elapsed: 1:06, vertices: 461, facets final: 71, pending: 59603, pool: 150
+I   71.06] Elapsed: 1:11, vertices: 480, facets final: 76, pending: 60152, pool: 150
+I   76.05] recalculating facets...
+recalculate_facet: numerical instability at facet 13346, coord 1 (-1.45641e-06)
+recalculate_facet: numerical instability at facet 13346, coord 4 (-1.26002e-06)
+recalculate_facet: numerical instability at facet 13346, coord 9 (1.41892e-06)
+recalculate_facet: numerical instability at facet 13346, coord 10 (2.46853e-06)
+recalculate_facet: numerical instability at facet 15976, coord 2 (1.414e-06)
+recalculate_facet: numerical instability at facet 15976, coord 4 (-2.10258e-06)
+recalculate_facet: numerical instability at facet 15976, coord 5 (2.31057e-06)
+recalculate_facet: numerical instability at facet 16356, coord 2 (1.38843e-06)
+recalculate_facet: numerical instability at facet 16356, coord 4 (-1.93769e-06)
+recalculate_facet: numerical instability at facet 16356, coord 5 (2.03989e-06)
+recalculate_facet: numerical instability at facet 16357, coord 2 (1.39763e-06)
+recalculate_facet: numerical instability at facet 16357, coord 4 (-1.95839e-06)
+recalculate_facet: numerical instability at facet 16357, coord 5 (2.06438e-06)
+recalculate_facet: numerical instability at facet 59090, coord 4 (1.13024e-06)
+I   76.12] Elapsed: 1:16, vertices: 500, facets final: 84, pending: 61865, pool: 150
+I   81.12] Elapsed: 1:21, vertices: 518, facets final: 88, pending: 62516, pool: 150
+I   86.20] Elapsed: 1:26, vertices: 537, facets final: 92, pending: 61772, pool: 150
+I   91.22] Elapsed: 1:31, vertices: 554, facets final: 95, pending: 61899, pool: 150
+I   96.38] Elapsed: 1:36, vertices: 576, facets final: 107, pending: 62256, pool: 150
+I  101.50] Elapsed: 1:42, vertices: 594, facets final: 112, pending: 61227, pool: 150
+I  103.46] recalculating facets...
+recalculate_facet: numerical instability at facet 43870, coord 9 (1.10365e-06)
+recalculate_facet: numerical instability at facet 52335, coord 3 (1.10847e-06)
+recalculate_facet: numerical instability at facet 52335, coord 10 (-1.16317e-06)
+recalculate_facet: numerical instability at facet 52481, coord 1 (1.29968e-06)
+recalculate_facet: numerical instability at facet 52481, coord 2 (1.42245e-06)
+recalculate_facet: numerical instability at facet 52481, coord 3 (1.05815e-06)
+recalculate_facet: numerical instability at facet 52481, coord 10 (-1.40716e-06)
+recalculate_facet: numerical instability at facet 57512, coord 4 (-1.12594e-06)
+recalculate_facet: numerical instability at facet 57805, coord 4 (-1.02968e-06)
+recalculate_facet: numerical instability at facet 57805, coord 9 (1.4694e-06)
+recalculate_facet: numerical instability at facet 58559, coord 9 (-1.04531e-06)
+I  106.69] Elapsed: 1:47, vertices: 615, facets final: 122, pending: 61511, pool: 150
+I  111.75] Elapsed: 1:52, vertices: 636, facets final: 123, pending: 62300, pool: 150
+I  116.76] Elapsed: 1:57, vertices: 659, facets final: 134, pending: 61979, pool: 150
+I  121.76] Elapsed: 2:02, vertices: 680, facets final: 144, pending: 62200, pool: 150
+I  126.36] recalculating facets...
+recalculate_facet: numerical instability at facet 28282, coord 2 (1.29693e-06)
+recalculate_facet: numerical instability at facet 28282, coord 3 (-5.56566e-06)
+recalculate_facet: numerical instability at facet 28282, coord 4 (1.67749e-06)
+recalculate_facet: numerical instability at facet 28282, coord 5 (1.44257e-06)
+recalculate_facet: numerical instability at facet 28282, coord 6 (1.71786e-06)
+recalculate_facet: numerical instability at facet 28282, coord 10 (2.2552e-06)
+recalculate_facet: numerical instability at facet 28913, coord 0 (-1.07299e-05)
+recalculate_facet: numerical instability at facet 28913, coord 1 (1.35398e-05)
+recalculate_facet: numerical instability at facet 28913, coord 2 (1.42299e-05)
+recalculate_facet: numerical instability at facet 28913, coord 4 (-1.13251e-05)
+recalculate_facet: numerical instability at facet 28913, coord 5 (-5.35715e-06)
+recalculate_facet: numerical instability at facet 28913, coord 10 (-9.73729e-06)
+recalculate_facet: numerical instability at facet 29126, coord 1 (-1.36303e-06)
+recalculate_facet: numerical instability at facet 29126, coord 3 (-4.53551e-06)
+recalculate_facet: numerical instability at facet 29126, coord 5 (3.61657e-06)
+recalculate_facet: numerical instability at facet 29126, coord 6 (1.69392e-06)
+recalculate_facet: numerical instability at facet 29126, coord 10 (3.42227e-06)
+recalculate_facet: numerical instability at facet 29164, coord 0 (5.0252e-06)
+recalculate_facet: numerical instability at facet 29164, coord 1 (-5.89854e-06)
+recalculate_facet: numerical instability at facet 29164, coord 4 (-4.31277e-06)
+recalculate_facet: numerical instability at facet 29164, coord 5 (3.61657e-06)
+recalculate_facet: numerical instability at facet 29164, coord 6 (1.69392e-06)
+recalculate_facet: numerical instability at facet 29164, coord 10 (3.42227e-06)
+recalculate_facet: numerical instability at facet 29194, coord 2 (1.29693e-06)
+recalculate_facet: numerical instability at facet 29194, coord 3 (-5.56566e-06)
+recalculate_facet: numerical instability at facet 29194, coord 4 (1.67749e-06)
+recalculate_facet: numerical instability at facet 29194, coord 5 (3.79082e-06)
+recalculate_facet: numerical instability at facet 29194, coord 6 (1.71786e-06)
+recalculate_facet: numerical instability at facet 29194, coord 9 (-2.34826e-06)
+recalculate_facet: numerical instability at facet 29194, coord 10 (2.2552e-06)
+recalculate_facet: numerical instability at facet 32952, coord 0 (-2.16355e-05)
+recalculate_facet: numerical instability at facet 32952, coord 1 (2.91792e-05)
+recalculate_facet: numerical instability at facet 32952, coord 2 (2.45417e-05)
+recalculate_facet: numerical instability at facet 32952, coord 3 (-6.43934e-06)
+recalculate_facet: numerical instability at facet 32952, coord 4 (-1.91296e-05)
+recalculate_facet: numerical instability at facet 32952, coord 5 (-1.06487e-05)
+recalculate_facet: numerical instability at facet 32952, coord 6 (4.13229e-06)
+recalculate_facet: numerical instability at facet 32952, coord 10 (-2.21407e-05)
+recalculate_facet: numerical instability at facet 33054, coord 0 (-2.74147e-05)
+recalculate_facet: numerical instability at facet 33054, coord 1 (3.71875e-05)
+recalculate_facet: numerical instability at facet 33054, coord 2 (3.04964e-05)
+recalculate_facet: numerical instability at facet 33054, coord 3 (-7.26224e-06)
+recalculate_facet: numerical instability at facet 33054, coord 4 (-2.36811e-05)
+recalculate_facet: numerical instability at facet 33054, coord 5 (-1.46284e-05)
+recalculate_facet: numerical instability at facet 33054, coord 6 (5.30263e-06)
+recalculate_facet: numerical instability at facet 33054, coord 10 (-2.88032e-05)
+recalculate_facet: numerical instability at facet 40413, coord 10 (-1.06744e-06)
+recalculate_facet: numerical instability at facet 43879, coord 0 (-1.89668e-06)
+recalculate_facet: numerical instability at facet 43879, coord 1 (1.99907e-06)
+recalculate_facet: numerical instability at facet 43879, coord 2 (2.81338e-06)
+recalculate_facet: numerical instability at facet 43879, coord 4 (-2.68602e-06)
+recalculate_facet: numerical instability at facet 43879, coord 5 (1.83942e-06)
+recalculate_facet: numerical instability at facet 43879, coord 9 (-1.9538e-06)
+recalculate_facet: numerical instability at facet 43923, coord 0 (-1.89668e-06)
+recalculate_facet: numerical instability at facet 43923, coord 1 (1.99907e-06)
+recalculate_facet: numerical instability at facet 43923, coord 2 (2.81338e-06)
+recalculate_facet: numerical instability at facet 43923, coord 4 (-2.68602e-06)
+recalculate_facet: numerical instability at facet 46081, coord 2 (1.16116e-06)
+recalculate_facet: numerical instability at facet 46081, coord 3 (1.36368e-06)
+recalculate_facet: numerical instability at facet 46081, coord 10 (-1.33353e-06)
+recalculate_facet: numerical instability at facet 46455, coord 2 (1.04557e-06)
+recalculate_facet: numerical instability at facet 46455, coord 3 (1.27078e-06)
+recalculate_facet: numerical instability at facet 46455, coord 10 (-1.39971e-06)
+recalculate_facet: numerical instability at facet 57109, coord 9 (1.23013e-06)
+recalculate_facet: numerical instability at facet 57109, coord 10 (1.08285e-06)
+I  126.84] Elapsed: 2:07, vertices: 702, facets final: 152, pending: 61848, pool: 150
+I  131.86] Elapsed: 2:12, vertices: 727, facets final: 164, pending: 61826, pool: 150
+I  136.90] Elapsed: 2:17, vertices: 751, facets final: 170, pending: 62384, pool: 150
+I  141.94] Elapsed: 2:22, vertices: 775, facets final: 177, pending: 62119, pool: 150
+I  146.98] Elapsed: 2:27, vertices: 798, facets final: 182, pending: 63024, pool: 150
+I  147.43] recalculating facets...
+recalculate_facet: numerical instability at facet 20701, coord 2 (2.71233e-06)
+recalculate_facet: numerical instability at facet 20701, coord 3 (-4.10282e-06)
+recalculate_facet: numerical instability at facet 20701, coord 4 (-4.42403e-06)
+recalculate_facet: numerical instability at facet 20701, coord 5 (6.46678e-06)
+recalculate_facet: numerical instability at facet 20701, coord 10 (2.33547e-06)
+I  152.03] Elapsed: 2:32, vertices: 820, facets final: 191, pending: 63084, pool: 150
+I  157.11] Elapsed: 2:37, vertices: 846, facets final: 194, pending: 62410, pool: 150
+I  162.19] Elapsed: 2:42, vertices: 872, facets final: 199, pending: 62279, pool: 150
+I  167.21] Elapsed: 2:47, vertices: 898, facets final: 214, pending: 61821, pool: 150
+I  167.70] recalculating facets...
+I  172.23] Elapsed: 2:52, vertices: 922, facets final: 225, pending: 62442, pool: 150
+I  177.26] Elapsed: 2:57, vertices: 947, facets final: 239, pending: 62749, pool: 150
+I  182.27] Elapsed: 3:02, vertices: 973, facets final: 254, pending: 62696, pool: 149
+I  187.26] recalculating facets...
+recalculate_facet: numerical instability at facet 64588, coord 0 (-1.91597e-06)
+recalculate_facet: numerical instability at facet 64588, coord 1 (2.71864e-06)
+recalculate_facet: numerical instability at facet 64588, coord 2 (2.50071e-06)
+recalculate_facet: numerical instability at facet 64588, coord 3 (1.71698e-06)
+recalculate_facet: numerical instability at facet 64588, coord 4 (-1.59067e-06)
+recalculate_facet: numerical instability at facet 64588, coord 9 (-1.92318e-06)
+recalculate_facet: numerical instability at facet 64588, coord 10 (-3.00921e-06)
+I  187.35] Elapsed: 3:07, vertices: 1000, facets final: 266, pending: 63054, pool: 150
+I  192.40] Elapsed: 3:12, vertices: 1025, facets final: 279, pending: 63392, pool: 150
+I  197.43] Elapsed: 3:17, vertices: 1049, facets final: 289, pending: 63106, pool: 150
+I  202.46] Elapsed: 3:22, vertices: 1072, facets final: 299, pending: 63082, pool: 150
+I  207.56] Elapsed: 3:28, vertices: 1097, facets final: 320, pending: 62848, pool: 150
+I  208.07] recalculating facets...
+I  212.56] Elapsed: 3:33, vertices: 1120, facets final: 330, pending: 63177, pool: 150
+I  217.62] Elapsed: 3:38, vertices: 1147, facets final: 341, pending: 62875, pool: 150
+I  222.69] Elapsed: 3:43, vertices: 1173, facets final: 359, pending: 63518, pool: 150
+I  227.72] Elapsed: 3:48, vertices: 1199, facets final: 372, pending: 63248, pool: 147
+I  227.97] recalculating facets...
+I  232.81] Elapsed: 3:53, vertices: 1222, facets final: 376, pending: 62739, pool: 150
+I  237.82] Elapsed: 3:58, vertices: 1248, facets final: 395, pending: 62433, pool: 150
+I  242.83] Elapsed: 4:03, vertices: 1275, facets final: 411, pending: 62326, pool: 150
+I  247.59] recalculating facets...
+I  247.84] Elapsed: 4:08, vertices: 1301, facets final: 428, pending: 62094, pool: 150
+I  252.89] Elapsed: 4:13, vertices: 1325, facets final: 436, pending: 62002, pool: 150
+I  257.92] Elapsed: 4:18, vertices: 1350, facets final: 451, pending: 62398, pool: 150
+I  262.94] Elapsed: 4:23, vertices: 1377, facets final: 473, pending: 62334, pool: 150
+I  267.29] recalculating facets...
+recalculate_facet: numerical instability at facet 14504, coord 10 (1.35287e-06)
+I  268.01] Elapsed: 4:28, vertices: 1403, facets final: 492, pending: 62066, pool: 150
+I  273.03] Elapsed: 4:33, vertices: 1428, facets final: 510, pending: 61019, pool: 150
+I  278.05] Elapsed: 4:38, vertices: 1452, facets final: 529, pending: 60662, pool: 150
+I  283.06] Elapsed: 4:43, vertices: 1482, facets final: 542, pending: 60308, pool: 150
+I  285.82] recalculating facets...
+I  288.08] Elapsed: 4:48, vertices: 1511, facets final: 563, pending: 59938, pool: 150
+I  293.15] Elapsed: 4:53, vertices: 1541, facets final: 576, pending: 59642, pool: 150
+I  298.22] Elapsed: 4:58, vertices: 1567, facets final: 601, pending: 59125, pool: 150
+I  303.27] Elapsed: 5:03, vertices: 1595, facets final: 623, pending: 58936, pool: 150
+I  303.95] recalculating facets...
+recalculate_facet: numerical instability at facet 64362, coord 1 (1.14402e-06)
+recalculate_facet: numerical instability at facet 64362, coord 10 (-1.45409e-06)
+I  308.31] Elapsed: 5:08, vertices: 1625, facets final: 658, pending: 58986, pool: 150
+I  313.32] Elapsed: 5:13, vertices: 1652, facets final: 673, pending: 58873, pool: 150
+I  318.33] Elapsed: 5:18, vertices: 1679, facets final: 691, pending: 58694, pool: 150
+I  322.40] recalculating facets...
+I  323.37] Elapsed: 5:23, vertices: 1704, facets final: 714, pending: 58158, pool: 150
+I  328.45] Elapsed: 5:28, vertices: 1733, facets final: 757, pending: 57756, pool: 150
+I  333.47] Elapsed: 5:33, vertices: 1766, facets final: 789, pending: 57497, pool: 150
+I  338.54] Elapsed: 5:39, vertices: 1797, facets final: 816, pending: 56811, pool: 150
+I  339.02] recalculating facets...
+I  343.59] Elapsed: 5:44, vertices: 1831, facets final: 861, pending: 56544, pool: 150
+I  348.62] Elapsed: 5:49, vertices: 1862, facets final: 896, pending: 56254, pool: 150
+I  353.65] Elapsed: 5:54, vertices: 1895, facets final: 932, pending: 55960, pool: 150
+I  354.38] recalculating facets...
+I  358.69] Elapsed: 5:59, vertices: 1928, facets final: 974, pending: 55562, pool: 150
+I  363.69] Elapsed: 6:04, vertices: 1960, facets final: 1018, pending: 55357, pool: 149
+I  368.74] Elapsed: 6:09, vertices: 1993, facets final: 1039, pending: 54907, pool: 150
+I  369.86] recalculating facets...
+I  373.74] Elapsed: 6:14, vertices: 2024, facets final: 1076, pending: 54485, pool: 150
+I  378.80] Elapsed: 6:19, vertices: 2059, facets final: 1130, pending: 53775, pool: 150
+I  383.81] Elapsed: 6:24, vertices: 2093, facets final: 1197, pending: 53265, pool: 150
+I  384.93] recalculating facets...
+recalculate_facet: numerical instability at facet 58389, coord 0 (-2.59159e-06)
+recalculate_facet: numerical instability at facet 58389, coord 1 (1.14196e-06)
+recalculate_facet: numerical instability at facet 58389, coord 4 (2.13008e-06)
+recalculate_facet: numerical instability at facet 58389, coord 5 (-1.42404e-06)
+recalculate_facet: numerical instability at facet 58389, coord 10 (1.71283e-06)
+recalculate_facet: numerical instability at facet 58390, coord 0 (2.44312e-06)
+recalculate_facet: numerical instability at facet 58390, coord 1 (5.11086e-06)
+recalculate_facet: numerical instability at facet 58390, coord 2 (-4.53504e-06)
+recalculate_facet: numerical instability at facet 58390, coord 4 (-2.83495e-06)
+recalculate_facet: numerical instability at facet 58390, coord 10 (-1.20144e-05)
+recalculate_facet: numerical instability at facet 58392, coord 10 (1.20476e-06)
+recalculate_facet: numerical instability at facet 58394, coord 0 (-1.27598e-06)
+recalculate_facet: numerical instability at facet 58394, coord 1 (-1.85627e-06)
+recalculate_facet: numerical instability at facet 58394, coord 2 (1.82476e-06)
+recalculate_facet: numerical instability at facet 58394, coord 4 (1.71138e-06)
+recalculate_facet: numerical instability at facet 58394, coord 10 (4.7868e-06)
+recalculate_facet: numerical instability at facet 58395, coord 0 (-1.57954e-06)
+recalculate_facet: numerical instability at facet 58395, coord 1 (-2.269e-06)
+recalculate_facet: numerical instability at facet 58395, coord 2 (2.2709e-06)
+recalculate_facet: numerical instability at facet 58395, coord 4 (2.27984e-06)
+recalculate_facet: numerical instability at facet 58395, coord 5 (-1.15802e-06)
+recalculate_facet: numerical instability at facet 58395, coord 10 (5.81599e-06)
+recalculate_facet: numerical instability at facet 58415, coord 1 (6.28201e-06)
+recalculate_facet: numerical instability at facet 58415, coord 2 (-5.02135e-06)
+recalculate_facet: numerical instability at facet 58415, coord 3 (-1.41084e-06)
+recalculate_facet: numerical instability at facet 58415, coord 4 (-1.4728e-06)
+recalculate_facet: numerical instability at facet 58415, coord 10 (-1.128e-05)
+recalculate_facet: numerical instability at facet 58416, coord 2 (1.11705e-06)
+recalculate_facet: numerical instability at facet 58416, coord 3 (2.07213e-06)
+recalculate_facet: numerical instability at facet 58416, coord 5 (-1.33377e-06)
+recalculate_facet: numerical instability at facet 58416, coord 10 (1.46088e-06)
+recalculate_facet: numerical instability at facet 58419, coord 1 (-1.95645e-06)
+recalculate_facet: numerical instability at facet 58419, coord 2 (1.55995e-06)
+recalculate_facet: numerical instability at facet 58419, coord 4 (1.48294e-06)
+recalculate_facet: numerical instability at facet 58419, coord 5 (-1.42089e-06)
+recalculate_facet: numerical instability at facet 58419, coord 10 (3.32009e-06)
+recalculate_facet: numerical instability at facet 58420, coord 1 (-2.61397e-06)
+recalculate_facet: numerical instability at facet 58420, coord 2 (1.95442e-06)
+recalculate_facet: numerical instability at facet 58420, coord 10 (4.5421e-06)
+recalculate_facet: numerical instability at facet 58424, coord 1 (-3.03377e-06)
+recalculate_facet: numerical instability at facet 58424, coord 2 (2.56505e-06)
+recalculate_facet: numerical instability at facet 58424, coord 4 (1.40181e-06)
+recalculate_facet: numerical instability at facet 58424, coord 5 (-1.0588e-06)
+recalculate_facet: numerical instability at facet 58424, coord 10 (5.40829e-06)
+recalculate_facet: numerical instability at facet 58425, coord 10 (1.13559e-06)
+recalculate_facet: numerical instability at facet 58451, coord 1 (-1.20944e-06)
+recalculate_facet: numerical instability at facet 58451, coord 3 (2.3514e-06)
+recalculate_facet: numerical instability at facet 58451, coord 5 (-1.42404e-06)
+recalculate_facet: numerical instability at facet 58451, coord 10 (1.71283e-06)
+recalculate_facet: numerical instability at facet 58452, coord 1 (7.04289e-06)
+recalculate_facet: numerical instability at facet 58452, coord 2 (-4.53504e-06)
+recalculate_facet: numerical instability at facet 58452, coord 3 (-1.93203e-06)
+recalculate_facet: numerical instability at facet 58452, coord 10 (-1.20144e-05)
+recalculate_facet: numerical instability at facet 58454, coord 1 (-3.46596e-06)
+recalculate_facet: numerical instability at facet 58454, coord 2 (2.26897e-06)
+recalculate_facet: numerical instability at facet 58454, coord 3 (1.19888e-06)
+recalculate_facet: numerical instability at facet 58454, coord 4 (1.07902e-06)
+recalculate_facet: numerical instability at facet 58454, coord 5 (-1.15704e-06)
+recalculate_facet: numerical instability at facet 58454, coord 10 (5.81106e-06)
+recalculate_facet: numerical instability at facet 58455, coord 10 (1.20476e-06)
+recalculate_facet: numerical instability at facet 58457, coord 1 (-2.85483e-06)
+recalculate_facet: numerical instability at facet 58457, coord 2 (1.82476e-06)
+recalculate_facet: numerical instability at facet 58457, coord 10 (4.7868e-06)
+I  388.83] Elapsed: 6:29, vertices: 2125, facets final: 1262, pending: 52584, pool: 150
+I  393.86] Elapsed: 6:34, vertices: 2159, facets final: 1313, pending: 52003, pool: 150
+I  398.89] Elapsed: 6:39, vertices: 2194, facets final: 1349, pending: 51659, pool: 150
+I  399.67] recalculating facets...
+I  403.90] Elapsed: 6:44, vertices: 2235, facets final: 1407, pending: 51053, pool: 150
+I  408.91] Elapsed: 6:49, vertices: 2275, facets final: 1466, pending: 50713, pool: 149
+I  411.98] recalculating facets...
+I  413.94] Elapsed: 6:54, vertices: 2314, facets final: 1537, pending: 49949, pool: 150
+I  418.98] Elapsed: 6:59, vertices: 2354, facets final: 1622, pending: 49504, pool: 150
+I  424.02] Elapsed: 7:04, vertices: 2391, facets final: 1670, pending: 48947, pool: 150
+I  425.09] recalculating facets...
+I  429.02] Elapsed: 7:09, vertices: 2428, facets final: 1741, pending: 48247, pool: 150
+I  434.05] Elapsed: 7:14, vertices: 2466, facets final: 1816, pending: 47963, pool: 150
+I  438.74] recalculating facets...
+I  439.10] Elapsed: 7:19, vertices: 2501, facets final: 1887, pending: 47528, pool: 150
+I  444.14] Elapsed: 7:24, vertices: 2544, facets final: 2002, pending: 46743, pool: 150
+I  449.17] Elapsed: 7:29, vertices: 2587, facets final: 2076, pending: 46303, pool: 150
+I  450.74] recalculating facets...
+I  454.22] Elapsed: 7:34, vertices: 2628, facets final: 2177, pending: 45910, pool: 150
+I  459.26] Elapsed: 7:39, vertices: 2672, facets final: 2274, pending: 45617, pool: 150
+I  462.39] recalculating facets...
+I  464.32] Elapsed: 7:44, vertices: 2716, facets final: 2379, pending: 45320, pool: 150
+I  469.33] Elapsed: 7:49, vertices: 2757, facets final: 2485, pending: 44706, pool: 150
+I  474.37] Elapsed: 7:54, vertices: 2799, facets final: 2610, pending: 44181, pool: 150
+I  474.39] recalculating facets...
+I  479.38] Elapsed: 7:59, vertices: 2843, facets final: 2721, pending: 43554, pool: 150
+I  484.43] Elapsed: 8:04, vertices: 2884, facets final: 2870, pending: 42992, pool: 150
+I  486.18] recalculating facets...
+I  489.43] Elapsed: 8:09, vertices: 2926, facets final: 2972, pending: 42380, pool: 150
+I  494.47] Elapsed: 8:14, vertices: 2967, facets final: 3129, pending: 42237, pool: 149
+I  498.16] recalculating facets...
+I  499.50] Elapsed: 8:20, vertices: 3010, facets final: 3294, pending: 41756, pool: 150
+I  504.56] Elapsed: 8:25, vertices: 3054, facets final: 3464, pending: 41162, pool: 150
+I  508.67] recalculating facets...
+I  509.56] Elapsed: 8:30, vertices: 3109, facets final: 3713, pending: 40483, pool: 150
+I  514.56] Elapsed: 8:35, vertices: 3163, facets final: 3919, pending: 40072, pool: 150
+I  518.08] recalculating facets...
+I  519.56] Elapsed: 8:40, vertices: 3212, facets final: 4087, pending: 39578, pool: 150
+I  524.57] Elapsed: 8:45, vertices: 3261, facets final: 4345, pending: 39012, pool: 150
+I  528.51] recalculating facets...
+I  529.57] Elapsed: 8:50, vertices: 3310, facets final: 4642, pending: 38311, pool: 150
+I  534.62] Elapsed: 8:55, vertices: 3364, facets final: 4870, pending: 37495, pool: 150
+I  538.07] recalculating facets...
+I  539.65] Elapsed: 9:00, vertices: 3414, facets final: 5411, pending: 36567, pool: 150
+I  544.70] Elapsed: 9:05, vertices: 3469, facets final: 5753, pending: 35774, pool: 150
+I  547.53] recalculating facets...
+I  549.70] Elapsed: 9:10, vertices: 3522, facets final: 6206, pending: 34860, pool: 150
+I  554.70] Elapsed: 9:15, vertices: 3573, facets final: 6750, pending: 33997, pool: 148
+I  557.26] recalculating facets...
+I  559.75] Elapsed: 9:20, vertices: 3625, facets final: 7274, pending: 33154, pool: 150
+I  564.80] Elapsed: 9:25, vertices: 3676, facets final: 7966, pending: 32368, pool: 149
+I  567.16] recalculating facets...
+I  569.81] Elapsed: 9:30, vertices: 3726, facets final: 8657, pending: 31471, pool: 149
+I  574.84] Elapsed: 9:35, vertices: 3774, facets final: 9460, pending: 30607, pool: 149
+I  577.47] recalculating facets...
+I  579.84] Elapsed: 9:40, vertices: 3819, facets final: 10292, pending: 29662, pool: 147
+I  584.87] Elapsed: 9:45, vertices: 3861, facets final: 11428, pending: 28238, pool: 146
+I  589.37] recalculating facets...
+I  589.89] Elapsed: 9:50, vertices: 3903, facets final: 12661, pending: 26876, pool: 146
+I  594.89] Elapsed: 9:55, vertices: 3946, facets final: 13926, pending: 25467, pool: 142
+I  599.91] Elapsed: 10:00, vertices: 3985, facets final: 15250, pending: 24138, pool: 142
+I  601.93] recalculating facets...
+I  604.91] Elapsed: 10:05, vertices: 4020, facets final: 16984, pending: 22356, pool: 140
+I  609.93] Elapsed: 10:10, vertices: 4053, facets final: 18839, pending: 20488, pool: 137
+I  614.93] Elapsed: 10:15, vertices: 4089, facets final: 20692, pending: 18558, pool: 125
+I  616.69] recalculating facets...
+I  619.97] Elapsed: 10:20, vertices: 4116, facets final: 22943, pending: 16275, pool: 120
+I  624.97] Elapsed: 10:25, vertices: 4148, facets final: 25225, pending: 13973, pool: 105
+I  629.97] Elapsed: 10:30, vertices: 4193, facets final: 27299, pending: 11841, pool: 72
+I  630.55] recalculating facets...
+I  634.97] Elapsed: 10:35, vertices: 4238, facets final: 29760, pending: 9322, pool: 47
+I  639.97] Elapsed: 10:40, vertices: 4255, facets final: 32991, pending: 6053, pool: 46
+I  644.97] Elapsed: 10:45, vertices: 4281, facets final: 36123, pending: 2897, pool: 32
+I  649.05] recalculating facets...
+I  649.88] Elapsed: 10:50, vertices: 4346, facets final: 38970, pending: 0
 
 --------------------------------
 Problem completed
  name                    48.vlp
  output                  vlp/48.res
  rows, cols, objs        12, 2546, 10
- vertices, facets        4536, 52360
- total time              29:37
+ vertices, facets        4346, 38970
+ total time              10:50
 --------------------------------
 Statistics
 LP:
- oracle calls            56896
-   avg iterations/calls  6.95
- total oracle time       1:14
+ oracle calls            44051
+   avg iterations/calls  7.73
+ total oracle time       59.46
 Combinatorics:
- vertices added          4536
- facets probed           56896
- facets # max            157687
- memory allocated        208.99M
- instability warnings    101
+ vertices added          4346
+ facets probed           59151
+ facets # max            63894
+ memory allocated        88.71M
+ instability warnings    183
  storage expansion
-   vertices # / upto     36 / 4604
-   facets   # / upto     39 / 159740
+   vertices # / upto     35 / 4476
+   facets   # / upto     16 / 65532
  facet manipulating
-   added avg / max       382.67 / 7.96k
-   compressed            344
+   added avg / max       149.17 / 2.82k
+   compressed            243
  number of ridge tests
-   avg / max             41.59M / 711.41M
+   avg / max             6.94M / 111.86M
 --------------------------------
 Parameters with non-default values
- OracleItLimit = 200000
- OracleTimeLimit = 60
+ VertexPoolSize = 150

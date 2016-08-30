@@ -1,34 +1,35 @@
 C applying rule 14.txt for base200.txt
-I    0.26] recalculating facets...
-I    1.15] Elapsed: 1.15, vertices: 185, facets final: 908, pending: 0
+I    1.54] recalculating facets...
+I    5.00] Elapsed: 5.00, vertices: 176, facets final: 794, pending: 224, pool: 17
+I    6.08] recalculating facets...
+I    6.30] Elapsed: 6.30, vertices: 207, facets final: 1063, pending: 0
 
 --------------------------------
 Problem completed
  name                    14.vlp
  output                  vlp/14.res
  rows, cols, objs        12, 2394, 10
- vertices, facets        185, 908
- total time              1.15
+ vertices, facets        207, 1063
+ total time              6.30
 --------------------------------
 Statistics
 LP:
- oracle calls            1093
-   avg iterations/calls  4.28
- total oracle time       1.11
+ oracle calls            1430
+   avg iterations/calls  4.57
+ total oracle time       6.05
 Combinatorics:
- vertices added          185
- facets probed           1093
- facets # max            909
- memory allocated        2.18M
+ vertices added          207
+ facets probed           5066
+ facets # max            1064
+ memory allocated        1.69M
  storage expansion
    vertices # / upto     2 / 252
    facets   # / upto     1 / 4092
  facet manipulating
-   added avg / max       13.29 / 59.00
+   added avg / max       13.31 / 48.00
    compressed            0
  number of ridge tests
-   avg / max             4.06k / 22.66k
+   avg / max             3.97k / 18.50k
 --------------------------------
 Parameters with non-default values
- OracleItLimit = 200000
- OracleTimeLimit = 60
+ VertexPoolSize = 100
