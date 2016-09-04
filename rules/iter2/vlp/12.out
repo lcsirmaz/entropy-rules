@@ -1,373 +1,1096 @@
 C applying rule 12.txt for base100.txt
-I    1.21] recalculating facets...
-I    5.03] Elapsed: 5.03, vertices: 178, facets final: 19, pending: 24751
-I    6.63] recalculating facets...
-I   10.04] Elapsed: 10.04, vertices: 234, facets final: 21, pending: 31398
-I   15.05] Elapsed: 15.05, vertices: 276, facets final: 23, pending: 36267
-I   18.05] recalculating facets...
-I   20.09] Elapsed: 20.09, vertices: 315, facets final: 24, pending: 40993
-I   25.28] Elapsed: 25.28, vertices: 365, facets final: 27, pending: 43608
-I   30.56] Elapsed: 30.56, vertices: 392, facets final: 27, pending: 45059
-I   31.52] recalculating facets...
-recalculate_facet: numerical instability at facet 35098, coord 4 (1.31303e-06)
-I   35.68] Elapsed: 35.68, vertices: 435, facets final: 28, pending: 48099
-I   40.72] Elapsed: 40.72, vertices: 481, facets final: 31, pending: 50181
-I   42.84] recalculating facets...
-recalculate_facet: numerical instability at facet 4842, coord 4 (-2.06026e-06)
-recalculate_facet: numerical instability at facet 4850, coord 4 (-1.08969e-06)
-recalculate_facet: numerical instability at facet 4856, coord 0 (8.83708e-06)
-recalculate_facet: numerical instability at facet 4856, coord 2 (2.65538e-06)
-recalculate_facet: numerical instability at facet 4856, coord 3 (7.79275e-06)
-recalculate_facet: numerical instability at facet 4856, coord 4 (-1.90528e-05)
-recalculate_facet: numerical instability at facet 4856, coord 10 (-9.04936e-06)
-recalculate_facet: numerical instability at facet 4857, coord 0 (1.47462e-06)
-recalculate_facet: numerical instability at facet 4857, coord 4 (-1.6241e-06)
-recalculate_facet: numerical instability at facet 4857, coord 10 (-1.50239e-06)
-recalculate_facet: numerical instability at facet 4894, coord 4 (-1.05605e-06)
-recalculate_facet: numerical instability at facet 4895, coord 4 (-1.07597e-06)
-I   45.76] Elapsed: 45.76, vertices: 519, facets final: 33, pending: 51505
-I   50.91] Elapsed: 50.91, vertices: 554, facets final: 37, pending: 54243
-I   55.96] Elapsed: 55.96, vertices: 583, facets final: 40, pending: 55121
-I   58.97] recalculating facets...
-I   61.00] Elapsed: 1:01, vertices: 611, facets final: 46, pending: 56668
-I   66.01] Elapsed: 1:06, vertices: 644, facets final: 50, pending: 57219
-I   71.02] Elapsed: 1:11, vertices: 670, facets final: 56, pending: 56443
-I   74.96] recalculating facets...
-I   76.05] Elapsed: 1:16, vertices: 706, facets final: 63, pending: 57080
-I   81.16] Elapsed: 1:21, vertices: 741, facets final: 65, pending: 58580
-I   86.18] Elapsed: 1:26, vertices: 768, facets final: 67, pending: 58315
-I   91.35] Elapsed: 1:31, vertices: 799, facets final: 74, pending: 58563
-I   91.55] recalculating facets...
-I   96.38] Elapsed: 1:36, vertices: 835, facets final: 80, pending: 57046
-I  101.47] Elapsed: 1:41, vertices: 868, facets final: 84, pending: 56839
-I  105.62] recalculating facets...
-I  106.49] Elapsed: 1:46, vertices: 907, facets final: 89, pending: 58247
-I  111.70] Elapsed: 1:52, vertices: 940, facets final: 95, pending: 58305
-I  116.95] Elapsed: 1:57, vertices: 978, facets final: 101, pending: 58219
-I  119.70] recalculating facets...
-recalculate_facet: numerical instability at facet 11798, coord 4 (-1.07948e-06)
-recalculate_facet: numerical instability at facet 11936, coord 0 (1.25218e-05)
-recalculate_facet: numerical instability at facet 11936, coord 1 (6.54853e-06)
-recalculate_facet: numerical instability at facet 11936, coord 2 (-1.49561e-05)
-recalculate_facet: numerical instability at facet 11936, coord 3 (-1.24272e-05)
-recalculate_facet: numerical instability at facet 11936, coord 4 (2.15954e-05)
-recalculate_facet: numerical instability at facet 11936, coord 5 (-1.26534e-05)
-recalculate_facet: numerical instability at facet 11936, coord 10 (-1.16082e-05)
-recalculate_facet: numerical instability at facet 14007, coord 0 (4.45213e-06)
-recalculate_facet: numerical instability at facet 14007, coord 1 (2.24039e-06)
-recalculate_facet: numerical instability at facet 14007, coord 2 (-5.06485e-06)
-recalculate_facet: numerical instability at facet 14007, coord 3 (-4.15436e-06)
-recalculate_facet: numerical instability at facet 14007, coord 4 (7.06495e-06)
-recalculate_facet: numerical instability at facet 14007, coord 5 (-4.34357e-06)
-recalculate_facet: numerical instability at facet 14007, coord 10 (-4.16975e-06)
-recalculate_facet: numerical instability at facet 44622, coord 0 (1.45196e-06)
-recalculate_facet: numerical instability at facet 44622, coord 2 (-1.04907e-06)
-recalculate_facet: numerical instability at facet 44622, coord 10 (-1.4805e-06)
-recalculate_facet: numerical instability at facet 56738, coord 0 (-1.29282e-06)
-recalculate_facet: numerical instability at facet 56738, coord 3 (1.01429e-06)
-recalculate_facet: numerical instability at facet 56738, coord 5 (-1.01913e-06)
-I  122.23] Elapsed: 2:02, vertices: 1016, facets final: 109, pending: 57195
-I  127.34] Elapsed: 2:07, vertices: 1044, facets final: 117, pending: 57295
-I  132.56] Elapsed: 2:13, vertices: 1069, facets final: 127, pending: 57539
-I  137.62] Elapsed: 2:18, vertices: 1097, facets final: 135, pending: 57316
-I  138.49] recalculating facets...
-recalculate_facet: numerical instability at facet 17163, coord 5 (-1.39713e-06)
-recalculate_facet: numerical instability at facet 17163, coord 10 (-1.37431e-06)
-recalculate_facet: numerical instability at facet 17266, coord 4 (1.53391e-06)
-recalculate_facet: numerical instability at facet 17266, coord 5 (-1.33917e-06)
-recalculate_facet: numerical instability at facet 17421, coord 0 (3.56883e-06)
-recalculate_facet: numerical instability at facet 17421, coord 1 (1.29113e-06)
-recalculate_facet: numerical instability at facet 17421, coord 2 (-3.16262e-06)
-recalculate_facet: numerical instability at facet 17421, coord 4 (2.62198e-06)
-recalculate_facet: numerical instability at facet 17421, coord 5 (-4.12587e-06)
-recalculate_facet: numerical instability at facet 17421, coord 10 (-3.25855e-06)
-recalculate_facet: numerical instability at facet 17433, coord 0 (1.50177e-06)
-recalculate_facet: numerical instability at facet 17433, coord 1 (1.07958e-06)
-recalculate_facet: numerical instability at facet 17433, coord 2 (-3.36302e-06)
-recalculate_facet: numerical instability at facet 17433, coord 4 (5.24144e-06)
-recalculate_facet: numerical instability at facet 17433, coord 5 (-4.05848e-06)
-I  143.13] Elapsed: 2:23, vertices: 1125, facets final: 146, pending: 57439
-I  148.63] Elapsed: 2:29, vertices: 1160, facets final: 158, pending: 57194
-I  153.76] Elapsed: 2:34, vertices: 1193, facets final: 165, pending: 57315
-I  154.85] recalculating facets...
-I  158.77] Elapsed: 2:39, vertices: 1226, facets final: 176, pending: 57523
-I  163.83] Elapsed: 2:44, vertices: 1257, facets final: 185, pending: 57439
-I  168.93] Elapsed: 2:49, vertices: 1290, facets final: 191, pending: 58259
-I  170.61] recalculating facets...
-recalculate_facet: numerical instability at facet 3804, coord 0 (1.56539e-06)
-recalculate_facet: numerical instability at facet 3804, coord 2 (-2.1542e-06)
-recalculate_facet: numerical instability at facet 3804, coord 4 (2.26653e-06)
-recalculate_facet: numerical instability at facet 3804, coord 6 (-1.54977e-06)
-recalculate_facet: numerical instability at facet 3856, coord 0 (1.60952e-06)
-recalculate_facet: numerical instability at facet 3856, coord 2 (-2.19589e-06)
-recalculate_facet: numerical instability at facet 3856, coord 4 (2.40068e-06)
-recalculate_facet: numerical instability at facet 3856, coord 6 (-1.44549e-06)
-recalculate_facet: numerical instability at facet 17329, coord 2 (2.25555e-06)
-recalculate_facet: numerical instability at facet 17329, coord 3 (1.71159e-06)
-recalculate_facet: numerical instability at facet 17329, coord 4 (-4.77215e-06)
-recalculate_facet: numerical instability at facet 17329, coord 5 (1.85477e-06)
-recalculate_facet: numerical instability at facet 21388, coord 2 (-1.24246e-06)
-recalculate_facet: numerical instability at facet 21388, coord 4 (1.33061e-06)
-recalculate_facet: numerical instability at facet 21417, coord 2 (-1.47569e-06)
-recalculate_facet: numerical instability at facet 21417, coord 4 (1.6729e-06)
-recalculate_facet: numerical instability at facet 21946, coord 0 (-1.58308e-06)
-recalculate_facet: numerical instability at facet 21946, coord 2 (1.9455e-06)
-recalculate_facet: numerical instability at facet 21946, coord 4 (-1.96824e-06)
-recalculate_facet: numerical instability at facet 21946, coord 6 (1.4377e-06)
-I  174.13] Elapsed: 2:54, vertices: 1322, facets final: 195, pending: 57306
-I  179.15] Elapsed: 2:59, vertices: 1355, facets final: 206, pending: 56334
-I  184.21] Elapsed: 3:04, vertices: 1399, facets final: 218, pending: 55305
-I  184.39] recalculating facets...
-recalculate_facet: numerical instability at facet 48363, coord 0 (-1.21415e-06)
-recalculate_facet: numerical instability at facet 48363, coord 2 (3.56042e-06)
-recalculate_facet: numerical instability at facet 48363, coord 4 (-4.10122e-06)
-recalculate_facet: numerical instability at facet 48363, coord 6 (1.18533e-06)
-recalculate_facet: numerical instability at facet 48363, coord 10 (-2.11255e-06)
-recalculate_facet: numerical instability at facet 48368, coord 0 (-3.9554e-06)
-recalculate_facet: numerical instability at facet 48368, coord 2 (6.0732e-06)
-recalculate_facet: numerical instability at facet 48368, coord 3 (2.50663e-06)
-recalculate_facet: numerical instability at facet 48368, coord 4 (-4.78324e-06)
-recalculate_facet: numerical instability at facet 48368, coord 5 (-1.8629e-06)
-recalculate_facet: numerical instability at facet 48368, coord 6 (2.0217e-06)
-recalculate_facet: numerical instability at facet 48368, coord 10 (-2.08853e-06)
-recalculate_facet: numerical instability at facet 59031, coord 2 (1.91064e-06)
-recalculate_facet: numerical instability at facet 59031, coord 4 (-4.3069e-06)
-recalculate_facet: numerical instability at facet 59031, coord 5 (1.93057e-06)
-recalculate_facet: numerical instability at facet 59031, coord 10 (-1.15044e-06)
-recalculate_facet: numerical instability at facet 59033, coord 4 (-2.10234e-06)
-recalculate_facet: numerical instability at facet 59033, coord 5 (1.10345e-06)
-I  189.25] Elapsed: 3:09, vertices: 1445, facets final: 230, pending: 54482
-I  194.28] Elapsed: 3:14, vertices: 1496, facets final: 243, pending: 54918
-I  194.91] recalculating facets...
-recalculate_facet: numerical instability at facet 16747, coord 0 (3.31666e-06)
-recalculate_facet: numerical instability at facet 16747, coord 2 (-3.06086e-06)
-recalculate_facet: numerical instability at facet 16747, coord 4 (2.23995e-06)
-recalculate_facet: numerical instability at facet 16747, coord 6 (-2.37885e-06)
-recalculate_facet: numerical instability at facet 17092, coord 0 (1.65778e-06)
-recalculate_facet: numerical instability at facet 17092, coord 2 (-3.95288e-06)
-recalculate_facet: numerical instability at facet 17092, coord 4 (2.88268e-06)
-recalculate_facet: numerical instability at facet 17092, coord 6 (-1.29472e-06)
-recalculate_facet: numerical instability at facet 17092, coord 7 (1.15064e-06)
-recalculate_facet: numerical instability at facet 17092, coord 10 (1.99157e-06)
-I  199.30] Elapsed: 3:19, vertices: 1544, facets final: 262, pending: 54680
-I  204.11] recalculating facets...
-recalculate_facet: numerical instability at facet 17306, coord 0 (1.92949e-06)
-recalculate_facet: numerical instability at facet 17306, coord 2 (-1.55598e-06)
-recalculate_facet: numerical instability at facet 17306, coord 3 (-2.79831e-06)
-recalculate_facet: numerical instability at facet 17306, coord 4 (2.10896e-06)
-recalculate_facet: numerical instability at facet 17306, coord 10 (-2.02843e-06)
-recalculate_facet: numerical instability at facet 31633, coord 0 (1.23513e-06)
-recalculate_facet: numerical instability at facet 31633, coord 2 (-1.1676e-06)
-recalculate_facet: numerical instability at facet 31633, coord 3 (-1.63652e-06)
-recalculate_facet: numerical instability at facet 31633, coord 4 (1.63152e-06)
-recalculate_facet: numerical instability at facet 31633, coord 10 (-1.24755e-06)
-I  204.36] Elapsed: 3:24, vertices: 1601, facets final: 283, pending: 54560
-I  209.41] Elapsed: 3:29, vertices: 1650, facets final: 300, pending: 54493
-I  214.51] Elapsed: 3:35, vertices: 1691, facets final: 317, pending: 54054
-I  215.56] recalculating facets...
-recalculate_facet: numerical instability at facet 11306, coord 0 (-1.23184e-06)
-recalculate_facet: numerical instability at facet 11306, coord 2 (1.16855e-06)
-recalculate_facet: numerical instability at facet 11306, coord 3 (1.63658e-06)
-recalculate_facet: numerical instability at facet 11306, coord 4 (-1.62218e-06)
-recalculate_facet: numerical instability at facet 11306, coord 10 (1.24376e-06)
-recalculate_facet: numerical instability at facet 27658, coord 0 (-2.18432e-06)
-recalculate_facet: numerical instability at facet 27658, coord 5 (1.40963e-06)
-recalculate_facet: numerical instability at facet 27658, coord 10 (2.18099e-06)
-recalculate_facet: numerical instability at facet 33142, coord 4 (-1.13954e-06)
-I  219.82] Elapsed: 3:40, vertices: 1737, facets final: 333, pending: 52656
-I  224.93] Elapsed: 3:45, vertices: 1779, facets final: 363, pending: 53743
-I  226.87] recalculating facets...
-recalculate_facet: numerical instability at facet 31773, coord 4 (-1.50673e-06)
-recalculate_facet: numerical instability at facet 31841, coord 0 (5.90583e-06)
-recalculate_facet: numerical instability at facet 31841, coord 4 (-8.70692e-06)
-recalculate_facet: numerical instability at facet 31841, coord 5 (1.24259e-06)
-recalculate_facet: numerical instability at facet 31841, coord 10 (-5.96872e-06)
-recalculate_facet: numerical instability at facet 31933, coord 0 (3.98923e-06)
-recalculate_facet: numerical instability at facet 31933, coord 2 (1.04249e-06)
-recalculate_facet: numerical instability at facet 31933, coord 4 (-6.14395e-06)
-recalculate_facet: numerical instability at facet 31933, coord 10 (-4.3301e-06)
-recalculate_facet: numerical instability at facet 32042, coord 2 (1.35218e-06)
-recalculate_facet: numerical instability at facet 32042, coord 4 (-2.32918e-06)
-recalculate_facet: numerical instability at facet 32042, coord 5 (1.00397e-06)
-recalculate_facet: numerical instability at facet 32110, coord 2 (1.38338e-06)
-recalculate_facet: numerical instability at facet 32110, coord 4 (-2.68646e-06)
-recalculate_facet: numerical instability at facet 32110, coord 5 (1.31615e-06)
-recalculate_facet: numerical instability at facet 32212, coord 0 (5.6764e-06)
-recalculate_facet: numerical instability at facet 32212, coord 4 (-8.45501e-06)
-recalculate_facet: numerical instability at facet 32212, coord 5 (1.22534e-06)
-recalculate_facet: numerical instability at facet 32212, coord 10 (-5.77072e-06)
-recalculate_facet: numerical instability at facet 32226, coord 4 (-1.69603e-06)
-recalculate_facet: numerical instability at facet 32488, coord 0 (5.89449e-06)
-recalculate_facet: numerical instability at facet 32488, coord 4 (-8.72344e-06)
-recalculate_facet: numerical instability at facet 32488, coord 5 (1.25445e-06)
-recalculate_facet: numerical instability at facet 32488, coord 10 (-5.95274e-06)
-recalculate_facet: numerical instability at facet 36151, coord 0 (-1.1871e-06)
-recalculate_facet: numerical instability at facet 36151, coord 4 (1.40534e-06)
-recalculate_facet: numerical instability at facet 36151, coord 10 (1.05272e-06)
-recalculate_facet: numerical instability at facet 36570, coord 4 (1.1678e-06)
-I  229.94] Elapsed: 3:50, vertices: 1829, facets final: 389, pending: 53559
-I  234.97] Elapsed: 3:55, vertices: 1876, facets final: 414, pending: 53013
-I  236.94] recalculating facets...
-recalculate_facet: numerical instability at facet 26350, coord 0 (-6.20399e-06)
-recalculate_facet: numerical instability at facet 26350, coord 4 (5.3549e-06)
-recalculate_facet: numerical instability at facet 26350, coord 5 (2.1822e-06)
-recalculate_facet: numerical instability at facet 26350, coord 10 (6.90826e-06)
-recalculate_facet: numerical instability at facet 26873, coord 0 (-1.24882e-05)
-recalculate_facet: numerical instability at facet 26873, coord 2 (-3.84253e-06)
-recalculate_facet: numerical instability at facet 26873, coord 4 (2.0461e-05)
-recalculate_facet: numerical instability at facet 26873, coord 5 (-1.44095e-06)
-recalculate_facet: numerical instability at facet 26873, coord 6 (-1.9939e-06)
-recalculate_facet: numerical instability at facet 26873, coord 10 (1.44095e-05)
-recalculate_facet: numerical instability at facet 27214, coord 0 (-4.142e-06)
-recalculate_facet: numerical instability at facet 27214, coord 3 (-1.45927e-06)
-recalculate_facet: numerical instability at facet 27214, coord 4 (3.6171e-06)
-recalculate_facet: numerical instability at facet 27214, coord 5 (2.15999e-06)
-recalculate_facet: numerical instability at facet 27214, coord 10 (3.93734e-06)
-recalculate_facet: numerical instability at facet 27247, coord 0 (-6.5353e-06)
-recalculate_facet: numerical instability at facet 27247, coord 2 (-3.65433e-06)
-recalculate_facet: numerical instability at facet 27247, coord 4 (1.33697e-05)
-recalculate_facet: numerical instability at facet 27247, coord 5 (-1.52747e-06)
-recalculate_facet: numerical instability at facet 27247, coord 6 (-1.6526e-06)
-recalculate_facet: numerical instability at facet 27247, coord 10 (8.99085e-06)
-I  240.22] Elapsed: 4:00, vertices: 1931, facets final: 445, pending: 53299
-I  245.28] Elapsed: 4:05, vertices: 1989, facets final: 471, pending: 52717
-I  246.65] recalculating facets...
-recalculate_facet: numerical instability at facet 15623, coord 0 (3.29542e-06)
-recalculate_facet: numerical instability at facet 15623, coord 2 (-6.30795e-06)
-recalculate_facet: numerical instability at facet 15623, coord 4 (8.2678e-06)
-recalculate_facet: numerical instability at facet 15623, coord 6 (-4.85363e-06)
-recalculate_facet: numerical instability at facet 15623, coord 10 (4.04961e-06)
-I  250.28] Elapsed: 4:10, vertices: 2038, facets final: 502, pending: 52181
-I  255.33] Elapsed: 4:15, vertices: 2096, facets final: 540, pending: 51102
-I  255.79] recalculating facets...
-recalculate_facet: numerical instability at facet 38518, coord 0 (1.08019e-06)
-recalculate_facet: numerical instability at facet 38518, coord 4 (-1.70316e-06)
-recalculate_facet: numerical instability at facet 38518, coord 10 (-1.0479e-06)
-recalculate_facet: numerical instability at facet 39578, coord 0 (1.1171e-06)
-recalculate_facet: numerical instability at facet 39578, coord 4 (-1.68336e-06)
-recalculate_facet: numerical instability at facet 39578, coord 10 (-1.11108e-06)
-I  260.42] Elapsed: 4:20, vertices: 2159, facets final: 590, pending: 50935
-I  264.25] recalculating facets...
-recalculate_facet: numerical instability at facet 53619, coord 4 (1.83499e-06)
-recalculate_facet: numerical instability at facet 53619, coord 5 (-1.22504e-06)
-recalculate_facet: numerical instability at facet 53674, coord 4 (1.04216e-06)
-I  265.43] Elapsed: 4:25, vertices: 2211, facets final: 620, pending: 50822
-I  270.43] Elapsed: 4:30, vertices: 2257, facets final: 649, pending: 50774
-I  274.50] recalculating facets...
-I  275.58] Elapsed: 4:36, vertices: 2309, facets final: 681, pending: 50634
-I  280.62] Elapsed: 4:41, vertices: 2374, facets final: 732, pending: 49537
-I  282.65] recalculating facets...
-I  285.71] Elapsed: 4:46, vertices: 2437, facets final: 792, pending: 48751
-I  290.80] Elapsed: 4:51, vertices: 2496, facets final: 865, pending: 48328
-I  291.13] recalculating facets...
-I  295.80] Elapsed: 4:56, vertices: 2571, facets final: 940, pending: 47407
-I  298.26] recalculating facets...
-I  300.83] Elapsed: 5:01, vertices: 2627, facets final: 1005, pending: 47604
-I  305.83] Elapsed: 5:06, vertices: 2698, facets final: 1094, pending: 46994
-I  305.93] recalculating facets...
-I  310.83] Elapsed: 5:11, vertices: 2769, facets final: 1176, pending: 46211
-I  313.20] recalculating facets...
-I  315.86] Elapsed: 5:16, vertices: 2837, facets final: 1261, pending: 45743
-I  319.84] recalculating facets...
-I  320.88] Elapsed: 5:21, vertices: 2916, facets final: 1381, pending: 45344
-I  325.88] Elapsed: 5:26, vertices: 3000, facets final: 1500, pending: 45566
-I  325.89] recalculating facets...
-I  330.89] Elapsed: 5:31, vertices: 3080, facets final: 1600, pending: 45736
-I  332.07] recalculating facets...
-I  335.89] Elapsed: 5:36, vertices: 3153, facets final: 1728, pending: 45103
-I  338.69] recalculating facets...
-I  340.89] Elapsed: 5:41, vertices: 3238, facets final: 1843, pending: 44714
-I  344.63] recalculating facets...
-I  345.89] Elapsed: 5:46, vertices: 3318, facets final: 2026, pending: 44332
-I  350.40] recalculating facets...
-I  350.93] Elapsed: 5:51, vertices: 3407, facets final: 2180, pending: 44018
-I  355.98] Elapsed: 5:56, vertices: 3493, facets final: 2395, pending: 44158
-I  356.48] recalculating facets...
-I  361.04] Elapsed: 6:01, vertices: 3587, facets final: 2627, pending: 43442
-I  361.87] recalculating facets...
-I  366.04] Elapsed: 6:06, vertices: 3681, facets final: 2883, pending: 42581
-I  367.14] recalculating facets...
-I  371.04] Elapsed: 6:11, vertices: 3779, facets final: 3205, pending: 42031
-I  372.42] recalculating facets...
-I  376.04] Elapsed: 6:16, vertices: 3857, facets final: 3485, pending: 41557
-I  378.25] recalculating facets...
-I  381.06] Elapsed: 6:21, vertices: 3960, facets final: 3890, pending: 40945
-I  383.03] recalculating facets...
-I  386.09] Elapsed: 6:26, vertices: 4065, facets final: 4393, pending: 40131
-I  387.55] recalculating facets...
-I  391.09] Elapsed: 6:31, vertices: 4169, facets final: 4926, pending: 39253
-I  392.73] recalculating facets...
-I  396.09] Elapsed: 6:36, vertices: 4262, facets final: 5529, pending: 38496
-I  398.37] recalculating facets...
-I  401.09] Elapsed: 6:41, vertices: 4341, facets final: 6251, pending: 37518
-I  404.55] recalculating facets...
-I  406.09] Elapsed: 6:46, vertices: 4422, facets final: 6977, pending: 36390
-I  411.09] Elapsed: 6:51, vertices: 4486, facets final: 7923, pending: 35239
-I  412.37] recalculating facets...
-I  416.10] Elapsed: 6:56, vertices: 4551, facets final: 8863, pending: 34102
-I  419.95] recalculating facets...
-I  421.10] Elapsed: 7:01, vertices: 4616, facets final: 9758, pending: 33063
-I  426.10] Elapsed: 7:06, vertices: 4666, facets final: 10788, pending: 31792
-I  429.65] recalculating facets...
-I  431.10] Elapsed: 7:11, vertices: 4715, facets final: 11820, pending: 30616
-I  436.10] Elapsed: 7:16, vertices: 4747, facets final: 12919, pending: 29480
-I  441.10] Elapsed: 7:21, vertices: 4774, facets final: 14058, pending: 28278
-I  444.23] recalculating facets...
-I  446.10] Elapsed: 7:26, vertices: 4808, facets final: 15147, pending: 27141
-I  451.10] Elapsed: 7:31, vertices: 4835, facets final: 16282, pending: 25952
-I  456.10] Elapsed: 7:36, vertices: 4855, facets final: 17459, pending: 24720
-I  461.10] Elapsed: 7:41, vertices: 4885, facets final: 18590, pending: 23559
-I  464.38] recalculating facets...
-I  466.10] Elapsed: 7:46, vertices: 4907, facets final: 19749, pending: 22350
-I  471.10] Elapsed: 7:51, vertices: 4924, facets final: 20921, pending: 21161
-I  476.10] Elapsed: 7:56, vertices: 4936, facets final: 22112, pending: 19927
-I  481.10] Elapsed: 8:01, vertices: 4951, facets final: 23296, pending: 18734
-I  486.10] Elapsed: 8:06, vertices: 4965, facets final: 24493, pending: 17486
-I  491.10] Elapsed: 8:11, vertices: 4974, facets final: 25709, pending: 16244
-I  496.10] Elapsed: 8:16, vertices: 4981, facets final: 26933, pending: 14999
-I  501.10] Elapsed: 8:21, vertices: 4990, facets final: 28144, pending: 13766
-I  505.13] recalculating facets...
-I  506.10] Elapsed: 8:26, vertices: 5006, facets final: 29308, pending: 12583
-I  511.10] Elapsed: 8:31, vertices: 5022, facets final: 30507, pending: 11361
-I  516.10] Elapsed: 8:36, vertices: 5026, facets final: 31727, pending: 10132
-I  521.10] Elapsed: 8:41, vertices: 5028, facets final: 32981, pending: 8875
-I  526.10] Elapsed: 8:46, vertices: 5034, facets final: 34218, pending: 7627
-I  531.10] Elapsed: 8:51, vertices: 5036, facets final: 35466, pending: 6374
-I  536.10] Elapsed: 8:56, vertices: 5036, facets final: 36722, pending: 5118
-I  541.10] Elapsed: 9:01, vertices: 5036, facets final: 37977, pending: 3863
-I  546.10] Elapsed: 9:06, vertices: 5037, facets final: 39235, pending: 2601
-I  551.10] Elapsed: 9:11, vertices: 5038, facets final: 40499, pending: 1336
-I  556.10] Elapsed: 9:16, vertices: 5042, facets final: 41655, pending: 429
-I  557.95] Elapsed: 9:18, vertices: 5048, facets final: 42021, pending: 0
+I    1.63] recalculating facets...
+I    4.91] recalculating facets...
+I    5.00] Elapsed: 5.00, vertices: 201, facets final: 58, pending: 12460, pool: 199
+I    9.63] recalculating facets...
+I   10.00] Elapsed: 10.00, vertices: 307, facets final: 82, pending: 18989, pool: 200
+I   15.00] Elapsed: 15.00, vertices: 384, facets final: 95, pending: 24432, pool: 200
+I   16.18] recalculating facets...
+I   20.04] Elapsed: 20.04, vertices: 444, facets final: 111, pending: 28887, pool: 200
+I   25.05] Elapsed: 25.05, vertices: 500, facets final: 123, pending: 31555, pool: 200
+I   25.05] recalculating facets...
+I   30.14] Elapsed: 30.14, vertices: 547, facets final: 131, pending: 33636, pool: 200
+I   35.15] Elapsed: 35.15, vertices: 598, facets final: 139, pending: 36123, pool: 200
+I   35.26] recalculating facets...
+I   40.17] Elapsed: 40.17, vertices: 644, facets final: 145, pending: 37763, pool: 198
+I   45.19] Elapsed: 45.19, vertices: 686, facets final: 152, pending: 40091, pool: 200
+I   46.66] recalculating facets...
+recalculate_facet: numerical instability at facet 31774, coord 0 (4.00804e-06)
+recalculate_facet: numerical instability at facet 31774, coord 2 (-3.01786e-06)
+recalculate_facet: numerical instability at facet 31774, coord 10 (-1.41322e-06)
+recalculate_facet: numerical instability at facet 41342, coord 0 (4.16575e-06)
+recalculate_facet: numerical instability at facet 41342, coord 2 (-2.0626e-06)
+recalculate_facet: numerical instability at facet 41342, coord 4 (-1.98409e-06)
+recalculate_facet: numerical instability at facet 41342, coord 10 (-2.81406e-06)
+recalculate_facet: numerical instability at facet 41466, coord 0 (9.55549e-06)
+recalculate_facet: numerical instability at facet 41466, coord 1 (2.74623e-06)
+recalculate_facet: numerical instability at facet 41466, coord 2 (-6.64708e-06)
+recalculate_facet: numerical instability at facet 41466, coord 3 (-3.88474e-06)
+recalculate_facet: numerical instability at facet 41466, coord 4 (2.92233e-06)
+recalculate_facet: numerical instability at facet 41466, coord 5 (-4.44906e-06)
+recalculate_facet: numerical instability at facet 41466, coord 10 (-8.25068e-06)
+recalculate_facet: numerical instability at facet 41570, coord 0 (4.05987e-06)
+recalculate_facet: numerical instability at facet 41570, coord 2 (-1.7961e-06)
+recalculate_facet: numerical instability at facet 41570, coord 4 (-2.41554e-06)
+recalculate_facet: numerical instability at facet 41570, coord 10 (-2.70038e-06)
+I   50.19] Elapsed: 50.19, vertices: 727, facets final: 168, pending: 42324, pool: 200
+I   55.21] Elapsed: 55.21, vertices: 764, facets final: 180, pending: 44540, pool: 200
+I   60.25] Elapsed: 1:00, vertices: 800, facets final: 184, pending: 45199, pool: 200
+I   60.25] recalculating facets...
+I   65.33] Elapsed: 1:05, vertices: 833, facets final: 202, pending: 46332, pool: 200
+I   70.33] Elapsed: 1:10, vertices: 865, facets final: 210, pending: 47459, pool: 200
+I   75.35] Elapsed: 1:15, vertices: 897, facets final: 215, pending: 47890, pool: 200
+I   75.66] recalculating facets...
+I   80.37] Elapsed: 1:20, vertices: 932, facets final: 224, pending: 49254, pool: 200
+I   85.37] Elapsed: 1:25, vertices: 964, facets final: 230, pending: 50617, pool: 200
+I   90.42] Elapsed: 1:30, vertices: 997, facets final: 237, pending: 52042, pool: 200
+I   90.80] recalculating facets...
+recalculate_facet: numerical instability at facet 9790, coord 0 (1.36839e-06)
+recalculate_facet: numerical instability at facet 9790, coord 3 (1.14606e-06)
+recalculate_facet: numerical instability at facet 9790, coord 4 (-2.93039e-06)
+recalculate_facet: numerical instability at facet 9790, coord 10 (-1.45493e-06)
+recalculate_facet: numerical instability at facet 11839, coord 0 (2.0548e-06)
+recalculate_facet: numerical instability at facet 11839, coord 3 (-2.28999e-06)
+recalculate_facet: numerical instability at facet 11839, coord 10 (-2.67419e-06)
+recalculate_facet: numerical instability at facet 36111, coord 2 (1.92981e-06)
+recalculate_facet: numerical instability at facet 36111, coord 3 (-1.08647e-06)
+recalculate_facet: numerical instability at facet 36111, coord 10 (-1.31369e-06)
+I   95.49] Elapsed: 1:35, vertices: 1027, facets final: 243, pending: 52581, pool: 200
+I  100.54] Elapsed: 1:41, vertices: 1056, facets final: 251, pending: 52815, pool: 200
+I  105.59] Elapsed: 1:46, vertices: 1078, facets final: 259, pending: 53790, pool: 200
+I  110.59] Elapsed: 1:51, vertices: 1099, facets final: 264, pending: 55167, pool: 200
+I  111.05] recalculating facets...
+recalculate_facet: numerical instability at facet 14750, coord 2 (1.22425e-06)
+recalculate_facet: numerical instability at facet 14750, coord 4 (-2.47099e-06)
+recalculate_facet: numerical instability at facet 14768, coord 2 (2.58972e-06)
+recalculate_facet: numerical instability at facet 14768, coord 4 (-1.37494e-06)
+recalculate_facet: numerical instability at facet 14768, coord 10 (-1.84128e-06)
+recalculate_facet: numerical instability at facet 14793, coord 0 (1.88723e-06)
+recalculate_facet: numerical instability at facet 14793, coord 2 (1.10754e-06)
+recalculate_facet: numerical instability at facet 14793, coord 3 (1.26007e-06)
+recalculate_facet: numerical instability at facet 14793, coord 4 (-5.26941e-06)
+recalculate_facet: numerical instability at facet 14793, coord 10 (-2.87117e-06)
+I  115.65] Elapsed: 1:56, vertices: 1120, facets final: 272, pending: 55778, pool: 200
+I  120.76] Elapsed: 2:01, vertices: 1146, facets final: 278, pending: 56720, pool: 200
+I  125.79] Elapsed: 2:06, vertices: 1173, facets final: 291, pending: 56792, pool: 200
+I  130.88] Elapsed: 2:11, vertices: 1200, facets final: 297, pending: 57588, pool: 200
+I  130.88] recalculating facets...
+recalculate_facet: numerical instability at facet 541, coord 0 (-2.59757e-06)
+recalculate_facet: numerical instability at facet 541, coord 4 (3.15544e-06)
+recalculate_facet: numerical instability at facet 541, coord 10 (2.79461e-06)
+recalculate_facet: numerical instability at facet 4698, coord 0 (-1.23852e-05)
+recalculate_facet: numerical instability at facet 4698, coord 2 (1.71804e-05)
+recalculate_facet: numerical instability at facet 4698, coord 4 (-1.09254e-05)
+recalculate_facet: numerical instability at facet 4698, coord 6 (5.7268e-06)
+recalculate_facet: numerical instability at facet 4698, coord 10 (-4.23107e-06)
+recalculate_facet: numerical instability at facet 4724, coord 0 (2.2574e-06)
+recalculate_facet: numerical instability at facet 4724, coord 2 (-3.19309e-06)
+recalculate_facet: numerical instability at facet 4724, coord 3 (-1.13755e-06)
+recalculate_facet: numerical instability at facet 4724, coord 4 (2.35657e-06)
+recalculate_facet: numerical instability at facet 4724, coord 6 (-1.06436e-06)
+recalculate_facet: numerical instability at facet 4727, coord 0 (2.02249e-06)
+recalculate_facet: numerical instability at facet 4727, coord 2 (-2.77055e-06)
+recalculate_facet: numerical instability at facet 4727, coord 4 (1.70709e-06)
+recalculate_facet: numerical instability at facet 4757, coord 0 (-2.70097e-05)
+recalculate_facet: numerical instability at facet 4757, coord 2 (-9.72451e-06)
+recalculate_facet: numerical instability at facet 4757, coord 3 (-1.07953e-05)
+recalculate_facet: numerical instability at facet 4757, coord 4 (5.28068e-05)
+recalculate_facet: numerical instability at facet 4757, coord 5 (-2.03572e-06)
+recalculate_facet: numerical instability at facet 4757, coord 6 (-3.2415e-06)
+recalculate_facet: numerical instability at facet 4757, coord 10 (3.24126e-05)
+recalculate_facet: numerical instability at facet 33188, coord 0 (-1.83471e-06)
+recalculate_facet: numerical instability at facet 33188, coord 3 (3.32968e-06)
+recalculate_facet: numerical instability at facet 33188, coord 10 (3.6609e-06)
+recalculate_facet: numerical instability at facet 52704, coord 0 (1.88214e-06)
+recalculate_facet: numerical instability at facet 52704, coord 4 (-2.32333e-06)
+recalculate_facet: numerical instability at facet 52704, coord 5 (2.27963e-06)
+I  135.92] Elapsed: 2:16, vertices: 1225, facets final: 301, pending: 57700, pool: 200
+I  141.13] Elapsed: 2:21, vertices: 1250, facets final: 313, pending: 57555, pool: 200
+I  146.23] Elapsed: 2:26, vertices: 1274, facets final: 319, pending: 57185, pool: 200
+I  151.36] Elapsed: 2:31, vertices: 1299, facets final: 323, pending: 57264, pool: 200
+I  151.54] recalculating facets...
+recalculate_facet: numerical instability at facet 2387, coord 0 (-9.66617e-06)
+recalculate_facet: numerical instability at facet 2387, coord 1 (-1.40062e-05)
+recalculate_facet: numerical instability at facet 2387, coord 2 (8.53565e-06)
+recalculate_facet: numerical instability at facet 2387, coord 3 (2.36576e-05)
+recalculate_facet: numerical instability at facet 2387, coord 4 (-1.83773e-05)
+recalculate_facet: numerical instability at facet 2387, coord 5 (2.70974e-05)
+recalculate_facet: numerical instability at facet 2387, coord 6 (-1.72409e-05)
+recalculate_facet: numerical instability at facet 2387, coord 10 (3.3937e-05)
+recalculate_facet: numerical instability at facet 2419, coord 0 (1.32356e-05)
+recalculate_facet: numerical instability at facet 2419, coord 1 (6.42487e-06)
+recalculate_facet: numerical instability at facet 2419, coord 2 (-1.08242e-05)
+recalculate_facet: numerical instability at facet 2419, coord 3 (-1.08623e-05)
+recalculate_facet: numerical instability at facet 2419, coord 4 (1.18868e-05)
+recalculate_facet: numerical instability at facet 2419, coord 5 (-1.16288e-05)
+recalculate_facet: numerical instability at facet 2419, coord 6 (1.76815e-06)
+recalculate_facet: numerical instability at facet 2419, coord 10 (-1.59396e-05)
+recalculate_facet: numerical instability at facet 2485, coord 0 (1.05747e-05)
+recalculate_facet: numerical instability at facet 2485, coord 1 (-4.23401e-06)
+recalculate_facet: numerical instability at facet 2485, coord 2 (7.74932e-06)
+recalculate_facet: numerical instability at facet 2485, coord 3 (3.50621e-05)
+recalculate_facet: numerical instability at facet 2485, coord 4 (-4.46123e-05)
+recalculate_facet: numerical instability at facet 2485, coord 6 (-4.53987e-06)
+recalculate_facet: numerical instability at facet 2485, coord 10 (-6.79553e-06)
+recalculate_facet: numerical instability at facet 5117, coord 0 (-6.51646e-05)
+recalculate_facet: numerical instability at facet 5117, coord 1 (-3.68246e-05)
+recalculate_facet: numerical instability at facet 5117, coord 2 (4.42634e-05)
+recalculate_facet: numerical instability at facet 5117, coord 3 (6.31791e-05)
+recalculate_facet: numerical instability at facet 5117, coord 4 (-6.7322e-05)
+recalculate_facet: numerical instability at facet 5117, coord 5 (6.87481e-05)
+recalculate_facet: numerical instability at facet 5117, coord 6 (-6.8794e-06)
+recalculate_facet: numerical instability at facet 5117, coord 10 (9.47837e-05)
+recalculate_facet: numerical instability at facet 22201, coord 4 (1.02675e-06)
+recalculate_facet: numerical instability at facet 25631, coord 4 (-1.74678e-06)
+recalculate_facet: numerical instability at facet 36847, coord 0 (2.2492e-06)
+recalculate_facet: numerical instability at facet 36847, coord 4 (-2.62439e-06)
+recalculate_facet: numerical instability at facet 36847, coord 10 (-2.35304e-06)
+recalculate_facet: numerical instability at facet 36853, coord 0 (2.09478e-06)
+recalculate_facet: numerical instability at facet 36853, coord 4 (-2.61466e-06)
+recalculate_facet: numerical instability at facet 36853, coord 10 (-2.18728e-06)
+recalculate_facet: numerical instability at facet 36867, coord 0 (2.85087e-06)
+recalculate_facet: numerical instability at facet 36867, coord 4 (-3.36448e-06)
+recalculate_facet: numerical instability at facet 36867, coord 10 (-3.08724e-06)
+recalculate_facet: numerical instability at facet 36871, coord 0 (3.20163e-05)
+recalculate_facet: numerical instability at facet 36871, coord 1 (5.62472e-06)
+recalculate_facet: numerical instability at facet 36871, coord 2 (-1.82741e-06)
+recalculate_facet: numerical instability at facet 36871, coord 4 (-2.81633e-05)
+recalculate_facet: numerical instability at facet 36871, coord 5 (-1.1584e-05)
+recalculate_facet: numerical instability at facet 36871, coord 6 (3.93376e-06)
+recalculate_facet: numerical instability at facet 36871, coord 10 (-3.91088e-05)
+recalculate_facet: numerical instability at facet 36872, coord 0 (-4.43574e-05)
+recalculate_facet: numerical instability at facet 36872, coord 1 (-3.26505e-06)
+recalculate_facet: numerical instability at facet 36872, coord 2 (-2.77002e-06)
+recalculate_facet: numerical instability at facet 36872, coord 4 (5.41948e-05)
+recalculate_facet: numerical instability at facet 36872, coord 6 (-3.80226e-06)
+recalculate_facet: numerical instability at facet 36872, coord 10 (4.81606e-05)
+recalculate_facet: numerical instability at facet 36873, coord 4 (1.57235e-06)
+recalculate_facet: numerical instability at facet 36873, coord 6 (-2.22165e-06)
+recalculate_facet: numerical instability at facet 36877, coord 0 (-2.95692e-05)
+recalculate_facet: numerical instability at facet 36877, coord 1 (-2.88298e-06)
+recalculate_facet: numerical instability at facet 36877, coord 4 (3.6198e-05)
+recalculate_facet: numerical instability at facet 36877, coord 6 (-2.78038e-06)
+recalculate_facet: numerical instability at facet 36877, coord 10 (3.29872e-05)
+recalculate_facet: numerical instability at facet 36880, coord 4 (1.44293e-06)
+recalculate_facet: numerical instability at facet 36880, coord 6 (-2.04042e-06)
+recalculate_facet: numerical instability at facet 36885, coord 4 (1.58782e-06)
+recalculate_facet: numerical instability at facet 36885, coord 6 (-2.24358e-06)
+recalculate_facet: numerical instability at facet 36886, coord 0 (-4.36384e-05)
+recalculate_facet: numerical instability at facet 36886, coord 1 (-2.60124e-06)
+recalculate_facet: numerical instability at facet 36886, coord 2 (-4.02299e-06)
+recalculate_facet: numerical instability at facet 36886, coord 3 (-3.07732e-06)
+recalculate_facet: numerical instability at facet 36886, coord 4 (5.71957e-05)
+recalculate_facet: numerical instability at facet 36886, coord 6 (-3.85573e-06)
+recalculate_facet: numerical instability at facet 36886, coord 10 (4.73993e-05)
+recalculate_facet: numerical instability at facet 53233, coord 4 (2.70046e-06)
+recalculate_facet: numerical instability at facet 53233, coord 5 (-2.46115e-06)
+I  156.38] Elapsed: 2:36, vertices: 1324, facets final: 335, pending: 57772, pool: 199
+I  161.41] Elapsed: 2:41, vertices: 1347, facets final: 352, pending: 57399, pool: 200
+I  166.49] Elapsed: 2:46, vertices: 1375, facets final: 363, pending: 57625, pool: 200
+I  171.39] recalculating facets...
+recalculate_facet: numerical instability at facet 10081, coord 0 (-3.5314e-06)
+recalculate_facet: numerical instability at facet 10081, coord 1 (-1.51201e-06)
+recalculate_facet: numerical instability at facet 10081, coord 2 (3.15374e-06)
+recalculate_facet: numerical instability at facet 10081, coord 3 (2.7848e-06)
+recalculate_facet: numerical instability at facet 10081, coord 4 (-3.62792e-06)
+recalculate_facet: numerical instability at facet 10081, coord 5 (2.71337e-06)
+recalculate_facet: numerical instability at facet 10081, coord 10 (3.50153e-06)
+recalculate_facet: numerical instability at facet 20862, coord 0 (-2.07978e-06)
+recalculate_facet: numerical instability at facet 20862, coord 2 (-1.00117e-06)
+recalculate_facet: numerical instability at facet 20862, coord 4 (3.08614e-06)
+recalculate_facet: numerical instability at facet 20862, coord 10 (2.04022e-06)
+recalculate_facet: numerical instability at facet 21248, coord 0 (-1.62346e-06)
+recalculate_facet: numerical instability at facet 21248, coord 2 (-1.37704e-06)
+recalculate_facet: numerical instability at facet 21248, coord 4 (3.58388e-06)
+recalculate_facet: numerical instability at facet 21248, coord 10 (1.58326e-06)
+recalculate_facet: numerical instability at facet 35264, coord 0 (-1.70798e-06)
+recalculate_facet: numerical instability at facet 35264, coord 4 (1.7491e-06)
+recalculate_facet: numerical instability at facet 35264, coord 10 (1.8371e-06)
+recalculate_facet: numerical instability at facet 35302, coord 0 (-1.71291e-06)
+recalculate_facet: numerical instability at facet 35302, coord 10 (1.12751e-06)
+recalculate_facet: numerical instability at facet 36646, coord 0 (-2.97666e-06)
+recalculate_facet: numerical instability at facet 36646, coord 1 (-3.12206e-06)
+recalculate_facet: numerical instability at facet 36646, coord 2 (3.42584e-06)
+recalculate_facet: numerical instability at facet 36646, coord 3 (5.31704e-06)
+recalculate_facet: numerical instability at facet 36646, coord 4 (-8.08123e-06)
+recalculate_facet: numerical instability at facet 36646, coord 5 (6.43853e-06)
+recalculate_facet: numerical instability at facet 36646, coord 6 (-1.00146e-06)
+recalculate_facet: numerical instability at facet 36646, coord 10 (6.36893e-06)
+recalculate_facet: numerical instability at facet 36652, coord 0 (3.53744e-06)
+recalculate_facet: numerical instability at facet 36652, coord 1 (1.65989e-06)
+recalculate_facet: numerical instability at facet 36652, coord 2 (-2.33368e-06)
+recalculate_facet: numerical instability at facet 36652, coord 3 (-5.73152e-06)
+recalculate_facet: numerical instability at facet 36652, coord 4 (3.51824e-06)
+recalculate_facet: numerical instability at facet 36652, coord 10 (-4.30455e-06)
+recalculate_facet: numerical instability at facet 54602, coord 0 (-1.90078e-06)
+recalculate_facet: numerical instability at facet 54602, coord 4 (1.93364e-06)
+recalculate_facet: numerical instability at facet 54602, coord 10 (2.08488e-06)
+recalculate_facet: numerical instability at facet 56002, coord 0 (-1.39296e-06)
+recalculate_facet: numerical instability at facet 56002, coord 10 (1.89429e-06)
+I  171.58] Elapsed: 2:52, vertices: 1400, facets final: 376, pending: 57631, pool: 199
+I  176.65] Elapsed: 2:57, vertices: 1429, facets final: 393, pending: 57459, pool: 200
+I  181.70] Elapsed: 3:02, vertices: 1457, facets final: 406, pending: 56814, pool: 200
+I  186.70] Elapsed: 3:07, vertices: 1485, facets final: 413, pending: 56510, pool: 200
+I  189.03] recalculating facets...
+recalculate_facet: numerical instability at facet 23314, coord 0 (2.14635e-06)
+recalculate_facet: numerical instability at facet 23314, coord 4 (-3.25593e-06)
+recalculate_facet: numerical instability at facet 23314, coord 10 (-2.05577e-06)
+recalculate_facet: numerical instability at facet 23323, coord 0 (1.824e-06)
+recalculate_facet: numerical instability at facet 23323, coord 4 (-2.71617e-06)
+recalculate_facet: numerical instability at facet 23323, coord 10 (-1.73819e-06)
+recalculate_facet: numerical instability at facet 23340, coord 0 (1.8791e-05)
+recalculate_facet: numerical instability at facet 23340, coord 3 (7.92659e-06)
+recalculate_facet: numerical instability at facet 23340, coord 4 (-2.61418e-05)
+recalculate_facet: numerical instability at facet 23340, coord 10 (-1.67293e-05)
+recalculate_facet: numerical instability at facet 23352, coord 0 (-0.000155977)
+recalculate_facet: numerical instability at facet 23352, coord 2 (-1.35792e-05)
+recalculate_facet: numerical instability at facet 23352, coord 3 (-4.71072e-05)
+recalculate_facet: numerical instability at facet 23352, coord 4 (0.000235059)
+recalculate_facet: numerical instability at facet 23352, coord 5 (-1.3046e-05)
+recalculate_facet: numerical instability at facet 23352, coord 6 (-5.34865e-06)
+recalculate_facet: numerical instability at facet 23352, coord 10 (0.000148398)
+recalculate_facet: numerical instability at facet 39668, coord 2 (-1.07306e-06)
+I  191.74] Elapsed: 3:12, vertices: 1516, facets final: 428, pending: 55718, pool: 200
+I  196.81] Elapsed: 3:17, vertices: 1543, facets final: 440, pending: 55727, pool: 200
+I  201.81] Elapsed: 3:22, vertices: 1571, facets final: 453, pending: 55480, pool: 200
+I  206.58] recalculating facets...
+recalculate_facet: numerical instability at facet 21741, coord 0 (1.06134e-06)
+recalculate_facet: numerical instability at facet 21741, coord 2 (-1.42019e-06)
+recalculate_facet: numerical instability at facet 33586, coord 5 (2.38853e-06)
+recalculate_facet: numerical instability at facet 33586, coord 6 (-1.36226e-06)
+recalculate_facet: numerical instability at facet 33586, coord 10 (1.74799e-06)
+recalculate_facet: numerical instability at facet 51561, coord 0 (4.46838e-06)
+recalculate_facet: numerical instability at facet 51561, coord 3 (-4.20965e-06)
+recalculate_facet: numerical instability at facet 51561, coord 4 (-6.35388e-06)
+recalculate_facet: numerical instability at facet 51561, coord 5 (5.36442e-06)
+recalculate_facet: numerical instability at facet 51561, coord 10 (-3.84592e-06)
+recalculate_facet: numerical instability at facet 56262, coord 2 (1.25788e-06)
+recalculate_facet: numerical instability at facet 56262, coord 4 (-1.30623e-06)
+I  206.83] Elapsed: 3:27, vertices: 1601, facets final: 466, pending: 55193, pool: 200
+I  211.92] Elapsed: 3:32, vertices: 1628, facets final: 480, pending: 54452, pool: 200
+I  216.94] Elapsed: 3:37, vertices: 1655, facets final: 495, pending: 54703, pool: 200
+I  221.97] Elapsed: 3:42, vertices: 1683, facets final: 508, pending: 53585, pool: 200
+I  224.89] recalculating facets...
+recalculate_facet: numerical instability at facet 466, coord 4 (-1.05376e-06)
+recalculate_facet: numerical instability at facet 817, coord 4 (1.31367e-06)
+recalculate_facet: numerical instability at facet 3218, coord 0 (-1.83676e-06)
+recalculate_facet: numerical instability at facet 3218, coord 4 (2.78552e-06)
+recalculate_facet: numerical instability at facet 3218, coord 10 (1.86131e-06)
+recalculate_facet: numerical instability at facet 16889, coord 0 (4.56036e-05)
+recalculate_facet: numerical instability at facet 16889, coord 2 (-4.84163e-06)
+recalculate_facet: numerical instability at facet 16889, coord 3 (6.58478e-06)
+recalculate_facet: numerical instability at facet 16889, coord 4 (-4.79035e-05)
+recalculate_facet: numerical instability at facet 16889, coord 5 (6.48414e-06)
+recalculate_facet: numerical instability at facet 16889, coord 6 (-5.92743e-06)
+recalculate_facet: numerical instability at facet 16889, coord 10 (-3.41761e-05)
+recalculate_facet: numerical instability at facet 16892, coord 0 (-2.72619e-06)
+recalculate_facet: numerical instability at facet 16892, coord 2 (-2.57458e-06)
+recalculate_facet: numerical instability at facet 16892, coord 3 (2.61784e-06)
+recalculate_facet: numerical instability at facet 16892, coord 4 (8.92942e-06)
+recalculate_facet: numerical instability at facet 16892, coord 5 (-4.14472e-06)
+recalculate_facet: numerical instability at facet 16892, coord 6 (-2.10177e-06)
+recalculate_facet: numerical instability at facet 16892, coord 10 (4.61985e-06)
+recalculate_facet: numerical instability at facet 17384, coord 0 (5.14712e-06)
+recalculate_facet: numerical instability at facet 17384, coord 2 (-1.05026e-05)
+recalculate_facet: numerical instability at facet 17384, coord 3 (1.54916e-06)
+recalculate_facet: numerical instability at facet 17384, coord 4 (1.56093e-05)
+recalculate_facet: numerical instability at facet 17384, coord 5 (-3.3733e-06)
+recalculate_facet: numerical instability at facet 17384, coord 6 (-8.42965e-06)
+recalculate_facet: numerical instability at facet 17384, coord 10 (5.95341e-06)
+recalculate_facet: numerical instability at facet 17385, coord 0 (7.30324e-05)
+recalculate_facet: numerical instability at facet 17385, coord 2 (-4.36852e-05)
+recalculate_facet: numerical instability at facet 17385, coord 3 (2.55114e-06)
+recalculate_facet: numerical instability at facet 17385, coord 5 (5.67361e-06)
+recalculate_facet: numerical instability at facet 17385, coord 6 (-3.66232e-05)
+recalculate_facet: numerical instability at facet 17385, coord 10 (-1.83624e-05)
+recalculate_facet: numerical instability at facet 17388, coord 0 (8.16228e-05)
+recalculate_facet: numerical instability at facet 17388, coord 1 (1.46774e-06)
+recalculate_facet: numerical instability at facet 17388, coord 2 (-5.07012e-05)
+recalculate_facet: numerical instability at facet 17388, coord 4 (4.94807e-06)
+recalculate_facet: numerical instability at facet 17388, coord 5 (3.10954e-06)
+recalculate_facet: numerical instability at facet 17388, coord 6 (-4.04469e-05)
+recalculate_facet: numerical instability at facet 17388, coord 10 (-2.20792e-05)
+recalculate_facet: numerical instability at facet 17403, coord 0 (7.50819e-06)
+recalculate_facet: numerical instability at facet 17403, coord 2 (-1.35682e-05)
+recalculate_facet: numerical instability at facet 17403, coord 4 (2.03074e-05)
+recalculate_facet: numerical instability at facet 17403, coord 5 (-5.40929e-06)
+recalculate_facet: numerical instability at facet 17403, coord 6 (-9.72704e-06)
+recalculate_facet: numerical instability at facet 17403, coord 10 (4.92066e-06)
+recalculate_facet: numerical instability at facet 17815, coord 0 (-1.26259e-06)
+recalculate_facet: numerical instability at facet 17815, coord 1 (1.67442e-06)
+recalculate_facet: numerical instability at facet 17815, coord 2 (-5.09643e-06)
+recalculate_facet: numerical instability at facet 17815, coord 4 (1.47232e-05)
+recalculate_facet: numerical instability at facet 17815, coord 5 (-8.09131e-06)
+recalculate_facet: numerical instability at facet 17815, coord 6 (-1.94731e-06)
+recalculate_facet: numerical instability at facet 17815, coord 10 (1.93221e-06)
+recalculate_facet: numerical instability at facet 17819, coord 0 (5.61578e-05)
+recalculate_facet: numerical instability at facet 17819, coord 1 (4.21664e-06)
+recalculate_facet: numerical instability at facet 17819, coord 2 (-1.09856e-05)
+recalculate_facet: numerical instability at facet 17819, coord 4 (-4.25102e-05)
+recalculate_facet: numerical instability at facet 17819, coord 5 (-1.25008e-06)
+recalculate_facet: numerical instability at facet 17819, coord 6 (-5.62859e-06)
+recalculate_facet: numerical instability at facet 17819, coord 10 (-4.69337e-05)
+recalculate_facet: numerical instability at facet 25706, coord 0 (0.000137252)
+recalculate_facet: numerical instability at facet 25706, coord 2 (-0.000155774)
+recalculate_facet: numerical instability at facet 25706, coord 3 (-6.64518e-06)
+recalculate_facet: numerical instability at facet 25706, coord 4 (0.000152994)
+recalculate_facet: numerical instability at facet 25706, coord 5 (-2.98022e-06)
+recalculate_facet: numerical instability at facet 25706, coord 6 (-0.000124846)
+recalculate_facet: numerical instability at facet 25706, coord 10 (3.96276e-05)
+recalculate_facet: numerical instability at facet 25717, coord 0 (1.50247e-06)
+recalculate_facet: numerical instability at facet 25717, coord 2 (-1.76182e-06)
+recalculate_facet: numerical instability at facet 25717, coord 4 (1.75053e-06)
+recalculate_facet: numerical instability at facet 25717, coord 6 (-1.36574e-06)
+recalculate_facet: numerical instability at facet 25824, coord 0 (-1.26297e-05)
+recalculate_facet: numerical instability at facet 25824, coord 1 (4.49639e-06)
+recalculate_facet: numerical instability at facet 25824, coord 2 (1.28352e-05)
+recalculate_facet: numerical instability at facet 25824, coord 4 (-5.47882e-06)
+recalculate_facet: numerical instability at facet 25824, coord 5 (-1.48419e-05)
+recalculate_facet: numerical instability at facet 25824, coord 6 (1.56188e-05)
+recalculate_facet: numerical instability at facet 25824, coord 10 (-1.33538e-05)
+recalculate_facet: numerical instability at facet 26281, coord 0 (-1.3445e-05)
+recalculate_facet: numerical instability at facet 26281, coord 2 (1.49532e-05)
+recalculate_facet: numerical instability at facet 26281, coord 3 (6.81437e-06)
+recalculate_facet: numerical instability at facet 26281, coord 4 (-1.50366e-05)
+recalculate_facet: numerical instability at facet 26281, coord 5 (-4.79462e-06)
+recalculate_facet: numerical instability at facet 26281, coord 6 (1.15086e-05)
+recalculate_facet: numerical instability at facet 26281, coord 10 (-4.12141e-06)
+recalculate_facet: numerical instability at facet 26618, coord 0 (-1.05592e-05)
+recalculate_facet: numerical instability at facet 26618, coord 1 (4.36709e-06)
+recalculate_facet: numerical instability at facet 26618, coord 2 (1.12696e-05)
+recalculate_facet: numerical instability at facet 26618, coord 4 (-4.93528e-06)
+recalculate_facet: numerical instability at facet 26618, coord 5 (-1.43246e-05)
+recalculate_facet: numerical instability at facet 26618, coord 6 (1.41823e-05)
+recalculate_facet: numerical instability at facet 26618, coord 10 (-1.32199e-05)
+recalculate_facet: numerical instability at facet 26961, coord 0 (-1.54614e-05)
+recalculate_facet: numerical instability at facet 26961, coord 2 (1.65338e-05)
+recalculate_facet: numerical instability at facet 26961, coord 3 (7.02075e-06)
+recalculate_facet: numerical instability at facet 26961, coord 4 (-1.58558e-05)
+recalculate_facet: numerical instability at facet 26961, coord 5 (-5.02515e-06)
+recalculate_facet: numerical instability at facet 26961, coord 6 (1.27878e-05)
+recalculate_facet: numerical instability at facet 26961, coord 10 (-4.01046e-06)
+recalculate_facet: numerical instability at facet 26975, coord 0 (0.000138578)
+recalculate_facet: numerical instability at facet 26975, coord 1 (-3.82287e-06)
+recalculate_facet: numerical instability at facet 26975, coord 2 (-0.000157006)
+recalculate_facet: numerical instability at facet 26975, coord 4 (0.000148522)
+recalculate_facet: numerical instability at facet 26975, coord 5 (4.55259e-06)
+recalculate_facet: numerical instability at facet 26975, coord 6 (-0.000130824)
+recalculate_facet: numerical instability at facet 26975, coord 10 (4.87115e-05)
+recalculate_facet: numerical instability at facet 26978, coord 0 (1.3896e-06)
+recalculate_facet: numerical instability at facet 26978, coord 2 (-1.63076e-06)
+recalculate_facet: numerical instability at facet 26978, coord 4 (1.48806e-06)
+recalculate_facet: numerical instability at facet 26978, coord 6 (-1.37638e-06)
+recalculate_facet: numerical instability at facet 32592, coord 0 (5.96569e-06)
+recalculate_facet: numerical instability at facet 32592, coord 1 (3.56232e-06)
+recalculate_facet: numerical instability at facet 32592, coord 2 (-8.16162e-06)
+recalculate_facet: numerical instability at facet 32592, coord 3 (-7.26096e-06)
+recalculate_facet: numerical instability at facet 32592, coord 4 (1.29879e-05)
+recalculate_facet: numerical instability at facet 32592, coord 5 (-6.74393e-06)
+recalculate_facet: numerical instability at facet 32592, coord 10 (-5.52499e-06)
+recalculate_facet: numerical instability at facet 45809, coord 0 (1.4805e-05)
+recalculate_facet: numerical instability at facet 45809, coord 2 (-2.11282e-05)
+recalculate_facet: numerical instability at facet 45809, coord 4 (1.4717e-05)
+recalculate_facet: numerical instability at facet 45809, coord 6 (-7.24622e-06)
+recalculate_facet: numerical instability at facet 45809, coord 10 (6.40756e-06)
+recalculate_facet: numerical instability at facet 56401, coord 0 (1.13323e-06)
+recalculate_facet: numerical instability at facet 56401, coord 3 (-1.06326e-06)
+recalculate_facet: numerical instability at facet 56401, coord 10 (-1.37181e-06)
+recalculate_facet: numerical instability at facet 56438, coord 0 (2.51442e-06)
+recalculate_facet: numerical instability at facet 56438, coord 1 (1.43314e-06)
+recalculate_facet: numerical instability at facet 56438, coord 2 (-2.55552e-06)
+recalculate_facet: numerical instability at facet 56438, coord 3 (-2.73913e-06)
+recalculate_facet: numerical instability at facet 56438, coord 4 (4.16605e-06)
+recalculate_facet: numerical instability at facet 56438, coord 5 (-2.67378e-06)
+recalculate_facet: numerical instability at facet 56438, coord 10 (-2.92406e-06)
+recalculate_facet: numerical instability at facet 58710, coord 0 (2.25723e-05)
+recalculate_facet: numerical instability at facet 58710, coord 1 (2.46643e-05)
+recalculate_facet: numerical instability at facet 58710, coord 2 (-2.93619e-05)
+recalculate_facet: numerical instability at facet 58710, coord 3 (-4.21526e-05)
+recalculate_facet: numerical instability at facet 58710, coord 4 (2.01143e-05)
+recalculate_facet: numerical instability at facet 58710, coord 6 (4.16368e-06)
+recalculate_facet: numerical instability at facet 58710, coord 10 (-4.52933e-05)
+recalculate_facet: numerical instability at facet 58711, coord 2 (2.91956e-06)
+recalculate_facet: numerical instability at facet 58711, coord 6 (-2.36668e-06)
+recalculate_facet: numerical instability at facet 58711, coord 10 (-1.92214e-06)
+recalculate_facet: numerical instability at facet 58712, coord 0 (-7.66523e-06)
+recalculate_facet: numerical instability at facet 58712, coord 2 (7.47794e-06)
+recalculate_facet: numerical instability at facet 58712, coord 3 (2.49626e-06)
+recalculate_facet: numerical instability at facet 58712, coord 4 (-1.7833e-06)
+recalculate_facet: numerical instability at facet 58712, coord 10 (2.45273e-06)
+I  226.97] Elapsed: 3:47, vertices: 1710, facets final: 526, pending: 53595, pool: 199
+I  232.22] Elapsed: 3:52, vertices: 1740, facets final: 539, pending: 52948, pool: 200
+I  237.24] Elapsed: 3:57, vertices: 1766, facets final: 569, pending: 52881, pool: 200
+I  242.24] Elapsed: 4:02, vertices: 1795, facets final: 596, pending: 52592, pool: 200
+I  243.00] recalculating facets...
+recalculate_facet: numerical instability at facet 7270, coord 3 (2.11803e-06)
+recalculate_facet: numerical instability at facet 7270, coord 10 (1.01909e-06)
+recalculate_facet: numerical instability at facet 7299, coord 0 (-4.52435e-06)
+recalculate_facet: numerical instability at facet 7299, coord 3 (1.4717e-06)
+recalculate_facet: numerical instability at facet 7299, coord 4 (4.97782e-06)
+recalculate_facet: numerical instability at facet 7299, coord 10 (5.67347e-06)
+recalculate_facet: numerical instability at facet 7691, coord 0 (-7.12257e-06)
+recalculate_facet: numerical instability at facet 7691, coord 1 (-1.48981e-06)
+recalculate_facet: numerical instability at facet 7691, coord 3 (4.04101e-06)
+recalculate_facet: numerical instability at facet 7691, coord 4 (6.86031e-06)
+recalculate_facet: numerical instability at facet 7691, coord 6 (-1.9334e-06)
+recalculate_facet: numerical instability at facet 7691, coord 10 (9.72334e-06)
+recalculate_facet: numerical instability at facet 14343, coord 0 (1.34682e-06)
+recalculate_facet: numerical instability at facet 14343, coord 4 (-1.7951e-06)
+recalculate_facet: numerical instability at facet 14343, coord 10 (-1.18638e-06)
+recalculate_facet: numerical instability at facet 14698, coord 0 (-1.1723e-06)
+recalculate_facet: numerical instability at facet 14698, coord 2 (1.37824e-06)
+recalculate_facet: numerical instability at facet 14698, coord 3 (1.3661e-06)
+recalculate_facet: numerical instability at facet 14698, coord 4 (-2.03473e-06)
+recalculate_facet: numerical instability at facet 14698, coord 5 (1.03012e-06)
+recalculate_facet: numerical instability at facet 14698, coord 10 (1.09756e-06)
+recalculate_facet: numerical instability at facet 14702, coord 0 (-1.0933e-06)
+recalculate_facet: numerical instability at facet 14702, coord 2 (1.34833e-06)
+recalculate_facet: numerical instability at facet 14702, coord 3 (1.2872e-06)
+recalculate_facet: numerical instability at facet 14702, coord 4 (-2.02921e-06)
+recalculate_facet: numerical instability at facet 14702, coord 5 (1.02772e-06)
+recalculate_facet: numerical instability at facet 14702, coord 10 (1.0108e-06)
+recalculate_facet: numerical instability at facet 14973, coord 0 (8.70438e-06)
+recalculate_facet: numerical instability at facet 14973, coord 1 (4.43032e-06)
+recalculate_facet: numerical instability at facet 14973, coord 2 (-9.89033e-06)
+recalculate_facet: numerical instability at facet 14973, coord 3 (-8.81397e-06)
+recalculate_facet: numerical instability at facet 14973, coord 4 (1.40658e-05)
+recalculate_facet: numerical instability at facet 14973, coord 5 (-8.13619e-06)
+recalculate_facet: numerical instability at facet 14973, coord 10 (-8.21823e-06)
+recalculate_facet: numerical instability at facet 14974, coord 4 (-1.34885e-06)
+recalculate_facet: numerical instability at facet 15200, coord 2 (1.17126e-06)
+recalculate_facet: numerical instability at facet 15200, coord 3 (1.21019e-06)
+recalculate_facet: numerical instability at facet 15200, coord 4 (-2.69056e-06)
+recalculate_facet: numerical instability at facet 15200, coord 5 (1.01837e-06)
+recalculate_facet: numerical instability at facet 15278, coord 4 (1.95571e-06)
+recalculate_facet: numerical instability at facet 15278, coord 5 (-1.77858e-06)
+recalculate_facet: numerical instability at facet 24318, coord 0 (1.27242e-06)
+recalculate_facet: numerical instability at facet 24318, coord 2 (-1.28833e-06)
+recalculate_facet: numerical instability at facet 24318, coord 3 (-1.38103e-06)
+recalculate_facet: numerical instability at facet 24318, coord 4 (2.09656e-06)
+recalculate_facet: numerical instability at facet 24318, coord 5 (-1.35077e-06)
+recalculate_facet: numerical instability at facet 24318, coord 10 (-1.48168e-06)
+recalculate_facet: numerical instability at facet 27309, coord 0 (1.07221e-06)
+recalculate_facet: numerical instability at facet 27309, coord 10 (-1.312e-06)
+recalculate_facet: numerical instability at facet 27638, coord 0 (-3.87913e-05)
+recalculate_facet: numerical instability at facet 27638, coord 1 (2.99936e-05)
+recalculate_facet: numerical instability at facet 27638, coord 2 (-0.000133715)
+recalculate_facet: numerical instability at facet 27638, coord 4 (0.000309619)
+recalculate_facet: numerical instability at facet 27638, coord 5 (-0.000144042)
+recalculate_facet: numerical instability at facet 27638, coord 6 (-2.30645e-05)
+recalculate_facet: numerical instability at facet 27638, coord 10 (8.06275e-05)
+recalculate_facet: numerical instability at facet 27644, coord 0 (-1.60794e-06)
+recalculate_facet: numerical instability at facet 27644, coord 2 (2.93484e-06)
+recalculate_facet: numerical instability at facet 27644, coord 4 (-4.38526e-06)
+recalculate_facet: numerical instability at facet 27644, coord 5 (3.59612e-06)
+recalculate_facet: numerical instability at facet 27662, coord 0 (-1.51899e-06)
+recalculate_facet: numerical instability at facet 27662, coord 1 (-1.1407e-06)
+recalculate_facet: numerical instability at facet 27662, coord 2 (3.82281e-06)
+recalculate_facet: numerical instability at facet 27662, coord 4 (-6.28595e-06)
+recalculate_facet: numerical instability at facet 27662, coord 5 (4.57919e-06)
+recalculate_facet: numerical instability at facet 38525, coord 4 (1.57444e-06)
+I  247.31] Elapsed: 4:07, vertices: 1823, facets final: 613, pending: 52527, pool: 200
+I  252.31] Elapsed: 4:12, vertices: 1854, facets final: 627, pending: 52264, pool: 200
+I  257.34] Elapsed: 4:17, vertices: 1885, facets final: 642, pending: 51822, pool: 200
+I  259.97] recalculating facets...
+recalculate_facet: numerical instability at facet 29430, coord 0 (-4.52199e-06)
+recalculate_facet: numerical instability at facet 29430, coord 2 (5.50356e-06)
+recalculate_facet: numerical instability at facet 29430, coord 4 (-2.93523e-06)
+recalculate_facet: numerical instability at facet 29430, coord 6 (1.97773e-06)
+recalculate_facet: numerical instability at facet 29430, coord 10 (-1.07589e-06)
+recalculate_facet: numerical instability at facet 31779, coord 0 (-2.77765e-06)
+recalculate_facet: numerical instability at facet 31779, coord 2 (2.90274e-06)
+recalculate_facet: numerical instability at facet 31779, coord 4 (-1.98308e-06)
+recalculate_facet: numerical instability at facet 31779, coord 5 (1.76559e-06)
+recalculate_facet: numerical instability at facet 31779, coord 10 (1.03938e-06)
+recalculate_facet: numerical instability at facet 32238, coord 0 (-3.5279e-06)
+recalculate_facet: numerical instability at facet 32238, coord 2 (4.09787e-06)
+recalculate_facet: numerical instability at facet 32238, coord 4 (-1.35086e-06)
+recalculate_facet: numerical instability at facet 32238, coord 5 (-1.09583e-06)
+recalculate_facet: numerical instability at facet 32238, coord 6 (1.57268e-06)
+recalculate_facet: numerical instability at facet 32238, coord 10 (-1.21633e-06)
+recalculate_facet: numerical instability at facet 32418, coord 0 (-1.65959e-06)
+recalculate_facet: numerical instability at facet 32418, coord 2 (1.69465e-06)
+recalculate_facet: numerical instability at facet 57221, coord 0 (-2.70911e-05)
+recalculate_facet: numerical instability at facet 57221, coord 1 (-6.91351e-06)
+recalculate_facet: numerical instability at facet 57221, coord 2 (2.24402e-05)
+recalculate_facet: numerical instability at facet 57221, coord 4 (-1.21897e-05)
+recalculate_facet: numerical instability at facet 57221, coord 5 (2.08691e-05)
+recalculate_facet: numerical instability at facet 57221, coord 6 (2.88501e-06)
+recalculate_facet: numerical instability at facet 57221, coord 10 (1.92458e-05)
+recalculate_facet: numerical instability at facet 57353, coord 2 (-1.6278e-06)
+recalculate_facet: numerical instability at facet 57353, coord 4 (5.23642e-06)
+recalculate_facet: numerical instability at facet 57353, coord 5 (-3.52084e-06)
+recalculate_facet: numerical instability at facet 57390, coord 0 (-1.22097e-06)
+recalculate_facet: numerical instability at facet 57390, coord 3 (1.33473e-06)
+recalculate_facet: numerical instability at facet 57390, coord 4 (2.83706e-06)
+recalculate_facet: numerical instability at facet 57390, coord 5 (-1.79783e-06)
+recalculate_facet: numerical instability at facet 57390, coord 10 (1.49712e-06)
+I  262.36] Elapsed: 4:22, vertices: 1915, facets final: 656, pending: 51606, pool: 200
+I  267.44] Elapsed: 4:27, vertices: 1943, facets final: 674, pending: 51612, pool: 200
+I  272.46] Elapsed: 4:32, vertices: 1974, facets final: 689, pending: 52098, pool: 200
+I  276.58] recalculating facets...
+recalculate_facet: numerical instability at facet 19278, coord 0 (1.01023e-06)
+recalculate_facet: numerical instability at facet 19278, coord 4 (-1.0318e-06)
+recalculate_facet: numerical instability at facet 19278, coord 10 (-1.00757e-06)
+recalculate_facet: numerical instability at facet 53441, coord 2 (-1.98498e-06)
+recalculate_facet: numerical instability at facet 53441, coord 4 (3.3127e-06)
+recalculate_facet: numerical instability at facet 53441, coord 10 (1.95538e-06)
+recalculate_facet: numerical instability at facet 53442, coord 2 (-2.35475e-06)
+recalculate_facet: numerical instability at facet 53442, coord 4 (3.93029e-06)
+recalculate_facet: numerical instability at facet 53442, coord 10 (2.24429e-06)
+recalculate_facet: numerical instability at facet 53769, coord 3 (-1.81083e-06)
+recalculate_facet: numerical instability at facet 53769, coord 4 (2.51443e-06)
+recalculate_facet: numerical instability at facet 53769, coord 10 (1.61171e-06)
+recalculate_facet: numerical instability at facet 53771, coord 0 (1.2341e-06)
+recalculate_facet: numerical instability at facet 53771, coord 4 (-4.04202e-06)
+recalculate_facet: numerical instability at facet 53771, coord 6 (2.50543e-06)
+recalculate_facet: numerical instability at facet 53771, coord 10 (-1.20028e-06)
+recalculate_facet: numerical instability at facet 53772, coord 3 (-2.07562e-06)
+recalculate_facet: numerical instability at facet 53772, coord 4 (2.71366e-06)
+recalculate_facet: numerical instability at facet 53772, coord 10 (1.65811e-06)
+recalculate_facet: numerical instability at facet 57276, coord 0 (2.50687e-06)
+recalculate_facet: numerical instability at facet 57276, coord 4 (-2.48984e-06)
+recalculate_facet: numerical instability at facet 57276, coord 10 (-2.55734e-06)
+recalculate_facet: numerical instability at facet 57993, coord 2 (-2.91598e-06)
+recalculate_facet: numerical instability at facet 57993, coord 4 (5.13786e-06)
+recalculate_facet: numerical instability at facet 57993, coord 5 (-1.07435e-06)
+recalculate_facet: numerical instability at facet 57993, coord 10 (2.59436e-06)
+recalculate_facet: numerical instability at facet 57996, coord 0 (1.80158e-05)
+recalculate_facet: numerical instability at facet 57996, coord 2 (-2.40569e-06)
+recalculate_facet: numerical instability at facet 57996, coord 4 (-1.67782e-05)
+recalculate_facet: numerical instability at facet 57996, coord 10 (-1.53779e-05)
+recalculate_facet: numerical instability at facet 58082, coord 2 (-2.25657e-06)
+recalculate_facet: numerical instability at facet 58082, coord 4 (4.00955e-06)
+recalculate_facet: numerical instability at facet 58082, coord 10 (2.36909e-06)
+I  277.50] Elapsed: 4:38, vertices: 2005, facets final: 709, pending: 52008, pool: 200
+I  282.58] Elapsed: 4:43, vertices: 2033, facets final: 724, pending: 51965, pool: 199
+I  287.63] Elapsed: 4:48, vertices: 2061, facets final: 756, pending: 51776, pool: 200
+I  292.63] Elapsed: 4:53, vertices: 2088, facets final: 781, pending: 51542, pool: 200
+I  294.46] recalculating facets...
+recalculate_facet: numerical instability at facet 22664, coord 0 (2.47605e-05)
+recalculate_facet: numerical instability at facet 22664, coord 2 (-1.29464e-05)
+recalculate_facet: numerical instability at facet 22664, coord 4 (5.14705e-06)
+recalculate_facet: numerical instability at facet 22664, coord 5 (2.65093e-06)
+recalculate_facet: numerical instability at facet 22664, coord 6 (-1.86979e-05)
+recalculate_facet: numerical instability at facet 22664, coord 10 (-5.42146e-06)
+recalculate_facet: numerical instability at facet 22676, coord 0 (8.52763e-06)
+recalculate_facet: numerical instability at facet 22676, coord 2 (-5.51666e-06)
+recalculate_facet: numerical instability at facet 22676, coord 4 (-4.56497e-06)
+recalculate_facet: numerical instability at facet 22676, coord 5 (4.13041e-06)
+recalculate_facet: numerical instability at facet 22676, coord 6 (-2.1339e-06)
+recalculate_facet: numerical instability at facet 22676, coord 10 (-1.39008e-06)
+recalculate_facet: numerical instability at facet 22871, coord 0 (9.05051e-06)
+recalculate_facet: numerical instability at facet 22871, coord 2 (-5.82406e-06)
+recalculate_facet: numerical instability at facet 22871, coord 4 (-3.76659e-06)
+recalculate_facet: numerical instability at facet 22871, coord 5 (3.31803e-06)
+recalculate_facet: numerical instability at facet 22871, coord 6 (-1.94135e-06)
+recalculate_facet: numerical instability at facet 22871, coord 10 (-2.50728e-06)
+recalculate_facet: numerical instability at facet 22977, coord 0 (2.44816e-05)
+recalculate_facet: numerical instability at facet 22977, coord 2 (-1.27373e-05)
+recalculate_facet: numerical instability at facet 22977, coord 4 (4.47195e-06)
+recalculate_facet: numerical instability at facet 22977, coord 5 (3.51232e-06)
+recalculate_facet: numerical instability at facet 22977, coord 6 (-1.92457e-05)
+recalculate_facet: numerical instability at facet 22977, coord 10 (-4.25354e-06)
+recalculate_facet: numerical instability at facet 53628, coord 0 (-1.21026e-05)
+recalculate_facet: numerical instability at facet 53628, coord 2 (1.03755e-05)
+recalculate_facet: numerical instability at facet 53628, coord 3 (-1.75178e-05)
+recalculate_facet: numerical instability at facet 53628, coord 4 (3.47251e-06)
+recalculate_facet: numerical instability at facet 53628, coord 5 (1.22809e-05)
+recalculate_facet: numerical instability at facet 53628, coord 6 (3.49154e-06)
+recalculate_facet: numerical instability at facet 53628, coord 10 (2.57854e-06)
+recalculate_facet: numerical instability at facet 53671, coord 0 (8.90521e-06)
+recalculate_facet: numerical instability at facet 53671, coord 2 (-1.02282e-05)
+recalculate_facet: numerical instability at facet 53671, coord 4 (3.75988e-06)
+recalculate_facet: numerical instability at facet 53671, coord 6 (-3.39767e-06)
+recalculate_facet: numerical instability at facet 53671, coord 10 (1.17747e-06)
+recalculate_facet: numerical instability at facet 53673, coord 0 (9.80875e-06)
+recalculate_facet: numerical instability at facet 53673, coord 2 (-1.09154e-05)
+recalculate_facet: numerical instability at facet 53673, coord 4 (4.44056e-06)
+recalculate_facet: numerical instability at facet 53673, coord 6 (-3.38218e-06)
+recalculate_facet: numerical instability at facet 53791, coord 0 (1.03452e-06)
+recalculate_facet: numerical instability at facet 53791, coord 10 (-1.04486e-06)
+recalculate_facet: numerical instability at facet 56142, coord 0 (-1.0934e-06)
+recalculate_facet: numerical instability at facet 56142, coord 4 (-2.39066e-06)
+recalculate_facet: numerical instability at facet 56142, coord 6 (3.83308e-06)
+recalculate_facet: numerical instability at facet 56142, coord 10 (1.10871e-06)
+recalculate_facet: numerical instability at facet 56555, coord 0 (1.41341e-06)
+recalculate_facet: numerical instability at facet 56555, coord 4 (-2.28005e-06)
+recalculate_facet: numerical instability at facet 56555, coord 10 (-1.41254e-06)
+recalculate_facet: numerical instability at facet 56556, coord 0 (1.09303e-05)
+recalculate_facet: numerical instability at facet 56556, coord 2 (2.49869e-06)
+recalculate_facet: numerical instability at facet 56556, coord 3 (3.43827e-06)
+recalculate_facet: numerical instability at facet 56556, coord 4 (-1.76874e-05)
+recalculate_facet: numerical instability at facet 56556, coord 10 (-1.09217e-05)
+recalculate_facet: numerical instability at facet 56557, coord 0 (1.59282e-05)
+recalculate_facet: numerical instability at facet 56557, coord 1 (1.71938e-06)
+recalculate_facet: numerical instability at facet 56557, coord 4 (-1.55462e-05)
+recalculate_facet: numerical instability at facet 56557, coord 5 (-3.08725e-06)
+recalculate_facet: numerical instability at facet 56557, coord 6 (1.19713e-06)
+recalculate_facet: numerical instability at facet 56557, coord 10 (-1.592e-05)
+recalculate_facet: numerical instability at facet 57114, coord 0 (-1.46792e-05)
+recalculate_facet: numerical instability at facet 57114, coord 2 (-2.60066e-06)
+recalculate_facet: numerical instability at facet 57114, coord 3 (-3.92327e-06)
+recalculate_facet: numerical instability at facet 57114, coord 4 (2.36591e-05)
+recalculate_facet: numerical instability at facet 57114, coord 5 (-1.31614e-06)
+recalculate_facet: numerical instability at facet 57114, coord 6 (-1.13986e-06)
+recalculate_facet: numerical instability at facet 57114, coord 10 (1.46476e-05)
+recalculate_facet: numerical instability at facet 57178, coord 0 (-2.03992e-05)
+recalculate_facet: numerical instability at facet 57178, coord 1 (-1.96354e-06)
+recalculate_facet: numerical instability at facet 57178, coord 4 (2.12338e-05)
+recalculate_facet: numerical instability at facet 57178, coord 5 (2.19382e-06)
+recalculate_facet: numerical instability at facet 57178, coord 6 (-1.55667e-06)
+recalculate_facet: numerical instability at facet 57178, coord 10 (2.0368e-05)
+recalculate_facet: numerical instability at facet 58032, coord 0 (-3.52627e-06)
+recalculate_facet: numerical instability at facet 58032, coord 2 (3.9537e-06)
+recalculate_facet: numerical instability at facet 58032, coord 4 (-3.97794e-06)
+recalculate_facet: numerical instability at facet 58032, coord 6 (3.17174e-06)
+recalculate_facet: numerical instability at facet 58035, coord 0 (-3.67839e-06)
+recalculate_facet: numerical instability at facet 58035, coord 2 (4.11463e-06)
+recalculate_facet: numerical instability at facet 58035, coord 4 (-3.97318e-06)
+recalculate_facet: numerical instability at facet 58035, coord 6 (3.45176e-06)
+recalculate_facet: numerical instability at facet 58035, coord 10 (-1.27461e-06)
+recalculate_facet: numerical instability at facet 58262, coord 0 (1.90167e-05)
+recalculate_facet: numerical instability at facet 58262, coord 1 (1.26304e-05)
+recalculate_facet: numerical instability at facet 58262, coord 2 (-2.41327e-05)
+recalculate_facet: numerical instability at facet 58262, coord 3 (-2.61723e-05)
+recalculate_facet: numerical instability at facet 58262, coord 4 (4.12845e-05)
+recalculate_facet: numerical instability at facet 58262, coord 5 (-2.30047e-05)
+recalculate_facet: numerical instability at facet 58262, coord 10 (-2.18667e-05)
+recalculate_facet: numerical instability at facet 58264, coord 0 (0.0147902)
+recalculate_facet: numerical instability at facet 58264, coord 1 (0.00316202)
+recalculate_facet: numerical instability at facet 58264, coord 2 (-0.00515539)
+recalculate_facet: numerical instability at facet 58264, coord 3 (-0.00569179)
+recalculate_facet: numerical instability at facet 58264, coord 4 (-0.00337349)
+recalculate_facet: numerical instability at facet 58264, coord 5 (-0.00412643)
+recalculate_facet: numerical instability at facet 58264, coord 6 (0.000394894)
+recalculate_facet: numerical instability at facet 58264, coord 10 (-0.0149973)
+recalculate_facet: numerical instability at facet 58265, coord 0 (-0.00472122)
+recalculate_facet: numerical instability at facet 58265, coord 1 (-0.0030528)
+recalculate_facet: numerical instability at facet 58265, coord 2 (0.00528228)
+recalculate_facet: numerical instability at facet 58265, coord 3 (0.0063797)
+recalculate_facet: numerical instability at facet 58265, coord 4 (-0.00901606)
+recalculate_facet: numerical instability at facet 58265, coord 5 (0.00539914)
+recalculate_facet: numerical instability at facet 58265, coord 6 (-0.000271046)
+recalculate_facet: numerical instability at facet 58265, coord 10 (0.00586642)
+recalculate_facet: numerical instability at facet 58340, coord 2 (-3.30434e-06)
+recalculate_facet: numerical instability at facet 58340, coord 4 (4.73599e-06)
+recalculate_facet: numerical instability at facet 58340, coord 6 (-1.10377e-06)
+recalculate_facet: numerical instability at facet 58340, coord 10 (2.72319e-06)
+recalculate_facet: numerical instability at facet 58342, coord 0 (0.0150895)
+recalculate_facet: numerical instability at facet 58342, coord 2 (8.90657e-05)
+recalculate_facet: numerical instability at facet 58342, coord 3 (0.0010745)
+recalculate_facet: numerical instability at facet 58342, coord 4 (-0.0187303)
+recalculate_facet: numerical instability at facet 58342, coord 5 (0.00244122)
+recalculate_facet: numerical instability at facet 58342, coord 6 (3.60138e-05)
+recalculate_facet: numerical instability at facet 58342, coord 10 (-0.013223)
+recalculate_facet: numerical instability at facet 58343, coord 0 (-0.00013887)
+recalculate_facet: numerical instability at facet 58343, coord 2 (0.000187645)
+recalculate_facet: numerical instability at facet 58343, coord 3 (0.000144713)
+recalculate_facet: numerical instability at facet 58343, coord 4 (-0.000137555)
+recalculate_facet: numerical instability at facet 58343, coord 5 (-0.00012187)
+recalculate_facet: numerical instability at facet 58343, coord 6 (6.59374e-05)
+recalculate_facet: numerical instability at facet 58343, coord 10 (-5.80613e-05)
+recalculate_facet: numerical instability at facet 58361, coord 2 (2.95477e-06)
+recalculate_facet: numerical instability at facet 58361, coord 4 (-6.31354e-06)
+recalculate_facet: numerical instability at facet 58361, coord 5 (3.95041e-06)
+recalculate_facet: numerical instability at facet 58625, coord 0 (-1.63369e-06)
+recalculate_facet: numerical instability at facet 58625, coord 2 (2.0118e-06)
+recalculate_facet: numerical instability at facet 58625, coord 3 (1.92102e-06)
+recalculate_facet: numerical instability at facet 58625, coord 4 (-3.03422e-06)
+recalculate_facet: numerical instability at facet 58625, coord 5 (1.54234e-06)
+recalculate_facet: numerical instability at facet 58625, coord 10 (1.51086e-06)
+I  297.69] Elapsed: 4:58, vertices: 2116, facets final: 810, pending: 51189, pool: 200
+I  302.71] Elapsed: 5:03, vertices: 2147, facets final: 840, pending: 50546, pool: 200
+I  307.79] Elapsed: 5:08, vertices: 2179, facets final: 861, pending: 50217, pool: 200
+I  311.32] recalculating facets...
+recalculate_facet: numerical instability at facet 18196, coord 0 (-6.02029e-06)
+recalculate_facet: numerical instability at facet 18196, coord 1 (-3.58448e-06)
+recalculate_facet: numerical instability at facet 18196, coord 2 (8.47019e-06)
+recalculate_facet: numerical instability at facet 18196, coord 3 (7.29305e-06)
+recalculate_facet: numerical instability at facet 18196, coord 4 (-1.34208e-05)
+recalculate_facet: numerical instability at facet 18196, coord 5 (6.84559e-06)
+recalculate_facet: numerical instability at facet 18196, coord 10 (5.35233e-06)
+recalculate_facet: numerical instability at facet 51922, coord 0 (-0.00051873)
+recalculate_facet: numerical instability at facet 51922, coord 2 (0.00094702)
+recalculate_facet: numerical instability at facet 51922, coord 3 (-8.46845e-05)
+recalculate_facet: numerical instability at facet 51922, coord 4 (-0.000851358)
+recalculate_facet: numerical instability at facet 51922, coord 5 (0.000145974)
+recalculate_facet: numerical instability at facet 51922, coord 6 (0.000361778)
+recalculate_facet: numerical instability at facet 51922, coord 10 (-0.000408335)
+recalculate_facet: numerical instability at facet 51923, coord 0 (-3.92363e-06)
+recalculate_facet: numerical instability at facet 51923, coord 2 (2.29195e-06)
+recalculate_facet: numerical instability at facet 51923, coord 4 (1.40701e-06)
+recalculate_facet: numerical instability at facet 51923, coord 10 (1.29183e-06)
+recalculate_facet: numerical instability at facet 52620, coord 4 (-1.2267e-06)
+recalculate_facet: numerical instability at facet 52620, coord 5 (1.09645e-06)
+recalculate_facet: numerical instability at facet 52620, coord 10 (1.05045e-06)
+recalculate_facet: numerical instability at facet 52688, coord 0 (-1.28883e-06)
+recalculate_facet: numerical instability at facet 52688, coord 4 (2.11215e-06)
+recalculate_facet: numerical instability at facet 52688, coord 10 (1.28948e-06)
+recalculate_facet: numerical instability at facet 55541, coord 0 (6.63191e-06)
+recalculate_facet: numerical instability at facet 55541, coord 2 (-1.45427e-05)
+recalculate_facet: numerical instability at facet 55541, coord 3 (5.62761e-05)
+recalculate_facet: numerical instability at facet 55541, coord 4 (-3.1873e-06)
+recalculate_facet: numerical instability at facet 55541, coord 5 (-4.66706e-05)
+recalculate_facet: numerical instability at facet 55541, coord 6 (1.49266e-06)
+recalculate_facet: numerical instability at facet 58425, coord 0 (1.49803e-06)
+recalculate_facet: numerical instability at facet 58425, coord 4 (-1.45942e-06)
+recalculate_facet: numerical instability at facet 58461, coord 0 (1.1877e-06)
+recalculate_facet: numerical instability at facet 58461, coord 4 (-1.9706e-06)
+recalculate_facet: numerical instability at facet 58461, coord 10 (-1.2009e-06)
+recalculate_facet: numerical instability at facet 58463, coord 4 (-2.19118e-06)
+recalculate_facet: numerical instability at facet 58474, coord 0 (4.62499e-06)
+recalculate_facet: numerical instability at facet 58474, coord 4 (-2.31992e-06)
+recalculate_facet: numerical instability at facet 58474, coord 5 (-2.80479e-06)
+recalculate_facet: numerical instability at facet 58474, coord 10 (-4.62628e-06)
+recalculate_facet: numerical instability at facet 58480, coord 0 (1.69814e-06)
+recalculate_facet: numerical instability at facet 58480, coord 4 (-1.37348e-06)
+recalculate_facet: numerical instability at facet 58480, coord 10 (-1.17675e-06)
+recalculate_facet: numerical instability at facet 58481, coord 0 (1.40213e-06)
+recalculate_facet: numerical instability at facet 58481, coord 4 (-1.11658e-06)
+recalculate_facet: numerical instability at facet 58524, coord 0 (2.0853e-06)
+recalculate_facet: numerical instability at facet 58524, coord 3 (1.74635e-06)
+recalculate_facet: numerical instability at facet 58524, coord 4 (-3.4066e-06)
+recalculate_facet: numerical instability at facet 58524, coord 5 (-1.24273e-06)
+recalculate_facet: numerical instability at facet 58524, coord 10 (-2.08641e-06)
+I  312.85] Elapsed: 5:13, vertices: 2209, facets final: 878, pending: 49952, pool: 200
+I  317.90] Elapsed: 5:18, vertices: 2239, facets final: 893, pending: 49782, pool: 200
+I  322.90] Elapsed: 5:23, vertices: 2273, facets final: 919, pending: 49156, pool: 200
+I  326.68] recalculating facets...
+recalculate_facet: numerical instability at facet 14372, coord 0 (1.30695e-06)
+recalculate_facet: numerical instability at facet 14372, coord 5 (-1.94419e-06)
+recalculate_facet: numerical instability at facet 14372, coord 10 (-1.96003e-06)
+recalculate_facet: numerical instability at facet 18196, coord 0 (1.6515e-06)
+recalculate_facet: numerical instability at facet 18196, coord 2 (-2.033e-06)
+recalculate_facet: numerical instability at facet 18196, coord 3 (-1.94182e-06)
+recalculate_facet: numerical instability at facet 18196, coord 4 (3.06573e-06)
+recalculate_facet: numerical instability at facet 18196, coord 5 (-1.55834e-06)
+recalculate_facet: numerical instability at facet 18196, coord 10 (-1.52749e-06)
+recalculate_facet: numerical instability at facet 29881, coord 0 (4.55518e-06)
+recalculate_facet: numerical instability at facet 29881, coord 2 (-2.49613e-06)
+recalculate_facet: numerical instability at facet 29881, coord 4 (-2.05355e-06)
+recalculate_facet: numerical instability at facet 29881, coord 5 (1.1223e-06)
+recalculate_facet: numerical instability at facet 29881, coord 10 (-1.65085e-06)
+I  327.97] Elapsed: 5:28, vertices: 2307, facets final: 952, pending: 48892, pool: 200
+I  332.99] Elapsed: 5:33, vertices: 2339, facets final: 975, pending: 48940, pool: 200
+I  338.02] Elapsed: 5:38, vertices: 2369, facets final: 984, pending: 48719, pool: 200
+I  342.82] recalculating facets...
+recalculate_facet: numerical instability at facet 19348, coord 0 (6.50105e-06)
+recalculate_facet: numerical instability at facet 19348, coord 2 (1.93674e-06)
+recalculate_facet: numerical instability at facet 19348, coord 3 (1.77144e-06)
+recalculate_facet: numerical instability at facet 19348, coord 4 (-1.10905e-05)
+recalculate_facet: numerical instability at facet 19348, coord 10 (-7.13371e-06)
+recalculate_facet: numerical instability at facet 19667, coord 0 (9.40826e-06)
+recalculate_facet: numerical instability at facet 19667, coord 4 (-1.03569e-05)
+recalculate_facet: numerical instability at facet 19667, coord 10 (-1.00643e-05)
+I  343.04] Elapsed: 5:43, vertices: 2401, facets final: 1002, pending: 48620, pool: 200
+I  348.06] Elapsed: 5:48, vertices: 2437, facets final: 1038, pending: 48182, pool: 199
+I  353.07] Elapsed: 5:53, vertices: 2472, facets final: 1070, pending: 47739, pool: 200
+I  357.00] recalculating facets...
+recalculate_facet: numerical instability at facet 50949, coord 0 (-5.34578e-06)
+recalculate_facet: numerical instability at facet 50949, coord 2 (6.18805e-06)
+recalculate_facet: numerical instability at facet 50949, coord 4 (-1.41857e-06)
+recalculate_facet: numerical instability at facet 50949, coord 5 (-2.24292e-06)
+recalculate_facet: numerical instability at facet 50949, coord 6 (2.3586e-06)
+recalculate_facet: numerical instability at facet 50949, coord 10 (-1.82586e-06)
+recalculate_facet: numerical instability at facet 50952, coord 0 (-8.36494e-06)
+recalculate_facet: numerical instability at facet 50952, coord 2 (5.33774e-06)
+recalculate_facet: numerical instability at facet 50952, coord 4 (3.55077e-06)
+recalculate_facet: numerical instability at facet 50952, coord 5 (-3.12706e-06)
+recalculate_facet: numerical instability at facet 50952, coord 6 (1.77925e-06)
+recalculate_facet: numerical instability at facet 50952, coord 10 (2.35127e-06)
+recalculate_facet: numerical instability at facet 50965, coord 0 (-6.02723e-06)
+recalculate_facet: numerical instability at facet 50965, coord 2 (6.53888e-06)
+recalculate_facet: numerical instability at facet 50965, coord 4 (-2.0929e-06)
+recalculate_facet: numerical instability at facet 50965, coord 5 (-1.46218e-06)
+recalculate_facet: numerical instability at facet 50965, coord 6 (2.16871e-06)
+recalculate_facet: numerical instability at facet 50974, coord 0 (-7.61516e-06)
+recalculate_facet: numerical instability at facet 50974, coord 2 (5.01443e-06)
+recalculate_facet: numerical instability at facet 50974, coord 4 (4.06374e-06)
+recalculate_facet: numerical instability at facet 50974, coord 5 (-3.19548e-06)
+recalculate_facet: numerical instability at facet 50974, coord 10 (2.22048e-06)
+recalculate_facet: numerical instability at facet 50975, coord 0 (-6.93508e-06)
+recalculate_facet: numerical instability at facet 50975, coord 2 (4.62618e-06)
+recalculate_facet: numerical instability at facet 50975, coord 4 (4.90897e-06)
+recalculate_facet: numerical instability at facet 50975, coord 5 (-3.99208e-06)
+recalculate_facet: numerical instability at facet 50975, coord 10 (1.08385e-06)
+recalculate_facet: numerical instability at facet 51011, coord 0 (-7.87587e-06)
+recalculate_facet: numerical instability at facet 51011, coord 2 (5.0489e-06)
+recalculate_facet: numerical instability at facet 51011, coord 4 (4.36031e-06)
+recalculate_facet: numerical instability at facet 51011, coord 5 (-3.94841e-06)
+recalculate_facet: numerical instability at facet 51011, coord 6 (1.97581e-06)
+recalculate_facet: numerical instability at facet 51011, coord 10 (1.25283e-06)
+recalculate_facet: numerical instability at facet 51673, coord 4 (1.43266e-06)
+recalculate_facet: numerical instability at facet 51674, coord 4 (1.11969e-06)
+recalculate_facet: numerical instability at facet 52739, coord 0 (-6.91976e-06)
+recalculate_facet: numerical instability at facet 52739, coord 1 (-1.01378e-06)
+recalculate_facet: numerical instability at facet 52739, coord 2 (8.60295e-06)
+recalculate_facet: numerical instability at facet 52739, coord 4 (-6.41442e-06)
+recalculate_facet: numerical instability at facet 52739, coord 5 (3.53444e-06)
+recalculate_facet: numerical instability at facet 52739, coord 6 (2.21057e-06)
+recalculate_facet: numerical instability at facet 52747, coord 0 (-4.73232e-06)
+recalculate_facet: numerical instability at facet 52747, coord 2 (7.01949e-06)
+recalculate_facet: numerical instability at facet 52747, coord 3 (-1.97466e-06)
+recalculate_facet: numerical instability at facet 52747, coord 4 (-4.57306e-06)
+recalculate_facet: numerical instability at facet 52747, coord 5 (1.90096e-06)
+recalculate_facet: numerical instability at facet 52747, coord 6 (2.3596e-06)
+recalculate_facet: numerical instability at facet 52747, coord 10 (-1.82954e-06)
+recalculate_facet: numerical instability at facet 54540, coord 4 (1.31154e-06)
+I  358.11] Elapsed: 5:58, vertices: 2507, facets final: 1105, pending: 47502, pool: 200
+I  363.19] Elapsed: 6:03, vertices: 2540, facets final: 1141, pending: 46960, pool: 200
+I  368.20] Elapsed: 6:08, vertices: 2569, facets final: 1178, pending: 46618, pool: 200
+I  373.09] recalculating facets...
+recalculate_facet: numerical instability at facet 27558, coord 0 (-5.02075e-06)
+recalculate_facet: numerical instability at facet 27558, coord 3 (2.85849e-06)
+recalculate_facet: numerical instability at facet 27558, coord 4 (6.31429e-06)
+recalculate_facet: numerical instability at facet 27558, coord 5 (-4.04716e-06)
+recalculate_facet: numerical instability at facet 27558, coord 10 (3.58627e-06)
+I  373.25] Elapsed: 6:13, vertices: 2600, facets final: 1219, pending: 46352, pool: 200
+I  378.25] Elapsed: 6:18, vertices: 2637, facets final: 1260, pending: 45896, pool: 200
+I  383.27] Elapsed: 6:23, vertices: 2673, facets final: 1321, pending: 45773, pool: 200
+I  387.16] recalculating facets...
+recalculate_facet: numerical instability at facet 35836, coord 0 (2.0236e-05)
+recalculate_facet: numerical instability at facet 35836, coord 2 (-2.60868e-05)
+recalculate_facet: numerical instability at facet 35836, coord 3 (1.15738e-05)
+recalculate_facet: numerical instability at facet 35836, coord 4 (1.19155e-05)
+recalculate_facet: numerical instability at facet 35836, coord 5 (-8.92168e-06)
+recalculate_facet: numerical instability at facet 35836, coord 6 (-8.71671e-06)
+recalculate_facet: numerical instability at facet 35836, coord 10 (4.30685e-06)
+recalculate_facet: numerical instability at facet 35874, coord 0 (1.31089e-05)
+recalculate_facet: numerical instability at facet 35874, coord 1 (5.95856e-06)
+recalculate_facet: numerical instability at facet 35874, coord 2 (-1.97141e-05)
+recalculate_facet: numerical instability at facet 35874, coord 4 (2.6418e-05)
+recalculate_facet: numerical instability at facet 35874, coord 5 (-2.31547e-05)
+recalculate_facet: numerical instability at facet 35874, coord 6 (-2.61672e-06)
+recalculate_facet: numerical instability at facet 35874, coord 10 (-7.8562e-06)
+recalculate_facet: numerical instability at facet 35974, coord 0 (3.1754e-05)
+recalculate_facet: numerical instability at facet 35974, coord 1 (6.13235e-06)
+recalculate_facet: numerical instability at facet 35974, coord 2 (-3.35323e-05)
+recalculate_facet: numerical instability at facet 35974, coord 4 (2.18861e-05)
+recalculate_facet: numerical instability at facet 35974, coord 5 (-1.91293e-05)
+recalculate_facet: numerical instability at facet 35974, coord 6 (-7.11081e-06)
+recalculate_facet: numerical instability at facet 35974, coord 10 (-1.20248e-05)
+recalculate_facet: numerical instability at facet 35987, coord 0 (-4.23937e-06)
+recalculate_facet: numerical instability at facet 35987, coord 2 (-9.28816e-06)
+recalculate_facet: numerical instability at facet 35987, coord 3 (1.25368e-05)
+recalculate_facet: numerical instability at facet 35987, coord 4 (2.0502e-05)
+recalculate_facet: numerical instability at facet 35987, coord 5 (-1.63972e-05)
+recalculate_facet: numerical instability at facet 35987, coord 6 (-3.11411e-06)
+recalculate_facet: numerical instability at facet 35987, coord 10 (1.03081e-05)
+I  388.28] Elapsed: 6:28, vertices: 2705, facets final: 1386, pending: 45954, pool: 200
+I  393.34] Elapsed: 6:33, vertices: 2740, facets final: 1429, pending: 45690, pool: 200
+I  398.39] Elapsed: 6:38, vertices: 2773, facets final: 1475, pending: 45359, pool: 200
+I  402.14] recalculating facets...
+recalculate_facet: numerical instability at facet 55431, coord 0 (-6.29377e-05)
+recalculate_facet: numerical instability at facet 55431, coord 2 (7.24234e-05)
+recalculate_facet: numerical instability at facet 55431, coord 3 (-5.37534e-06)
+recalculate_facet: numerical instability at facet 55431, coord 4 (-2.67367e-05)
+recalculate_facet: numerical instability at facet 55431, coord 5 (-1.45855e-06)
+recalculate_facet: numerical instability at facet 55431, coord 6 (2.40849e-05)
+recalculate_facet: numerical instability at facet 55431, coord 10 (-8.39898e-06)
+recalculate_facet: numerical instability at facet 55454, coord 0 (-3.79951e-05)
+recalculate_facet: numerical instability at facet 55454, coord 1 (3.21729e-06)
+recalculate_facet: numerical instability at facet 55454, coord 2 (4.44677e-05)
+recalculate_facet: numerical instability at facet 55454, coord 4 (-9.86831e-06)
+recalculate_facet: numerical instability at facet 55454, coord 5 (-1.67358e-05)
+recalculate_facet: numerical instability at facet 55454, coord 6 (1.69143e-05)
+recalculate_facet: numerical instability at facet 55454, coord 10 (-1.32746e-05)
+recalculate_facet: numerical instability at facet 55455, coord 0 (-6.98618e-05)
+recalculate_facet: numerical instability at facet 55455, coord 1 (-2.84808e-06)
+recalculate_facet: numerical instability at facet 55455, coord 2 (7.76552e-05)
+recalculate_facet: numerical instability at facet 55455, coord 4 (-3.1991e-05)
+recalculate_facet: numerical instability at facet 55455, coord 5 (3.11735e-06)
+recalculate_facet: numerical instability at facet 55455, coord 6 (2.39284e-05)
+recalculate_facet: numerical instability at facet 55455, coord 10 (-1.00218e-06)
+recalculate_facet: numerical instability at facet 55457, coord 0 (2.41219e-05)
+recalculate_facet: numerical instability at facet 55457, coord 2 (2.1746e-06)
+recalculate_facet: numerical instability at facet 55457, coord 4 (-4.04935e-05)
+recalculate_facet: numerical instability at facet 55457, coord 5 (1.41568e-05)
+recalculate_facet: numerical instability at facet 55457, coord 10 (-2.07797e-05)
+I  403.47] Elapsed: 6:43, vertices: 2807, facets final: 1533, pending: 44925, pool: 200
+I  408.54] Elapsed: 6:49, vertices: 2842, facets final: 1570, pending: 44352, pool: 200
+I  413.55] Elapsed: 6:54, vertices: 2875, facets final: 1626, pending: 43977, pool: 200
+I  416.47] recalculating facets...
+recalculate_facet: numerical instability at facet 4997, coord 0 (2.86633e-06)
+recalculate_facet: numerical instability at facet 4997, coord 1 (2.50014e-06)
+recalculate_facet: numerical instability at facet 4997, coord 2 (-8.36879e-06)
+recalculate_facet: numerical instability at facet 4997, coord 4 (1.51699e-05)
+recalculate_facet: numerical instability at facet 4997, coord 5 (-1.10517e-05)
+recalculate_facet: numerical instability at facet 4997, coord 6 (-1.11595e-06)
+recalculate_facet: numerical instability at facet 4997, coord 10 (-1.04955e-06)
+recalculate_facet: numerical instability at facet 5033, coord 0 (-1.82048e-06)
+recalculate_facet: numerical instability at facet 5033, coord 2 (2.64539e-06)
+recalculate_facet: numerical instability at facet 5033, coord 4 (-1.6012e-06)
+recalculate_facet: numerical instability at facet 37342, coord 0 (6.37366e-06)
+recalculate_facet: numerical instability at facet 37342, coord 2 (1.02068e-06)
+recalculate_facet: numerical instability at facet 37342, coord 3 (1.30252e-06)
+recalculate_facet: numerical instability at facet 37342, coord 4 (-9.48609e-06)
+recalculate_facet: numerical instability at facet 37342, coord 10 (-6.49396e-06)
+recalculate_facet: numerical instability at facet 46491, coord 0 (-1.01925e-05)
+recalculate_facet: numerical instability at facet 46491, coord 3 (-4.19296e-06)
+recalculate_facet: numerical instability at facet 46491, coord 4 (2.0424e-05)
+recalculate_facet: numerical instability at facet 46491, coord 5 (-1.14184e-06)
+recalculate_facet: numerical instability at facet 46491, coord 6 (-5.16201e-06)
+recalculate_facet: numerical instability at facet 46491, coord 10 (8.60632e-06)
+I  418.56] Elapsed: 6:59, vertices: 2917, facets final: 1680, pending: 43665, pool: 200
+I  423.59] Elapsed: 7:04, vertices: 2955, facets final: 1749, pending: 43483, pool: 200
+I  428.67] Elapsed: 7:09, vertices: 2994, facets final: 1820, pending: 42972, pool: 200
+I  429.26] recalculating facets...
+I  433.67] Elapsed: 7:14, vertices: 3032, facets final: 1880, pending: 42605, pool: 200
+I  438.71] Elapsed: 7:19, vertices: 3068, facets final: 1948, pending: 42393, pool: 200
+I  443.13] recalculating facets...
+recalculate_facet: numerical instability at facet 53567, coord 3 (-1.17756e-06)
+recalculate_facet: numerical instability at facet 53567, coord 5 (1.1368e-06)
+I  443.77] Elapsed: 7:24, vertices: 3103, facets final: 2013, pending: 42044, pool: 200
+I  448.77] Elapsed: 7:29, vertices: 3139, facets final: 2071, pending: 41843, pool: 200
+I  453.81] Elapsed: 7:34, vertices: 3175, facets final: 2165, pending: 41856, pool: 200
+I  457.38] recalculating facets...
+recalculate_facet: numerical instability at facet 55727, coord 0 (1.03118e-06)
+recalculate_facet: numerical instability at facet 55727, coord 2 (-1.6838e-06)
+recalculate_facet: numerical instability at facet 55727, coord 3 (2.64806e-06)
+recalculate_facet: numerical instability at facet 55727, coord 5 (-2.32704e-06)
+recalculate_facet: numerical instability at facet 56348, coord 0 (-9.24526e-06)
+recalculate_facet: numerical instability at facet 56348, coord 1 (-1.0532e-05)
+recalculate_facet: numerical instability at facet 56348, coord 2 (-1.09419e-05)
+recalculate_facet: numerical instability at facet 56348, coord 3 (6.35317e-05)
+recalculate_facet: numerical instability at facet 56348, coord 4 (2.09521e-06)
+recalculate_facet: numerical instability at facet 56348, coord 5 (-2.41885e-05)
+recalculate_facet: numerical instability at facet 56348, coord 6 (-1.07193e-05)
+recalculate_facet: numerical instability at facet 56348, coord 10 (3.59425e-05)
+recalculate_facet: numerical instability at facet 56351, coord 0 (-2.01127e-05)
+recalculate_facet: numerical instability at facet 56351, coord 1 (-5.43771e-06)
+recalculate_facet: numerical instability at facet 56351, coord 2 (1.76962e-05)
+recalculate_facet: numerical instability at facet 56351, coord 4 (-1.14229e-05)
+recalculate_facet: numerical instability at facet 56351, coord 5 (1.69923e-05)
+recalculate_facet: numerical instability at facet 56351, coord 6 (2.28484e-06)
+recalculate_facet: numerical instability at facet 56351, coord 10 (1.41157e-05)
+recalculate_facet: numerical instability at facet 56362, coord 0 (1.55151e-06)
+recalculate_facet: numerical instability at facet 56362, coord 2 (-2.17161e-06)
+recalculate_facet: numerical instability at facet 56362, coord 3 (2.57053e-06)
+recalculate_facet: numerical instability at facet 56362, coord 4 (1.30871e-06)
+recalculate_facet: numerical instability at facet 56362, coord 5 (-2.81555e-06)
+I  458.82] Elapsed: 7:39, vertices: 3209, facets final: 2258, pending: 41585, pool: 200
+I  463.91] Elapsed: 7:44, vertices: 3245, facets final: 2371, pending: 41458, pool: 199
+I  468.94] Elapsed: 7:49, vertices: 3279, facets final: 2470, pending: 41284, pool: 200
+I  471.77] recalculating facets...
+I  473.94] Elapsed: 7:54, vertices: 3318, facets final: 2573, pending: 40912, pool: 198
+I  478.94] Elapsed: 7:59, vertices: 3361, facets final: 2676, pending: 40740, pool: 200
+I  483.41] recalculating facets...
+I  483.98] Elapsed: 8:04, vertices: 3403, facets final: 2754, pending: 40838, pool: 200
+I  488.98] Elapsed: 8:09, vertices: 3445, facets final: 2855, pending: 40607, pool: 200
+I  494.06] Elapsed: 8:14, vertices: 3484, facets final: 2946, pending: 40434, pool: 199
+I  496.01] recalculating facets...
+I  499.07] Elapsed: 8:19, vertices: 3522, facets final: 3063, pending: 40300, pool: 200
+I  504.11] Elapsed: 8:24, vertices: 3555, facets final: 3206, pending: 40284, pool: 199
+I  509.14] Elapsed: 8:29, vertices: 3591, facets final: 3322, pending: 40038, pool: 200
+I  510.25] recalculating facets...
+I  514.18] Elapsed: 8:34, vertices: 3628, facets final: 3466, pending: 39560, pool: 200
+I  519.23] Elapsed: 8:39, vertices: 3666, facets final: 3597, pending: 39330, pool: 200
+I  523.88] recalculating facets...
+I  524.26] Elapsed: 8:44, vertices: 3701, facets final: 3747, pending: 38982, pool: 200
+I  529.26] Elapsed: 8:49, vertices: 3738, facets final: 3910, pending: 38681, pool: 200
+I  534.28] Elapsed: 8:54, vertices: 3774, facets final: 4055, pending: 38437, pool: 200
+I  537.71] recalculating facets...
+I  539.28] Elapsed: 8:59, vertices: 3811, facets final: 4199, pending: 38008, pool: 200
+I  544.29] Elapsed: 9:04, vertices: 3845, facets final: 4376, pending: 37687, pool: 200
+I  549.38] Elapsed: 9:09, vertices: 3879, facets final: 4599, pending: 37296, pool: 200
+I  552.30] recalculating facets...
+I  554.43] Elapsed: 9:14, vertices: 3912, facets final: 4843, pending: 36964, pool: 200
+I  559.46] Elapsed: 9:19, vertices: 3945, facets final: 5079, pending: 36523, pool: 199
+I  564.46] Elapsed: 9:24, vertices: 3978, facets final: 5341, pending: 36313, pool: 200
+I  567.91] recalculating facets...
+I  569.46] Elapsed: 9:29, vertices: 4009, facets final: 5620, pending: 36048, pool: 200
+I  574.46] Elapsed: 9:34, vertices: 4046, facets final: 5945, pending: 35514, pool: 200
+I  579.46] Elapsed: 9:39, vertices: 4085, facets final: 6280, pending: 34919, pool: 200
+I  581.20] recalculating facets...
+I  584.52] Elapsed: 9:45, vertices: 4125, facets final: 6616, pending: 34512, pool: 199
+I  589.52] Elapsed: 9:50, vertices: 4165, facets final: 6940, pending: 34226, pool: 199
+I  594.38] recalculating facets...
+I  594.55] Elapsed: 9:55, vertices: 4200, facets final: 7321, pending: 33851, pool: 200
+I  599.58] Elapsed: 10:00, vertices: 4240, facets final: 7576, pending: 33538, pool: 200
+I  604.58] Elapsed: 10:05, vertices: 4276, facets final: 7972, pending: 33072, pool: 200
+I  608.17] recalculating facets...
+recalculate_facet: numerical instability at facet 45178, coord 0 (1.01313e-06)
+recalculate_facet: numerical instability at facet 45178, coord 2 (-1.05737e-06)
+I  609.59] Elapsed: 10:10, vertices: 4308, facets final: 8420, pending: 32480, pool: 200
+I  614.64] Elapsed: 10:15, vertices: 4346, facets final: 8770, pending: 32020, pool: 200
+I  619.71] Elapsed: 10:20, vertices: 4378, facets final: 9188, pending: 31597, pool: 199
+I  623.44] recalculating facets...
+I  624.78] Elapsed: 10:25, vertices: 4407, facets final: 9623, pending: 31156, pool: 200
+I  629.82] Elapsed: 10:30, vertices: 4437, facets final: 10106, pending: 30550, pool: 198
+I  634.82] Elapsed: 10:35, vertices: 4471, facets final: 10527, pending: 30031, pool: 199
+I  639.42] recalculating facets...
+I  639.82] Elapsed: 10:40, vertices: 4502, facets final: 11030, pending: 29431, pool: 200
+I  644.87] Elapsed: 10:45, vertices: 4534, facets final: 11507, pending: 28837, pool: 200
+I  649.89] Elapsed: 10:50, vertices: 4563, facets final: 12036, pending: 28242, pool: 199
+I  654.91] Elapsed: 10:55, vertices: 4590, facets final: 12624, pending: 27589, pool: 197
+I  656.31] recalculating facets...
+I  659.91] Elapsed: 11:00, vertices: 4619, facets final: 13172, pending: 27023, pool: 198
+I  664.99] Elapsed: 11:05, vertices: 4642, facets final: 13868, pending: 26275, pool: 198
+I  669.99] Elapsed: 11:10, vertices: 4662, facets final: 14656, pending: 25511, pool: 194
+I  674.99] Elapsed: 11:15, vertices: 4680, facets final: 15462, pending: 24631, pool: 196
+I  679.14] recalculating facets...
+I  679.99] Elapsed: 11:20, vertices: 4703, facets final: 16129, pending: 23903, pool: 196
+I  684.99] Elapsed: 11:25, vertices: 4722, facets final: 16906, pending: 23160, pool: 196
+I  689.99] Elapsed: 11:30, vertices: 4742, facets final: 17654, pending: 22450, pool: 196
+I  694.99] Elapsed: 11:35, vertices: 4762, facets final: 18422, pending: 21616, pool: 194
+I  699.99] Elapsed: 11:40, vertices: 4779, facets final: 19265, pending: 20720, pool: 190
+I  704.99] Elapsed: 11:45, vertices: 4798, facets final: 20049, pending: 19895, pool: 190
+I  705.54] recalculating facets...
+I  709.99] Elapsed: 11:50, vertices: 4816, facets final: 20855, pending: 19055, pool: 186
+I  714.99] Elapsed: 11:55, vertices: 4835, facets final: 21648, pending: 18234, pool: 183
+I  720.03] Elapsed: 12:00, vertices: 4851, facets final: 22491, pending: 17362, pool: 185
+I  725.03] Elapsed: 12:05, vertices: 4871, facets final: 23308, pending: 16492, pool: 178
+I  730.03] Elapsed: 12:10, vertices: 4885, facets final: 24256, pending: 15511, pool: 167
+I  735.03] Elapsed: 12:15, vertices: 4895, facets final: 25283, pending: 14467, pool: 167
+I  736.51] recalculating facets...
+I  740.03] Elapsed: 12:20, vertices: 4911, facets final: 26185, pending: 13529, pool: 156
+I  745.03] Elapsed: 12:25, vertices: 4927, facets final: 27117, pending: 12577, pool: 146
+I  750.03] Elapsed: 12:30, vertices: 4940, facets final: 28124, pending: 11546, pool: 138
+I  755.03] Elapsed: 12:35, vertices: 4959, facets final: 29051, pending: 10604, pool: 123
+I  760.03] Elapsed: 12:40, vertices: 4973, facets final: 30063, pending: 9570, pool: 116
+I  765.03] Elapsed: 12:45, vertices: 4986, facets final: 31099, pending: 8515, pool: 109
+I  769.99] recalculating facets...
+I  770.07] Elapsed: 12:50, vertices: 5000, facets final: 32130, pending: 7459, pool: 105
+I  775.07] Elapsed: 12:55, vertices: 5015, facets final: 33170, pending: 6391, pool: 95
+I  780.07] Elapsed: 13:00, vertices: 5029, facets final: 34221, pending: 5334, pool: 84
+I  785.07] Elapsed: 13:05, vertices: 5038, facets final: 35346, pending: 4214, pool: 81
+I  790.07] Elapsed: 13:10, vertices: 5047, facets final: 36479, pending: 3074, pool: 74
+I  795.07] Elapsed: 13:15, vertices: 5062, facets final: 37563, pending: 1968, pool: 61
+I  800.07] Elapsed: 13:20, vertices: 5081, facets final: 38631, pending: 890, pool: 46
+I  803.07] recalculating facets...
+I  805.07] Elapsed: 13:25, vertices: 5151, facets final: 39518, pending: 43, pool: 2
+I  805.22] Elapsed: 13:25, vertices: 5155, facets final: 39557, pending: 0
 
 --------------------------------
 Problem completed
  name                    12.vlp
  output                  vlp/12.res
- rows, cols, objs        12, 7377, 10
- vertices, facets        5048, 42021
- total time              9:18
+ rows, cols, objs        12, 7693, 10
+ vertices, facets        5155, 39557
+ total time              13:25
 --------------------------------
 Statistics
 LP:
- oracle calls            47069
-   avg iterations/calls  7.32
- total oracle time       3:09
+ oracle calls            45799
+   avg iterations/calls  8.60
+ total oracle time       3:06
 Combinatorics:
- vertices added          5048
- facets probed           47069
- facets # max            59280
- memory allocated        94.64M
- instability warnings    179
+ vertices added          5155
+ facets probed           63634
+ facets # max            58261
+ memory allocated        99.90M
+ instability warnings    850
  storage expansion
-   vertices # / upto     40 / 5116
+   vertices # / upto     41 / 5244
    facets   # / upto     15 / 61436
  facet manipulating
-   added avg / max       171.27 / 3.00k
-   compressed            298
+   added avg / max       108.11 / 1.25k
+   compressed            255
  number of ridge tests
-   avg / max             7.52M / 101.29M
+   avg / max             4.13M / 56.90M
 --------------------------------
 Parameters with non-default values
  OracleItLimit = 200000
  OracleTimeLimit = 60
+ VertexPoolSize = 200
