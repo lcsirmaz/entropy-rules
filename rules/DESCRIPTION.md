@@ -30,7 +30,7 @@ Using a rule one can quickly generate new entropy inequalities iteratively
 from existing ones.
 (The coordinate system in the Dougherty et al paper differs slightly from
 our natural coordinates, and in formulating a rule they present the
-combining factors explicitely.)
+combining factors explicitly.)
 
 A rule is specified by a *copy string* and four (possible composite) random
 variables called *base*. For Rule [1] above the copy string is *r*=*a*:*bc*, and
@@ -42,7 +42,8 @@ Suppose the rule is defined by the copy string **str** and base **B**.
 Collect the entropies of all non-empty subsets of the random variables
 occurring in the copy string and the base to the (quite long) vector **h**.
 The copy string [specifies](copy/DESCRIPTION.md) certain linear equalities
-among the entropies. These can be written as certain inner products of fixed
+among the entropies. These can be written as equations stating that certain
+inner products of fixed
 vectors **c**<sub>i</sub> (determined by the copy string) and the vector of
 entropies **h** vanish:
 
@@ -71,8 +72,8 @@ Consider all tuples  *x*<sub>1</sub>, ..., *x*<sub>11</sub>, and *y*<sub>1</sub>
 >              (*y*<sub>1</sub>**n**<sub>1</sub> + ... +
 >                *y*<sub>11</sub>**n**<sub>11</sub>)&#183;**h**
 
-is a consequence of **h** &ge; 0, and the equalities / inequalities in (1) 
-and (2). Any such pair of tuples will be written as
+is a consequence of **h** &ge; 0, and the equalities in (1) and inequalities
+in (2). Any such pair of tuples will be written as
 
 >  (4) &nbsp; &nbsp;  [ *x*<sub>1</sub>, ..., *x*<sub>11</sub> ] &le; [ *y*<sub>1</sub>, ...,
 > *y*<sub>11</sub> ].
@@ -100,7 +101,7 @@ inequality, and the scalar products **b**<sub>1</sub>&#183;**h**, ...,
 variables defined by the base **B**, the left hand side of (3) is
 non-negative. Consequently the right hand side is non-negative as well, thus
 *y*<sub>1</sub>, ..., *y*<sub>11</sub> are indeed coefficients of a valid
-entropy inequality. &nbsp; &#x25a1;
+entropy inequality, as claimed. &nbsp; &#x25a1;
 
 **Claim 2.** *If a collection of pair of tuples satisfy* (4), *then their
 non-negative linear combination also satisfies* (4).
@@ -113,7 +114,7 @@ This is an easy consequence of the linearity of both sides of the inequality
 correct.* &nbsp; &#x25a1;
 
 
-### Generating rule lines automatically
+### Generating rule lines
 
 According to **Claim 2** above, the collection of 22-dimensional vectors
 &lt; *x*<sub>1</sub>, ..., *x*<sub>11</sub>, *y*<sub>1</sub>, ...,
@@ -132,10 +133,12 @@ non-negative orthant); and at the extremal points *x*<sub>1</sub> (the
 Ingleton coordinate) should be locally minimal,
 *x*<aub>2</sub>, ..., *x*<sub>11</sub> be locally maximal; for the *y* 
 coordinates it is just the opposite: *y*<sub>1</sub> should be locally
-maximal and *y*<sub>2</sub>, ..., *y*<sub>11</sub> are lically minimal. 
+maximal and *y*<sub>2</sub>, ..., *y*<sub>11</sub> are locally minimal. 
+(A variable is *locally minimal* if fixing the value of the other unknowns,
+its value cannot be decreased.)
 Given the copy string and the base,
 the perl utility `rulemk.pl` creates the MOLP instance according to these
-observations; from the solution of the MOLP problem the complete set of 
+observations. From the solution of the MOLP problem the complete set of 
 rule lines is extracted by the utility ``minrule.pl`.
 
     # create MOLP for the rule specified by a copy string and base
@@ -148,7 +151,7 @@ rule lines is extracted by the utility ``minrule.pl`.
 
 ### Applying a rule
 
-Supppose we have a collection of 4-variable entropy inequalities 
+Suppose we have a collection of 4-variable entropy inequalities 
 specified by their natural coordinates (considered as a collection 
 of 11-dimensional vectors) **e**<sub>1</sub>, ..., **e**<sub>n</sub>, 
 and a rule with t lines:
@@ -177,10 +180,10 @@ where
 
 The set (5) is a convex set, and (normalized) inequalities not superseded
 by others are the solutions of a MOLP. To create that problem use the
-perl utility `dorule.pl`, and the utility `checkall.pl` to extract new
-inequalities:
+perl utility `dorule.pl`. From the result the utility `checkall.pl` extracts
+new inequalities:
 
-    # apply a rule to a set of inequalitie and generate the vlp file
+    # apply a rule to a set of inequalities and generate the vlp file
     utils/dorule.pl <ineqfile> <rule> vlp/NN.vlp
     # solve it
     inner vlp/NN.vlp -o vlp/NN.res > vlp/NN.out

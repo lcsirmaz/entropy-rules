@@ -19,5 +19,5 @@ MOLP problem. Due to the complexity, rules \#7 and \#39 are not processed yet.
 * [rules.txt](rules.txt) &nbsp;&ndash; description of rules
 * [ineq](ineq) &nbsp;&ndash; the rule files
 * [vlp](vlp) &nbsp;&ndash; rule vlp files and solutions for the rules
-* [iter1](iter1) &nbsp;&ndash; first iteration appliead to a set of inequalities
+* [iter1](iter1) &nbsp;&ndash; first iteration applied to a set of inequalities
 * [iter2](iter2) &nbsp;&ndash; second iteration ...
