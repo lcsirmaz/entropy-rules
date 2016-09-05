@@ -8,6 +8,10 @@ solutions are in [vlp](vlp). New inequalities not superseded by those in
 Finally, the minimal set of all generated inequalities is collected into
 [it2](it2.txt).
 
+#### Not fully processed
+
+Due to their complexity, problems #05, #23, and #49 have only partial results.
+
 #### Contents
 
 * [base100](base100.txt) &nbsp;&ndash; the base file of inequalities 
