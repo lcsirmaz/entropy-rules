@@ -151,8 +151,8 @@ where the non-negative values &alpha;, &beta;, &gamma;, &delta; are defined as
 > &delta; = ( h<sub>3</sub> + h<sub>4</sub> + h<sub>6</sub> + h<sub>7</sub>)/4<br>
 
 The symmetric central core or the almost entropy region defined by points in (1)
-is a 4-dimensional closed convex cone. Its cross-section when normalizing by the total
-entropy is a 3-dimensional convex body denoted by **S**.
+is a 4-dimensional closed convex cone. The 3-dimensional convex body **S** is
+its cross-section when normalizing by the total entropy.
 
 The total entropy **H**(abcd) of the four random variables can be expressed using the 
 natural coordinates h<sub>1</sub>, ..., h<sub>15</sub> as
@@ -165,11 +165,22 @@ natural coordinates h<sub>1</sub>, ..., h<sub>15</sub> as
 If the coordinates h<sub>10</sub> = h<sub>11</sub> = ... = h<sub>15</sub> = 0, as
 is the case in (1), then the total entropy is
 
-> **H** = 4 &alpha; + 4 &beta; + 4 &gamma; + 4 &delta;.
+> **H** = 4 &alpha; + 4 &beta; + 4 &gamma; + 4 &delta;,
 
-Thus we can normalize by assuming **H** = 4, that is
+thus we can normalize **S** by assuming that the total entropy is 4, that is, requiring
 
 >  &alpha; + &beta; + &gamma; + &delta; = 1.
 
+#### Visualizing **S**
 
+The numbers &alpha;, &beta;, &gamma;, and &delta; sum to 1, thus they can be considered as 
+*barycebntric* coordinates: put weights &alpha;, &beta;, &gamma;, &delta; to the vertices of
+a regular tetrahedron, and the point represented is the center of the weight. Points (1,0,0,0),
+(0,1,0,0), (0,0,1,0) and (0,0,0,1) are the vertices of the tetrahedron. As &alpha;, &beta;,
+&gamma;, &delta; are non-negative numbers, **S** has no point outside the tetrahedron. As
+points (0,1,0,0), (0,0,1,0), and (0,0,0,1) are entropic, the whole &beta;&gamma;&delta;
+triangle is part of **S**. The fourth vertex (1,0,0,0) is not elmost entropic, as it violates
+the Zhang-Yeung inequality, which can be expressed as (see (1)):
+
+>  &alpha; &le; 2 &beta; + 2 &delta;
 
