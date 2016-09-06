@@ -17,16 +17,16 @@ Euclidean topology) of the set of entropic points.
 We use h<sub>1</sub>, ..., h<sub>15</sub> to denote the natural coordinates as
 follows.
 
-<table><tbody><tr><td align="right"> h<sub>1</sub>
-</td><td align="left">[a,b,c,d] &ndash; Ingleton expression</td></tr>
-<tr><td align="right">h<sub>2</sub>, h<sub>3</sub>, h<sub>4</sub></td> <td
+<table><tbody><tr><td align="left"> h<sub>1</sub>
+</td><td align="left">[a,b,c,d] = -(a,b) + (a,b | c) + (a,b | d ) + (c,d) &ndash; the Ingleton expression</td></tr>
+<tr><td align="left">h<sub>2</sub>, h<sub>3</sub>, h<sub>4</sub></td> <td
 align="left">(a,b | c), &nbsp; (a,c | b), &nbsp; (b,c | a)</td></tr>
-<tr><td align="right"> h<sub>5</sub>, h<sub>6</sub>, h<sub>7</sub></td> <td
+<tr><td align="left"> h<sub>5</sub>, h<sub>6</sub>, h<sub>7</sub></td> <td
 align="left">(a,b | d), &nbsp; (a,d | b), &nbsp; (b,d | a)</td></tr>
-<tr><td align="right"> h<sub>8</sub>, h<sub>9</sub>, h<sub>10</sub>,
+<tr><td align="left"> h<sub>8</sub>, h<sub>9</sub>, h<sub>10</sub>,
 h<sub>11</sub></td><td align="left"> (c,d | a), &nbsp; (c,d | b), &nbsp;
 (c,d), &nbsp; (a,b | cd)</td></tr>
-<tr><td align="right"> h<sub>12</sub>, h<sub>13</sub>, h<sub>14</sub>,
+<tr><td align="left"> h<sub>12</sub>, h<sub>13</sub>, h<sub>14</sub>,
 h<sub>15</td> <td align="left"> (a | bcd), &nbsp; (b | acd), &nbsp;
 (c | abd), &nbsp; (d | abc)</td></tr>
 </tbody></table>
@@ -46,53 +46,54 @@ The converse of Theorem 1 is also true in the following sense.
 **Claim** *Suppose* h<sub>1</sub> &le; 0 *and the point* &lt; h<sub>1</sub>, ...,
 h<sub>11</sub>, 0, 0, 0, 0 &gt; *is almost entropic. Then for any
 non-negative numbers* h<sub>12</sub>, h<sub>13</sub>, h<sub>14</sub>,
-h<sub>15</sub> *the point* &lt; h<sub>1</sub>, ..., h<sub>15</sub> &gt; *is
+h<sub>15</sub> *the point* &lt;h<sub>1</sub>, ..., h<sub>15</sub>&gt; *is
 also almost entropic.*
 
 **Proof.**
-Add &quot;private info&quot; with entropies h<sub>12</sub>, etc, to the four
-random variables. &quot;Private info&quot; means that the added random
-variables are independent of everything else. &nbsp; &#x25a1;
+Add &quot;private info&quot; with entropies h<sub>12</sub>, h<sub>13</sub>,
+h<sub>14</sub>, h<sub>15</sub> 
+to the four random variables. &quot;Private info&quot; means that the added random
+variables are independent of each other and of everything else. &nbsp; &#x25a1;
 
 From this point on we will consider only the 11-dimensional region spanned
-by the first 11 natural coordinates of almost entropic points. The
-coordinates will be denoted by h<sub>1</sub>, ..., h<sub>11</sub>, and it
-will always be assumed that h<sub>1</sub> is not positive, and all other 
-coordinates are non-negative.
+by the first 11 natural coordinates of the almost entropic points. The
+coordinates will be denoted by &lt;h<sub>1</sub>, ..., h<sub>11</sub>&gt;, 
+and it will always be assumed that h<sub>1</sub> is not positive, and all 
+other coordinates are non-negative.
 
-The proof of Theorem 4 of [Matus - Csirmaz](http://arxiv.org/pdf/1310.5957v1) has
+The proof of Theorem 4 in [Matus - Csirmaz](http://arxiv.org/pdf/1310.5957v1) has
 the following consequences.
 
 **Theorem 2.**
-a) *Suppose* x, y *are non-negative numbers and the point* &lt; h<sub>1</sub>, ..., 
-h<sub>9</sub>, h<sub>10</sub>+x+y, h<sub>11</sub> &gt; *is almost entropic.
-Then so is the point* &lt; h<sub>1</sub>, h<sub>2</sub>+x, h<sub>3</sub>,
+a) *Suppose* x, y *are non-negative numbers and the point* &lt;h<sub>1</sub>, ..., 
+h<sub>9</sub>, h<sub>10</sub>+x+y, h<sub>11</sub>&gt; *is almost entropic.
+Then so is the point* &lt;h<sub>1</sub>, h<sub>2</sub>+x, h<sub>3</sub>,
 h<sub>4</sub>, h<sub>5</sub>+y, h<sub>6</sub>, h<sub>7</sub>, h<sub>8</sub>,
-h<sub>9</sub>, h<sub>10</sub>, h<sub>11</sub> &gt;.
+h<sub>9</sub>, h<sub>10</sub>, h<sub>11</sub>&gt;.
 
-b) *Suppose* x, y *are non-negative numbers and the point* &lt;
-h<sub>1</sub>, ..., h<sub>9</sub>, h<sub>10</sub>, h<sub>11</sub>+x+y &gt;
-*is almost entropic. Then so is the point* &lt; h<sub>1</sub>, ...,
+b) *Suppose* x, y *are non-negative numbers and the point* &lt;h<sub>1</sub>,
+..., h<sub>9</sub>, h<sub>10</sub>, h<sub>11</sub>+x+y &gt;
+*is almost entropic. Then so is the point* &lt;h<sub>1</sub>, ...,
 h<sub>7</sub>, h<sub>8</sub>+x, h<sub>9</sub>+y, h<sub>10</sub>,
-h<sub>11</sub> &gt; &nbsp; &#x25a1;
+h<sub>11</sub>&gt; &nbsp; &#x25a1;
 
 For 4-variable entropy inequalities this theorem has the following
 consequence.
 
 **Corollary.**
-*Suppose* &lt; a<sub>1</sub>, ..., a<sub>9</sub>, a<sub>10</sub>, a<sub>11</sub> &gt; *are
+*Suppose* &lt;a<sub>1</sub>, ..., a<sub>9</sub>, a<sub>10</sub>, a<sub>11</sub>&gt; *are
 (non-negative) coefficients of a valid 4-variable entropy inequality. Let*
 b<sub>10</sub> = min { a<sub>2</sub>, a<sub>5</sub>, a<sub>10</sub> }, *and*
 b<sub>11</sub> = min { a<sub>8</sub>, a<sub>9</sub>, a<sub>11</sub> }.
-*Then* &lt; a<sub>1</sub>, ..., a<sub>9</sub>, b<sub>10</sub>, 
-b<sub>11</sub> &gt; *are also coefficients of a valid 4-variable inequality.* 
+*Then* &lt;a<sub>1</sub>, ..., a<sub>9</sub>, b<sub>10</sub>, 
+b<sub>11</sub>&gt; *are also coefficients of a valid 4-variable inequality.* 
 
 **Proof.**
-Let &lt; h<sub>1</sub>, ..., h<sub>11</sub> &gt; be an almost entropic point.
-By Theorem 2 so is &lt; h<sub>1</sub>, h<sub>2</sub>+h<sub>10</sub>, h<sub>3</sub>, ...,
-h<sub>9</sub>, 0, h<sub>11</sub> &gt;. The inequality with coefficients
-&lt; a<sub>i</sub> &gt; holds for this tuple, thus for all almost entropic points
-&lt; h<sub>j</sub> &gt; we have
+Let &lt;h<sub>1</sub>, ..., h<sub>11</sub>&gt; be an almost entropic point.
+By Theorem 2 so is &lt;h<sub>1</sub>, h<sub>2</sub>+h<sub>10</sub>, h<sub>3</sub>, ...,
+h<sub>9</sub>, 0, h<sub>11</sub>&gt;. The inequality with coefficients
+&lt;a<sub>i</sub>&gt; holds for this tuple, thus for all almost entropic points
+&lt;h<sub>j</sub>&gt; we have
 
 > a<sub>1</sub> h<sub>1</sub> + a<sub>2</sub> h<sub>2</sub> + ... +
 > a<sub>9</sub> h<sub>9</sub> + a<sub>2</sub> h<sub>10</sub> +
@@ -109,7 +110,8 @@ Ingleton coordinate h<sub>1</sub>, and permute other natural coordinates as
 follows. The c &#8660; d swap exchanges coordinates 2-3-4 and 5-6-7. The a
 &#8660; b swap exchanges the coordinate pairs 3-4, 6-7 and 8-9. Thus if the
 first line in the following table is almost entropic, then so are the other
-three - and, consequently, the average of the four lines.
+three - and, consequently, the average of the four lines as the almost entropic 
+region is a closed convex cone.
 
 <table><tr>
 <td> h<sub>1</sub> </td>
@@ -134,35 +136,40 @@ three - and, consequently, the average of the four lines.
 </tr></table>
 
 According to Theorem 2, the value of h<sub>10</sub> can be transferred to h<sub>2</sub>
-(and h<sub>5</sub>) while keeping it almost-entropic. Similarly, h<sub>11</sub> can be
+(and h<sub>5</sub>) while keeping the point almost-entropic. Similarly, h<sub>11</sub> can be
 transferred to h<sub>8</sub> (and h<sub>9</sub>). So if 
+&lt;h<sub>1</sub>, ..., h<sub>11</sub>&gt; is almost entropic, then so is 
 
-> &lt; h<sub>1</sub>, h<sub>2</sub>, h<sub>3</sub>, h<sub>4</sub>, h<sub>5</sub>,
-> h<sub>6</sub>, h(sub>7</sub>, h<sub>8</sub>, h<sub>9</sub>, h<sub>10</sub>, h<sub>11</sub> &gt;
+> (1) &nbsp; &nbsp; &lt; -&alpha;, 2&beta;, &delta;, &delta;, 2&beta;, &delta;, &delta;, 
+>  &gamma;, &gamma;, 0, 0 &gt;
 
-is almost entropic, then so is 
+where the non-negative values &alpha;, &beta;, &gamma;, &delta; are defined as
 
-> (1) &nbsp; &nbsp; &lt; -&alpha;, &beta;, &gamma;, &gamma;, &beta;, &gamma;, &gamma;, 
->  &delta;, &delta;, 0, 0 &gt;
+> &alpha; = - h<sub>1</sub><br>
+> 2&beta; = ( h<sub>2</sub> + h<sub>5</sub>)/2 +  h<sub>10</sub><br>
+> &gamma; = ( h<sub>8</sub> + h<sub>9</sub>)/2 +  h<sub>11</sub><br>
+> &delta; = ( h<sub>3</sub> + h<sub>4</sub> + h<sub>6</sub> + h<sub>7</sub>)/4<br>
 
-where the non-negative &alpha;, &beta;, &gamma;, &delta; are defined as
-
-> &alpha; = -4 h<sub>1</sub>;<br>
-> &beta; = 2( h<sub>2</sub> + h<sub>5</sub> ) + 2 h<sub>10</sub>;<br>
-> &gamma; = h<sub>3</sub> + h<sub>4</sub> + h<sub>6<sub> + h<sub>7</sub>;<br>
-> &delta; = 2( h<sub>8</sub> + h<sub>9</sub> ) + 2 h<sub>11</sub>.
+The symmetric central core or the almost entropy region defined by points in (1)
+is a 4-dimensional closed convex cone. Its cross-section when normalizing by the total
+entropy is a 3-dimensional convex body denoted by **S**.
 
 The total entropy **H**(abcd) of the four random variables can be expressed using the 
-natural coordinates h<sub>1</sub>, ..., as
+natural coordinates h<sub>1</sub>, ..., h<sub>15</sub> as
 
 > **H**(abcd) = -4 h<sub>1</sub> + h<sub>2</sub> + h<sub>3</sub> + h<sub>4</sub> + 
 > h<sub>5</sub> + h<sub>6</sub> + h<sub>7</sub> + 2 h<sub>8</sub> + 2 h<sub>9</sub> +
 > h<sub>10</sub> + 3 h<sub>11</sub> + h<sub>12</sub> + h<sub>13</sub> + h<sub>14</sub> +
 > h<sub>15</sub>.
 
-If h<sub>10</sub> = h<sub>11</sub> = ... = h<sub>15</sub> = 0, as is the case in (1), 
-then the total entropy is
+If the coordinates h<sub>10</sub> = h<sub>11</sub> = ... = h<sub>15</sub> = 0, as
+is the case in (1), then the total entropy is
 
-> 4 &alpha; + 2 &beta; + 4 &gamma; + 4 &delta;
+> **H** = 4 &alpha; + 4 &beta; + 4 &gamma; + 4 &delta;.
+
+Thus we can normalize by assuming **H** = 4, that is
+
+>  &alpha; + &beta; + &gamma; + &delta; = 1.
+
 
 
