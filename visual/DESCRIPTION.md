@@ -110,25 +110,25 @@ Ingleton coordinate h<sub>1</sub>, and permute other natural coordinates as
 follows. The c &#8660; d swap exchanges coordinates 2-3-4 and 5-6-7. The a
 &#8660; b swap exchanges the coordinate pairs 3-4, 6-7 and 8-9. Thus if the
 first line in the following table is almost entropic, then so are the other
-three - and, consequently, the average of the four lines as the almost entropic 
-region is a closed convex cone.
+three - and, consequently, the average of the four lines (recall that the 
+almost entropic region is a closed convex cone).
 
-<table><tr>
+<table><tr><td> abcd &nbsp; </td>
 <td> h<sub>1</sub> </td>
 <td> h<sub>2</sub> </td><td> h<sub>3</sub> </td><td> h<sub>4</sub> </td>
 <td> h<sub>5</sub> </td><td> h<sub>6</sub> </td><td> h<sub>7</sub> </td>
 <td> h<sub>8</sub> </td><td> h<sub>9</sub> </td><td> h<sub>10</sub> </td><td> h<sub>11</sub> </td>
-</tr><tr>
+</tr><tr><td> abdc &nbsp; </td>
 <td> h<sub>1</sub> </td>
 <td> h<sub>5</sub> </td><td> h<sub>6</sub> </td><td> h<sub>7</sub> </td>
 <td> h<sub>2</sub> </td><td> h<sub>3</sub> </td><td> h<sub>4</sub> </td>
 <td> h<sub>8</sub> </td><td> h<sub>9</sub> </td><td> h<sub>10</sub> </td><td> h<sub>11</sub> </td>
-</tr><tr>
+</tr><tr><td> bacd &nbsp; </td>
 <td> h<sub>1</sub> </td>
 <td> h<sub>2</sub> </td><td> h<sub>4</sub> </td><td> h<sub>3</sub> </td>
 <td> h<sub>5</sub> </td><td> h<sub>7</sub> </td><td> h<sub>6</sub> </td>
 <td> h<sub>9</sub> </td><td> h<sub>8</sub> </td><td> h<sub>10</sub> </td><td> h<sub>11</sub> </td>
-</tr><tr>
+</tr><tr><td> badc &nbsp; </td>
 <td> h<sub>1</sub> </td>
 <td> h<sub>5</sub> </td><td> h<sub>7</sub> </td><td> h<sub>6</sub> </td>
 <td> h<sub>2</sub> </td><td> h<sub>4</sub> </td><td> h<sub>3</sub> </td>
@@ -138,7 +138,8 @@ region is a closed convex cone.
 According to Theorem 2, the value of h<sub>10</sub> can be transferred to h<sub>2</sub>
 (and h<sub>5</sub>) while keeping the point almost-entropic. Similarly, h<sub>11</sub> can be
 transferred to h<sub>8</sub> (and h<sub>9</sub>). So if 
-&lt;h<sub>1</sub>, ..., h<sub>11</sub>&gt; is almost entropic, then so is 
+&lt;h<sub>1</sub>, ..., h<sub>11</sub>&gt; is almost entropic, then so is
+the point with coordinates
 
 > (1) &nbsp; &nbsp; &lt; -&alpha;, 2&beta;, &delta;, &delta;, 2&beta;, &delta;, &delta;, 
 >  &gamma;, &gamma;, 0, 0 &gt;
@@ -183,4 +184,8 @@ triangle is part of **S**. The fourth vertex (1,0,0,0) is not elmost entropic, a
 the Zhang-Yeung inequality, which can be expressed as (see (1)):
 
 >  &alpha; &le; 2 &beta; + 2 &delta;
+
+Similarly, all 4-variable entropy inequality imposes some bound on **S**.
+Collecting such inequalities, their intersection gives an outer
+approximation of **S**.
 
