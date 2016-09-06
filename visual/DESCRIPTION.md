@@ -34,7 +34,7 @@ h<sub>15</td> <td align="left"> (a | bcd), &nbsp; (b | acd), &nbsp;
 **Theorem 1.** *If*, h<sub>1</sub> &le; 0*, and the 15-dimensional point* &lt; h<sub>1</sub>, ...,
 h<sub>15</sub> &gt; *is almost entropic, then so is the point where the 
 last four coordinates* h<sub>12</sub>, h<sub>13</sub>, h<sub>14</sub>,
-h<sub>15</sub> *are set to zero while keeping all other coordinates.*
+h<sub>15</sub> *are set to zero while keeping the values of all other coordinates.*
 
 **Proof.** This is Theorem 1 in [Matus -
 Csirmaz](http://arxiv.org/pdf/1310.5957v1). Essentially this theorem is equivalent to
@@ -76,7 +76,8 @@ h<sub>1</sub>, ..., h<sub>9</sub>, h<sub>10</sub>, h<sub>11</sub>+x+y &gt;
 h<sub>7</sub>, h<sub>8</sub>+x, h<sub>9</sub>+y, h<sub>10</sub>,
 h<sub>11</sub> &gt; &nbsp; &#x25a1;
 
-For 4-variable entropy inequalities we have the following
+For 4-variable entropy inequalities this theorem has the following
+consequence.
 
 **Corollary.**
 *Suppose* &lt; a<sub>1</sub>, ..., a<sub>9</sub>, a<sub>10</sub>, a<sub>11</sub> &gt; *are
@@ -103,7 +104,65 @@ statement. The second one can be proved similarly. &nbsp; &#x25a1;
 
 #### A 3-dimensional cross-section
 
+Four permutations of the four random variables *a, b, c, d* keep the
+Ingleton coordinate h<sub>1</sub>, and permute other natural coordinates as
+follows. The c &#8660; d swap exchanges coordinates 2-3-4 and 5-6-7. The a
+&#8660; b swap exchanges the coordinate pairs 3-4, 6-7 and 8-9. Thus if the
+first line in the following table is almost entropic, then so are the other
+three - and, consequently, the average of the four lines.
 
+<table><tr>
+<td> h<sub>1</sub> </td>
+<td> h<sub>2</sub> </td><td> h<sub>3</sub> </td><td> h<sub>4</sub> </td>
+<td> h<sub>5</sub> </td><td> h<sub>6</sub> </td><td> h<sub>7</sub> </td>
+<td> h<sub>8</sub> </td><td> h<sub>9</sub> </td><td> h<sub>10</sub> </td><td> h<sub>11</sub> </td>
+</tr><tr>
+<td> h<sub>1</sub> </td>
+<td> h<sub>5</sub> </td><td> h<sub>6</sub> </td><td> h<sub>7</sub> </td>
+<td> h<sub>2</sub> </td><td> h<sub>3</sub> </td><td> h<sub>4</sub> </td>
+<td> h<sub>8</sub> </td><td> h<sub>9</sub> </td><td> h<sub>10</sub> </td><td> h<sub>11</sub> </td>
+</tr><tr>
+<td> h<sub>1</sub> </td>
+<td> h<sub>2</sub> </td><td> h<sub>4</sub> </td><td> h<sub>3</sub> </td>
+<td> h<sub>5</sub> </td><td> h<sub>7</sub> </td><td> h<sub>6</sub> </td>
+<td> h<sub>9</sub> </td><td> h<sub>8</sub> </td><td> h<sub>10</sub> </td><td> h<sub>11</sub> </td>
+</tr><tr>
+<td> h<sub>1</sub> </td>
+<td> h<sub>5</sub> </td><td> h<sub>7</sub> </td><td> h<sub>6</sub> </td>
+<td> h<sub>2</sub> </td><td> h<sub>4</sub> </td><td> h<sub>3</sub> </td>
+<td> h<sub>9</sub> </td><td> h<sub>8</sub> </td><td> h<sub>10</sub> </td><td> h<sub>11</sub> </td>
+</tr></table>
 
+According to Theorem 2, the value of h<sub>10</sub> can be transferred to h<sub>2</sub>
+(and h<sub>5</sub>) while keeping it almost-entropic. Similarly, h<sub>11</sub> can be
+transferred to h<sub>8</sub> (and h<sub>9</sub>). So if 
+
+> &lt; h<sub>1</sub>, h<sub>2</sub>, h<sub>3</sub>, h<sub>4</sub>, h<sub>5</sub>,
+> h<sub>6</sub>, h(sub>7</sub>, h<sub>8</sub>, h<sub>9</sub>, h<sub>10</sub>, h<sub>11</sub> &gt;
+
+is almost entropic, then so is 
+
+> (1) &nbsp; &nbsp; &lt; -&alpha;, &beta;, &gamma;, &gamma;, &beta;, &gamma;, &gamma;, 
+>  &delta;, &delta;, 0, 0 &gt;
+
+where the non-negative &alpha;, &beta;, &gamma;, &delta; are defined as
+
+> &alpha; = -4 h<sub>1</sub>;<br>
+> &beta; = 2( h<sub>2</sub> + h<sub>5</sub> ) + 2 h<sub>10</sub>;<br>
+> &gamma; = h<sub>3</sub> + h<sub>4</sub> + h<sub>6<sub> + h<sub>7</sub>;<br>
+> &delta; = 2( h<sub>8</sub> + h<sub>9</sub> ) + 2 h<sub>11</sub>.
+
+The total entropy **H**(abcd) of the four random variables can be expressed using the 
+natural coordinates h<sub>1</sub>, ..., as
+
+> **H**(abcd) = -4 h<sub>1</sub> + h<sub>2</sub> + h<sub>3</sub> + h<sub>4</sub> + 
+> h<sub>5</sub> + h<sub>6</sub> + h<sub>7</sub> + 2 h<sub>8</sub> + 2 h<sub>9</sub> +
+> h<sub>10</sub> + 3 h<sub>11</sub> + h<sub>12</sub> + h<sub>13</sub> + h<sub>14</sub> +
+> h<sub>15</sub>.
+
+If h<sub>10</sub> = h<sub>11</sub> = ... = h<sub>15</sub> = 0, as is the case in (1), 
+then the total entropy is
+
+> 4 &alpha; + 2 &beta; + 4 &gamma; + 4 &delta;
 
 
