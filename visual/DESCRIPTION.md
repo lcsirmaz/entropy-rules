@@ -175,17 +175,17 @@ thus we can normalize **S** by assuming that the total entropy is 4, that is, re
 #### Visualizing **S**
 
 The numbers &alpha;, &beta;, &gamma;, and &delta; sum to 1, thus they can be considered as 
-*barycebntric* coordinates: put weights &alpha;, &beta;, &gamma;, &delta; to the vertices of
+*barycentric* coordinates: put weights &alpha;, &beta;, &gamma;, &delta; to the vertices of
 a regular tetrahedron, and the point represented is the center of the weight. Points (1,0,0,0),
 (0,1,0,0), (0,0,1,0) and (0,0,0,1) are the vertices of the tetrahedron. As &alpha;, &beta;,
 &gamma;, &delta; are non-negative numbers, **S** has no point outside the tetrahedron. As
 points (0,1,0,0), (0,0,1,0), and (0,0,0,1) are entropic, the whole &beta;&gamma;&delta;
-triangle is part of **S**. The fourth vertex (1,0,0,0) is not elmost entropic, as it violates
-the Zhang-Yeung inequality, which can be expressed as (see (1)):
+triangle is part of **S**. The fourth vertex (1,0,0,0) is not elmost
+entropic: it violates the Zhang-Yeung inequality, which can be expressed as (see (1)):
 
 >  &alpha; &le; 2 &beta; + 2 &delta;
 
-Similarly, all 4-variable entropy inequality imposes some bound on **S**.
+Similarly to this one, all 4-variable entropy inequality imposes some bound on **S**.
 Collecting such inequalities, their intersection gives an outer
 approximation of **S**.
 
