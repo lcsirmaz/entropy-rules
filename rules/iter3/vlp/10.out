@@ -1,0 +1,33 @@
+C applying rule 10.txt for base50.txt
+I   12.59] Elapsed: 12.59, vertices: 6635, facets final: 46324, pending: 667
+I   17.59] Elapsed: 17.59, vertices: 6711, facets final: 46424, pending: 520
+I   22.60] Elapsed: 22.60, vertices: 6739, facets final: 46629, pending: 290
+I   27.61] Elapsed: 27.61, vertices: 6798, facets final: 46790, pending: 81
+I   29.54] Elapsed: 29.54, vertices: 6819, facets final: 46853, pending: 0
+
+--------------------------------
+Problem completed
+ name                    10.vlp
+ output                  vlp/10.res
+ rows, cols, objs        12, 6735, 10
+ vertices, facets        6819, 46853
+ total time              29.54
+--------------------------------
+Statistics
+LP:
+ oracle calls            713
+   avg iterations/calls  6.24
+ total oracle time       12.28
+Combinatorics:
+ vertices added          185
+ facets probed           714
+ facets # max            46994
+ memory allocated        102.38M
+ storage expansion
+   vertices # / upto     3 / 6901
+   facets   # / upto     2 / 51088
+ facet manipulating
+   added avg / max       0.46 / 7.00
+   compressed            1
+ number of ridge tests
+   avg / max             56.85k / 374.70k
