@@ -1,0 +1,46 @@
+C applying rule 37.txt for base50.txt
+I    5.04] Elapsed: 5.04, vertices: 88, facets final: 62, pending: 2001, pool: 74
+I   10.05] Elapsed: 10.05, vertices: 160, facets final: 172, pending: 2643, pool: 83
+I   15.07] Elapsed: 15.07, vertices: 226, facets final: 319, pending: 2578, pool: 67
+I   20.09] Elapsed: 20.09, vertices: 269, facets final: 513, pending: 2491, pool: 67
+I   25.10] Elapsed: 25.10, vertices: 302, facets final: 737, pending: 2099, pool: 58
+I   30.11] Elapsed: 30.11, vertices: 326, facets final: 978, pending: 1877, pool: 52
+I   35.11] Elapsed: 35.11, vertices: 350, facets final: 1200, pending: 1846, pool: 67
+I   40.13] Elapsed: 40.13, vertices: 372, facets final: 1432, pending: 1689, pool: 69
+I   45.13] Elapsed: 45.13, vertices: 408, facets final: 1648, pending: 1460, pool: 57
+I   50.13] Elapsed: 50.13, vertices: 426, facets final: 1894, pending: 1154, pool: 61
+I   55.13] Elapsed: 55.13, vertices: 449, facets final: 2148, pending: 877, pool: 43
+I   60.14] Elapsed: 1:00, vertices: 466, facets final: 2416, pending: 580, pool: 30
+I   65.14] Elapsed: 1:05, vertices: 480, facets final: 2684, pending: 311, pool: 23
+I   70.14] Elapsed: 1:10, vertices: 501, facets final: 2944, pending: 59, pool: 10
+I   72.11] Elapsed: 1:12, vertices: 534, facets final: 3033, pending: 0
+
+--------------------------------
+Problem completed
+ name                    37.vlp
+ output                  vlp/37.res
+ rows, cols, objs        12, 6881, 10
+ vertices, facets        534, 3033
+ total time              1:12
+--------------------------------
+Statistics
+LP:
+ oracle calls            4054
+   avg iterations/calls  5.86
+ total oracle time       1:08
+Combinatorics:
+ vertices added          534
+ facets probed           11100
+ facets # max            3122
+ memory allocated        2.54M
+ storage expansion
+   vertices # / upto     5 / 636
+   facets   # / upto     1 / 4092
+ facet manipulating
+   added avg / max       38.28 / 378.00
+   compressed            10
+ number of ridge tests
+   avg / max             67.23k / 462.80k
+--------------------------------
+Parameters with non-default values
+ VertexPoolSize = 200

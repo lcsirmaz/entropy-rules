@@ -1,0 +1,81 @@
+C applying rule 06.txt for base50.txt
+I    5.00] Elapsed: 5.00, vertices: 85, facets final: 31, pending: 2826, pool: 73
+I    5.83] recalculating facets...
+I   10.03] Elapsed: 10.03, vertices: 167, facets final: 105, pending: 2235, pool: 77
+I   12.39] recalculating facets...
+recalculate_facet: numerical instability at facet 2854, coord 10 (1.19015e-06)
+recalculate_facet: numerical instability at facet 2856, coord 2 (1.49389e-06)
+recalculate_facet: numerical instability at facet 2856, coord 6 (-2.4798e-06)
+recalculate_facet: numerical instability at facet 2889, coord 2 (1.39123e-06)
+recalculate_facet: numerical instability at facet 2889, coord 6 (-2.31021e-06)
+recalculate_facet: numerical instability at facet 3650, coord 2 (1.57874e-06)
+recalculate_facet: numerical instability at facet 3650, coord 3 (1.00663e-06)
+recalculate_facet: numerical instability at facet 3650, coord 6 (-2.62124e-06)
+recalculate_facet: numerical instability at facet 3680, coord 2 (1.01279e-06)
+recalculate_facet: numerical instability at facet 3680, coord 6 (-1.67744e-06)
+recalculate_facet: numerical instability at facet 3727, coord 0 (-1.07735e-06)
+recalculate_facet: numerical instability at facet 3727, coord 10 (1.4244e-06)
+I   15.03] Elapsed: 15.03, vertices: 236, facets final: 180, pending: 3202, pool: 104
+I   19.84] recalculating facets...
+I   20.03] Elapsed: 20.03, vertices: 303, facets final: 269, pending: 2827, pool: 108
+I   25.03] Elapsed: 25.03, vertices: 362, facets final: 377, pending: 2606, pool: 115
+I   28.42] recalculating facets...
+recalculate_facet: numerical instability at facet 830, coord 0 (3.90723e-06)
+recalculate_facet: numerical instability at facet 830, coord 3 (-3.27487e-06)
+recalculate_facet: numerical instability at facet 830, coord 4 (-4.03028e-06)
+recalculate_facet: numerical instability at facet 830, coord 5 (3.92827e-06)
+recalculate_facet: numerical instability at facet 830, coord 10 (-2.82635e-06)
+recalculate_facet: numerical instability at facet 834, coord 0 (3.016e-06)
+recalculate_facet: numerical instability at facet 834, coord 1 (-3.66872e-06)
+recalculate_facet: numerical instability at facet 834, coord 2 (-4.50404e-06)
+recalculate_facet: numerical instability at facet 834, coord 3 (-1.74837e-06)
+recalculate_facet: numerical instability at facet 834, coord 5 (6.90513e-06)
+recalculate_facet: numerical instability at facet 834, coord 10 (3.75554e-06)
+recalculate_facet: numerical instability at facet 1881, coord 1 (-3.51305e-06)
+recalculate_facet: numerical instability at facet 1881, coord 2 (-4.16772e-06)
+recalculate_facet: numerical instability at facet 1881, coord 4 (3.56066e-06)
+recalculate_facet: numerical instability at facet 1881, coord 5 (3.1547e-06)
+recalculate_facet: numerical instability at facet 1881, coord 10 (5.11722e-06)
+I   30.03] Elapsed: 30.03, vertices: 416, facets final: 513, pending: 2218, pool: 107
+I   35.05] Elapsed: 35.05, vertices: 468, facets final: 673, pending: 1812, pool: 89
+I   38.69] recalculating facets...
+I   40.06] Elapsed: 40.06, vertices: 509, facets final: 865, pending: 1519, pool: 72
+I   45.07] Elapsed: 45.07, vertices: 543, facets final: 1063, pending: 1223, pool: 70
+I   50.07] Elapsed: 50.07, vertices: 569, facets final: 1272, pending: 982, pool: 65
+I   55.08] Elapsed: 55.08, vertices: 591, facets final: 1503, pending: 732, pool: 57
+I   56.59] recalculating facets...
+I   60.09] Elapsed: 1:00, vertices: 607, facets final: 1743, pending: 475, pool: 50
+I   65.10] Elapsed: 1:05, vertices: 633, facets final: 1965, pending: 283, pool: 38
+I   70.11] Elapsed: 1:10, vertices: 671, facets final: 2172, pending: 26, pool: 19
+I   70.86] Elapsed: 1:11, vertices: 696, facets final: 2195, pending: 0
+
+--------------------------------
+Problem completed
+ name                    06.vlp
+ output                  vlp/06.res
+ rows, cols, objs        12, 6915, 10
+ vertices, facets        696, 2195
+ total time              1:11
+--------------------------------
+Statistics
+LP:
+ oracle calls            3531
+   avg iterations/calls  7.37
+ total oracle time       1:04
+Combinatorics:
+ vertices added          696
+ facets probed           9489
+ facets # max            3422
+ memory allocated        2.82M
+ instability warnings    28
+ storage expansion
+   vertices # / upto     6 / 764
+   facets   # / upto     1 / 4092
+ facet manipulating
+   added avg / max       48.27 / 460.00
+   compressed            21
+ number of ridge tests
+   avg / max             102.50k / 780.78k
+--------------------------------
+Parameters with non-default values
+ VertexPoolSize = 150

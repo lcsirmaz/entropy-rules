@@ -185,7 +185,7 @@ entropic: it violates the Zhang-Yeung inequality, which can be expressed as (see
 
 >  &alpha; &le; 2 &beta; + 2 &delta;
 
-Similarly to this one, all 4-variable entropy inequality imposes some bound on **S**.
-Collecting such inequalities, their intersection gives an outer
+Similarly to this one, every other 4-variable entropy inequality imposes a
+bound on **S**. The intersection of these bounds gives the outer 
 approximation of **S**.
 
