@@ -16,11 +16,11 @@
 12  r=a:bc;s=(ar):bc   a,s,c,d         # 39
 13  r=a:bc;s=(ar):bc   a,b,s,d         # 40
 
-14  rs=ad:bc           ar,br,cr,d      # same as rule #00
-15  rs=ad:bc           ar,br,c,dr      # 3, 5, 16
-16  rs=ad:bc           a,r,c,d         # 9, 16
-17  rs=ad:bc           a,b,r,d         # 10
-18  rs=ad:bc           ar,br,cr,dr     # 11
+14* rs=ad:bc           ar,br,cr,d      # same as rule #00
+15* rs=ad:bc           ar,br,c,dr      # subset of rule #02
+16* rs=ad:bc           a,r,c,d         # subset of rule #03
+17* rs=ad:bc           a,b,r,d         # subset of rule #04
+18  rs=ad:bc           ar,br,cr,dr     # subset of rule #05
 
 20  rs=cd:ab           ar,br,cr,d      # 2, 6, 8, 20
 21  rs=cd:ab           ar,br,c,dr      # 4, 6, 15
@@ -30,9 +30,9 @@
 25  rs=cd:ab           a,b,cr,d        # 17, 19
 26  rs=cd:ab           r,b,c,d         # 18
 27  rs=cd:ab           a,d,r,s         # 20, 21, 22, 24, 26, 28, 37
-28  rs=cd:ab           a,c,r,s         # same as rule #22
-29  rs=cd:ab           ac,bc,cr,s      # same as rule #20
-30  rs=cd:ab           ac,bc,cr,cs     # same as rule #23
+28* rs=cd:ab           a,c,r,s         # same as rule #22
+29* rs=cd:ab           ac,bc,cr,s      # same as rule #20
+30* rs=cd:ab           ac,bc,cr,cs     # same as rule #23
 31  rs=cd:ab           b,c,r,s         # 26
 32  rs=cd:ab           ad,b,r,s        # 43
 
