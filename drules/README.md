@@ -8,7 +8,7 @@ is a special case of a more general bootstrap method investigated here.
 #### Content
 
 * [DESCRIPTION.md](DESCRIPTION.md) &nbsp;&ndash; the bootsrap method
-* [drule.txt](drule.txt) &nbsp;&ndash; description of cases
+* [drules](drules.txt) &nbsp;&ndash; description of the cases
 * [iter1](iter1) &nbsp;&ndash; first iteration of bootstrap
 * [iter2](iter2) &nbsp;&ndash; second iteration ...
 
