@@ -60,9 +60,9 @@ through **d**<sub>11</sub>, and the third is **e**<sub>1</sub>
 through **e**<sub>11</sub>. All vectors have the same dimension. The rule
 can be used to generate new entropy inequality as follows:
 
-> Choosing the non-negative parameters **x** = &lt; x_j &gt; arbitrarily,
+> Choose the non-negative parameters **x** = &lt; x_j &gt; arbitrarily.
 > <br>
-> if the numbers **c**<sub>1</sub>&#183;**x**, **c**<sub>2</sub>&#183;**x**, ..., **c**<sub>11</sub>&#183;**x**,
+> If the numbers **c**<sub>1</sub>&#183;**x**, **c**<sub>2</sub>&#183;**x**, ..., **c**<sub>11</sub>&#183;**x**,
 > and 
 > **d**<sub>1</sub>&#183;**x**, **d**<sub>2</sub>&#183;**x**, ..., **d**<sub>11</sub>&#183;**x**
 > are coefficients of valid 4-variable inequalities, <br> then so are
@@ -86,7 +86,7 @@ extracted by the bootstrap process.
 The description of the iteratively applied copy string &ndash; base 
 pairs can be found in the [drules](drules.txt) file. Labels are the
 rule numbers from [Dougherty et al](http://arxiv.org/pdf/1104.3602v1). Cases
-masked by * are handled as [../rules](rules), and are not considered here.
+masked by * are handled as [rules](../rules), and are not considered here.
 
 In each iteration usually only the set of plugged-in 4-variable inequalities
 changes, but ocassionally sporadic copy strings are added. Please check the
