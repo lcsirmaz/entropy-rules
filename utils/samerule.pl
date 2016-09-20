@@ -87,6 +87,7 @@ sub different {
     print "Rulesets $ARGV[0] and $ARGV[1] are different\n";
     exit 1;
 }
+
 sub same {
     if(scalar @$ruleset1 == scalar @$ruleset2){
        print "Rulesets $ARGV[0] and $ARGV[1] are the SAME\n";
@@ -99,7 +100,6 @@ sub same {
 }
 
 #######################################################
-
 print "R1=",scalar @$ruleset1,", R2=",scalar @$ruleset2,"\n";
 if(scalar @$ruleset1 > scalar @$ruleset2){
     my $temp=$ruleset1; $ruleset1=$ruleset2; $ruleset2=$temp;

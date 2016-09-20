@@ -32,9 +32,13 @@ sub read_supplist {
     my $cnt=0;
     open(FILE,$fname) || die "Cannot open superseded list file $fname\n";
     while(<FILE>){
-        next if(!/^superseded: ([^\s]+) by/);
-        $info->{supplist}->{$1}=1;
-        $cnt++;
+        if(/^superseded: ([^\s]+) by [\s]+ \(eq\)/ ){
+            $info->{suppeq}->{$1}=1;
+            $cnt++;
+        } elsif(/^superseded: ([^\s]+) by/) {
+            $info->{supplist}->{$1}=1;
+            $cnt++;
+        }
     }
     close(FILE);
     die "No superseded items found in $fname\n" if($cnt==0);
@@ -62,7 +66,9 @@ sub read_ineq_file {
           my $label="$base/$a[12]";
           $a[13]=$base;
           $a[14]=undef;
-          if(defined $info->{supplist}->{$label}){
+          if(defined $info->{suppeq}->{$label}){
+              ; # skip this item, don't store
+          } elsif(defined $info->{supplist}->{$label}){
               push @{$info->{superseded}},\@a;
           } else {
               my $hash=$a[0]; for my $i(1..10){$hash.=",$a[$i]";}
@@ -199,7 +205,7 @@ sub run_lp {
 
 ####################################################################
 ##
-my $info={ supplist => {} };
+my $info={ supplist => {}, suppeq => {} };
 if($ARGZ){ read_supplist($info,$ARGV[1]); }
 
 for my $i($ARGZ .. -1+scalar @ARGV){ read_ineq_file($info,$ARGV[$i]); }
