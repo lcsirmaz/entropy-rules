@@ -180,7 +180,7 @@ a regular tetrahedron, and the point represented is the center of the weight. Po
 (0,1,0,0), (0,0,1,0) and (0,0,0,1) are the vertices of the tetrahedron. As &alpha;, &beta;,
 &gamma;, &delta; are non-negative numbers, **S** has no point outside the tetrahedron. As
 points (0,1,0,0), (0,0,1,0), and (0,0,0,1) are entropic, the whole &beta;&gamma;&delta;
-triangle is part of **S**. The fourth vertex (1,0,0,0) is not elmost
+triangle is part of **S**. The fourth vertex (1,0,0,0) is not almost
 entropic: it violates the Zhang-Yeung inequality, which can be expressed as (see (1)):
 
 >  &alpha; &le; 2 &beta; + 2 &delta;

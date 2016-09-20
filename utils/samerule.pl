@@ -79,22 +79,33 @@ sub create_hash {
 }
 
 #######################################################
+my $ruleset1 = read_ruleset($ARGV[0]);
+my $ruleset2 = read_ruleset($ARGV[1]);
+my $swapped=0;
+#######################################################
 sub different {
     print "Rulesets $ARGV[0] and $ARGV[1] are different\n";
     exit 1;
 }
-
 sub same {
-    print "Rulesets $ARGV[0] and $ARGV[1] are the SAME\n";
+    if(scalar @$ruleset1 == scalar @$ruleset2){
+       print "Rulesets $ARGV[0] and $ARGV[1] are the SAME\n";
+    } elsif($swapped) {
+       print "Ruleset $ARGV[0] is an EXTENSION of $ARGV[1]\n";
+    } else {
+       print "Ruleset $ARGV[0] is a SUBSET of $ARGV[1]\n";
+    }
     exit 0;
 }
 
 #######################################################
 
-my $ruleset1 = read_ruleset($ARGV[0]);
-my $ruleset2 = read_ruleset($ARGV[1]);
 print "R1=",scalar @$ruleset1,", R2=",scalar @$ruleset2,"\n";
-different() if(scalar @$ruleset1 != scalar @$ruleset2) ;
+if(scalar @$ruleset1 > scalar @$ruleset2){
+    my $temp=$ruleset1; $ruleset1=$ruleset2; $ruleset2=$temp;
+    $swapped=1;
+## different() if(scalar @$ruleset1 != scalar @$ruleset2) ;
+}
 my $hash=create_hash($ruleset2);
 
 permute_ruleset($ruleset1,0,0); same() if( same_ruleset($ruleset1,$hash) );  # ab
@@ -117,7 +128,7 @@ permute_ruleset($ruleset1,0,1); same() if( same_ruleset($ruleset1,$hash) );  # a
 permute_ruleset($ruleset1,0,0); same() if( same_ruleset($ruleset1,$hash) );  # cd
 permute_ruleset($ruleset1,0,1); same() if( same_ruleset($ruleset1,$hash) );  # --
 permute_ruleset($ruleset1,1,1);
-print "done...\n";
+# print "done...\n";
 
 different();
 

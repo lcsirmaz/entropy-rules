@@ -1,0 +1,61 @@
+# rules from DFZ
+#
+#label copy string     base1          base2
+#
+# labels marked by * are handled as rules
+#
+
+09*  r=a:bc            a,r,c,d
+10*  r=a:bc            a,b,r,d
+01*  r=a:bc            ar,br,cr,d
+03*  r=a:bc            ar,br,c,dr
+11*  r=a:bc            ar,br,cr,dr
+05   r=a:bc            ar,br,c,dr     ar,br,cr,d
+16   r=a:bc            a,r,c,d        ar,br,c,dr
+
+39*  r=a:bc;s=(ar):bc  a,s,c,d
+40*  r=a:bc;s=(ar):bc  a,b,s,d
+23*  r=a:bc;s=a:bdr    a,r,c,d
+31*  r=a:bc;s=a:bdr    ar,rs,cr,dr
+41   r=a:bc;s=a:bdr    ars,brs,crs,drs
+29*  r=a:bc;s=r:ab     s,b,c,d
+
+#####################################################################
+
+07*  r=c:ab            a,r,c,d
+02*  r=c:ab            ar,br,cr,d
+04*  r=c:ab            ar,br,c,dr
+12*  r=c:ab            ar,br,cr,dr
+18   r=c:ab            a,r,c,d        r,b,c,d
+15   r=c:ab            a,r,c,d        ar,br,c,dr
+08   r=c:ab            a,r,c,d        ar,br,cr,d
+14   r=c:ab            a,r,c,d        ar,br,cr,dr
+
+13   r=c:ab            ar,br,cr,dr    a,b,c,dr
+19   r=c:ab            ar,br,cr,dr    a,b,cr,d
+06   r=c:ab            ar,br,c,dr     ar,br,cr,d
+17   r=c:ab            a,b,cr,d       a,b,c,dr
+
+34*  r=c:ab;s=b:adr    rs,br,cr,dr
+38   r=c:ab;s=b:adr    rs,bs,cs,ds
+27*  r=c:ab;s=r:ac     a,r,c,d
+33*  r=c:ab;s=r:ad     a,b,c,s
+
+#####################################################################
+
+20*  rs=cd:ab          a,d,r,s
+25*  rs=cd:ab          a,b,c,dr
+32*  rs=cd:ab          ac,bc,cr,cs
+21   rs=cd:ab          a,d,r,s        a,c,r,s
+26   rs=cd:ab          a,d,r,s        b,c,r,s
+28   rs=cd:ab          a,d,r,s        a,b,c,dr
+22   rs=cd:ab          a,d,r,s        ac,bc,cr,s
+24   rs=cd:ab          a,d,r,s        ac,bc,cr,cs
+43   rs=cd:ab          a,d,r,s        ac,b,r,s
+37   rs=cd:ab          a,d,r,s        ad,bd,dr,ds
+
+35   rs=cd:ab          ad,bd,dr,ds    ac,bc,cr,cs
+36   rs=cd:ab          a,b,c,dr       ad,bd,dr,ds
+
+######################################################################
+
