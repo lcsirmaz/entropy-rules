@@ -11,7 +11,7 @@ and symmetries give several equalities among the entropies of the final set
 of pool variables. The consequences of
 
 > (1) &nbsp; &nbsp; these equalities, and <br>
-> (2) &nbsp; &nbsp the collection of Shannon inequalities (for all subsets
+> (2) &nbsp; &nbsp; the collection of Shannon inequalities (for all subsets
 > of pool variables)
 
 on the 15 entropies of the original four variables are extracted.
@@ -60,25 +60,24 @@ through **d**<sub>11</sub>, and the third is **e**<sub>1</sub>
 through **e**<sub>11</sub>. All vectors have the same dimension. The rule
 can be used to generate new entropy inequality as follows:
 
-> Choosing the non-negative parameters **x** = &lt x_j &gt; arbitrarily,
-> if the numbers <br>
-> **c**<sub>1</sub>&#183;**x**> **c**<sub>2</sub>&#183;**x**, ..., **c**<sub>11</sub>&#183;**x**,
-> and <br>
-> **d**<sub>1</sub>&#183;**x**> **d**<sub>2</sub>&#183;**x**, ..., **d**<sub>11</sub>&#183;**x**
+> Choosing the non-negative parameters **x** = &lt; x_j &gt; arbitrarily,
 > <br>
-> are coefficients of valid 4-variable inequalities, then so are
-> numbers</br>
-> **e**<sub>1</sub>&#183;**x**> **e**<sub>2</sub>&#183;**x**, ...,
+> if the numbers **c**<sub>1</sub>&#183;**x**, **c**<sub>2</sub>&#183;**x**, ..., **c**<sub>11</sub>&#183;**x**,
+> and 
+> **d**<sub>1</sub>&#183;**x**, **d**<sub>2</sub>&#183;**x**, ..., **d**<sub>11</sub>&#183;**x**
+> are coefficients of valid 4-variable inequalities, <br> then so are
+> numbers
+> **e**<sub>1</sub>&#183;**x**, **e**<sub>2</sub>&#183;**x**, ...,
 > **e**<sub>11</sub>&#183;**x**.
 
 Here, for example, the inner product **c**<sub>1</sub>&#183;**x** is
-computed as c<sub>1,1</sub>x<sub<1</sub> + c<sub>1,2</sub>x<sub>2</sub> +
+computed as c<sub>1,1</sub>x<sub>1</sub> + c<sub>1,2</sub>x<sub>2</sub> +
 ... + c<sub>1,j</sub>x<sub>j</sub> + ...
 
 Such a rule is defined by a copy string and two bases. Using equalities
-and inequalities (1) and (2) for the copy string, then adding the 
+(1) and inequalities (2) for the copy string, then adding the 
 first 4-variable inequality for the first base, the second 4-variables
-inequality for the second base (two additional inequalities for (3)), 
+inequality for the second base (two additional inequalities in (3)), 
 the generated inequality is (one of) the consequences of this set as 
 extracted by the bootstrap process.
 
@@ -87,11 +86,11 @@ extracted by the bootstrap process.
 The description of the iteratively applied copy string &ndash; base 
 pairs can be found in the [drules](drules.txt) file. Labels are the
 rule numbers from [Dougherty et al](http://arxiv.org/pdf/1104.3602v1). Cases
-masked by * are handled as rules, and not considered here.
+masked by * are handled as [../rules](rules), and are not considered here.
 
 In each iteration usually only the set of plugged-in 4-variable inequalities
-changes, but ocassionally sporadic copy strings are tried; please check the
-README file in the folders.
+changes, but ocassionally sporadic copy strings are added. Please check the
+corresponding README file in these folders.
 
 
 
