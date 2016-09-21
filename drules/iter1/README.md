@@ -9,6 +9,11 @@ solutions are in [vlp](vlp). New inequalities not superseded by those in
 Finally, the minimal set of all generated inequalities is collected into
 [it1](it1.txt).
 
+#### Limitations
+
+Due to the high complextiy and numerical instability, vlp problem \#14 has
+partial solution only.
+
 #### Contents
 
 * [base20](base20.txt) &nbsp;&ndash; the base file of inequalities 
