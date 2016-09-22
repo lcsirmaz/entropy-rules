@@ -5,24 +5,33 @@
 
 use strict;
 
+sub usage {
+    print "usage: DFZgen.pl <latest-inequality-file>\n";
+    print "Generating DFZ/main.txt, the list of DFZ inequalities\n";
+    print "inequalities NOT in the supplied file are marked as\n";
+    print "superseded\n";
+    exit 1;
+}
+
 my $rawfile = "DFZ/DFZ.txt";
 
 my @list=();
 
 my %supplist=();
+my $cnt=0;
 
-if(scalar @ARGV>0){
-   if($ARGV[0] ne "-s" || scalar @ARGV!=2){ 
-     print "generating DFZ/main.txt\n";
-     print "usage: [-s <superseded-list>]\n";
-     exit 1;
-   }
-   open(FILE,$ARGV[1])|| die "Cennot open superseded file $ARGV[1]\n";
-   while(<FILE>){
-       next if(!/^superseded: DFZ\/([^\s]+) by/ );
-       $supplist{$1}=1;
-   }
-   close(FILE);
+if(scalar @ARGV!=1 || !$ARGV[0]){ usage(); }
+open(FILE,$ARGV[0])|| die "Cennot open inequality file $ARGV[0] for reading\n";
+while(<FILE>){
+    next if(/^#/);
+    next if(!/ (dfz:\d+:\d+)$/);
+    $supplist{$1}=1; $cnt++;
+}
+close(FILE);
+
+if($cnt==0){
+    print "No dfz label was found in $ARGV[0], aborting\n";
+    exit(1);
 }
 
 open(FILE,$rawfile) || die "Cannot open file $rawfile\n";
@@ -33,7 +42,7 @@ while(<FILE>){
     for my $i(0..-1+scalar @a){
         $a[$i] =~ s/\s//g;
     }
-    if(defined $supplist{$a[12]}){ $a[13]='S'; }
+    if(!defined $supplist{$a[12]}){ $a[13]='S'; }
     push @list,\@a;
 }
 close(FILE);

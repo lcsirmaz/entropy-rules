@@ -32,7 +32,7 @@ sub read_supplist {
     my $cnt=0;
     open(FILE,$fname) || die "Cannot open superseded list file $fname\n";
     while(<FILE>){
-        if(/^superseded: ([^\s]+) by [\s]+ \(eq\)/ ){
+        if(/^superseded: ([^\s]+) by [^\s]+ \(eq\)/ ){
             $info->{suppeq}->{$1}=1;
             $cnt++;
         } elsif(/^superseded: ([^\s]+) by/) {

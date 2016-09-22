@@ -12,13 +12,17 @@ by R. Dougherty et al.
 #### Content
 
 * [DESCRIPTION.md](DESCRIPTION.md) &nbsp;&ndash; how entropy inequalities are represented
+* [latest](latest.txt) &bksp;&ndash; the latest collection of 4-variable
+  entropy inequalities
+* [ineqs](ineqs) &nbsp;&ndash; minimal set of inequalities at different
+  stages
 * [DFZ](DFZ) &nbsp;&ndash; Dougherty-Freilig-Zeger list of 214 inequalities
 * [copy](copy) &nbsp;&ndash; description and data for copy method
+* [rules](rules) &nbsp;&ndash; description and data for the rule method
+* [drules](drules) &nbsp;&ndash; description and data for the bootstrap method
 * [visual](visual) &nbsp;&ndash; visualization of a 3-dimensional section of
 the entropy region
-* [rules](rules) &nbsp;&ndash; description and data for the rule method
-* [drules](drules) &nbsp;&ndash; description and data for iteration
-* [utils](utils) &nbsp;&ndash; utility perl programs to generate and check data
+* [utils](utils) &nbsp;&ndash; perl utility programs to generate and check data
 
 
 

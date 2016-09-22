@@ -17,15 +17,20 @@ sub print_usage {
 }
 
 my %supplist=();
+my %suppeq=();
 
 sub read_supplist {
     my $file=shift;
     open(FILE,$file) || die "Cannot open suppressed file $file\n";
     my $cnt=0;
     while(<FILE>){
-        next if(!/^superseded: [^\s]+\/([^\s]+) by/);
-        $supplist{$1}=1;
-        $cnt++;
+        if(/^superseded: ([^\s]+) by [^\s]+ \(eq\_/ ){
+            $suppeq{$1}=1;
+            $cnt++;
+        } elsif(/^superseded: ([^\s]+) by/) {
+            $supplist{$1}=1;
+            $cnt++;
+        }
     }
     close(FILE);
     die "No superseded items found in $file\n" if($cnt==0);
@@ -62,6 +67,7 @@ my @list=();
 
 sub add_file {
     my $file=shift;
+    my $base=$file; $base =~ s/^.*\///g; $base =~ s/\..*$//;
     open(FILE,$file) || die "Cannot open file $file\n";
     while(<FILE>){
         chomp;
@@ -73,9 +79,17 @@ sub add_file {
         die "Wrong line in file $file" if(scalar @a < 12);
 #         if($a[13]){ print "superseded: $_\n"; }
 #         if(defined $supplist{$a[12]}){ print "in supplist: $_\n";}
-        next if($a[13]); ## superseded
-        next if(defined $supplist{$a[12]});
-        push @list,\@a;
+        my $label="$base/$a[12]";
+        $a[13]=$base; $a[14]=undef;
+##        next if($a[13]); ## superseded
+##        next if(defined $supplist{$a[12]});
+        if(defined $suppeq{$label}){
+            ; #skip
+        }  elsif(defined $supplist{$label}){
+            ; #skip
+        } else {
+            push @list,\@a;
+        }
     }
     close(FILE);
 }

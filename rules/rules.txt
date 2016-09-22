@@ -1,6 +1,9 @@
 # single rules
 #
-# label, copy string,  base            DFZ rule number
+# labels marked by * are equal, or part of other rules
+# and are not processed
+# 
+# label, copy string,  base            DFZ rule number, comment
 #
 00  r=a:bc             ar,br,cr,d      # subset of rule #01
 01  r=a:bc;s=a:bdr     ar,br,cr,d      # 1, 5

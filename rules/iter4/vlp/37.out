@@ -1,0 +1,42 @@
+C applying rule 37.txt for base40.txt
+I    5.02] Elapsed: 5.02, vertices: 121, facets final: 73, pending: 2043, pool: 63
+I   10.02] Elapsed: 10.02, vertices: 202, facets final: 237, pending: 1938, pool: 81
+I   15.02] Elapsed: 15.02, vertices: 273, facets final: 486, pending: 1631, pool: 55
+I   20.02] Elapsed: 20.02, vertices: 318, facets final: 773, pending: 1333, pool: 62
+I   25.02] Elapsed: 25.02, vertices: 365, facets final: 1083, pending: 1164, pool: 41
+I   30.02] Elapsed: 30.02, vertices: 395, facets final: 1404, pending: 813, pool: 47
+I   35.02] Elapsed: 35.02, vertices: 418, facets final: 1762, pending: 489, pool: 33
+I   40.02] Elapsed: 40.02, vertices: 453, facets final: 2105, pending: 137, pool: 11
+I   41.77] Elapsed: 41.77, vertices: 476, facets final: 2218, pending: 0
+
+--------------------------------
+Problem completed
+ name                    37.vlp
+ output                  vlp/37.res
+ rows, cols, objs        12, 5111, 10
+ vertices, facets        476, 2218
+ total time              41.77
+--------------------------------
+Statistics
+LP:
+ oracle calls            3133
+   avg iterations/calls  6.20
+ total oracle time       39.01
+Combinatorics:
+ vertices added          476
+ facets probed           7386
+ facets # max            2558
+ memory allocated        2.26M
+ storage expansion
+   vertices # / upto     4 / 508
+   facets   # / upto     1 / 4092
+ facet manipulating
+   added avg / max       36.48 / 254.00
+   compressed            7
+ number of ridge tests
+   avg / max             54.24k / 299.04k
+--------------------------------
+Parameters with non-default values
+ VertexPoolSize = 200
+ PolytopeEps = 4e-09
+ LineqEps = 1e-07

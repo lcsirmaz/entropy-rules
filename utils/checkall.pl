@@ -153,12 +153,12 @@ sub read_result_file {
     my $filetype=0; my $downgrade=0;
     while(<FILE>){
       if($filetype==0){ ## unknown
-          if(/^V/){ $filetype=1; }
+          if(/^V/i){ $filetype=1; }
           elsif(/^[1-9]/){ $filetype=2; }
           else{ next; }
       }
       if ($filetype==1){ ## .res file
-      next if(!/^V/);
+      next if(!/^V/i);
       chomp;
       my $line=$_;
       my @v=split(/\s+/,$line);
@@ -360,7 +360,7 @@ sub find_copy {
     }
     if($fname =~ /iter([2-9])/ ){
         $info->{id} .= "$1.";
-    } elsif($fname =~ /case([2-9])/ ){
+    } elsif($fname =~ /case([2-9])/){
         $info->{id} .= "$1.";
     } else {
         my $thisdir=`pwd`;
