@@ -517,7 +517,7 @@ static FILE *STL=NULL;
 struct { float normal[3]; float x[3]; float y[3]; float z[3];
          char dummy[2]; } __attribute__((packed)) stldata;
 struct { char header[80]; int length;} __attribute__((packed)) stlheader;
-
+/* open the STL file and print the header */
 static void open_STL(char *filename, int total)
 {int i;
     STL=fopen(filename,"wb");
@@ -528,20 +528,21 @@ static void open_STL(char *filename, int total)
     stldata.dummy[0]=stldata.dummy[1]=0;
     stldata.normal[0]=stldata.normal[1]=stldata.normal[2]=0;
 }
-
+/* close an opened STL file */
 static void close_STL(void){
     if(STL==NULL) return;
     fclose(STL); STL=NULL;
 }
-
-static void print_triangle(POINT *a, POINT *b, POINT *c)
+/* print the triangle just in the opposite orientation */
+static void print_triangle(POINT *b, POINT *a, POINT *c)
 {   if(STL==NULL) return;
     stldata.x[0]=a->x; stldata.x[1]=a->y; stldata.x[2]=a->z;
     stldata.y[0]=b->x; stldata.y[1]=b->y; stldata.y[2]=b->z;
     stldata.z[0]=c->x; stldata.z[1]=c->y; stldata.z[2]=c->z;
     fwrite(&stldata,1,sizeof(stldata),STL);
 }
-
+/* save the generated upper envelope; put the bottom if requested.
+   In our case it is a single triangle. */
 void print_STL(char *filename, int add_bottom)
 {FACE *f; int total=0; CONV *from;
     if(add_bottom){

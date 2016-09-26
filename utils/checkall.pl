@@ -214,9 +214,12 @@ sub read_result_file {
     return $filetype;
 }
 ## read known inequalities
+my $to_alt=0;
 sub read_ineq_file {
     my ($info,$fname)=@_;
+    if($fname eq "-x"){ $to_alt=1; return; }
     $info->{old}=() if(!defined $info->{old});
+    if($to_alt){ $info->{alt}=() if(!defined $info->{alt}); }
     open(FILE,$fname) || die "Cannot open inequality file $fname for reading\n";
     while(<FILE>){
       next if(!/^\s*\d+,/ ); # comment lines
@@ -224,9 +227,14 @@ sub read_ineq_file {
       my @a=split(/,\s*/,$line);
       scalar @a>=11 || die "Wrong data line in inequality file $fname:\n  $line\n";
       biggest(\@a);    ## make it lexocographically maximal
-      push @{$info->{old}}, \@a; ## and store
+      if($to_alt){
+         push @{$info->{alt}}, \@a;
+      } else {
+         push @{$info->{old}}, \@a; ## and store
+      }
     }
     close(FILE);
+    $to_alt=0;
 }
 ################################################################
 ## generate all relevant permutation of inequalities
@@ -261,6 +269,34 @@ sub generate_matrix {
     foreach my $a(@array){
        for my $i(0..10){
            $info->{nonzero}++ if($a->[$i]);
+       }
+    }
+}
+sub generate_alt_matrix {
+    my ($info)=@_;
+    return if(! defined $info->{alt} );
+    return if($info->{altarray});
+    my @array=();
+    foreach my $a(@{$info->{alt}}){
+#        next if( scalar @$a>13 && $a->[13] ); # superseded
+        my(@a1,@a2,@a3,@a4);
+        for my $i(0..10){
+           $a1[$i]=$a2[$i]=$a3[$i]=$a4[$i]=$a->[$i]; 
+        }
+        swap_ab(\@a2); swap_cd(\@a3); swap_ab(\@a4); swap_cd(\@a4);
+        push @array, \@a1;
+        push @array, \@a2 if(not_the_same(\@a1,\@a2));
+        push @array, \@a3 if(not_the_same(\@a1,\@a3) && not_the_same(\@a2,\@a3));
+        push @array, \@a4 if(not_the_same(\@a1,\@a4) &&
+                 not_the_same(\@a2,\@a4) && not_the_same(\@a3,\@a4));
+    }
+    $info->{altarray}=\@array;
+    $info->{altrows}=11;
+    $info->{altcols} = scalar @array;
+    $info->{altnonzero}=0;
+    foreach my $a(@array){
+       for my $i(0..10){
+           $info->{altnonzero}++ if($a->[$i]);
        }
     }
 }
@@ -337,6 +373,35 @@ sub generate_vlp {
     close(VLP);
     return $tmpname;
 }
+sub generate_alt_vlp {
+    my($info,$a)=@_;
+    my $tmpname=`mktemp -q /tmp/chk_XXXXXX.vlp`; chomp $tmpname;
+    open(VLP,">$tmpname") || die "Cannot create temporary file $tmpname\n";
+     print VLP "C checking whether an inequality is new\n";
+     print VLP "p vlp min",
+         " ",$info->{altrows},    # number of rows
+         " ",$info->{altcols},    # columns
+         " ",$info->{altnonzero}, # nonzero coeffs
+         " ",1,                # number of objectives
+         " ",0,                # nonzero elements in objectives
+         "\n";
+     # variable types: 1..cols: non-negative
+     for my $j(1..$info->{altcols}){
+       print VLP "j $j l 0\n";
+     }
+     # constraint types: 1 ==, others are <=
+     for my $i(1..$info->{altrows}){
+       print VLP "i $i ", ($i==1 ? "s ":"u "),$a->[$i-1],"\n";
+     }
+     # the matrix
+     for my $i(0..$info->{altrows}-1){ for my $j(0..$info->{altcols}-1){
+       my $v=$info->{altarray}->[$j]->[$i]; 
+       print VLP "a ",$i+1," ",$j+1," $v\n" if($v);
+     }}
+     print VLP "e\n\n";
+    close(VLP);
+    return $tmpname;
+}
 ################################################################
 ## find out the copy string
 sub find_copy {
@@ -386,6 +451,7 @@ if($filetype==1){ find_copy($info,$ARGV[$ARGZ]); }
 
 ## print "old: ",scalar @{$info->{old}},", new: ",scalar @{$info->{new}},"\n";
 generate_matrix($info);
+generate_alt_matrix($info);
 ## print "done\n"; exit 3;
 my $cnt=0;
 foreach my $a(@{$info->{new}}){
@@ -393,6 +459,18 @@ foreach my $a(@{$info->{new}}){
     next if(is_superseded($info,$a));
 #    print "trying: ",join(', ',@$a);
     my $e=2;
+    if(defined $info->{altarray} && $info->{altcols}>0){
+       # try first the fast LP if there ...
+# print "TRYING ALT \n";
+       my $vlpfile=generate_alt_vlp($info,$a);
+       system("inner -y- $vlpfile > /dev/null");
+       $e=$?>>8;
+       die "Unexpected error from inner ($e)\n" if($e!=0 && $e !=2);
+       unlink $vlpfile;
+# print "ALT ",($e==0?"OK, going next":"not good ..."),"\n";
+       next if($e==0);
+       $e=2;
+    }
     if($info->{cols}>0){
       my $vlpfile=generate_vlp($info,$a);
       system("inner -y- $vlpfile >/dev/null");

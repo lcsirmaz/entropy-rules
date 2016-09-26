@@ -87,7 +87,9 @@ sub create_vlp {
        $n++ if($info->{flag}->[$i]);
     }
     open(VLP,">$file")|| die "Cannot create vlp file $file\n";
-    print VLP "C outer bound for the entropy region\n";
+    print VLP "c outer bound for the entropy region from inequalities in\n";
+    for my $i(1..-1+scalar @ARGV){ print VLP ($i>1 ? ", ":"c "),$ARGV[$i]; }
+    print VLP "\n";
     print VLP "p vlp min",
        " ",$n+1,   # number of rows
        " ",3,      # number of columns
