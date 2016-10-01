@@ -1,0 +1,212 @@
+C copy string: r=c:ab;ar,br,c,dr;ar,br,cr,d; ineq: base19.txt
+I    5.00] Elapsed: 5.00, vertices: 230, facets final: 27, pending: 10662, pool: 286
+I   10.03] Elapsed: 10.03, vertices: 328, facets final: 45, pending: 14555, pool: 300
+I   15.03] Elapsed: 15.03, vertices: 414, facets final: 54, pending: 16979, pool: 300
+I   20.08] Elapsed: 20.08, vertices: 488, facets final: 65, pending: 20819, pool: 300
+I   25.13] Elapsed: 25.13, vertices: 550, facets final: 77, pending: 23469, pool: 299
+I   30.18] Elapsed: 30.18, vertices: 607, facets final: 83, pending: 25377, pool: 300
+I   35.21] Elapsed: 35.21, vertices: 659, facets final: 100, pending: 26755, pool: 300
+I   40.26] Elapsed: 40.26, vertices: 708, facets final: 124, pending: 28415, pool: 298
+I   45.34] Elapsed: 45.34, vertices: 755, facets final: 131, pending: 29255, pool: 300
+I   50.34] Elapsed: 50.34, vertices: 799, facets final: 144, pending: 30259, pool: 300
+I   55.41] Elapsed: 55.41, vertices: 844, facets final: 164, pending: 30786, pool: 299
+I   60.48] Elapsed: 1:00, vertices: 888, facets final: 181, pending: 31302, pool: 300
+I   65.49] Elapsed: 1:05, vertices: 931, facets final: 190, pending: 32211, pool: 300
+I   70.49] Elapsed: 1:10, vertices: 973, facets final: 203, pending: 33204, pool: 300
+I   75.56] Elapsed: 1:16, vertices: 1014, facets final: 214, pending: 34168, pool: 299
+I   80.59] Elapsed: 1:21, vertices: 1049, facets final: 218, pending: 34225, pool: 300
+I   85.59] Elapsed: 1:26, vertices: 1084, facets final: 223, pending: 34725, pool: 300
+I   90.75] Elapsed: 1:31, vertices: 1119, facets final: 235, pending: 35014, pool: 300
+I   95.86] Elapsed: 1:36, vertices: 1156, facets final: 248, pending: 35348, pool: 299
+I  100.86] Elapsed: 1:41, vertices: 1193, facets final: 254, pending: 35868, pool: 300
+I  105.91] Elapsed: 1:46, vertices: 1230, facets final: 279, pending: 36078, pool: 300
+I  111.03] Elapsed: 1:51, vertices: 1268, facets final: 289, pending: 36293, pool: 300
+I  116.14] Elapsed: 1:56, vertices: 1304, facets final: 304, pending: 36572, pool: 300
+I  121.22] Elapsed: 2:01, vertices: 1339, facets final: 316, pending: 37009, pool: 300
+I  126.28] Elapsed: 2:06, vertices: 1373, facets final: 327, pending: 37257, pool: 300
+I  131.35] Elapsed: 2:11, vertices: 1408, facets final: 342, pending: 37125, pool: 300
+I  136.41] Elapsed: 2:16, vertices: 1443, facets final: 355, pending: 37434, pool: 300
+I  141.47] Elapsed: 2:21, vertices: 1478, facets final: 367, pending: 37932, pool: 300
+I  146.48] Elapsed: 2:26, vertices: 1513, facets final: 379, pending: 38313, pool: 300
+I  151.51] Elapsed: 2:32, vertices: 1547, facets final: 395, pending: 38310, pool: 300
+I  156.58] Elapsed: 2:37, vertices: 1581, facets final: 410, pending: 38436, pool: 300
+I  161.66] Elapsed: 2:42, vertices: 1613, facets final: 423, pending: 39091, pool: 300
+I  166.66] Elapsed: 2:47, vertices: 1647, facets final: 446, pending: 39546, pool: 300
+I  171.71] Elapsed: 2:52, vertices: 1679, facets final: 458, pending: 39418, pool: 300
+I  176.78] Elapsed: 2:57, vertices: 1710, facets final: 475, pending: 39602, pool: 300
+I  181.82] Elapsed: 3:02, vertices: 1744, facets final: 490, pending: 39642, pool: 300
+I  186.93] Elapsed: 3:07, vertices: 1778, facets final: 504, pending: 40180, pool: 300
+I  191.99] Elapsed: 3:12, vertices: 1810, facets final: 514, pending: 39994, pool: 300
+I  197.06] Elapsed: 3:17, vertices: 1842, facets final: 527, pending: 40369, pool: 300
+I  202.13] Elapsed: 3:22, vertices: 1874, facets final: 533, pending: 40422, pool: 298
+I  207.20] Elapsed: 3:27, vertices: 1904, facets final: 551, pending: 40618, pool: 300
+I  212.27] Elapsed: 3:32, vertices: 1934, facets final: 568, pending: 40155, pool: 300
+I  217.32] Elapsed: 3:37, vertices: 1965, facets final: 572, pending: 40564, pool: 300
+I  222.44] Elapsed: 3:42, vertices: 1999, facets final: 592, pending: 40669, pool: 300
+I  227.62] Elapsed: 3:48, vertices: 2031, facets final: 606, pending: 40805, pool: 300
+I  232.71] Elapsed: 3:53, vertices: 2061, facets final: 620, pending: 40419, pool: 300
+I  237.79] Elapsed: 3:58, vertices: 2093, facets final: 634, pending: 40336, pool: 299
+I  242.79] Elapsed: 4:03, vertices: 2123, facets final: 649, pending: 40313, pool: 300
+I  247.86] Elapsed: 4:08, vertices: 2156, facets final: 663, pending: 39906, pool: 300
+I  253.00] Elapsed: 4:13, vertices: 2187, facets final: 687, pending: 39801, pool: 300
+I  258.09] Elapsed: 4:18, vertices: 2218, facets final: 705, pending: 39802, pool: 300
+I  263.19] Elapsed: 4:23, vertices: 2250, facets final: 721, pending: 39842, pool: 300
+I  268.26] Elapsed: 4:28, vertices: 2282, facets final: 750, pending: 39810, pool: 300
+I  273.36] Elapsed: 4:33, vertices: 2314, facets final: 776, pending: 39750, pool: 300
+I  278.47] Elapsed: 4:38, vertices: 2346, facets final: 791, pending: 39608, pool: 300
+I  283.52] Elapsed: 4:44, vertices: 2376, facets final: 815, pending: 39692, pool: 300
+I  288.64] Elapsed: 4:49, vertices: 2408, facets final: 836, pending: 39485, pool: 300
+I  293.68] Elapsed: 4:54, vertices: 2440, facets final: 855, pending: 39903, pool: 300
+I  298.83] Elapsed: 4:59, vertices: 2473, facets final: 870, pending: 40023, pool: 300
+I  303.83] Elapsed: 5:04, vertices: 2504, facets final: 888, pending: 39811, pool: 300
+I  308.96] Elapsed: 5:09, vertices: 2537, facets final: 901, pending: 39555, pool: 300
+I  314.08] Elapsed: 5:14, vertices: 2571, facets final: 924, pending: 39449, pool: 300
+I  319.16] Elapsed: 5:19, vertices: 2602, facets final: 949, pending: 39406, pool: 300
+I  324.16] Elapsed: 5:24, vertices: 2635, facets final: 958, pending: 39514, pool: 300
+I  329.20] Elapsed: 5:29, vertices: 2668, facets final: 986, pending: 39485, pool: 300
+I  334.32] Elapsed: 5:34, vertices: 2699, facets final: 1010, pending: 39364, pool: 300
+I  339.43] Elapsed: 5:39, vertices: 2732, facets final: 1039, pending: 39194, pool: 300
+I  344.47] Elapsed: 5:44, vertices: 2764, facets final: 1068, pending: 38978, pool: 300
+I  349.48] Elapsed: 5:49, vertices: 2797, facets final: 1087, pending: 38877, pool: 300
+I  354.52] Elapsed: 5:55, vertices: 2830, facets final: 1110, pending: 38731, pool: 299
+I  359.58] Elapsed: 6:00, vertices: 2862, facets final: 1145, pending: 38470, pool: 300
+I  364.67] Elapsed: 6:05, vertices: 2895, facets final: 1164, pending: 38350, pool: 300
+I  369.79] Elapsed: 6:10, vertices: 2930, facets final: 1196, pending: 38206, pool: 300
+I  374.91] Elapsed: 6:15, vertices: 2962, facets final: 1234, pending: 38064, pool: 300
+I  379.94] Elapsed: 6:20, vertices: 2994, facets final: 1262, pending: 37927, pool: 300
+I  384.96] Elapsed: 6:25, vertices: 3028, facets final: 1289, pending: 37885, pool: 300
+I  390.14] Elapsed: 6:30, vertices: 3063, facets final: 1322, pending: 37707, pool: 300
+I  395.17] Elapsed: 6:35, vertices: 3097, facets final: 1353, pending: 37513, pool: 300
+I  400.18] Elapsed: 6:40, vertices: 3130, facets final: 1387, pending: 37357, pool: 300
+I  405.28] Elapsed: 6:45, vertices: 3164, facets final: 1423, pending: 37167, pool: 298
+I  410.33] Elapsed: 6:50, vertices: 3198, facets final: 1466, pending: 37178, pool: 300
+I  415.47] Elapsed: 6:55, vertices: 3230, facets final: 1493, pending: 37069, pool: 300
+I  420.49] Elapsed: 7:00, vertices: 3261, facets final: 1520, pending: 36978, pool: 300
+I  425.49] Elapsed: 7:05, vertices: 3292, facets final: 1569, pending: 36656, pool: 300
+I  430.51] Elapsed: 7:11, vertices: 3327, facets final: 1617, pending: 36635, pool: 299
+I  435.57] Elapsed: 7:16, vertices: 3362, facets final: 1651, pending: 36508, pool: 300
+I  440.64] Elapsed: 7:21, vertices: 3396, facets final: 1684, pending: 36199, pool: 300
+I  445.65] Elapsed: 7:26, vertices: 3427, facets final: 1725, pending: 36072, pool: 300
+I  450.67] Elapsed: 7:31, vertices: 3459, facets final: 1753, pending: 35916, pool: 300
+I  455.73] Elapsed: 7:36, vertices: 3492, facets final: 1797, pending: 35678, pool: 300
+I  460.79] Elapsed: 7:41, vertices: 3530, facets final: 1842, pending: 35592, pool: 300
+I  465.86] Elapsed: 7:46, vertices: 3566, facets final: 1885, pending: 35292, pool: 300
+I  470.87] Elapsed: 7:51, vertices: 3600, facets final: 1917, pending: 35053, pool: 299
+I  476.00] Elapsed: 7:56, vertices: 3635, facets final: 1976, pending: 34840, pool: 300
+I  481.07] Elapsed: 8:01, vertices: 3669, facets final: 2017, pending: 34725, pool: 300
+I  486.09] Elapsed: 8:06, vertices: 3702, facets final: 2051, pending: 34431, pool: 300
+I  491.23] Elapsed: 8:11, vertices: 3736, facets final: 2105, pending: 34313, pool: 299
+I  496.27] Elapsed: 8:16, vertices: 3772, facets final: 2153, pending: 33947, pool: 300
+I  501.37] Elapsed: 8:21, vertices: 3811, facets final: 2214, pending: 33722, pool: 300
+I  506.41] Elapsed: 8:26, vertices: 3849, facets final: 2255, pending: 33544, pool: 300
+I  511.48] Elapsed: 8:31, vertices: 3886, facets final: 2305, pending: 33224, pool: 300
+I  516.54] Elapsed: 8:37, vertices: 3922, facets final: 2341, pending: 33025, pool: 300
+I  521.63] Elapsed: 8:42, vertices: 3958, facets final: 2402, pending: 32685, pool: 300
+I  526.73] Elapsed: 8:47, vertices: 3992, facets final: 2474, pending: 32457, pool: 300
+I  531.76] Elapsed: 8:52, vertices: 4025, facets final: 2544, pending: 32336, pool: 300
+I  536.77] Elapsed: 8:57, vertices: 4058, facets final: 2609, pending: 32153, pool: 300
+I  541.85] Elapsed: 9:02, vertices: 4091, facets final: 2650, pending: 32041, pool: 300
+I  546.94] Elapsed: 9:07, vertices: 4129, facets final: 2694, pending: 31760, pool: 300
+I  551.97] Elapsed: 9:12, vertices: 4170, facets final: 2762, pending: 31604, pool: 300
+I  556.97] Elapsed: 9:17, vertices: 4209, facets final: 2818, pending: 31462, pool: 300
+I  562.04] Elapsed: 9:22, vertices: 4249, facets final: 2906, pending: 31236, pool: 300
+I  567.14] Elapsed: 9:27, vertices: 4289, facets final: 2969, pending: 31031, pool: 300
+I  572.19] Elapsed: 9:32, vertices: 4325, facets final: 3027, pending: 30915, pool: 300
+I  577.36] Elapsed: 9:37, vertices: 4363, facets final: 3092, pending: 30668, pool: 300
+I  582.38] Elapsed: 9:42, vertices: 4399, facets final: 3166, pending: 30560, pool: 300
+I  587.38] Elapsed: 9:47, vertices: 4434, facets final: 3234, pending: 30473, pool: 300
+I  592.49] Elapsed: 9:52, vertices: 4470, facets final: 3317, pending: 30257, pool: 300
+I  597.54] Elapsed: 9:58, vertices: 4504, facets final: 3398, pending: 29932, pool: 299
+I  602.55] Elapsed: 10:03, vertices: 4538, facets final: 3511, pending: 29601, pool: 300
+I  607.55] Elapsed: 10:08, vertices: 4572, facets final: 3570, pending: 29339, pool: 299
+I  612.67] Elapsed: 10:13, vertices: 4607, facets final: 3630, pending: 29168, pool: 300
+I  617.71] Elapsed: 10:18, vertices: 4641, facets final: 3704, pending: 29017, pool: 300
+I  622.80] Elapsed: 10:23, vertices: 4674, facets final: 3798, pending: 28763, pool: 300
+I  627.91] Elapsed: 10:28, vertices: 4707, facets final: 3881, pending: 28521, pool: 300
+I  632.93] Elapsed: 10:33, vertices: 4747, facets final: 4036, pending: 28165, pool: 300
+I  637.94] Elapsed: 10:38, vertices: 4790, facets final: 4182, pending: 27871, pool: 300
+I  642.96] Elapsed: 10:43, vertices: 4834, facets final: 4283, pending: 27610, pool: 300
+I  647.96] Elapsed: 10:48, vertices: 4878, facets final: 4378, pending: 27205, pool: 300
+I  653.05] Elapsed: 10:53, vertices: 4921, facets final: 4518, pending: 26854, pool: 300
+I  658.11] Elapsed: 10:58, vertices: 4964, facets final: 4654, pending: 26476, pool: 300
+I  663.15] Elapsed: 11:03, vertices: 5006, facets final: 4792, pending: 26161, pool: 300
+I  668.24] Elapsed: 11:08, vertices: 5048, facets final: 4931, pending: 25897, pool: 300
+I  673.26] Elapsed: 11:13, vertices: 5089, facets final: 5089, pending: 25621, pool: 300
+I  678.28] Elapsed: 11:18, vertices: 5130, facets final: 5206, pending: 25334, pool: 300
+I  683.30] Elapsed: 11:23, vertices: 5171, facets final: 5361, pending: 25033, pool: 300
+I  688.30] Elapsed: 11:28, vertices: 5209, facets final: 5498, pending: 24747, pool: 299
+I  693.35] Elapsed: 11:33, vertices: 5249, facets final: 5679, pending: 24405, pool: 300
+I  698.38] Elapsed: 11:38, vertices: 5288, facets final: 5854, pending: 24100, pool: 299
+I  703.40] Elapsed: 11:43, vertices: 5326, facets final: 6036, pending: 23824, pool: 300
+I  708.40] Elapsed: 11:48, vertices: 5365, facets final: 6207, pending: 23509, pool: 299
+I  713.40] Elapsed: 11:53, vertices: 5402, facets final: 6386, pending: 23198, pool: 300
+I  718.45] Elapsed: 11:58, vertices: 5440, facets final: 6583, pending: 22851, pool: 300
+I  723.45] Elapsed: 12:03, vertices: 5477, facets final: 6805, pending: 22488, pool: 300
+I  728.54] Elapsed: 12:09, vertices: 5513, facets final: 7118, pending: 22088, pool: 300
+I  733.54] Elapsed: 12:14, vertices: 5549, facets final: 7418, pending: 21629, pool: 300
+I  738.61] Elapsed: 12:19, vertices: 5587, facets final: 7653, pending: 21224, pool: 299
+I  743.68] Elapsed: 12:24, vertices: 5624, facets final: 7887, pending: 20872, pool: 299
+I  748.78] Elapsed: 12:29, vertices: 5660, facets final: 8130, pending: 20493, pool: 300
+I  753.82] Elapsed: 12:34, vertices: 5695, facets final: 8429, pending: 20093, pool: 300
+I  758.93] Elapsed: 12:39, vertices: 5729, facets final: 8791, pending: 19555, pool: 299
+I  764.01] Elapsed: 12:44, vertices: 5764, facets final: 9152, pending: 19159, pool: 299
+I  769.10] Elapsed: 12:49, vertices: 5798, facets final: 9552, pending: 18638, pool: 299
+I  774.14] Elapsed: 12:54, vertices: 5832, facets final: 9900, pending: 18170, pool: 300
+I  779.21] Elapsed: 12:59, vertices: 5865, facets final: 10353, pending: 17605, pool: 300
+I  784.21] Elapsed: 13:04, vertices: 5898, facets final: 10785, pending: 17108, pool: 299
+I  789.24] Elapsed: 13:09, vertices: 5930, facets final: 11249, pending: 16565, pool: 300
+I  794.24] Elapsed: 13:14, vertices: 5965, facets final: 11584, pending: 16146, pool: 296
+I  799.30] Elapsed: 13:19, vertices: 6000, facets final: 11917, pending: 15721, pool: 298
+I  804.30] Elapsed: 13:24, vertices: 6034, facets final: 12296, pending: 15260, pool: 297
+I  809.30] Elapsed: 13:29, vertices: 6066, facets final: 12758, pending: 14700, pool: 299
+I  814.33] Elapsed: 13:34, vertices: 6100, facets final: 13147, pending: 14240, pool: 297
+I  819.36] Elapsed: 13:39, vertices: 6128, facets final: 13815, pending: 13514, pool: 296
+I  824.36] Elapsed: 13:44, vertices: 6156, facets final: 14478, pending: 12761, pool: 298
+I  829.47] Elapsed: 13:49, vertices: 6184, facets final: 15195, pending: 11957, pool: 298
+I  834.47] Elapsed: 13:54, vertices: 6211, facets final: 15905, pending: 11205, pool: 289
+I  839.47] Elapsed: 13:59, vertices: 6238, facets final: 16632, pending: 10443, pool: 298
+I  844.47] Elapsed: 14:04, vertices: 6267, facets final: 17268, pending: 9767, pool: 294
+I  849.56] Elapsed: 14:10, vertices: 6293, facets final: 18107, pending: 8904, pool: 291
+I  854.56] Elapsed: 14:15, vertices: 6319, facets final: 18871, pending: 8111, pool: 288
+I  859.65] Elapsed: 14:20, vertices: 6347, facets final: 19633, pending: 7288, pool: 278
+I  864.65] Elapsed: 14:25, vertices: 6375, facets final: 20441, pending: 6442, pool: 262
+I  869.73] Elapsed: 14:30, vertices: 6401, facets final: 21358, pending: 5472, pool: 258
+I  874.74] Elapsed: 14:35, vertices: 6432, facets final: 22124, pending: 4665, pool: 239
+I  879.81] Elapsed: 14:40, vertices: 6462, facets final: 23044, pending: 3717, pool: 223
+I  884.87] Elapsed: 14:45, vertices: 6493, facets final: 23987, pending: 2733, pool: 208
+I  889.87] Elapsed: 14:50, vertices: 6526, facets final: 24874, pending: 1785, pool: 190
+I  894.93] Elapsed: 14:55, vertices: 6562, facets final: 25785, pending: 826, pool: 178
+I  899.94] Elapsed: 15:00, vertices: 6620, facets final: 26125, pending: 428, pool: 149
+I  904.95] Elapsed: 15:05, vertices: 6701, facets final: 26307, pending: 183, pool: 92
+I  908.16] Elapsed: 15:08, vertices: 6807, facets final: 26400, pending: 0
+
+--------------------------------
+Problem completed
+ name                    06.vlp
+ output                  vlp/06.res
+ rows, cols, objs        14, 3500, 10
+ vertices, facets        6807, 26400
+ total time              15:08
+--------------------------------
+Statistics
+LP:
+ oracle calls            34604
+   avg iterations/calls  7.37
+ total oracle time       1:24
+Combinatorics:
+ vertices added          6807
+ facets probed           89873
+ facets # max            41412
+ memory allocated        99.21M
+ storage expansion
+   vertices # / upto     54 / 6908
+   facets   # / upto     11 / 45052
+ facet manipulating
+   added avg / max       61.94 / 716.00
+   compressed            263
+ number of ridge tests
+   avg / max             1.74M / 22.71M
+--------------------------------
+Parameters with non-default values
+ VertexPoolSize = 300
+ PolytopeEps = 8e-09
