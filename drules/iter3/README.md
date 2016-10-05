@@ -14,7 +14,7 @@ Finally, the minimal set of all generated inequalities is collected into
 #### Limitations
 
 Only those problems are considered which gave new inequalities in
-iteration \#3.
+iteration \#2.
 
 #### Contents
 
