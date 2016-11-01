@@ -5,7 +5,7 @@
 # 
 # label, copy string,  base            DFZ rule number, comment
 #
-00  r=a:bc             ar,br,cr,d      # subset of rule #01
+00* r=a:bc             ar,br,cr,d      # subset of rule #01
 01  r=a:bc;s=a:bdr     ar,br,cr,d      # 1, 5
 02  r=a:bc;s=a:bdr     ar,br,c,dr      # 3, 5, 16
 03  r=a:bc;s=a:bdr     a,r,c,d         # 9, 16, 23
@@ -21,8 +21,8 @@
 
 14* rs=ad:bc           ar,br,cr,d      # same as rule #00
 15* rs=ad:bc           ar,br,c,dr      # subset of rule #02 and #42
-16* rs=ad:bc           a,r,c,d         # subset of rule #03
-17* rs=ad:bc           a,b,r,d         # subset of rule #04
+16* rs=ad:bc           a,r,c,d         # subset of rule #03 and #43
+17* rs=ad:bc           a,b,r,d         # subset of rule #04 and #44
 18* rs=ad:bc           ar,br,cr,dr     # subset of rule #05 and #40
 
 20  rs=cd:ab           ar,br,cr,d      # 2, 6, 8, 20
@@ -46,11 +46,11 @@
 38  r=c:ab;s=b:adr     rs,br,cr,dr     # 34
 39  r=c:ab;s=b:adr     rs,bs,cs,ds     # 38
 
-40  r=a:bc;s=b:adr     ar,br,cr,dr     # subset of rule #05
+40* r=a:bc;s=b:adr     ar,br,cr,dr     # subset of rule #05
 41* r=a:bc;s=b:adr     ar,br,cr,d      # subset of rule #01
 42  r=a:bc;s=b:adr     ar,br,c,dr
-43  r=a:bc;s=b:adr     a,r,c,d
-44  r=a:bc;s=b:adr     a,b,r,d
+43* r=a:bc;s=b:adr     a,r,c,d         # subset of rule #03
+44* r=a:bc;s=b:adr     a,b,r,d         # subset of rule #04
 45  r=a:bc;s=b:adr     a,s,c,d
 46  r=c:ab;s=a:bdr     ar,br,cr,d
 47  r=c:ab;s=a:bdr     ar,br,c,dr

@@ -440,7 +440,8 @@ sub generate_vlp {
     print VLP "p vlp min ",
        1+$newrows,  # number of total rows
        " ",$DD+$cols, # number of columns
-       " ",$nonzero+$DD, # nonzero elements in A
+##!       " ",$nonzero+$DD, # nonzero elements in A
+       " ",$nonzero+$D, # nonzero elements in A
        " ",$DD, # number of objectives
        " ",$DD, # number of non-zero entries in objectives
        "\n";
@@ -468,7 +469,10 @@ sub generate_vlp {
             print VLP "a $i $j $v\n";
         }
     }
-    for my $i(1..$DD){
+##!    for my $i(1..$DD){
+##!        print VLP "a ",$newrows+1," ",$cols+$i," 1\n";
+##!    }
+    for my $i(1..$D){
         print VLP "a ",$newrows+1," ",$cols+$i," 1\n";
     }
     # print the objectives, total number is 2*$D

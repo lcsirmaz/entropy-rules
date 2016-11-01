@@ -89,12 +89,12 @@ sub read_input {
         for my $i(1..$dim){
             push @row,toint($d*value($w[$i]));
         }
-        $row[0]=-$row[0]; # Ingleton is -1
-        my $s=$row[$dim>>1];
-        for my $i ((($dim>>1)+1)..($dim-1)){
-            $row[$i]=-$row[$i];  $s += $row[$i];
-        }
-        next if($s==0);
+#        $row[0]=-$row[0]; # Ingleton is -1
+#        my $s=$row[$dim>>1];
+#        for my $i ((($dim>>1)+1)..($dim-1)){
+#            $row[$i]=-$row[$i];  $s += $row[$i];
+#        }
+#        next if($s==0);
         push @{$info->{M}},\@row;
     }
     $info->{cols}=scalar @{$info->{M}};
@@ -103,6 +103,7 @@ sub read_input {
 
 #===========================================================================
 sub run_lp {
+    # check if a pos.linear combination of all ineq is <= ineq $d
     my($info,$d)=@_;
     my @M=();
     my $cols=$info->{cols}; my $rows=$info->{dim};
@@ -163,6 +164,10 @@ read_input($info,$ARGV[0]);
 #print "file: $ARGV[0]\n";
 #print "dim=$info->{dim}\n";
 #print "cols=$info->{cols}\n";
+  $info->{supd}=();
+  for my $j(0..(-1+$info->{cols})){
+    if(run_lp($info,$j)){ $info->{supd}[$j]=1; }
+  }
 my $output=$ARGV[1];
 if(-e $output){
     print "Output file $output exists. Continue (y/n)? ";
@@ -171,22 +176,56 @@ if(-e $output){
 }
 
 my @res=();
-for my $j(0..(-1+$info->{cols})){
-  my $txt="";
-  for my $i(0..10){
-     $txt .= ($i==0?"[":",").($info->{M}->[$j]->[$i+11]);
+
+if($info->{dim}==22){
+  for my $j(0..(-1+$info->{cols})){
+    next if($info->{supd}[$j]);
+    my $row=$info->{M}->[$j];
+    $row->[0]=-$row->[0]; $row->[11]=-$row->[11];
+    my $txt=""; my $s=0;
+    for my $i(0..10){
+       $s -= $row->[$i+11];
+       $txt .= ($i==0?"[":",").(-$row->[$i+11]);
+    }
+    next if($s==0);
+    $txt .= "] <= ";
+    for my $i(0..10){
+      $txt .= ($i==0? "[":",").($row->[$i]);
+    }
+    $txt .= "]";
+    push @res,$txt;
   }
-  $txt .= "] <= ";
-  for my $i(0..10){
-    $txt .= ($i==0? "[":",").$info->{M}->[$j]->[$i];
+} elsif($info->{dim}==27){
+  for my $j(0..(-1+$info->{cols})){
+    next if($info->{supd}[$j]);
+    my $row=$info->{M}->[$j];
+    $row->[0]=-$row->[0]; $row->[9]=-$row->[9]; $row->[18]=-$row->[18];
+    my $txt=""; my $s=0;
+    for my $i(0..8){
+        $s -= $row->[$i+9];
+        $txt .= ($i==0?"[":",").(-$row->[$i+9]);
+    }
+    $txt .= "] + ";
+    for my $i(0..8){
+       $s -= $row->[$i+18];
+       $txt .= ($i==0?"[":",").(-$row->[$i+18]);
+    }
+    next if($s==0);
+    $txt .= "] <= ";
+    for my $i(0..8){
+       $txt .= ($i==0?"[":",").$row->[$i];
+    }
+    $txt .= "]";
+    push @res,$txt;
   }
-  push @res,$txt;
+} else {
+   die "Cannot handle the dimension of $ARGV[0]\n";
 }
 
 open(OUT,">$output") || die "Cannot open $output for writing\n";
 print OUT $info->{prelude};
 
 foreach my $line (sort @res){
-    print OUT $line,"]\n";
+    print OUT $line,"\n";
 }
 

@@ -86,7 +86,7 @@ extracted by the bootstrap process.
 The description of the iteratively applied copy string &ndash; base 
 pairs can be found in the [drules](drules.txt) file. Labels are the
 rule numbers from [Dougherty et al](http://arxiv.org/pdf/1104.3602v1). Cases
-masked by * are handled as [rules](../rules), and are not considered here.
+marked by * are handled as [rules](../rules), and are not considered here.
 
 In each iteration usually only the set of plugged-in 4-variable inequalities
 changes, but ocassionally sporadic copy strings are added. Please check the

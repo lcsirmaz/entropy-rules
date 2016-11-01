@@ -1,45 +1,57 @@
 C maximal rule for r=a:bc;s=b:adr; a,s,c,d
-I    5.00] Elapsed: 5.00, vertices: 79, facets final: 3883, pending: 23621
-I   11.27] Elapsed: 11.27, vertices: 81, facets final: 5068, pending: 69864
-I   16.57] Elapsed: 16.57, vertices: 83, facets final: 5068, pending: 57548
-I   45.65] Elapsed: 45.65, vertices: 87, facets final: 9470, pending: 115414
-I   62.50] Elapsed: 1:03, vertices: 88, facets final: 9474, pending: 123176
-I   69.27] Elapsed: 1:09, vertices: 89, facets final: 9480, pending: 122158
-I   74.27] Elapsed: 1:14, vertices: 90, facets final: 13658, pending: 114526
-I   79.27] Elapsed: 1:19, vertices: 92, facets final: 25778, pending: 103776
-I   84.27] Elapsed: 1:24, vertices: 92, facets final: 38117, pending: 91437
-I   89.27] Elapsed: 1:29, vertices: 92, facets final: 50490, pending: 79064
-I   94.27] Elapsed: 1:34, vertices: 92, facets final: 62777, pending: 66777
-I   99.27] Elapsed: 1:39, vertices: 93, facets final: 74917, pending: 55064
-I  104.27] Elapsed: 1:44, vertices: 93, facets final: 87154, pending: 42827
-I  109.27] Elapsed: 1:49, vertices: 93, facets final: 99332, pending: 30649
-I  114.27] Elapsed: 1:54, vertices: 93, facets final: 111682, pending: 18299
-I  119.27] Elapsed: 1:59, vertices: 93, facets final: 124625, pending: 5356
-I  121.13] Elapsed: 2:01, vertices: 93, facets final: 129981, pending: 0
+I    5.00] Elapsed: 5.00, vertices: 30, facets final: 4956, pending: 4942, pool: 1
+I   10.04] Elapsed: 10.04, vertices: 33, facets final: 9266, pending: 12431, pool: 4
+I   15.04] Elapsed: 15.04, vertices: 36, facets final: 11932, pending: 11754, pool: 3
+I   20.04] Elapsed: 20.04, vertices: 38, facets final: 18145, pending: 5841, pool: 2
+I   43.30] Elapsed: 43.30, vertices: 40, facets final: 21094, pending: 40047, pool: 1
+I   53.67] Elapsed: 53.67, vertices: 41, facets final: 21103, pending: 50343, pool: 3
+I   76.35] Elapsed: 1:16, vertices: 42, facets final: 21103, pending: 54753, pool: 2
+I  100.73] Elapsed: 1:41, vertices: 43, facets final: 21108, pending: 74275, pool: 2
+I  118.01] Elapsed: 1:58, vertices: 44, facets final: 21110, pending: 65834, pool: 1
+I  155.35] Elapsed: 2:35, vertices: 45, facets final: 21112, pending: 75072, pool: 3
+I  174.05] Elapsed: 2:54, vertices: 46, facets final: 21112, pending: 60756, pool: 2
+I  197.21] Elapsed: 3:17, vertices: 47, facets final: 21118, pending: 70573, pool: 2
+I  207.10] Elapsed: 3:27, vertices: 48, facets final: 21119, pending: 64262, pool: 1
+I  225.98] Elapsed: 3:46, vertices: 49, facets final: 21137, pending: 64272, pool: 2
+I  232.65] Elapsed: 3:53, vertices: 50, facets final: 21140, pending: 58612, pool: 2
+I  241.06] Elapsed: 4:01, vertices: 52, facets final: 21164, pending: 52300, pool: 4
+I  247.35] Elapsed: 4:07, vertices: 53, facets final: 21223, pending: 50305, pool: 3
+I  252.35] Elapsed: 4:12, vertices: 54, facets final: 26588, pending: 44916, pool: 2
+I  257.35] Elapsed: 4:17, vertices: 55, facets final: 32280, pending: 39345, pool: 1
+I  262.35] Elapsed: 4:22, vertices: 55, facets final: 38048, pending: 33577
+I  267.35] Elapsed: 4:27, vertices: 55, facets final: 44013, pending: 27612
+I  272.35] Elapsed: 4:32, vertices: 55, facets final: 49955, pending: 21670
+I  277.35] Elapsed: 4:37, vertices: 55, facets final: 55819, pending: 15806
+I  282.35] Elapsed: 4:42, vertices: 55, facets final: 61804, pending: 9821
+I  287.35] Elapsed: 4:47, vertices: 55, facets final: 68020, pending: 3605
+I  289.82] Elapsed: 4:50, vertices: 55, facets final: 71625, pending: 0
 
 --------------------------------
 Problem completed
  name                    45.vlp
  output                  vlp/45.res
  rows, cols, objs        42, 213, 22
- vertices, facets        93, 129981
- total time              2:01
+ vertices, facets        55, 71625
+ total time              4:50
 --------------------------------
 Statistics
 LP:
- oracle calls            130074
-   avg iterations/calls  20.17
- total oracle time       51.99
+ oracle calls            71711
+   avg iterations/calls  16.40
+ total oracle time       58.58
 Combinatorics:
- vertices added          93
- facets probed           130074
- facets # max            132651
- memory allocated        50.53M
+ vertices added          55
+ facets probed           72136
+ facets # max            96185
+ memory allocated        31.44M
  storage expansion
    vertices # / upto     1 / 124
-   facets   # / upto     12 / 135164
+   facets   # / upto     11 / 98300
  facet manipulating
-   added avg / max       3.23k / 61.06k
-   compressed            26
+   added avg / max       4.77k / 40.06k
+   compressed            20
  number of ridge tests
-   avg / max             88.46M / 2.09G
+   avg / max             159.20M / 1.17G
+--------------------------------
+Parameters with non-default values
+ VertexPoolSize=100

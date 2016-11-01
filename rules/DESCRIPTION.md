@@ -64,8 +64,9 @@ Additionally, **b**<sub>1</sub>, ..., **b**<sub>11</sub> determine the natural
 coordinates of the given base **B** as **b**<sub>1</sub>&#183;**h**, ..., 
 **b**<sub>11</sub>&#183;**h**.
 
-Consider all tuples  *x*<sub>1</sub>, ..., *x*<sub>11</sub>, and *y*<sub>1</sub>,
-..., *y*<sub>11</sub> of non-negative real numbers for which the inequality
+Consider all pairs of 11-tuples  &lt;*x*<sub>1</sub>, ..., *x*<sub>11</sub>&gt;, and
+&lt;*y*<sub>1</sub>, ..., *y*<sub>11</sub>&gt; of non-negative real numbers 
+for which the inequality
 
 > (3) &nbsp; &nbsp; (*x*<sub>1</sub>**b**<sub>1</sub> + ... +
 >                *x*<sub>11</sub>**b**<sub>11</sub>)&#183;**h** &le;
@@ -114,7 +115,7 @@ This is an easy consequence of the linearity of both sides of the inequality
 correct.* &nbsp; &#x25a1;
 
 
-### Generating rule lines
+### Generating a rule
 
 According to **Claim 2** above, the collection of 22-dimensional vectors
 &lt; *x*<sub>1</sub>, ..., *x*<sub>11</sub>, *y*<sub>1</sub>, ...,
@@ -127,13 +128,13 @@ is the task for a MOLP solver.
 
 In this case we have some more information about *Q* which can
 help in reducing the total work. First, *Q* is *homogeneous*, thus we
-could settle for the cross-section where the sum of the 22 coordinates is
+could settle for the cross-section where the sum of the last 11 coordinates is
 exactly 1. Second, all 22 coordinates are non-negative (*Q* is part of the
 non-negative orthant); and at the extremal points *x*<sub>1</sub> (the 
 Ingleton coordinate) should be locally minimal,
-*x*<aub>2</sub>, ..., *x*<sub>11</sub> be locally maximal; for the *y* 
+*x*<sub>2</sub>, ..., *x*<sub>11</sub> be locally maximal; for the *y* 
 coordinates it is just the opposite: *y*<sub>1</sub> should be locally
-maximal and *y*<sub>2</sub>, ..., *y*<sub>11</sub> are locally minimal. 
+maximal and *y*<sub>2</sub>, ..., *y*<sub>11</sub> be locally minimal. 
 (A variable is *locally minimal* if fixing the value of the other unknowns,
 its value cannot be decreased.)
 Given the copy string and the base,
@@ -163,7 +164,7 @@ and a rule with t lines:
 We know that if a non-negative combination of the **x**<sub>i</sub>'s is
 a valid information inequality, then so is the same combination of the
 **y**<sub>i</sub>'s. Any non-negative linear combination of
-**e**<sub>j</sub> is an information inequality, thus any element of 
+**e**<sub>j</sub> is an information inequality, thus every element of 
 the following set is a valid information inequality:
 
 >  (5) &nbsp; &nbsp;  &lambda;<sub>1</sub> **y**<sub>1</sub> + ... + 

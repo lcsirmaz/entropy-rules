@@ -1,42 +1,34 @@
 C maximal rule for r=a:bc;s=b:adr; a,r,c,d
-I    5.03] Elapsed: 5.03, vertices: 80, facets final: 24, pending: 15586
-I    5.57] recalculating facets...
-I   11.20] Elapsed: 11.20, vertices: 110, facets final: 216, pending: 48310
-I   16.44] Elapsed: 16.44, vertices: 113, facets final: 218, pending: 50144
-I   23.53] Elapsed: 23.53, vertices: 117, facets final: 224, pending: 43925
-I   28.54] Elapsed: 28.54, vertices: 140, facets final: 297, pending: 27348
-I   33.54] Elapsed: 33.54, vertices: 151, facets final: 11577, pending: 42341
-I   38.54] Elapsed: 38.54, vertices: 151, facets final: 24160, pending: 29758
-I   43.54] Elapsed: 43.54, vertices: 151, facets final: 36787, pending: 17131
-I   48.54] Elapsed: 48.54, vertices: 151, facets final: 49379, pending: 4539
-I   56.45] Elapsed: 56.45, vertices: 153, facets final: 53908, pending: 9963
-I   61.45] Elapsed: 1:01, vertices: 155, facets final: 53908, pending: 8673
-I   67.70] Elapsed: 1:08, vertices: 161, facets final: 53921, pending: 8165
-I   70.22] Elapsed: 1:10, vertices: 165, facets final: 55494, pending: 0
+I    5.00] Elapsed: 5.00, vertices: 32, facets final: 7051, pending: 72, pool: 2
+I   10.00] Elapsed: 10.00, vertices: 39, facets final: 11110, pending: 4424, pool: 1
+I   13.12] Elapsed: 13.12, vertices: 39, facets final: 15534, pending: 0
 
 --------------------------------
 Problem completed
  name                    43.vlp
  output                  vlp/43.res
  rows, cols, objs        42, 213, 22
- vertices, facets        165, 55494
- total time              1:10
+ vertices, facets        39, 15534
+ total time              13.12
 --------------------------------
 Statistics
 LP:
- oracle calls            55659
-   avg iterations/calls  18.30
- total oracle time       21.41
+ oracle calls            15589
+   avg iterations/calls  12.56
+ total oracle time       11.06
 Combinatorics:
- vertices added          165
- facets probed           55659
- facets # max            66338
- memory allocated        28.81M
+ vertices added          39
+ facets probed           15896
+ facets # max            18893
+ memory allocated        7.15M
  storage expansion
-   vertices # / upto     2 / 252
-   facets   # / upto     12 / 69628
+   vertices # / upto     1 / 124
+   facets   # / upto     4 / 20476
  facet manipulating
-   added avg / max       1.82k / 26.95k
-   compressed            43
+   added avg / max       667.00 / 7.10k
+   compressed            6
  number of ridge tests
-   avg / max             41.77M / 557.86M
+   avg / max             2.45M / 38.32M
+--------------------------------
+Parameters with non-default values
+ VertexPoolSize=100

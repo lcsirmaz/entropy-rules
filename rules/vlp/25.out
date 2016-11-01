@@ -1,31 +1,37 @@
 C maximal rule for rs=cd:ab; a,b,cr,d
-I    5.00] Elapsed: 5.00, vertices: 43, facets final: 13288, pending: 23297
-I   10.00] Elapsed: 10.00, vertices: 45, facets final: 35886, pending: 1089
-I   10.28] Elapsed: 10.28, vertices: 47, facets final: 37364, pending: 0
+I    5.08] Elapsed: 5.08, vertices: 26, facets final: 9161, pending: 10054, pool: 2
+I   10.13] Elapsed: 10.13, vertices: 30, facets final: 9167, pending: 16550, pool: 4
+I   21.49] Elapsed: 21.49, vertices: 37, facets final: 12905, pending: 22619, pool: 2
+I   26.49] Elapsed: 26.49, vertices: 39, facets final: 18615, pending: 15800, pool: 1
+I   31.49] Elapsed: 31.49, vertices: 41, facets final: 28438, pending: 6563, pool: 1
+I   34.39] Elapsed: 34.39, vertices: 43, facets final: 35194, pending: 0
 
 --------------------------------
 Problem completed
  name                    25.vlp
  output                  vlp/25.res
  rows, cols, objs        30, 139, 22
- vertices, facets        47, 37364
- total time              10.28
+ vertices, facets        43, 35194
+ total time              34.39
 --------------------------------
 Statistics
 LP:
- oracle calls            37411
-   avg iterations/calls  12.37
- total oracle time       8.15
+ oracle calls            35256
+   avg iterations/calls  10.68
+ total oracle time       16.82
 Combinatorics:
- vertices added          47
- facets probed           37411
- facets # max            38145
- memory allocated        14.28M
+ vertices added          43
+ facets probed           35661
+ facets # max            35965
+ memory allocated        12.52M
  storage expansion
    vertices # / upto     1 / 124
-   facets   # / upto     7 / 40956
+   facets   # / upto     7 / 36860
  facet manipulating
-   added avg / max       1.55k / 11.51k
-   compressed            16
+   added avg / max       1.83k / 9.50k
+   compressed            11
  number of ridge tests
-   avg / max             9.17M / 118.01M
+   avg / max             17.71M / 175.73M
+--------------------------------
+Parameters with non-default values
+ VertexPoolSize=100
