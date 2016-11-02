@@ -10,8 +10,6 @@ of the cited paper can be rephrased by the following set of vector pairs:
     [0,1,0,0,0,0,0,0,0,0,0] <= [0,1,0,0,0,0,0,0,0,0,0]
     [0,0,1,0,0,0,0,0,0,0,0] <= [0,0,1,0,0,0,0,0,0,0,0]
     [0,0,0,1,0,0,0,0,0,0,0] <= [1,1,1,1,0,0,0,0,0,0,0]
-    [0,0,0,1,0,0,0,0,0,0,0] <= [0,1,0,1,0,0,0,0,0,0,0]
-    [0,0,0,1,0,0,0,0,0,0,0] <= [0,0,1,1,0,0,0,0,0,0,0]
     [0,0,0,0,0,1,0,0,0,0,0] <= [0,0,1,0,0,1,0,0,0,0,0]
     [0,0,0,0,0,0,1,0,0,0,0] <= [0,0,1,0,0,0,1,0,0,0,0]
     [0,0,0,0,0,0,0,1,0,0,0] <= [0,1,0,0,0,0,0,1,0,0,0]
@@ -28,25 +26,34 @@ The meaning of such a rule is the following:
 Using a rule one can quickly generate new entropy inequalities iteratively
 from existing ones.
 
-Note that the coordinate system in the Dougherty et al paper differs slightly
-from our natural coordinates, and in formulating a rule they present the
-combining factors explicitly. Actually, after a sligh change of constants,
-Rule [1] of [Dougherty et al](http://arxiv.org/pdf/1104.3602v1) is worded 
-like
+Note that the coordinate system in the [Dougherty et al](http://arxiv.org/pdf/1104.3602v1) 
+paper differs slightly from our natural coordinates, and in formulating a 
+rule they present the combining factors explicitly. Actually, after a 
+sligh change of constants, Rule [1] appears as 
 
-> If for non-negative real numbers *a*, *b*, *c*, *d*, *f*, *g*, *h*, *i*,
-> *j* the following is a valid information inequality<br>
-> &nbsp; &nbsp; *a*[A,B,C,D] + *b*(A;B|C) + *c*(A;C|B) + *d*(B;C|A) <br>
-> &nbsp; &nbsp; &nbsp; + *f*(A;D|B)+ *g*(B;D|A) + *h*(C;D|A) + *i*(C;D|B) + *j*(C;D) &ge; 0<br>
+> If, for non-negative real numbers *a*, *b*, *c*, *d*, *f*, *g*, *h*, *i*,
+> and *j*, the following is a valid information inequality<br>
+> &nbsp; &nbsp; *a*[A,B,C,D] + *b*(A;B|C) + *c*(A;C|B) + *d*(B;C|A) +<br>
+> &nbsp; &nbsp; &nbsp; + *f*(A;D|B)+ *g*(B;D|A) + *h*(C;D|A) + *i*(C;D|B) + *j*(C;D) &ge;> 0,<br>
 > then so is <br>
-> &nbsp; &nbsp; (*a*+*d*)[A,B,C,D] + (*b*+*d*+*h*+*i*)(A;B|C) +
-> (*a*+*c*+*d*+*f*+*g*)(A;C|B) + *d*(B;C|A) <br>
+> &nbsp; &nbsp; (*a*+*d*)[A,B,C,D] + (*a*+*b*+*d*+*h*+*i*)(A;B|C) +
+> (*a*+*c*+*d*+*f*+*g*)(A;C|B) + *d*(B;C|A) + <br>
 > &nbsp; &nbsp; &nbsp; + *f*(A;D|B)+ *g*(B;D|A) + *h*(C;D|A) + *i*(C;D|B) + *j*(C;D) &ge;
+> 0.
 
-### What is a rule set
+This is just the linear combination of the above lines with coefficients
+*a*, *b*, ..., *j*. (The coefficient *e* is missing as the fifth column is
+all zero). Actually, the complete rule set has three more lines, see
+[00.txt](ineq/00.txt)):
 
-A rule is specified by a *copy string* and four (possible composite) random
-variables called *base*. For Rule [1] above the copy string is *r*=*a*:*bc*, and
+    [0,0,0,1,0,0,0,0,0,0,0] <= [0,1,0,1,0,0,0,0,0,0,0]
+    [0,0,0,1,0,0,0,0,0,0,0] <= [0,0,1,1,0,0,0,0,0,0,0]
+    [0,0,0,0,0,0,0,0,0,0,1] <= [0,0,0,0,0,0,0,0,0,0,1]
+
+### How to create a rule?
+
+A &quot;rule&quot; is specified by a *copy string* and four (possible composite) random
+variables, called *base*. For Rule [1] above the copy string is *r*=*a*:*bc*, and
 the base is the four variable collection *ar, br, cr, d*.
 
 Suppose the rule is defined by the copy string **str** and base **B**.
@@ -62,7 +69,7 @@ entropies **h** vanish:
 
 The number of **c**<sub>i</sub> vectors and their coordinates can be computed
 from the copy string uniquely. Next, we collect all Shannon inequalities for the same
-collection of entropies as
+collection of entropies expressed as
 
 > (2) &nbsp; &nbsp; **s**<sub>j</sub> &#183;**h** &ge; 0, for j=1, 2, ...
 
@@ -115,7 +122,7 @@ non-negative. Consequently the right hand side is non-negative as well, thus
 *y*<sub>1</sub>, ..., *y*<sub>11</sub> are indeed coefficients of a valid
 entropy inequality, as claimed. &nbsp; &#x25a1;
 
-**Claim 2.** *If a collection of pair of tuples satisfy* (4), *then their
+**Claim 2.** *If a collection of tuple pairs satisfy* (4), *then their
 non-negative linear combination also satisfies* (4).
 
 **Proof.**
@@ -126,32 +133,34 @@ This is an easy consequence of the linearity of both sides of the inequality
 correct.* &nbsp; &#x25a1;
 
 
-### Generating a rule
+### Generating rules
 
 According to **Claim 2** above, the collection of 22-dimensional vectors
 &lt; *x*<sub>1</sub>, ..., *x*<sub>11</sub>, *y*<sub>1</sub>, ...,
-*y*<sub>11</sub> &gt; satisfying (4) forms a convex 22-dimensional set *Q*. 
-The ultimate set of rule lines is the minimal set of 22-dimensional points
+*y*<sub>11</sub> &gt; satisfying (4) forms a 22-dimensional convex pointed
+cone *Q*. 
+The ultimate set of rule lines is a minimal set of 22-dimensional points
 from *Q* such that every other point of *Q* is a non-negative linear combination of
-these extremal points.  This set, however, is nothing else but the *set of vertices*
-of the convex set *Q*.  To determine all vertices of a (linearly defined) convex set
-is the task for a MOLP solver.
+these extremal points.  This set, however, is nothing else but the set of 
+extremal rays of the convex cone *Q*.  To determine all extremal rays of a 
+(linearly defined) convex cone is the task for a MOLP solver.
 
-In this case we have some more information about *Q* which can
-help in reducing the total work. First, *Q* is *homogeneous*, thus we
-could settle for the cross-section where the sum of the last 11 coordinates is
-exactly 1. Second, all 22 coordinates are non-negative (*Q* is part of the
-non-negative orthant); and at the extremal points *x*<sub>1</sub> (the 
-Ingleton coordinate) should be locally minimal,
-*x*<sub>2</sub>, ..., *x*<sub>11</sub> be locally maximal; for the *y* 
-coordinates it is just the opposite: *y*<sub>1</sub> should be locally
-maximal and *y*<sub>2</sub>, ..., *y*<sub>11</sub> be locally minimal. 
+In this case we have more information about *Q* which can
+help in reducing the total work. First, as *Q* is pointed, we
+could settle for the cross-section where the sum of the last 11 
+coordinates is exactly 1, thus reducing the problem to find all vertices
+of a convex polytope. Second, all 22 coordinates are non-negative &ndash;
+*Q* is part of the non-negative orthant; and at the extremal points 
+*x*<sub>1</sub> (the  Ingleton coordinate) is locally minimal,
+*x*<sub>2</sub>, ..., *x*<sub>11</sub> are locally maximal; for the *y* 
+coordinates it is just the opposite: *y*<sub>1</sub> is locally
+maximal and *y*<sub>2</sub>, ..., *y*<sub>11</sub> are locally minimal. 
 (A variable is *locally minimal* if fixing the value of the other unknowns,
 its value cannot be decreased.)
 Given the copy string and the base,
 the perl utility `rulemk.pl` creates the MOLP instance according to these
 observations. From the solution of the MOLP problem the complete set of 
-rule lines is extracted by the utility ``minrule.pl`.
+rule lines is extracted by the utility `minrule.pl`.
 
     # create MOLP for the rule specified by a copy string and base
     utils/rulemk.pl <copystring> <base> vlp/NN.vlp
@@ -164,9 +173,9 @@ rule lines is extracted by the utility ``minrule.pl`.
 ### Applying a rule
 
 Suppose we have a collection of 4-variable entropy inequalities 
-specified by their natural coordinates (considered as a collection 
-of 11-dimensional vectors) **e**<sub>1</sub>, ..., **e**<sub>n</sub>, 
-and a rule with t lines:
+specified on natural coordinates (considered as a collection 
+of 11-dimensional vectors) as **e**<sub>1</sub>, ..., **e**<sub>n</sub>.
+Furthermore we have a rule set with t lines:
 
 >    [ **x**<sub>1</sub> ] &le; [ **y**<sub>1</sub> ]<br>
 >    . . . <br>
@@ -184,14 +193,15 @@ the following set is a valid information inequality:
 where
 
 > &lambda;<sub>1</sub> &ge; 0, ..., &lambda;<sub>t</sub> &ge; 0, &nbsp;
-> &mu;<sub>1</sub> &ge; 0, ..., &mu;<sub>n</sub> &ge; 0; <br>
+> &mu;<sub>1</sub> &ge; 0, ..., &mu;<sub>n</sub> &ge; 0; and <br>
 > &lambda;<sub>1</sub> **x**<sub>1</sub> + ... + &lambda;<sub>t</sub>
 > **x**<sub>t</sub> &ge; &mu;<sub>1</sub> **e**<sub>1</sub> + ... +
 > &mu;<sub>n</sub> **e**<sub>n</sub>; <br>
-> the Ingleton coefficients on both sides are equal.
+> additionally the Ingleton coefficients (first coordinate) on both sides 
+> are equal.
 
 The set (5) is a convex set, and (normalized) inequalities not superseded
-by others are the solutions of a MOLP. To create that problem use the
+by others are the solutions of a MOLP problem. To create that problem use the
 perl utility `dorule.pl`. From the result the utility `checkall.pl` extracts
 new inequalities:
 
@@ -199,6 +209,6 @@ new inequalities:
     utils/dorule.pl <ineqfile> <rule> vlp/NN.vlp
     # solve it
     inner vlp/NN.vlp -o vlp/NN.res > vlp/NN.out
-    # extract new inequalities not superseded by those in <ineqfile>
-    utils/checkall.pl vlp/NN.res <ineqfile>
+    # extract new inequalities not superseded by those in <old-ineqfile>
+    utils/checkall.pl vlp/NN.res <old-ineqfile>
 
