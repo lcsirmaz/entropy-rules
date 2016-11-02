@@ -43,8 +43,8 @@ sligh change of constants, Rule [1] appears as
 
 This is just the linear combination of the above lines with coefficients
 *a*, *b*, ..., *j*. (The coefficient *e* is missing as the fifth column is
-all zero). Actually, the complete rule set has three more lines, see
-[00.txt](ineq/00.txt)):
+all zero). The complete rule set has three more lines, see
+[00.txt](ineq/00.txt):
 
     [0,0,0,1,0,0,0,0,0,0,0] <= [0,1,0,1,0,0,0,0,0,0,0]
     [0,0,0,1,0,0,0,0,0,0,0] <= [0,0,1,1,0,0,0,0,0,0,0]
@@ -73,13 +73,15 @@ collection of entropies expressed as
 
 > (2) &nbsp; &nbsp; **s**<sub>j</sub> &#183;**h** &ge; 0, for j=1, 2, ...
 
+where, again, the number of **s**<sub>j</sub> vectors and their coordinates
+are determined by the copy string.
 We define the (easily computable) vectors **n**<sub>1</sub>,... **n**<sub>11</sub>
 and **b**<sub>1</sub>, ..., **b**<sub>11</sub> as follows. Vectors
 **n**<sub>1</sub>, ..., **n**<sub>11</sub> determine the first
 11 natural coordinates of the random variables *a, b, c, d* as the inner
 products **n**<sub>1</sub>&#183;**h**, ..., **n**<sub>11</sub>&#183;**h**.
-Additionally, **b**<sub>1</sub>, ..., **b**<sub>11</sub> determine the natural
-coordinates of the given base **B** as **b**<sub>1</sub>&#183;**h**, ..., 
+Additionally, **b**<sub>1</sub>, ..., **b**<sub>11</sub> determine the first
+11 natural coordinates of the given base **B** as **b**<sub>1</sub>&#183;**h**, ..., 
 **b**<sub>11</sub>&#183;**h**.
 
 Consider all pairs of 11-tuples  &lt;*x*<sub>1</sub>, ..., *x*<sub>11</sub>&gt;, and
@@ -147,7 +149,7 @@ extremal rays of the convex cone *Q*.  To determine all extremal rays of a
 
 In this case we have more information about *Q* which can
 help in reducing the total work. First, as *Q* is pointed, we
-could settle for the cross-section where the sum of the last 11 
+could settle for the cross-section where the sum of the first 11 
 coordinates is exactly 1, thus reducing the problem to find all vertices
 of a convex polytope. Second, all 22 coordinates are non-negative &ndash;
 *Q* is part of the non-negative orthant; and at the extremal points 
