@@ -17,26 +17,35 @@ of the cited paper can be rephrased by the following set of vector pairs:
     [0,0,0,0,0,0,0,1,0,0,0] <= [0,1,0,0,0,0,0,1,0,0,0]
     [0,0,0,0,0,0,0,0,1,0,0] <= [0,1,0,0,0,0,0,0,1,0,0]
     [0,0,0,0,0,0,0,0,0,1,0] <= [0,0,0,0,0,0,0,0,0,1,0]
-    [0,0,0,0,0,0,0,0,0,0,1] <= [0,0,0,0,0,0,0,0,0,0,1]
 
 The meaning of such a rule is the following:
 
-> *If* any non-negative linear combination of the left hand sides
-> gives the 11 coefficients of a valid 4-variable entropy inequality, *then* so
+> If any non-negative linear combination of the left hand sides
+> gives the 11 coefficients of a valid 4-variable entropy inequality, then so
 > does the combination of the right hand sides with the same combining
 > values.
 
 Using a rule one can quickly generate new entropy inequalities iteratively
 from existing ones.
-(The coordinate system in the Dougherty et al paper differs slightly from
-our natural coordinates, and in formulating a rule they present the
-combining factors explicitly.)
+
+Note that the coordinate system in the Dougherty et al paper differs slightly
+from our natural coordinates, and in formulating a rule they present the
+combining factors explicitly. Actually, after a sligh change of constants,
+Rule [1] of [Dougherty et al](http://arxiv.org/pdf/1104.3602v1) is worded 
+like
+
+> If for non-negative real numbers *a*, *b*, *c*, *d*, *f*, *g*, *h*, *i*,
+> *j*<br>
+> &nbsp; &nbsp; *a*[A,B,C,D] + *b*(A,B|C) + *c*(A,C|B) + *d*(B,C|A) +
+> *f*(A,D|B)+ *g*(B,D|A) + *h*(C,D|A) + *i*(C,D|B) + *j*(C,D|) &ge; 0<br>
+> is a valid information inequality, then so is <br>
+> &nbsp; &nbsp; (*a*+*d*)[A,B,C,D] + (*a*+*b*+*d*+*h*+*i*)(A,B|C) +
+
+### What is a rule set
 
 A rule is specified by a *copy string* and four (possible composite) random
 variables called *base*. For Rule [1] above the copy string is *r*=*a*:*bc*, and
 the base is the four variable collection *ar, br, cr, d*.
-
-### What is a rule set
 
 Suppose the rule is defined by the copy string **str** and base **B**.
 Collect the entropies of all non-empty subsets of the random variables
