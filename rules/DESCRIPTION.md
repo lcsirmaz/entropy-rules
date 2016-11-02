@@ -35,11 +35,15 @@ Rule [1] of [Dougherty et al](http://arxiv.org/pdf/1104.3602v1) is worded
 like
 
 > If for non-negative real numbers *a*, *b*, *c*, *d*, *f*, *g*, *h*, *i*,
-> *j*<br>
-> &nbsp; &nbsp; *a*[A,B,C,D] + *b*(A,B|C) + *c*(A,C|B) + *d*(B,C|A) +
-> *f*(A,D|B)+ *g*(B,D|A) + *h*(C,D|A) + *i*(C,D|B) + *j*(C,D|) &ge; 0<br>
-> is a valid information inequality, then so is <br>
-> &nbsp; &nbsp; (*a*+*d*)[A,B,C,D] + (*a*+*b*+*d*+*h*+*i*)(A,B|C) +
+> *j* the following is a valid information inequality<br>
+> &nbsp; &nbsp; *a*[A,B,C,D] + *b*(A;B|C) + *c*(A;C|B) + *d*(B;C|A) <br>
+> &nbsp; &nbsp; &nbsp; + *f*(A;D|B)+ *g*(B;D|A) + *h*(C;D|A) 
+> + *i*(C;D|B) + *j*(C;D) &ge; 0<br>
+> then so is <br>
+> &nbsp; &nbsp; (*a*+*d*)[A,B,C,D] + (*b*+*d*+*h*+*i*)(A;B|C) +
+> (*a*+*c*+*d*+*f*+*g*)(A;C|B) + *d*(B;C|A) <br>
+> &nbsp; &nbs[p; &nbsp; + *f*(A;D|B)+ *g*(B;D|A) + *h*(C;D|A) 
+> + *i*(C;D|B) + *j*(C;D) &ge;
 
 ### What is a rule set
 
