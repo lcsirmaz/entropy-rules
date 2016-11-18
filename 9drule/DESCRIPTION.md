@@ -37,8 +37,9 @@ following:
 The combining coefficients used by Dougherty and al are indicated next to
 the rules.  The only rule in the above ruleset which uses both inequalities
 is the last one marked by `z`. Due to its hight computational complexity,
-the complete ruleset has been determined for [rule 5](), [rule 6](), and
-[rule 8]() only.
+the complete ruleset has been determined for the original
+[Rule \[5\]](DFZ/05.txt), [Rule \[6\]](DFZ/06.txt),  
+and [Rule \[8\]](DFZ/08.txt) only. 
 
 ### Specifying a double rule
 
@@ -54,10 +55,13 @@ natural coordinates of *a, b, c, d* expressed as the inner products
 **n**<sub>1</sub>&#183;**h**, ..., **n**<sub>11</sub>&#183;**h**.
 Additionally, the vectors **b1**<sub>1</sub>, ..., **b1**<sub>11</sub> and
 **b2**<sub>1</sub>, ..., **b2**<sub>11</sub> determine the natural
-coordinates of the first and second base, respectively. A rule line
+coordinates of the first and second base, respectively, as **b1**<sub>1</sub>&#183;**h**, ...,
+**b1**<sub>11</sub>&#183;**h**, 
+and **b2**<sub>1</sub>&#183;**h**, ..., **b2**<sub>11</sub>&#183;**h**.
+A rule line
 
 > (1) &nbsp; &nbsp; [*x*<sub>1</sub>, ..., *x*<sub>11</sub>] +
->  [*y*<sub>1</sub>, ..., *y*<sub>11</sub>] &le [ *z*<sub>1</sub>, ...,
+>  [*y*<sub>1</sub>, ..., *y*<sub>11</sub>] &le; [ *z*<sub>1</sub>, ...,
 > *z*<sub>11</sub> ]
 
 is *valid* if the following inequality can be proved for all vectors **h**
@@ -65,19 +69,19 @@ satisfying the equalities imposed by the copy string and all Shannon
 inequalities:
 
 > (2) &nbsp; &nbsp; (*x*<sub>1</sub>**b1**<sub>1</sub> + ... +
->        *x*<sub>11</sub>**b1**<sub>11</sub> ) &#183;**h** + <br>
->  &nbsp; &nbsp; &nbsp; &nbsp; 
+>        *x*<sub>11</sub>**b1**<sub>11</sub> )&#183;**h** + <br>
+>  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
 >     (*y*<sub>1</sub>**b2**<sub>1</sub> + ... +
-> *y*<sub>11</sub>**b2**</sub>11</sub> ) &#183;**h** &le;
+> *y*<sub>11</sub>**b2**<sub>11</sub> )&#183;**h** &le;
 >    (*z*<sub>1</sub>**n**<sub>1</sub> + ... +
-> *z*<sub>11</sub>**n**<sub>11</sub>(&#183;**h**
+> *z*<sub>11</sub>**n**<sub>11</sub>)&#183;**h**.
 
 Similarly to the case of [simple rules](../rules/DESCRIPTION.md),
-non-negative linear combination of valid rule lines is valid; and any
-collection of valid rule lines has the &quot;generating property&quot;
+non-negative linear combination of valid rule lines is a valid rule line;
+and any collection of valid rule lines has the &quot;generating property&quot;
 quoted above. 
 
-A collection of rule lines is *complete* if every other valid rule line (as
+A collection of (valid) rule lines is *complete* if every other valid rule line (as
 determined by the prescribed copy string and bases) can be superseded by
 some non-negative liner combination of these lines. The complete rule set is
 unique and can be computed by solving a MOLP problem with 33 objectives. To
@@ -95,7 +99,7 @@ generate, solve, and then extract the complete ruleset use the commands
 MOLP problems with 33 objectives are typically intractable and can be solved
 in very special cases only. To reduce the complexity, *scaled down* rulesets
 are considered, where the last two natural coordinates &ndash; coordinates
-given by **I**(*c*;*d*) and **I**(*a*;*b* | *c*,*d* ) &ndash; are set to
+given by **I**(c;d) and **I**(a;b | c,d) &ndash; are set to
 zero. Using such a ruleset means that the method is restricted to use and
 generate entropy inequalities where the last two coordinates are zero. As
 presently no known 4-variable entropy inequality has any of these
@@ -119,10 +123,10 @@ the following commands:
 When applying a reduced ruleset to a set of known inequalities, inequalities
 with the last two coefficients equal to zero are considered only. The
 utility allows to filter for inequalities with coefficients below a certain
-threshold. The utility `9dorule.pl` creates a MOLP problem whose solutions
+threshold. The utility `9dodrule.pl` creates a MOLP problem whose solutions
 are the minimal (not superseded) instances of applying the rule to the given
 inequalities. From them the really new inequalities can be extracted by the
-`checkall.pl` utlity.
+`checkall.pl` utility.
 
     # apply a reduced rule to a set of inequalities
     utils/9dodrule.pl <ineq-file> <rule-file> <vlp-file>
