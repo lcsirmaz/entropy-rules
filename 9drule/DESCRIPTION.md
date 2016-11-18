@@ -27,8 +27,7 @@ following rule set:
     [0,0,0,0,1,0,0,0,0,0,0] + [0,1,0,0,0,0,0,0,0,0,0] <= [1,1,1,1,0,0,0,0,0,0,0]  z
 
 
-Similarly to the single rule case, the meaning of such a rule set is the
-following:
+The meaning of such a rule set is the following:
 
 > If any non-negative linear combination of the left hand sides yields the
 > coefficients of two valid 4-variable entropy inequality, then so does the
@@ -40,10 +39,9 @@ is the last one marked by `z`. Due to its hight computational complexity,
 the complete ruleset has been determined for the original
 [Rule \[5\]](DFZ/05.txt), [Rule \[6\]](DFZ/06.txt), and [Rule \[8\]](DFZ/08.txt) only. 
 
-### Specifying a double rule
+### Creating a double ruleset
 
-Similarly to the [simple rule](../rules/DESCRIPTION.md) case, a double rule
-is specified by a *copy string* and two bases, that is, two sequences of
+A double rule is specified by a *copy string* and two bases, that is, two sequences of
 four (composite) random variables. For Rule [6] above the copy string is
 *r*=*c*:*ab*, and the two bases are *ar, br, c, dr* and *ar, br, cr, d*.
 
@@ -68,10 +66,10 @@ satisfying the equalities imposed by the copy string and all Shannon
 inequalities:
 
 > (2) &nbsp; &nbsp; (*x*<sub>1</sub>**b1**<sub>1</sub> + ... +
->        *x*<sub>11</sub>**b1**<sub>11</sub> )&#183;**h** + <br>
+>        *x*<sub>11</sub>**b1**<sub>11</sub>)&#183;**h** + <br>
 >  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
 >     (*y*<sub>1</sub>**b2**<sub>1</sub> + ... +
-> *y*<sub>11</sub>**b2**<sub>11</sub> )&#183;**h** &le;
+> *y*<sub>11</sub>**b2**<sub>11</sub>)&#183;**h** &le;
 >    (*z*<sub>1</sub>**n**<sub>1</sub> + ... +
 > *z*<sub>11</sub>**n**<sub>11</sub>)&#183;**h**.
 
@@ -81,7 +79,7 @@ and any collection of valid rule lines has the &quot;generating property&quot;
 quoted above. 
 
 A collection of (valid) rule lines is *complete* if every other valid rule line (as
-determined by the prescribed copy string and bases) can be superseded by
+determined by the copy string and bases) can be superseded by
 some non-negative liner combination of these lines. The complete rule set is
 unique and can be computed by solving a MOLP problem with 33 objectives. To
 generate, solve, and then extract the complete ruleset use the commands
@@ -93,7 +91,7 @@ generate, solve, and then extract the complete ruleset use the commands
     # extract the complete ruleset from the result
     utils/minrule.pl <vlp-result> <ruleset>
 
-This procedure yielded the complete rulesets for Rules [\[5\]](DFZ/05.txt),
+This procedure yielded the complete rulesets for DFZ Rules [\[5\]](DFZ/05.txt),
 [\[6\]](DFZ/06.txt), and [\[8\]](DFZ/08.txt) reported above.
 
 ### Scaled down rulesets 
@@ -124,11 +122,11 @@ the following commands:
 
 When applying a reduced ruleset to a set of known inequalities, inequalities
 with the last two coefficients equal to zero are considered only. The
-utility allows to filter for inequalities with coefficients below a certain
-threshold. The utility `9dodrule.pl` creates a MOLP problem whose solutions
-are the minimal (not superseded) instances of applying the rule to the given
-inequalities. From these inequalities the really new ones can be extracted by the
-`checkall.pl` utility.
+utility `9dodrule.pl` creates a MOLP problem whose solutions are the minimal
+(not superseded) instances of applying the rule to the given inequalities.
+It allows filtering for inequalities whose coefficients below a certain
+bound. From the solution of the MOLP problem inequalities that aree really
+new ones can be extracted by the `checkall.pl` utility.
 
     # apply a reduced rule to a set of inequalities
     utils/9dodrule.pl <ineq-file> <rule-file> <vlp-file>
