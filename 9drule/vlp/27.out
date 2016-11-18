@@ -1,0 +1,49 @@
+C maximal rule for r=c:ab;s=a:bdr; ar,br,c,dr; ar,br,cr,d
+I    5.00] Elapsed: 5.00, vertices: 40, facets final: 11218, pending: 18664, pool: 3
+I   10.00] Elapsed: 10.00, vertices: 40, facets final: 24119, pending: 5763
+I   15.00] Elapsed: 15.00, vertices: 43, facets final: 33778, pending: 25865, pool: 3
+I   20.00] Elapsed: 20.00, vertices: 44, facets final: 41871, pending: 74813, pool: 2
+I   25.00] Elapsed: 25.00, vertices: 44, facets final: 54486, pending: 62198
+I   30.00] Elapsed: 30.00, vertices: 44, facets final: 67198, pending: 49486
+I   35.00] Elapsed: 35.00, vertices: 44, facets final: 80076, pending: 36608
+I   40.00] Elapsed: 40.00, vertices: 44, facets final: 93373, pending: 23311
+I   45.00] Elapsed: 45.00, vertices: 44, facets final: 107417, pending: 9267
+I   52.54] Elapsed: 52.54, vertices: 45, facets final: 116683, pending: 111904, pool: 1
+I   57.54] Elapsed: 57.54, vertices: 45, facets final: 129856, pending: 98731
+I   62.54] Elapsed: 1:03, vertices: 45, facets final: 143434, pending: 85153
+I   67.54] Elapsed: 1:08, vertices: 45, facets final: 156991, pending: 71596
+I   72.54] Elapsed: 1:13, vertices: 45, facets final: 170753, pending: 57834
+I   77.54] Elapsed: 1:18, vertices: 45, facets final: 185006, pending: 43581
+I   82.54] Elapsed: 1:23, vertices: 45, facets final: 199697, pending: 28890
+I   87.54] Elapsed: 1:28, vertices: 45, facets final: 214938, pending: 13649
+I   91.57] Elapsed: 1:32, vertices: 45, facets final: 228587, pending: 0
+
+--------------------------------
+Problem completed
+ name                    27.vlp
+ output                  vlp/27.res
+ rows, cols, objs        43, 218, 27
+ vertices, facets        45, 228587
+ total time              1:32
+--------------------------------
+Statistics
+LP:
+ oracle calls            228652
+   avg iterations/calls  14.95
+ total oracle time       1:22
+Combinatorics:
+ vertices added          45
+ facets probed           229143
+ facets # max            228588
+ memory allocated        90.65M
+ storage expansion
+   vertices # / upto     1 / 124
+   facets   # / upto     10 / 229372
+ facet manipulating
+   added avg / max       5.51k / 111.90k
+   compressed            15
+ number of ridge tests
+   avg / max             6.60M / 240.36M
+--------------------------------
+Parameters with non-default values
+ VertexPoolSize = 100

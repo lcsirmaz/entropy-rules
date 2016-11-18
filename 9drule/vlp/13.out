@@ -1,0 +1,36 @@
+C maximal rule for rs=cd:ab; a,r,c,d; ar,br,cr,d
+I    5.00] Elapsed: 5.00, vertices: 20, facets final: 21825, pending: 7549
+I   10.00] Elapsed: 10.00, vertices: 21, facets final: 43804, pending: 14310, pool: 2
+I   15.00] Elapsed: 15.00, vertices: 22, facets final: 65206, pending: 43067, pool: 1
+I   20.00] Elapsed: 20.00, vertices: 22, facets final: 90347, pending: 17926
+I   23.14] Elapsed: 23.14, vertices: 22, facets final: 108273, pending: 0
+
+--------------------------------
+Problem completed
+ name                    13.vlp
+ output                  vlp/13.res
+ rows, cols, objs        31, 144, 27
+ vertices, facets        22, 108273
+ total time              23.14
+--------------------------------
+Statistics
+LP:
+ oracle calls            108295
+   avg iterations/calls  8.96
+ total oracle time       21.49
+Combinatorics:
+ vertices added          22
+ facets probed           108492
+ facets # max            108274
+ memory allocated        44.80M
+ storage expansion
+   vertices # / upto     1 / 124
+   facets   # / upto     7 / 110588
+ facet manipulating
+   added avg / max       5.27k / 50.16k
+   compressed            6
+ number of ridge tests
+   avg / max             421.86k / 2.40M
+--------------------------------
+Parameters with non-default values
+ VertexPoolSize = 100

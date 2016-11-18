@@ -99,6 +99,7 @@ sub read_input {
     }
     $info->{cols}=scalar @{$info->{M}};
     close(FILE);
+#exit 99;
 }
 
 #===========================================================================
@@ -195,24 +196,26 @@ if($info->{dim}==22){
     $txt .= "]";
     push @res,$txt;
   }
-} elsif($info->{dim}==27){
+} elsif($info->{dim}==27 || $info->{dim}==33){
+  my $d=int(($info->{dim}+0.001)/3);
+  my $d2=$d+$d;
   for my $j(0..(-1+$info->{cols})){
     next if($info->{supd}[$j]);
     my $row=$info->{M}->[$j];
-    $row->[0]=-$row->[0]; $row->[9]=-$row->[9]; $row->[18]=-$row->[18];
+    $row->[0]=-$row->[0]; $row->[$d]=-$row->[$d]; $row->[$d2]=-$row->[$d2];
     my $txt=""; my $s=0;
-    for my $i(0..8){
-        $s -= $row->[$i+9];
-        $txt .= ($i==0?"[":",").(-$row->[$i+9]);
+    for my $i(0..$d-1){
+        $s -= $row->[$i+$d];
+        $txt .= ($i==0?"[":",").(-$row->[$i+$d]);
     }
     $txt .= "] + ";
-    for my $i(0..8){
-       $s -= $row->[$i+18];
-       $txt .= ($i==0?"[":",").(-$row->[$i+18]);
+    for my $i(0..$d-1){
+       $s -= $row->[$i+$d2];
+       $txt .= ($i==0?"[":",").(-$row->[$i+$d2]);
     }
     next if($s==0);
     $txt .= "] <= ";
-    for my $i(0..8){
+    for my $i(0..$d-1){
        $txt .= ($i==0?"[":",").$row->[$i];
     }
     $txt .= "]";

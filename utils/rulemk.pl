@@ -477,7 +477,10 @@ sub generate_vlp {
     }
     # print the objectives, total number is 2*$D
     for my $i(1..$DD){
-        print VLP "o ",$i," ",$cols+$i,(1<$i && $i<=$D+1 ? " 1":" -1"),"\n";
+        my $v=($i<=$D ? 1 : -1);
+        if($i % $D==1 ){ $v=-$v; }
+#        print VLP "o ",$i," ",$cols+$i,(1<$i && $i<=$D+1 ? " 1":" -1"),"\n";
+        print VLP "o ",$i," ",$cols+$i," $v\n";
     }
     print VLP "e\n\n";
     close(VLP);

@@ -1,0 +1,45 @@
+C maximal rule for rs=cd:ab; a,d,r,s; b,c,r,s
+I    5.00] Elapsed: 5.00, vertices: 25, facets final: 20882, pending: 16040, pool: 3
+I   10.00] Elapsed: 10.00, vertices: 26, facets final: 42216, pending: 30945, pool: 3
+I   15.00] Elapsed: 15.00, vertices: 26, facets final: 65746, pending: 7415
+I   20.00] Elapsed: 20.00, vertices: 27, facets final: 81090, pending: 64820, pool: 2
+I   25.00] Elapsed: 25.00, vertices: 27, facets final: 103388, pending: 42522
+I   30.00] Elapsed: 30.00, vertices: 27, facets final: 126515, pending: 19395
+I   42.17] Elapsed: 42.17, vertices: 28, facets final: 145909, pending: 144448, pool: 1
+I   47.17] Elapsed: 47.17, vertices: 28, facets final: 167022, pending: 123335
+I   52.17] Elapsed: 52.17, vertices: 28, facets final: 189351, pending: 101006
+I   57.17] Elapsed: 57.17, vertices: 28, facets final: 211157, pending: 79200
+I   62.17] Elapsed: 1:02, vertices: 28, facets final: 233660, pending: 56697
+I   67.17] Elapsed: 1:07, vertices: 28, facets final: 256908, pending: 33449
+I   72.17] Elapsed: 1:12, vertices: 28, facets final: 281518, pending: 8839
+I   73.86] Elapsed: 1:14, vertices: 28, facets final: 290357, pending: 0
+
+--------------------------------
+Problem completed
+ name                    32.vlp
+ output                  vlp/32.res
+ rows, cols, objs        30, 144, 27
+ vertices, facets        28, 290357
+ total time              1:14
+--------------------------------
+Statistics
+LP:
+ oracle calls            290389
+   avg iterations/calls  10.21
+ total oracle time       1:02
+Combinatorics:
+ vertices added          28
+ facets probed           290782
+ facets # max            290358
+ memory allocated        114.58M
+ storage expansion
+   vertices # / upto     1 / 124
+   facets   # / upto     8 / 290812
+ facet manipulating
+   added avg / max       10.90k / 144.45k
+   compressed            9
+ number of ridge tests
+   avg / max             576.46k / 7.58M
+--------------------------------
+Parameters with non-default values
+ VertexPoolSize = 100

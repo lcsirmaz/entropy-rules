@@ -1,0 +1,47 @@
+# double rules reduced to the first 9 coefficients
+#
+#label copy string     base1          base2          DFZ number
+#
+# labels marked by * are duplicate
+#
+
+01   r=a:bc;s=a:bdr    ar,br,c,dr     ar,br,cr,d     # 05
+02   r=a:bc;s=a:bdr    a,r,c,d        ar,br,c,dr     # 16
+03*  r=a:bc;s=b:adr    ar,br,c,dr     ar,br,cr,d     # 05 subset of 01
+04   r=a:bc;s=b:adr    a,r,c,d        ar,br,c,dr     # 16
+
+#####################################################################
+
+11   rs=cd:ab          a,r,c,d        r,b,c,d        # 18
+12   rs=cd:ab          a,r,c,d        ar,br,c,dr     # 15
+13   rs=cd:ab          a,r,c,d        ar,br,cr,d     # 08
+14   rs=cd:ab          a,r,c,d        ar,br,cr,dr    # 14
+15   r=c:ab;s=a:bdr    a,r,c,d        r,b,c,d        # 18
+16   r=c:ab;s=a:bdr    a,r,c,d        ar,br,c,dr     # 15
+17   r=c:ab;s=a:bdr    a,r,c,d        ar,br,cr,d     # 08
+18   r=c:ab;s=a:bdr    a,r,c,d        ar,br,cr,dr    # 14
+
+21   rs=cd:ab          ar,br,cr,dr    a,b,c,dr       # 13
+22   rs=cd:ab          ar,br,cr,dr    a,b,cr,d       # 19
+23   rs=cd:ab          ar,br,c,dr     ar,br,cr,d     # 06
+24   rs=cd:ab          a,b,cr,d       a,b,c,dr       # 17
+25   r=c:ab;s=a:bdr    ar,br,cr,dr    a,b,c,dr       # 13
+26   r=c:ab;s=a:bdr    ar,br,cr,dr    a,b,cr,d       # 19
+27   r=c:ab;s=a:bdr    ar,br,c,dr     ar,br,cr,d     # 06
+28   r=c:ab;s=a:bdr    a,b,cr,d       a,b,c,dr       # 17
+
+#####################################################################
+
+31   rs=cd:ab          a,d,r,s        a,c,r,s        # 21
+32   rs=cd:ab          a,d,r,s        b,c,r,s        # 26
+33   rs=cd:ab          a,d,r,s        a,b,c,dr       # 28
+34   rs=cd:ab          a,d,r,s        ac,bc,cr,s     # 22
+35   rs=cd:ab          a,d,r,s        ac,bc,cr,cs    # 24
+36   rs=cd:ab          a,d,r,s        ac,b,r,s       # 43
+37*  rs=cd:ab          a,d,r,s        ad,bd,dr,ds    # 37; same as #14
+
+38   rs=cd:ab          ad,bd,dr,ds    ac,bc,cr,cs    # 35
+39   rs=cd:ab          a,b,c,dr       ad,bd,dr,ds    # 36
+
+######################################################################
+

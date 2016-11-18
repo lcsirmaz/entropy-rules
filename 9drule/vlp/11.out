@@ -1,0 +1,47 @@
+C maximal rule for rs=cd:ab; a,r,c,d; r,b,c,d
+I    5.00] Elapsed: 5.00, vertices: 26, facets final: 23095, pending: 22594, pool: 4
+I   10.24] Elapsed: 10.24, vertices: 27, facets final: 45685, pending: 45514, pool: 3
+I   15.24] Elapsed: 15.24, vertices: 27, facets final: 69148, pending: 22051
+I   21.90] Elapsed: 21.90, vertices: 28, facets final: 91196, pending: 91024, pool: 2
+I   26.90] Elapsed: 26.90, vertices: 28, facets final: 114282, pending: 67938
+I   31.90] Elapsed: 31.90, vertices: 28, facets final: 138273, pending: 43947
+I   36.90] Elapsed: 36.90, vertices: 28, facets final: 163384, pending: 18836
+I   50.23] Elapsed: 50.23, vertices: 29, facets final: 182219, pending: 181886, pool: 1
+I   55.23] Elapsed: 55.23, vertices: 29, facets final: 205127, pending: 158978
+I   60.23] Elapsed: 1:00, vertices: 29, facets final: 228362, pending: 135743
+I   65.23] Elapsed: 1:05, vertices: 29, facets final: 251803, pending: 112302
+I   70.23] Elapsed: 1:10, vertices: 29, facets final: 275565, pending: 88540
+I   75.23] Elapsed: 1:15, vertices: 29, facets final: 300059, pending: 64046
+I   80.23] Elapsed: 1:20, vertices: 29, facets final: 325606, pending: 38499
+I   85.23] Elapsed: 1:25, vertices: 29, facets final: 352141, pending: 11964
+I   87.33] Elapsed: 1:27, vertices: 29, facets final: 364105, pending: 0
+
+--------------------------------
+Problem completed
+ name                    11.vlp
+ output                  vlp/11.res
+ rows, cols, objs        30, 144, 27
+ vertices, facets        29, 364105
+ total time              1:27
+--------------------------------
+Statistics
+LP:
+ oracle calls            364137
+   avg iterations/calls  8.99
+ total oracle time       1:12
+Combinatorics:
+ vertices added          29
+ facets probed           364726
+ facets # max            364106
+ memory allocated        142.75M
+ storage expansion
+   vertices # / upto     1 / 124
+   facets   # / upto     8 / 364540
+ facet manipulating
+   added avg / max       13.17k / 181.89k
+   compressed            8
+ number of ridge tests
+   avg / max             630.79k / 16.84M
+--------------------------------
+Parameters with non-default values
+ VertexPoolSize = 100

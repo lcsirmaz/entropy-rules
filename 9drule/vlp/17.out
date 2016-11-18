@@ -1,0 +1,45 @@
+C maximal rule for r=c:ab;s=a:bdr; a,r,c,d; ar,br,cr,d
+I    5.00] Elapsed: 5.00, vertices: 26, facets final: 5904, pending: 47534, pool: 2
+I   10.00] Elapsed: 10.00, vertices: 33, facets final: 13862, pending: 43584, pool: 3
+I   15.32] Elapsed: 15.32, vertices: 42, facets final: 16010, pending: 57808, pool: 3
+I   20.32] Elapsed: 20.32, vertices: 42, facets final: 26719, pending: 47099
+I   25.32] Elapsed: 25.32, vertices: 45, facets final: 35069, pending: 38765, pool: 3
+I   30.32] Elapsed: 30.32, vertices: 47, facets final: 45413, pending: 28421, pool: 2
+I   35.32] Elapsed: 35.32, vertices: 48, facets final: 53698, pending: 83199, pool: 1
+I   40.32] Elapsed: 40.32, vertices: 48, facets final: 64419, pending: 72478
+I   45.32] Elapsed: 45.32, vertices: 48, facets final: 75229, pending: 61668
+I   50.32] Elapsed: 50.32, vertices: 48, facets final: 86057, pending: 50840
+I   55.32] Elapsed: 55.32, vertices: 48, facets final: 97338, pending: 39559
+I   60.32] Elapsed: 1:00, vertices: 48, facets final: 109319, pending: 27578
+I   65.32] Elapsed: 1:05, vertices: 48, facets final: 123218, pending: 13679
+I   69.79] Elapsed: 1:10, vertices: 48, facets final: 136897, pending: 0
+
+--------------------------------
+Problem completed
+ name                    17.vlp
+ output                  vlp/17.res
+ rows, cols, objs        43, 218, 27
+ vertices, facets        48, 136897
+ total time              1:10
+--------------------------------
+Statistics
+LP:
+ oracle calls            136972
+   avg iterations/calls  19.75
+ total oracle time       58.82
+Combinatorics:
+ vertices added          48
+ facets probed           137074
+ facets # max            136898
+ memory allocated        56.27M
+ storage expansion
+   vertices # / upto     1 / 124
+   facets   # / upto     14 / 139260
+ facet manipulating
+   added avg / max       4.03k / 63.06k
+   compressed            21
+ number of ridge tests
+   avg / max             55.88M / 236.10M
+--------------------------------
+Parameters with non-default values
+ VertexPoolSize = 100

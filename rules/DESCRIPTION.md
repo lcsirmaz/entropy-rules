@@ -6,15 +6,15 @@ is a collection of vector pairs; each vector has 11 coordinates and members
 of a pair are separated by a `<=` sign. For example, Rule [1] from page 20
 of the cited paper can be rephrased by the following set of vector pairs:
 
-    [1,0,0,0,0,0,0,0,0,0,0] <= [1,1,1,0,0,0,0,0,0,0,0]
-    [0,1,0,0,0,0,0,0,0,0,0] <= [0,1,0,0,0,0,0,0,0,0,0]
-    [0,0,1,0,0,0,0,0,0,0,0] <= [0,0,1,0,0,0,0,0,0,0,0]
-    [0,0,0,1,0,0,0,0,0,0,0] <= [1,1,1,1,0,0,0,0,0,0,0]
-    [0,0,0,0,0,1,0,0,0,0,0] <= [0,0,1,0,0,1,0,0,0,0,0]
-    [0,0,0,0,0,0,1,0,0,0,0] <= [0,0,1,0,0,0,1,0,0,0,0]
-    [0,0,0,0,0,0,0,1,0,0,0] <= [0,1,0,0,0,0,0,1,0,0,0]
-    [0,0,0,0,0,0,0,0,1,0,0] <= [0,1,0,0,0,0,0,0,1,0,0]
-    [0,0,0,0,0,0,0,0,0,1,0] <= [0,0,0,0,0,0,0,0,0,1,0]
+    [1,0,0,0,0,0,0,0,0,0,0] <= [1,1,1,0,0,0,0,0,0,0,0]   a
+    [0,1,0,0,0,0,0,0,0,0,0] <= [0,1,0,0,0,0,0,0,0,0,0]   b
+    [0,0,1,0,0,0,0,0,0,0,0] <= [0,0,1,0,0,0,0,0,0,0,0]   c
+    [0,0,0,1,0,0,0,0,0,0,0] <= [1,1,1,1,0,0,0,0,0,0,0]   d
+    [0,0,0,0,0,1,0,0,0,0,0] <= [0,0,1,0,0,1,0,0,0,0,0]   f
+    [0,0,0,0,0,0,1,0,0,0,0] <= [0,0,1,0,0,0,1,0,0,0,0]   g
+    [0,0,0,0,0,0,0,1,0,0,0] <= [0,1,0,0,0,0,0,1,0,0,0]   i
+    [0,0,0,0,0,0,0,0,1,0,0] <= [0,1,0,0,0,0,0,0,1,0,0]   j
+    [0,0,0,0,0,0,0,0,0,1,0] <= [0,0,0,0,0,0,0,0,0,1,0]   h
 
 The meaning of such a rule is the following:
 
@@ -28,18 +28,19 @@ from existing ones.
 
 Note that the coordinate system in the [Dougherty et al](http://arxiv.org/pdf/1104.3602v1) 
 paper differs slightly from our natural coordinates, and in formulating a 
-rule they present the combining factors explicitly. Actually, after a 
-sligh change of constants, Rule [1] appears as 
+rule they present the combining factors explicitly. Actually,
+Rule [1] appears as 
 
 > If, for non-negative real numbers *a*, *b*, *c*, *d*, *f*, *g*, *h*, *i*,
 > and *j*, the following is a valid information inequality<br>
 > &nbsp; &nbsp; *a*[A,B,C,D] + *b*(A;B|C) + *c*(A;C|B) + *d*(B;C|A) +<br>
-> &nbsp; &nbsp; &nbsp; + *f*(A;D|B)+ *g*(B;D|A) + *h*(C;D|A) + *i*(C;D|B) + *j*(C;D) &ge;> 0,<br>
+> &nbsp; &nbsp; &nbsp; + *f*(A;D|B)+ *g*(B;D|A) + *i*(C;D|A) + *j*(C;D|B) +
+> *h*(C;D) &ge;> 0,<br>
 > then so is <br>
-> &nbsp; &nbsp; (*a*+*d*)[A,B,C,D] + (*a*+*b*+*d*+*h*+*i*)(A;B|C) +
+> &nbsp; &nbsp; (*a*+*d*)[A,B,C,D] + (*a*+*b*+*d*+*i*+*j*)(A;B|C) +
 > (*a*+*c*+*d*+*f*+*g*)(A;C|B) + *d*(B;C|A) + <br>
-> &nbsp; &nbsp; &nbsp; + *f*(A;D|B)+ *g*(B;D|A) + *h*(C;D|A) + *i*(C;D|B) + *j*(C;D) &ge;
-> 0.
+> &nbsp; &nbsp; &nbsp; + *f*(A;D|B)+ *g*(B;D|A) + *i*(C;D|A) + *j*(C;D|B) +
+> *h*(C;D) &ge; 0.
 
 This is just the linear combination of the above lines with coefficients
 *a*, *b*, ..., *j*. (The coefficient *e* is missing as the fifth column is
@@ -104,7 +105,6 @@ in (2). Any such pair of tuples will be written as
 *y*<sub>1</sub>, ..., *y*<sub>11</sub>], *and*
 *x*<sub>1</sub>, ..., *x*<sub>11</sub> *are coefficients of a valid 
 4-variable entropy inequality, then so are* *y*<sub>1</sub>, ... *y*<sub>11</sub>.
-
 
 **Proof.** 
 Given the four random variables *a, b, c, d,* create the auxiliary

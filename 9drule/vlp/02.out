@@ -1,0 +1,43 @@
+C maximal rule for r=a:bc;s=a:bdr; a,r,c,d; ar,br,c,dr
+I    5.00] Elapsed: 5.00, vertices: 33, facets final: 9741, pending: 8746, pool: 2
+I   10.00] Elapsed: 10.00, vertices: 39, facets final: 19768, pending: 14408, pool: 3
+I   15.00] Elapsed: 15.00, vertices: 39, facets final: 32818, pending: 1358
+I   20.00] Elapsed: 20.00, vertices: 42, facets final: 43003, pending: 24950, pool: 2
+I   25.00] Elapsed: 25.00, vertices: 42, facets final: 55330, pending: 12623
+I   31.13] Elapsed: 31.13, vertices: 43, facets final: 67952, pending: 66990, pool: 1
+I   36.13] Elapsed: 36.13, vertices: 43, facets final: 79353, pending: 55589
+I   41.13] Elapsed: 41.13, vertices: 43, facets final: 91061, pending: 43881
+I   46.13] Elapsed: 46.13, vertices: 43, facets final: 103365, pending: 31577
+I   51.13] Elapsed: 51.13, vertices: 43, facets final: 116315, pending: 18627
+I   56.13] Elapsed: 56.13, vertices: 43, facets final: 130322, pending: 4620
+I   57.71] Elapsed: 57.71, vertices: 43, facets final: 134942, pending: 0
+
+--------------------------------
+Problem completed
+ name                    02.vlp
+ output                  vlp/02.res
+ rows, cols, objs        43, 218, 27
+ vertices, facets        43, 134942
+ total time              57.71
+--------------------------------
+Statistics
+LP:
+ oracle calls            135005
+   avg iterations/calls  17.81
+ total oracle time       54.34
+Combinatorics:
+ vertices added          43
+ facets probed           135303
+ facets # max            134943
+ memory allocated        55.12M
+ storage expansion
+   vertices # / upto     1 / 124
+   facets   # / upto     7 / 135164
+ facet manipulating
+   added avg / max       3.44k / 66.99k
+   compressed            10
+ number of ridge tests
+   avg / max             4.74M / 69.28M
+--------------------------------
+Parameters with non-default values
+ VertexPoolSize = 100

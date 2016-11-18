@@ -150,7 +150,7 @@ sub read_result_file {
     $info->{new}=();
     my @lines=();
     open(FILE,$fname) || die "Cannot open result file $fname for reading\n";
-    my $filetype=0; my $downgrade=0;
+    my $filetype=0; my $downgrade=0; my $dim=0;
     while(<FILE>){
       if($filetype==0){ ## unknown
           if(/^V/i){ $filetype=1; }
@@ -162,13 +162,14 @@ sub read_result_file {
       chomp;
       my $line=$_;
       my @v=split(/\s+/,$line);
-      scalar @v==11 || die "Wrong vertex line in file $fname:\n  $line\n";
+      $dim=scalar @v if(!$dim);
+      scalar @v==$dim || die "Wrong vertex line in file $fname:\n  $line\n";
       my $d=1;
-      for my $i(1..10){
+      for my $i(1..$dim-1){
           if($v[$i] =~ /^\d+\/(\d+)$/) { $d=lcm($d,$1); }
       }
       my @a=(); $a[0]=$d; $downgrade=$d>$ths ? 1 : 0;
-      for my $i(1..10){
+      for my $i(1..$dim-1){
           if($v[$i] =~ /^\d+$/ ){
               $a[$i]=$d*$v[$i]; 
               $downgrade=1 if($a[$i]>$ths);
@@ -180,6 +181,7 @@ sub read_result_file {
              $a[$i]=$d*(0.0+$v[$i]);
           }
       }
+      my $idx=$dim; while($idx<11){ $a[$idx]=0; $idx++; }
       biggest(\@a);    ## make it lexicographically maximal
       if($downgrade){
         my $new=[]; next if(!downgrade(\@a,$new));
@@ -419,6 +421,8 @@ sub find_copy {
                 $info->{copy}=$a; $info->{id}="drule:";
             }
             $info->{copy} =~ s/;$//;
+        } elsif( $a=~/double rule ([^\s]+) for/){
+            $info->{copy} = $1; $info->{id}="9drule:";
         } elsif( $a=~/rule (\d.+) for/){
             $info->{copy} = "rule$1"; $info->{id}="rule:";
         }

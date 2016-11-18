@@ -1,0 +1,45 @@
+C maximal rule for rs=cd:ab; a,d,r,s; a,c,r,s
+I    5.00] Elapsed: 5.00, vertices: 36, facets final: 21991, pending: 15046, pool: 4
+I   10.00] Elapsed: 10.00, vertices: 37, facets final: 42413, pending: 30831, pool: 3
+I   15.00] Elapsed: 15.00, vertices: 37, facets final: 65061, pending: 8183
+I   20.00] Elapsed: 20.00, vertices: 38, facets final: 78226, pending: 67913, pool: 2
+I   25.00] Elapsed: 25.00, vertices: 38, facets final: 100613, pending: 45526
+I   30.00] Elapsed: 30.00, vertices: 38, facets final: 123751, pending: 22388
+I   45.64] Elapsed: 45.64, vertices: 39, facets final: 146138, pending: 145472, pool: 1
+I   50.64] Elapsed: 50.64, vertices: 39, facets final: 167795, pending: 123815
+I   55.64] Elapsed: 55.64, vertices: 39, facets final: 189357, pending: 102253
+I   60.64] Elapsed: 1:01, vertices: 39, facets final: 211431, pending: 80179
+I   65.64] Elapsed: 1:06, vertices: 39, facets final: 234058, pending: 57552
+I   70.64] Elapsed: 1:11, vertices: 39, facets final: 257333, pending: 34277
+I   75.64] Elapsed: 1:16, vertices: 39, facets final: 281764, pending: 9846
+I   77.54] Elapsed: 1:18, vertices: 39, facets final: 291610, pending: 0
+
+--------------------------------
+Problem completed
+ name                    31.vlp
+ output                  vlp/31.res
+ rows, cols, objs        30, 144, 27
+ vertices, facets        39, 291610
+ total time              1:18
+--------------------------------
+Statistics
+LP:
+ oracle calls            291660
+   avg iterations/calls  10.24
+ total oracle time       1:02
+Combinatorics:
+ vertices added          39
+ facets probed           292433
+ facets # max            291611
+ memory allocated        115.63M
+ storage expansion
+   vertices # / upto     1 / 124
+   facets   # / upto     8 / 294908
+ facet manipulating
+   added avg / max       7.80k / 145.47k
+   compressed            8
+ number of ridge tests
+   avg / max             281.55k / 1.63M
+--------------------------------
+Parameters with non-default values
+ VertexPoolSize = 100
