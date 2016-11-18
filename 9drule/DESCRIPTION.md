@@ -38,8 +38,7 @@ The combining coefficients used by Dougherty and al are indicated next to
 the rules.  The only rule in the above ruleset which uses both inequalities
 is the last one marked by `z`. Due to its hight computational complexity,
 the complete ruleset has been determined for the original
-[Rule \[5\]](DFZ/05.txt), [Rule \[6\]](DFZ/06.txt),  
-and [Rule \[8\]](DFZ/08.txt) only. 
+[Rule \[5\]](DFZ/05.txt), [Rule \[6\]](DFZ/06.txt), and [Rule \[8\]](DFZ/08.txt) only. 
 
 ### Specifying a double rule
 
@@ -94,6 +93,9 @@ generate, solve, and then extract the complete ruleset use the commands
     # extract the complete ruleset from the result
     utils/minrule.pl <vlp-result> <ruleset>
 
+This procedure yielded the complete rulesets for Rules [\[5\]](DFZ/05.txt),
+[\[6\]](DFZ/06.txt), and [\[8\]](DFZ/08.txt) reported above.
+
 ### Scaled down rulesets 
 
 MOLP problems with 33 objectives are typically intractable and can be solved
@@ -109,7 +111,7 @@ restrictive.
 The theory and methodology of such scaled down ruleset is the same as
 outlined above with the additional restriction that the values
 *x*<sub>10</sub>, *x*<sub>11</sub>, *y*<sub>10</sub>, *y*<sub>11</sub> and
-*z*<sub>10</sub>, *z*<sub>11</sub> of the generated rule must be zero. To
+*z*<sub>10</sub>, *z*<sub>11</sub> in the generated rule must be zero. To
 compute the complete scaled down ruleset for a copy string and two bases use
 the following commands:
 
@@ -125,7 +127,7 @@ with the last two coefficients equal to zero are considered only. The
 utility allows to filter for inequalities with coefficients below a certain
 threshold. The utility `9dodrule.pl` creates a MOLP problem whose solutions
 are the minimal (not superseded) instances of applying the rule to the given
-inequalities. From them the really new inequalities can be extracted by the
+inequalities. From these inequalities the really new ones can be extracted by the
 `checkall.pl` utility.
 
     # apply a reduced rule to a set of inequalities
@@ -134,8 +136,8 @@ inequalities. From them the really new inequalities can be extracted by the
     utils/9dodrule.pl -t <bound> <ineq-file> <rule-file> <vlp-file>
     # solve the MOLP
     inner <vlp-file> -o <vlp-resfile>
-    # extract inequalities not superseded by those in <ineq-file>
-    uitils/checkall.pl <vlp-resfile> <ineq-file>
+    # extract inequalities not superseded by those in <full-ineq-file>
+    uitils/checkall.pl <vlp-resfile> <full-ineq-file>
 
 
 
