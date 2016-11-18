@@ -68,6 +68,40 @@ sub read_rulefile {
     close(RULE);
 }
 
+## if the filename is XXXX/dd.txt, then find the description for
+## the applied 9rule and return that description
+## otherwise make your best guess
+sub find_9drules {
+    my $file="drules.txt"; my $rfile="9drule/drules.txt";
+    return $file if(-e $file);
+    return $rfile if(-r $rfile);
+    return "../$file" if(-e "../$file");
+    return "../$rfile" if(-e "../rfile");
+    return "../../$file" if( -e "../../$file");
+    return "../../$rfile" if( -e "../../$rfile");
+    return "";
+}
+
+sub find_ruletext { ## locate 9rule description, if available
+    my $fname=shift;
+    my $txt=$fname;
+    # default value ...
+    $txt =~ s/\.[^.]*$//; $txt =~ s/.*\///;
+    my $file=find_9drules();
+    if($file && open(TXT,$file)){
+       while(<TXT>){
+           chomp;
+           next if(/^#/ || /^$/ );
+           my @v=split(/\s+/);
+           next if(scalar @v<4 || $v[0] !~ /$txt/ );
+           $v[2] =~ s/,/./g; $v[3] =~ s/,/./g;
+           return $v[1].";".$v[2].";".$v[3];
+       }
+       close(TXT);
+    }
+    return $txt;
+}
+
 ##################################################################
 # read inequalities
 #
@@ -148,10 +182,12 @@ sub create_vlp {
         $az++ if($c->[0]);
         for my $i(1..$dim-1){ $objz++ if($c->[$i]); }
     }
-    my $ruletxt=$ARGV[$argcnt+1]; 
-    $ruletxt =~ s/\.[^.]*//; $ruletxt =~ s/.*\///;
+#    my $ruletxt=$ARGV[$argcnt+1]; 
+#    $ruletxt =~ s/\.[^.]*//; $ruletxt =~ s/.*\///;
     open(VLP,">$vlpfile") || die "Cannot open $vlpfile for writing\n";
-     print VLP "c applying double rule ",$ruletxt," for ",$ARGV[$argcnt],"\n";
+     print VLP "c applying double rule ",$info->{ruletext}," for ",$ARGV[$argcnt];
+     if($bound){ print VLP " chopped at $bound"; }
+     print VLP "\n";
      print VLP "p vlp min",
        " ",$dim+$dim+1,   # number of rows
        " ",$cols,         # columns
@@ -204,6 +240,7 @@ sub create_vlp {
 my $info={};
 read_rulefile($info,$ARGV[$argcnt+1]);
 read_inequalities($info,$ARGV[$argcnt]);
+$info->{ruletext} = find_ruletext($ARGV[$argcnt+1]);
 create_vlp($info,$ARGV[$argcnt+2]);
 
 exit;
