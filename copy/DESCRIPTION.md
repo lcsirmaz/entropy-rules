@@ -81,33 +81,58 @@ are collected. The conditional independence(s) stipulated by the copy string
 is written as (possibly several) equality among the entropies of the subsets
 of the variables. Indeed, if *aX* and *Y* are independent given *Z*, that
 is, **I**(*aX*;*Y*|*Z*)=0, then we also have **I**(*X*;*Y*|*Z*)=0. Also, all
-equality among these entropies are considered which are consequences of the
+equality among these entropies are added which follow from the
 above discussed symmetry. Each equality allows eliminating one entropy from
-the whole set of inequalities; this is done in order to reduce the
-complexity of the problem.
+the whole set of entropies; this reduces the size of the problem
+significantly.
 
-As a next step, &quot;minimal&quot; Shannon inequalities are collected,
-namely those which imply all other Shannon inequalities. They are the ones
-of the form **I**(*x*;*y*|*Z*)&ge;0 where *x* and *y* are single variables,
-and *Z* is a subset of variables not containing *x* or *y*. From a remark
+As a next step, &quot;minimal&quot; Shannon inequalities are collected.
+They are those which imply all other ones: **I**(*x*;*y*|*Z*) &ge; 0 
+where *x* and *y* are single variables,
+and *Z* is a (possibly empty) subset of the other variables. From a remark
 of *F. Matus* it follows that inequalities describing monotonicity are
-superfluous, so they can be omitted.
+never used, so they are omitted.
 
-As a last step, each inequality is rewritten using entropy expressions
-which define the natural coordinates of *a,b,c,d* rather than the entropies
-of the subsets of *a,b,c,d*. The final collection is a set of (homogeneous)
-inequalities of the form
+As a last step, each Shannon inequality is rewritten using entropy
+expressions which define the natural coordinates of *a,b,c,d* rather than
+the entropies of the subsets of *a,b,c,d*; and &quot;eliminated&quot;
+entropies are replaced by the expression they are equal to.  The final
+collection is a set of (homogeneous) inequalities of the form
 
-> *a*<sub>i,1</sub>**N**<sub>1</sub> + *a*<sub>i,2</sub>**N**<sub>2</sub>
-> + ... + *a*<sub>i,15</sub>**N**<sub>15</sub> +
+> *a*<sub>i,1</sub>**N**<sub>1</sub> + *a*<sub>i,2</sub>**N**<sub>2</sub> +
+> ... + *a*<sub>i,15</sub>**N**<sub>15</sub> +
 > *a*<sub>i,16</sub>**H**(*X*<sub>16</sub>) +
 > *a*<sub>i,17</sub>**H**(*X*<sub>17</sub>) + ... +
 > *a*<sub>i,n</sub>**H**(*X*<sub>n</sub>) &ge; 0,
 
 where **N**<sub>1</sub>, ..., **N**<sub>15</sub> are the entropy expressions
-corresponding to the natural coordinates; moreover *X*<sub>16</sub>, ...
-*X*<sub>17</sub> are subsets random variables containing some auxiliary
-variable (those ones whch remained after the elimination step). 
+corresponding to the natural coordinates; *X*<sub>16</sub>, ..., *X*<sub>n</sub> 
+are subsets random variables containing some auxiliary
+variable, and, optionally, one or several of *a,b,c,d*. (These are the
+entropies which remained after the elimination step). 
+
+By the duality theorem of Linear Programming, consequences of this system
+are exactly their non-negative linear combinations. Among these linear
+combinations the 4-variable entropy inequalities are those where the
+coefficients at positions 16, 17, up to *n* are zero. The coefficients at
+positions from 1 to 15 are just the *natural* coefficients of the
+inequality. By renorming, we assume that the first, Ingleton coefficient is
+exactly one, and can request that coefficients 12 to 15 are zero as well.
+Writing the above inequalities as columns, the &quot;LP variables&quot; are
+just the non-negative combining values:
+
+|    |          1st  | 2dn  | ... | last | condition  |
+|---:|--------------:|-----:|:---:|-----:|:--|
+|Ingleton         |*a*<sub>1,1</sub>|*a*<sub>2,1</sub>| ... |*a*<sub>K,1</sub>| = 1 |
+|**N**<sub>2</sub>|*a*<sub>1,2</sub>|*a*<sub>2,2</sub>| ... |*a*<sub>K,2</sub>| objective \#1 |
+|**N**<sub>3</sub>|*a*<sub>1,3</sub>|*a*<sub>2,3</sub>| ... |*a*<sub>K,3</sub>| objective \#2 |
+|...|...|...|...|...|...|
+|**N**<sub>11</sub>|*a*<sub>1,11</sub>|*a*<sub>2,11</sub>| ... |*a*<sub>K,11</sub>| objective \#10 |
+|**N**<sub>12</sub>|*a*<sub>1,12</sub>|*a*<sub>2,12</sub>| ... |*a*<sub>K,12</sub>| = 0 |
+|...|...|...|...|...|...|
+|**H**<sub>16</sub>|*a*<sub>1,16</sub>|*a*<sub>2,16</sub>| ... |*a*<sub>K,16</sub>| = 0 |
+|...|...|...|...|...|...|
+|**H**<sub>n</sub>|*a*<sub>1,n</sub>|*a*<sub>2,n</sub>| ... |*a*<sub>K,n</sub>| = 0 |
 
 
 #### Limitations
