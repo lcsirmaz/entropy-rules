@@ -103,7 +103,7 @@ collection is a set of (homogeneous) inequalities of the form
 > ... + *a*<sub>i,15</sub>**N**<sub>15</sub> +
 > *a*<sub>i,16</sub>**H**(*X*<sub>16</sub>) +
 > *a*<sub>i,17</sub>**H**(*X*<sub>17</sub>) + ... +
-> *a*<sub>i,n</sub>**H**(*X*<sub>n</sub>) &ge; 0,
+> *a*<sub>i,n</sub>**H**(*X*<sub>n</sub>) &ge; 0, &nbsp; &nbsp; 1 &le; i &le; K
 
 where **N**<sub>1</sub>, ..., **N**<sub>15</sub> are the entropy expressions
 corresponding to the natural coordinates; *X*<sub>16</sub>, ..., *X*<sub>n</sub> 
@@ -118,13 +118,14 @@ coefficients at positions 16, 17, up to *n* are zero. The coefficients at
 positions from 1 to 15 are just the *natural* coefficients of the
 inequality. By renorming, we assume that the first, Ingleton coefficient is
 exactly one, and can request that coefficients 12 to 15 are zero as well.
-Writing the above inequalities as columns, the &quot;LP variables&quot; are
-just the non-negative combining values:
+Writing the above inequalities as columns, the &quot;LP variables&quot; 
+&lambda;<sub>1</sub>, ..., &lambda;<sub>K</sub> are just the non-negative
+combining values. These conditions are collected in the table below:
 
 | inequality   |          1st  | 2nd  | ... | last | condition  |
 |---:|--------------:|-----:|:---:|-----:|:--|
 | LP variable     | &lambda;<sub>1</sub> | &lambda;<sub>2</sub> | ... | &lambda;<sub>K</sub> | &ge; 0 |
-|Ingleton         |*a*<sub>1,1</sub>|*a*<sub>2,1</sub>| ... |*a*<sub>K,1</sub>| = 1 |
+|**N**<sub>1</sub> (Ingleton) |*a*<sub>1,1</sub>|*a*<sub>2,1</sub>| ... |*a*<sub>K,1</sub>| = 1 |
 |**N**<sub>2</sub>|*a*<sub>1,2</sub>|*a*<sub>2,2</sub>| ... |*a*<sub>K,2</sub>| objective \#1 |
 |**N**<sub>3</sub>|*a*<sub>1,3</sub>|*a*<sub>2,3</sub>| ... |*a*<sub>K,3</sub>| objective \#2 |
 |...|...|...|...|...|...|
@@ -134,6 +135,14 @@ just the non-negative combining values:
 |**H**<sub>16</sub>|*a*<sub>1,16</sub>|*a*<sub>2,16</sub>| ... |*a*<sub>K,16</sub>| = 0 |
 |...|...|...|...|...|...|
 |**H**<sub>n</sub>|*a*<sub>1,n</sub>|*a*<sub>2,n</sub>| ... |*a*<sub>K,n</sub>| = 0 |
+
+This is just a MOLP problem with 10 objectives.  Line 1 and lines 12 to *n*
+specify the constraints; and lines 2 to 11 specify the objectives.  The
+solution of the minimization MOLP problem is a collection of the extremal
+values of the objectives &ndash; in our case this is the minimal set of
+entropy inequalities (written in natural coordinates preceeded by 1 as the
+Ingleton coordinate) among those which can be derived from this copy
+string.
 
 
 #### Limitations
