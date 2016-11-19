@@ -12,7 +12,7 @@ by [R. Dougherty et al](http://arxiv.org/pdf/1104.3602v1).
 
 #### Content
 
-* [DESCRIPTION.md](DESCRIPTION.md) &nbsp;&ndash; how entropy inequalities are represented
+* [DESCRIPTION](DESCRIPTION.md) &nbsp;&ndash; how entropy inequalities are represented
 * [latest](latest.txt) &nbsp;&ndash; the latest collection of 4-variable
   entropy inequalities
 * [ineqs](ineqs) &nbsp;&ndash; sets of four variable inequalities at different stages

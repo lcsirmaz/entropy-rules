@@ -63,14 +63,52 @@ utilities from [utils](../utils/) as follows:
 
 The file [base.new](base.new) contains the DFZ inequalities in machine
 readable form. The applied
-copy strings are listed in [copy.txt](copy.txt) indicating which strings
-yield no new inequality beyond the ones in the DFZ list. As a final step,
-minimal inequalities are extracted to [ineq.txt](ineq.txt).
+copy strings are listed in [copy.txt](copy.txt) indicating which string
+yields no new additional inequality. As a final step, the
+minimal set of inequalities is extracted to [ineq.txt](ineq.txt).
 
     # determine which inequalities are superseded by others
     utils/purge.pl base.new result/*.new > supd.new
     # generate the list of all new inequalities into ineq.txt and ineq-normalized.txt
     utils/genlist.pl -s supd.new ineq.txt base.new result/*.new
+
+#### How the MOLP problem is generated
+
+The `mkvlp.pl` utility creates the MOLP problem from the description of a
+copy string. The original variables are *a,b,c,* and *d*, and *r,s,t,u,v,w*
+can be used as auxiliary variables. All variables used in the copy string
+are collected. The conditional independence(s) stipulated by the copy string
+is written as (possibly several) equality among the entropies of the subsets
+of the variables. Indeed, if *aX* and *Y* are independent given *Z*, that
+is, **I**(*aX*;*Y*|*Z*)=0, then we also have **I**(*X*;*Y*|*Z*)=0. Also, all
+equality among these entropies are considered which are consequences of the
+above discussed symmetry. Each equality allows eliminating one entropy from
+the whole set of inequalities; this is done in order to reduce the
+complexity of the problem.
+
+As a next step, &quot;minimal&quot; Shannon inequalities are collected,
+namely those which imply all other Shannon inequalities. They are the ones
+of the form **I**(*x*;*y*|*Z*)&ge;0 where *x* and *y* are single variables,
+and *Z* is a subset of variables not containing *x* or *y*. From a remark
+of *F. Matus* it follows that inequalities describing monotonicity are
+superfluous, so they can be omitted.
+
+As a last step, each inequality is rewritten using entropy expressions
+which define the natural coordinates of *a,b,c,d* rather than the entropies
+of the subsets of *a,b,c,d*. The final collection is a set of (homogeneous)
+inequalities of the form
+
+> *a*<sub>i,1</sub>**N**<sub>1</sub> + *a*<sub>i,2</sub>**N**<sub>2</sub>
+> + ... + *a*<sub>i,15</sub>**N**<sub>15</sub> +
+> *a*<sub>i,16</sub>**H**(*X*<sub>16</sub>) +
+> *a*<sub>i,17</sub>**H**(*X*<sub>17</sub>) + ... +
+> *a*<sub>i,n</sub>**H**(*X*<sub>n</sub>) &ge; 0,
+
+where **N**<sub>1</sub>, ..., **N**<sub>15</sub> are the entropy expressions
+corresponding to the natural coordinates; moreover *X*<sub>16</sub>, ...
+*X*<sub>17</sub> are subsets random variables containing some auxiliary
+variable (those ones whch remained after the elimination step). 
+
 
 #### Limitations
 
@@ -79,10 +117,10 @@ five auxiliary variables (*r, s, t, u, v*) easily, independently the number of
 iterations. Handling copy strings with six auxiliary variables requires significantly
 more resources, and occasionally the MOLP solver aborts due to numerical errors. It
 might need special parametrization and several trials.
-Copy strings with *seven* auxiliary variables seem to be beyond the capabilities of the
+Copy strings with seven auxiliary variables seem to be beyond the capabilities of the
 applied technology. Due to the low rank of the constraint matrix, it is numerically
 ill-conditioned, and the solution returned by any scalar LP solver (if it does not
 fail at all) can be off by such a large amount that messes up the rest of the
-algorithm.
+MOLP algorithm.
 
 
