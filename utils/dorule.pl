@@ -53,6 +53,10 @@ sub read_rulefile {
         /^\[(.*)\] <= \[(.*)\]$/ || die "wrong line in $file:\n $line\n";
         my @left=split(',',$1); my @right=split(',',$2);
         scalar @left ==11 && scalar @right==11 || die "wrong line in $file\n $line\n";
+        for my $i(0..10){
+           $left[$i]=0 if($left[$i] eq " ");
+           $right([$i]=0 if($right[$i] eq " ");
+        }
         push @{$info->{a}},\@left; push @{$info->{b}},\@right;
     }
     close(RULE);

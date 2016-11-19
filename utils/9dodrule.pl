@@ -29,7 +29,7 @@ sub help {
     exit 1;
 }
 my $argcnt=0; my $bound=0;
-if(scalar @ARGV <4){ help(); }
+if(scalar @ARGV <3){ help(); }
 if($ARGV[0] eq "-t"){
     $bound = 0+$ARGV[1]; if($bound<10 || $bound > 1000){ help(); }
     $argcnt=2;
@@ -51,6 +51,7 @@ if(-e $ARGV[$argcnt+2] ){
 sub read_rulefile {
     my($info,$file)=@_;
     $info->{a}=(); $info->{b}=(); $info->{c}=();
+    $dim=-1;
     open(RULE,"$file") || die "Cannot open rule file $file\n";
     while(<RULE>){
        chomp;
@@ -59,13 +60,20 @@ sub read_rulefile {
        next if(/^$/);
        /^\[(.*)\] \+ \[(.*)\] <= \[(.*)\]$/ || die "wrong line in $file:\n $line\n";
        my @a=split(',',$1); my @b=split(',',$2); my @c=split(',',$3);
+       if($dim<0){ $dim=scalar @a; }
        scalar @a==$dim && scalar @b ==$dim && scalar @c==$dim ||
           die "wrong line in $file:\n $line\n";
+       for my $i(0..$dim-1){
+          $a[$i]=0 if($a[$i] eq " ");
+          $b[$i]=0 if($b[$i] eq " ");
+          $c[$i]=0 if($c[$i] eq " ");
+       }
        push @{$info->{a}},\@a;
        push @{$info->{b}},\@b;
        push @{$info->{c}},\@c;
     }
     close(RULE);
+    $dim>6 || die "Some problem with the rule file $file\n";
 }
 
 ## if the filename is XXXX/dd.txt, then find the description for
