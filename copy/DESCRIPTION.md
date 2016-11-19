@@ -121,8 +121,9 @@ exactly one, and can request that coefficients 12 to 15 are zero as well.
 Writing the above inequalities as columns, the &quot;LP variables&quot; are
 just the non-negative combining values:
 
-|    |          1st  | 2dn  | ... | last | condition  |
+| inequality   |          1st  | 2nd  | ... | last | condition  |
 |---:|--------------:|-----:|:---:|-----:|:--|
+| LP variable     | &lambda;<sub>1</sub> | &lambda;<sub>2</sub> | ... | &lambda;<sub>K</sub> | &ge; 0 |
 |Ingleton         |*a*<sub>1,1</sub>|*a*<sub>2,1</sub>| ... |*a*<sub>K,1</sub>| = 1 |
 |**N**<sub>2</sub>|*a*<sub>1,2</sub>|*a*<sub>2,2</sub>| ... |*a*<sub>K,2</sub>| objective \#1 |
 |**N**<sub>3</sub>|*a*<sub>1,3</sub>|*a*<sub>2,3</sub>| ... |*a*<sub>K,3</sub>| objective \#2 |
