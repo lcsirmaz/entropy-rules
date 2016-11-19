@@ -1,0 +1,51 @@
+C applying double rule 28.txt for ineq.txt
+I    5.01] Elapsed: 5.01, vertices: 298, facets final: 286, pending: 8495, pool: 100
+I   10.04] Elapsed: 10.04, vertices: 402, facets final: 413, pending: 11003, pool: 100
+I   15.06] Elapsed: 15.06, vertices: 489, facets final: 549, pending: 12554, pool: 100
+I   20.09] Elapsed: 20.09, vertices: 559, facets final: 666, pending: 14252, pool: 100
+I   25.13] Elapsed: 25.13, vertices: 625, facets final: 803, pending: 14967, pool: 99
+I   30.22] Elapsed: 30.22, vertices: 687, facets final: 939, pending: 15663, pool: 100
+I   35.24] Elapsed: 35.24, vertices: 746, facets final: 1092, pending: 15858, pool: 100
+I   40.33] Elapsed: 40.33, vertices: 802, facets final: 1234, pending: 16275, pool: 100
+I   45.36] Elapsed: 45.36, vertices: 859, facets final: 1503, pending: 16142, pool: 98
+I   50.44] Elapsed: 50.44, vertices: 918, facets final: 1815, pending: 15755, pool: 100
+I   55.44] Elapsed: 55.44, vertices: 978, facets final: 2240, pending: 15156, pool: 100
+I   60.49] Elapsed: 1:00, vertices: 1038, facets final: 2801, pending: 14659, pool: 99
+I   65.49] Elapsed: 1:05, vertices: 1099, facets final: 3579, pending: 13725, pool: 99
+I   70.51] Elapsed: 1:11, vertices: 1158, facets final: 4488, pending: 12767, pool: 99
+I   75.51] Elapsed: 1:16, vertices: 1210, facets final: 5786, pending: 11461, pool: 99
+I   80.57] Elapsed: 1:21, vertices: 1256, facets final: 7560, pending: 9718, pool: 97
+I   85.57] Elapsed: 1:26, vertices: 1300, facets final: 9498, pending: 7760, pool: 93
+I   90.58] Elapsed: 1:31, vertices: 1339, facets final: 12061, pending: 5236, pool: 85
+I   95.58] Elapsed: 1:36, vertices: 1382, facets final: 14872, pending: 2415, pool: 65
+I  100.20] Elapsed: 1:40, vertices: 1467, facets final: 17215, pending: 0
+
+--------------------------------
+Problem completed
+ name                    28.vlp
+ output                  vlp/28.res
+ rows, cols, objs        19, 740, 8
+ vertices, facets        1467, 17215
+ total time              1:40
+--------------------------------
+Statistics
+LP:
+ oracle calls            19213
+   avg iterations/calls  6.80
+ total oracle time       18.94
+Combinatorics:
+ vertices added          1467
+ facets probed           24110
+ facets # max            17699
+ memory allocated        11.96M
+ storage expansion
+   vertices # / upto     12 / 1532
+   facets   # / upto     5 / 20476
+ facet manipulating
+   added avg / max       51.14 / 264.00
+   compressed            58
+ number of ridge tests
+   avg / max             431.02k / 3.56M
+--------------------------------
+Parameters with non-default values
+ VertexPoolSize=100

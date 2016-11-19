@@ -1,0 +1,42 @@
+C applying double rule 15.txt for ineq.txt
+I    5.01] Elapsed: 5.01, vertices: 298, facets final: 113, pending: 6935, pool: 100
+I   10.02] Elapsed: 10.02, vertices: 461, facets final: 213, pending: 7351, pool: 100
+I   15.04] Elapsed: 15.04, vertices: 624, facets final: 350, pending: 7384, pool: 100
+I   20.06] Elapsed: 20.06, vertices: 771, facets final: 577, pending: 7597, pool: 100
+I   25.13] Elapsed: 25.13, vertices: 875, facets final: 759, pending: 8329, pool: 99
+I   30.17] Elapsed: 30.17, vertices: 971, facets final: 976, pending: 8121, pool: 100
+I   35.19] Elapsed: 35.19, vertices: 1078, facets final: 1277, pending: 7192, pool: 100
+I   40.19] Elapsed: 40.19, vertices: 1176, facets final: 2090, pending: 5800, pool: 93
+I   45.19] Elapsed: 45.19, vertices: 1258, facets final: 3660, pending: 3959, pool: 80
+I   50.19] Elapsed: 50.19, vertices: 1334, facets final: 6218, pending: 1353, pool: 52
+I   52.63] Elapsed: 52.63, vertices: 1409, facets final: 7546, pending: 0
+
+--------------------------------
+Problem completed
+ name                    15.vlp
+ output                  vlp/15.res
+ rows, cols, objs        19, 746, 8
+ vertices, facets        1409, 7546
+ total time              52.63
+--------------------------------
+Statistics
+LP:
+ oracle calls            9520
+   avg iterations/calls  8.75
+ total oracle time       11.54
+Combinatorics:
+ vertices added          1409
+ facets probed           13222
+ facets # max            9135
+ memory allocated        8.12M
+ storage expansion
+   vertices # / upto     12 / 1532
+   facets   # / upto     3 / 12284
+ facet manipulating
+   added avg / max       54.12 / 320.00
+   compressed            80
+ number of ridge tests
+   avg / max             302.93k / 2.18M
+--------------------------------
+Parameters with non-default values
+ VertexPoolSize=100

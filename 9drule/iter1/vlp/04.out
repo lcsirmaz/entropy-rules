@@ -1,0 +1,35 @@
+C applying double rule 04.txt for ineq.txt
+recalculate_facet: numerical instability at facet 1107, coord 3 (1.20584e-06)
+recalculate_facet: numerical instability at facet 1107, coord 8 (1.43976e-06)
+I    4.07] Elapsed: 4.07, vertices: 396, facets final: 1514, pending: 0
+
+--------------------------------
+Problem completed
+ name                    04.vlp
+ output                  vlp/04.res
+ rows, cols, objs        19, 732, 8
+ vertices, facets        396, 1514
+ total time              4.07
+--------------------------------
+Statistics
+LP:
+ oracle calls            2277
+   avg iterations/calls  10.52
+ total oracle time       2.96
+Combinatorics:
+ vertices added          396
+ facets probed           3616
+ facets # max            1724
+ memory allocated        2.04M
+ instability warnings    2
+ storage expansion
+   vertices # / upto     4 / 508
+   facets   # / upto     1 / 4092
+ facet manipulating
+   added avg / max       29.57 / 153.00
+   compressed            3
+ number of ridge tests
+   avg / max             28.86k / 173.83k
+--------------------------------
+Parameters with non-default values
+ VertexPoolSize=100

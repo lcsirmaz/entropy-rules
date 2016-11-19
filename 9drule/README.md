@@ -11,9 +11,10 @@ meaning that the last two coefficients in the inequality must be zero.
 #### Content
 
 * [DESCRIPTION.md](DESCRIPTION.md) &nbsp;&ndash; description of double rules
-* [drules](drules.txt) &nbsp;&ndash; copy string and bases for the rulesets
-* [ineq](ineq) &nbsp;&ndash; the complete rulesets
-* [vlp](vlp) &nbsp;&ndash; rule vlp files and solutions of the MOLPs
-* [iter1](iter1) &nbsp;&ndash; first iteration of applying the rules
+* [DFZ](DFZ) &nbsp;&ndash; complete rulesets for some rules
+* [drules](drules.txt) &nbsp;&ndash; copy string and bases for scaled down rulesets
+* [ineq](ineq) &nbsp;&ndash; complete ruleset for scaled down rules
+* [vlp](vlp) &nbsp;&ndash; vlp files and solutions (vertices only)
+* [iter1](iter1) &nbsp;&ndash; first iteration of applying scaled down rules
 * [iter2](iter2) &nbsp;&ndash; second iteration ...
 

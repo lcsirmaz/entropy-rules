@@ -1,0 +1,69 @@
+C applying double rule 24.txt for ineq.txt
+I    5.04] Elapsed: 5.04, vertices: 301, facets final: 291, pending: 8510, pool: 100
+I   10.08] Elapsed: 10.08, vertices: 398, facets final: 341, pending: 11888, pool: 100
+I   15.15] Elapsed: 15.15, vertices: 466, facets final: 396, pending: 14057, pool: 100
+I   20.16] Elapsed: 20.16, vertices: 525, facets final: 435, pending: 15870, pool: 100
+I   25.25] Elapsed: 25.25, vertices: 577, facets final: 465, pending: 17266, pool: 100
+I   30.26] Elapsed: 30.26, vertices: 623, facets final: 512, pending: 18793, pool: 100
+I   35.31] Elapsed: 35.31, vertices: 664, facets final: 558, pending: 19826, pool: 100
+I   40.36] Elapsed: 40.36, vertices: 703, facets final: 588, pending: 20150, pool: 99
+I   45.36] Elapsed: 45.36, vertices: 741, facets final: 632, pending: 20680, pool: 100
+I   50.48] Elapsed: 50.48, vertices: 780, facets final: 664, pending: 21050, pool: 100
+I   55.54] Elapsed: 55.54, vertices: 821, facets final: 701, pending: 21017, pool: 100
+I   60.54] Elapsed: 1:01, vertices: 863, facets final: 755, pending: 21332, pool: 100
+I   65.59] Elapsed: 1:06, vertices: 906, facets final: 818, pending: 21437, pool: 100
+I   70.61] Elapsed: 1:11, vertices: 947, facets final: 897, pending: 21598, pool: 100
+I   75.69] Elapsed: 1:16, vertices: 989, facets final: 965, pending: 21787, pool: 99
+I   80.70] Elapsed: 1:21, vertices: 1027, facets final: 1028, pending: 21926, pool: 100
+I   85.76] Elapsed: 1:26, vertices: 1068, facets final: 1168, pending: 21826, pool: 100
+I   90.84] Elapsed: 1:31, vertices: 1109, facets final: 1278, pending: 21707, pool: 100
+I   95.93] Elapsed: 1:36, vertices: 1147, facets final: 1375, pending: 21884, pool: 100
+I  100.93] Elapsed: 1:41, vertices: 1187, facets final: 1477, pending: 21724, pool: 100
+I  105.96] Elapsed: 1:46, vertices: 1229, facets final: 1629, pending: 21549, pool: 100
+I  110.96] Elapsed: 1:51, vertices: 1270, facets final: 1876, pending: 21103, pool: 100
+I  115.97] Elapsed: 1:56, vertices: 1315, facets final: 2061, pending: 20819, pool: 100
+I  121.02] Elapsed: 2:01, vertices: 1360, facets final: 2205, pending: 20546, pool: 100
+I  126.04] Elapsed: 2:06, vertices: 1406, facets final: 2453, pending: 20248, pool: 100
+I  131.10] Elapsed: 2:11, vertices: 1451, facets final: 2802, pending: 19630, pool: 100
+I  136.12] Elapsed: 2:16, vertices: 1500, facets final: 3208, pending: 19057, pool: 100
+I  141.16] Elapsed: 2:21, vertices: 1547, facets final: 3707, pending: 18429, pool: 100
+I  146.16] Elapsed: 2:26, vertices: 1596, facets final: 4364, pending: 17582, pool: 99
+I  151.16] Elapsed: 2:31, vertices: 1642, facets final: 5206, pending: 16710, pool: 99
+I  156.22] Elapsed: 2:36, vertices: 1687, facets final: 6210, pending: 15636, pool: 100
+I  161.24] Elapsed: 2:41, vertices: 1730, facets final: 7251, pending: 14564, pool: 98
+I  166.27] Elapsed: 2:46, vertices: 1769, facets final: 9018, pending: 12718, pool: 90
+I  171.27] Elapsed: 2:51, vertices: 1800, facets final: 11411, pending: 10277, pool: 96
+I  176.31] Elapsed: 2:56, vertices: 1835, facets final: 13704, pending: 7924, pool: 81
+I  181.31] Elapsed: 3:01, vertices: 1870, facets final: 16333, pending: 5342, pool: 67
+I  186.31] Elapsed: 3:06, vertices: 1903, facets final: 19505, pending: 2125, pool: 49
+I  190.43] Elapsed: 3:10, vertices: 1976, facets final: 21636, pending: 0
+
+--------------------------------
+Problem completed
+ name                    24.vlp
+ output                  vlp/24.res
+ rows, cols, objs        19, 728, 8
+ vertices, facets        1976, 21636
+ total time              3:10
+--------------------------------
+Statistics
+LP:
+ oracle calls            24115
+   avg iterations/calls  6.21
+ total oracle time       23.22
+Combinatorics:
+ vertices added          1976
+ facets probed           30229
+ facets # max            23410
+ memory allocated        17.62M
+ storage expansion
+   vertices # / upto     16 / 2044
+   facets   # / upto     6 / 24572
+ facet manipulating
+   added avg / max       58.58 / 458.00
+   compressed            90
+ number of ridge tests
+   avg / max             757.17k / 7.68M
+--------------------------------
+Parameters with non-default values
+ VertexPoolSize=100

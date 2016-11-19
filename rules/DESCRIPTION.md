@@ -4,18 +4,19 @@ New entropy inequalities by rules
 A *single rule*, as defined in [Dougherty et al](http://arxiv.org/pdf/1104.3602v1),
 is a collection of vector pairs; each vector has 11 coordinates and members
 of a pair are separated by a `<=` sign. For example, Rule [1] from page 20
-of the cited paper can be rephrased by the following set of vector pairs:
+of the cited paper can be rephrased as the following set of vector pairs:
 
-    [1,0,0,0,0,0,0,0,0,0,0] <= [1,1,1,0,0,0,0,0,0,0,0]   a
-    [0,1,0,0,0,0,0,0,0,0,0] <= [0,1,0,0,0,0,0,0,0,0,0]   b
-    [0,0,1,0,0,0,0,0,0,0,0] <= [0,0,1,0,0,0,0,0,0,0,0]   c
-    [0,0,0,1,0,0,0,0,0,0,0] <= [1,1,1,1,0,0,0,0,0,0,0]   d
-    [0,0,0,0,0,1,0,0,0,0,0] <= [0,0,1,0,0,1,0,0,0,0,0]   f
-    [0,0,0,0,0,0,1,0,0,0,0] <= [0,0,1,0,0,0,1,0,0,0,0]   g
-    [0,0,0,0,0,0,0,1,0,0,0] <= [0,1,0,0,0,0,0,1,0,0,0]   i
-    [0,0,0,0,0,0,0,0,1,0,0] <= [0,1,0,0,0,0,0,0,1,0,0]   j
-    [0,0,0,0,0,0,0,0,0,1,0] <= [0,0,0,0,0,0,0,0,0,1,0]   h
+    [1, , , , , , , , , , ] <= [1,1,1, , , , , , , , ]   a
+    [ ,1, , , , , , , , , ] <= [ ,1, , , , , , , , , ]   b
+    [ , ,1, , , , , , , , ] <= [ , ,1, , , , , , , , ]   c
+    [ , , ,1, , , , , , , ] <= [1,1,1,1, , , , , , , ]   d
+    [ , , , , ,1, , , , , ] <= [ , ,1, , ,1, , , , , ]   f
+    [ , , , , , ,1, , , , ] <= [ , ,1, , , ,1, , , , ]   g
+    [ , , , , , , ,1, , , ] <= [ ,1, , , , , ,1, , , ]   i
+    [ , , , , , , , ,1, , ] <= [ ,1, , , , , , ,1, , ]   j
+    [ , , , , , , , , ,1, ] <= [ , , , , , , , , ,1, ]   h
 
+(For better visibility, only non-zero coefficients are shown.)
 The meaning of such a rule is the following:
 
 > If any non-negative linear combination of the left hand sides
@@ -47,15 +48,15 @@ This is just the linear combination of the above lines with coefficients
 all zero). The complete rule set has three more lines, see
 [00.txt](ineq/00.txt):
 
-    [0,0,0,1,0,0,0,0,0,0,0] <= [0,1,0,1,0,0,0,0,0,0,0]
-    [0,0,0,1,0,0,0,0,0,0,0] <= [0,0,1,1,0,0,0,0,0,0,0]
-    [0,0,0,0,0,0,0,0,0,0,1] <= [0,0,0,0,0,0,0,0,0,0,1]
+    [ , , ,1, , , , , , , ] <= [ ,1, ,1, , , , , , , ]
+    [ , , ,1, , , , , , , ] <= [ , ,1,1, , , , , , , ]
+    [ , , , , , , , , , ,1] <= [ , , , , , , , , , ,1]
 
-### How to create a rule?
+### What a rule is?
 
 A &quot;rule&quot; is specified by a *copy string* and four (possible composite) random
-variables, called *base*. For Rule [1] above the copy string is *r*=*a*:*bc*, and
-the base is the four variable collection *ar, br, cr, d*.
+variables, called *base*. For Rule [1] above the copy string is *r=a:bc*, and
+the base is the four variable collection *ar,br,cr,d*.
 
 Suppose the rule is defined by the copy string **str** and base **B**.
 Collect the entropies of all non-empty subsets of the random variables

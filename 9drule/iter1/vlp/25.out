@@ -1,0 +1,51 @@
+C applying double rule 25.txt for ineq.txt
+I    5.00] Elapsed: 5.00, vertices: 288, facets final: 82, pending: 6380, pool: 100
+recalculate_facet: numerical instability at facet 1389, coord 0 (1.37557e-06)
+recalculate_facet: numerical instability at facet 1389, coord 7 (-1.63757e-06)
+recalculate_facet: numerical instability at facet 1389, coord 8 (-2.09629e-06)
+recalculate_facet: numerical instability at facet 7437, coord 0 (1.32268e-06)
+recalculate_facet: numerical instability at facet 7437, coord 7 (-1.38788e-06)
+recalculate_facet: numerical instability at facet 7437, coord 8 (-2.1921e-06)
+I   10.02] Elapsed: 10.02, vertices: 467, facets final: 160, pending: 6732, pool: 100
+I   15.03] Elapsed: 15.03, vertices: 628, facets final: 273, pending: 8084, pool: 100
+I   20.07] Elapsed: 20.07, vertices: 746, facets final: 377, pending: 8105, pool: 100
+recalculate_facet: numerical instability at facet 6190, coord 8 (1.28894e-06)
+I   25.09] Elapsed: 25.09, vertices: 857, facets final: 484, pending: 8345, pool: 99
+I   30.12] Elapsed: 30.12, vertices: 962, facets final: 653, pending: 8158, pool: 100
+I   35.15] Elapsed: 35.15, vertices: 1080, facets final: 1024, pending: 7352, pool: 100
+I   40.15] Elapsed: 40.15, vertices: 1195, facets final: 1588, pending: 6325, pool: 100
+I   45.15] Elapsed: 45.15, vertices: 1299, facets final: 2484, pending: 5278, pool: 96
+I   50.15] Elapsed: 50.15, vertices: 1395, facets final: 4058, pending: 3704, pool: 100
+I   55.15] Elapsed: 55.15, vertices: 1488, facets final: 6720, pending: 1019, pool: 53
+I   57.06] Elapsed: 57.06, vertices: 1564, facets final: 7686, pending: 0
+
+--------------------------------
+Problem completed
+ name                    25.vlp
+ output                  vlp/25.res
+ rows, cols, objs        19, 755, 8
+ vertices, facets        1564, 7686
+ total time              57.06
+--------------------------------
+Statistics
+LP:
+ oracle calls            9775
+   avg iterations/calls  8.38
+ total oracle time       10.78
+Combinatorics:
+ vertices added          1564
+ facets probed           14595
+ facets # max            8966
+ memory allocated        8.66M
+ instability warnings    7
+ storage expansion
+   vertices # / upto     13 / 1660
+   facets   # / upto     3 / 12284
+ facet manipulating
+   added avg / max       49.60 / 533.00
+   compressed            52
+ number of ridge tests
+   avg / max             272.13k / 2.97M
+--------------------------------
+Parameters with non-default values
+ VertexPoolSize=100

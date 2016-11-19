@@ -1,0 +1,32 @@
+C applying double rule 13.txt for ineq.txt
+I    3.88] Elapsed: 3.88, vertices: 345, facets final: 2567, pending: 0
+
+--------------------------------
+Problem completed
+ name                    13.vlp
+ output                  vlp/13.res
+ rows, cols, objs        19, 723, 8
+ vertices, facets        345, 2567
+ total time              3.88
+--------------------------------
+Statistics
+LP:
+ oracle calls            3221
+   avg iterations/calls  4.99
+ total oracle time       3.01
+Combinatorics:
+ vertices added          345
+ facets probed           5980
+ facets # max            2734
+ memory allocated        1.77M
+ storage expansion
+   vertices # / upto     3 / 380
+   facets   # / upto     1 / 4092
+ facet manipulating
+   added avg / max       33.77 / 129.00
+   compressed            4
+ number of ridge tests
+   avg / max             46.69k / 188.05k
+--------------------------------
+Parameters with non-default values
+ VertexPoolSize=100
