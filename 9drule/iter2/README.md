@@ -7,12 +7,13 @@ iteration](../iter1/it1.txt). The MOLP problems and their
 solutions are in [vlp](vlp). New inequalities 
 are extraced to the files [result](result)/NN.new.
 Finally, the minimal set with all newly generated inequalities is collected into
-[it1](it1.txt).
+[it2](it2.txt).
 
 #### Incomplete results
 
-Due to numerical instability, the following problems were aborted, and only
-partial results have been used: 02, 04, 12, 14, 16, 18, 33, 35.
+Due to numerical instability, the MOLP solver aborted when solving
+the following problems, and only partial results have been used: 02, 
+04, 12, 14, 16, 18, 33, 35.
 
 #### Contents
 
