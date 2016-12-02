@@ -4,10 +4,10 @@ Bootstrap method, iteration \#5
 In this iteration a small set of four-variable inequalities in 
 [base](base.txt) are used for some promising copy strings and base sets.
 
-* copy string: rs=ac:bd;t=d:abr;u=d:abrt
- * 01: ar,br,cr,dr
- * 02: ar,br,cr,dr as,bs,cs,ds at,bt,ct,dt
- * 03: ar,br,cr,dr art,brt,crt,drt
+* copy string: rs=ac:bd;t=d:abr;u=d:abrt 
+ <br>**01**: ar,br,cr,dr
+ <br>**02**: ar,br,cr,dr as,bs,cs,ds at,bt,ct,dt
+ <br>**03**: ar,br,cr,dr art,brt,crt,drt
  * 04: ar,br,cr,dr at,bt,ct,dt art,brt,crt,drt
  * 05: ar,br,cr,dr art,brt,ct,drt art,brt,crt,dt
  * 06: art,brt,crt,drt aru,bru,cru,dru
@@ -28,5 +28,5 @@ In this iteration a small set of four-variable inequalities in
   set where the normalized sum of coefficients is at most four
 * [it5](it5.txt) &nbsp;&ndash; new inequalities generated in this iteration
 * [result](result) &nbsp;&nbsp; new inequalities one by one
-* [vlp](vlp) &nbsp;&ndash' MOLP problems and their solutions
+* [vlp](vlp) &nbsp;&ndash; MOLP problems and their solutions
 
