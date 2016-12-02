@@ -425,6 +425,8 @@ sub find_copy {
             $info->{copy} = "rule$1"; $info->{id}="rule:";
         } elsif( $a=~/double rule ([^\s]+)\.txt for/){
             $info->{copy} = $1; $info->{id}="9drule:";
+        } elsif( $a=~/double rule ([^\s]+) for/){
+            $info->{copy} = $1; $info->{id}="9drule:";
         }
     }
     if($fname =~ /iter([2-9])/ ){

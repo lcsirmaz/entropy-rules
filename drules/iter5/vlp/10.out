@@ -1,0 +1,56 @@
+C copy string: rs=cd:ab;t=a:bcr;u=a:bcrt;ar,br,cr,dr;art,brt,crt,drt; ineq: base
+I    5.00] Elapsed: 5.00, vertices: 159, facets final: 31, pending: 4742, pool: 100
+I   10.01] Elapsed: 10.01, vertices: 378, facets final: 82, pending: 6214, pool: 99
+I   15.02] Elapsed: 15.02, vertices: 561, facets final: 165, pending: 6495, pool: 100
+I   20.02] Elapsed: 20.02, vertices: 754, facets final: 250, pending: 6382, pool: 100
+I   25.02] Elapsed: 25.02, vertices: 917, facets final: 372, pending: 6241, pool: 99
+I   30.02] Elapsed: 30.02, vertices: 1075, facets final: 493, pending: 6099, pool: 100
+I   35.02] Elapsed: 35.02, vertices: 1217, facets final: 627, pending: 6006, pool: 99
+I   40.02] Elapsed: 40.02, vertices: 1357, facets final: 778, pending: 5703, pool: 100
+I   45.02] Elapsed: 45.02, vertices: 1477, facets final: 961, pending: 5021, pool: 99
+I   50.02] Elapsed: 50.02, vertices: 1589, facets final: 1159, pending: 4574, pool: 100
+I   55.02] Elapsed: 55.02, vertices: 1679, facets final: 1395, pending: 4125, pool: 100
+I   60.02] Elapsed: 1:00, vertices: 1758, facets final: 1626, pending: 3713, pool: 100
+I   65.02] Elapsed: 1:05, vertices: 1817, facets final: 1893, pending: 3359, pool: 100
+I   70.02] Elapsed: 1:10, vertices: 1877, facets final: 2170, pending: 2951, pool: 100
+I   75.03] Elapsed: 1:15, vertices: 1931, facets final: 2468, pending: 2517, pool: 100
+I   80.03] Elapsed: 1:20, vertices: 1968, facets final: 2772, pending: 2159, pool: 99
+I   85.03] Elapsed: 1:25, vertices: 1996, facets final: 3094, pending: 1791, pool: 96
+I   90.05] Elapsed: 1:30, vertices: 2020, facets final: 3420, pending: 1442, pool: 96
+I   95.05] Elapsed: 1:35, vertices: 2045, facets final: 3720, pending: 1107, pool: 93
+I  100.05] Elapsed: 1:40, vertices: 2072, facets final: 4016, pending: 773, pool: 89
+Final facet 5230 is on the negative side of vertex 2092 (d=-7.89884e-08)
+I  105.05] Elapsed: 1:45, vertices: 2102, facets final: 4328, pending: 428, pool: 80
+I  110.06] Elapsed: 1:50, vertices: 2184, facets final: 4616, pending: 85, pool: 33
+I  111.03] Elapsed: 1:51, vertices: 2237, facets final: 4655, pending: 0
+
+--------------------------------
+Problem completed
+ name                    10.vlp
+ output                  vlp/10.res
+ rows, cols, objs        177, 1663, 10
+ vertices, facets        2237, 4655
+ total time              1:51
+--------------------------------
+Statistics
+LP:
+ oracle calls            7266
+   avg iterations/calls  185.03
+ total oracle time       1:35
+Combinatorics:
+ vertices added          2237
+ facets probed           15728
+ facets # max            6867
+ memory allocated        10.56M
+ instability warnings    1
+ storage expansion
+   vertices # / upto     18 / 2300
+   facets   # / upto     2 / 8188
+ facet manipulating
+   added avg / max       31.33 / 363.00
+   compressed            44
+ number of ridge tests
+   avg / max             151.65k / 1.16M
+--------------------------------
+Parameters with non-default values
+ VertexPoolSize=100

@@ -1,11 +1,10 @@
 Bootstrap method, iteration \#4
 ====================================
 
-Adding known 4-entropy inequalities next to the Shannon inequalities
-for a set of [double rules](../drules.txt) as identified by
-[Dougherty et al](http://arxiv.org/pdf/1104.3602v1).
-In this 
-iteration inequalities in [base19](base19.txt) are used. The MOLP problems and their
+In this iteration four-variable
+inequalities in [base19](base19.txt) are used for some of the copy strings
+and bases listed in [drules](../drules.txt).
+The MOLP problems and their
 solutions are in [vlp](vlp). New inequalities not superseded by those in 
 [ineq](ineq.txt) are extraced to the files [result](result)/NN.new.
 Finally, the minimal set of all generated inequalities is collected into
@@ -13,8 +12,8 @@ Finally, the minimal set of all generated inequalities is collected into
 
 #### Limitations
 
-Only those problems are considered which gave new inequalities in
-iteration \#3.
+Only those instances in [drules](../drules.txt) were processed
+which gave new inequalities in iteration \#3.
 
 #### Contents
 

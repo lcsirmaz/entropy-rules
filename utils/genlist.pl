@@ -72,11 +72,12 @@ sub add_file {
     while(<FILE>){
         chomp;
         next if(/^#/);
+        next if(/^$/);
         my @a=split(/,\s*/,$_);
         for my $i(0..-1+scalar @a){
             $a[$i] =~ s/\s//g;
         }
-        die "Wrong line in file $file" if(scalar @a < 12);
+        die "Wrong line in file $file\n" if(scalar @a < 12);
 #         if($a[13]){ print "superseded: $_\n"; }
 #         if(defined $supplist{$a[12]}){ print "in supplist: $_\n";}
         my $label="$base/$a[12]";

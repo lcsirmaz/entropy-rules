@@ -1,0 +1,36 @@
+C copy string: rs=cd:ab;t=a:bcr;u=a:bcrt;ast,bst,cst,dst; ineq: base.txt
+I    5.00] Elapsed: 5.00, vertices: 167, facets final: 102, pending: 1830, pool: 92
+I   10.00] Elapsed: 10.00, vertices: 294, facets final: 370, pending: 1141, pool: 82
+I   15.00] Elapsed: 15.00, vertices: 385, facets final: 748, pending: 586, pool: 54
+I   20.00] Elapsed: 20.00, vertices: 452, facets final: 1155, pending: 72, pool: 14
+I   20.74] Elapsed: 20.74, vertices: 477, facets final: 1203, pending: 0
+
+--------------------------------
+Problem completed
+ name                    12.vlp
+ output                  vlp/12.res
+ rows, cols, objs        177, 1583, 10
+ vertices, facets        477, 1203
+ total time              20.74
+--------------------------------
+Statistics
+LP:
+ oracle calls            2115
+   avg iterations/calls  141.23
+ total oracle time       19.92
+Combinatorics:
+ vertices added          477
+ facets probed           4910
+ facets # max            1994
+ memory allocated        2.88M
+ storage expansion
+   vertices # / upto     4 / 508
+   facets   # / upto     1 / 4092
+ facet manipulating
+   added avg / max       30.69 / 274.00
+   compressed            5
+ number of ridge tests
+   avg / max             39.95k / 254.89k
+--------------------------------
+Parameters with non-default values
+ VertexPoolSize=100
