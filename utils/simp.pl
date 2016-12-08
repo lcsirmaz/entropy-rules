@@ -130,7 +130,7 @@ sub swapped {
     }
     ## create all permutations with swappable inversions
     my $n=scalar @parts;
-    return if($n<2);
+    return $str if($n<2);
     my @perms=(); $perms[0]=[];
     for my $i(0..$n-1){$perms[0]->[$i]=$i;}
     my $tested=0;
@@ -157,13 +157,52 @@ sub swapped {
         $z=min_paste($z);
         if($z lt $minimal){ $minimal=$z; }
     }
+    $minimal =~ s/\(([a-z]+)\)/"(".stringsort($1).")"/ge;
     return $minimal;
+}
+
+##################################################################
+## apply the symmetry of the head of the copy string to the rest
+## parse the string as rst=abc:xy;<rest>, then swap [rst]<->[abc]
+## in <rest>.
+##
+sub swapthem { ## swap chars in $s1 to chars in $s2
+    my($s1,$s2,$str)=@_;
+    return $str if(length($s1)!=length($s2));
+    $str=uc($str);
+    for my $i(0..-1+length($s1)){
+        my $t=uc(substr($s1,$i,1)); my $u=substr($s2,$i,1);
+        $str =~ s/$t/$u/eg;
+        $t=uc(substr($s2,$i,1)); $u=substr($s1,$i,1);
+        $str =~ s/$t/$u/eg;
+    }
+    return lc($str);
+}
+sub permute_min {
+    my($str)=@_;
+    my $copy=$str; my $rest="";
+    if($str =~ /^([^;]+);(.+)$/) { $copy=$1; $rest=$2; }
+    my $this=swapped($str);
+    return $this if(!$rest);
+    if($copy =~ /^([a-z][a-z])\=([a-z][a-z]):/){
+        my $s1=$1; my $s2=$2;
+        my $that=swapped( $copy.";".swapthem($s1,$s2,$rest));
+        if($that lt $this){ return $that; }
+    } elsif($copy =~ /^([a-z])=([a-z]):/ ){
+        my $s1=$1; my $s2=$2;
+        if($str !~ /a/ || $str !~ /b/ || $str !~ /c/ || $str !~ /d/){
+           my $that=swapped($copy.";".swapthem($s1,$s2,$rest));
+           if($that lt $this){ return $that; }
+        }
+    }
+    return $this;
 }
 
 ##################################################################
 #
 if( scalar @ARGV != 1 ){ die "Please specify the copy string to normalize\n"; }
 
-print swapped($ARGV[0]), "\n";
+#print swapped($ARGV[0]), "\n";
+print permute_min($ARGV[0]),"\n";
 exit 0;
 

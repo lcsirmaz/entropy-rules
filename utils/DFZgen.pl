@@ -13,7 +13,7 @@ sub usage {
     exit 1;
 }
 
-my $rawfile = "DFZ/DFZ.txt";
+my $rawfile = "DFZ/orig.txt";
 
 my @list=();
 
@@ -24,7 +24,7 @@ if(scalar @ARGV!=1 || !$ARGV[0]){ usage(); }
 open(FILE,$ARGV[0])|| die "Cennot open inequality file $ARGV[0] for reading\n";
 while(<FILE>){
     next if(/^#/);
-    next if(!/ (dfz:\d+:\d+)$/);
+    next if(!/ dfz:\d+:(\d+)$/);
     $supplist{$1}=1; $cnt++;
 }
 close(FILE);
@@ -37,12 +37,13 @@ if($cnt==0){
 open(FILE,$rawfile) || die "Cannot open file $rawfile\n";
 while(<FILE>){
     chomp;
-    next if(/^#/);
+    next if(!/^\s*[1-9]/);
     my @a=split(/,\s*/,$_);
     for my $i(0..-1+scalar @a){
         $a[$i] =~ s/\s//g;
     }
-    if(!defined $supplist{$a[12]}){ $a[13]='S'; }
+    my ($n)= $a[12] =~ /dfz:\d+:(\d+)/;
+    if(!defined $supplist{$n}){ $a[13]='S'; }
     push @list,\@a;
 }
 close(FILE);
@@ -90,7 +91,7 @@ print OUT1
 #                                                       #
 #########################################################
 #
-# Generated automatically from DFZ.txt. Superseded inequalities
+# Generated automatically from orig.txt. Superseded inequalities
 # are marked by *
 #
 #index natural coefficients                normalized copy string
