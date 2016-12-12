@@ -3,7 +3,8 @@ Bootstrap method, iteration \#5
 
 In this iteration a small set of four-variable inequalities in 
 [base](base.txt) are used for some promising 
-[copy strings and base sets](rules.txt).
+[copy strings and base sets](rules.txt). Cases marked by \* yield no
+new inequalities.
 
 #### Contents
 
