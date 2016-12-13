@@ -1,4 +1,4 @@
-Applying single rules, iteration \#3
+Applying single rules, iteration \#4
 ====================================
 
 In this iteration [single rules](../rules.txt) are applied to entropy 
@@ -6,7 +6,7 @@ inequalities in [base40](base40.txt). The MOLP problems and their
 solutions are in [vlp](vlp). New inequalities not superseded by those in 
 [ineq](ineq.txt) are extraced to the files [result](result)/NN.new.
 Finally, the minimal set of all generated inequalities is collected into
-[it3](it3.txt).
+[it4](it4.txt).
 
 #### Contents
 
