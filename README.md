@@ -13,8 +13,10 @@ by [R. Dougherty et al](http://arxiv.org/pdf/1104.3602v1).
 #### Content
 
 * [DESCRIPTION](DESCRIPTION.md) &nbsp;&ndash; how entropy inequalities are represented
-* [latest](latest.txt) &nbsp;&ndash; the latest collection of 4-variable
-  entropy inequalities
+* [latest](latest.txt) &nbsp;&ndash; latest collection of 4-variable
+entropy inequalities
+* [latest-normalized](latest-normalized.txt) &nbsp;&ndash; latest collection
+of 4-variable inequalities in normalized form
 * [ineqs](ineqs) &nbsp;&ndash; sets of four variable inequalities at different stages
 * [DFZ](DFZ) &nbsp;&ndash; Dougherty-Freilig-Zeger list of 214 inequalities
 * [copy](copy) &nbsp;&ndash; description and data for copy method
