@@ -1,0 +1,63 @@
+C applying rule 21.txt for base35.txt
+I    5.00] Elapsed: 5.00, vertices: 338, facets final: 224, pending: 7101, pool: 194
+I   10.01] Elapsed: 10.01, vertices: 542, facets final: 372, pending: 9466, pool: 197
+I   15.03] Elapsed: 15.03, vertices: 708, facets final: 451, pending: 12810, pool: 199
+I   20.05] Elapsed: 20.05, vertices: 846, facets final: 508, pending: 14493, pool: 200
+I   25.06] Elapsed: 25.06, vertices: 977, facets final: 571, pending: 15422, pool: 200
+I   30.07] Elapsed: 30.07, vertices: 1096, facets final: 646, pending: 16189, pool: 200
+I   35.07] Elapsed: 35.07, vertices: 1196, facets final: 697, pending: 18068, pool: 200
+I   40.09] Elapsed: 40.09, vertices: 1291, facets final: 747, pending: 19022, pool: 200
+I   45.12] Elapsed: 45.12, vertices: 1380, facets final: 820, pending: 19287, pool: 200
+I   50.16] Elapsed: 50.16, vertices: 1474, facets final: 902, pending: 18785, pool: 200
+I   55.18] Elapsed: 55.18, vertices: 1572, facets final: 1022, pending: 18435, pool: 200
+I   60.20] Elapsed: 1:00, vertices: 1671, facets final: 1149, pending: 17244, pool: 200
+I   65.20] Elapsed: 1:05, vertices: 1772, facets final: 1373, pending: 16115, pool: 200
+I   70.21] Elapsed: 1:10, vertices: 1879, facets final: 1584, pending: 15515, pool: 200
+I   75.21] Elapsed: 1:15, vertices: 1987, facets final: 1850, pending: 14742, pool: 199
+I   80.21] Elapsed: 1:20, vertices: 2088, facets final: 2229, pending: 14151, pool: 200
+I   85.22] Elapsed: 1:25, vertices: 2193, facets final: 2698, pending: 13381, pool: 200
+I   90.25] Elapsed: 1:30, vertices: 2287, facets final: 3330, pending: 12739, pool: 199
+I   95.25] Elapsed: 1:35, vertices: 2371, facets final: 4073, pending: 11586, pool: 200
+I  100.25] Elapsed: 1:40, vertices: 2448, facets final: 5025, pending: 10784, pool: 198
+I  105.26] Elapsed: 1:45, vertices: 2520, facets final: 6188, pending: 9438, pool: 197
+I  110.26] Elapsed: 1:50, vertices: 2586, facets final: 7535, pending: 8287, pool: 166
+I  115.26] Elapsed: 1:55, vertices: 2647, facets final: 8910, pending: 7065, pool: 158
+I  120.26] Elapsed: 2:00, vertices: 2707, facets final: 10393, pending: 5605, pool: 144
+I  125.26] Elapsed: 2:05, vertices: 2766, facets final: 11952, pending: 3992, pool: 131
+I  130.26] Elapsed: 2:10, vertices: 2838, facets final: 13560, pending: 2497, pool: 83
+I  135.26] Elapsed: 2:15, vertices: 2900, facets final: 15419, pending: 719, pool: 50
+I  138.16] Elapsed: 2:18, vertices: 3030, facets final: 16117, pending: 0
+
+--------------------------------
+Problem completed
+ name                    21.vlp
+ output                  vlp/21.res
+ rows, cols, objs        12, 4408, 10
+ vertices, facets        3030, 16117
+ total time              2:18
+--------------------------------
+Statistics
+LP:
+ oracle calls            20521
+   avg iterations/calls  5.84
+ total oracle time       43.42
+Combinatorics:
+ vertices added          3030
+ facets probed           43935
+ facets # max            20445
+ memory allocated        26.08M
+ storage expansion
+   vertices # / upto     24 / 3068
+   facets   # / upto     5 / 20476
+ facet manipulating
+   added avg / max       62.89 / 936.00
+   compressed            176
+ number of ridge tests
+   avg / max             743.45k / 12.55M
+--------------------------------
+Parameters with non-default values
+ ExactFacetEq=1
+ VertexPoolSize=200
+ RecalculateFacets=40
+ PolytopeEps=4e-09
+ LineqEps=1e-07

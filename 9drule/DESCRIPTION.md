@@ -11,16 +11,16 @@ following ruleset:
     [1, , , , , , , , , , ] + [ , , , , , , , , , , ] <= [1, ,1,1, , , , , , , ]  a
     [ , ,1, , , , , , , , ] + [ , , , , , , , , , , ] <= [ , ,1, , , , , , , , ]  c
     [ , , ,1, , , , , , , ] + [ , , , , , , , , , , ] <= [ , , ,1, , , , , , , ]  d
-    [ , , , ,1, , . , ,1, ] + [ , , , , , , , , , , ] <= [ , ,1,1,1, , , , ,1, ]  h
-    [ , , , . ,1, , , , , ] + [ , , , , , , , , , , ] <= [ , , , , ,1, , , , , ]  f
+    [ , , , ,1, , , , ,1, ] + [ , , , , , , , , , , ] <= [ , ,1,1,1, , , , ,1, ]  h
+    [ , , , , ,1, , , , , ] + [ , , , , , , , , , , ] <= [ , , , , ,1, , , , , ]  f
     [ , , , , , ,1, , , , ] + [ , , , , , , , , , , ] <= [ , , , , , ,1, , , , ]  g
     [ , , , , , , ,1, , , ] + [ , , , , , , , , , , ] <= [ , , ,1, , , ,1, , , ]  i
     [ , , , , , , , ,1, , ] + [ , , , , , , , , , , ] <= [ , ,1, , , , , ,1, , ]  j
     [ , , , , , , , , , , ] + [1, , , , , , , , , , ] <= [1, ,1,1, , , , , , , ]  a'
-    [ , , , , , , . , , , ] + [ ,1, , , , , , , ,1, ] <= [ ,1,1,1, , , , , ,1, ]  h'
+    [ , , , , , , , , , , ] + [ ,1, , , , , , , ,1, ] <= [ ,1,1,1, , , , , ,1, ]  h'
     [ , , , , , , , , , , ] + [ , ,1, , , , , , , , ] <= [ , ,1, , , , , , , , ]  c'
     [ , , , , , , , , , , ] + [ , , ,1, , , , , , , ] <= [ , , ,1, , , , , , , ]  d'
-    [ , , , . , , , , , , ] + [ , , , , ,1, , , , , ] <= [ , , , , ,1, , , , , ]  f'
+    [ , , , , , , , , , , ] + [ , , , , ,1, , , , , ] <= [ , , , , ,1, , , , , ]  f'
     [ , , , , , , , , , , ] + [ , , , , , ,1, , , , ] <= [ , , , , , ,1, , , , ]  g'
     [ , , , , , , , , , , ] + [ , , , , , , ,1, , , ] <= [ , , ,1, , , ,1, , , ]  i'
     [ , , , , , , , , , , ] + [ , , , , , , , ,1, , ] <= [ , ,1, , , , , ,1, , ]  j'
@@ -34,14 +34,13 @@ The meaning of such a ruleset is the following:
 > coefficients of two valid 4-variable entropy inequality, then so does the
 > same combination of the right hand side vectors.
 
-The combining coefficients used by Dougherty and al are indicated next to
-the rules.  The only rule in the above ruleset which uses both inequalities
-is the last one marked by `z`. Due to its hight computational complexity,
-the complete ruleset has been determined for the original
-[Rule \[5\]](DFZ/05.txt), [Rule \[6\]](DFZ/06.txt), [Rule
-\[8\]](DFZ/08.txt), and [Rule \[13\]](DFZ/13.txt) only. 
-The complete ruleset for Rule [6] has 53 lines, out of which 17 uses both
-inequalities.
+The combining coefficients used in the Dougherty and al paper are indicated
+next to the rules.  The only rule in the above ruleset which uses both
+inequalities is the last one marked by `z`.  Due to its high computational
+complexity, such &quot;unabridged&quot; complete ruleset has been determined
+for a couple of cases only as reported in the [DFZ](DFZ) directory.
+The complete ruleset for Rule [6] quoted above actually has 53 lines (rather
+than 17), out of which 17 uses both inequalities.
 
 ### Creating a double ruleset
 
@@ -95,18 +94,18 @@ generate, solve, and then extract the complete ruleset use the commands
     # extract the complete ruleset from the result
     utils/minrule.pl <vlp-result> <ruleset>
 
-This procedure yielded the complete rulesets for DFZ Rules reported above.
+This procedure yielded the &quot;unabridged&quot; complete rulesets for DFZ Rules reported above.
 
 ### Scaled down rulesets 
 
 MOLP problems with 33 objectives are typically intractable and can be solved
-in very special cases only. To reduce the complexity, *scaled down* rulesets
-are considered, where the last two natural coordinates &ndash; coordinates
-given by **I**(c;d) and **I**(a;b | c,d) &ndash; are set to
-zero. Using such a ruleset means that the method is restricted to use and
-generate entropy inequalities where the last two coordinates are zero. As
-presently no known 4-variable entropy inequality has any of these
-coefficients non-zero, this condition doesn't seem to be overly
+in very special cases only.  To reduce the complexity, *scaled down*
+rulesets are considered, where the last two natural coordinates &ndash;
+coordinates given by **I**(c;d) and **I**(a;b | c,d) &ndash; are assumed to
+be zero.  Using such a ruleset means that the method is restricted to use
+and generate entropy inequalities where coefficients at these coordinates
+are zero.  As presently no known 4-variable entropy inequality has any of
+these coefficients non-zero, this condition doesn't seem to be overly
 restrictive.
 
 The theory and methodology of such scaled down ruleset is the same as
@@ -127,14 +126,12 @@ When applying a reduced ruleset to a set of known inequalities, inequalities
 with the last two coefficients equal to zero are considered only. The
 utility `9dodrule.pl` creates a MOLP problem whose solutions are the minimal
 (not superseded) instances of applying the rule to the given inequalities.
-It allows filtering for inequalities whose coefficients below a certain
+It allows filtering for inequalities whose coefficients are below a certain
 bound. From the solution of the MOLP problem inequalities that are really
 new ones can be extracted by the `checkall.pl` utility.
 
     # apply a reduced rule to a set of inequalities
     utils/9dodrule.pl <ineq-file> <rule-file> <vlp-file>
-    # same, but filter out inequalities with coefficients above <bound>
-    utils/9dodrule.pl -t <bound> <ineq-file> <rule-file> <vlp-file>
     # solve the MOLP
     inner <vlp-file> -o <vlp-resfile>
     # extract inequalities not superseded by those in <full-ineq-file>

@@ -1,0 +1,46 @@
+C applying rule 20.txt for base35.txt
+I    5.00] Elapsed: 5.00, vertices: 354, facets final: 899, pending: 4675, pool: 181
+I   10.00] Elapsed: 10.00, vertices: 560, facets final: 1594, pending: 6237, pool: 188
+I   15.00] Elapsed: 15.00, vertices: 710, facets final: 2505, pending: 6759, pool: 178
+I   20.00] Elapsed: 20.00, vertices: 831, facets final: 3458, pending: 7734, pool: 193
+I   25.00] Elapsed: 25.00, vertices: 942, facets final: 4394, pending: 8150, pool: 195
+I   30.01] Elapsed: 30.01, vertices: 1040, facets final: 5434, pending: 7993, pool: 164
+I   35.01] Elapsed: 35.01, vertices: 1120, facets final: 6804, pending: 6997, pool: 131
+I   40.01] Elapsed: 40.01, vertices: 1203, facets final: 8465, pending: 5847, pool: 75
+I   45.01] Elapsed: 45.01, vertices: 1262, facets final: 10473, pending: 4101, pool: 37
+I   50.01] Elapsed: 50.01, vertices: 1301, facets final: 12632, pending: 2075, pool: 22
+I   54.68] Elapsed: 54.68, vertices: 1336, facets final: 14810, pending: 0
+
+--------------------------------
+Problem completed
+ name                    20.vlp
+ output                  vlp/20.res
+ rows, cols, objs        12, 4393, 10
+ vertices, facets        1336, 14810
+ total time              54.68
+--------------------------------
+Statistics
+LP:
+ oracle calls            17408
+   avg iterations/calls  6.10
+ total oracle time       36.61
+Combinatorics:
+ vertices added          1336
+ facets probed           24455
+ facets # max            14811
+ memory allocated        11.99M
+ storage expansion
+   vertices # / upto     11 / 1404
+   facets   # / upto     4 / 16380
+ facet manipulating
+   added avg / max       36.55 / 176.00
+   compressed            43
+ number of ridge tests
+   avg / max             167.84k / 1.40M
+--------------------------------
+Parameters with non-default values
+ ExactFacetEq=1
+ VertexPoolSize=200
+ RecalculateFacets=40
+ PolytopeEps=4e-09
+ LineqEps=1e-07
