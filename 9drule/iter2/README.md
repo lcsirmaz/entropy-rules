@@ -3,7 +3,7 @@ Scaled down double rules, iteration \#2
 
 In this iteration [scaled down double rules](../drules.txt) are applied to 
 entropy inequalities generated at the [previous
-iteration](../iter1/it1.txt). The MOLP problems and their
+iteration](../iter1/it1.txt) chopped at 30. The MOLP problems and their
 solutions are in [vlp](vlp). New inequalities 
 are extraced to the files [result](result)/NN.new.
 Finally, the minimal set with all newly generated inequalities is collected into
