@@ -147,8 +147,8 @@ the point with coordinates
 where the non-negative values &alpha;, &beta;, &gamma;, &delta; are defined as
 
 > &alpha; = - h<sub>1</sub><br>
-> 2&beta; = ( h<sub>2</sub> + h<sub>5</sub>)/2 +  h<sub>10</sub><br>
-> &gamma; = ( h<sub>8</sub> + h<sub>9</sub>)/2 +  h<sub>11</sub><br>
+> 2&beta; = ( h<sub>2</sub> + h<sub>5</sub>)/2 +  h<sub>10</sub>/2<br>
+> &gamma; = ( h<sub>8</sub> + h<sub>9</sub>)/2 +  h<sub>11</sub>/2<br>
 > &delta; = ( h<sub>3</sub> + h<sub>4</sub> + h<sub>6</sub> + h<sub>7</sub>)/4<br>
 
 The symmetric central core or the almost entropy region defined by points in (1)
