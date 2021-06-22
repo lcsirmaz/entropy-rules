@@ -1,0 +1,49 @@
+C copy string: rs=cd:ab;tu=ac:bds;v=a:dst
+Using 2 threads
+I    5.15] Elapsed: 5.15, vertices: 12, facets final: 12, pending: 52
+I   10.64] Elapsed: 10.64, vertices: 20, facets final: 27, pending: 83
+I   15.88] Elapsed: 15.88, vertices: 23, facets final: 43, pending: 82, pool: 5
+I   21.00] Elapsed: 21.00, vertices: 28, facets final: 56, pending: 98, pool: 15
+I   26.07] Elapsed: 26.07, vertices: 38, facets final: 68, pending: 122, pool: 18
+I   31.22] Elapsed: 31.22, vertices: 49, facets final: 84, pending: 136, pool: 19
+I   36.30] Elapsed: 36.30, vertices: 67, facets final: 99, pending: 127, pool: 10
+I   41.32] Elapsed: 41.32, vertices: 80, facets final: 117, pending: 104, pool: 7
+I   46.46] Elapsed: 46.46, vertices: 87, facets final: 137, pending: 76, pool: 8
+I   51.46] Elapsed: 51.46, vertices: 98, facets final: 155, pending: 52, pool: 8
+I   56.66] Elapsed: 56.66, vertices: 106, facets final: 180, pending: 26, pool: 4
+I   61.71] Elapsed: 1:02, vertices: 123, facets final: 199, pending: 20, pool: 6
+I   64.43] Elapsed: 1:04, vertices: 132, facets final: 217, pending: 0
+
+--------------------------------
+Problem completed
+ name                    163.vlp
+ output                  
+   vertices              vlp/163.res
+ rows, cols, objs        387, 4112, 10
+ vertices, facets        132, 217
+ threads used            2
+ total time              1:04
+--------------------------------
+Statistics
+LP:
+ oracle calls            419
+   avg iterations/calls  740.15
+ total oracle time       1:04
+Combinatorics:
+ vertices added          132
+ facets probed           1648
+ facets # max            230
+ memory allocated        1.69M
+ storage expansion
+   vertices # / upto     2 / 252
+   facets   # / upto     1 / 4092
+ facet manipulating
+   added avg / max       7.68 / 30.00
+   compressed            0
+ number of ridge tests
+   avg / max             970.62 / 3.02k
+--------------------------------
+Parameters with non-default values
+ OracleItLimit=300000
+ OracleTimeLimit=180
+ VertexPoolSize=30

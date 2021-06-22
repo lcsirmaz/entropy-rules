@@ -257,9 +257,7 @@ sub makeEQ {
 sub paste { # rst = (ab)cd : uv
     my($info,$dsc)=@_;
     if(! defined $info->{vars} ){$info->{vars} = 0xf; }
-    if(! defined $info->{trans} ){$info->{trans} = (); 
-        $info->{tight}=1; # it is tight so far 
-    }
+    if(! defined $info->{trans} ){$info->{trans} = (); }
     if(! defined $info->{paste} ){$info->{paste} = (); }
     if($dsc !~ /^\s*([rstuvw]+)=([[abcdrstuvw\(\)]+):([abcdrstuvw]*)\s*$/ ){
         return "copy: wrong syntax ($dsc)";
@@ -285,7 +283,7 @@ sub paste { # rst = (ab)cd : uv
         if( $old =~ s/^([abcdrstuvw])// ){
             $r=cv($1);
         } elsif( $old =~ s/^\(([abcdrstuvw]+)\)// ){
-            $r=cv($1); $info->{tight}=0; # not tight anymore
+            $r=cv($1);
         } else {
            return "copy: syntax of copy variable ($dsc)";
         }
@@ -313,6 +311,7 @@ sub paste { # rst = (ab)cd : uv
            $i<<=1;
         }
         for my $AA (0..$A-1){
+           next if($AA!=0 && $Y != $Z);
            ($i,$vv,$rr)=(1,$r,$v);
            for my $d(@defs){
                 if($AA&$i){

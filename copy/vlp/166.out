@@ -1,0 +1,53 @@
+C copy string: rs=cd:ab;tu=ac:bds;v=r:adst
+Using 2 threads
+I    5.14] Elapsed: 5.14, vertices: 10, facets final: 15, pending: 63
+I   10.42] Elapsed: 10.42, vertices: 20, facets final: 22, pending: 129
+I   15.66] Elapsed: 15.66, vertices: 26, facets final: 34, pending: 171, pool: 15
+I   20.80] Elapsed: 20.80, vertices: 35, facets final: 42, pending: 190, pool: 25
+I   25.86] Elapsed: 25.86, vertices: 46, facets final: 52, pending: 206, pool: 28
+I   31.00] Elapsed: 31.00, vertices: 58, facets final: 70, pending: 216, pool: 26
+I   36.09] Elapsed: 36.09, vertices: 69, facets final: 93, pending: 192, pool: 22
+I   41.14] Elapsed: 41.14, vertices: 77, facets final: 114, pending: 147, pool: 22
+I   46.23] Elapsed: 46.23, vertices: 84, facets final: 131, pending: 140, pool: 21
+I   51.39] Elapsed: 51.39, vertices: 97, facets final: 147, pending: 126, pool: 15
+I   56.42] Elapsed: 56.42, vertices: 107, facets final: 169, pending: 96, pool: 12
+I   61.66] Elapsed: 1:02, vertices: 115, facets final: 189, pending: 111, pool: 7
+I   66.73] Elapsed: 1:07, vertices: 119, facets final: 197, pending: 105, pool: 9
+I   71.75] Elapsed: 1:12, vertices: 129, facets final: 216, pending: 89, pool: 7
+I   76.91] Elapsed: 1:17, vertices: 136, facets final: 243, pending: 53, pool: 3
+I   82.07] Elapsed: 1:22, vertices: 143, facets final: 266, pending: 17, pool: 1
+I   84.99] Elapsed: 1:25, vertices: 144, facets final: 282, pending: 0
+
+--------------------------------
+Problem completed
+ name                    166.vlp
+ output                  
+   vertices              vlp/166.res
+ rows, cols, objs        395, 4156, 10
+ vertices, facets        144, 282
+ threads used            2
+ total time              1:25
+--------------------------------
+Statistics
+LP:
+ oracle calls            494
+   avg iterations/calls  783.39
+ total oracle time       1:25
+Combinatorics:
+ vertices added          144
+ facets probed           1597
+ facets # max            306
+ memory allocated        1.69M
+ storage expansion
+   vertices # / upto     2 / 252
+   facets   # / upto     1 / 4092
+ facet manipulating
+   added avg / max       10.94 / 44.00
+   compressed            0
+ number of ridge tests
+   avg / max             1.81k / 5.58k
+--------------------------------
+Parameters with non-default values
+ OracleItLimit=300000
+ OracleTimeLimit=180
+ VertexPoolSize=30

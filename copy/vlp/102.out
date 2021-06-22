@@ -1,0 +1,39 @@
+C copy string: rs=ac:bd;t=d:abr;uv=cd:ab
+Using 2 threads
+I    5.09] Elapsed: 5.09, vertices: 12, facets final: 19, pending: 35
+I   10.13] Elapsed: 10.13, vertices: 21, facets final: 44, pending: 25, pool: 3
+I   14.45] Elapsed: 14.45, vertices: 32, facets final: 74, pending: 0
+
+--------------------------------
+Problem completed
+ name                    102.vlp
+ output                  
+   vertices              vlp/102.res
+ rows, cols, objs        351, 3800, 10
+ vertices, facets        32, 74
+ threads used            2
+ total time              14.45
+--------------------------------
+Statistics
+LP:
+ oracle calls            110
+   avg iterations/calls  670.55
+ total oracle time       14.45
+Combinatorics:
+ vertices added          32
+ facets probed           380
+ facets # max            80
+ memory allocated        1.40M
+ storage expansion
+   vertices # / upto     1 / 124
+   facets   # / upto     1 / 4092
+ facet manipulating
+   added avg / max       6.87 / 17.00
+   compressed            0
+ number of ridge tests
+   avg / max             179.32 / 406.00
+--------------------------------
+Parameters with non-default values
+ OracleItLimit=300000
+ OracleTimeLimit=180
+ VertexPoolSize=30

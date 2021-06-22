@@ -1,0 +1,52 @@
+C copy string: rs=ac:bd;tu=cd:abs;v=b:adru
+Using 2 threads
+I    5.01] Elapsed: 5.01, vertices: 7, facets final: 14, pending: 61
+I   10.20] Elapsed: 10.20, vertices: 22, facets final: 25, pending: 280, pool: 6
+I   15.37] Elapsed: 15.37, vertices: 28, facets final: 42, pending: 322, pool: 14
+I   20.49] Elapsed: 20.49, vertices: 38, facets final: 69, pending: 355, pool: 14
+I   25.65] Elapsed: 25.65, vertices: 45, facets final: 101, pending: 296, pool: 16
+I   30.83] Elapsed: 30.83, vertices: 55, facets final: 132, pending: 351, pool: 14
+I   35.89] Elapsed: 35.89, vertices: 68, facets final: 162, pending: 364, pool: 7
+I   40.96] Elapsed: 40.96, vertices: 70, facets final: 203, pending: 314, pool: 6
+I   46.21] Elapsed: 46.21, vertices: 75, facets final: 241, pending: 314, pool: 9
+I   51.34] Elapsed: 51.34, vertices: 77, facets final: 288, pending: 263, pool: 17
+I   56.48] Elapsed: 56.48, vertices: 92, facets final: 334, pending: 199, pool: 13
+I   61.55] Elapsed: 1:02, vertices: 103, facets final: 383, pending: 144, pool: 9
+I   66.55] Elapsed: 1:07, vertices: 110, facets final: 423, pending: 112, pool: 5
+I   71.63] Elapsed: 1:12, vertices: 115, facets final: 469, pending: 63, pool: 3
+I   76.69] Elapsed: 1:17, vertices: 129, facets final: 514, pending: 23, pool: 1
+I   78.63] Elapsed: 1:19, vertices: 131, facets final: 536, pending: 0
+
+--------------------------------
+Problem completed
+ name                    128.vlp
+ output                  
+   vertices              vlp/128.res
+ rows, cols, objs        395, 4160, 10
+ vertices, facets        131, 536
+ threads used            2
+ total time              1:19
+--------------------------------
+Statistics
+LP:
+ oracle calls            734
+   avg iterations/calls  506.16
+ total oracle time       1:19
+Combinatorics:
+ vertices added          131
+ facets probed           1918
+ facets # max            558
+ memory allocated        1.69M
+ storage expansion
+   vertices # / upto     2 / 252
+   facets   # / upto     1 / 4092
+ facet manipulating
+   added avg / max       23.43 / 111.00
+   compressed            0
+ number of ridge tests
+   avg / max             6.07k / 29.88k
+--------------------------------
+Parameters with non-default values
+ OracleItLimit=300000
+ OracleTimeLimit=180
+ VertexPoolSize=30
