@@ -52,7 +52,7 @@ together exhaust the pool of all random variables. When working with
     tu=cr:ab
 
 over the pool *a,b,c,d,r,s* the copyed variables *cr* and the over variables
-*ab* do not exhaust the pool, and in this case *tu* and $cr* cannot be
+*ab* do not exhaust the pool, and in this case *tu* and *cr* cannot be
 assumed to be symmetric.
 
 The collected equalities together with
