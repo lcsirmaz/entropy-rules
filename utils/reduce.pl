@@ -1,29 +1,34 @@
 #!/usr/bin/perl -w
 ##
-## generate a vlp file from a copy string
+## reduce the LP instance from a copy string
 ##
 ## arguments: <copy_string> <filename>
 
 use strict;
 
 sub print_usage {
-    print "Usage: mkvlp.pl  [fx] <copy string> <filename>\n",
-          "   f -- full (10), default\n",
-          "   x -- truncated to 8\n";
+    print "Usage: mkvlp.pl  [fxA] <copy string> <filename>\n",
+          "   f       -- full (10), default\n",
+          "   x       -- truncated to 8\n",
+          "   A<iter> -- reduce the matrix\n";
     exit 1;
 }
 
 
+## use Math::Gauss;
+
 if(scalar @ARGV ==0 || $ARGV[0] =~ /^\-[\-]?h/ ){ print_usage(); }
 
-my ($full,$paste,$file)=("","","");
-if($ARGV[0] =~ /^[\-]?([xf])/ ){
+my ($full,$paste,$file,$reduce)=("","","",0);
+if($ARGV[0] =~ /^[\-]?([xfA\d]+)/ ){
     $full=$1; $paste=$ARGV[1]; $file=$ARGV[2];
 } else {
     $paste=$ARGV[0]; $file=$ARGV[1];
 }
+if($full =~ s/A(\d+)//){ $reduce=$1;}
+elsif($full =~ s/A//){ $reduce=1; }
 $full="f" if(!$full);
-$full=substr($full,0,1);
+if(length($full)!=1){ print "Error in first argument ($full)\n"; print_usage(); }
 $full = $full eq "f" ? 10 : $full eq "x" ? 8 : 0;
 if(!$paste || !$file || !$full ){ print_usage(); }
 
@@ -156,6 +161,141 @@ sub _generate_ineqs {
             }
         }
     }
+}
+
+# get a random direction, compute maximal and minimal value, and
+#  mark those columns where it was taken. Return 0,1,2 depending on
+#  whether they were marked newly. 
+# For speed moved to the C utility program "markindep".
+# sub try_random_direction {
+#    my($Q,$cols,$rows)=@_;
+#    my @x=(0.0) x $rows;
+#    for my $i(0 .. $rows-1){ $x[$i]=Math::Gauss::inv_cdf(rand(1)); }
+#    my ($minv,$maxv,$minidx,$maxidx)=(0,0,-1,-1);
+#    for my $col(0 .. $cols-1){
+#        my $E=$Q->[$col]->{coeffs};
+#        my $v=0.0;
+#        for my $j(0 .. $rows-1){ $v+=$E->[$j]*$x[$j]; }
+#        if($minidx<0){$minv=$v; $maxv=$v; $minidx=$col; $maxidx=$col; }
+#        elsif($v<$minv){$minv=$v; $minidx=$col; }
+#        elsif($v>$maxv){$maxv=$v; $maxidx=$col; }
+#    }
+#    my $ret=0;
+#    if(! defined $Q->[$minidx]->{hull}){ $ret++; $Q->[$minidx]->{hull}=1; }
+#    if(! defined $Q->[$maxidx]->{hull}){ $ret++; $Q->[$maxidx]->{hull}=1; }
+#    return $ret;
+#}
+
+sub _reduce_matrix {
+## $info->{ineq} = [ coeffs => [...], desc => [A,i,j] }
+##   each coeff array has length $info->{rows}
+##
+## coeffs->{hull} = 1 if it is on the hull
+## coeffs->{sup} = 1  if it is inside
+##
+    my($info)=@_;
+    if($reduce<=0){ return; }
+    my $Q=$info->{ineq};
+    my $size = scalar @$Q; my $rows=$info->{rows};
+    my $cols=$size; # how many columns are left
+    # a quick and dirty method to avoid probing certain columns
+    #   take a random vector; for each column compute the inner product
+    #   and take the minimal / maximal value. Where it is taken those
+    #   columns are on the convex hull, thus no need to check them.
+    # do it $many times, if one is a success, then repeat
+    my $fname=`mktemp -t -q mkvlXXXX.spx`; chomp $fname;
+    my $resname=$fname; $resname =~ s/\.spx$/\.res/;
+    open(SPX,">",$fname)||die "Cannot open $fname for writing\n";
+      print SPX "",$cols,"\n",$rows,"\n";
+      for my $j(0 .. $rows-1){
+        for my $col(0 .. $size-1){
+          print SPX $Q->[$col]->{coeffs}->[$j],"\n";
+        }
+      }
+    close(SPX);
+    if($reduce<=1){$reduce=100; }
+    system("markindep", "-$reduce",$fname, $resname);
+    open(RES,"<",$resname) || die "markindep does not work for $fname\n";
+      for my $col(0 .. $size-1){
+         my $l=<RES>; if($l=~ /^1/){ $Q->[$col]->{hull}=1; }
+         elsif($l !~ /^0/ ){ die "wrong result in $resname\n"; }
+      }
+    close(RES);
+    unlink $resname;
+#    print "file $fname\n"; exit 99;
+#    my $succ=1; while($succ>0){
+#print "starting loop (100)\n";
+#       $succ=0; for (1 .. 100){$succ+=try_random_direction($Q,$cols,$rows); 
+#         }
+#       print "succ=$succ\n";
+#    }
+    print "starting ...\n"; my $iter=1;
+    if(-e "/tmp/sofar.txt"){
+       print "Reading /tmp/sofar.txt\n"; my $idx=0;
+       open(XXX,"<","/tmp/sofar.txt");
+         while(<XXX>){
+            if($idx>=$size){ die "wrong number of data in /tmp/sofar.txt\n"; }
+            if(/^2/){ $Q->[$idx]->{hull}=1; }
+            elsif(/^1/){ $Q->[$idx]->{sup}=1; $cols--; }
+            elsif(!/^0/){ die "Wrong content in /tmp/sofar.txt\n"; }
+            $idx++;
+         }
+       close(XXX);
+    }
+    for my $idx(0 .. $size-1){
+        next if(defined $Q->[$idx]->{hull});
+        next if(defined $Q->[$idx]->{sup});
+        # check if column $idx is the consequence of the others
+        # use the gspx utility program
+        # we have $cols many columns left; one less for this inequality
+        open(SPX,">",$fname)||die "Cannot open $fname for writing\n";
+          #cols, rows, V
+          print SPX "",$cols-1,"\n",$rows,"\n",0,"\n";
+          #matrix, forst row, second row, ... last row
+          for my $j(0 .. $rows-1){
+             for my $col(0 .. $size-1){
+                 next if($Q->[$col]->{sup});
+                 next if($col==$idx); # this is the RHS
+                 my $v=$Q->[$col]->{coeffs}->[$j];
+                 print SPX $v>=0?"  ":" ",$v;
+             }
+             print SPX "\n";
+          }
+          # right hand side
+          for my $j(0 .. $rows-1){
+             print SPX $Q->[$idx]->{coeffs}->[$j],"\n";
+          }
+        close(SPX); my $try=0; my $yes=0;
+        while($try<4){
+          $try++;
+          system("gspx","-x",$fname,$resname);
+          open(RES,"<",$resname) || next;
+          $yes=(<RES> =~ /V=XXXX/) ? 0 : 1;
+          close(RES);
+          $try=0;
+          last;
+        }
+        if($try>=4){die "no result for LP $fname\n";}
+        unlink $resname;
+        if($yes){$Q->[$idx]->{sup}=1; $cols--; }
+        else{ $Q->[$idx]->{hull}=1; }
+        $iter++;
+        if($iter%40==0){ 
+           print "done ",$idx+1," out of $size, reduced to $cols\n"; 
+           ## save result so far
+           open(XXX,">","/tmp/sofar.txt")||die "Cannot open result file\n";
+             for my $i(0 .. $size-1){
+                print XXX $Q->[$i]->{hull} ? 2 : $Q->[$i]->{sup} ? 1 : 0,"\n";
+             }
+           close(XXX);
+           if(-e "/tmp/stop-reduce"){
+              unlink "/tmp/stop-reduce"; unlink $fname;
+              exit 99; 
+           }
+        }
+    }
+    unlink $fname;
+    $info->{cols}=$cols;
 }
 
 sub putto {
@@ -306,6 +446,7 @@ sub make_paste {
     if(!defined $info->{errs} && !$syntax){
          _collapse_vars($info);
          _generate_ineqs($info);
+         _reduce_matrix($info);
     }
     return $info;    
 }
@@ -343,6 +484,7 @@ my $arows=0; for my $j($full+1..$rows-1){
 my $nonzeroa=0; my $nonzerop=0;
 for my $j(0..$rows-1){ 
     for my $i(0..$cols-1){
+    next if($Q->[$i]->{sup});
     if($Q->[$i]->{coeffs}->[$j]){
         if(1<=$j && $j<=$full){ $nonzerop++; }
         else { $nonzeroa++;  }
@@ -353,13 +495,15 @@ open(FILE,">$file") || die "Cannot open $file for writing\n";
 print FILE "c copy string: $paste\n";
 print FILE "p vlp min ",
       $arows+1,      # number of total rows
-      " ",$cols,     # number of columns
+#      " ",$cols,     # number of columns
+      " ",$info->{cols}, # number of columns
       " ",$nonzeroa, # nonzero elements in a
       " ",$full,     # number of objectives
       " ",$nonzerop, # nonzero elements in objectives
       "\n";
 ## variable types: 1..$cols: non-negative
-for my $i(1..$cols){
+#for my $i(1 .. $cols){
+for my $i(1 .. $info->{cols}){
     print FILE "j $i l 0\n";
 }
 ## constraint types: 1: ==1, others: ==0
@@ -368,26 +512,34 @@ for my $j(1..$arows+1){
 }
 ## the matrix a 
 ## the Ingleton row
+my $ii=0;
 for my $i(0..$cols-1){
+    next if($Q->[$i]->{sup});
+    $ii++;
     my $v=$Q->[$i]->{coeffs}->[0];
     next if(!$v);
-    print FILE "a 1 ",$i+1," $v\n";
+    print FILE "a 1 ",$ii," $v\n";
 }
 ## A rows
 my $j=1;
 for my $jj ($full+1..$rows-1){
-  $j++;
+  $j++; $ii=0;
   for my $i(0..$cols-1){
+    next if($Q->[$i]->{sup});
+    $ii++;
     my $v=$Q->[$i]->{coeffs}->[$jj];
     next if(!$v);
-    print FILE "a $j ",$i+1," $v\n";
+    print FILE "a $j ",$ii," $v\n";
 }}
 ## print the objectives
 for my $j (1..$full){
+  $ii=0;
   for my $i(0..$cols-1){
+    next if($Q->[$i]->{sup});
+    $ii++;
     my $v=$Q->[$i]->{coeffs}->[$j];
     next if(!$v);
-    print FILE "o $j ",$i+1," $v\n";
+    print FILE "o $j ",$ii," $v\n";
 }}
 print FILE "e\n\n";
 close(FILE);

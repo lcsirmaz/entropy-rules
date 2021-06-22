@@ -201,8 +201,10 @@ sub read_result_file {
         if($downgrade){
             my $new=[]; next if(!downgrade(\@v,$new));
             $new->[11]=$v[11]; $new->[12]="*".$v[12];
+            biggest($new);
             push @{$info->{new}}, $new;
         } else {
+            biggest(\@v);
             push @{$info->{new}}, \@v;
         }
       }

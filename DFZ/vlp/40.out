@@ -1,43 +1,33 @@
-I    3.05] recalculating facets...
-I    5.01] Elapsed: 5.01, vertices: 181, facets final: 35, pending: 3563
-I    5.45] recalculating facets...
-I    7.94] recalculating facets...
-I   10.01] Elapsed: 10.01, vertices: 386, facets final: 72, pending: 3193
-I   10.30] recalculating facets...
-I   13.37] recalculating facets...
-I   15.01] Elapsed: 15.01, vertices: 555, facets final: 176, pending: 2088
-I   16.53] recalculating facets...
-I   20.02] Elapsed: 20.02, vertices: 691, facets final: 318, pending: 1431
-I   20.36] recalculating facets...
-I   25.03] Elapsed: 25.03, vertices: 777, facets final: 508, pending: 976
-I   27.71] recalculating facets...
-I   30.03] Elapsed: 30.03, vertices: 827, facets final: 743, pending: 603
-I   35.05] Elapsed: 35.05, vertices: 856, facets final: 986, pending: 286
-I   39.94] Elapsed: 39.94, vertices: 880, facets final: 1239, pending: 0
+C copy string: rs=cd:ab;t=a:bcs;u=a:bcst
+I    5.00] Elapsed: 5.00, vertices: 398, facets final: 64, pending: 3574
+I   10.00] Elapsed: 10.00, vertices: 713, facets final: 323, pending: 1307
+I   15.01] Elapsed: 15.01, vertices: 844, facets final: 780, pending: 505
+I   19.28] Elapsed: 19.28, vertices: 880, facets final: 1239, pending: 0
 
 --------------------------------
 Problem completed
  name                    40.vlp
- output                  40.res
+ output                  
+   vertices              vlp/40.res
  rows, cols, objs        177, 1503, 10
  vertices, facets        880, 1239
- total time              39.94
+ total time              19.28
 --------------------------------
 Statistics
 LP:
  oracle calls            2119
-   avg iterations/calls  117.93
- total oracle time       37.32
+   avg iterations/calls  115.86
+ total oracle time       18.02
 Combinatorics:
  vertices added          880
  facets probed           2119
- facets # max            3914
+ facets # max            3988
  memory allocated        2.29M
  storage expansion
    vertices # / upto     7 / 892
    facets   # / upto     1 / 4092
  facet manipulating
-   added avg / max       38.35 / 327.00
-   compressed            44
+   added avg / max       40.68 / 382.00
+   compressed            52
  number of ridge tests
-   avg / max             99.36k / 1.00M
+   avg / max             108.61k / 923.65k

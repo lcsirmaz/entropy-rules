@@ -1,84 +1,43 @@
-I    3.77] recalculating facets...
-I    5.00] Elapsed: 5.00, vertices: 141, facets final: 35, pending: 3509
-I    6.75] recalculating facets...
-I   10.02] Elapsed: 10.02, vertices: 299, facets final: 50, pending: 5825
-I   10.06] recalculating facets...
-I   14.11] recalculating facets...
-I   15.03] Elapsed: 15.03, vertices: 424, facets final: 68, pending: 7124
-I   18.47] recalculating facets...
-I   20.03] Elapsed: 20.03, vertices: 532, facets final: 85, pending: 7594
-I   23.81] recalculating facets...
-I   25.03] Elapsed: 25.03, vertices: 620, facets final: 95, pending: 8438
-I   30.02] recalculating facets...
-I   30.07] Elapsed: 30.07, vertices: 701, facets final: 111, pending: 8828
-I   35.08] Elapsed: 35.08, vertices: 783, facets final: 126, pending: 8584
-I   36.17] recalculating facets...
-I   40.08] Elapsed: 40.08, vertices: 863, facets final: 151, pending: 8410
-I   41.94] recalculating facets...
-I   45.10] Elapsed: 45.10, vertices: 952, facets final: 166, pending: 8463
-I   47.45] recalculating facets...
-I   50.11] Elapsed: 50.11, vertices: 1045, facets final: 193, pending: 8046
-I   53.28] recalculating facets...
-I   55.11] Elapsed: 55.11, vertices: 1133, facets final: 221, pending: 7484
-I   58.67] recalculating facets...
-I   60.12] Elapsed: 1:00, vertices: 1228, facets final: 255, pending: 6977
-I   63.58] recalculating facets...
-I   65.12] Elapsed: 1:05, vertices: 1330, facets final: 295, pending: 6287
-I   68.02] recalculating facets...
-I   70.12] Elapsed: 1:10, vertices: 1446, facets final: 339, pending: 5540
-I   72.76] recalculating facets...
-I   75.12] Elapsed: 1:15, vertices: 1556, facets final: 403, pending: 4996
-I   77.29] recalculating facets...
-I   80.13] Elapsed: 1:20, vertices: 1661, facets final: 474, pending: 4533
-I   82.42] recalculating facets...
-I   85.13] Elapsed: 1:25, vertices: 1750, facets final: 567, pending: 4094
-I   88.25] recalculating facets...
-I   90.13] Elapsed: 1:30, vertices: 1837, facets final: 671, pending: 3700
-I   94.47] recalculating facets...
-I   95.13] Elapsed: 1:35, vertices: 1910, facets final: 795, pending: 3415
-I  100.13] Elapsed: 1:40, vertices: 1987, facets final: 900, pending: 2991
-I  101.13] recalculating facets...
-I  105.15] Elapsed: 1:45, vertices: 2056, facets final: 1029, pending: 2645
-I  108.44] recalculating facets...
-I  110.15] Elapsed: 1:50, vertices: 2123, facets final: 1164, pending: 2268
-I  115.16] Elapsed: 1:55, vertices: 2181, facets final: 1308, pending: 1989
-I  117.03] recalculating facets...
-I  120.18] Elapsed: 2:00, vertices: 2248, facets final: 1448, pending: 1700
-I  125.17] recalculating facets...
-I  125.19] Elapsed: 2:05, vertices: 2301, facets final: 1612, pending: 1422
-I  130.21] Elapsed: 2:10, vertices: 2349, facets final: 1764, pending: 1174
-I  135.21] Elapsed: 2:15, vertices: 2388, facets final: 1935, pending: 941
-I  138.96] recalculating facets...
-I  140.21] Elapsed: 2:20, vertices: 2405, facets final: 2125, pending: 710
-I  145.21] Elapsed: 2:25, vertices: 2448, facets final: 2298, pending: 478
-I  150.21] Elapsed: 2:30, vertices: 2470, facets final: 2494, pending: 255
-I  155.23] Elapsed: 2:35, vertices: 2489, facets final: 2687, pending: 39
-I  155.64] recalculating facets...
-I  156.07] Elapsed: 2:36, vertices: 2506, facets final: 2709, pending: 0
+C copy string: rs=cd:ab;t=a:bcs;u=a:bdrt
+I    5.00] Elapsed: 5.00, vertices: 282, facets final: 32, pending: 7323
+I   10.02] Elapsed: 10.02, vertices: 505, facets final: 60, pending: 9898
+I   15.03] Elapsed: 15.03, vertices: 721, facets final: 84, pending: 9764
+I   20.03] Elapsed: 20.03, vertices: 954, facets final: 137, pending: 8548
+I   25.03] Elapsed: 25.03, vertices: 1204, facets final: 219, pending: 6743
+I   30.04] Elapsed: 30.04, vertices: 1454, facets final: 360, pending: 5374
+I   35.04] Elapsed: 35.04, vertices: 1688, facets final: 524, pending: 4239
+I   40.04] Elapsed: 40.04, vertices: 1896, facets final: 745, pending: 3334
+I   45.04] Elapsed: 45.04, vertices: 2059, facets final: 1014, pending: 2554
+I   50.04] Elapsed: 50.04, vertices: 2197, facets final: 1314, pending: 1885
+I   55.04] Elapsed: 55.04, vertices: 2308, facets final: 1646, pending: 1342
+I   60.04] Elapsed: 1:00, vertices: 2392, facets final: 1999, pending: 878
+I   65.04] Elapsed: 1:05, vertices: 2467, facets final: 2373, pending: 389
+I   69.02] Elapsed: 1:09, vertices: 2506, facets final: 2709, pending: 0
 
 --------------------------------
 Problem completed
  name                    80.vlp
- output                  80.res
+ output                  
+   vertices              vlp/80.res
  rows, cols, objs        177, 1505, 10
  vertices, facets        2506, 2709
- total time              2:36
+ total time              1:09
 --------------------------------
 Statistics
 LP:
  oracle calls            5215
-   avg iterations/calls  144.00
- total oracle time       1:59
+   avg iterations/calls  142.44
+ total oracle time       57.38
 Combinatorics:
  vertices added          2506
  facets probed           5215
- facets # max            8940
+ facets # max            10268
  memory allocated        11.20M
  storage expansion
    vertices # / upto     20 / 2556
    facets   # / upto     3 / 12284
  facet manipulating
-   added avg / max       39.53 / 327.00
-   compressed            73
+   added avg / max       39.59 / 415.00
+   compressed            54
  number of ridge tests
-   avg / max             239.41k / 2.93M
+   avg / max             274.46k / 2.46M

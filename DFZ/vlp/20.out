@@ -1,28 +1,30 @@
-I    1.81] Elapsed: 1.81, vertices: 25, facets final: 56, pending: 0
+C copy string: r=a:bc;st=ac:bdr;u=(as):bdr
+I    0.82] Elapsed: 0.82, vertices: 25, facets final: 56, pending: 0
 
 --------------------------------
 Problem completed
  name                    20.vlp
- output                  20.res
+ output                  
+   vertices              vlp/20.res
  rows, cols, objs        161, 1385, 10
  vertices, facets        25, 56
- total time              1.81
+ total time              0.82
 --------------------------------
 Statistics
 LP:
  oracle calls            81
-   avg iterations/calls  134.57
- total oracle time       1.81
+   avg iterations/calls  126.47
+ total oracle time       0.82
 Combinatorics:
  vertices added          25
  facets probed           81
- facets # max            73
+ facets # max            66
  memory allocated        975.68k
  storage expansion
    vertices # / upto     1 / 124
    facets   # / upto     1 / 4092
  facet manipulating
-   added avg / max       7.25 / 30.00
+   added avg / max       6.04 / 17.00
    compressed            0
  number of ridge tests
-   avg / max             191.62 / 735.00
+   avg / max             145.58 / 387.00

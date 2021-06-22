@@ -79,7 +79,6 @@ sub paste { # rst = (ab)cd : uv
         return "copy: wrong syntax ($dsc)";
     }
     my ($new,$old,$X,$vars)=($1,$2,cv($3),$info->{vars});
-    my $Z=$vars; # this is the set of NOT copied variables
     if(cv($new) & $vars){
         return "copy: new variable in \"$new\" already defined ($dsc)";
     }
@@ -89,6 +88,7 @@ sub paste { # rst = (ab)cd : uv
     push @{$info->{paste}},{ new => $new, over => $vars, by => "$old:".name($X) };
     my @defs=(); # $defs[]={v=> 32, r=>"16|1"};
     my $newvars=0;
+    my $Z=0; # pasted variables
     while($new){
         $new =~ s/^(.)//; my $v=cv($1);
         if($v==0 || ($v&$newvars)){
@@ -106,10 +106,10 @@ sub paste { # rst = (ab)cd : uv
         if(($r&$vars)!=$r){
             return "copy: copy variable in \"".name($r). "\"not defined ($dsc)";
         }
+        $Z = $Z|$r;
         if($r&$X){
             return "copy: copy variable \"".name($r)."\" and over variables overlap ($dsc)";
         }
-        $Z = $Z & ~$r; # erase copied variable(s)
         push @defs, {v=>$v, r=> $r };
     }
     if($old){
@@ -128,6 +128,7 @@ sub paste { # rst = (ab)cd : uv
            $i<<=1;
         }
         for my $AA (0..$A-1){
+           next if($AA !=0 && $Y != $Z);
            ($i,$vv,$rr)=(1,$r,$v);
            for my $d(@defs){
                 if($AA&$i){

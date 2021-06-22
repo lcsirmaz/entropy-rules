@@ -1,29 +1,30 @@
-I    3.45] recalculating facets...
-I    4.24] Elapsed: 4.24, vertices: 125, facets final: 216, pending: 0
+C copy string: r=c:ab;st=cd:ab;u=a:bcrs
+I    2.04] Elapsed: 2.04, vertices: 125, facets final: 216, pending: 0
 
 --------------------------------
 Problem completed
  name                    23.vlp
- output                  23.res
- rows, cols, objs        173, 1484, 10
+ output                  
+   vertices              vlp/23.res
+ rows, cols, objs        182, 1554, 10
  vertices, facets        125, 216
- total time              4.24
+ total time              2.04
 --------------------------------
 Statistics
 LP:
  oracle calls            341
-   avg iterations/calls  76.28
- total oracle time       4.23
+   avg iterations/calls  75.27
+ total oracle time       2.03
 Combinatorics:
  vertices added          125
  facets probed           341
- facets # max            338
+ facets # max            316
  memory allocated        1.19M
  storage expansion
    vertices # / upto     2 / 252
    facets   # / upto     1 / 4092
  facet manipulating
-   added avg / max       13.01 / 49.00
+   added avg / max       11.84 / 50.00
    compressed            0
  number of ridge tests
-   avg / max             2.40k / 9.75k
+   avg / max             2.23k / 9.35k

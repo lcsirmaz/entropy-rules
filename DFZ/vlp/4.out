@@ -1,18 +1,20 @@
-I    0.04] Elapsed: 0.04, vertices: 2, facets final: 11, pending: 0
+C copy string: rs=ac:bd;t=d:abs
+I    0.01] Elapsed: 0.01, vertices: 2, facets final: 11, pending: 0
 
 --------------------------------
 Problem completed
  name                    4.vlp
- output                  4.res
+ output                  
+   vertices              vlp/4.res
  rows, cols, objs        72, 491, 10
  vertices, facets        2, 11
- total time              0.04
+ total time              0.01
 --------------------------------
 Statistics
 LP:
  oracle calls            13
-   avg iterations/calls  36.69
- total oracle time       0.04
+   avg iterations/calls  19.08
+ total oracle time       0.01
 Combinatorics:
  vertices added          2
  facets probed           13

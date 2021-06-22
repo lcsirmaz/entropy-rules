@@ -20,7 +20,7 @@ with the copy strings in the DFZ list.
     # generate the vlp file for a copy string
     utils/mkvlp.pl <copy-string> vlp/NNN.vlp
     # and solve the MOLP problem
-    inner vlp/NNN.vlp -o vlp/NNN.res > vlp/NNN.out
+    inner vlp/NNN.vlp -ov vlp/NNN.res -y- --PrintVertices=0 > vlp/NNN.out
 
 The vertices of the solution in NNN.res is just the collection of those 
 10-dimensional vectors &lt;*x*<sub>2</sub>, ..., *x*<sub>11</sub>&gt; such

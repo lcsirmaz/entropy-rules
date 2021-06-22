@@ -1,28 +1,30 @@
-I    1.16] Elapsed: 1.16, vertices: 30, facets final: 44, pending: 0
+C copy string: rs=ac:bd;t=(ar):bd;u=b:adrt
+I    0.58] Elapsed: 0.58, vertices: 30, facets final: 44, pending: 0
 
 --------------------------------
 Problem completed
  name                    108.vlp
- output                  108.res
+ output                  
+   vertices              vlp/108.res
  rows, cols, objs        173, 1496, 10
  vertices, facets        30, 44
- total time              1.16
+ total time              0.58
 --------------------------------
 Statistics
 LP:
  oracle calls            74
-   avg iterations/calls  98.46
- total oracle time       1.16
+   avg iterations/calls  99.03
+ total oracle time       0.58
 Combinatorics:
  vertices added          30
  facets probed           74
- facets # max            55
+ facets # max            49
  memory allocated        975.68k
  storage expansion
    vertices # / upto     1 / 124
    facets   # / upto     1 / 4092
  facet manipulating
-   added avg / max       3.76 / 12.00
+   added avg / max       4.24 / 9.00
    compressed            0
  number of ridge tests
-   avg / max             73.83 / 234.00
+   avg / max             72.14 / 168.00

@@ -45,8 +45,17 @@ random variables we replace *c* by *r*, *r* by *c*, *d* by *s* and *s* by
 > **H**(ard) = **H**(acs),
 
 and many others. (Note that all occurrences of *c*, *d*, *r*, *s* in the 
-string must be changed to their corresponding values.) 
-These equalities together with
+string must be changed to their corresponding values.) Note that this
+symmetry holds only when the copyed variables and the over variables
+together exhaust the pool of all random variables. When working with 
+
+    tu=cr:ab
+
+over the pool *a,b,c,d,r,s* the copyed variables *cr* and the over variables
+*ab* do not exhaust the pool, and in this case *tu* and $cr* cannot be
+assumed to be symmetric.
+
+The collected equalities together with
 all Shannon inequalities have consequences on the 15 entropies of the original
 four variables. The consequences are extracted using the MOLP solver 
 [inner](https://github.com/lcsirmaz/inner). Finally, from the set of
@@ -61,11 +70,9 @@ utilities from [utils](../utils/) as follows:
     # extract inequalities which do not follow from those in base.new
     utils/checkall.pl vlp/NN.res base.new > result/NN.new
 
-The file [base.new](base.new) contains the DFZ inequalities in machine
-readable form. The applied
-copy strings are listed in [copy.txt](copy.txt) indicating which string
-yields no new additional inequality. As a final step, the
-minimal set of inequalities is extracted to [ineq.txt](ineq.txt).
+The file [base.new](base.new) contains the original DFZ inequalities.
+The applied copy strings used are listed in [copy.txt](copy.txt).
+Finally, unsuperseded inequalities are extracted to [ineq.txt](ineq.txt).
 
     # determine which inequalities are superseded by others
     utils/purge.pl base.new result/*.new > supd.new
@@ -75,28 +82,30 @@ minimal set of inequalities is extracted to [ineq.txt](ineq.txt).
 #### How the MOLP problem is generated
 
 The `mkvlp.pl` utility creates the MOLP problem from the description of a
-copy string. The original variables are *a,b,c,* and *d*, and *r,s,t,u,v,w*
+copy string. The original variables are *a,b,c* and *d*, and *r,s,t,u,v,w*
 can be used as auxiliary variables. All variables used in the copy string
 are collected. The conditional independence(s) stipulated by the copy string
 is written as (possibly several) equality among the entropies of the subsets
 of the variables. Indeed, if *aX* and *Y* are independent given *Z*, that
-is, **I**(*aX*;*Y*|*Z*)=0, then we also have **I**(*X*;*Y*|*Z*)=0. Also, all
-equality among these entropies are added which follow from the
-above discussed symmetry. Each equality allows eliminating one entropy from
-the whole set of entropies; this reduces the size of the problem
-significantly.
+is, **I**(*aX*;*Y*|*Z*)=0, then we also have **I**(*X*;*Y*|*Z*)=0. Also,
+further equalities among these entropies are added which follow from the
+above discussed symmetry. Each equality allows eliminating one entropy 
+value from the whole set of all entropies; this reduces the size of the 
+problem significantly.
 
-As a next step, &quot;minimal&quot; Shannon inequalities are collected.
+As a next step, the minimal set of Shannon inequalities are collected.
 They are those which imply all other ones: **I**(*x*;*y*|*Z*) &ge; 0 
 where *x* and *y* are single variables,
-and *Z* is a (possibly empty) subset of the other variables. From a remark
+and *Z* is a (possibly empty) subset of the other variables.
+
+From a remark
 of *F. Matus* it follows that inequalities describing monotonicity are
 never used, so they are omitted.
 
 As a last step, each Shannon inequality is rewritten using entropy
-expressions which define the natural coordinates of *a,b,c,d* rather than
+expressions corresponding to the natural coordinates of *a,b,c,d* rather than
 the entropies of the subsets of *a,b,c,d*; and &quot;eliminated&quot;
-entropies are replaced by the expression they are equal to.  The final
+entropies are replaced by the expression they are equal to. The final
 collection is a set of (homogeneous) inequalities of the form
 
 > *a*<sub>i,1</sub>**N**<sub>1</sub> + *a*<sub>i,2</sub>**N**<sub>2</sub> +
@@ -107,15 +116,15 @@ collection is a set of (homogeneous) inequalities of the form
 
 where **N**<sub>1</sub>, ..., **N**<sub>15</sub> are the entropy expressions
 corresponding to the natural coordinates; *X*<sub>16</sub>, ..., *X*<sub>n</sub> 
-are subsets random variables containing some auxiliary
+are subsets of random variables containing some auxiliary
 variable, and, optionally, one or several of *a,b,c,d*. (These are the
-entropies which remained after the elimination step). 
+entropy variables which remained after the elimination steps). 
 
 By the duality theorem of Linear Programming, consequences of this system
 are exactly their non-negative linear combinations. Among these linear
 combinations the 4-variable entropy inequalities are those where the
-coefficients at positions 16, 17, up to *n* are zero. The coefficients at
-positions from 1 to 15 are just the *natural* coefficients of the
+coefficients at positions 16, 17, up to *n* are all zeroes. The coefficients at
+positions from 1 to 15 are the *natural* coefficients of the
 inequality. By renorming, we assume that the first, Ingleton coefficient is
 exactly one, and can request that coefficients 12 to 15 are zero as well.
 Writing the above inequalities as columns, the &quot;LP variables&quot; 
