@@ -1,0 +1,49 @@
+C copy string: rs=ac:bd;tu=cd:ab;v=b:acu
+I    5.25] Elapsed: 5.25, vertices: 20, facets final: 19, pending: 204
+I   10.25] Elapsed: 10.25, vertices: 40, facets final: 41, pending: 836, pool: 29
+I   15.29] Elapsed: 15.29, vertices: 125, facets final: 51, pending: 4286, pool: 30
+I   20.32] Elapsed: 20.32, vertices: 220, facets final: 60, pending: 3774, pool: 30
+I   25.34] Elapsed: 25.34, vertices: 305, facets final: 84, pending: 2275, pool: 30
+I   30.38] Elapsed: 30.38, vertices: 364, facets final: 129, pending: 1553, pool: 30
+I   35.43] Elapsed: 35.43, vertices: 413, facets final: 173, pending: 1160, pool: 28
+I   40.45] Elapsed: 40.45, vertices: 458, facets final: 230, pending: 850, pool: 30
+I   45.46] Elapsed: 45.46, vertices: 498, facets final: 281, pending: 680, pool: 27
+I   50.47] Elapsed: 50.47, vertices: 525, facets final: 339, pending: 494, pool: 27
+I   55.47] Elapsed: 55.47, vertices: 536, facets final: 414, pending: 394, pool: 26
+I   60.50] Elapsed: 1:01, vertices: 550, facets final: 473, pending: 293, pool: 27
+I   65.54] Elapsed: 1:06, vertices: 567, facets final: 555, pending: 205, pool: 16
+I   70.59] Elapsed: 1:11, vertices: 576, facets final: 643, pending: 109, pool: 13
+I   75.28] Elapsed: 1:15, vertices: 602, facets final: 722, pending: 0
+
+--------------------------------
+Problem completed
+ name                    204.vlp
+ output                  
+   vertices              vlp/.res
+ rows, cols, objs        375, 4038, 10
+ vertices, facets        602, 722
+ total time              1:15
+--------------------------------
+Statistics
+LP:
+ oracle calls            1429
+   avg iterations/calls  305.20
+ total oracle time       1:13
+Combinatorics:
+ vertices added          602
+ facets probed           2382
+ facets # max            4671
+ memory allocated        2.92M
+ storage expansion
+   vertices # / upto     5 / 636
+   facets   # / upto     2 / 8188
+ facet manipulating
+   added avg / max       68.44 / 592.00
+   compressed            28
+ number of ridge tests
+   avg / max             204.42k / 1.69M
+--------------------------------
+Parameters with non-default values
+ OracleItLimit=300000
+ OracleTimeLimit=180
+ VertexPoolSize=30
