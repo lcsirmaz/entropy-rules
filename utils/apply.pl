@@ -311,7 +311,6 @@ sub paste { # rst = (ab)cd : uv
            $i<<=1;
         }
         for my $AA (0..$A-1){
-           next if($AA!=0 && $Y != $Z);
            ($i,$vv,$rr)=(1,$r,$v);
            for my $d(@defs){
                 if($AA&$i){

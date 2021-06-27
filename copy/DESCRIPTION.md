@@ -46,14 +46,14 @@ random variables we replace *c* by *r*, *r* by *c*, *d* by *s* and *s* by
 
 and many others. (Note that all occurrences of *c*, *d*, *r*, *s* in the 
 string must be changed to their corresponding values.) Note that this
-symmetry holds only when the copyed variables and the over variables
-together exhaust the pool of all random variables. When working with 
+symmetry holds even if the copyed variables and the over variables
+together do not exhaust the pool of all random variables. When working with 
 
     tu=cr:ab
 
-over the pool *a,b,c,d,r,s* the copyed variables *cr* and the over variables
-*ab* do not exhaust the pool, and in this case *tu* and *cr* cannot be
-assumed to be symmetric.
+over the pool *a,b,c,d,r,s*, we still have, e.g.,
+
+> **H**(cds) = **H**(tds),  **H**(acdsu) = **H**(atdsc)
 
 The collected equalities together with
 all Shannon inequalities have consequences on the 15 entropies of the original
