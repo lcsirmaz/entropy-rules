@@ -1,37 +1,40 @@
-C copy string: rs=cd:ab;t=(cr):ab;u=(cr):abt;v=(cr):abtu
+C copy string: rs=cd:ab;tu=cs:ad;v=d:art
 Using 2 threads
-I    5.04] Elapsed: 5.04, vertices: 13, facets final: 24, pending: 49
-I   10.05] Elapsed: 10.05, vertices: 20, facets final: 67, pending: 24
-I   11.37] Elapsed: 11.37, vertices: 20, facets final: 91, pending: 0
+I    5.13] Elapsed: 5.13, vertices: 15, facets final: 14, pending: 123
+I   10.17] Elapsed: 10.17, vertices: 22, facets final: 37, pending: 126, pool: 6
+I   15.19] Elapsed: 15.19, vertices: 27, facets final: 67, pending: 82, pool: 7
+I   20.28] Elapsed: 20.28, vertices: 36, facets final: 93, pending: 108, pool: 6
+I   25.28] Elapsed: 25.28, vertices: 51, facets final: 119, pending: 59, pool: 6
+I   29.04] Elapsed: 29.04, vertices: 65, facets final: 143, pending: 0
 
 --------------------------------
 Problem completed
  name                    195.vlp
  output                  
    vertices              vlp/195.res
- rows, cols, objs        398, 4230, 10
- vertices, facets        20, 91
+ rows, cols, objs        366, 3966, 10
+ vertices, facets        65, 143
  threads used            2
- total time              11.37
+ total time              29.04
 --------------------------------
 Statistics
 LP:
- oracle calls            111
-   avg iterations/calls  501.90
- total oracle time       11.36
+ oracle calls            241
+   avg iterations/calls  581.16
+ total oracle time       29.04
 Combinatorics:
- vertices added          20
- facets probed           111
- facets # max            102
+ vertices added          65
+ facets probed           677
+ facets # max            213
  memory allocated        1.40M
  storage expansion
    vertices # / upto     1 / 124
    facets   # / upto     1 / 4092
  facet manipulating
-   added avg / max       9.37 / 20.00
+   added avg / max       13.08 / 52.00
    compressed            0
  number of ridge tests
-   avg / max             241.58 / 568.00
+   avg / max             1.29k / 5.81k
 --------------------------------
 Parameters with non-default values
  OracleItLimit=300000

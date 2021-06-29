@@ -1,40 +1,65 @@
-C copy string: rs=cd:ab;tu=cr:ad;v=d:ast
+C copy string: rs=cd:ab;tu=cr:ab;vw=cs:abtu
 Using 2 threads
-I    5.16] Elapsed: 5.16, vertices: 10, facets final: 18, pending: 109
-I   10.25] Elapsed: 10.25, vertices: 20, facets final: 42, pending: 125
-I   15.34] Elapsed: 15.34, vertices: 24, facets final: 72, pending: 127, pool: 6
-I   20.38] Elapsed: 20.38, vertices: 32, facets final: 108, pending: 75, pool: 3
-I   25.47] Elapsed: 25.47, vertices: 40, facets final: 166, pending: 1, pool: 1
-I   25.47] Elapsed: 25.47, vertices: 41, facets final: 166, pending: 0
+I    5.69] Elapsed: 5.69, vertices: 2, facets final: 0, pending: 13
+I   11.87] Elapsed: 11.87, vertices: 3, facets final: 3, pending: 16
+I   17.66] Elapsed: 17.66, vertices: 5, facets final: 4, pending: 37
+I   23.66] Elapsed: 23.66, vertices: 8, facets final: 5, pending: 54
+I   28.94] Elapsed: 28.94, vertices: 11, facets final: 6, pending: 69
+I   34.02] Elapsed: 34.02, vertices: 12, facets final: 8, pending: 93
+I   40.71] Elapsed: 40.71, vertices: 14, facets final: 11, pending: 84
+I   46.99] Elapsed: 46.99, vertices: 15, facets final: 13, pending: 82
+I   52.83] Elapsed: 52.83, vertices: 16, facets final: 16, pending: 83
+I   59.76] Elapsed: 59.76, vertices: 17, facets final: 19, pending: 84
+I   64.85] Elapsed: 1:05, vertices: 20, facets final: 21, pending: 82
+I   70.51] Elapsed: 1:11, vertices: 20, facets final: 24, pending: 79
+I   76.59] Elapsed: 1:17, vertices: 20, facets final: 27, pending: 76
+I   83.79] Elapsed: 1:24, vertices: 20, facets final: 31, pending: 72
+I   90.53] Elapsed: 1:31, vertices: 21, facets final: 34, pending: 73, pool: 2
+I   97.63] Elapsed: 1:38, vertices: 22, facets final: 37, pending: 72, pool: 2
+I  103.60] Elapsed: 1:44, vertices: 22, facets final: 40, pending: 69
+I  109.83] Elapsed: 1:50, vertices: 22, facets final: 44, pending: 65
+I  115.27] Elapsed: 1:55, vertices: 22, facets final: 47, pending: 62
+I  121.06] Elapsed: 2:01, vertices: 23, facets final: 50, pending: 67, pool: 3
+I  128.13] Elapsed: 2:08, vertices: 23, facets final: 54, pending: 63
+I  133.70] Elapsed: 2:14, vertices: 23, facets final: 58, pending: 59
+I  138.94] Elapsed: 2:19, vertices: 23, facets final: 61, pending: 56
+I  144.54] Elapsed: 2:25, vertices: 23, facets final: 63, pending: 54
+I  150.11] Elapsed: 2:30, vertices: 23, facets final: 65, pending: 52, pool: 4
+I  155.71] Elapsed: 2:36, vertices: 26, facets final: 69, pending: 44, pool: 3
+I  161.58] Elapsed: 2:42, vertices: 26, facets final: 72, pending: 41
+I  167.62] Elapsed: 2:48, vertices: 29, facets final: 78, pending: 23, pool: 1
+I  172.87] Elapsed: 2:53, vertices: 29, facets final: 82, pending: 19
+I  178.16] Elapsed: 2:58, vertices: 29, facets final: 97, pending: 4
+I  180.28] Elapsed: 3:00, vertices: 30, facets final: 101, pending: 0
 
 --------------------------------
 Problem completed
  name                    188.vlp
  output                  
    vertices              vlp/188.res
- rows, cols, objs        375, 4037, 10
- vertices, facets        41, 166
+ rows, cols, objs        779, 10017, 10
+ vertices, facets        30, 101
  threads used            2
- total time              25.47
+ total time              3:00
 --------------------------------
 Statistics
 LP:
- oracle calls            224
-   avg iterations/calls  536.91
- total oracle time       25.47
+ oracle calls            139
+   avg iterations/calls  2.70k
+ total oracle time       3:00
 Combinatorics:
- vertices added          41
- facets probed           404
- facets # max            207
+ vertices added          30
+ facets probed           233
+ facets # max            122
  memory allocated        1.40M
  storage expansion
    vertices # / upto     1 / 124
    facets   # / upto     1 / 4092
  facet manipulating
-   added avg / max       18.57 / 61.00
+   added avg / max       12.97 / 36.00
    compressed            0
  number of ridge tests
-   avg / max             1.46k / 3.89k
+   avg / max             598.21 / 1.65k
 --------------------------------
 Parameters with non-default values
  OracleItLimit=300000

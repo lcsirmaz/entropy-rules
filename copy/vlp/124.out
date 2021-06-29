@@ -1,38 +1,41 @@
-C copy string: rs=ac:bd;tu=cd:abr;v=u:adr
+C copy string: rs=ac:bd;tu=cd:abr;v=d:aru
 Using 2 threads
-I    5.11] Elapsed: 5.11, vertices: 10, facets final: 17, pending: 36
-I   10.22] Elapsed: 10.22, vertices: 20, facets final: 39, pending: 45
-I   15.52] Elapsed: 15.52, vertices: 26, facets final: 66, pending: 14, pool: 3
-I   18.16] Elapsed: 18.16, vertices: 35, facets final: 85, pending: 0
+I    5.02] Elapsed: 5.02, vertices: 11, facets final: 14, pending: 85
+I   10.33] Elapsed: 10.33, vertices: 23, facets final: 31, pending: 137, pool: 5
+I   15.53] Elapsed: 15.53, vertices: 34, facets final: 50, pending: 109, pool: 8
+I   20.64] Elapsed: 20.64, vertices: 42, facets final: 80, pending: 117, pool: 4
+I   25.70] Elapsed: 25.70, vertices: 50, facets final: 104, pending: 68, pool: 7
+I   30.84] Elapsed: 30.84, vertices: 63, facets final: 143, pending: 20, pool: 3
+I   32.75] Elapsed: 32.75, vertices: 69, facets final: 158, pending: 0
 
 --------------------------------
 Problem completed
  name                    124.vlp
  output                  
    vertices              vlp/124.res
- rows, cols, objs        387, 4112, 10
- vertices, facets        35, 85
+ rows, cols, objs        366, 3911, 10
+ vertices, facets        69, 158
  threads used            2
- total time              18.16
+ total time              32.75
 --------------------------------
 Statistics
 LP:
- oracle calls            126
-   avg iterations/calls  698.56
- total oracle time       18.16
+ oracle calls            262
+   avg iterations/calls  625.63
+ total oracle time       32.74
 Combinatorics:
- vertices added          35
- facets probed           407
- facets # max            91
+ vertices added          69
+ facets probed           730
+ facets # max            198
  memory allocated        1.40M
  storage expansion
    vertices # / upto     1 / 124
    facets   # / upto     1 / 4092
  facet manipulating
-   added avg / max       7.26 / 24.00
+   added avg / max       11.47 / 46.00
    compressed            0
  number of ridge tests
-   avg / max             246.85 / 884.00
+   avg / max             1.13k / 4.52k
 --------------------------------
 Parameters with non-default values
  OracleItLimit=300000

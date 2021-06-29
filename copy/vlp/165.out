@@ -1,40 +1,47 @@
-C copy string: rs=cd:ab;tu=ac:bds;v=b:adst
+C copy string: rs=cd:ab;tu=ac:bds;v=r:adst
 Using 2 threads
-I    5.14] Elapsed: 5.14, vertices: 14, facets final: 14, pending: 72
-I   10.14] Elapsed: 10.14, vertices: 21, facets final: 40, pending: 58, pool: 5
-I   15.19] Elapsed: 15.19, vertices: 27, facets final: 66, pending: 54, pool: 7
-I   20.30] Elapsed: 20.30, vertices: 37, facets final: 90, pending: 37, pool: 8
-I   25.32] Elapsed: 25.32, vertices: 50, facets final: 124, pending: 8, pool: 3
-I   26.26] Elapsed: 26.26, vertices: 55, facets final: 138, pending: 0
+I    5.10] Elapsed: 5.10, vertices: 13, facets final: 12, pending: 90
+I   10.11] Elapsed: 10.11, vertices: 23, facets final: 23, pending: 136, pool: 9
+I   15.36] Elapsed: 15.36, vertices: 29, facets final: 37, pending: 171, pool: 16
+I   20.50] Elapsed: 20.50, vertices: 42, facets final: 48, pending: 215, pool: 20
+I   25.55] Elapsed: 25.55, vertices: 56, facets final: 63, pending: 215, pool: 22
+I   30.65] Elapsed: 30.65, vertices: 71, facets final: 82, pending: 228, pool: 19
+I   35.78] Elapsed: 35.78, vertices: 85, facets final: 107, pending: 221, pool: 16
+I   40.86] Elapsed: 40.86, vertices: 94, facets final: 136, pending: 197, pool: 10
+I   45.93] Elapsed: 45.93, vertices: 102, facets final: 173, pending: 155, pool: 9
+I   51.04] Elapsed: 51.04, vertices: 117, facets final: 191, pending: 107, pool: 14
+I   56.10] Elapsed: 56.10, vertices: 132, facets final: 221, pending: 64, pool: 9
+I   61.22] Elapsed: 1:01, vertices: 145, facets final: 264, pending: 14, pool: 1
+I   62.97] Elapsed: 1:03, vertices: 147, facets final: 281, pending: 0
 
 --------------------------------
 Problem completed
  name                    165.vlp
  output                  
    vertices              vlp/165.res
- rows, cols, objs        395, 4158, 10
- vertices, facets        55, 138
+ rows, cols, objs        374, 3955, 10
+ vertices, facets        147, 281
  threads used            2
- total time              26.26
+ total time              1:03
 --------------------------------
 Statistics
 LP:
- oracle calls            210
-   avg iterations/calls  597.90
- total oracle time       26.25
+ oracle calls            511
+   avg iterations/calls  613.05
+ total oracle time       1:03
 Combinatorics:
- vertices added          55
- facets probed           830
- facets # max            140
- memory allocated        1.40M
+ vertices added          147
+ facets probed           1573
+ facets # max            340
+ memory allocated        1.69M
  storage expansion
-   vertices # / upto     1 / 124
+   vertices # / upto     2 / 252
    facets   # / upto     1 / 4092
  facet manipulating
-   added avg / max       6.52 / 17.00
+   added avg / max       12.16 / 55.00
    compressed            0
  number of ridge tests
-   avg / max             321.04 / 980.00
+   avg / max             2.13k / 9.46k
 --------------------------------
 Parameters with non-default values
  OracleItLimit=300000
