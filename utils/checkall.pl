@@ -424,7 +424,8 @@ sub find_copy {
             }
             $info->{copy} =~ s/;$//;
         } elsif( $a=~/rule (\d.+) for/){
-            $info->{copy} = "rule$1"; $info->{id}="rule:";
+            $info->{copy} = "rule$1"; # $info->{copy} =~ s/\.txt$//; 
+            $info->{id}="rule:";
         } elsif( $a=~/double rule ([^\s]+)\.txt for/){
             $info->{copy} = $1; $info->{id}="9drule:";
         } elsif( $a=~/double rule ([^\s]+) for/){

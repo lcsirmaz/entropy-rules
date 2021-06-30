@@ -1,38 +1,35 @@
-C applying rule 01.txt for base200.txt
-I    0.66] recalculating facets...
-I    1.45] recalculating facets...
-I    2.78] recalculating facets...
-I    5.00] Elapsed: 5.00, vertices: 366, facets final: 661, pending: 1216
-I    6.85] recalculating facets...
-I   10.00] Elapsed: 10.00, vertices: 446, facets final: 1702, pending: 390
-I   11.71] Elapsed: 11.71, vertices: 462, facets final: 2098, pending: 0
+C applying rule 01.txt for base.txt
+Using 2 threads
+I    4.10] Elapsed: 4.10, vertices: 395, facets final: 1781, pending: 0
 
 --------------------------------
 Problem completed
  name                    01.vlp
- output                  vlp/01.res
- rows, cols, objs        12, 2418, 10
- vertices, facets        462, 2098
- total time              11.71
+ output                  
+   vertices              vlp/01.res
+ rows, cols, objs        12, 2394, 10
+ vertices, facets        395, 1781
+ threads used            2
+ total time              4.10
 --------------------------------
 Statistics
 LP:
- oracle calls            2560
-   avg iterations/calls  6.67
- total oracle time       11.17
+ oracle calls            2521
+   avg iterations/calls  6.44
+ total oracle time       3.64
 Combinatorics:
- vertices added          462
- facets probed           2560
- facets # max            2288
- memory allocated        2.26M
+ vertices added          395
+ facets probed           5855
+ facets # max            1783
+ memory allocated        2.25M
  storage expansion
    vertices # / upto     4 / 508
    facets   # / upto     1 / 4092
  facet manipulating
-   added avg / max       34.38 / 208.00
-   compressed            6
+   added avg / max       31.70 / 150.00
+   compressed            3
  number of ridge tests
-   avg / max             46.64k / 300.96k
+   avg / max             29.11k / 139.06k
 --------------------------------
 Parameters with non-default values
- OracleTimeLimit = 60
+ VertexPoolSize=100

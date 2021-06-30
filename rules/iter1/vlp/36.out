@@ -1,52 +1,44 @@
-C applying rule 36.txt for base200.txt
-I    0.73] recalculating facets...
-I    2.63] recalculating facets...
-I    4.90] recalculating facets...
-I    5.01] Elapsed: 5.01, vertices: 303, facets final: 149, pending: 11884, pool: 149
-I    7.53] recalculating facets...
-I   10.01] Elapsed: 10.01, vertices: 496, facets final: 296, pending: 11667, pool: 149
-I   10.09] recalculating facets...
-I   12.62] recalculating facets...
-I   15.02] Elapsed: 15.02, vertices: 691, facets final: 676, pending: 10593, pool: 147
-I   15.22] recalculating facets...
-I   17.75] recalculating facets...
-I   20.03] Elapsed: 20.03, vertices: 876, facets final: 1512, pending: 8921, pool: 148
-I   20.80] recalculating facets...
-I   23.93] recalculating facets...
-I   25.03] Elapsed: 25.03, vertices: 1036, facets final: 2866, pending: 7019, pool: 141
-I   27.20] recalculating facets...
-I   30.03] Elapsed: 30.03, vertices: 1180, facets final: 5095, pending: 4455, pool: 89
-I   30.93] recalculating facets...
-I   35.03] Elapsed: 35.03, vertices: 1292, facets final: 8342, pending: 1007, pool: 29
-I   35.14] recalculating facets...
-I   36.54] Elapsed: 36.54, vertices: 1355, facets final: 9361, pending: 0
+C applying rule 36.txt for base.txt
+Using 2 threads
+I    5.00] Elapsed: 5.00, vertices: 296, facets final: 240, pending: 13864, pool: 100
+I   10.00] Elapsed: 10.00, vertices: 489, facets final: 412, pending: 16496, pool: 100
+I   15.01] Elapsed: 15.01, vertices: 680, facets final: 703, pending: 15411, pool: 100
+I   20.01] Elapsed: 20.01, vertices: 873, facets final: 1284, pending: 14131, pool: 100
+I   25.01] Elapsed: 25.01, vertices: 1060, facets final: 2290, pending: 12665, pool: 100
+I   30.01] Elapsed: 30.01, vertices: 1215, facets final: 3663, pending: 10865, pool: 98
+I   35.01] Elapsed: 35.01, vertices: 1332, facets final: 5577, pending: 8677, pool: 93
+I   40.01] Elapsed: 40.01, vertices: 1403, facets final: 8179, pending: 5924, pool: 73
+I   45.01] Elapsed: 45.01, vertices: 1451, facets final: 11310, pending: 2795, pool: 51
+I   49.54] Elapsed: 49.54, vertices: 1544, facets final: 14087, pending: 0
 
 --------------------------------
 Problem completed
  name                    36.vlp
- output                  vlp/36.res
- rows, cols, objs        12, 2432, 10
- vertices, facets        1355, 9361
- total time              36.54
+ output                  
+   vertices              vlp/36.res
+ rows, cols, objs        12, 2381, 10
+ vertices, facets        1544, 14087
+ threads used            2
+ total time              49.54
 --------------------------------
 Statistics
 LP:
- oracle calls            11562
-   avg iterations/calls  6.58
- total oracle time       14.23
+ oracle calls            16193
+   avg iterations/calls  5.59
+ total oracle time       22.83
 Combinatorics:
- vertices added          1355
- facets probed           18635
- facets # max            12758
- memory allocated        10.89M
+ vertices added          1544
+ facets probed           20816
+ facets # max            17037
+ memory allocated        13.27M
  storage expansion
-   vertices # / upto     11 / 1404
-   facets   # / upto     4 / 16380
+   vertices # / upto     13 / 1660
+   facets   # / upto     5 / 20476
  facet manipulating
-   added avg / max       62.20 / 459.00
-   compressed            59
+   added avg / max       66.84 / 576.00
+   compressed            61
  number of ridge tests
-   avg / max             491.78k / 3.35M
+   avg / max             651.78k / 5.36M
 --------------------------------
 Parameters with non-default values
- VertexPoolSize = 150
+ VertexPoolSize=100

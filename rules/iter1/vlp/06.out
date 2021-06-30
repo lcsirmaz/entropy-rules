@@ -1,38 +1,36 @@
-C applying rule 06.txt for base200.txt
-I    1.85] recalculating facets...
-I    4.04] recalculating facets...
-I    5.00] Elapsed: 5.00, vertices: 235, facets final: 363, pending: 1063, pool: 62
-I    6.71] recalculating facets...
-I   10.00] Elapsed: 10.00, vertices: 378, facets final: 1054, pending: 101, pool: 34
-I   10.58] recalculating facets...
-I   11.43] Elapsed: 11.43, vertices: 445, facets final: 1235, pending: 0
+C applying rule 06.txt for base.txt
+Using 2 threads
+I    5.00] Elapsed: 5.00, vertices: 548, facets final: 1162, pending: 760, pool: 65
+I    6.61] Elapsed: 6.61, vertices: 665, facets final: 1858, pending: 0
 
 --------------------------------
 Problem completed
  name                    06.vlp
- output                  vlp/06.res
- rows, cols, objs        12, 2635, 10
- vertices, facets        445, 1235
- total time              11.43
+ output                  
+   vertices              vlp/06.res
+ rows, cols, objs        12, 2509, 10
+ vertices, facets        665, 1858
+ threads used            2
+ total time              6.61
 --------------------------------
 Statistics
 LP:
- oracle calls            2060
-   avg iterations/calls  5.98
- total oracle time       9.87
+ oracle calls            3068
+   avg iterations/calls  6.27
+ total oracle time       4.74
 Combinatorics:
- vertices added          445
- facets probed           7763
- facets # max            1570
- memory allocated        2.26M
+ vertices added          665
+ facets probed           7645
+ facets # max            3210
+ memory allocated        2.82M
  storage expansion
-   vertices # / upto     4 / 508
+   vertices # / upto     6 / 764
    facets   # / upto     1 / 4092
  facet manipulating
-   added avg / max       29.64 / 189.00
-   compressed            4
+   added avg / max       49.64 / 458.00
+   compressed            19
  number of ridge tests
-   avg / max             28.26k / 181.70k
+   avg / max             103.00k / 898.41k
 --------------------------------
 Parameters with non-default values
- VertexPoolSize = 100
+ VertexPoolSize=100

@@ -1,46 +1,36 @@
-C applying rule 20.txt for base200.txt
-I    1.59] recalculating facets...
-I    4.80] recalculating facets...
-I    5.00] Elapsed: 5.00, vertices: 204, facets final: 551, pending: 2060, pool: 97
-I    8.15] recalculating facets...
-I   10.00] Elapsed: 10.00, vertices: 346, facets final: 1115, pending: 3253, pool: 96
-I   13.28] recalculating facets...
-I   15.00] Elapsed: 15.00, vertices: 422, facets final: 1874, pending: 2944, pool: 95
-I   20.00] Elapsed: 20.00, vertices: 478, facets final: 2735, pending: 2365, pool: 82
-I   21.96] recalculating facets...
-I   25.00] Elapsed: 25.00, vertices: 537, facets final: 3596, pending: 1736, pool: 61
-I   30.00] Elapsed: 30.00, vertices: 596, facets final: 4513, pending: 956, pool: 43
-I   30.44] recalculating facets...
-I   35.00] Elapsed: 35.00, vertices: 676, facets final: 5427, pending: 189, pool: 25
-I   35.60] recalculating facets...
-I   36.93] Elapsed: 36.93, vertices: 757, facets final: 5698, pending: 0
+C applying rule 20.txt for base.txt
+Using 2 threads
+I    5.00] Elapsed: 5.00, vertices: 373, facets final: 2503, pending: 1231, pool: 76
+I    7.72] Elapsed: 7.72, vertices: 519, facets final: 4110, pending: 0
 
 --------------------------------
 Problem completed
  name                    20.vlp
- output                  vlp/20.res
- rows, cols, objs        12, 2421, 10
- vertices, facets        757, 5698
- total time              36.93
+ output                  
+   vertices              vlp/20.res
+ rows, cols, objs        12, 2398, 10
+ vertices, facets        519, 4110
+ threads used            2
+ total time              7.72
 --------------------------------
 Statistics
 LP:
- oracle calls            6976
-   avg iterations/calls  4.82
- total oracle time       28.07
+ oracle calls            5080
+   avg iterations/calls  4.67
+ total oracle time       6.68
 Combinatorics:
- vertices added          757
- facets probed           16926
- facets # max            5709
- memory allocated        4.43M
+ vertices added          519
+ facets probed           10342
+ facets # max            4113
+ memory allocated        3.60M
  storage expansion
-   vertices # / upto     7 / 892
+   vertices # / upto     5 / 636
    facets   # / upto     2 / 8188
  facet manipulating
-   added avg / max       22.36 / 207.00
+   added avg / max       20.84 / 109.00
    compressed            13
  number of ridge tests
-   avg / max             40.92k / 636.14k
+   avg / max             25.03k / 122.91k
 --------------------------------
 Parameters with non-default values
- VertexPoolSize = 100
+ VertexPoolSize=100

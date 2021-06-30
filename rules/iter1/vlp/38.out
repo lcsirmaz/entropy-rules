@@ -1,73 +1,146 @@
-C applying rule 38.txt for base200.txt
-I    0.89] recalculating facets...
-I    2.75] recalculating facets...
-I    5.00] Elapsed: 5.00, vertices: 298, facets final: 88, pending: 10608, pool: 150
-I    5.03] recalculating facets...
-I    7.42] recalculating facets...
-I    9.67] recalculating facets...
-I   10.00] Elapsed: 10.00, vertices: 513, facets final: 160, pending: 10692, pool: 150
-I   11.89] recalculating facets...
-I   14.00] recalculating facets...
-I   15.00] Elapsed: 15.00, vertices: 745, facets final: 285, pending: 9745, pool: 150
-I   16.14] recalculating facets...
-I   18.31] recalculating facets...
-I   20.00] Elapsed: 20.00, vertices: 976, facets final: 481, pending: 8949, pool: 150
-I   20.45] recalculating facets...
-I   22.73] recalculating facets...
-recalculate_facet: numerical instability at facet 1486, coord 0 (-5.06575e-06)
-recalculate_facet: numerical instability at facet 1486, coord 1 (9.00183e-06)
-recalculate_facet: numerical instability at facet 1486, coord 2 (9.00183e-06)
-recalculate_facet: numerical instability at facet 1486, coord 3 (-1.28622e-05)
-recalculate_facet: numerical instability at facet 1486, coord 4 (1.10018e-06)
-recalculate_facet: numerical instability at facet 1486, coord 5 (-1.17593e-06)
-recalculate_facet: numerical instability at facet 1486, coord 10 (-1.7019e-05)
-recalculate_facet: numerical instability at facet 1488, coord 0 (-3.86124e-06)
-recalculate_facet: numerical instability at facet 1488, coord 1 (7.21439e-06)
-recalculate_facet: numerical instability at facet 1488, coord 2 (7.21439e-06)
-recalculate_facet: numerical instability at facet 1488, coord 3 (-1.05206e-05)
-recalculate_facet: numerical instability at facet 1488, coord 10 (-1.38192e-05)
-I   24.87] recalculating facets...
-recalculate_facet: numerical instability at facet 10367, coord 2 (1.39869e-06)
-recalculate_facet: numerical instability at facet 10367, coord 3 (-1.40182e-06)
-recalculate_facet: numerical instability at facet 10367, coord 10 (-1.40025e-06)
-I   25.00] Elapsed: 25.00, vertices: 1205, facets final: 893, pending: 7140, pool: 150
-I   27.01] recalculating facets...
-I   29.23] recalculating facets...
-I   30.00] Elapsed: 30.00, vertices: 1425, facets final: 1670, pending: 5459, pool: 149
-I   32.42] recalculating facets...
-I   35.00] Elapsed: 35.00, vertices: 1575, facets final: 3165, pending: 3485, pool: 109
-I   36.12] recalculating facets...
-I   40.00] Elapsed: 40.00, vertices: 1687, facets final: 5321, pending: 1009, pool: 43
-I   40.76] recalculating facets...
-I   42.04] Elapsed: 42.04, vertices: 1758, facets final: 6220, pending: 0
+C applying rule 38.txt for base.txt
+Using 2 threads
+I    5.01] Elapsed: 5.01, vertices: 299, facets final: 65, pending: 11519, pool: 100
+recalculate_facet: numerical instability at facet 11909, coord 0 (4.42581e-06)
+recalculate_facet: numerical instability at facet 11909, coord 1 (6.11932e-06)
+recalculate_facet: numerical instability at facet 11909, coord 2 (2.7342e-06)
+recalculate_facet: numerical instability at facet 11909, coord 3 (-6.60943e-06)
+recalculate_facet: numerical instability at facet 11909, coord 4 (5.85281e-06)
+recalculate_facet: numerical instability at facet 11909, coord 5 (-6.11319e-06)
+recalculate_facet: numerical instability at facet 11909, coord 7 (-6.40951e-06)
+recalculate_facet: numerical instability at facet 11909, coord 10 (-8.06861e-06)
+I   10.02] Elapsed: 10.02, vertices: 439, facets final: 95, pending: 16263, pool: 98
+I   15.04] Elapsed: 15.04, vertices: 542, facets final: 108, pending: 18730, pool: 100
+recalculate_facet: numerical instability at facet 11330, coord 0 (-5.5827e-06)
+recalculate_facet: numerical instability at facet 11330, coord 1 (4.19749e-06)
+recalculate_facet: numerical instability at facet 11330, coord 2 (-1.42058e-06)
+recalculate_facet: numerical instability at facet 11330, coord 3 (3.70721e-06)
+I   20.06] Elapsed: 20.06, vertices: 616, facets final: 125, pending: 21769, pool: 100
+I   25.15] Elapsed: 25.15, vertices: 686, facets final: 142, pending: 20960, pool: 100
+recalculate_facet: numerical instability at facet 15673, coord 3 (1.66117e-06)
+recalculate_facet: numerical instability at facet 15673, coord 4 (-1.79043e-06)
+recalculate_facet: numerical instability at facet 15673, coord 7 (-1.36984e-06)
+recalculate_facet: numerical instability at facet 15680, coord 1 (1.11181e-06)
+recalculate_facet: numerical instability at facet 15680, coord 3 (1.20559e-06)
+recalculate_facet: numerical instability at facet 15680, coord 4 (-1.33485e-06)
+recalculate_facet: numerical instability at facet 15680, coord 7 (-1.82542e-06)
+I   30.16] Elapsed: 30.16, vertices: 777, facets final: 164, pending: 18955, pool: 100
+recalculate_facet: numerical instability at facet 2264, coord 2 (-1.51303e-06)
+recalculate_facet: numerical instability at facet 2264, coord 10 (1.07903e-06)
+recalculate_facet: numerical instability at facet 20336, coord 0 (-1.01528e-06)
+recalculate_facet: numerical instability at facet 20336, coord 7 (2.51004e-06)
+recalculate_facet: numerical instability at facet 20336, coord 10 (1.52716e-06)
+I   35.16] Elapsed: 35.16, vertices: 886, facets final: 198, pending: 17423, pool: 100
+recalculate_facet: numerical instability at facet 19402, coord 0 (-1.22621e-06)
+recalculate_facet: numerical instability at facet 19402, coord 1 (-2.70195e-06)
+recalculate_facet: numerical instability at facet 19402, coord 3 (2.05354e-06)
+recalculate_facet: numerical instability at facet 19402, coord 7 (2.52859e-06)
+recalculate_facet: numerical instability at facet 19402, coord 10 (3.76995e-06)
+I   40.17] Elapsed: 40.17, vertices: 1022, facets final: 279, pending: 14617, pool: 99
+recalculate_facet: numerical instability at facet 2981, coord 2 (-1.73516e-06)
+recalculate_facet: numerical instability at facet 2981, coord 10 (1.27762e-06)
+recalculate_facet: numerical instability at facet 3734, coord 2 (-1.71216e-06)
+recalculate_facet: numerical instability at facet 3734, coord 10 (1.49584e-06)
+recalculate_facet: numerical instability at facet 3749, coord 0 (6.88599e-06)
+recalculate_facet: numerical instability at facet 3749, coord 1 (-2.49884e-06)
+recalculate_facet: numerical instability at facet 3749, coord 2 (-1.39779e-05)
+recalculate_facet: numerical instability at facet 3749, coord 3 (6.31863e-06)
+recalculate_facet: numerical instability at facet 3749, coord 4 (-1.19472e-06)
+recalculate_facet: numerical instability at facet 3749, coord 5 (1.80199e-06)
+recalculate_facet: numerical instability at facet 3749, coord 7 (2.66486e-06)
+recalculate_facet: numerical instability at facet 3749, coord 10 (1.34106e-05)
+recalculate_facet: numerical instability at facet 5786, coord 0 (1.09142e-06)
+recalculate_facet: numerical instability at facet 5786, coord 2 (-1.71216e-06)
+recalculate_facet: numerical instability at facet 5786, coord 10 (1.39198e-06)
+recalculate_facet: numerical instability at facet 14140, coord 0 (8.72639e-06)
+recalculate_facet: numerical instability at facet 14140, coord 2 (-1.64798e-05)
+recalculate_facet: numerical instability at facet 14140, coord 3 (2.99569e-06)
+recalculate_facet: numerical instability at facet 14140, coord 4 (1.61825e-06)
+recalculate_facet: numerical instability at facet 14140, coord 7 (3.97641e-06)
+recalculate_facet: numerical instability at facet 14140, coord 10 (1.26464e-05)
+I   45.17] Elapsed: 45.17, vertices: 1198, facets final: 418, pending: 11952, pool: 100
+recalculate_facet: numerical instability at facet 19290, coord 0 (-2.9323e-06)
+recalculate_facet: numerical instability at facet 19290, coord 2 (4.6712e-06)
+recalculate_facet: numerical instability at facet 19290, coord 3 (-1.60665e-06)
+recalculate_facet: numerical instability at facet 19290, coord 10 (-3.88384e-06)
+I   50.18] Elapsed: 50.18, vertices: 1371, facets final: 624, pending: 10567, pool: 100
+recalculate_facet: numerical instability at facet 11206, coord 2 (1.10482e-06)
+recalculate_facet: numerical instability at facet 11421, coord 0 (-4.10064e-06)
+recalculate_facet: numerical instability at facet 11421, coord 1 (-8.9453e-06)
+recalculate_facet: numerical instability at facet 11421, coord 2 (-1.54003e-06)
+recalculate_facet: numerical instability at facet 11421, coord 3 (6.83754e-06)
+recalculate_facet: numerical instability at facet 11421, coord 7 (8.3577e-06)
+recalculate_facet: numerical instability at facet 11421, coord 10 (1.24782e-05)
+recalculate_facet: numerical instability at facet 11431, coord 0 (-1.60933e-06)
+recalculate_facet: numerical instability at facet 11431, coord 1 (-3.51964e-06)
+recalculate_facet: numerical instability at facet 11431, coord 3 (2.69323e-06)
+recalculate_facet: numerical instability at facet 11431, coord 7 (3.29129e-06)
+recalculate_facet: numerical instability at facet 11431, coord 10 (4.91851e-06)
+I   55.18] Elapsed: 55.18, vertices: 1595, facets final: 1089, pending: 8633, pool: 100
+recalculate_facet: numerical instability at facet 11590, coord 2 (-1.33421e-06)
+recalculate_facet: numerical instability at facet 11590, coord 3 (1.42026e-06)
+recalculate_facet: numerical instability at facet 11590, coord 10 (1.37723e-06)
+recalculate_facet: numerical instability at facet 14642, coord 2 (-1.30747e-06)
+recalculate_facet: numerical instability at facet 14642, coord 3 (1.39438e-06)
+recalculate_facet: numerical instability at facet 14642, coord 10 (1.34507e-06)
+solve_lineq: rank is too large, increase LineqEps=8e-08
+recalculate_facet: adjacency vertex list of facet 15224 is degenerate
+solve_lineq: rank is too large, increase LineqEps=8e-08
+recalculate_facet: adjacency vertex list of facet 15228 is degenerate
+recalculate_facet: numerical instability at facet 15510, coord 2 (-1.76818e-06)
+recalculate_facet: numerical instability at facet 15510, coord 3 (1.84534e-06)
+recalculate_facet: numerical instability at facet 15510, coord 10 (1.78034e-06)
+recalculate_facet: numerical instability at facet 15512, coord 2 (1.30858e-06)
+recalculate_facet: numerical instability at facet 15512, coord 3 (-1.41685e-06)
+recalculate_facet: numerical instability at facet 15512, coord 10 (-1.32494e-06)
+solve_lineq: rank is too large, increase LineqEps=8e-08
+recalculate_facet: adjacency vertex list of facet 15577 is degenerate
+recalculate_facet: numerical instability at facet 16083, coord 0 (2.67426e-05)
+recalculate_facet: numerical instability at facet 16083, coord 1 (-2.31465e-05)
+recalculate_facet: numerical instability at facet 16083, coord 2 (-2.56878e-05)
+recalculate_facet: numerical instability at facet 16083, coord 3 (1.96166e-05)
+recalculate_facet: numerical instability at facet 16083, coord 4 (2.47513e-06)
+recalculate_facet: numerical instability at facet 16083, coord 10 (2.9284e-05)
+recalculate_facet: numerical instability at facet 16084, coord 0 (-1.648e-06)
+recalculate_facet: numerical instability at facet 16084, coord 1 (1.68503e-06)
+recalculate_facet: numerical instability at facet 16085, coord 0 (1.94633e-05)
+recalculate_facet: numerical instability at facet 16085, coord 1 (-2.07747e-05)
+recalculate_facet: numerical instability at facet 16085, coord 2 (-2.59029e-05)
+recalculate_facet: numerical instability at facet 16085, coord 3 (2.44875e-05)
+recalculate_facet: numerical instability at facet 16085, coord 4 (-1.19187e-05)
+recalculate_facet: numerical instability at facet 16085, coord 5 (1.46456e-05)
+recalculate_facet: numerical instability at facet 16085, coord 10 (2.45915e-05)
+I   57.75] Elapsed: 57.75, vertices: 1700, facets final: 1450, pending: 7513, pool: 100
 
 --------------------------------
-Problem completed
+Problem aborted with error
  name                    38.vlp
- output                  vlp/38.res
- rows, cols, objs        12, 2839, 10
- vertices, facets        1758, 6220
- total time              42.04
+ output                  
+   vertices              vlp/38.res
+ rows, cols, objs        12, 2588, 10
+ vertices, facets        1700, 8963
+ threads used            2
+ total time              57.75
 --------------------------------
 Statistics
 LP:
- oracle calls            8851
-   avg iterations/calls  9.63
- total oracle time       15.45
+ oracle calls            3541
+   avg iterations/calls  8.32
+ total oracle time       6.68
 Combinatorics:
- vertices added          1758
- facets probed           15504
- facets # max            11028
- memory allocated        10.88M
- instability warnings    15
+ vertices added          1700
+ facets probed           3667
+ facets # max            22051
+ memory allocated        16.33M
+ instability warnings    93
  storage expansion
    vertices # / upto     14 / 1788
-   facets   # / upto     3 / 12284
+   facets   # / upto     6 / 24572
  facet manipulating
-   added avg / max       71.09 / 507.00
-   compressed            66
+   added avg / max       135.02 / 1.50k
+   compressed            114
  number of ridge tests
-   avg / max             542.17k / 3.92M
+   avg / max             1.82M / 23.24M
 --------------------------------
 Parameters with non-default values
- VertexPoolSize = 150
+ VertexPoolSize=100

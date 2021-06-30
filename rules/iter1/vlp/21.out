@@ -1,68 +1,38 @@
-C applying rule 21.txt for base200.txt
-I    1.76] recalculating facets...
-I    3.91] recalculating facets...
-I    5.01] Elapsed: 5.01, vertices: 233, facets final: 66, pending: 4940, pool: 100
-I    7.63] recalculating facets...
-I   10.01] Elapsed: 10.01, vertices: 354, facets final: 109, pending: 7079, pool: 100
-I   12.17] recalculating facets...
-I   15.03] Elapsed: 15.03, vertices: 462, facets final: 181, pending: 6322, pool: 100
-I   16.61] recalculating facets...
-I   20.03] Elapsed: 20.03, vertices: 574, facets final: 285, pending: 6477, pool: 99
-I   21.18] recalculating facets...
-I   25.03] Elapsed: 25.03, vertices: 684, facets final: 383, pending: 6529, pool: 100
-I   25.75] recalculating facets...
-I   30.04] Elapsed: 30.04, vertices: 787, facets final: 529, pending: 6581, pool: 100
-I   30.67] recalculating facets...
-I   35.06] Elapsed: 35.06, vertices: 886, facets final: 721, pending: 6461, pool: 100
-I   35.79] recalculating facets...
-I   40.06] Elapsed: 40.06, vertices: 984, facets final: 917, pending: 5990, pool: 100
-I   40.94] recalculating facets...
-I   45.07] Elapsed: 45.07, vertices: 1080, facets final: 1196, pending: 5521, pool: 100
-I   46.08] recalculating facets...
-I   50.09] Elapsed: 50.09, vertices: 1172, facets final: 1513, pending: 5164, pool: 100
-I   51.46] recalculating facets...
-I   55.09] Elapsed: 55.09, vertices: 1259, facets final: 1905, pending: 4604, pool: 99
-I   57.39] recalculating facets...
-I   60.09] Elapsed: 1:00, vertices: 1343, facets final: 2382, pending: 4148, pool: 99
-I   63.54] recalculating facets...
-I   65.09] Elapsed: 1:05, vertices: 1419, facets final: 2912, pending: 3648, pool: 99
-I   70.11] Elapsed: 1:10, vertices: 1480, facets final: 3556, pending: 2917, pool: 96
-I   72.04] recalculating facets...
-I   75.11] Elapsed: 1:15, vertices: 1532, facets final: 4281, pending: 2124, pool: 99
-I   80.13] Elapsed: 1:20, vertices: 1580, facets final: 5114, pending: 1334, pool: 90
-I   81.96] recalculating facets...
-I   85.13] Elapsed: 1:25, vertices: 1640, facets final: 5896, pending: 511, pool: 67
-I   87.91] recalculating facets...
-I   90.13] Elapsed: 1:30, vertices: 1768, facets final: 6359, pending: 96, pool: 41
-I   90.80] recalculating facets...
-I   92.44] Elapsed: 1:32, vertices: 1884, facets final: 6507, pending: 0
+C applying rule 21.txt for base.txt
+Using 2 threads
+I    5.00] Elapsed: 5.00, vertices: 502, facets final: 569, pending: 4815, pool: 99
+I   10.00] Elapsed: 10.00, vertices: 886, facets final: 1839, pending: 4420, pool: 97
+I   15.00] Elapsed: 15.00, vertices: 1110, facets final: 4211, pending: 1890, pool: 69
+I   18.46] Elapsed: 18.46, vertices: 1308, facets final: 6097, pending: 0
 
 --------------------------------
 Problem completed
  name                    21.vlp
- output                  vlp/21.res
- rows, cols, objs        12, 2436, 10
- vertices, facets        1884, 6507
- total time              1:32
+ output                  
+   vertices              vlp/21.res
+ rows, cols, objs        12, 2401, 10
+ vertices, facets        1308, 6097
+ threads used            2
+ total time              18.46
 --------------------------------
 Statistics
 LP:
- oracle calls            8935
-   avg iterations/calls  4.75
- total oracle time       36.91
+ oracle calls            8023
+   avg iterations/calls  4.60
+ total oracle time       10.65
 Combinatorics:
- vertices added          1884
- facets probed           23619
- facets # max            7329
- memory allocated        7.76M
+ vertices added          1308
+ facets probed           17207
+ facets # max            6399
+ memory allocated        6.10M
  storage expansion
-   vertices # / upto     15 / 1916
+   vertices # / upto     11 / 1404
    facets   # / upto     2 / 8188
  facet manipulating
-   added avg / max       37.70 / 519.00
-   compressed            48
+   added avg / max       44.60 / 578.00
+   compressed            25
  number of ridge tests
-   avg / max             179.38k / 3.00M
+   avg / max             162.45k / 1.77M
 --------------------------------
 Parameters with non-default values
- VertexPoolSize = 100
+ VertexPoolSize=100

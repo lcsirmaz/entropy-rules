@@ -1,34 +1,35 @@
-C applying rule 37.txt for base200.txt
-I    0.49] recalculating facets...
-I    1.27] recalculating facets...
-I    1.39] Elapsed: 1.39, vertices: 229, facets final: 646, pending: 0
+C applying rule 37.txt for base.txt
+Using 2 threads
+I    1.27] Elapsed: 1.27, vertices: 170, facets final: 601, pending: 0
 
 --------------------------------
 Problem completed
  name                    37.vlp
- output                  vlp/37.res
- rows, cols, objs        12, 2601, 10
- vertices, facets        229, 646
- total time              1.39
+ output                  
+   vertices              vlp/37.res
+ rows, cols, objs        12, 2466, 10
+ vertices, facets        170, 601
+ threads used            2
+ total time              1.27
 --------------------------------
 Statistics
 LP:
- oracle calls            1057
-   avg iterations/calls  4.48
- total oracle time       1.30
+ oracle calls            896
+   avg iterations/calls  3.79
+ total oracle time       1.17
 Combinatorics:
- vertices added          229
- facets probed           6469
- facets # max            845
- memory allocated        2.19M
+ vertices added          170
+ facets probed           4731
+ facets # max            663
+ memory allocated        1.69M
  storage expansion
    vertices # / upto     2 / 252
    facets   # / upto     1 / 4092
  facet manipulating
-   added avg / max       25.89 / 154.00
-   compressed            1
+   added avg / max       20.79 / 117.00
+   compressed            0
  number of ridge tests
-   avg / max             12.04k / 70.28k
+   avg / max             7.49k / 38.78k
 --------------------------------
 Parameters with non-default values
- VertexPoolSize = 150
+ VertexPoolSize=100

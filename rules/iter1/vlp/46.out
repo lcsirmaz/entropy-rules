@@ -1,44 +1,38 @@
-C applying rule 46.txt for base200.txt
-I    0.52] recalculating facets...
-I    1.40] recalculating facets...
-I    2.44] recalculating facets...
-I    3.99] recalculating facets...
-I    5.00] Elapsed: 5.00, vertices: 455, facets final: 1072, pending: 4933, pool: 137
-I    5.81] recalculating facets...
-I    7.95] recalculating facets...
-I   10.00] Elapsed: 10.00, vertices: 685, facets final: 3123, pending: 4515, pool: 92
-I   10.46] recalculating facets...
-I   13.55] recalculating facets...
-I   15.00] Elapsed: 15.00, vertices: 856, facets final: 6131, pending: 2022, pool: 50
-I   16.27] recalculating facets...
-I   18.08] Elapsed: 18.08, vertices: 968, facets final: 8346, pending: 0
+C applying rule 46.txt for base.txt
+Using 2 threads
+I    5.00] Elapsed: 5.00, vertices: 462, facets final: 1190, pending: 5039, pool: 100
+I   10.00] Elapsed: 10.00, vertices: 622, facets final: 3632, pending: 2984, pool: 55
+I   15.00] Elapsed: 15.00, vertices: 711, facets final: 6618, pending: 145, pool: 2
+I   15.24] Elapsed: 15.24, vertices: 727, facets final: 6773, pending: 0
 
 --------------------------------
 Problem completed
  name                    46.vlp
- output                  vlp/46.res
- rows, cols, objs        12, 2463, 10
- vertices, facets        968, 8346
- total time              18.08
+ output                  
+   vertices              vlp/46.res
+ rows, cols, objs        12, 2431, 10
+ vertices, facets        727, 6773
+ threads used            2
+ total time              15.24
 --------------------------------
 Statistics
 LP:
- oracle calls            10227
-   avg iterations/calls  5.55
- total oracle time       12.07
+ oracle calls            8088
+   avg iterations/calls  6.58
+ total oracle time       12.27
 Combinatorics:
- vertices added          968
- facets probed           15752
- facets # max            8360
- memory allocated        7.20M
+ vertices added          727
+ facets probed           12160
+ facets # max            6776
+ memory allocated        4.03M
  storage expansion
-   vertices # / upto     8 / 1020
-   facets   # / upto     3 / 12284
+   vertices # / upto     6 / 764
+   facets   # / upto     2 / 8188
  facet manipulating
-   added avg / max       35.04 / 213.00
-   compressed            37
+   added avg / max       35.77 / 202.00
+   compressed            16
  number of ridge tests
-   avg / max             104.09k / 747.41k
+   avg / max             89.70k / 731.22k
 --------------------------------
 Parameters with non-default values
- VertexPoolSize = 150
+ VertexPoolSize=100
