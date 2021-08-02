@@ -14,7 +14,7 @@
 # The normalized list contains the same inequalities normalized to have 
 #  the Ingleton coefficient be equal to 1.
 #
-# The number of inequalities listed is 621.
+# The number of inequalities listed is 638.
 #
 #   Coefficients          copy string                         label
 #
@@ -179,6 +179,7 @@
 6, 8,13,2, 0,0,3, 0,0,0,0, rs=cd:ab;tu=ac:bds;v=b:adrt,       copy:163:28
 6, 9,7,0, 2,10,6, 1,0,0,0, rs=cd:ab;tu=cd:ar;v=a:bdsu,        copy:174:46
 6, 9,12,0, 5,5,3, 0,0,0,0, rs=cd:ab;tu=cd:ar;v=a:bcru,        copy:171:30
+6, 9,13,2, 0,1,0, 0,0,0,0, rs=ac:bd;tu=bc:adr;vw=cd:abr,      copy:221:27
 6, 10,9,2, 3,0,3, 0,0,0,0, rs=cd:ab;tu=ac:br;v=u:ad,          copy:200:18
 6, 10,10,1, 4,4,0, 5,0,0,0, rs=cd:ab;tu=cs:ad;v=d:art,        copy:195:35
 6, 11,10,1, 1,6,1, 0,0,0,0, rs=cd:ab;tu=cd:ar;v=a:bdrt,       copy:172:41
@@ -197,6 +198,7 @@
 7, 1,10,10, 0,8,8, 0,0,0,0, rs=cd:ab;tu=cd:abrs;vw=cs:abu,    copy:169:25
 7, 1,12,12, 0,5,5, 0,0,0,0, rs=cd:ab;tuv=cdr:ab,              dfz:13:13
 7, 1,15,14, 0,3,3, 0,0,0,0, rs=cd:ab;tuv=cdr:ab;w=a:bcrtv,    copy:219:51
+7, 1,22,22, 0,1,1, 0,0,0,0, rs=cd:ab;tu=cr:ab;v=(cr):abt;w=(cr):abtv, copy:220:16
 7, 1,28,28, 0,0,0, 0,0,0,0, rs=cd:ab;t=(cr):ab;u=(cr):abt;v=(cr):abtu, copy:197:15
 7, 2,6,6, 0,9,8, 0,0,0,0, rs=cd:ab;tu=ac:bdr;v=a:drt,         copy:150:227
 7, 3,6,6, 0,5,4, 0,0,0,0, rs=cd:ab;tu=ac:bdr;v=b:drt,         copy:153:193
@@ -213,9 +215,11 @@
 7, 10,11,2, 0,2,2, 0,0,0,0, rs=ac:bd;tu=cd:abr;v=u:adr,       copy:125:17
 7, 10,13,0, 6,6,3, 0,0,0,0, rs=cd:ab;tu=cd:ar;v=a:bcru,       copy:171:37
 7, 10,13,2, 4,2,0, 0,0,0,0, rs=cd:ab;t=a:bcs;uv=cd:as,        copy:146:76
-7, 12,12,1, 9,9,0, 10,0,0,0, rs=cd:ab;tu=cr:ad;v=u:ast,       copy:191:22
+7, 12,16,2, 0,1,0, 0,0,0,0, rs=ac:bd;tu=bc:adr;vw=cd:abr,     copy:221:33
+7, 13,13,1, 5,5,0, 6,0,0,0, rs=cd:ab;tu=cr:ad;vw=du:ast,      copy:223:42
 7, 13,13,1, 7,7,0, 0,0,0,0, rs=cd:ab;tu=cd:ar;v=u:ad,         copy:184:27
 7, 14,12,2, 0,4,0, 0,0,0,0, rs=cd:ab;tu=cd:ar;v=a:bdrt,       copy:172:54
+7, 14,14,1, 4,4,0, 8,0,0,0, rs=cd:ab;tu=cr:ad;vw=du:ast,      copy:223:43
 7, 15,15,1, 4,4,0, 0,0,0,0, rs=cd:ab;tu=cd:ar;v=u:ac,         copy:183:31
 7, 16,20,1, 0,3,3, 0,0,0,0, rs=cd:ab;t=a:bcr;u=a:bcrt;v=a:bcrtu, copy:141:27
 7, 18,18,1, 2,2,0, 0,0,0,0, rs=cd:ab;tu=cd:ar;v=t:ac,         copy:182:32
@@ -225,6 +229,7 @@
 8, 1,13,13, 0,8,8, 0,0,0,0, rs=cd:ab;tu=cd:abrs;vw=cs:abu,    copy:169:31
 8, 1,16,15, 0,5,5, 0,0,0,0, rs=cd:ab;tuv=cdr:ab;w=a:bcrtv,    copy:219:58
 8, 1,18,18, 0,4,4, 0,0,0,0, rs=cd:ab;tu=cr:ab;vw=cs:abtu,     copy:188:24
+8, 1,25,25, 0,2,2, 0,0,0,0, rs=cd:ab;tu=cr:ab;v=(cr):abt;w=(cr):abtv, copy:220:18
 8, 1,30,30, 0,1,1, 0,0,0,0, rs=cd:ab;t=(cr):ab;u=(cr):abt;v=(cr):abtu, copy:197:17
 8, 2,7,7, 0,12,11, 0,0,0,0, rs=cd:ab;tu=ac:bdr;v=a:drt,       copy:150:301
 8, 2,8,7, 0,10,9, 0,0,0,0, rs=cd:ab;tu=ac:bdr;v=a:drt,        copy:150:304
@@ -246,13 +251,15 @@
 8, 9,9,5, 0,0,0, 0,0,0,0, rs=ac:bd;t=d:abr;u=d:abrt,          dfz:82:82
 8, 9,18,2, 0,3,4, 0,0,0,0, rs=cd:ab;tu=ac:bds;v=b:adrt,       copy:163:37
 8, 10,13,3, 3,1,0, 0,0,0,0, rs=ac:bd;tu=cd:ab;v=b:adt,        copy:116:79
+8, 10,16,3, 1,1,0, 0,0,0,0, rs=ac:bd;tu=bc:adr;vw=cd:abr,     copy:221:42
 8, 10,17,2, 0,2,5, 0,0,0,0, rs=cd:ab;tu=ac:bds;v=b:adrt,      copy:163:41
 8, 11,12,0, 6,9,3, 0,0,0,0, rs=cd:ab;tu=cd:ar;v=a:bcru,       copy:171:53
 8, 11,14,2, 0,5,16, 8,0,0,0, rs=cd:ab;tu=ac:bdr;v=d:bsu,      copy:157:38
 8, 12,13,2, 4,3,0, 0,0,0,0, rs=cd:ab;tu=cd:ar;v=a:bcru,       copy:171:56
 8, 13,16,2, 4,2,0, 0,0,0,0, rs=cd:ab;t=a:bcs;uv=cd:as,        copy:146:92
 8, 15,13,2, 1,5,0, 0,0,0,0, rs=cd:ab;tu=cd:ar;v=a:bdrt,       copy:172:75
-8, 16,16,1, 10,10,0, 12,0,0,0, rs=cd:ab;tu=cr:ad;v=u:ast,     copy:191:26
+8, 15,15,1, 7,7,0, 8,0,0,0, rs=cd:ab;tu=cr:ad;vw=du:ast,      copy:223:47
+8, 16,16,1, 6,6,0, 9,0,0,0, rs=cd:ab;tu=cr:ad;vw=du:ast,      copy:223:48
 8, 25,25,1, 2,2,0, 0,0,0,0, rs=cd:ab;tu=cd:ar;v=t:ac,         copy:182:37
 8, 27,23,0, 4,12,2, 0,0,0,0, rs=cd:ab;tu=cd:ar;v=u:ac,        copy:183:36
 9, 1,19,19, 0,6,6, 0,0,0,0, rs=cd:ab;tu=cr:ab;vw=cs:abtu,     copy:188:26
@@ -280,6 +287,8 @@
 9, 16,15,2, 2,6,0, 0,0,0,0, rs=cd:ab;tu=cd:ar;v=a:bdrt,       copy:172:98
 9, 16,16,2, 2,5,0, 0,0,0,0, rs=cd:ab;tu=cd:ar;v=a:bdrt,       copy:172:99
 9, 19,15,0, 4,15,4, 0,0,0,0, rs=cd:ab;tu=cd:ar;v=u:ac,        copy:183:39
+9, 19,19,1, 8,8,0, 10,0,0,0, rs=cd:ab;tu=cr:ad;vw=du:ast,     copy:223:58
+9, 20,20,1, 7,7,0, 11,0,0,0, rs=cd:ab;tu=cr:ad;vw=du:ast,     copy:223:59
 9, 21,17,0, 5,14,3, 0,0,0,0, rs=cd:ab;tu=cd:ar;v=u:ac,        copy:183:40
 9, 21,21,1, 8,8,0, 0,0,0,0, rs=cd:ab;tu=cd:ar;vw=rt:ad,       copy:185:39
 9, 23,23,1, 6,6,0, 0,0,0,0, rs=cd:ab;tu=cd:ar;v=u:ac,         copy:183:41
@@ -312,6 +321,8 @@
 10, 13,11,4, 3,3,0, 0,0,0,0, rs=ac:bd;tu=cd:ab;v=b:adru,      copy:115:92
 10, 14,13,3, 4,4,0, 0,0,0,0, rs=cd:ab;tu=cd:ar;v=a:bcru,      copy:171:84
 10, 15,14,3, 3,3,0, 0,0,0,0, rs=cd:ab;tu=cd:ar;v=a:bdrt,      copy:172:114
+10, 16,22,3, 1,1,0, 0,0,0,0, rs=ac:bd;tu=bc:adr;vw=cd:abr,    copy:221:52
+10, 19,12,4, 1,1,0, 0,0,0,0, rs=ac:bd;tu=bc:adr;vw=cd:abr,    copy:221:56
 10, 19,20,2, 0,3,3, 0,0,0,0, rs=ac:bd;tu=cd:abr;v=d:aru,      copy:124:26
 10, 19,21,2, 4,3,0, 0,0,0,0, rs=cd:ab;tu=cd:ar;v=a:bcru,      copy:171:92
 11, 1,19,19, 0,14,14, 0,0,0,0, rs=cd:ab;tu=cd:abrs;vw=cs:abu, copy:169:39
@@ -372,6 +383,7 @@
 13, 18,18,4, 5,4,0, 0,0,0,0, rs=cd:ab;tu=cd:ar;v=a:bdrt,      copy:172:177
 13, 19,17,4, 4,5,0, 0,0,0,0, rs=cd:ab;tu=cd:ar;v=a:bcru,      copy:171:136
 13, 25,21,0, 7,19,5, 0,0,0,0, rs=cd:ab;tu=cd:ar;v=u:ac,       copy:183:57
+13, 28,21,4, 1,1,0, 0,0,0,0, rs=ac:bd;tu=bc:adr;vw=cd:abr,    copy:221:75
 14, 6,18,18, 0,7,0, 0,0,0,0, rs=cd:ab;tu=ac:bdr;vw=bt:ads,    copy:210:338
 14, 7,17,9, 0,6,9, 0,1,0,0, rs=cd:ab;tu=ac:bdr;vw=bt:ads,     copy:210:343
 14, 7,17,9, 0,6,10, 0,0,0,0, rs=cd:ab;tu=ac:bdr;vw=bt:ads,    copy:210:344
@@ -383,6 +395,7 @@
 14, 14,13,0, 12,17,5, 0,0,0,0, rs=cd:ab;tu=ac:bs;v=t:bcu,     copy:166:25
 14, 15,12,6, 2,3,0, 18,0,0,0, rs=ac:bd;tu=ad:bcr;v=b:rstu,    copy:105:119
 14, 18,17,6, 2,3,0, 0,0,0,0, rs=ac:bd;tu=cd:ab;v=b:adrt,      copy:114:71
+14, 21,32,4, 0,4,1, 0,0,0,0, rs=ac:bd;tu=bc:adr;vw=cd:abr,    copy:221:78
 14, 25,23,3, 4,9,0, 0,0,0,0, rs=cd:ab;tu=cd:ar;v=a:bdrt,      copy:172:206
 14, 29,28,3, 2,10,0, 0,0,0,0, rs=cd:ab;tu=cd:ar;v=a:bdrt,     copy:172:210
 14, 33,28,0, 7,21,5, 0,0,0,0, rs=cd:ab;tu=cd:ar;v=u:ac,       copy:183:60
@@ -395,6 +408,7 @@
 15, 13,23,5, 0,26,12, 0,0,0,0, rs=cd:ab;tu=ac:bdr;v=a:bdst,   copy:149:843
 15, 19,15,0, 5,30,12, 0,0,0,0, rs=cd:ab;tu=cd:abr;vw=cr:au,   copy:168:113
 15, 21,21,4, 6,7,0, 0,0,0,0, rs=cd:ab;tu=cd:ar;v=a:bcru,      copy:171:166
+15, 29,17,6, 2,2,0, 2,0,0,0, rs=ac:bd;tu=bc:adr;vw=cd:abr,    copy:221:83
 15, 29,26,3, 5,11,0, 0,0,0,0, rs=cd:ab;tu=cd:ar;v=a:bdrt,     copy:172:234
 16, 10,18,9, 0,7,11, 0,0,0,0, rs=cd:ab;t=a:bcs;uv=bt:acr,     copy:145:223
 16, 10,20,9, 0,6,14, 0,0,0,0, rs=cd:ab;t=a:bcs;uv=bt:acr,     copy:145:224
@@ -410,6 +424,7 @@
 16, 16,17,6, 3,5,0, 25,0,0,0, rs=ac:bd;tu=cd:abs;v=b:rst,     copy:132:105
 16, 23,26,4, 8,7,0, 1,0,0,0, rs=cd:ab;tu=cd:ar;v=a:bcru,      copy:171:179
 16, 26,21,3, 3,14,3, 0,0,0,0, rs=cd:ab;tu=cd:ar;v=a:bdrt,     copy:172:248
+16, 27,38,4, 0,4,1, 0,0,0,0, rs=ac:bd;tu=bc:adr;vw=cd:abr,    copy:221:89
 17, 10,23,10, 0,6,14, 0,1,0,0, rs=cd:ab;t=a:bcs;uv=bt:acr,    copy:145:238
 17, 10,23,10, 0,6,15, 0,0,0,0, rs=cd:ab;t=a:bcs;uv=bt:acr,    copy:145:239
 17, 11,20,9, 0,8,12, 0,0,0,0, rs=cd:ab;t=a:bcs;uv=bt:acr,     copy:145:242
@@ -504,6 +519,7 @@
 23, 32,35,6, 12,10,0, 1,0,0,0, rs=cd:ab;tu=cd:ar;v=a:bcru,    copy:171:242
 23, 35,36,6, 0,5,46, 4,0,0,0, rs=cd:ab;tu=ac:bdr;vw=br:adst,  copy:202:1063
 23, 43,36,6, 3,13,0, 0,0,0,0, rs=cd:ab;tu=cd:ar;v=a:bdrt,     copy:172:337
+24, 11,31,29, 5,0,3, 0,0,0,0, rs=cd:ab;tu=ac:bds;vw=br:adst,  copy:222:57
 24, 13,26,14, 0,13,18, 0,1,0,0, rs=cd:ab;tu=ac:bdr;vw=bt:ads, copy:210:851
 24, 14,28,13, 0,14,15, 0,2,0,0, rs=cd:ab;tu=ac:bdr;vw=bt:ads, copy:210:862
 24, 24,19,0, 8,48,21, 0,0,0,0, rs=cd:ab;tu=cd:abr;vw=cr:au,   copy:168:160
@@ -546,6 +562,7 @@
 31, 17,36,18, 0,16,24, 0,2,0,0, rs=cd:ab;tu=ac:bdr;vw=bt:ads, copy:210:1138
 31, 20,27,25, 0,13,6, 0,0,0,0, rs=cd:ab;tu=ac:bdr;v=b:adrt,   copy:151:1653
 31, 56,48,8, 5,16,0, 0,0,0,0, rs=cd:ab;tu=cd:ar;v=a:bdrt,     copy:172:398
+32, 15,41,38, 6,0,4, 0,0,0,0, rs=cd:ab;tu=ac:bds;vw=br:adst,  copy:222:60
 32, 18,34,19, 0,15,27, 0,0,0,0, rs=cd:ab;tu=ac:bdr;vw=bt:ads, copy:210:1175
 32, 21,39,17, 0,14,21, 0,1,0,0, rs=cd:ab;t=a:bcs;uv=bt:acr,   copy:145:494
 32, 22,50,15, 0,16,27, 0,0,0,0, rs=cd:ab;tu=ac:bdr;vw=bt:ads, copy:210:1186

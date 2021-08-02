@@ -9,7 +9,8 @@ use strict;
 sub print_usage {
     print "Usage: mkvlp.pl  [fx] <copy string> <filename>\n",
           "   f -- full (10), default\n",
-          "   x -- truncated to 8\n";
+          "   x -- truncated to 8\n",
+          "  xx -- truncated to 6\n";
     exit 1;
 }
 
@@ -17,14 +18,14 @@ sub print_usage {
 if(scalar @ARGV ==0 || $ARGV[0] =~ /^\-[\-]?h/ ){ print_usage(); }
 
 my ($full,$paste,$file)=("","","");
-if($ARGV[0] =~ /^[\-]?([xf])/ ){
+if($ARGV[0] =~ /^[\-]?([xf]+)/ ){
     $full=$1; $paste=$ARGV[1]; $file=$ARGV[2];
 } else {
     $paste=$ARGV[0]; $file=$ARGV[1];
 }
 $full="f" if(!$full);
-$full=substr($full,0,1);
-$full = $full eq "f" ? 10 : $full eq "x" ? 8 : 0;
+# $full=substr($full,0,1);
+$full = $full eq "f" ? 10 : $full eq "x" ? 8 : $full eq "xx" ? 6 : 0;
 if(!$paste || !$file || !$full ){ print_usage(); }
 
 ##########################################################################
@@ -183,16 +184,27 @@ sub makeEQ {
     my $gn=$g->[$n];
     my %t=();
     for my $i(0..$n-1){
-        next if(! $g->[$i]);
-        $t{$i}= $gn==-1 ? $g->[$i] : $gn==1 ? -$g->[$i] : (-$g->[$i]/($gn+0.0));
+        my $v=$g->[$i];
+        next if(! $v);
+        $t{$i}= $gn==-1 ? $v : $gn==1 ? -$v : (-$v/($gn+0.0));
     }
-    $info->{trans}[$n]=\%t;
+    $info->{trans}[$n]=\%t; $info->{trn}++;
+}
+
+sub checkeq { # return 1 for zero, 1 for non-zero
+    my($info,$x,$b,$c,$d)=@_;
+    my $g=[];
+    putto($info,$x,1,$g); putto($info,$b,-1,$g); 
+    putto($info,$c,-1,$g); putto($info,$d,1,$g);
+    my $n=-1+scalar @$g;
+    while($n>=0 && ! $g->[$n]){ $n--; } # get the first non-zero item
+    return $n<=0; 
 }
 
 sub paste { # rst = (ab)cd : uv
     my($info,$dsc)=@_;
     if(! defined $info->{vars} ){$info->{vars} = 0xf; }
-    if(! defined $info->{trans} ){$info->{trans} = (); }
+    if(! defined $info->{trans} ){$info->{trans} = (); $info->{trn}=0; }
     if(! defined $info->{paste} ){$info->{paste} = (); }
     if($dsc !~ /^\s*([rstuvw]+)=([[abcdrstuvw\(\)]+):([abcdrstuvw]*)\s*$/ ){
         return "copy: wrong syntax ($dsc)";
@@ -263,6 +275,35 @@ sub paste { # rst = (ab)cd : uv
             next if($B & ~$Y); ## $B is not a subset of $Y
             makeEQ($info,$v|$B|$X,$v|$X,$B|$X,$X);
         }
+    }
+    # check for consequences: if Ai=A then Aij=Aj (and iterate)
+    # if Aijk-Ajk=Ai-A, then Aij-Aj=Ai-A (and iterate)
+    my $done=0; $vars=$info->{vars};
+    while($done==0){ $done=1;
+       for my $A(0 .. $vars){
+         for(my $i=1;$i<$vars;$i<<=1){
+           next if(($A&$i)!=0 || ($i&$vars)==0);
+           my $oldtr=$info->{trn};
+           if(checkeq($info,$A|$i,$A)){
+             for(my $j=1; $j<$vars;$j<<=1){
+                next if(($A&$j)!=0 || $i==$j || ($j&$vars)==0);
+                makeEQ($info,$A|$i|$j,$A|$j);
+             }
+           }
+           for(my $j=1; $j<$vars;$j<<=1){
+#            for my $j(1 .. $vars){
+              next if((($A|$i)&$j)!=0 || ($j&$vars)!=$j);
+              for(my $k=1;$k<$vars;$k<<=1){
+#              for my $k(1 .. $vars){
+                 next if((($A|$i|$j)&$k)!=0 || ($k&$vars)!=$k);
+                 if(checkeq($info,$A|$i|$j|$k,$A|$j|$k,$A|$i,$A)){
+                    makeEQ($info,$A|$i|$j,$A|$j,$A|$i,$A);
+                 }
+              }
+           }
+           if($oldtr<$info->{trn}){ $done=0; }
+         }
+       }
     }
     return "";
 }

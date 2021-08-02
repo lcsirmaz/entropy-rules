@@ -5,10 +5,11 @@
 #
 #idx    copy string                                  time  vertex new
 #
+196     rs=ac:bd;t=(ar):bd;u=(ar):bdt;v=(ar):bdtu     0:03     7    2
 101     rs=ac:bd;t=c:abr;uv=bc:adr                    0:08    26    1
+201     rs=ac:bd;t=d:abr;u=d:abrt;vw=cd:abs        1:32:00  1452    4
 102     rs=ac:bd;t=d:abr;uv=cd:ab                     0:12    34    2
 103     rs=ac:bd;t=d:abs;uv=bt:adr                    0:09    51    8
-200     rs=cd:ab;tu=ac:br;v=u:ad                      0:11    24    1
 104     rs=ac:bd;tu=ad:bcr;v=a:bdu                    0:39    67    4
 105     rs=ac:bd;tu=ad:bcr;v=b:rstu                   2:39   346   43
 106     rs=ac:bd;tu=ar:bd;v=a:bcrtu                   0:21    63    2
@@ -16,6 +17,7 @@
 108     rs=ac:bd;tu=bc:ad;v=d:absu                    0:03     4    1
 109     rs=ac:bd;tu=bc:adr;v=b:art                    0:10    44    1
 110     rs=ac:bd;tu=bc:adr;v=d:abst                   0:09    37    2
+221     rs=ac:bd;tu=bc:adr;vw=cd:abr                 10:12   280   20
 111     rs=ac:bd;tu=cd:ab;v=a:brt                     0:57   165    2
 114     rs=ac:bd;tu=cd:ab;v=b:adrt                    0:38   128    8
 115     rs=ac:bd;tu=cd:ab;v=b:adru                    1:52   607   25
@@ -43,6 +45,7 @@
 138     rs=ac:bd;tu=cd:abs;v=r:bu                     0:12    20   11
 139     rs=ac:bd;tu=cd:abs;v=t:bd                     0:17    44    7
 140     rs=ac:bd;tu=cd:abs;v=u:br                     0:12    17    6
+197     rs=cd:ab;t=(cr):ab;u=(cr):abt;v=(cr):abtu     0:12    20    8
 141     rs=cd:ab;t=a:bcr;u=a:bcrt;v=a:bcrtu           0:47   229   13
 142     rs=cd:ab;t=a:bcr;uv=ad:bcs                    1:49   477   11
 143     rs=cd:ab;t=a:bcr;uv=ds:abt                    1:00   156    1
@@ -64,10 +67,18 @@
 159     rs=cd:ab;tu=ac:bdr;v=r:adt                    2:35   575    5
 160     rs=cd:ab;tu=ac:bdr;v=s:bt                     0:21    54    2
 161     rs=cd:ab;tu=ac:bdr;v=t:adr                    5:43  1149    7
+202     rs=cd:ab;tu=ac:bdr;vw=br:adst              2:55:27  2435  151
+203     rs=cd:ab;tu=ac:bdr;vw=bt:acr               1:11:33  1008  166
+210     rs=cd:ab;tu=ac:bdr;vw=bt:ads               3:13:53  2795  233
+211     rs=cd:ab;tu=ac:bdr;vw=dr:abst              1:11:51   674   19
 162     rs=cd:ab;tu=ac:bds;v=a:dst                    0:58   132    1
 163     rs=cd:ab;tu=ac:bds;v=b:adrt                   1:20   230    9
 164     rs=cd:ab;tu=ac:bds;v=b:adst                   0:22    55    3
+212     rs=cd:ab;tu=ac:bds;v=b:adst;w=b:adstv        55:35   730   11
 165     rs=cd:ab;tu=ac:bds;v=r:adst                   1:03   147    3
+222     rs=cd:ab;tu=ac:bds;vw=br:adst                 3:15    75    6
+213     rs=cd:ab;tu=ac:bds;vw=bt:adr               1:33:44  1369   68
+200     rs=cd:ab;tu=ac:br;v=u:ad                      0:11    24    1
 166     rs=cd:ab;tu=ac:bs;v=t:bcu                     0:11    33    3
 167     rs=cd:ab;tu=cd:abr;v=a:bcru                   2:06   683    3
 168     rs=cd:ab;tu=cd:abr;vw=cr:au                   9:37   243   37
@@ -85,26 +96,19 @@
 183     rs=cd:ab;tu=cd:ar;v=u:ac                      0:22    83   34
 184     rs=cd:ab;tu=cd:ar;v=u:ad                      0:13    30    4
 185     rs=cd:ab;tu=cd:ar;vw=rt:ad                    3:15    40    6
+220     rs=cd:ab;tu=cr:ab;v=(cr):abt;w=(cr):abtv      1:12    19    7
 186     rs=cd:ab;tu=cr:ab;v=a:bcstu                  13:27  4510   17
+199     rs=cd:ab;tu=cr:ab;vw=c(tu):as                 3:10    59    9
 187     rs=cd:ab;tu=cr:ab;vw=cr:abtu                  1:53    15    2
 188     rs=cd:ab;tu=cr:ab;vw=cs:abtu                  3:00    30   10
+214     rs=cd:ab;tu=cr:ab;vw=tu:acs                3:28:11  2794    2
 189     rs=cd:ab;tu=cr:ad;v=a:bdsu                    3:45   746    5
 190     rs=cd:ab;tu=cr:ad;v=d:ast                     0:28    49    1
 191     rs=cd:ab;tu=cr:ad;v=u:ast                     0:31    76    8
+223     rs=cd:ab;tu=cr:ad;vw=du:ast                  17:05   434    9
 192     rs=cd:ab;tu=cs:ab;v=a:bcrt                    1:15   297    1
 193     rs=cd:ab;tu=cs:ab;v=a:bcrtu                  29:11 10387   95
+218     rs=cd:ab;tu=cs:ab;vw=ac:bdstu             11:41:10 24240   94
 194     rs=cd:ab;tu=cs:ab;vw=cr:abtu                  3:05    37   12
 195     rs=cd:ab;tu=cs:ad;v=d:art                     0:29    65    4
-196     rs=ac:bd;t=(ar):bd;u=(ar):bdt;v=(ar):bdtu     0:03     7    2
-197     rs=cd:ab;t=(cr):ab;u=(cr):abt;v=(cr):abtu     0:12    20    8
-199     rs=cd:ab;tu=cr:ab;vw=c(tu):as                 3:10    59    9
-201     rs=ac:bd;t=d:abr;u=d:abrt;vw=cd:abs        1:32:00  1452    4
-202     rs=cd:ab;tu=ac:bdr;vw=br:adst              2:55:27  2435  151
-203     rs=cd:ab;tu=ac:bdr;vw=bt:acr               1:11:33  1008  166
-210     rs=cd:ab;tu=ac:bdr;vw=bt:ads               3:13:53  2795  233
-211     rs=cd:ab;tu=ac:bdr;vw=dr:abst              1:11:51   674   19
-212     rs=cd:ab;tu=ac:bds;v=b:adst;w=b:adstv        55:35   730   11
-213     rs=cd:ab;tu=ac:bds;vw=bt:adr               1:33:44  1369   68
-214     rs=cd:ab;tu=cr:ab;vw=tu:acs                3:28:11  2794    2
-218     rs=cd:ab;tu=cs:ab;vw=ac:bdstu             11:41:10 24240   94
 219     rs=cd:ab;tuv=cdr:ab;w=a:bcrtv              1:01:58  2445   19
