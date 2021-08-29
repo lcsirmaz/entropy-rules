@@ -9,13 +9,15 @@
 use strict;
 
 sub print_usage {
-    print "Usage: genlist.pl [-s <supd>] <out> <eqfile1> <eqfile2> ...\n",
+    print "Usage: genlist.pl [-B] [-s <supd>] <out> <eqfile1> <eqfile2> ...\n",
+          " -B       - skip book inequalities\n",
           " <supd>   - list of superseded inequalities\n",
           " <out>    - result file\n",
           " <eqfile> - file of inequalities\n";
     exit 1;
 }
 
+my $skipbook=0;
 my %supplist=();
 my %suppeq=();
 
@@ -84,9 +86,11 @@ sub add_file {
         $a[13]=$base; $a[14]=undef;
 ##        next if($a[13]); ## superseded
 ##        next if(defined $supplist{$a[12]});
-        if(defined $suppeq{$label}){
+        if($skipbook && $label =~ /book/ ){
+            ; # skip
+        } elsif(defined $suppeq{$label}){
             ; #skip
-        }  elsif(defined $supplist{$label}){
+        }elsif(defined $supplist{$label}){
             ; #skip
         } else {
             push @list,\@a;
@@ -210,6 +214,9 @@ sub make_normalized_list {
 ################################################################
 
 my $ARGZ=1;
+
+if(scalar @ARGV>0 && $ARGV[0] eq "-B"){ $skipbook=1; shift @ARGV; }
+
 if( scalar @ARGV>0 && $ARGV[0] eq "-s"){$ARGZ=3; }
 
 if(scalar @ARGV <= $ARGZ){ print_usage(); }

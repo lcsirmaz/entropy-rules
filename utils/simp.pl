@@ -28,37 +28,48 @@ sub stringsort {
     return join('',@a);
 }
 
+sub sortparts { # array of { new => "char", old=>"str" } ]
+    my ($arr,$sep)=@_;
+    my $new=""; my $old="";
+    foreach my $p ( sort { lc($a->{old}) cmp lc($b->{old}) } @$arr ){
+        $new .= $p->{new}; 
+        if($old && $sep){$old .= $sep; }
+        if(!$sep && length($p->{old})>1){ $old .= "(".$p->{old}.")"; }
+        else { $old .= $p->{old}; }
+    }    
+    return { new=>$new, old=>$old };
+}
+
 sub arrange { # $arr->[$idx] and $arr->[$j] has the same length
-    my($arr,$idx,$j)=@_;
-    my @a1=(); ## $arr->[$idx] = "ab(xxx)e(efg)"
-    my $coll=""; my $inside=0;
-    foreach my $chr (split('',$arr->[$idx])){
-        if($inside){
-            if($chr eq ")"){ push @a1,$coll; $coll=""; $inside=0; }
-            else { $coll .= $chr; }
-        } else {
-            if($chr eq "("){ $inside=1; }
-            else { push @a1, $chr; }
-        }
+    my($arr,$idx)=@_;
+    my($new,$old)=($arr->[$idx],$arr->[$idx+1]);
+    my @all=(); ## $all[i] = [ { new=> "str", old=>"char" }, { ... } ]
+    my $d=[]; my $newcnt=0; my $inside=0;
+    foreach my $ch (split('',$old)){
+       if($inside){
+          my $dn=-1+scalar @$d;
+          if($ch eq ")"){ 
+              $inside=0; 
+              $d->[$dn]->{old}=stringsort($d->[$dn]->{old});
+          } else {
+              $d->[$dn]->{old} .= $ch;
+          }
+       } elsif($ch eq "("){
+          $inside=1; push @$d, {old => "", new => substr($new,$newcnt,1) };
+          $newcnt++;
+       } elsif($ch eq "|"){
+          die "Syntax error in the copy string\n" if(scalar @$d==0); # syntax error
+          push @all,sortparts($d); $d=[];
+       } else {
+          push @$d, {old => $ch, new => substr($new,$newcnt,1) };
+          $newcnt++;
+       }
     }
-    return if($inside);  ## wrong paste syntax
-    my @a2=split('',$arr->[$j>=0?$j : $idx]);
-    return if(scalar @a1<2 || scalar @a1 != scalar @a2);
-    my $n=-1 + scalar @a1;
-    ## go over all elements of $a1 and arrange them alphabetically
-    for my $i(0..$n){$a1[$i]=stringsort($a1[$i]); }
-    # use bubble sort
-    for my $i(0..$n-1){for my $j($i+1..$n){
-        if(lc($a1[$i]) gt lc($a1[$j])){
-            my $t=$a1[$i]; $a1[$i]=$a1[$j]; $a1[$j]=$t;
-            $t=$a2[$i]; $a2[$i]=$a2[$j];$a2[$j]=$t;
-        }
-    }}
-    for my $i(0..$n){
-        if(length($a1[$i])>1){ $a1[$i]="($a1[$i])"; }
-    }
-    $arr->[$idx]=join('',@a1);
-    $arr->[$j]=join('',@a2) if($j>=0);
+    die "Syntax error in the copy string\n" if($inside || scalar @$d==0); # syntax error
+    push @all, sortparts($d);
+    ## sort the elements of $all
+    my $res=sortparts(\@all,"|");
+    $arr->[$idx]=$res->{new}; $arr->[$idx+1]=$res->{old};
 }
 
 sub create_min {
@@ -78,8 +89,8 @@ sub create_min {
     my $res="";
     # now go over all parts and assign the corresponding working variable
     for( my $i=0; $i<scalar @parts; $i+=3){
-        arrange(\@parts,$i+2,-1); ## the "copy over" part
-        arrange(\@parts,$i+1,$i); ## to be pasted, new variables
+        $parts[$i+2]=stringsort($parts[$i+2]); # the "copy over" part
+        arrange(\@parts,$i); ## to be pasted, new variables
         foreach my $h(split('',$parts[$i])){
             next if($h !~ /[RSTUVWXYZ]/);
             change_all(\@parts,$h,pop @pool);
@@ -124,13 +135,13 @@ sub swapped {
     my ($str)=@_;
     my @parts=split(/;/,$str);
     foreach my $t(@parts){
-        if($t !~ /^[a-z]+\=[a-z\(\)]+:[a-z]+$/){
-            print "Syntax error: $str\n"; return $str;
+        if($t !~ /^[a-z]+\=[a-z\(\)\|]+:[a-z]+$/){
+            die "Syntax error in the copy string\n";
         }
     }
     ## create all permutations with swappable inversions
     my $n=scalar @parts;
-    return $str if($n<2);
+    return min_paste($str) if($n<2); ## should handle ()
     my @perms=(); $perms[0]=[];
     for my $i(0..$n-1){$perms[0]->[$i]=$i;}
     my $tested=0;
@@ -180,6 +191,8 @@ sub swapthem { ## swap chars in $s1 to chars in $s2
 }
 sub permute_min {
     my($str)=@_;
+    $str =~ s/\s//g; # no spaces
+    $str =~ s/,$//; # no trailing comma
     my $copy=$str; my $rest="";
     if($str =~ /^([^;]+);(.+)$/) { $copy=$1; $rest=$2; }
     my $this=swapped($str);
@@ -202,7 +215,6 @@ sub permute_min {
 #
 if( scalar @ARGV != 1 ){ die "Please specify the copy string to normalize\n"; }
 
-#print swapped($ARGV[0]), "\n";
 print permute_min($ARGV[0]),"\n";
 exit 0;
 
