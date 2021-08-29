@@ -3,7 +3,7 @@ Utility perl routines
 
 * [checkall.pl](checkall.pl) [-t threshold] \<result\> \<ineq1\> \<ineq2\> ...
 <br>
-List all inequalities from `<result>` which are not consequences of the
+List all inequalities from ```<result>``` which are not consequences of the
 inequalities in files `<ineq1>`, ... It the `-t` argument is given,
 downgrade new inequalities to have coefficients at most `<threshold>`. The
 `<result>` file can be a list of inequalities, or the vertex list generated
