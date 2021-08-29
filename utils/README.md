@@ -47,6 +47,6 @@ generates the MOLP problem whose solution yields the rule set extracted by
 Print out the simplified and canonized form of the copy string.
 * [bookineq.pl](bookineq.pl) \<threshold\> \<generation\>
 <br>
-Print out book inequalities from [Book inequalities](https://arxiv.org/abs/1312.6490) 
+Print out entropy inequalities from the paper [L. Csirmaz: Book inequalities](https://arxiv.org/abs/1312.6490) 
 which have coefficients below `<threshold>` and has generation number below `<generation>`. 
-Increasing the generation by 1 doubles the running time. 
+Increasing the generation by 1 doubles the running time.
