@@ -1,8 +1,7 @@
 Utility perl routines
 =====================
 
-* [checkall.pl](checkall.pl) [-t threshold] \<result\> \<ineq1\> \<ineq2\> ...
-<br>
+* [checkall.pl](checkall.pl) [-t threshold] &lt;result&gt; &lt;ineq1&tg; &lt;ineq2&gt; ... <br> 
 List all inequalities from `<result>` which are not consequences of the
 inequalities in files `<ineq1>`, ... It the `-t` argument is given,
 downgrade new inequalities to have coefficients at most `<threshold>`. The
