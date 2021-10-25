@@ -81,7 +81,7 @@ utilities from [utils](../utils/) as follows:
     utils/checkall.pl vlp/NN.res base.new > result/NN.new
 
 The file [base.new](base.new) contains the original DFZ inequalities.
-The applied copy strings used are listed in [copy.txt](copy.txt).
+The applied copy strings are listed in [copy.txt](copy.txt).
 Finally, unsuperseded inequalities are extracted to [ineq.txt](ineq.txt).
 
     # determine which inequalities are superseded by others
