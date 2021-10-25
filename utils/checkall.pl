@@ -21,9 +21,9 @@ sub print_usage {
     print "Usage: checkall.pl <result> <ineq1> <ineq2> ...\n",
           "   <result> contains vertices to be checked\n",
           "   <ineq?> files contain known entropy inequalities\n",
+          "Use '-x <ineq?>' to ignore consequences in <ineq?>\n",
           "The result file should be XXXX.res, and the first line\n",
-          "of XXXX.vlp should contain the copy string. The label\n",
-          "is the basename of the result file.\n";
+          "   of XXXX.vlp should contain the copy string.\n";
     exit 1;
 }
 
