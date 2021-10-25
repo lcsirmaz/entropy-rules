@@ -66,17 +66,22 @@ use constant MAINV => (
 #########################################################################
 ## usage, check arguments
 
+my ($quiet,$full,$paste,$file)=(0,"","","");
+
 sub print_usage {
-    print "Usage: mkvlp.pl  [-fxx] <copy string> <filename>\n",
+    print "Usage: mkvlp.pl  [-q] [-fxx] <copy string> <filename>\n",
+          "   q -- quiet\n",
           "   f -- full (10), default\n",
           "   x -- truncated to 8\n",
           "  xx -- truncated to 6\n";
     exit 1;
 }
 
+if(($ARGV[0]||"") eq "-q"){
+    $quiet=1; shift @ARGV;
+}
 if(scalar @ARGV ==0 || $ARGV[0] =~ /^\-[\-]?h/ ){ print_usage(); }
 
-my ($full,$paste,$file)=("","","");
 if($ARGV[0] =~ /^[\-]?([xf]+)/ ){
     $full=$1; $paste=$ARGV[1]; $file=$ARGV[2];
 } else {
@@ -100,6 +105,7 @@ if( $file eq "--test"){ ## checking syntax only
       exit 1;
     }
     if(-e $file ){
+      if($quiet){ exit 1; }
       print "File $file exists. Continue (y/n)? ";
       my $ans=<stdin>;
       if($ans !~ /^y/i ){ exit 0; }
@@ -151,7 +157,10 @@ sub _zero_eqs {
 
 sub _hash_eqs {
     my $info=shift; my $hash="";
-    for my $i( 0 .. 14){ $hash .= ",$info->{neqs}->[$i]"; }
+    for my $i( 0 .. 14){
+        next if($ZERONAT[$i]);
+        $hash .= ",$info->{neqs}->[$i]";
+    }
     for my $i (0 .. $info->{rows}-1){ 
         $hash .= ",$info->{eqs}->[$i]"; 
     }
@@ -161,7 +170,13 @@ sub _hash_eqs {
 sub add_eqs { ## $e->[$var] += $d; $info->{eqs}->[new] for $var>=16,
     my($info,$var,$d)=@_;
     return if($var==0);
-    my $idx;
+    my $idx = $info->{trans}[$var];
+    if(defined $idx ){ # redefined
+        foreach my $sss (keys %$idx ){
+            add_eqs($info,$sss,$d*$idx->{$sss});
+        }
+        return;
+    }
     if($var<16){ # subset of abcd, store in $info->{neqs}
         $idx=(MAINV)[$var];
         for my $i(0 .. 14){
@@ -169,13 +184,6 @@ sub add_eqs { ## $e->[$var] += $d; $info->{eqs}->[new] for $var>=16,
         }
         return;
     } # store it in $info->{eqs}
-    $idx = $info->{trans}[$var];
-    if(defined $idx ){ # redefined
-        foreach my $sss (keys %$idx ){
-            add_eqs($info,$sss,$d*$idx->{$sss});
-        }
-        return;
-    }
     die "add_eqs: wrong var $var\n" if($info->{vidx}[$var]<0);
     $info->{eqs}->[$info->{vidx}[$var]] += $d;
 }
@@ -284,6 +292,180 @@ sub checkeq { # return 1 for zero, 1 for non-zero
     return $n<=0; 
 }
 
+########################################################################
+## handle additional symmetries
+## $info->{symm} is a list of symmetries
+##   a symmetry: [a1,b1], [a2,b2], ... [ak,bk]
+##   both <a1...ak> and <b1...bk> are the same partition;
+##   either ai=bi, or both [ai,bi] and [bi,ai] are present
+##
+
+sub checkM { # check if $M is closed for the symmetry in $symm
+    my($M,$symm)=@_;
+    my $cover=0;
+    foreach my $s(@$symm){
+       my $meet=$s->[0]&$M;
+       next if($meet==0);             # disjoint
+       return 0 if($meet != $s->[0]); # not inside
+       return 0 if(0 == ($M&$s->[1])); # the image is outside $M
+       $cover |= $meet;
+    }
+    return $cover == $M; # whole $M is covered
+}
+
+sub newpairs { # given the paste description $paste1 and symmetry $sym,
+               #  check if it extends to the new arrangement.
+    my($paste1,$symm)=@_;
+    my $allv=0; # variables in the paste array
+    # fist, we take a subset of paste so that
+    #  if ai intersects r, then both ai and bi are subset of $allv
+    # create a local version of $paste1
+    my $paste=[]; foreach my $p(@$paste1){
+       push @$paste, {r=>$p->{r}, v=>$p->{v}, use=>1 };
+    }
+    my $done=0;
+    while(!$done){ $done=1;
+      # collect variables to $allv;
+      $allv=0;
+      foreach my $p(@$paste){ if($p->{use}){$allv |= $p->{r};} }
+      # go over all elements of $paste
+      foreach my $p(@$paste){
+         next if(!$p->{use}); # skip it
+         my $var=$p->{r};
+         # check if $p->{r} intesects ai
+         foreach my $s(@$symm){ # $s->[0], $s->[1]
+            next if(($var & $s->[0])==0);
+            next if(($s->[0] & $allv)==$s->[0] && ($s->[1]& $allv)==$s->[1]);
+            $done=0; $p->{use}=0;
+         }
+      }
+    }    
+    # at this point $allv is the union of all feasible old variables
+    #  if this is empty, there is nothing to do
+    if($allv==0){ return []; }
+    # at this point we have that $s->[0/1] is either in $allv, or disjoint from it.
+    # Now we have s0 / s1, try to expand it
+    my @allpairs=(); # {s0=>, s1=>, v1=>, v2=> };
+    foreach my $s01(@$symm){
+        my $s0=$s01->[0]; my $s1=$s01->[1];; # s0 => s1
+        my $found=0;
+        foreach my $last(@allpairs){
+            if( $s0&$last->{s0} ){
+               $found=1;
+               if(($s0&$last->{s0})!=$s0){ die "newpairs: not closed for $s0\n"; }
+               last;
+            }
+        }
+        last if($found); # it has been taken care ...
+        $done=0; my $v0=0; my $v1=0;
+        while(!$done){ $done=1;
+            foreach my $p(@$paste){
+                next if(!$p->{use}); # skip it
+                my $r=$p->{r};
+                if($s0 & $r){ 
+                   $v0 |= $p->{v};
+                   if(($s0 & $r)!=$r){ $done=0; $s0|=$r; }
+                }
+                if($s1 & $r){
+                    $v1 |= $p->{v};
+                    if(($s1&$r)!=$r){ $done=0; $s1|=$r; }
+                }
+            }
+            foreach my $sm(@$symm){ # $s->[0], $s->[1]
+                my $s=$sm->[0];
+                if(($s0&$s)!=0){
+                    if(($s0&$s)!=$s){ $done=0; $s0 |= $s; }
+                    if(($s1 & $sm->[1])!=$sm->[1]){ $done=0; $s1 |= $sm->[1]; }
+                }
+            }
+        } # the closure was found, but it might be out of range
+        next if($v0==0 && $v1==0); # do not interact with the copy variables
+        # at this point we have $s0 => $s1, $v0 => $v1 for the new symmetry
+        if(!$v0 || !$v1){ die "newpairs: $v0 or $v1 is zero\n"; }
+        $found=0;
+        foreach my $last(@allpairs){
+            if($last->{s0} & $s0){
+                $found=1;
+                if($s0!=$last->{s0} || $s1!=$last->{s1}|| $v0!=$last->{v0}|| $v1!=$last->{v1}){
+                   die "newpairs: ($s0,$s1,$v0,$v1) different\n";
+                }
+            }
+        }
+        if(!$found){
+            push @allpairs, {s0=>$s0, s1=>$s1, v0=>$v0, v1=>$v1 };
+        }
+    }
+    # no @allpairs contains all potential symmetries
+    # sanity check: s0 and s1 should be the same partition of the same set
+    my $alls0=0; my $alls1=0;
+    for my $last(@allpairs){
+        $alls0 |= $last->{s0}; $alls1 |= $last->{s1};
+        foreach my $other(@allpairs){
+            if($last->{s0} & $other->{s0}){
+              $last->{s0}==$other->{s0} || die "newpairs: s0/s0 are different\n";
+            }
+            if($last->{s0} & $other->{s1}){
+              $last->{s0}==$other->{s1} || die "newpairs: s0/s1 are different\n";
+            }
+            if($last->{s1} & $other->{s1}){
+              $last->{s1}==$other->{s1} || die "newpairs: s1/s1 are different\n";
+            }
+        }
+    }
+    $alls0 == $alls1 || die "newpairs: total s0 /s1 different\n";
+    my $result=[];
+    for my $last(@allpairs){
+        my $found=0;
+        my $s0=$last->{s0};
+        foreach my $ss(@$result){
+            if($ss->[0]== $s0){ 
+                $ss->[1]==$last->{s1} || die "newpairs: different s1 values\n";
+                $found=$ss->[1]; last;
+            }
+        }
+        next if($found);
+        push @$result, [$last->{s0},$last->{s1}];
+        push @$result, [$last->{v0},$last->{v1}];
+    }
+    # check if it really gives anything new
+    $allv=0;
+    foreach my $p(@$result){
+       if($p->[0]!=$p->[1]){ $allv=1; last; }
+    }
+    if($allv==0){ return []; } # nothing new
+    return $result;
+}
+
+sub apply_symmetries {
+    my($info)=@_;
+    my $sm=$info->{symms};
+    my $nsm=-1+scalar @$sm;
+    ## handle only symmetries with index >=1
+    return if($nsm <1);
+    my %pairs=();
+    for my $idx(1 .. $nsm){
+        my $s=$sm->[$idx]; # this is an array of pairs
+        my $N=scalar @$s; # how many elements does it have
+        $N >1 || die "spply_symmetries: $N is small (idx=$idx)\n";
+        for my $AA(1 .. (-2+(1<<$N))){
+            my($i,$A,$v0,$v1)=(0,$AA,0,0);
+            while($A){
+                if($A&1){ $v0 |= $s->[$i]->[0]; $v1 |= $s->[$i]->[1]; }
+                $A>>=1; $i++;
+            }
+            next if($v0==$v1);
+            $v0>0 && $v1>0 || die "apply_symmetries: vars $v0,$v1\n";
+            if($v1<$v0){my $t=$v0; $v0=$v1,$v1=$t;}
+            next if($pairs{"$v0,$v1"});
+            $pairs{"$v0,$v1"}=1;
+            makeEQ($info,$v0,$v1);
+        }
+    }
+}
+
+
+########################################################################
+
 sub nextperm { # next permutation of $info->{perm} starting at $from
     my ($info,$from,$to)=@_;
     if($from >= $to){ return 0; }
@@ -340,8 +522,8 @@ sub symmetry { # handle the actual permutation
 sub paste { # rst = (ab)c|d : uv
     my($info,$dsc)=@_;
     if(! defined $info->{vars} ){$info->{vars} = 0xf; }
+    if(! defined $info->{symms} ){$info->{symms}=[]; } # symmetries so far
     _initialize_trans($info);
-    if(! defined $info->{paste} ){$info->{paste} = (); }
     if($dsc !~ /^\s*([rstuvw]+)=([[abcdrstuvw\(\)\|]+):([abcdrstuvw]*)\s*$/ ){
         return "copy: wrong syntax ($dsc)";
     }
@@ -352,7 +534,6 @@ sub paste { # rst = (ab)c|d : uv
     if(($X&$vars)!=$X){
         return "copy: over variable in \"".name($X)."\" not defined ($dsc)";
     }
-    push @{$info->{paste}},{ new => $new, over => $vars, by => "$old:".name($X) };
     $info->{par}=[]; # parallel definitions
     my $defs=[]; # $defs[]={v=> 32, r=>"16|1"};
     my $Z=0; # pasted variables
@@ -393,6 +574,38 @@ sub paste { # rst = (ab)c|d : uv
     push @{$info->{par}},$defs;
     my $Y= $vars & ~$X; # copied variables
     my $PN=scalar @{$info->{par}}; # at least one 
+    ## take care of new symmetries. Do it only when $PN==1
+    ####################################################
+    my $oldsyms=$info->{symms}; $info->{symms}=[];
+    if($PN==1){ # only if no parallel extension
+        my @newsymm=();
+        for( my $i=1; $i<=$X; $i<<=1){ # this is the new symmetry
+             next if(($i&$X)==0);
+             push @newsymm, [$i,$i];
+        }
+        foreach my $t(@{$info->{par}->[0]}){
+             push @newsymm, [$t->{v},$t->{r}];
+             push @newsymm, [$t->{r},$t->{v}];
+        }
+        push @{$info->{symms}},\@newsymm;
+        # go over all old symmetries and apply the new ones
+        foreach my $symm(@$oldsyms){
+           next if(! checkM($X,$symm)); # does it keep $X ?
+           my $ns=newpairs($info->{par}->[0],$symm);
+           next if(0 == scalar @$ns);
+           # supplement $ns with those keeping $X
+print "FOUND NEW\n";
+           foreach my $s(@$symm){
+              next if(0==($X & $s->[0]));
+              push @$ns,$s;
+           }
+           push @{$info->{symms}},$ns;
+        }
+        # now $info-{symms} contains all symmetries.
+        # apply all of them, except for the very first one
+        apply_symmetries($info);
+    }
+    ############################################################
     # now we have all parallel requests in @par
     foreach my $cp (@{$info->{par}}){
         my $allv=0;
@@ -566,7 +779,9 @@ sub make_paste {
 
 my $info=make_paste($paste);
 if(defined $info->{errs}){
-    print "There was an error in the copy string:\n",join("\n",@{$info->{errs}}),"\n";
+    if(!$quiet){
+       print "There was an error in the copy string:\n",join("\n",@{$info->{errs}}),"\n";
+    }
     exit 1;
 }
 
