@@ -46,7 +46,7 @@ random variables we replace *c* by *r*, *r* by *c*, *d* by *s* and *s* by
 
 and many others. (Note that all occurrences of *c*, *d*, *r*, *s* in the 
 string must be changed to their corresponding values.) Note that this
-symmetry holds even if the copyed variables and the over variables
+symmetry holds even if the copied variables and the over variables
 together do not exhaust the pool of all random variables. When working with 
 
     tu=cr:ab
@@ -54,6 +54,16 @@ together do not exhaust the pool of all random variables. When working with
 over the pool *a,b,c,d,r,s*, we still have, e.g.,
 
 > **H**(cds) = **H**(tds),  **H**(acdsu) = **H**(atdsc)
+
+Fixing the over variables, one can stipulate more than one block of variable
+to be copied. The syntax is
+
+    rs=cd:ab;tuvw=cr|cs:ab
+
+In this case two copies of *rscd* over *ab* are created; these copies and
+*rscd* are independent. In the second copy *tu* are kept, and form the third
+one *vw*.
+
 
 The collected equalities together with
 all Shannon inequalities have consequences on the 15 entropies of the original
