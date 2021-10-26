@@ -1,20 +1,20 @@
 C copy string: r=c:ab;st=cd:ab;u=(cs):abr
-I    0.83] Elapsed: 0.83, vertices: 11, facets final: 53, pending: 0
+I    0.31] Elapsed: 0.31, vertices: 11, facets final: 53, pending: 0
 
 --------------------------------
 Problem completed
  name                    26.vlp
  output                  
    vertices              vlp/26.res
- rows, cols, objs        182, 1593, 10
+ rows, cols, objs        106, 942, 10
  vertices, facets        11, 53
- total time              0.83
+ total time              0.31
 --------------------------------
 Statistics
 LP:
  oracle calls            64
-   avg iterations/calls  148.42
- total oracle time       0.83
+   avg iterations/call   90.87
+ total oracle time       0.31
 Combinatorics:
  vertices added          11
  facets probed           64
@@ -24,7 +24,7 @@ Combinatorics:
    vertices # / upto     1 / 124
    facets   # / upto     1 / 4092
  facet manipulating
-   added avg / max       8.20 / 16.00
+   added avg / max       10.70 / 20.00
    compressed            0
  number of ridge tests
-   avg / max             90.40 / 216.00
+   avg / max             149.80 / 280.00

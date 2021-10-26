@@ -1,20 +1,20 @@
 C copy string: rs=ac:bd;t=d:abs;u=a:bdrst
-I    0.30] Elapsed: 0.30, vertices: 10, facets final: 25, pending: 0
+I    0.07] Elapsed: 0.07, vertices: 10, facets final: 25, pending: 0
 
 --------------------------------
 Problem completed
  name                    33.vlp
  output                  
    vertices              vlp/33.res
- rows, cols, objs        165, 1362, 10
+ rows, cols, objs        93, 780, 10
  vertices, facets        10, 25
- total time              0.30
+ total time              0.07
 --------------------------------
 Statistics
 LP:
  oracle calls            35
-   avg iterations/calls  116.06
- total oracle time       0.30
+   avg iterations/call   52.89
+ total oracle time       0.07
 Combinatorics:
  vertices added          10
  facets probed           35
@@ -27,4 +27,4 @@ Combinatorics:
    added avg / max       2.89 / 5.00
    compressed            0
  number of ridge tests
-   avg / max             11.00 / 22.00
+   avg / max             12.22 / 22.00

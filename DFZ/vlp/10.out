@@ -1,20 +1,20 @@
 C copy string: r=c:ab;s=r:ac;t=r:ad
-I    0.04] Elapsed: 0.04, vertices: 5, facets final: 19, pending: 0
+I    0.03] Elapsed: 0.03, vertices: 5, facets final: 19, pending: 0
 
 --------------------------------
 Problem completed
  name                    10.vlp
  output                  
    vertices              vlp/10.res
- rows, cols, objs        80, 554, 10
+ rows, cols, objs        57, 418, 10
  vertices, facets        5, 19
- total time              0.04
+ total time              0.03
 --------------------------------
 Statistics
 LP:
  oracle calls            24
-   avg iterations/calls  47.33
- total oracle time       0.04
+   avg iterations/call   29.21
+ total oracle time       0.03
 Combinatorics:
  vertices added          5
  facets probed           24

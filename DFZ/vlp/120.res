@@ -1,4 +1,4 @@
-C name=120.vlp, rows=177, cols=1525, objs=10
+C name=120.vlp, rows=106, cols=923, objs=10
 C vertices=6, facets=20
 
 V  0 0 0 1 1 1 0 0 0 0

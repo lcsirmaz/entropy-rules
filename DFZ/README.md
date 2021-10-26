@@ -2,15 +2,13 @@ Dougherty - Freiling - Zeger inequalities
 =================
 
 The inequalities from *R. Dougherty, C. 
-Freiling, and K.  Zeger:* [Non-Shannon information inequalities in four
-random variables](http://arxiv.org/pdf/1104.3602v1) are
-listed in [main.txt](main.txt) following their original numbering from 1 to 214. 
+Freiling, and K.  Zeger:* [Non-Shannon information inequalities in four random variables](http://arxiv.org/pdf/1104.3602v1) are
+listed in [orig.txt](orig.txt) following their original numbering from 1 to 214. 
 The [Zhang-Yeung inequality](http://www.cs.cornell.edu/courses/cs783/2007fa/papers/ZYnonShannon.pdf)
-has been added as inequality number 0. Inequalities are rewritten using natural
-coordinates, and the reported *copy string* has been normalized by using the
-perl utility [simp.pl](../utils/simp.pl).
-DFZ inequalities superseded by other inequalities found in this site are 
-marked by a * symbol.
+has been added as inequality number 0. Inequalities rewritten using natural
+coordinates and the *copy string* normalized and extended so that the &quot;over&quot;
+sets has are flats (i.e., closed for direct consequences) are listed in
+[ineq.txt](ineq.txt).
 
 #### Interpreting the MOLP solutions
 
@@ -22,9 +20,9 @@ with the copy strings in the DFZ list.
     # and solve the MOLP problem
     inner vlp/NNN.vlp -ov vlp/NNN.res -y- --PrintVertices=0 > vlp/NNN.out
 
-The vertices of the solution in NNN.res is just the collection of those 
-10-dimensional vectors &lt;*x*<sub>2</sub>, ..., *x*<sub>11</sub>&gt; such
-that the non-Shannon inequalities with coefficients
+The vertices of the solution in NNN.res are those 
+10-dimensional vectors &lt;*x*<sub>2</sub>, ..., *x*<sub>11</sub>&gt; for
+which the non-Shannon inequalities with coefficients
 
 >  1, *x*<sub>2</sub>, ..., *x*<sub>11</sub>
 
@@ -35,9 +33,10 @@ see the [description](../copy/DESCRIPTION.md) in the [copy](../copy) section.
 
 #### Content
 
-* [main.txt](main.txt) &nbsp;&ndash; the list of DFZ inequalities.
 * [orig.txt](orig.txt) &nbsp;&ndash; raw file of original DFZ inequalities.
-* [vlp](vlp) &nbsp;&ndash; MOLP problems and solutions associated with DFZ
-  inequality numbers.
+* [ineq.txt](inex.txt) &nbsp;&ndash; DFZ inequalities in natural coordinates with normalized copy strings.
+* [vlp](vlp) &nbsp;&ndash; MOLP problems and solutions associated with DFZ inequality numbers.
+
+
 
 
