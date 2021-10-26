@@ -55,15 +55,35 @@ over the pool *a,b,c,d,r,s*, we still have, e.g.,
 
 > **H**(cds) = **H**(tds),  **H**(acdsu) = **H**(atdsc)
 
-Fixing the over variables, one can stipulate more than one block of variable
-to be copied. The syntax is
+
+#### Extensions
+
+__1__  Fixing the over variables, one can create several independent copies 
+of the remaining ones, and each copy one can keep different subsets. The
+syntax is
 
     rs=cd:ab;tuvw=cr|cs:ab
 
-In this case two copies of *rscd* over *ab* are created; these copies and
-*rscd* are independent. In the second copy *tu* are kept, and form the third
-one *vw*.
+In this case two copies of *rscd* over *ab* are created. These copies and
+*rscd* are completely independent given *ab*. In the second copy *cr* are 
+kept (and named *tu*) while in the third copy *cs* is kept (and named *vw*).
 
+__2__ In certain cases the symmetry of the original and the copy carry over 
+to the next step. If this is the case, the consequences are stronger. This
+carry over is not considered when multiple copies are made.
+
+__3__ If a variable is a consequence of the set of over variables (indicated that
+adding this variable to the over variables does not increase the entropy),
+then the copy step creates an identical variable. Such a variable cannot contribute to
+a new constrain. Consequently such variables can be merged to the set of over 
+variables. In matroid terminology, the over set must be a flat. 
+
+__4__ [Natural coordinates](../DESCRIPTION.md) are used For the original variables 
+*abcd*. This cuts out one of the six identical non-trivial parts of the the 4-variable
+entropy region simplifying computation. It also takes care of non-negativity
+of some Shannon inequalities.
+
+#### Computation
 
 The collected equalities together with
 all Shannon inequalities have consequences on the 15 entropies of the original
@@ -133,7 +153,10 @@ entropy variables which remained after the elimination steps).
 By the duality theorem of Linear Programming, consequences of this system
 are exactly their non-negative linear combinations. Among these linear
 combinations the 4-variable entropy inequalities are those where the
-coefficients at positions 16, 17, up to *n* are all zeroes. The coefficients at
+coefficients at positions 16, 17, up to *n* are all zeroes. This is true as
+non-negativity of entropies is a consequence of the used inequalities, thus
+no non-negativity constrain is required for the primal variables.
+The coefficients at 
 positions from 1 to 15 are the *natural* coefficients of the
 inequality. By renorming, we assume that the first, Ingleton coefficient is
 exactly one, and can request that coefficients 12 to 15 are zero as well.
