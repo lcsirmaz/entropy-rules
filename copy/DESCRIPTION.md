@@ -53,35 +53,41 @@ together do not exhaust the pool of all random variables. When working with
 
 over the pool *a,b,c,d,r,s*, we still have, e.g.,
 
-> **H**(cds) = **H**(tds),  **H**(acdsu) = **H**(atdsc)
+> **H**(crt) = **H**(ttu),  **H**(acru) = **H**(artu)
 
 
 #### Extensions
 
-__1__  Fixing the over variables, one can create several independent copies 
-of the remaining ones, and each copy one can keep different subsets. The
+__1.__  Fixing the over variables, one can create several independent copies 
+of the remaining ones, and within each copy one can keep different subsets. The
 syntax is
 
     rs=cd:ab;tuvw=cr|cs:ab
 
 In this case two copies of *rscd* over *ab* are created. These copies and
 *rscd* are completely independent given *ab*. In the second copy *cr* are 
-kept (and named *tu*) while in the third copy *cs* is kept (and named *vw*).
+kept (and named *tu*) while in the third copy *cs* is kept (and named as *vw*).
 
-__2__ In certain cases the symmetry of the original and the copy carry over 
-to the next step. If this is the case, the consequences are stronger. This
+__2.__ In certain cases the symmetry of the original and the copy carry over 
+to the next step. If this is the case the consequences are stronger. This
 carry over is not considered when multiple copies are made.
 
-__3__ If a variable is a consequence of the set of over variables (indicated that
+__3.__ If a variable is a consequence of the set of over variables (indicated that
 adding this variable to the over variables does not increase the entropy),
 then the copy step creates an identical variable. Such a variable cannot contribute to
 a new constrain. Consequently such variables can be merged to the set of over 
 variables. In matroid terminology, the over set must be a flat. 
 
-__4__ [Natural coordinates](../DESCRIPTION.md) are used For the original variables 
-*abcd*. This cuts out one of the six identical non-trivial parts of the the 4-variable
-entropy region simplifying computation. It also takes care of non-negativity
-of some Shannon inequalities.
+__4.__ The original distribution on *abcd* can be assumed to be tight,
+meaning that each of these variables is determined by the others. In terms of
+entropies the following equalites are automatically added:
+
+> **H**(abc) = **H**(abd) = **H**(acd) = **H**(bcd) = **H**(abcd).
+
+__5.__ [Natural coordinates](../DESCRIPTION.md) are used for the original variables
+in *abcd*. This cuts out one of the six identical non-trivial parts of the the 4-variable
+entropy region, and takes care of non-negativity of some Shannon inequalities
+which need not be added.
 
 #### Computation
 
@@ -125,11 +131,9 @@ problem significantly.
 
 As a next step, the minimal set of Shannon inequalities are collected.
 They are those which imply all other ones: **I**(*x*;*y*|*Z*) &ge; 0 
-where *x* and *y* are single variables,
-and *Z* is a (possibly empty) subset of the other variables.
+where *x* and *y* are single variables, and *Z* is a (possibly empty) subset of the other variables.
 
-From a remark
-of *F. Matus* it follows that inequalities describing monotonicity are
+From a remark of *F. Matus* it follows that inequalities describing monotonicity are
 never used, so they are omitted.
 
 As a last step, each Shannon inequality is rewritten using entropy
@@ -159,7 +163,7 @@ no non-negativity constrain is required for the primal variables.
 The coefficients at 
 positions from 1 to 15 are the *natural* coefficients of the
 inequality. By renorming, we assume that the first, Ingleton coefficient is
-exactly one, and can request that coefficients 12 to 15 are zero as well.
+exactly one, and the flatness of *a,b,c,d* means that coefficients 12 to 15 are zero as well.
 Writing the above inequalities as columns, the &quot;LP variables&quot; 
 &lambda;<sub>1</sub>, ..., &lambda;<sub>K</sub> are just the non-negative
 combining values. These conditions are collected in the table below:
@@ -182,7 +186,7 @@ This is just a MOLP problem with 10 objectives.  Line 1 and lines 12 to *n*
 specify the constraints; and lines 2 to 11 specify the objectives.  The
 solution of the minimization MOLP problem is a collection of the extremal
 values of the objectives &ndash; in our case this is the minimal set of
-entropy inequalities (written in natural coordinates preceeded by 1 as the
+entropy inequalities (written in natural coordinates preceded by 1 as the
 Ingleton coordinate) among those which can be derived from this copy
 string.
 
