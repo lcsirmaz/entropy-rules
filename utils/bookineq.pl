@@ -169,7 +169,7 @@ print
 "# Book inequalities up to $threshold and generation $gen
 #
 # For generation n and serial number b construct A[0 .. n] so that
-#  A[n]=0 and A[i-1].A[i]= 0/1 where 0/1 comes from b. Let
+#  A[n]=0 and A[i-1]-A[i]= 0/1 where 0/1 comes from b. Let
 #  (x,y,z) = sum {i<=n, j<=A[i] } (i+j choose i) * [1,i,j], and
 #  generate two inequalities: 
 #    x, 1,x+y,x+y, 0,z,z, 0,0,0,0,  book=n,  book:n:b
