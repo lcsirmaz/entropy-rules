@@ -1,100 +1,33 @@
-C copy string: rs=cd:ab;t=c:ar;uv=rt:ad;w=a:bcru
-Using 2 threads
-I    6.12] Elapsed: 6.12, vertices: 1, facets final: 1, pending: 9
-I   11.26] Elapsed: 11.26, vertices: 3, facets final: 3, pending: 24
-I   19.93] Elapsed: 19.93, vertices: 3, facets final: 8, pending: 19
-I   29.35] Elapsed: 29.35, vertices: 5, facets final: 9, pending: 30
-I   36.73] Elapsed: 36.73, vertices: 7, facets final: 10, pending: 40
-I   41.86] Elapsed: 41.86, vertices: 9, facets final: 12, pending: 45
-I   49.28] Elapsed: 49.28, vertices: 11, facets final: 12, pending: 63
-I   56.79] Elapsed: 56.79, vertices: 14, facets final: 12, pending: 77
-I   67.05] Elapsed: 1:07, vertices: 15, facets final: 16, pending: 72
-I   72.16] Elapsed: 1:12, vertices: 15, facets final: 19, pending: 69
-I   79.25] Elapsed: 1:19, vertices: 15, facets final: 21, pending: 67
-I   84.86] Elapsed: 1:25, vertices: 16, facets final: 22, pending: 64
-I   90.22] Elapsed: 1:30, vertices: 16, facets final: 25, pending: 61
-I   96.91] Elapsed: 1:37, vertices: 16, facets final: 27, pending: 59
-I  104.35] Elapsed: 1:44, vertices: 17, facets final: 29, pending: 65
-I  110.47] Elapsed: 1:50, vertices: 18, facets final: 32, pending: 68
-I  119.54] Elapsed: 2:00, vertices: 19, facets final: 33, pending: 73
-I  125.27] Elapsed: 2:05, vertices: 20, facets final: 34, pending: 86
-I  131.87] Elapsed: 2:12, vertices: 20, facets final: 35, pending: 85
-I  138.14] Elapsed: 2:18, vertices: 20, facets final: 39, pending: 81
-I  144.77] Elapsed: 2:25, vertices: 20, facets final: 44, pending: 76
-I  159.28] Elapsed: 2:39, vertices: 20, facets final: 47, pending: 73, pool: 4
-I  172.77] Elapsed: 2:53, vertices: 21, facets final: 47, pending: 87, pool: 6
-I  181.34] Elapsed: 3:01, vertices: 22, facets final: 47, pending: 95, pool: 7
-I  191.34] Elapsed: 3:11, vertices: 23, facets final: 48, pending: 91
-I  198.49] Elapsed: 3:18, vertices: 25, facets final: 50, pending: 100, pool: 9
-I  204.18] Elapsed: 3:24, vertices: 25, facets final: 51, pending: 99
-I  210.70] Elapsed: 3:31, vertices: 26, facets final: 52, pending: 96, pool: 10
-I  217.16] Elapsed: 3:37, vertices: 26, facets final: 54, pending: 94
-I  224.43] Elapsed: 3:44, vertices: 26, facets final: 55, pending: 93
-I  229.52] Elapsed: 3:50, vertices: 26, facets final: 55, pending: 93, pool: 11
-I  239.29] Elapsed: 3:59, vertices: 27, facets final: 55, pending: 99, pool: 11
-I  245.76] Elapsed: 4:06, vertices: 28, facets final: 57, pending: 99
-I  250.84] Elapsed: 4:11, vertices: 28, facets final: 59, pending: 97
-I  256.46] Elapsed: 4:16, vertices: 28, facets final: 61, pending: 95, pool: 11
-I  261.67] Elapsed: 4:22, vertices: 29, facets final: 62, pending: 96
-I  274.43] Elapsed: 4:34, vertices: 30, facets final: 64, pending: 98, pool: 11
-I  279.82] Elapsed: 4:40, vertices: 32, facets final: 64, pending: 95, pool: 11
-I  286.52] Elapsed: 4:47, vertices: 33, facets final: 65, pending: 95, pool: 11
-I  294.30] Elapsed: 4:54, vertices: 34, facets final: 66, pending: 85, pool: 12
-I  300.24] Elapsed: 5:00, vertices: 36, facets final: 67, pending: 88, pool: 12
-I  306.85] Elapsed: 5:07, vertices: 37, facets final: 69, pending: 87
-I  312.87] Elapsed: 5:13, vertices: 37, facets final: 72, pending: 84
-I  321.12] Elapsed: 5:21, vertices: 37, facets final: 75, pending: 81
-I  329.65] Elapsed: 5:30, vertices: 38, facets final: 76, pending: 77, pool: 12
-I  336.31] Elapsed: 5:36, vertices: 39, facets final: 76, pending: 73, pool: 11
-I  343.46] Elapsed: 5:43, vertices: 40, facets final: 78, pending: 65
-I  351.23] Elapsed: 5:51, vertices: 41, facets final: 78, pending: 63, pool: 11
-I  357.07] Elapsed: 5:57, vertices: 43, facets final: 79, pending: 61, pool: 11
-I  364.10] Elapsed: 6:04, vertices: 44, facets final: 80, pending: 60, pool: 10
-I  370.56] Elapsed: 6:11, vertices: 46, facets final: 82, pending: 50, pool: 9
-I  377.28] Elapsed: 6:17, vertices: 46, facets final: 85, pending: 47
-I  386.88] Elapsed: 6:27, vertices: 48, facets final: 88, pending: 40, pool: 9
-I  392.70] Elapsed: 6:33, vertices: 50, facets final: 89, pending: 36, pool: 9
-I  399.75] Elapsed: 6:40, vertices: 50, facets final: 92, pending: 33, pool: 8
-I  404.83] Elapsed: 6:45, vertices: 52, facets final: 93, pending: 31, pool: 7
-I  410.37] Elapsed: 6:50, vertices: 53, facets final: 97, pending: 29, pool: 7
-I  418.60] Elapsed: 6:59, vertices: 53, facets final: 100, pending: 26
-I  424.06] Elapsed: 7:04, vertices: 54, facets final: 102, pending: 22, pool: 6
-I  431.50] Elapsed: 7:12, vertices: 55, facets final: 104, pending: 19, pool: 4
-I  438.57] Elapsed: 7:19, vertices: 56, facets final: 107, pending: 15
-I  445.56] Elapsed: 7:26, vertices: 57, facets final: 110, pending: 10, pool: 3
-I  452.76] Elapsed: 7:33, vertices: 57, facets final: 111, pending: 9
-I  458.08] Elapsed: 7:38, vertices: 59, facets final: 112, pending: 7, pool: 3
-I  464.16] Elapsed: 7:44, vertices: 61, facets final: 114, pending: 1, pool: 2
-I  464.16] Elapsed: 7:44, vertices: 62, facets final: 114, pending: 0
+C copy string: rs=ac:bd;tu=cd:abs;v=u:br
+I    0.71] Elapsed: 0.71, vertices: 17, facets final: 115, pending: 0
 
 --------------------------------
 Problem completed
  name                    148.vlp
  output                  
    vertices              vlp/148.res
- rows, cols, objs        803, 10379, 10
- vertices, facets        62, 114
- threads used            2
- total time              7:44
+ rows, cols, objs        176, 1841, 10
+ vertices, facets        17, 115
+ total time              0.71
 --------------------------------
 Statistics
 LP:
- oracle calls            207
-   avg iterations/calls  4.25k
- total oracle time       7:44
+ oracle calls            132
+   avg iterations/call   71.42
+ total oracle time       0.71
 Combinatorics:
- vertices added          62
- facets probed           614
- facets # max            163
- memory allocated        1.40M
+ vertices added          17
+ facets probed           132
+ facets # max            120
+ memory allocated        975.68k
  storage expansion
    vertices # / upto     1 / 124
    facets   # / upto     1 / 4092
  facet manipulating
-   added avg / max       9.13 / 29.00
+   added avg / max       14.44 / 52.00
    compressed            0
  number of ridge tests
-   avg / max             710.64 / 2.14k
+   avg / max             395.69 / 1.12k
 --------------------------------
 Parameters with non-default values
  OracleItLimit=300000

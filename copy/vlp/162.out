@@ -1,46 +1,43 @@
-C copy string: rs=cd:ab;tu=ac:bds;v=a:dst
-Using 2 threads
-I    5.14] Elapsed: 5.14, vertices: 11, facets final: 14, pending: 64
-I   10.23] Elapsed: 10.23, vertices: 21, facets final: 28, pending: 90, pool: 7
-I   15.39] Elapsed: 15.39, vertices: 28, facets final: 39, pending: 133, pool: 14
-I   20.39] Elapsed: 20.39, vertices: 38, facets final: 50, pending: 149, pool: 22
-I   25.54] Elapsed: 25.54, vertices: 49, facets final: 67, pending: 124, pool: 23
-I   30.57] Elapsed: 30.57, vertices: 60, facets final: 86, pending: 103, pool: 19
-I   35.65] Elapsed: 35.65, vertices: 72, facets final: 103, pending: 102, pool: 15
-I   40.79] Elapsed: 40.79, vertices: 86, facets final: 126, pending: 96, pool: 10
-I   45.79] Elapsed: 45.79, vertices: 98, facets final: 146, pending: 68, pool: 6
-I   50.84] Elapsed: 50.84, vertices: 103, facets final: 174, pending: 33, pool: 4
-I   55.89] Elapsed: 55.89, vertices: 120, facets final: 196, pending: 21, pool: 2
-I   58.57] Elapsed: 58.57, vertices: 132, facets final: 217, pending: 0
+C copy string: rs=cd:ab;t=c:ar;uv=rt:ad;w=a:bcru
+I    5.16] Elapsed: 5.16, vertices: 8, facets final: 9, pending: 42
+I   10.58] Elapsed: 10.58, vertices: 14, facets final: 21, pending: 72
+I   16.02] Elapsed: 16.02, vertices: 19, facets final: 31, pending: 95
+I   21.18] Elapsed: 21.18, vertices: 22, facets final: 40, pending: 106, pool: 5
+I   26.47] Elapsed: 26.47, vertices: 27, facets final: 45, pending: 114, pool: 8
+I   31.48] Elapsed: 31.48, vertices: 31, facets final: 57, pending: 88, pool: 9
+I   36.72] Elapsed: 36.72, vertices: 37, facets final: 66, pending: 82, pool: 9
+I   41.89] Elapsed: 41.89, vertices: 43, facets final: 71, pending: 59, pool: 8
+I   46.94] Elapsed: 46.94, vertices: 47, facets final: 84, pending: 42, pool: 8
+I   52.02] Elapsed: 52.02, vertices: 52, facets final: 100, pending: 28, pool: 6
+I   56.71] Elapsed: 56.71, vertices: 62, facets final: 114, pending: 0
 
 --------------------------------
 Problem completed
  name                    162.vlp
  output                  
    vertices              vlp/162.res
- rows, cols, objs        366, 3911, 10
- vertices, facets        132, 217
- threads used            2
- total time              58.57
+ rows, cols, objs        442, 5749, 10
+ vertices, facets        62, 114
+ total time              56.71
 --------------------------------
 Statistics
 LP:
- oracle calls            418
-   avg iterations/calls  700.26
- total oracle time       58.53
+ oracle calls            205
+   avg iterations/call   1.03k
+ total oracle time       56.71
 Combinatorics:
- vertices added          132
- facets probed           1638
- facets # max            234
- memory allocated        1.69M
+ vertices added          62
+ facets probed           611
+ facets # max            164
+ memory allocated        975.68k
  storage expansion
-   vertices # / upto     2 / 252
+   vertices # / upto     1 / 124
    facets   # / upto     1 / 4092
  facet manipulating
-   added avg / max       8.33 / 32.00
+   added avg / max       8.97 / 40.00
    compressed            0
  number of ridge tests
-   avg / max             1.01k / 3.41k
+   avg / max             720.28 / 3.81k
 --------------------------------
 Parameters with non-default values
  OracleItLimit=300000

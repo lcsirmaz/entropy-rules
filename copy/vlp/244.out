@@ -1,0 +1,35 @@
+C copy string: rs=cd:ab;tuvw=(cs)|(cs)|(cs)|(cs):ab
+I    0.32] Elapsed: 0.32, vertices: 34, facets final: 51, pending: 0
+
+--------------------------------
+Problem completed
+ name                    244.vlp
+ output                  
+   vertices              vlp/244.res
+ rows, cols, objs        137, 1163, 10
+ vertices, facets        34, 51
+ total time              0.32
+--------------------------------
+Statistics
+LP:
+ oracle calls            98
+   avg iterations/call   54.41
+ total oracle time       0.31
+Combinatorics:
+ vertices added          34
+ facets probed           164
+ facets # max            86
+ memory allocated        975.68k
+ storage expansion
+   vertices # / upto     1 / 124
+   facets   # / upto     1 / 4092
+ facet manipulating
+   added avg / max       7.88 / 40.00
+   compressed            0
+ number of ridge tests
+   avg / max             272.06 / 990.00
+--------------------------------
+Parameters with non-default values
+ OracleItLimit=300000
+ OracleTimeLimit=180
+ VertexPoolSize=30

@@ -1,40 +1,33 @@
-C copy string: rs=ac:bd;tu=cd:abs;v=a:bcu
-Using 2 threads
-I    5.02] Elapsed: 5.02, vertices: 13, facets final: 17, pending: 82
-I   10.05] Elapsed: 10.05, vertices: 22, facets final: 36, pending: 88, pool: 4
-I   15.08] Elapsed: 15.08, vertices: 25, facets final: 68, pending: 74, pool: 4
-I   20.08] Elapsed: 20.08, vertices: 29, facets final: 93, pending: 49, pool: 9
-I   25.32] Elapsed: 25.32, vertices: 38, facets final: 120, pending: 34, pool: 4
-I   30.10] Elapsed: 30.10, vertices: 48, facets final: 162, pending: 0
+C copy string: rs=ac:bd;tu=cd:abr;v=a:bdrsu
+I    1.52] Elapsed: 1.52, vertices: 59, facets final: 187, pending: 0
 
 --------------------------------
 Problem completed
  name                    126.vlp
  output                  
    vertices              vlp/126.res
- rows, cols, objs        366, 3912, 10
- vertices, facets        48, 162
- threads used            2
- total time              30.10
+ rows, cols, objs        169, 1738, 10
+ vertices, facets        59, 187
+ total time              1.52
 --------------------------------
 Statistics
 LP:
- oracle calls            230
-   avg iterations/calls  633.50
- total oracle time       30.09
+ oracle calls            263
+   avg iterations/call   84.32
+ total oracle time       1.52
 Combinatorics:
- vertices added          48
- facets probed           578
- facets # max            165
- memory allocated        1.40M
+ vertices added          59
+ facets probed           912
+ facets # max            188
+ memory allocated        975.68k
  storage expansion
    vertices # / upto     1 / 124
    facets   # / upto     1 / 4092
  facet manipulating
-   added avg / max       10.32 / 36.00
+   added avg / max       11.43 / 56.00
    compressed            0
  number of ridge tests
-   avg / max             627.89 / 1.76k
+   avg / max             740.53 / 2.71k
 --------------------------------
 Parameters with non-default values
  OracleItLimit=300000

@@ -1,0 +1,47 @@
+C copy string: rs=cd:ab;tu=cr:ab;v=a:bcstu
+I    5.00] Elapsed: 5.00, vertices: 247, facets final: 56, pending: 4992, pool: 30
+I   10.00] Elapsed: 10.00, vertices: 497, facets final: 104, pending: 6220, pool: 30
+I   15.00] Elapsed: 15.00, vertices: 722, facets final: 188, pending: 5375, pool: 30
+I   20.00] Elapsed: 20.00, vertices: 941, facets final: 303, pending: 4493, pool: 30
+I   25.00] Elapsed: 25.00, vertices: 1107, facets final: 471, pending: 3697, pool: 30
+I   30.00] Elapsed: 30.00, vertices: 1247, facets final: 667, pending: 2972, pool: 30
+I   35.01] Elapsed: 35.01, vertices: 1368, facets final: 899, pending: 2335, pool: 29
+I   40.01] Elapsed: 40.01, vertices: 1461, facets final: 1147, pending: 1821, pool: 30
+I   45.01] Elapsed: 45.01, vertices: 1516, facets final: 1419, pending: 1405, pool: 29
+I   50.01] Elapsed: 50.01, vertices: 1570, facets final: 1701, pending: 1015, pool: 29
+I   55.01] Elapsed: 55.01, vertices: 1597, facets final: 2018, pending: 654, pool: 25
+I   60.01] Elapsed: 1:00, vertices: 1631, facets final: 2326, pending: 319, pool: 19
+I   64.75] Elapsed: 1:05, vertices: 1707, facets final: 2592, pending: 0
+
+--------------------------------
+Problem completed
+ name                    224.vlp
+ output                  
+   vertices              vlp/224.res
+ rows, cols, objs        210, 2226, 10
+ vertices, facets        1707, 2592
+ total time              1:05
+--------------------------------
+Statistics
+LP:
+ oracle calls            4348
+   avg iterations/call   149.46
+ total oracle time       58.28
+Combinatorics:
+ vertices added          1707
+ facets probed           6356
+ facets # max            6412
+ memory allocated        6.06M
+ storage expansion
+   vertices # / upto     14 / 1788
+   facets   # / upto     2 / 8188
+ facet manipulating
+   added avg / max       34.20 / 275.00
+   compressed            45
+ number of ridge tests
+   avg / max             151.53k / 1.38M
+--------------------------------
+Parameters with non-default values
+ OracleItLimit=300000
+ OracleTimeLimit=180
+ VertexPoolSize=30

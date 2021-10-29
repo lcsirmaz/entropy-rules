@@ -1,49 +1,33 @@
-C copy string: rs=cd:ab;t=a:bcs;uv=cd:as
-Using 2 threads
-I    5.08] Elapsed: 5.08, vertices: 13, facets final: 17, pending: 68
-I   10.10] Elapsed: 10.10, vertices: 24, facets final: 35, pending: 199, pool: 9
-I   15.11] Elapsed: 15.11, vertices: 38, facets final: 50, pending: 411, pool: 22
-I   20.29] Elapsed: 20.29, vertices: 58, facets final: 72, pending: 450, pool: 24
-I   25.34] Elapsed: 25.34, vertices: 78, facets final: 102, pending: 456, pool: 24
-I   30.61] Elapsed: 30.61, vertices: 88, facets final: 143, pending: 366, pool: 24
-I   35.67] Elapsed: 35.67, vertices: 108, facets final: 172, pending: 396, pool: 19
-I   40.69] Elapsed: 40.69, vertices: 124, facets final: 202, pending: 380, pool: 17
-I   45.71] Elapsed: 45.71, vertices: 137, facets final: 238, pending: 338, pool: 16
-I   50.71] Elapsed: 50.71, vertices: 151, facets final: 271, pending: 275, pool: 13
-I   55.80] Elapsed: 55.80, vertices: 163, facets final: 306, pending: 234, pool: 15
-I   60.86] Elapsed: 1:01, vertices: 176, facets final: 356, pending: 168, pool: 11
-I   66.03] Elapsed: 1:06, vertices: 189, facets final: 395, pending: 116, pool: 7
-I   71.22] Elapsed: 1:11, vertices: 203, facets final: 440, pending: 45, pool: 2
-I   74.30] Elapsed: 1:14, vertices: 216, facets final: 468, pending: 0
+C copy string: rs=ac:bd;tu=cd:abs;v=r:bu
+I    0.75] Elapsed: 0.75, vertices: 20, facets final: 107, pending: 0
 
 --------------------------------
 Problem completed
  name                    146.vlp
  output                  
    vertices              vlp/146.res
- rows, cols, objs        342, 3734, 10
- vertices, facets        216, 468
- threads used            2
- total time              1:14
+ rows, cols, objs        177, 1846, 10
+ vertices, facets        20, 107
+ total time              0.75
 --------------------------------
 Statistics
 LP:
- oracle calls            792
-   avg iterations/calls  511.32
- total oracle time       1:14
+ oracle calls            127
+   avg iterations/call   81.49
+ total oracle time       0.75
 Combinatorics:
- vertices added          216
- facets probed           2693
- facets # max            584
- memory allocated        1.69M
+ vertices added          20
+ facets probed           127
+ facets # max            114
+ memory allocated        975.68k
  storage expansion
-   vertices # / upto     2 / 252
+   vertices # / upto     1 / 124
    facets   # / upto     1 / 4092
  facet manipulating
-   added avg / max       16.43 / 95.00
+   added avg / max       12.05 / 41.00
    compressed            0
  number of ridge tests
-   avg / max             5.69k / 31.57k
+   avg / max             347.47 / 1.15k
 --------------------------------
 Parameters with non-default values
  OracleItLimit=300000

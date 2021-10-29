@@ -1,37 +1,37 @@
-C copy string: rs=ac:bd;tu=cd:abs;v=r:bu
-Using 2 threads
-I    5.02] Elapsed: 5.02, vertices: 9, facets final: 27, pending: 49
-I   10.07] Elapsed: 10.07, vertices: 15, facets final: 70, pending: 37
-I   12.63] Elapsed: 12.63, vertices: 20, facets final: 107, pending: 0
+C copy string: rs=ac:bd;tu=cd:abs;v=b:adt
+I    5.00] Elapsed: 5.00, vertices: 231, facets final: 133, pending: 2751, pool: 30
+I   10.00] Elapsed: 10.00, vertices: 367, facets final: 575, pending: 1593, pool: 27
+I   15.00] Elapsed: 15.00, vertices: 415, facets final: 1094, pending: 914, pool: 22
+I   20.00] Elapsed: 20.00, vertices: 445, facets final: 1660, pending: 360, pool: 12
+I   22.35] Elapsed: 22.35, vertices: 474, facets final: 1988, pending: 0
 
 --------------------------------
 Problem completed
  name                    138.vlp
  output                  
    vertices              vlp/138.res
- rows, cols, objs        338, 3661, 10
- vertices, facets        20, 107
- threads used            2
- total time              12.63
+ rows, cols, objs        182, 1881, 10
+ vertices, facets        474, 1988
+ total time              22.35
 --------------------------------
 Statistics
 LP:
- oracle calls            127
-   avg iterations/calls  510.39
- total oracle time       12.63
+ oracle calls            2585
+   avg iterations/call   111.87
+ total oracle time       20.79
 Combinatorics:
- vertices added          20
- facets probed           127
- facets # max            110
- memory allocated        1.40M
+ vertices added          474
+ facets probed           3803
+ facets # max            4327
+ memory allocated        2.57M
  storage expansion
-   vertices # / upto     1 / 124
-   facets   # / upto     1 / 4092
+   vertices # / upto     4 / 508
+   facets   # / upto     2 / 8188
  facet manipulating
-   added avg / max       10.58 / 30.00
-   compressed            0
+   added avg / max       72.25 / 604.00
+   compressed            30
  number of ridge tests
-   avg / max             260.53 / 657.00
+   avg / max             188.62k / 1.81M
 --------------------------------
 Parameters with non-default values
  OracleItLimit=300000

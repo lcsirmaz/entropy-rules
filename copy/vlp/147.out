@@ -1,44 +1,33 @@
-C copy string: rs=cd:ab;t=c:ar;u=d:art;v=d:artu
-Using 2 threads
-I    5.23] Elapsed: 5.23, vertices: 7, facets final: 21, pending: 34
-I   10.23] Elapsed: 10.23, vertices: 23, facets final: 30, pending: 140, pool: 5
-I   15.33] Elapsed: 15.33, vertices: 33, facets final: 46, pending: 225, pool: 11
-I   20.50] Elapsed: 20.50, vertices: 44, facets final: 61, pending: 225, pool: 13
-I   25.62] Elapsed: 25.62, vertices: 57, facets final: 83, pending: 216, pool: 14
-I   30.71] Elapsed: 30.71, vertices: 70, facets final: 104, pending: 166, pool: 11
-I   35.71] Elapsed: 35.71, vertices: 77, facets final: 141, pending: 146, pool: 12
-I   40.75] Elapsed: 40.75, vertices: 89, facets final: 178, pending: 82, pool: 4
-I   45.76] Elapsed: 45.76, vertices: 101, facets final: 229, pending: 4, pool: 1
-I   46.16] Elapsed: 46.16, vertices: 104, facets final: 230, pending: 0
+C copy string: rs=ac:bd;tu=cd:abs;v=t:bd
+I    1.30] Elapsed: 1.30, vertices: 44, facets final: 109, pending: 0
 
 --------------------------------
 Problem completed
  name                    147.vlp
  output                  
    vertices              vlp/147.res
- rows, cols, objs        398, 4169, 10
- vertices, facets        104, 230
- threads used            2
- total time              46.16
+ rows, cols, objs        180, 1866, 10
+ vertices, facets        44, 109
+ total time              1.30
 --------------------------------
 Statistics
 LP:
- oracle calls            400
-   avg iterations/calls  570.81
- total oracle time       46.14
+ oracle calls            167
+   avg iterations/call   108.86
+ total oracle time       1.29
 Combinatorics:
- vertices added          104
- facets probed           1038
- facets # max            319
- memory allocated        1.41M
+ vertices added          44
+ facets probed           541
+ facets # max            123
+ memory allocated        975.68k
  storage expansion
    vertices # / upto     1 / 124
    facets   # / upto     1 / 4092
  facet manipulating
-   added avg / max       14.55 / 51.00
+   added avg / max       9.12 / 21.00
    compressed            0
  number of ridge tests
-   avg / max             2.54k / 9.68k
+   avg / max             489.33 / 1.74k
 --------------------------------
 Parameters with non-default values
  OracleItLimit=300000
