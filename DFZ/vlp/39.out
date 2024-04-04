@@ -1,0 +1,30 @@
+C copy string: rs=cd:ab;t=c:abrs;u=(dr):abt
+I    0.15] Elapsed: 0.15, vertices: 17, facets final: 49, pending: 0
+
+--------------------------------
+Problem completed
+ name                    39.vlp
+ output                  
+   vertices              vlp/39.res
+ rows, cols, objs        99, 890, 10
+ vertices, facets        17, 49
+ total time              0.15
+--------------------------------
+Statistics
+LP
+ oracle calls            66
+   avg iterations/call   71.64
+ total oracle time       0.15
+Combinatorics
+ vertices added          17
+ facets probed           73
+ facets # max            60
+ memory allocated        975.68k
+ storage expansion
+   vertices # / upto     1 / 124
+   facets   # / upto     1 / 4092
+ facet manipulating
+   added avg / max       8.56 / 20.00
+   compressed            0
+ number of ridge tests
+   avg / max             159.25 / 370.00

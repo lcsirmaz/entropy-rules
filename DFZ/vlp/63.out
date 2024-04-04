@@ -1,30 +1,30 @@
-C copy string: rs=cd:ab;t=a:bcr;u=d:abrst
-I    0.32] Elapsed: 0.32, vertices: 48, facets final: 116, pending: 0
+C copy string: rs=cd:ab;t=c:as;u=t:cs
+I    0.22] Elapsed: 0.22, vertices: 31, facets final: 54, pending: 0
 
 --------------------------------
 Problem completed
  name                    63.vlp
  output                  
    vertices              vlp/63.res
- rows, cols, objs        93, 780, 10
- vertices, facets        48, 116
- total time              0.32
+ rows, cols, objs        98, 870, 10
+ vertices, facets        31, 54
+ total time              0.22
 --------------------------------
 Statistics
-LP:
- oracle calls            164
-   avg iterations/call   48.53
- total oracle time       0.32
-Combinatorics:
- vertices added          48
- facets probed           164
- facets # max            118
+LP
+ oracle calls            85
+   avg iterations/call   75.24
+ total oracle time       0.21
+Combinatorics
+ vertices added          31
+ facets probed           86
+ facets # max            65
  memory allocated        975.68k
  storage expansion
    vertices # / upto     1 / 124
    facets   # / upto     1 / 4092
  facet manipulating
-   added avg / max       7.21 / 22.00
+   added avg / max       4.70 / 12.00
    compressed            0
  number of ridge tests
-   avg / max             313.21 / 1.16k
+   avg / max             106.43 / 387.00
