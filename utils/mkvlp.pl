@@ -524,6 +524,7 @@ sub paste { # rst = (ab)c|d : uv
     if(! defined $info->{vars} ){$info->{vars} = 0xf; }
     if(! defined $info->{symms} ){$info->{symms}=[]; } # symmetries so far
     _initialize_trans($info);
+    if(! defined $info->{paste} ){$info->{paste}=(); }
     if($dsc !~ /^\s*([rstuvw]+)=([[abcdrstuvw\(\)\|]+):([abcdrstuvw]*)\s*$/ ){
         return "copy: wrong syntax ($dsc)";
     }

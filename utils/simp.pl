@@ -19,13 +19,7 @@ sub change_all {
 sub stringsort {
     my $str=shift;
     if(length($str)<2){ return $str; }
-    my @a=split('',$str); my $n=-1+scalar @a;
-    for my $i(0..$n-1){for my $j($i+1..$n){
-        if(lc($a[$i]) gt lc($a[$j])){
-            my $t=$a[$i]; $a[$i]=$a[$j]; $a[$j]=$t;
-        }
-    }}
-    return join('',@a);
+    return join('',sort {lc($a) cmp lc($b)} split('',$str));
 }
 
 sub sortparts { # array of { new => "char", old=>"str" } ]
@@ -40,7 +34,7 @@ sub sortparts { # array of { new => "char", old=>"str" } ]
     return { new=>$new, old=>$old };
 }
 
-sub arrange { # $arr->[$idx] and $arr->[$j] has the same length
+sub arrange { # $arr->[$idx] is the string of new variables
     my($arr,$idx)=@_;
     my($new,$old)=($arr->[$idx],$arr->[$idx+1]);
     my @all=(); ## $all[i] = [ { new=> "str", old=>"char" }, { ... } ]
@@ -168,7 +162,9 @@ sub swapped {
         $z=min_paste($z);
         if($z lt $minimal){ $minimal=$z; }
     }
-    $minimal =~ s/\(([a-z]+)\)/"(".stringsort($1).")"/ge;
+    my $test=$minimal;
+    $test =~ s/\(([a-z]+)\)/"(".stringsort($1).")"/ge;
+    if($test ne $minimal){ die "not alphabetic:\n  $minimal\n  $test\n"; }
     return $minimal;
 }
 
@@ -197,16 +193,10 @@ sub permute_min {
     if($str =~ /^([^;]+);(.+)$/) { $copy=$1; $rest=$2; }
     my $this=swapped($str);
     return $this if(!$rest);
-    if($copy =~ /^([a-z][a-z])\=([a-z][a-z]):/){
+    if($copy =~ /^([a-z][a-z])\=([a-z][a-z]):../){
         my $s1=$1; my $s2=$2;
         my $that=swapped( $copy.";".swapthem($s1,$s2,$rest));
         if($that lt $this){ return $that; }
-    } elsif($copy =~ /^([a-z])=([a-z]):/ ){
-        my $s1=$1; my $s2=$2;
-        if($str !~ /a/ || $str !~ /b/ || $str !~ /c/ || $str !~ /d/){
-           my $that=swapped($copy.";".swapthem($s1,$s2,$rest));
-           if($that lt $this){ return $that; }
-        }
     }
     return $this;
 }
