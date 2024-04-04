@@ -7,11 +7,10 @@ listed in [DFZ.txt](DFZ.txt) following their original numbering from 1 to 214.
 The [Zhang-Yeung inequality](http://www.cs.cornell.edu/courses/cs783/2007fa/papers/ZYnonShannon.pdf)
 has been added as inequality number 0. Inequalities are rewritten using natural
 coordinates, occasionally permuted using the *a &harr; b* and *c &harr; d*
-symmetries. The *copy strings* are the original onw follows by the index of
-the normalized and extended ones. Recall that the &quot;over&quot;
-sets must be *flats* (i.e., closed for direct consequences); and the
-initial *abcd* distribution can be assumed to have the 
-property that each variable is determined by the other three.
+symmetries. The *copy strings* are the original ones followed by the index of
+the corresponding normalized and extended copy string. Recall that the &quot;over&quot;
+sets must be *flats* (i.e., closed for direct consequences); and in the
+initial *abcd* distribution the three-element subsets are *not* flats.
 
 #### Interpreting the MOLP solutions
 
