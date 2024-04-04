@@ -3,7 +3,7 @@ Dougherty - Freiling - Zeger inequalities
 
 Inequalities from the paper *R. Dougherty, C. 
 Freiling, and K.  Zeger:* [Non-Shannon information inequalities in four random variables](http://arxiv.org/pdf/1104.3602v1) are
-listed in [orig.txt](orig.txt) following their original numbering from 1 to 214. 
+listed in [DFZ.txt](DFZ.txt) following their original numbering from 1 to 214. 
 The [Zhang-Yeung inequality](http://www.cs.cornell.edu/courses/cs783/2007fa/papers/ZYnonShannon.pdf)
 has been added as inequality number 0. Inequalities are rewritten using natural
 coordinates, occasionally permuted using the *a &harr; b* and *c &harr; d*
@@ -40,7 +40,7 @@ To get a readable list of all consequences of a copy string use the command
 
 #### Content
 
-* [DFZ.txt](orig.txt) &nbsp;&ndash; list of DFZ inequalities and copy strings.
+* [DFZ.txt](DFZ.txt) &nbsp;&ndash; list of DFZ inequalities and copy strings.
 * [vlp](vlp) &nbsp;&ndash; MOLP problems and solutions associated with DFZ inequality numbers.
 
 
