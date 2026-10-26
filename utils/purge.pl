@@ -44,6 +44,13 @@ sub read_supplist {
     die "No superseded items found in $fname\n" if($cnt==0);
 }
 
+## greatest common divisor of two non-negative integers
+sub gcd {
+    my($x,$y)=@_;
+    while($y){ ($x,$y)=($y,$x % $y); }
+    return $x;
+}
+
 ## read an inequality file
 my $skipS=0; # skip inequalities with ,S appended
 sub read_ineq_file {
@@ -59,6 +66,19 @@ sub read_ineq_file {
       my @a=split(/,\s*/,$line);
       scalar @a>=12 || die "Wrong data line in inequality file $fname:\n   $line\n";
 ##      if($a[13]){ print "line superseded: $line\n"; }
+      for my $i(0 .. 10){
+          $a[$i] =~ s/^\s+|\s+$//g;
+          $a[$i] =~ /^\d+$/ || die "Coefficient ",$i+1," is not a non-negative integer in $fname:\n   $line\n";
+          $a[$i]=0+$a[$i];
+      }
+      # the Ingleton coefficient is a divisor in is_superseded(); this also
+      # excludes the all zero inequality
+      $a[0]>0 || die "Zero Ingleton coefficient in inequality file $fname:\n   $line\n";
+      # normalise: divide by the gcd of the coefficients
+      my $g=$a[0]; for my $i(1 .. 10){ $g=gcd($g,$a[$i]); }
+      if($g>1){ for my $i(0 .. 10){ $a[$i] /= $g; } }
+      if(scalar @a == 12){ $a[12]=""; }
+      else {$a[12] =~ s/\s.*$//; }
       if($skipS && $a[13]){  # superseded ...
           $a[13]=$base;
           push @{$info->{superseded}},\@a;
@@ -101,6 +121,7 @@ sub is_superseded {
     foreach my $x( @{$info->{old}}){
         $j++;
         next if($j==$idx);
+        next if($x->[14]); # already superseded; avoids mutual removal
         my $above=1; my $i=1; 
         while($above && $i<11){
            $above=0 if($v[$i]*$x->[0]<$x->[$i]);
@@ -244,7 +265,7 @@ for my $j(0..-1+scalar @{$info->{superseded}}){
 ## print "checking ($j) ",$info->{superseded}[$j]->[13],"/",$info->{superseded}[$j]->[12],"\n";
     $progress++;
     if($progress % 50 ==0){ print "progress: $progress\n"; }
-    next if(is_superseded($info,$j,1));
+    next if(is_superseded($info,$j,1)>=0);
     if(! run_lp($info,$j,1)){
          print "NOT superseded: ",$info->{superseded}[$j]->[13],"/",$info->{superseded}[$j]->[12],
             " by LP\n";
