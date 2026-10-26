@@ -1,13 +1,18 @@
 #!/usr/bin/perl -w
 # canonize a copy string
 # Usage:  simp.pl <copy_string>
+#
+# 2026-10-25: repeated letters in the over part removed; the head
+#   symmetry is used only for a genuine full copy, and every full copy
+#   which can be moved to the front is tried; the over part must have
+#   at least two variables
 ##
 use strict;
 
 #################################################################
 #
 # generate the minimal past string form the argument
-# returns the first occurrecnte of $what in $string, or "" if
+# returns the first occurrece of $what in $string, or "" if
 # none found
 sub change_all {
     my ($arr,$what,$to)=@_;
@@ -20,6 +25,13 @@ sub stringsort {
     my $str=shift;
     if(length($str)<2){ return $str; }
     return join('',sort {lc($a) cmp lc($b)} split('',$str));
+}
+sub uniqsort { # sort and remove repeated letters (for the over part)
+    my $str=stringsort(shift); my $res="";
+    foreach my $ch(split('',$str)){
+        $res .= $ch if(lc(substr($res,-1)) ne lc($ch));
+    }
+    return $res;
 }
 
 sub sortparts { # array of { new => "char", old=>"str" } ]
@@ -83,7 +95,7 @@ sub create_min {
     my $res="";
     # now go over all parts and assign the corresponding working variable
     for( my $i=0; $i<scalar @parts; $i+=3){
-        $parts[$i+2]=stringsort($parts[$i+2]); # the "copy over" part
+        $parts[$i+2]=uniqsort($parts[$i+2]); # the "copy over" part
         arrange(\@parts,$i); ## to be pasted, new variables
         foreach my $h(split('',$parts[$i])){
             next if($h !~ /[RSTUVWXYZ]/);
@@ -129,8 +141,11 @@ sub swapped {
     my ($str)=@_;
     my @parts=split(/;/,$str);
     foreach my $t(@parts){
-        if($t !~ /^[a-z]+\=[a-z\(\)\|]+:[a-z]+$/){
+        if($t !~ /^[a-z]+\=[a-z\(\)\|]+:([a-z]+)$/){
             die "Syntax error in the copy string\n";
+        }
+        if(length(uniqsort($1))<2){
+            die "The over part must have at least two variables ($t)\n";
         }
     }
     ## create all permutations with swappable inversions
@@ -185,18 +200,36 @@ sub swapthem { ## swap chars in $s1 to chars in $s2
     }
     return lc($str);
 }
+sub is_fullcopy { # rs=cd:ab, rst=bcd:a, etc: single variables from abcd
+                  # are copied over the rest of abcd
+    my($step)=@_;
+    return 0 if($step !~ /^([a-z]+)\=([abcd]+):([abcd]+)$/);
+    my($new,$old,$over)=($1,$2,$3);
+    return 0 if(length($new)!=length($old));
+    my %seen=();
+    foreach my $ch(split('',$old.$over)){
+        return 0 if($seen{$ch}); $seen{$ch}=1;
+    }
+    return scalar(keys %seen)==4;
+}
 sub permute_min {
     my($str)=@_;
     $str =~ s/\s//g; # no spaces
     $str =~ s/,$//; # no trailing comma
-    my $copy=$str; my $rest="";
-    if($str =~ /^([^;]+);(.+)$/) { $copy=$1; $rest=$2; }
     my $this=swapped($str);
-    return $this if(!$rest);
-    if($copy =~ /^([a-z][a-z])\=([a-z][a-z]):../){
-        my $s1=$1; my $s2=$2;
-        my $that=swapped( $copy.";".swapthem($s1,$s2,$rest));
-        if($that lt $this){ return $that; }
+    ## if the copy string starts with a full copy rs=cd:ab, then the swap
+    ##  r<->c, s<->d is a symmetry of the distribution of abcdrs, so it can
+    ##  be applied to the rest. Any full copy which uses abcd only can be
+    ##  moved to the front.
+    my @steps=split(/;/,$str);
+    return $this if(scalar @steps<2);
+    for my $i(0 .. -1+scalar @steps){
+        next if(!is_fullcopy($steps[$i]));
+        my $copy=$steps[$i];
+        my $rest=join(';',@steps[0 .. $i-1],@steps[$i+1 .. -1+scalar @steps]);
+        $copy =~ /^([a-z]+)\=([a-z]+):/ || die "permute_min: $copy\n";
+        my $that=swapped($copy.";".swapthem($1,$2,$rest));
+        if($that lt $this){ $this=$that; }
     }
     return $this;
 }
